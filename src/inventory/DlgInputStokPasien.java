@@ -185,7 +185,7 @@ public class DlgInputStokPasien extends javax.swing.JDialog {
         ppBersihkan.setBackground(new java.awt.Color(255, 255, 255));
         ppBersihkan.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         ppBersihkan.setForeground(new java.awt.Color(102, 51, 0));
-        ppBersihkan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/stop_f2.png"))); // NOI18N
+        ppBersihkan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         ppBersihkan.setText("Bersihkan Jumlah");
         ppBersihkan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBersihkan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -307,7 +307,7 @@ public class DlgInputStokPasien extends javax.swing.JDialog {
         panelisi3.add(nmgudang);
         nmgudang.setBounds(472, 10, 300, 23);
 
-        BtnGudang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnGudang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnGudang.setMnemonic('2');
         BtnGudang.setToolTipText("Alt+2");
         BtnGudang.setName("BtnGudang"); // NOI18N
@@ -382,7 +382,7 @@ public class DlgInputStokPasien extends javax.swing.JDialog {
         });
         panelisi1.add(TCari);
 
-        BtnCari1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari1.setMnemonic('1');
         BtnCari1.setToolTipText("Alt+1");
         BtnCari1.setName("BtnCari1"); // NOI18N
@@ -403,7 +403,7 @@ public class DlgInputStokPasien extends javax.swing.JDialog {
         label10.setPreferredSize(new java.awt.Dimension(25, 23));
         panelisi1.add(label10);
 
-        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan.setMnemonic('S');
         BtnSimpan.setText("Simpan");
         BtnSimpan.setToolTipText("Alt+S");
@@ -421,7 +421,7 @@ public class DlgInputStokPasien extends javax.swing.JDialog {
         });
         panelisi1.add(BtnSimpan);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnCari.setMnemonic('C');
         BtnCari.setText("Cari");
         BtnCari.setToolTipText("Alt+C");
@@ -439,7 +439,7 @@ public class DlgInputStokPasien extends javax.swing.JDialog {
         });
         panelisi1.add(BtnCari);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");

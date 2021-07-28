@@ -20,7 +20,7 @@
               <Color blue="46" green="46" red="46" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/picture/category.png"/>
+              <Image iconType="3" name="/icons/category.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Kartu Pasien"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -41,7 +41,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Kartu Pasien 1"/>
                 <Property name="name" type="java.lang.String" value="MnKartu1" noResource="true"/>
@@ -62,7 +62,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Kartu Pasien 2"/>
                 <Property name="name" type="java.lang.String" value="MnKartu2" noResource="true"/>
@@ -83,7 +83,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Kartu Pasien 3"/>
                 <Property name="name" type="java.lang.String" value="MnKartu3" noResource="true"/>
@@ -104,7 +104,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Kartu Pasien 4"/>
                 <Property name="name" type="java.lang.String" value="MnKartu4" noResource="true"/>
@@ -125,7 +125,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Kartu Pasien 5"/>
                 <Property name="name" type="java.lang.String" value="MnKartu5" noResource="true"/>
@@ -146,7 +146,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Kartu Pasien 6"/>
                 <Property name="name" type="java.lang.String" value="MnKartu6" noResource="true"/>
@@ -169,7 +169,7 @@
               <Color blue="46" green="46" red="46" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/picture/category.png"/>
+              <Image iconType="3" name="/icons/category.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Label Rekam Medis"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -190,7 +190,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Label Rekam Medis 1"/>
                 <Property name="name" type="java.lang.String" value="MnBarcodeRM" noResource="true"/>
@@ -211,7 +211,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Label Rekam Medis 2"/>
                 <Property name="name" type="java.lang.String" value="MnBarcodeRM1" noResource="true"/>
@@ -232,7 +232,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Label Rekam Medis 3"/>
                 <Property name="name" type="java.lang.String" value="MnBarcodeRM2" noResource="true"/>
@@ -253,7 +253,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Label Rekam Medis 4"/>
                 <Property name="name" type="java.lang.String" value="MnBarcodeRM3" noResource="true"/>
@@ -274,7 +274,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Label Rekam Medis 5"/>
                 <Property name="name" type="java.lang.String" value="MnBarcodeRM4" noResource="true"/>
@@ -295,7 +295,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Label Rekam Medis 6"/>
                 <Property name="name" type="java.lang.String" value="MnBarcodeRM5" noResource="true"/>
@@ -316,7 +316,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Label Rekam Medis 7"/>
                 <Property name="name" type="java.lang.String" value="MnBarcodeRM6" noResource="true"/>
@@ -337,7 +337,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Label Rekam Medis 8"/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -359,7 +359,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Label Rekam Medis 9"/>
                 <Property name="name" type="java.lang.String" value="MnBarcodeRM8" noResource="true"/>
@@ -380,7 +380,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Label Rekam Medis 10"/>
                 <Property name="name" type="java.lang.String" value="MnBarcodeRM9" noResource="true"/>
@@ -403,7 +403,7 @@
               <Color blue="46" green="46" red="46" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/picture/category.png"/>
+              <Image iconType="3" name="/icons/category.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Identitas Pasien"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -424,7 +424,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Identitas Pasien"/>
                 <Property name="name" type="java.lang.String" value="MnIdentitas" noResource="true"/>
@@ -445,7 +445,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Identitas Pasien 2"/>
                 <Property name="name" type="java.lang.String" value="MnIdentitas2" noResource="true"/>
@@ -466,7 +466,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Identitas Pasien 3"/>
                 <Property name="name" type="java.lang.String" value="MnIdentitas3" noResource="true"/>
@@ -487,7 +487,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Identitas Pasien 4"/>
                 <Property name="name" type="java.lang.String" value="MnIdentitas4" noResource="true"/>
@@ -510,7 +510,7 @@
               <Color blue="46" green="46" red="46" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/picture/category.png"/>
+              <Image iconType="3" name="/icons/category.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Kartu Indeks Pasien Yang Dipilih"/>
             <Property name="name" type="java.lang.String" value="MnKartuStatus" noResource="true"/>
@@ -531,7 +531,7 @@
               <Color blue="46" green="46" red="46" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/picture/category.png"/>
+              <Image iconType="3" name="/icons/category.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="BPJS"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -552,7 +552,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Pencarian Peserta Berdasarkan Nomor Kepesertaan VClaim"/>
                 <Property name="name" type="java.lang.String" value="MnCekKepesertaan" noResource="true"/>
@@ -573,7 +573,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Pencarian Peserta Berdasarkan NIK/No.KTP VClaim"/>
                 <Property name="name" type="java.lang.String" value="MnCekNIK" noResource="true"/>
@@ -596,7 +596,7 @@
               <Color blue="46" green="46" red="46" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/picture/category.png"/>
+              <Image iconType="3" name="/icons/category.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Data Kelahiran Bayi"/>
             <Property name="horizontalAlignment" type="int" value="2"/>
@@ -619,7 +619,7 @@
               <Color blue="46" green="46" red="46" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/picture/category.png"/>
+              <Image iconType="3" name="/icons/category.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Berkas Rekam Medis"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -640,7 +640,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Lembar Rawat Jalan Model 1"/>
                 <Property name="name" type="java.lang.String" value="MnLaporanRM" noResource="true"/>
@@ -661,7 +661,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Lembar Rawat Jalan Model 2"/>
                 <Property name="name" type="java.lang.String" value="MnLaporanRM1" noResource="true"/>
@@ -682,7 +682,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Lembar Rawat Jalan Model 3"/>
                 <Property name="name" type="java.lang.String" value="MnLaporanRM2" noResource="true"/>
@@ -703,7 +703,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Lembar Rawat Jalan Model 4"/>
                 <Property name="name" type="java.lang.String" value="MnLaporanRM3" noResource="true"/>
@@ -724,7 +724,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Formulir Pendaftaran Pasien"/>
                 <Property name="name" type="java.lang.String" value="MnFormulirPendaftaran" noResource="true"/>
@@ -745,7 +745,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Lembar Screening Awal Pasien Masuk Rawat Jalan"/>
                 <Property name="name" type="java.lang.String" value="MnSCreening" noResource="true"/>
@@ -766,7 +766,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Formulir Penempelan Copy Resep"/>
                 <Property name="name" type="java.lang.String" value="MnCopyResep" noResource="true"/>
@@ -787,7 +787,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Lembar Masuk Keluar Model 1"/>
                 <Property name="name" type="java.lang.String" value="MnLembarKeluarMasuk" noResource="true"/>
@@ -808,7 +808,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Lembar Masuk Keluar Model 2"/>
                 <Property name="name" type="java.lang.String" value="MnLembarKeluarMasuk2" noResource="true"/>
@@ -829,7 +829,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Laporan IGD"/>
                 <Property name="name" type="java.lang.String" value="MnLaporanIGD" noResource="true"/>
@@ -850,7 +850,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Lembar Anamnesa"/>
                 <Property name="name" type="java.lang.String" value="MnLembarAnamNesa" noResource="true"/>
@@ -871,7 +871,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Lembar Grafik"/>
                 <Property name="name" type="java.lang.String" value="MnLembarGrafik" noResource="true"/>
@@ -892,7 +892,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Lembar Catatan Perkembangan"/>
                 <Property name="name" type="java.lang.String" value="MnLembarCatatanPerkembangan" noResource="true"/>
@@ -913,7 +913,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Lembar Catatan Keperawatan"/>
                 <Property name="name" type="java.lang.String" value="MnLembarCatatanKeperawatan" noResource="true"/>
@@ -934,7 +934,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Lembar Laporan Anastesia"/>
                 <Property name="name" type="java.lang.String" value="MnLaporanAnestesia" noResource="true"/>
@@ -955,7 +955,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Pengantar Hemodialisa"/>
                 <Property name="name" type="java.lang.String" value="MnPengantarHemodalisa" noResource="true"/>
@@ -976,7 +976,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Cover Rekam Medis"/>
                 <Property name="name" type="java.lang.String" value="MnCover" noResource="true"/>
@@ -997,7 +997,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Cover Rekam Medis 2"/>
                 <Property name="name" type="java.lang.String" value="MnCover1" noResource="true"/>
@@ -1020,7 +1020,7 @@
               <Color blue="46" green="46" red="46" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/picture/category.png"/>
+              <Image iconType="3" name="/icons/category.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Grafik Analisa"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -1041,7 +1041,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Grafik Pasien Per Agama"/>
                 <Property name="horizontalAlignment" type="int" value="2"/>
@@ -1064,7 +1064,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Grafik Pasien Per Pekerjaan"/>
                 <Property name="horizontalAlignment" type="int" value="2"/>
@@ -1087,7 +1087,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Grafik Jenis Kelamin Pasien"/>
                 <Property name="actionCommand" type="java.lang.String" value="Grafik Pasien Per Jenis Kelamin"/>
@@ -1111,7 +1111,7 @@
                   <Color blue="46" green="46" red="46" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/category.png"/>
+                  <Image iconType="3" name="/icons/category.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Demografi Pasien"/>
                 <Property name="actionCommand" type="java.lang.String" value="Grafik Demografi Pasien"/>
@@ -1137,7 +1137,7 @@
               <Color blue="46" green="46" red="46" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/picture/category.png"/>
+              <Image iconType="3" name="/icons/category.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Tampilkan Banyak Daftar"/>
             <Property name="horizontalAlignment" type="int" value="2"/>
@@ -1160,7 +1160,7 @@
               <Color blue="46" green="46" red="46" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/picture/category.png"/>
+              <Image iconType="3" name="/icons/category.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Riwayat Perawatan"/>
             <Property name="horizontalAlignment" type="int" value="2"/>
@@ -1183,7 +1183,7 @@
               <Color blue="46" green="46" red="46" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/picture/category.png"/>
+              <Image iconType="3" name="/icons/category.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Catatan Untuk Pasien"/>
             <Property name="horizontalAlignment" type="int" value="2"/>
@@ -1206,7 +1206,7 @@
               <Color blue="46" green="46" red="46" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/picture/category.png"/>
+              <Image iconType="3" name="/icons/category.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Gabungkan Data RM"/>
             <Property name="horizontalAlignment" type="int" value="2"/>
@@ -1287,7 +1287,7 @@
                 <Component class="widget.Button" name="BtnPrint2">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/picture/b_print.png"/>
+                      <Image iconType="3" name="/icons/b_print.png"/>
                     </Property>
                     <Property name="mnemonic" type="int" value="84"/>
                     <Property name="text" type="java.lang.String" value="Grafik"/>
@@ -1309,7 +1309,7 @@
                 <Component class="widget.Button" name="BtnKeluar2">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/picture/exit.png"/>
+                      <Image iconType="3" name="/icons/exit.png"/>
                     </Property>
                     <Property name="mnemonic" type="int" value="75"/>
                     <Property name="text" type="java.lang.String" value="Keluar"/>
@@ -1344,7 +1344,7 @@
                 <Component class="widget.Button" name="BtnSeek8">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/picture/190.png"/>
+                      <Image iconType="3" name="/icons/190.png"/>
                     </Property>
                     <Property name="mnemonic" type="int" value="49"/>
                     <Property name="toolTipText" type="java.lang.String" value="ALt+1"/>
@@ -1375,7 +1375,7 @@
                 <Component class="widget.Button" name="BtnSeek9">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/picture/190.png"/>
+                      <Image iconType="3" name="/icons/190.png"/>
                     </Property>
                     <Property name="mnemonic" type="int" value="49"/>
                     <Property name="toolTipText" type="java.lang.String" value="ALt+1"/>
@@ -1406,7 +1406,7 @@
                 <Component class="widget.Button" name="BtnSeek10">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/picture/190.png"/>
+                      <Image iconType="3" name="/icons/190.png"/>
                     </Property>
                     <Property name="mnemonic" type="int" value="49"/>
                     <Property name="toolTipText" type="java.lang.String" value="ALt+1"/>
@@ -1457,7 +1457,7 @@
                 <Component class="widget.Button" name="BtnPrint3">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/picture/b_print.png"/>
+                      <Image iconType="3" name="/icons/b_print.png"/>
                     </Property>
                     <Property name="mnemonic" type="int" value="84"/>
                     <Property name="text" type="java.lang.String" value="Cetak"/>
@@ -1479,7 +1479,7 @@
                 <Component class="widget.Button" name="BtnSeek11">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/picture/190.png"/>
+                      <Image iconType="3" name="/icons/190.png"/>
                     </Property>
                     <Property name="mnemonic" type="int" value="49"/>
                     <Property name="toolTipText" type="java.lang.String" value="ALt+1"/>
@@ -1553,7 +1553,7 @@
               <Color blue="46" green="46" red="46" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/picture/category.png"/>
+              <Image iconType="3" name="/icons/category.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Cek Via NIK Web Servis BPJS VClaim"/>
             <Property name="name" type="java.lang.String" value="MnViaBPJSNik" noResource="true"/>
@@ -1574,7 +1574,7 @@
               <Color blue="46" green="46" red="46" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/picture/category.png"/>
+              <Image iconType="3" name="/icons/category.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Cek Via No Kartu Web Servis BPJS VClaim"/>
             <Property name="name" type="java.lang.String" value="MnViaBPJSNoKartu" noResource="true"/>
@@ -1632,7 +1632,7 @@
             <Component class="widget.Button" name="BtnCloseIn6">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/cross.png"/>
+                  <Image iconType="3" name="/icons/cross.png"/>
                 </Property>
                 <Property name="mnemonic" type="int" value="80"/>
                 <Property name="text" type="java.lang.String" value="Tutup"/>
@@ -1651,7 +1651,7 @@
             <Component class="widget.Button" name="BtnSimpan6">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/save-16x16.png"/>
+                  <Image iconType="3" name="/icons/save-16x16.png"/>
                 </Property>
                 <Property name="mnemonic" type="int" value="83"/>
                 <Property name="text" type="java.lang.String" value="Simpan"/>
@@ -1728,7 +1728,7 @@
             <Component class="widget.Button" name="BtnCari1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/accept.png"/>
+                  <Image iconType="3" name="/icons/accept.png"/>
                 </Property>
                 <Property name="mnemonic" type="int" value="50"/>
                 <Property name="toolTipText" type="java.lang.String" value="Alt+2"/>
@@ -1886,7 +1886,7 @@
                 <Component class="widget.Button" name="BtnSimpan">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/picture/save-16x16.png"/>
+                      <Image iconType="3" name="/icons/save-16x16.png"/>
                     </Property>
                     <Property name="mnemonic" type="int" value="83"/>
                     <Property name="text" type="java.lang.String" value="Simpan"/>
@@ -1904,7 +1904,7 @@
                 <Component class="widget.Button" name="BtnBatal">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/picture/Cancel-2-16x16.png"/>
+                      <Image iconType="3" name="/icons/Cancel-2-16x16.png"/>
                     </Property>
                     <Property name="mnemonic" type="int" value="66"/>
                     <Property name="text" type="java.lang.String" value="Baru"/>
@@ -1922,7 +1922,7 @@
                 <Component class="widget.Button" name="BtnHapus">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/picture/stop_f2.png"/>
+                      <Image iconType="3" name="/icons/stop_f2.png"/>
                     </Property>
                     <Property name="mnemonic" type="int" value="72"/>
                     <Property name="text" type="java.lang.String" value="Hapus"/>
@@ -1940,7 +1940,7 @@
                 <Component class="widget.Button" name="BtnEdit">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/picture/inventaris.png"/>
+                      <Image iconType="3" name="/icons/inventaris.png"/>
                     </Property>
                     <Property name="mnemonic" type="int" value="71"/>
                     <Property name="text" type="java.lang.String" value="Ganti"/>
@@ -1958,7 +1958,7 @@
                 <Component class="widget.Button" name="BtnPrint">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/picture/b_print.png"/>
+                      <Image iconType="3" name="/icons/b_print.png"/>
                     </Property>
                     <Property name="mnemonic" type="int" value="84"/>
                     <Property name="text" type="java.lang.String" value="Cetak"/>
@@ -1976,7 +1976,7 @@
                 <Component class="widget.Button" name="BtnAll">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/picture/Search-16x16.png"/>
+                      <Image iconType="3" name="/icons/Search-16x16.png"/>
                     </Property>
                     <Property name="mnemonic" type="int" value="77"/>
                     <Property name="text" type="java.lang.String" value="Semua"/>
@@ -2013,7 +2013,7 @@
                 <Component class="widget.Button" name="BtnKeluar">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/picture/exit.png"/>
+                      <Image iconType="3" name="/icons/exit.png"/>
                     </Property>
                     <Property name="mnemonic" type="int" value="75"/>
                     <Property name="text" type="java.lang.String" value="Keluar"/>
@@ -2107,7 +2107,7 @@
                 <Component class="widget.Button" name="BtnCari">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/picture/accept.png"/>
+                      <Image iconType="3" name="/icons/accept.png"/>
                     </Property>
                     <Property name="mnemonic" type="int" value="53"/>
                     <Property name="toolTipText" type="java.lang.String" value="Alt+5"/>
@@ -2792,7 +2792,7 @@
                         <Component class="widget.Button" name="BtnPenjab">
                           <Properties>
                             <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/picture/190.png"/>
+                              <Image iconType="3" name="/icons/190.png"/>
                             </Property>
                             <Property name="mnemonic" type="int" value="49"/>
                             <Property name="toolTipText" type="java.lang.String" value="ALt+1"/>
@@ -2867,7 +2867,7 @@
                         <Component class="widget.Button" name="BtnKelurahan">
                           <Properties>
                             <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/picture/190.png"/>
+                              <Image iconType="3" name="/icons/190.png"/>
                             </Property>
                             <Property name="mnemonic" type="int" value="50"/>
                             <Property name="toolTipText" type="java.lang.String" value="ALt+2"/>
@@ -2885,7 +2885,7 @@
                         <Component class="widget.Button" name="BtnKecamatan">
                           <Properties>
                             <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/picture/190.png"/>
+                              <Image iconType="3" name="/icons/190.png"/>
                             </Property>
                             <Property name="mnemonic" type="int" value="51"/>
                             <Property name="toolTipText" type="java.lang.String" value="ALt+3"/>
@@ -2903,7 +2903,7 @@
                         <Component class="widget.Button" name="BtnKabupaten">
                           <Properties>
                             <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/picture/190.png"/>
+                              <Image iconType="3" name="/icons/190.png"/>
                             </Property>
                             <Property name="mnemonic" type="int" value="52"/>
                             <Property name="toolTipText" type="java.lang.String" value="ALt+4"/>
@@ -3061,7 +3061,7 @@
                         <Component class="widget.Button" name="BtnKecamatanPj">
                           <Properties>
                             <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/picture/190.png"/>
+                              <Image iconType="3" name="/icons/190.png"/>
                             </Property>
                             <Property name="mnemonic" type="int" value="51"/>
                             <Property name="toolTipText" type="java.lang.String" value="ALt+3"/>
@@ -3098,7 +3098,7 @@
                         <Component class="widget.Button" name="BtnKabupatenPj">
                           <Properties>
                             <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/picture/190.png"/>
+                              <Image iconType="3" name="/icons/190.png"/>
                             </Property>
                             <Property name="mnemonic" type="int" value="52"/>
                             <Property name="toolTipText" type="java.lang.String" value="ALt+4"/>
@@ -3116,7 +3116,7 @@
                         <Component class="widget.Button" name="BtnKelurahanPj">
                           <Properties>
                             <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/picture/190.png"/>
+                              <Image iconType="3" name="/icons/190.png"/>
                             </Property>
                             <Property name="mnemonic" type="int" value="50"/>
                             <Property name="toolTipText" type="java.lang.String" value="ALt+2"/>
@@ -3216,7 +3216,7 @@
                         <Component class="widget.Button" name="BtnKelurahan1">
                           <Properties>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/picture/011.png"/>
+                              <Image iconType="3" name="/icons/011.png"/>
                             </Property>
                             <Property name="mnemonic" type="int" value="50"/>
                             <Property name="toolTipText" type="java.lang.String" value="ALt+2"/>
@@ -3331,7 +3331,7 @@
                         <Component class="widget.Button" name="BtnSuku">
                           <Properties>
                             <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/picture/190.png"/>
+                              <Image iconType="3" name="/icons/190.png"/>
                             </Property>
                             <Property name="mnemonic" type="int" value="49"/>
                             <Property name="toolTipText" type="java.lang.String" value="ALt+1"/>
@@ -3361,7 +3361,7 @@
                         <Component class="widget.Button" name="BtnBahasa">
                           <Properties>
                             <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/picture/190.png"/>
+                              <Image iconType="3" name="/icons/190.png"/>
                             </Property>
                             <Property name="mnemonic" type="int" value="49"/>
                             <Property name="toolTipText" type="java.lang.String" value="ALt+1"/>
@@ -3413,7 +3413,7 @@
                         <Component class="widget.Button" name="BtnPerusahaan">
                           <Properties>
                             <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/picture/190.png"/>
+                              <Image iconType="3" name="/icons/190.png"/>
                             </Property>
                             <Property name="mnemonic" type="int" value="49"/>
                             <Property name="toolTipText" type="java.lang.String" value="ALt+1"/>
@@ -3432,7 +3432,7 @@
                         <Component class="widget.Button" name="BtnPropinsi">
                           <Properties>
                             <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/picture/190.png"/>
+                              <Image iconType="3" name="/icons/190.png"/>
                             </Property>
                             <Property name="mnemonic" type="int" value="52"/>
                             <Property name="toolTipText" type="java.lang.String" value="ALt+4"/>
@@ -3488,7 +3488,7 @@
                         <Component class="widget.Button" name="btnPropinsiPj">
                           <Properties>
                             <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/picture/190.png"/>
+                              <Image iconType="3" name="/icons/190.png"/>
                             </Property>
                             <Property name="mnemonic" type="int" value="52"/>
                             <Property name="toolTipText" type="java.lang.String" value="ALt+4"/>
@@ -3528,7 +3528,7 @@
                         <Component class="widget.Button" name="BtnCacat">
                           <Properties>
                             <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/picture/190.png"/>
+                              <Image iconType="3" name="/icons/190.png"/>
                             </Property>
                             <Property name="mnemonic" type="int" value="49"/>
                             <Property name="toolTipText" type="java.lang.String" value="ALt+1"/>

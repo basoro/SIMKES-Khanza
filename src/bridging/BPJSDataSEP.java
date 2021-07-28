@@ -1070,7 +1070,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         ppSEP.setBackground(new java.awt.Color(255, 255, 254));
         ppSEP.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppSEP.setForeground(new java.awt.Color(50, 50, 50));
-        ppSEP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppSEP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppSEP.setText("Print SEP Model 1");
         ppSEP.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppSEP.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1086,7 +1086,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         ppSEP1.setBackground(new java.awt.Color(255, 255, 254));
         ppSEP1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppSEP1.setForeground(new java.awt.Color(50, 50, 50));
-        ppSEP1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppSEP1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppSEP1.setText("Print SEP Model 2");
         ppSEP1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppSEP1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1102,7 +1102,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         ppSEP2.setBackground(new java.awt.Color(255, 255, 254));
         ppSEP2.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppSEP2.setForeground(new java.awt.Color(50, 50, 50));
-        ppSEP2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppSEP2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppSEP2.setText("Print SEP Model 3");
         ppSEP2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppSEP2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1118,7 +1118,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         ppSEP3.setBackground(new java.awt.Color(255, 255, 254));
         ppSEP3.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppSEP3.setForeground(new java.awt.Color(50, 50, 50));
-        ppSEP3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppSEP3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppSEP3.setText("Print SEP Model 4");
         ppSEP3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppSEP3.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1134,7 +1134,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         ppSEP4.setBackground(new java.awt.Color(255, 255, 254));
         ppSEP4.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppSEP4.setForeground(new java.awt.Color(50, 50, 50));
-        ppSEP4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppSEP4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppSEP4.setText("Print SEP Model 1 PDF");
         ppSEP4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppSEP4.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1150,7 +1150,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         ppSEP5.setBackground(new java.awt.Color(255, 255, 254));
         ppSEP5.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppSEP5.setForeground(new java.awt.Color(50, 50, 50));
-        ppSEP5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppSEP5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppSEP5.setText("Print SEP Model 2 PDF");
         ppSEP5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppSEP5.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1166,7 +1166,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         ppSEP6.setBackground(new java.awt.Color(255, 255, 254));
         ppSEP6.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppSEP6.setForeground(new java.awt.Color(50, 50, 50));
-        ppSEP6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppSEP6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppSEP6.setText("Print SEP Model 3 PDF");
         ppSEP6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppSEP6.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1182,7 +1182,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         ppSEP7.setBackground(new java.awt.Color(255, 255, 254));
         ppSEP7.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppSEP7.setForeground(new java.awt.Color(50, 50, 50));
-        ppSEP7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppSEP7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppSEP7.setText("Print SEP Model 4 PDF");
         ppSEP7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppSEP7.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1198,7 +1198,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         ppPulang.setBackground(new java.awt.Color(255, 255, 254));
         ppPulang.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppPulang.setForeground(new java.awt.Color(50, 50, 50));
-        ppPulang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppPulang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppPulang.setText("Update Tanggal Pulang");
         ppPulang.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppPulang.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1214,7 +1214,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         ppDetailSEPPeserta.setBackground(new java.awt.Color(255, 255, 254));
         ppDetailSEPPeserta.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppDetailSEPPeserta.setForeground(new java.awt.Color(50, 50, 50));
-        ppDetailSEPPeserta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppDetailSEPPeserta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppDetailSEPPeserta.setText("Detail SEP Peserta");
         ppDetailSEPPeserta.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppDetailSEPPeserta.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1230,7 +1230,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         ppRujukan.setBackground(new java.awt.Color(255, 255, 254));
         ppRujukan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppRujukan.setForeground(new java.awt.Color(50, 50, 50));
-        ppRujukan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppRujukan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppRujukan.setText("Buat Rujukan Keluar");
         ppRujukan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppRujukan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1246,7 +1246,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         ppSuratKontrol.setBackground(new java.awt.Color(255, 255, 254));
         ppSuratKontrol.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppSuratKontrol.setForeground(new java.awt.Color(50, 50, 50));
-        ppSuratKontrol.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppSuratKontrol.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppSuratKontrol.setText("Rencana Kontrol/SPRI");
         ppSuratKontrol.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppSuratKontrol.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1262,7 +1262,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         ppRiwayatPerawatan.setBackground(new java.awt.Color(255, 255, 254));
         ppRiwayatPerawatan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppRiwayatPerawatan.setForeground(new java.awt.Color(50, 50, 50));
-        ppRiwayatPerawatan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppRiwayatPerawatan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppRiwayatPerawatan.setText("Riwayat Perawatan");
         ppRiwayatPerawatan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppRiwayatPerawatan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1284,7 +1284,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         internalFrame5.setName("internalFrame5"); // NOI18N
         internalFrame5.setLayout(null);
 
-        BtnCloseIn4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/cross.png"))); // NOI18N
+        BtnCloseIn4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cross.png"))); // NOI18N
         BtnCloseIn4.setMnemonic('U');
         BtnCloseIn4.setText("Tutup");
         BtnCloseIn4.setToolTipText("Alt+U");
@@ -1297,7 +1297,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         internalFrame5.add(BtnCloseIn4);
         BtnCloseIn4.setBounds(510, 30, 100, 30);
 
-        BtnSimpan4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan4.setMnemonic('S');
         BtnSimpan4.setText("Simpan");
         BtnSimpan4.setToolTipText("Alt+S");
@@ -1337,7 +1337,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         internalFrame6.setName("internalFrame6"); // NOI18N
         internalFrame6.setLayout(null);
 
-        BtnCloseIn5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/cross.png"))); // NOI18N
+        BtnCloseIn5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cross.png"))); // NOI18N
         BtnCloseIn5.setMnemonic('U');
         BtnCloseIn5.setText("Tutup");
         BtnCloseIn5.setToolTipText("Alt+U");
@@ -1350,7 +1350,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         internalFrame6.add(BtnCloseIn5);
         BtnCloseIn5.setBounds(692, 125, 100, 30);
 
-        BtnSimpan5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan5.setMnemonic('S');
         BtnSimpan5.setText("Simpan");
         BtnSimpan5.setToolTipText("Alt+S");
@@ -1396,7 +1396,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         internalFrame6.add(NmPpkRujukan1);
         NmPpkRujukan1.setBounds(182, 55, 200, 23);
 
-        btnPPKRujukan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnPPKRujukan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnPPKRujukan1.setMnemonic('X');
         btnPPKRujukan1.setToolTipText("Alt+X");
         btnPPKRujukan1.setName("btnPPKRujukan1"); // NOI18N
@@ -1453,7 +1453,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         internalFrame6.add(NmPenyakit1);
         NmPenyakit1.setBounds(182, 85, 200, 23);
 
-        btnDiagnosa1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnDiagnosa1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnDiagnosa1.setMnemonic('X');
         btnDiagnosa1.setToolTipText("Alt+X");
         btnDiagnosa1.setName("btnDiagnosa1"); // NOI18N
@@ -1489,7 +1489,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         internalFrame6.add(NmPoli1);
         NmPoli1.setBounds(581, 85, 180, 23);
 
-        btnPoli1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnPoli1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnPoli1.setMnemonic('X');
         btnPoli1.setToolTipText("Alt+X");
         btnPoli1.setName("btnPoli1"); // NOI18N
@@ -1553,7 +1553,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         ppPengajuan.setBackground(new java.awt.Color(255, 255, 254));
         ppPengajuan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppPengajuan.setForeground(new java.awt.Color(50, 50, 50));
-        ppPengajuan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppPengajuan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppPengajuan.setText("Pengajuan SEP");
         ppPengajuan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppPengajuan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1569,7 +1569,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         ppPengajuan1.setBackground(new java.awt.Color(255, 255, 254));
         ppPengajuan1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppPengajuan1.setForeground(new java.awt.Color(50, 50, 50));
-        ppPengajuan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppPengajuan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppPengajuan1.setText("Aproval SEP");
         ppPengajuan1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppPengajuan1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1585,7 +1585,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         ppAmbilSep.setBackground(new java.awt.Color(255, 255, 254));
         ppAmbilSep.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppAmbilSep.setForeground(new java.awt.Color(50, 50, 50));
-        ppAmbilSep.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppAmbilSep.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppAmbilSep.setText("Ambil SEP di VClaim");
         ppAmbilSep.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppAmbilSep.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1607,7 +1607,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         internalFrame7.setName("internalFrame7"); // NOI18N
         internalFrame7.setLayout(null);
 
-        BtnCloseIn6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/cross.png"))); // NOI18N
+        BtnCloseIn6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cross.png"))); // NOI18N
         BtnCloseIn6.setMnemonic('U');
         BtnCloseIn6.setText("Tutup");
         BtnCloseIn6.setToolTipText("Alt+U");
@@ -1620,7 +1620,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         internalFrame7.add(BtnCloseIn6);
         BtnCloseIn6.setBounds(290, 70, 100, 30);
 
-        BtnSimpan6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan6.setMnemonic('S');
         BtnSimpan6.setText("Simpan");
         BtnSimpan6.setToolTipText("Alt+S");
@@ -1648,7 +1648,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         internalFrame7.add(NoSEP);
         NoSEP.setBounds(106, 25, 240, 23);
 
-        BtnCari1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari1.setMnemonic('3');
         BtnCari1.setToolTipText("Alt+3");
         BtnCari1.setName("BtnCari1"); // NOI18N
@@ -1791,7 +1791,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         panelisi1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
         BtnKeluar1.setForeground(new java.awt.Color(0, 0, 0));
-        BtnKeluar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar1.setMnemonic('K');
         BtnKeluar1.setText("Keluar");
         BtnKeluar1.setToolTipText("Alt+K");
@@ -1968,7 +1968,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         FormInput.add(NmPPK);
         NmPPK.setBounds(170, 282, 180, 23);
 
-        btnPPKRujukan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnPPKRujukan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnPPKRujukan.setMnemonic('X');
         btnPPKRujukan.setToolTipText("Alt+X");
         btnPPKRujukan.setName("btnPPKRujukan"); // NOI18N
@@ -2023,7 +2023,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         FormInput.add(NmPenyakit);
         NmPenyakit.setBounds(170, 192, 180, 23);
 
-        btnDiagnosa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnDiagnosa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnDiagnosa.setMnemonic('X');
         btnDiagnosa.setToolTipText("Alt+X");
         btnDiagnosa.setName("btnDiagnosa"); // NOI18N
@@ -2040,7 +2040,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         FormInput.add(btnDiagnosa);
         btnDiagnosa.setBounds(352, 192, 28, 23);
 
-        btnPoli.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnPoli.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnPoli.setMnemonic('X');
         btnPoli.setToolTipText("Alt+X");
         btnPoli.setName("btnPoli"); // NOI18N
@@ -2358,7 +2358,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         FormInput.add(NoSKDP);
         NoSKDP.setBounds(93, 132, 227, 23);
 
-        btnSPRI.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnSPRI.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnSPRI.setMnemonic('X');
         btnSPRI.setToolTipText("Alt+X");
         btnSPRI.setName("btnSPRI"); // NOI18N
@@ -2389,7 +2389,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         FormInput.add(NmDPJP);
         NmDPJP.setBounds(170, 252, 180, 23);
 
-        btnDPJP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnDPJP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnDPJP.setMnemonic('X');
         btnDPJP.setToolTipText("Alt+X");
         btnDPJP.setName("btnDPJP"); // NOI18N
@@ -2472,7 +2472,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         FormInput.add(NmPropinsi);
         NmPropinsi.setBounds(527, 282, 170, 23);
 
-        btnPropinsi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnPropinsi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnPropinsi.setMnemonic('X');
         btnPropinsi.setToolTipText("Alt+X");
         btnPropinsi.setName("btnPropinsi"); // NOI18N
@@ -2508,7 +2508,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         FormInput.add(NmKabupaten);
         NmKabupaten.setBounds(527, 312, 170, 23);
 
-        btnKabupaten.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnKabupaten.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnKabupaten.setMnemonic('X');
         btnKabupaten.setToolTipText("Alt+X");
         btnKabupaten.setName("btnKabupaten"); // NOI18N
@@ -2544,7 +2544,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         FormInput.add(NmKecamatan);
         NmKecamatan.setBounds(527, 342, 170, 23);
 
-        btnKecamatan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnKecamatan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnKecamatan.setMnemonic('X');
         btnKecamatan.setToolTipText("Alt+X");
         btnKecamatan.setName("btnKecamatan"); // NOI18N
@@ -2561,7 +2561,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         FormInput.add(btnKecamatan);
         btnKecamatan.setBounds(699, 342, 28, 23);
 
-        btnRiwayat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnRiwayat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnRiwayat.setMnemonic('X');
         btnRiwayat.setToolTipText("Alt+X");
         btnRiwayat.setName("btnRiwayat"); // NOI18N
@@ -2573,7 +2573,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         FormInput.add(btnRiwayat);
         btnRiwayat.setBounds(675, 72, 28, 23);
 
-        btnSKDP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnSKDP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnSKDP.setMnemonic('X');
         btnSKDP.setToolTipText("Alt+X");
         btnSKDP.setName("btnSKDP"); // NOI18N
@@ -2585,7 +2585,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         FormInput.add(btnSKDP);
         btnSKDP.setBounds(322, 132, 28, 23);
 
-        btnRujukan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnRujukan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnRujukan.setMnemonic('X');
         btnRujukan.setToolTipText("Alt+X");
         btnRujukan.setName("btnRujukan"); // NOI18N
@@ -2681,7 +2681,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         });
         panelGlass9.add(TCari);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('3');
         BtnCari.setToolTipText("Alt+3");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -2719,7 +2719,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         panelGlass8.setPreferredSize(new java.awt.Dimension(44, 54));
         panelGlass8.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
-        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan.setMnemonic('S');
         BtnSimpan.setText("Simpan");
         BtnSimpan.setToolTipText("Alt+S");
@@ -2737,7 +2737,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         });
         panelGlass8.add(BtnSimpan);
 
-        BtnBatal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Cancel-2-16x16.png"))); // NOI18N
+        BtnBatal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Cancel-2-16x16.png"))); // NOI18N
         BtnBatal.setMnemonic('B');
         BtnBatal.setText("Baru");
         BtnBatal.setToolTipText("Alt+B");
@@ -2755,7 +2755,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         });
         panelGlass8.add(BtnBatal);
 
-        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/stop_f2.png"))); // NOI18N
+        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         BtnHapus.setMnemonic('H');
         BtnHapus.setText("Hapus");
         BtnHapus.setToolTipText("Alt+H");
@@ -2773,7 +2773,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         });
         panelGlass8.add(BtnHapus);
 
-        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnPrint.setMnemonic('T');
         BtnPrint.setText("Cetak");
         BtnPrint.setToolTipText("Alt+T");
@@ -2791,7 +2791,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         });
         panelGlass8.add(BtnPrint);
 
-        BtnEdit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/inventaris.png"))); // NOI18N
+        BtnEdit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/inventaris.png"))); // NOI18N
         BtnEdit.setMnemonic('G');
         BtnEdit.setText("Ganti");
         BtnEdit.setToolTipText("Alt+G");
@@ -2809,7 +2809,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         });
         panelGlass8.add(BtnEdit);
 
-        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAll.setMnemonic('M');
         BtnAll.setText("Semua");
         BtnAll.setToolTipText("Alt+M");
@@ -2827,7 +2827,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         });
         panelGlass8.add(BtnAll);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");

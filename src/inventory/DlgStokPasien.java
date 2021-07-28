@@ -128,7 +128,7 @@ public final class DlgStokPasien extends javax.swing.JDialog {
         ppHapus.setBackground(new java.awt.Color(242, 242, 242));
         ppHapus.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         ppHapus.setForeground(new java.awt.Color(102, 51, 0));
-        ppHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/stop_f2.png"))); // NOI18N
+        ppHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         ppHapus.setText("Hapus");
         ppHapus.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppHapus.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -145,7 +145,7 @@ public final class DlgStokPasien extends javax.swing.JDialog {
         ppCetak.setBackground(new java.awt.Color(242, 242, 242));
         ppCetak.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         ppCetak.setForeground(new java.awt.Color(102, 51, 0));
-        ppCetak.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        ppCetak.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         ppCetak.setText("Cetak");
         ppCetak.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppCetak.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -240,7 +240,7 @@ public final class DlgStokPasien extends javax.swing.JDialog {
         });
         panelisi3.add(TCari);
 
-        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAll.setMnemonic('3');
         BtnAll.setToolTipText("Alt+3");
         BtnAll.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -258,7 +258,7 @@ public final class DlgStokPasien extends javax.swing.JDialog {
         });
         panelisi3.add(BtnAll);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('2');
         BtnCari.setToolTipText("Alt+2");
         BtnCari.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -281,7 +281,7 @@ public final class DlgStokPasien extends javax.swing.JDialog {
         panelisi1.setName("panelisi1"); // NOI18N
         panelisi1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
-        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/stop_f2.png"))); // NOI18N
+        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         BtnHapus.setMnemonic('H');
         BtnHapus.setText("Hapus");
         BtnHapus.setToolTipText("Alt+H");
@@ -299,7 +299,7 @@ public final class DlgStokPasien extends javax.swing.JDialog {
         });
         panelisi1.add(BtnHapus);
 
-        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnPrint.setMnemonic('T');
         BtnPrint.setText("Cetak");
         BtnPrint.setToolTipText("Alt+T");
@@ -328,7 +328,7 @@ public final class DlgStokPasien extends javax.swing.JDialog {
         LCount.setPreferredSize(new java.awt.Dimension(300, 30));
         panelisi1.add(LCount);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");

@@ -293,7 +293,7 @@ public final class DlgUbahPeriksaLab extends javax.swing.JDialog {
         ppBersihkan.setBackground(new java.awt.Color(255, 255, 255));
         ppBersihkan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBersihkan.setForeground(new java.awt.Color(102, 51, 0));
-        ppBersihkan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppBersihkan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppBersihkan.setText("Bersihkan Pilihan");
         ppBersihkan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBersihkan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -310,7 +310,7 @@ public final class DlgUbahPeriksaLab extends javax.swing.JDialog {
         ppSemua.setBackground(new java.awt.Color(255, 255, 255));
         ppSemua.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppSemua.setForeground(new java.awt.Color(102, 51, 0));
-        ppSemua.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppSemua.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppSemua.setText("Pilih Semua");
         ppSemua.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppSemua.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -347,7 +347,7 @@ public final class DlgUbahPeriksaLab extends javax.swing.JDialog {
         panelGlass8.setPreferredSize(new java.awt.Dimension(55, 55));
         panelGlass8.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
-        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/inventaris.png"))); // NOI18N
+        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/inventaris.png"))); // NOI18N
         BtnSimpan.setMnemonic('S');
         BtnSimpan.setText("Simpan");
         BtnSimpan.setToolTipText("Alt+S");
@@ -365,7 +365,7 @@ public final class DlgUbahPeriksaLab extends javax.swing.JDialog {
         });
         panelGlass8.add(BtnSimpan);
 
-        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/stop_f2.png"))); // NOI18N
+        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         BtnHapus.setMnemonic('H');
         BtnHapus.setText("Hapus");
         BtnHapus.setToolTipText("Alt+H");
@@ -387,7 +387,7 @@ public final class DlgUbahPeriksaLab extends javax.swing.JDialog {
         jLabel10.setPreferredSize(new java.awt.Dimension(460, 30));
         panelGlass8.add(jLabel10);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");
@@ -412,7 +412,7 @@ public final class DlgUbahPeriksaLab extends javax.swing.JDialog {
         FormInput.setPreferredSize(new java.awt.Dimension(560, 269));
         FormInput.setLayout(new java.awt.BorderLayout(1, 1));
 
-        ChkInput.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/143.png"))); // NOI18N
+        ChkInput.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/143.png"))); // NOI18N
         ChkInput.setMnemonic('I');
         ChkInput.setText(".: Input Data");
         ChkInput.setToolTipText("Alt+I");
@@ -423,9 +423,9 @@ public final class DlgUbahPeriksaLab extends javax.swing.JDialog {
         ChkInput.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         ChkInput.setName("ChkInput"); // NOI18N
         ChkInput.setPreferredSize(new java.awt.Dimension(192, 20));
-        ChkInput.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/143.png"))); // NOI18N
-        ChkInput.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/145.png"))); // NOI18N
-        ChkInput.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/145.png"))); // NOI18N
+        ChkInput.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/143.png"))); // NOI18N
+        ChkInput.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/145.png"))); // NOI18N
+        ChkInput.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/145.png"))); // NOI18N
         ChkInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ChkInputActionPerformed(evt);
@@ -505,7 +505,7 @@ public final class DlgUbahPeriksaLab extends javax.swing.JDialog {
         PanelInput.add(jLabel16);
         jLabel16.setBounds(533, 72, 78, 23);
 
-        BtnCari1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari1.setMnemonic('1');
         BtnCari1.setToolTipText("Alt+1");
         BtnCari1.setName("BtnCari1"); // NOI18N
@@ -533,7 +533,7 @@ public final class DlgUbahPeriksaLab extends javax.swing.JDialog {
         PanelInput.add(Scroll1);
         Scroll1.setBounds(95, 127, 677, 110);
 
-        btnTarif.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/plus_16.png"))); // NOI18N
+        btnTarif.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/plus_16.png"))); // NOI18N
         btnTarif.setMnemonic('2');
         btnTarif.setToolTipText("Alt+2");
         btnTarif.setName("btnTarif"); // NOI18N

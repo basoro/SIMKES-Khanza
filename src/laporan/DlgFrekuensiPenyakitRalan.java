@@ -381,7 +381,7 @@ public class DlgFrekuensiPenyakitRalan extends javax.swing.JDialog {
 
         ppGrafikTerbanyakBatang.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppGrafikTerbanyakBatang.setForeground(new java.awt.Color(70, 70, 70));
-        ppGrafikTerbanyakBatang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Create-Ticket24.png"))); // NOI18N
+        ppGrafikTerbanyakBatang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Create-Ticket24.png"))); // NOI18N
         ppGrafikTerbanyakBatang.setText("Grafik Batang 10 Penyakit Terbanyak");
         ppGrafikTerbanyakBatang.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppGrafikTerbanyakBatang.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -397,7 +397,7 @@ public class DlgFrekuensiPenyakitRalan extends javax.swing.JDialog {
 
         ppGrafikTerbanyakPie.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppGrafikTerbanyakPie.setForeground(new java.awt.Color(70, 70, 70));
-        ppGrafikTerbanyakPie.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Create-Ticket24.png"))); // NOI18N
+        ppGrafikTerbanyakPie.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Create-Ticket24.png"))); // NOI18N
         ppGrafikTerbanyakPie.setText("Grafik Pie 10 Penyakit Terbanyak");
         ppGrafikTerbanyakPie.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppGrafikTerbanyakPie.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -413,7 +413,7 @@ public class DlgFrekuensiPenyakitRalan extends javax.swing.JDialog {
 
         ppGrafikTerkecilBatang.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppGrafikTerkecilBatang.setForeground(new java.awt.Color(70, 70, 70));
-        ppGrafikTerkecilBatang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Create-Ticket24.png"))); // NOI18N
+        ppGrafikTerkecilBatang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Create-Ticket24.png"))); // NOI18N
         ppGrafikTerkecilBatang.setText("Grafik Batang 10 Penyakit Tersedikit");
         ppGrafikTerkecilBatang.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppGrafikTerkecilBatang.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -429,7 +429,7 @@ public class DlgFrekuensiPenyakitRalan extends javax.swing.JDialog {
 
         ppGrafikTerkecilPie.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppGrafikTerkecilPie.setForeground(new java.awt.Color(70, 70, 70));
-        ppGrafikTerkecilPie.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Create-Ticket24.png"))); // NOI18N
+        ppGrafikTerkecilPie.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Create-Ticket24.png"))); // NOI18N
         ppGrafikTerkecilPie.setText("Grafik Pie 10 Penyakit Tersedikit");
         ppGrafikTerkecilPie.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppGrafikTerkecilPie.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -517,7 +517,7 @@ public class DlgFrekuensiPenyakitRalan extends javax.swing.JDialog {
         });
         panelisi1.add(TCari);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('2');
         BtnCari.setToolTipText("Alt+2");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -534,7 +534,7 @@ public class DlgFrekuensiPenyakitRalan extends javax.swing.JDialog {
         });
         panelisi1.add(BtnCari);
 
-        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAll.setMnemonic('M');
         BtnAll.setToolTipText("Alt+M");
         BtnAll.setName("BtnAll"); // NOI18N
@@ -557,7 +557,7 @@ public class DlgFrekuensiPenyakitRalan extends javax.swing.JDialog {
         label9.setPreferredSize(new java.awt.Dimension(80, 30));
         panelisi1.add(label9);
 
-        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnPrint.setMnemonic('T');
         BtnPrint.setText("Cetak");
         BtnPrint.setToolTipText("Alt+T");
@@ -575,7 +575,7 @@ public class DlgFrekuensiPenyakitRalan extends javax.swing.JDialog {
         });
         panelisi1.add(BtnPrint);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");
@@ -600,7 +600,7 @@ public class DlgFrekuensiPenyakitRalan extends javax.swing.JDialog {
         PanelInput.setOpaque(false);
         PanelInput.setLayout(new java.awt.BorderLayout(1, 1));
 
-        ChkInput.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/143.png"))); // NOI18N
+        ChkInput.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/143.png"))); // NOI18N
         ChkInput.setMnemonic('M');
         ChkInput.setText(".: Filter Data");
         ChkInput.setBorderPainted(true);
@@ -610,9 +610,9 @@ public class DlgFrekuensiPenyakitRalan extends javax.swing.JDialog {
         ChkInput.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         ChkInput.setName("ChkInput"); // NOI18N
         ChkInput.setPreferredSize(new java.awt.Dimension(192, 20));
-        ChkInput.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/143.png"))); // NOI18N
-        ChkInput.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/145.png"))); // NOI18N
-        ChkInput.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/145.png"))); // NOI18N
+        ChkInput.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/143.png"))); // NOI18N
+        ChkInput.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/145.png"))); // NOI18N
+        ChkInput.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/145.png"))); // NOI18N
         ChkInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ChkInputActionPerformed(evt);
@@ -647,7 +647,7 @@ public class DlgFrekuensiPenyakitRalan extends javax.swing.JDialog {
         FormInput.add(nmpoli);
         nmpoli.setBounds(165, 10, 228, 23);
 
-        BtnSeek2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSeek2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeek2.setMnemonic('3');
         BtnSeek2.setToolTipText("Alt+3");
         BtnSeek2.setName("BtnSeek2"); // NOI18N
@@ -688,7 +688,7 @@ public class DlgFrekuensiPenyakitRalan extends javax.swing.JDialog {
         FormInput.add(nmpenjab);
         nmpenjab.setBounds(165, 70, 228, 23);
 
-        BtnSeek3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSeek3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeek3.setMnemonic('3');
         BtnSeek3.setToolTipText("Alt+3");
         BtnSeek3.setName("BtnSeek3"); // NOI18N
@@ -729,7 +729,7 @@ public class DlgFrekuensiPenyakitRalan extends javax.swing.JDialog {
         FormInput.add(nmdokter);
         nmdokter.setBounds(165, 40, 228, 23);
 
-        BtnSeek4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSeek4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeek4.setMnemonic('3');
         BtnSeek4.setToolTipText("Alt+3");
         BtnSeek4.setName("BtnSeek4"); // NOI18N
@@ -759,7 +759,7 @@ public class DlgFrekuensiPenyakitRalan extends javax.swing.JDialog {
         FormInput.add(nmkabupaten);
         nmkabupaten.setBounds(539, 10, 260, 23);
 
-        BtnSeek5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSeek5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeek5.setMnemonic('3');
         BtnSeek5.setToolTipText("Alt+3");
         BtnSeek5.setName("BtnSeek5"); // NOI18N
@@ -789,7 +789,7 @@ public class DlgFrekuensiPenyakitRalan extends javax.swing.JDialog {
         FormInput.add(nmkecamatan);
         nmkecamatan.setBounds(539, 40, 260, 23);
 
-        BtnSeek6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSeek6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeek6.setMnemonic('3');
         BtnSeek6.setToolTipText("Alt+3");
         BtnSeek6.setName("BtnSeek6"); // NOI18N
@@ -807,7 +807,7 @@ public class DlgFrekuensiPenyakitRalan extends javax.swing.JDialog {
         FormInput.add(BtnSeek6);
         BtnSeek6.setBounds(802, 40, 28, 23);
 
-        BtnSeek7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSeek7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeek7.setMnemonic('3');
         BtnSeek7.setToolTipText("Alt+3");
         BtnSeek7.setName("BtnSeek7"); // NOI18N
@@ -920,7 +920,7 @@ private void KdKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TKdKey
             ChartFrame cf = new ChartFrame("Grafik 10 Besar Penyakit Di Rawat Jalan",freeChart);
 
             cf.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
             cf.setVisible(true);           
@@ -948,7 +948,7 @@ private void KdKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TKdKey
             ChartFrame cf = new ChartFrame("Grafik 10 Besar Penyakit Di Rawat Jalan",freeChart);
 
             cf.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
             cf.setVisible(true);      
@@ -974,7 +974,7 @@ private void KdKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TKdKey
             ChartFrame cf = new ChartFrame("Grafik 10 Besar Penyakit Di Rawat Jalan",freeChart);
 
             cf.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
             cf.setVisible(true);      
@@ -998,7 +998,7 @@ private void KdKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TKdKey
             ChartFrame cf = new ChartFrame("Grafik 10 Besar Penyakit Di Rawat Jalan",freeChart);
 
             cf.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
             cf.setVisible(true);      
@@ -1020,7 +1020,7 @@ private void KdKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TKdKey
             ChartFrame cf = new ChartFrame("Grafik 10 Besar Penyakit Di Rawat Jalan",freeChart);
 
             cf.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
             cf.setVisible(true);      
@@ -1040,7 +1040,7 @@ private void KdKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TKdKey
             ChartFrame cf = new ChartFrame("Grafik 10 Besar Penyakit Di Rawat Jalan",freeChart);
 
             cf.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
             cf.setVisible(true);      
@@ -1058,7 +1058,7 @@ private void KdKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TKdKey
             ChartFrame cf = new ChartFrame("Grafik 10 Besar Penyakit Di Rawat Jalan",freeChart);
 
             cf.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
             cf.setVisible(true);                
@@ -1074,7 +1074,7 @@ private void KdKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TKdKey
             ChartFrame cf = new ChartFrame("Grafik 10 Besar Penyakit Di Rawat Jalan",freeChart);
 
             cf.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
             cf.setVisible(true);                  
@@ -1088,7 +1088,7 @@ private void KdKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TKdKey
             ChartFrame cf = new ChartFrame("Grafik 10 Besar Penyakit Di Rawat Jalan",freeChart);
 
             cf.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
             cf.setVisible(true);                
@@ -1126,7 +1126,7 @@ private void ppGrafikTerbanyakPieActionPerformed(java.awt.event.ActionEvent evt)
             cf.setSize(internalFrame1.getWidth()-20, internalFrame1.getHeight()-20);
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setVisible(true);
         }else if((tbDokter.getRowCount()>8)&&(Integer.parseInt(tbDokter.getValueAt(0,7).toString())>=Integer.parseInt(tbDokter.getValueAt(1,7).toString()))
                 && (Integer.parseInt(tbDokter.getValueAt(1,7).toString())>=Integer.parseInt(tbDokter.getValueAt(2,7).toString()))
@@ -1152,7 +1152,7 @@ private void ppGrafikTerbanyakPieActionPerformed(java.awt.event.ActionEvent evt)
             cf.setSize(internalFrame1.getWidth()-20, internalFrame1.getHeight()-20);
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setVisible(true);
             
         }else if((tbDokter.getRowCount()>7)&&(Integer.parseInt(tbDokter.getValueAt(0,7).toString())>=Integer.parseInt(tbDokter.getValueAt(1,7).toString()))
@@ -1177,7 +1177,7 @@ private void ppGrafikTerbanyakPieActionPerformed(java.awt.event.ActionEvent evt)
             cf.setSize(internalFrame1.getWidth()-20, internalFrame1.getHeight()-20);
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setVisible(true);
             
         }else if((tbDokter.getRowCount()>6)&&(Integer.parseInt(tbDokter.getValueAt(0,7).toString())>=Integer.parseInt(tbDokter.getValueAt(1,7).toString()))
@@ -1200,7 +1200,7 @@ private void ppGrafikTerbanyakPieActionPerformed(java.awt.event.ActionEvent evt)
             cf.setSize(internalFrame1.getWidth()-20, internalFrame1.getHeight()-20);
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setVisible(true);
             
         }else if((tbDokter.getRowCount()>5)&&(Integer.parseInt(tbDokter.getValueAt(0,7).toString())>=Integer.parseInt(tbDokter.getValueAt(1,7).toString()))
@@ -1221,7 +1221,7 @@ private void ppGrafikTerbanyakPieActionPerformed(java.awt.event.ActionEvent evt)
             cf.setSize(internalFrame1.getWidth()-20, internalFrame1.getHeight()-20);
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setVisible(true);
             
         }else if((tbDokter.getRowCount()>4)&&(Integer.parseInt(tbDokter.getValueAt(0,7).toString())>=Integer.parseInt(tbDokter.getValueAt(1,7).toString()))
@@ -1240,7 +1240,7 @@ private void ppGrafikTerbanyakPieActionPerformed(java.awt.event.ActionEvent evt)
             cf.setSize(internalFrame1.getWidth()-20, internalFrame1.getHeight()-20);
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setVisible(true);
             
         }else if((tbDokter.getRowCount()>3)&&(Integer.parseInt(tbDokter.getValueAt(0,7).toString())>=Integer.parseInt(tbDokter.getValueAt(1,7).toString()))
@@ -1257,7 +1257,7 @@ private void ppGrafikTerbanyakPieActionPerformed(java.awt.event.ActionEvent evt)
             cf.setSize(internalFrame1.getWidth()-20, internalFrame1.getHeight()-20);
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setVisible(true);      
             
         }else if((tbDokter.getRowCount()>2)&&(Integer.parseInt(tbDokter.getValueAt(0,7).toString())>=Integer.parseInt(tbDokter.getValueAt(1,7).toString()))
@@ -1272,7 +1272,7 @@ private void ppGrafikTerbanyakPieActionPerformed(java.awt.event.ActionEvent evt)
             cf.setSize(internalFrame1.getWidth()-20, internalFrame1.getHeight()-20);
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setVisible(true);         
             
         }else if((tbDokter.getRowCount()>1)&&(Integer.parseInt(tbDokter.getValueAt(0,7).toString())>=Integer.parseInt(tbDokter.getValueAt(1,7).toString()))){
@@ -1285,7 +1285,7 @@ private void ppGrafikTerbanyakPieActionPerformed(java.awt.event.ActionEvent evt)
             cf.setSize(internalFrame1.getWidth()-20, internalFrame1.getHeight()-20);
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setVisible(true);        
             
         }else{
@@ -1320,7 +1320,7 @@ private void ppGrafikTerkecilBatangActionPerformed(java.awt.event.ActionEvent ev
             ChartFrame cf = new ChartFrame("Grafik 10 Besar Penyakit Di Rawat Jalan",freeChart);
 
             cf.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
             cf.setVisible(true);      
@@ -1348,7 +1348,7 @@ private void ppGrafikTerkecilBatangActionPerformed(java.awt.event.ActionEvent ev
             ChartFrame cf = new ChartFrame("Grafik 10 Besar Penyakit Di Rawat Jalan",freeChart);
 
             cf.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
             cf.setVisible(true);      
@@ -1374,7 +1374,7 @@ private void ppGrafikTerkecilBatangActionPerformed(java.awt.event.ActionEvent ev
             ChartFrame cf = new ChartFrame("Grafik 10 Besar Penyakit Di Rawat Jalan",freeChart);
 
             cf.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
             cf.setVisible(true);      
@@ -1398,7 +1398,7 @@ private void ppGrafikTerkecilBatangActionPerformed(java.awt.event.ActionEvent ev
             ChartFrame cf = new ChartFrame("Grafik 10 Besar Penyakit Di Rawat Jalan",freeChart);
 
             cf.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
             cf.setVisible(true);      
@@ -1420,7 +1420,7 @@ private void ppGrafikTerkecilBatangActionPerformed(java.awt.event.ActionEvent ev
             ChartFrame cf = new ChartFrame("Grafik 10 Besar Penyakit Di Rawat Jalan",freeChart);
 
             cf.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
             cf.setVisible(true);      
@@ -1440,7 +1440,7 @@ private void ppGrafikTerkecilBatangActionPerformed(java.awt.event.ActionEvent ev
             ChartFrame cf = new ChartFrame("Grafik 10 Besar Penyakit Di Rawat Jalan",freeChart);
 
             cf.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
             cf.setVisible(true);      
@@ -1458,7 +1458,7 @@ private void ppGrafikTerkecilBatangActionPerformed(java.awt.event.ActionEvent ev
             ChartFrame cf = new ChartFrame("Grafik 10 Besar Penyakit Di Rawat Jalan",freeChart);
 
             cf.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
             cf.setVisible(true);                
@@ -1474,7 +1474,7 @@ private void ppGrafikTerkecilBatangActionPerformed(java.awt.event.ActionEvent ev
             ChartFrame cf = new ChartFrame("Grafik 10 Besar Penyakit Di Rawat Jalan",freeChart);
 
             cf.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
             cf.setVisible(true);                 
@@ -1488,7 +1488,7 @@ private void ppGrafikTerkecilBatangActionPerformed(java.awt.event.ActionEvent ev
             ChartFrame cf = new ChartFrame("Grafik 10 Besar Penyakit Di Rawat Jalan",freeChart);
 
             cf.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
             cf.setVisible(true);                  
@@ -1525,7 +1525,7 @@ private void ppGrafikTerkecilPieActionPerformed(java.awt.event.ActionEvent evt) 
             cf.setSize(internalFrame1.getWidth()-20, internalFrame1.getHeight()-20);
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setVisible(true);
         }else if((tbDokter.getRowCount()>8)&&(Integer.parseInt(tbDokter.getValueAt(0,7).toString())<=Integer.parseInt(tbDokter.getValueAt(1,7).toString()))
                 && (Integer.parseInt(tbDokter.getValueAt(1,7).toString())<=Integer.parseInt(tbDokter.getValueAt(2,7).toString()))
@@ -1551,7 +1551,7 @@ private void ppGrafikTerkecilPieActionPerformed(java.awt.event.ActionEvent evt) 
             cf.setSize(internalFrame1.getWidth()-20, internalFrame1.getHeight()-20);
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setVisible(true);
             
         }else if((tbDokter.getRowCount()>7)&&(Integer.parseInt(tbDokter.getValueAt(0,7).toString())<=Integer.parseInt(tbDokter.getValueAt(1,7).toString()))
@@ -1576,7 +1576,7 @@ private void ppGrafikTerkecilPieActionPerformed(java.awt.event.ActionEvent evt) 
             cf.setSize(internalFrame1.getWidth()-20, internalFrame1.getHeight()-20);
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setVisible(true);
             
         }else if((tbDokter.getRowCount()>6)&&(Integer.parseInt(tbDokter.getValueAt(0,7).toString())<=Integer.parseInt(tbDokter.getValueAt(1,7).toString()))
@@ -1599,7 +1599,7 @@ private void ppGrafikTerkecilPieActionPerformed(java.awt.event.ActionEvent evt) 
             cf.setSize(internalFrame1.getWidth()-20, internalFrame1.getHeight()-20);
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setVisible(true);
             
         }else if((tbDokter.getRowCount()>5)&&(Integer.parseInt(tbDokter.getValueAt(0,7).toString())<=Integer.parseInt(tbDokter.getValueAt(1,7).toString()))
@@ -1620,7 +1620,7 @@ private void ppGrafikTerkecilPieActionPerformed(java.awt.event.ActionEvent evt) 
             cf.setSize(internalFrame1.getWidth()-20, internalFrame1.getHeight()-20);
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setVisible(true);
             
         }else if((tbDokter.getRowCount()>4)&&(Integer.parseInt(tbDokter.getValueAt(0,7).toString())<=Integer.parseInt(tbDokter.getValueAt(1,7).toString()))
@@ -1639,7 +1639,7 @@ private void ppGrafikTerkecilPieActionPerformed(java.awt.event.ActionEvent evt) 
             cf.setSize(internalFrame1.getWidth()-20, internalFrame1.getHeight()-20);
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setVisible(true);
             
         }else if((tbDokter.getRowCount()>3)&&(Integer.parseInt(tbDokter.getValueAt(0,7).toString())<=Integer.parseInt(tbDokter.getValueAt(1,7).toString()))
@@ -1656,7 +1656,7 @@ private void ppGrafikTerkecilPieActionPerformed(java.awt.event.ActionEvent evt) 
             cf.setSize(internalFrame1.getWidth()-20, internalFrame1.getHeight()-20);
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setVisible(true);       
             
         }else if((tbDokter.getRowCount()>2)&&(Integer.parseInt(tbDokter.getValueAt(0,7).toString())<=Integer.parseInt(tbDokter.getValueAt(1,7).toString()))
@@ -1671,7 +1671,7 @@ private void ppGrafikTerkecilPieActionPerformed(java.awt.event.ActionEvent evt) 
             cf.setSize(internalFrame1.getWidth()-20, internalFrame1.getHeight()-20);
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setVisible(true);          
             
         }else if((tbDokter.getRowCount()>1)&&(Integer.parseInt(tbDokter.getValueAt(0,7).toString())<=Integer.parseInt(tbDokter.getValueAt(1,7).toString()))){
@@ -1684,7 +1684,7 @@ private void ppGrafikTerkecilPieActionPerformed(java.awt.event.ActionEvent evt) 
             cf.setSize(internalFrame1.getWidth()-20, internalFrame1.getHeight()-20);
             cf.setLocationRelativeTo(internalFrame1);
             cf.setAlwaysOnTop(false);
-            cf.setIconImage(new ImageIcon(super.getClass().getResource("/picture/addressbook-edit24.png")).getImage());
+            cf.setIconImage(new ImageIcon(super.getClass().getResource("/icons/addressbook-edit24.png")).getImage());
             cf.setVisible(true);          
             
         }else{

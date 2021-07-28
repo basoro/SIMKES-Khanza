@@ -181,7 +181,7 @@ public class DlgMutasiBarang extends javax.swing.JDialog {
         ppBersihkan.setBackground(new java.awt.Color(255, 255, 255));
         ppBersihkan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBersihkan.setForeground(new java.awt.Color(102, 51, 0));
-        ppBersihkan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppBersihkan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppBersihkan.setText("Bersihkan Jumlah");
         ppBersihkan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBersihkan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -198,7 +198,7 @@ public class DlgMutasiBarang extends javax.swing.JDialog {
         ppStok.setBackground(new java.awt.Color(255, 255, 255));
         ppStok.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppStok.setForeground(new java.awt.Color(102, 51, 0));
-        ppStok.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppStok.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppStok.setText("Tampilkan Semua Stok");
         ppStok.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppStok.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -256,7 +256,7 @@ public class DlgMutasiBarang extends javax.swing.JDialog {
         panelisi1.setPreferredSize(new java.awt.Dimension(734, 56));
         panelisi1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
-        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan.setMnemonic('S');
         BtnSimpan.setText("Simpan");
         BtnSimpan.setToolTipText("Alt+S");
@@ -288,7 +288,7 @@ public class DlgMutasiBarang extends javax.swing.JDialog {
         });
         panelisi1.add(TCari);
 
-        BtnCari1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari1.setMnemonic('1');
         BtnCari1.setToolTipText("Alt+1");
         BtnCari1.setName("BtnCari1"); // NOI18N
@@ -309,7 +309,7 @@ public class DlgMutasiBarang extends javax.swing.JDialog {
         label11.setPreferredSize(new java.awt.Dimension(25, 23));
         panelisi1.add(label11);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnCari.setMnemonic('C');
         BtnCari.setText("Cari");
         BtnCari.setToolTipText("Alt+C");
@@ -327,7 +327,7 @@ public class DlgMutasiBarang extends javax.swing.JDialog {
         });
         panelisi1.add(BtnCari);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");
@@ -373,7 +373,7 @@ public class DlgMutasiBarang extends javax.swing.JDialog {
         panelisi3.add(nmdari);
         nmdari.setBounds(141, 10, 257, 23);
 
-        btnDari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnDari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnDari.setMnemonic('1');
         btnDari.setToolTipText("Alt+1");
         btnDari.setName("btnDari"); // NOI18N
@@ -386,7 +386,7 @@ public class DlgMutasiBarang extends javax.swing.JDialog {
         panelisi3.add(btnDari);
         btnDari.setBounds(400, 10, 28, 23);
 
-        btnKe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnKe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnKe.setMnemonic('1');
         btnKe.setToolTipText("Alt+1");
         btnKe.setName("btnKe"); // NOI18N

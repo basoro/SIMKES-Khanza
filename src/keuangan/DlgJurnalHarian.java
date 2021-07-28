@@ -251,7 +251,7 @@ public class DlgJurnalHarian extends javax.swing.JDialog {
         panelisi4.add(nmrek);
         nmrek.setBounds(186, 10, 300, 23);
 
-        BtnCari6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnCari6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnCari6.setMnemonic('1');
         BtnCari6.setToolTipText("Alt+1");
         BtnCari6.setName("BtnCari6"); // NOI18N
@@ -344,7 +344,7 @@ public class DlgJurnalHarian extends javax.swing.JDialog {
         });
         panelisi1.add(TCari);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('2');
         BtnCari.setToolTipText("Alt+2");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -365,7 +365,7 @@ public class DlgJurnalHarian extends javax.swing.JDialog {
         label9.setPreferredSize(new java.awt.Dimension(40, 23));
         panelisi1.add(label9);
 
-        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAll.setMnemonic('M');
         BtnAll.setText("Semua");
         BtnAll.setToolTipText("Alt+M");
@@ -383,7 +383,7 @@ public class DlgJurnalHarian extends javax.swing.JDialog {
         });
         panelisi1.add(BtnAll);
 
-        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnPrint.setMnemonic('T');
         BtnPrint.setText("Cetak");
         BtnPrint.setToolTipText("Alt+T");
@@ -401,7 +401,7 @@ public class DlgJurnalHarian extends javax.swing.JDialog {
         });
         panelisi1.add(BtnPrint);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");

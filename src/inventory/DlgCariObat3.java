@@ -191,7 +191,7 @@ public final class DlgCariObat3 extends javax.swing.JDialog {
         panelisi3.setPreferredSize(new java.awt.Dimension(100, 56));
         panelisi3.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 4, 9));
 
-        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan.setMnemonic('S');
         BtnSimpan.setText("Simpan");
         BtnSimpan.setToolTipText("Alt+S");
@@ -204,7 +204,7 @@ public final class DlgCariObat3 extends javax.swing.JDialog {
         });
         panelisi3.add(BtnSimpan);
 
-        btnCetak.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        btnCetak.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         btnCetak.setMnemonic('T');
         btnCetak.setText("Cetak");
         btnCetak.setToolTipText("Alt+T");
@@ -217,7 +217,7 @@ public final class DlgCariObat3 extends javax.swing.JDialog {
         });
         panelisi3.add(btnCetak);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");
@@ -266,7 +266,7 @@ public final class DlgCariObat3 extends javax.swing.JDialog {
         Jeniskelas.setPreferredSize(new java.awt.Dimension(100, 23));
         FormInput.add(Jeniskelas);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('1');
         BtnCari.setToolTipText("Alt+1");
         BtnCari.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N

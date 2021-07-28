@@ -324,7 +324,7 @@ public class DlgCariPeriksaRadiologi extends javax.swing.JDialog {
 
         MnCetakNota.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnCetakNota.setForeground(new java.awt.Color(70, 70, 70));
-        MnCetakNota.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnCetakNota.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnCetakNota.setText("Cetak Nota Radiologi");
         MnCetakNota.setName("MnCetakNota"); // NOI18N
         MnCetakNota.setPreferredSize(new java.awt.Dimension(250, 28));
@@ -337,7 +337,7 @@ public class DlgCariPeriksaRadiologi extends javax.swing.JDialog {
 
         MnLihatHasil.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnLihatHasil.setForeground(new java.awt.Color(70, 70, 70));
-        MnLihatHasil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnLihatHasil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnLihatHasil.setText("Tampilkan Hasil Pemeriksaan");
         MnLihatHasil.setName("MnLihatHasil"); // NOI18N
         MnLihatHasil.setPreferredSize(new java.awt.Dimension(250, 28));
@@ -350,7 +350,7 @@ public class DlgCariPeriksaRadiologi extends javax.swing.JDialog {
 
         MnLihatGambar.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnLihatGambar.setForeground(new java.awt.Color(70, 70, 70));
-        MnLihatGambar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnLihatGambar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnLihatGambar.setText("Tampilkan Gambar Radiologi");
         MnLihatGambar.setName("MnLihatGambar"); // NOI18N
         MnLihatGambar.setPreferredSize(new java.awt.Dimension(250, 28));
@@ -363,7 +363,7 @@ public class DlgCariPeriksaRadiologi extends javax.swing.JDialog {
 
         MnUbahDokterPetugas.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUbahDokterPetugas.setForeground(new java.awt.Color(70, 70, 70));
-        MnUbahDokterPetugas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUbahDokterPetugas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUbahDokterPetugas.setText("Ubah P.J.Lab, Perujuk & Petugas");
         MnUbahDokterPetugas.setName("MnUbahDokterPetugas"); // NOI18N
         MnUbahDokterPetugas.setPreferredSize(new java.awt.Dimension(220, 26));
@@ -388,7 +388,7 @@ public class DlgCariPeriksaRadiologi extends javax.swing.JDialog {
         panelGlass6.setPreferredSize(new java.awt.Dimension(55, 55));
         panelGlass6.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
-        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan.setMnemonic('U');
         BtnSimpan.setText("Update");
         BtnSimpan.setToolTipText("Alt+U");
@@ -406,7 +406,7 @@ public class DlgCariPeriksaRadiologi extends javax.swing.JDialog {
         });
         panelGlass6.add(BtnSimpan);
 
-        BtnPrint1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnPrint1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnPrint1.setMnemonic('T');
         BtnPrint1.setText("Cetak");
         BtnPrint1.setToolTipText("Alt+T");
@@ -424,7 +424,7 @@ public class DlgCariPeriksaRadiologi extends javax.swing.JDialog {
         });
         panelGlass6.add(BtnPrint1);
 
-        BtnCloseIn5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/cross.png"))); // NOI18N
+        BtnCloseIn5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cross.png"))); // NOI18N
         BtnCloseIn5.setMnemonic('U');
         BtnCloseIn5.setText("Tutup");
         BtnCloseIn5.setToolTipText("Alt+U");
@@ -488,7 +488,7 @@ public class DlgCariPeriksaRadiologi extends javax.swing.JDialog {
         FormInput.setPreferredSize(new java.awt.Dimension(89, 434));
         FormInput.setLayout(null);
 
-        BtnSimpan4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan4.setMnemonic('S');
         BtnSimpan4.setText("Simpan");
         BtnSimpan4.setToolTipText("Alt+S");
@@ -501,7 +501,7 @@ public class DlgCariPeriksaRadiologi extends javax.swing.JDialog {
         FormInput.add(BtnSimpan4);
         BtnSimpan4.setBounds(470, 15, 100, 30);
 
-        BtnCloseIn4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/cross.png"))); // NOI18N
+        BtnCloseIn4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cross.png"))); // NOI18N
         BtnCloseIn4.setMnemonic('U');
         BtnCloseIn4.setText("Tutup");
         BtnCloseIn4.setToolTipText("Alt+U");
@@ -530,7 +530,7 @@ public class DlgCariPeriksaRadiologi extends javax.swing.JDialog {
         FormInput.add(NmDokterPj);
         NmDokterPj.setBounds(210, 12, 208, 23);
 
-        btnDokterPj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnDokterPj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnDokterPj.setMnemonic('4');
         btnDokterPj.setToolTipText("ALt+4");
         btnDokterPj.setName("btnDokterPj"); // NOI18N
@@ -542,7 +542,7 @@ public class DlgCariPeriksaRadiologi extends javax.swing.JDialog {
         FormInput.add(btnDokterPj);
         btnDokterPj.setBounds(420, 12, 28, 23);
 
-        btnDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnDokter.setMnemonic('4');
         btnDokter.setToolTipText("ALt+4");
         btnDokter.setName("btnDokter"); // NOI18N
@@ -593,7 +593,7 @@ public class DlgCariPeriksaRadiologi extends javax.swing.JDialog {
         FormInput.add(NmPtgUbah);
         NmPtgUbah.setBounds(210, 72, 208, 23);
 
-        btnPetugas1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnPetugas1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnPetugas1.setMnemonic('2');
         btnPetugas1.setToolTipText("Alt+2");
         btnPetugas1.setName("btnPetugas1"); // NOI18N
@@ -733,7 +733,7 @@ public class DlgCariPeriksaRadiologi extends javax.swing.JDialog {
         panelisi3.add(nmptg);
         nmptg.setBounds(531, 40, 240, 23);
 
-        btnPasien.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnPasien.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnPasien.setMnemonic('1');
         btnPasien.setToolTipText("Alt+1");
         btnPasien.setName("btnPasien"); // NOI18N
@@ -746,7 +746,7 @@ public class DlgCariPeriksaRadiologi extends javax.swing.JDialog {
         panelisi3.add(btnPasien);
         btnPasien.setBounds(774, 10, 28, 23);
 
-        btnPetugas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnPetugas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnPetugas.setMnemonic('2');
         btnPetugas.setToolTipText("Alt+2");
         btnPetugas.setName("btnPetugas"); // NOI18N
@@ -796,7 +796,7 @@ public class DlgCariPeriksaRadiologi extends javax.swing.JDialog {
         });
         panelisi1.add(TCari);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('5');
         BtnCari.setToolTipText("Alt+5");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -817,7 +817,7 @@ public class DlgCariPeriksaRadiologi extends javax.swing.JDialog {
         label9.setPreferredSize(new java.awt.Dimension(100, 30));
         panelisi1.add(label9);
 
-        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/stop_f2.png"))); // NOI18N
+        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         BtnHapus.setMnemonic('H');
         BtnHapus.setText("Hapus");
         BtnHapus.setToolTipText("Alt+H");
@@ -835,7 +835,7 @@ public class DlgCariPeriksaRadiologi extends javax.swing.JDialog {
         });
         panelisi1.add(BtnHapus);
 
-        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAll.setMnemonic('M');
         BtnAll.setText("Semua");
         BtnAll.setToolTipText("Alt+M");
@@ -853,7 +853,7 @@ public class DlgCariPeriksaRadiologi extends javax.swing.JDialog {
         });
         panelisi1.add(BtnAll);
 
-        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnPrint.setMnemonic('T');
         BtnPrint.setText("Cetak");
         BtnPrint.setToolTipText("Alt+T");
@@ -871,7 +871,7 @@ public class DlgCariPeriksaRadiologi extends javax.swing.JDialog {
         });
         panelisi1.add(BtnPrint);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");

@@ -217,7 +217,7 @@ public final class BPJSCekReferensiKabupaten extends javax.swing.JDialog {
         });
         panelGlass6.add(Kabupaten);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('6');
         BtnCari.setToolTipText("Alt+6");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -250,7 +250,7 @@ public final class BPJSCekReferensiKabupaten extends javax.swing.JDialog {
         NmProp.setPreferredSize(new java.awt.Dimension(150, 23));
         panelGlass6.add(NmProp);
 
-        BtnPropinsi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnPropinsi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnPropinsi.setMnemonic('3');
         BtnPropinsi.setToolTipText("ALt+3");
         BtnPropinsi.setName("BtnPropinsi"); // NOI18N
@@ -266,7 +266,7 @@ public final class BPJSCekReferensiKabupaten extends javax.swing.JDialog {
         jLabel17.setPreferredSize(new java.awt.Dimension(20, 23));
         panelGlass6.add(jLabel17);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");

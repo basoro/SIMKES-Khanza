@@ -210,7 +210,7 @@ public class DlgBubes extends javax.swing.JDialog {
         nmrek.setPreferredSize(new java.awt.Dimension(200, 23));
         panelisi4.add(nmrek);
 
-        BtnCari6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnCari6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnCari6.setMnemonic('1');
         BtnCari6.setToolTipText("Alt+1");
         BtnCari6.setName("BtnCari6"); // NOI18N
@@ -226,7 +226,7 @@ public class DlgBubes extends javax.swing.JDialog {
         label19.setPreferredSize(new java.awt.Dimension(10, 23));
         panelisi4.add(label19);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('2');
         BtnCari.setToolTipText("Alt+2");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -250,7 +250,7 @@ public class DlgBubes extends javax.swing.JDialog {
         panelisi1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
         BtnPrint.setBackground(new java.awt.Color(50, 70, 50));
-        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnPrint.setMnemonic('P');
         BtnPrint.setText("Cetak");
         BtnPrint.setToolTipText("Alt+P");
@@ -272,7 +272,7 @@ public class DlgBubes extends javax.swing.JDialog {
         label9.setPreferredSize(new java.awt.Dimension(365, 30));
         panelisi1.add(label9);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");

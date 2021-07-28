@@ -225,7 +225,7 @@ public class DlgCekStok extends javax.swing.JDialog {
         nmgudang.setPreferredSize(new java.awt.Dimension(180, 23));
         panelisi1.add(nmgudang);
 
-        BtnGudang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnGudang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnGudang.setMnemonic('2');
         BtnGudang.setToolTipText("Alt+2");
         BtnGudang.setName("BtnGudang"); // NOI18N
@@ -251,7 +251,7 @@ public class DlgCekStok extends javax.swing.JDialog {
         });
         panelisi1.add(TCari);
 
-        BtnCari1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari1.setMnemonic('1');
         BtnCari1.setToolTipText("Alt+1");
         BtnCari1.setName("BtnCari1"); // NOI18N
@@ -272,7 +272,7 @@ public class DlgCekStok extends javax.swing.JDialog {
         label10.setPreferredSize(new java.awt.Dimension(20, 23));
         panelisi1.add(label10);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");

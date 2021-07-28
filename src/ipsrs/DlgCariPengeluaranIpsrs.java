@@ -293,7 +293,7 @@ public class DlgCariPengeluaranIpsrs extends javax.swing.JDialog {
         ppHapus.setBackground(new java.awt.Color(242, 242, 242));
         ppHapus.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppHapus.setForeground(new java.awt.Color(102, 51, 0));
-        ppHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppHapus.setText("Hapus Data Stok Keluar");
         ppHapus.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppHapus.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -365,7 +365,7 @@ public class DlgCariPengeluaranIpsrs extends javax.swing.JDialog {
         });
         panelisi1.add(TCari);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('5');
         BtnCari.setToolTipText("Alt+5");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -393,7 +393,7 @@ public class DlgCariPengeluaranIpsrs extends javax.swing.JDialog {
         LTotal.setPreferredSize(new java.awt.Dimension(120, 30));
         panelisi1.add(LTotal);
 
-        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAll.setMnemonic('M');
         BtnAll.setText("Semua");
         BtnAll.setToolTipText("Alt+M");
@@ -411,7 +411,7 @@ public class DlgCariPengeluaranIpsrs extends javax.swing.JDialog {
         });
         panelisi1.add(BtnAll);
 
-        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnPrint.setMnemonic('T');
         BtnPrint.setText("Cetak");
         BtnPrint.setToolTipText("Alt+T");
@@ -429,7 +429,7 @@ public class DlgCariPengeluaranIpsrs extends javax.swing.JDialog {
         });
         panelisi1.add(BtnPrint);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");
@@ -469,7 +469,7 @@ public class DlgCariPengeluaranIpsrs extends javax.swing.JDialog {
         panelisi4.add(nmbar);
         nmbar.setBounds(501, 10, 230, 23);
 
-        btnBarang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnBarang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnBarang.setMnemonic('4');
         btnBarang.setToolTipText("Alt+4");
         btnBarang.setName("btnBarang"); // NOI18N
@@ -488,7 +488,7 @@ public class DlgCariPengeluaranIpsrs extends javax.swing.JDialog {
         panelisi4.add(label17);
         label17.setBounds(325, 10, 60, 23);
 
-        btnJenis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnJenis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnJenis.setMnemonic('1');
         btnJenis.setToolTipText("Alt+1");
         btnJenis.setName("btnJenis"); // NOI18N
@@ -585,7 +585,7 @@ public class DlgCariPengeluaranIpsrs extends javax.swing.JDialog {
         panelisi3.add(nmptg);
         nmptg.setBounds(471, 10, 260, 23);
 
-        btnPetugas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnPetugas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnPetugas.setMnemonic('2');
         btnPetugas.setToolTipText("Alt+2");
         btnPetugas.setName("btnPetugas"); // NOI18N

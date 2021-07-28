@@ -275,7 +275,7 @@ public final class SisruteRujukanMasukan extends javax.swing.JDialog {
         internalFrame5.setName("internalFrame5"); // NOI18N
         internalFrame5.setLayout(null);
 
-        BtnCloseIn4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/cross.png"))); // NOI18N
+        BtnCloseIn4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cross.png"))); // NOI18N
         BtnCloseIn4.setMnemonic('U');
         BtnCloseIn4.setText("Tutup");
         BtnCloseIn4.setToolTipText("Alt+U");
@@ -288,7 +288,7 @@ public final class SisruteRujukanMasukan extends javax.swing.JDialog {
         internalFrame5.add(BtnCloseIn4);
         BtnCloseIn4.setBounds(420, 72, 100, 30);
 
-        BtnSimpan4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan4.setMnemonic('S');
         BtnSimpan4.setText("Simpan");
         BtnSimpan4.setToolTipText("Alt+S");
@@ -351,7 +351,7 @@ public final class SisruteRujukanMasukan extends javax.swing.JDialog {
         internalFrame5.add(Nama);
         Nama.setBounds(167, 82, 191, 23);
 
-        BtnPegawai.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnPegawai.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnPegawai.setMnemonic('1');
         BtnPegawai.setToolTipText("ALt+1");
         BtnPegawai.setName("BtnPegawai"); // NOI18N
@@ -444,7 +444,7 @@ public final class SisruteRujukanMasukan extends javax.swing.JDialog {
         });
         panelGlass8.add(TCari);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('2');
         BtnCari.setToolTipText("Alt+2");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -478,7 +478,7 @@ public final class SisruteRujukanMasukan extends javax.swing.JDialog {
         LCount.setPreferredSize(new java.awt.Dimension(95, 23));
         panelGlass5.add(LCount);
 
-        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAll.setMnemonic('M');
         BtnAll.setText("Semua");
         BtnAll.setToolTipText("Alt+M");
@@ -496,7 +496,7 @@ public final class SisruteRujukanMasukan extends javax.swing.JDialog {
         });
         panelGlass5.add(BtnAll);
 
-        BtnJawab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/file-edit-16x16.png"))); // NOI18N
+        BtnJawab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/file-edit-16x16.png"))); // NOI18N
         BtnJawab.setMnemonic('J');
         BtnJawab.setText("Jawab");
         BtnJawab.setToolTipText("Alt+J");
@@ -514,7 +514,7 @@ public final class SisruteRujukanMasukan extends javax.swing.JDialog {
         });
         panelGlass5.add(BtnJawab);
 
-        BtnRegist.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/add-file-16x16.png"))); // NOI18N
+        BtnRegist.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/add-file-16x16.png"))); // NOI18N
         BtnRegist.setMnemonic('G');
         BtnRegist.setText("Regist");
         BtnRegist.setToolTipText("Alt+G");
@@ -532,7 +532,7 @@ public final class SisruteRujukanMasukan extends javax.swing.JDialog {
         });
         panelGlass5.add(BtnRegist);
 
-        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnPrint.setMnemonic('T');
         BtnPrint.setText("Cetak");
         BtnPrint.setToolTipText("Alt+T");
@@ -545,7 +545,7 @@ public final class SisruteRujukanMasukan extends javax.swing.JDialog {
         });
         panelGlass5.add(BtnPrint);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");

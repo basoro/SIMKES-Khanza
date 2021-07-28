@@ -99,14 +99,14 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/picture/splashscreen-yaski.png"/>
+          <Image iconType="3" name="/icons/splashscreen-yaski.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/picture/splashscreen-yaski.png"/>
+          <Image iconType="3" name="/icons/splashscreen-yaski.png"/>
         </Property>
       </Properties>
     </Component>

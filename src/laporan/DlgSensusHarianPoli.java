@@ -246,7 +246,7 @@ public final class DlgSensusHarianPoli extends javax.swing.JDialog {
         });
         panelGlass5.add(TCari);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('2');
         BtnCari.setToolTipText("Alt+2");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -263,7 +263,7 @@ public final class DlgSensusHarianPoli extends javax.swing.JDialog {
         });
         panelGlass5.add(BtnCari);
 
-        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAll.setMnemonic('M');
         BtnAll.setToolTipText("Alt+M");
         BtnAll.setName("BtnAll"); // NOI18N
@@ -284,7 +284,7 @@ public final class DlgSensusHarianPoli extends javax.swing.JDialog {
         jLabel8.setPreferredSize(new java.awt.Dimension(30, 23));
         panelGlass5.add(jLabel8);
 
-        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnPrint.setMnemonic('T');
         BtnPrint.setText("Cetak");
         BtnPrint.setToolTipText("Alt+T");
@@ -302,7 +302,7 @@ public final class DlgSensusHarianPoli extends javax.swing.JDialog {
         });
         panelGlass5.add(BtnPrint);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");
@@ -346,7 +346,7 @@ public final class DlgSensusHarianPoli extends javax.swing.JDialog {
         nmpoli.setPreferredSize(new java.awt.Dimension(215, 23));
         panelisi4.add(nmpoli);
 
-        BtnSeek2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSeek2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeek2.setMnemonic('3');
         BtnSeek2.setToolTipText("Alt+3");
         BtnSeek2.setName("BtnSeek2"); // NOI18N
@@ -383,7 +383,7 @@ public final class DlgSensusHarianPoli extends javax.swing.JDialog {
         nmpenjab.setPreferredSize(new java.awt.Dimension(215, 23));
         panelisi4.add(nmpenjab);
 
-        BtnSeek3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSeek3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeek3.setMnemonic('3');
         BtnSeek3.setToolTipText("Alt+3");
         BtnSeek3.setName("BtnSeek3"); // NOI18N

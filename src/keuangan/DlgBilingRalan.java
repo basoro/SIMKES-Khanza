@@ -787,7 +787,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         MnInputTindakan.setBackground(new java.awt.Color(255, 255, 254));
         MnInputTindakan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnInputTindakan.setForeground(new java.awt.Color(50, 50, 50));
-        MnInputTindakan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnInputTindakan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnInputTindakan.setText("Input Tindakan Ralan");
         MnInputTindakan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnInputTindakan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -803,7 +803,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         MnInputObat.setBackground(new java.awt.Color(255, 255, 254));
         MnInputObat.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnInputObat.setForeground(new java.awt.Color(50, 50, 50));
-        MnInputObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnInputObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnInputObat.setText("Input Obat/Barang/Alkes");
         MnInputObat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnInputObat.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -819,7 +819,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         MnPeriksaLab.setBackground(new java.awt.Color(255, 255, 254));
         MnPeriksaLab.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPeriksaLab.setForeground(new java.awt.Color(50, 50, 50));
-        MnPeriksaLab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPeriksaLab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPeriksaLab.setText("Input Periksa Lab");
         MnPeriksaLab.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnPeriksaLab.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -835,7 +835,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         MnPeriksaRadiologi.setBackground(new java.awt.Color(255, 255, 254));
         MnPeriksaRadiologi.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPeriksaRadiologi.setForeground(new java.awt.Color(50, 50, 50));
-        MnPeriksaRadiologi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPeriksaRadiologi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPeriksaRadiologi.setText("Input Periksa Radiologi");
         MnPeriksaRadiologi.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnPeriksaRadiologi.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -851,7 +851,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         MnTambahan.setBackground(new java.awt.Color(255, 255, 254));
         MnTambahan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnTambahan.setForeground(new java.awt.Color(50, 50, 50));
-        MnTambahan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnTambahan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnTambahan.setText("Tambahan Biaya");
         MnTambahan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnTambahan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -867,7 +867,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         MnPotongan.setBackground(new java.awt.Color(255, 255, 254));
         MnPotongan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPotongan.setForeground(new java.awt.Color(50, 50, 50));
-        MnPotongan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPotongan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPotongan.setText("Potongan Biaya");
         MnPotongan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnPotongan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -883,7 +883,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         MnOperasi.setBackground(new java.awt.Color(255, 255, 254));
         MnOperasi.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnOperasi.setForeground(new java.awt.Color(50, 50, 50));
-        MnOperasi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnOperasi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnOperasi.setText("Tagihan Operasi/VK");
         MnOperasi.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnOperasi.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -899,7 +899,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         MnObatLangsung.setBackground(new java.awt.Color(255, 255, 254));
         MnObatLangsung.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnObatLangsung.setForeground(new java.awt.Color(50, 50, 50));
-        MnObatLangsung.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnObatLangsung.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnObatLangsung.setText("Tagihan BHP & Obat");
         MnObatLangsung.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnObatLangsung.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -915,7 +915,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         MnPoli.setBackground(new java.awt.Color(255, 255, 254));
         MnPoli.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPoli.setForeground(new java.awt.Color(50, 50, 50));
-        MnPoli.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPoli.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPoli.setText("Ganti Poliklinik");
         MnPoli.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnPoli.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -931,7 +931,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         MnDokter.setBackground(new java.awt.Color(255, 255, 254));
         MnDokter.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnDokter.setForeground(new java.awt.Color(50, 50, 50));
-        MnDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnDokter.setText("Ganti Dokter Poli");
         MnDokter.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnDokter.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -947,7 +947,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         MnPenjab.setBackground(new java.awt.Color(255, 255, 254));
         MnPenjab.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPenjab.setForeground(new java.awt.Color(50, 50, 50));
-        MnPenjab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPenjab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPenjab.setText("Ganti Jenis Bayar");
         MnPenjab.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnPenjab.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -963,7 +963,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         MnRawatJalan.setBackground(new java.awt.Color(255, 255, 254));
         MnRawatJalan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnRawatJalan.setForeground(new java.awt.Color(50, 50, 50));
-        MnRawatJalan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnRawatJalan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnRawatJalan.setText("Data Tagihan/Tindakan Rawat Jalan");
         MnRawatJalan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnRawatJalan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -979,7 +979,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         MnPemberianObat.setBackground(new java.awt.Color(255, 255, 254));
         MnPemberianObat.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPemberianObat.setForeground(new java.awt.Color(50, 50, 50));
-        MnPemberianObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPemberianObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPemberianObat.setText("Data Pemberian Obat");
         MnPemberianObat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnPemberianObat.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -995,7 +995,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         MnCariPeriksaLab.setBackground(new java.awt.Color(255, 255, 254));
         MnCariPeriksaLab.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnCariPeriksaLab.setForeground(new java.awt.Color(50, 50, 50));
-        MnCariPeriksaLab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnCariPeriksaLab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnCariPeriksaLab.setText("Data Pemeriksaan Lab");
         MnCariPeriksaLab.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnCariPeriksaLab.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1011,7 +1011,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         MnCariRadiologi.setBackground(new java.awt.Color(255, 255, 254));
         MnCariRadiologi.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnCariRadiologi.setForeground(new java.awt.Color(50, 50, 50));
-        MnCariRadiologi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnCariRadiologi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnCariRadiologi.setText("Data Pemeriksaan Radiologi");
         MnCariRadiologi.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnCariRadiologi.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1027,7 +1027,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         MnPenjualan.setBackground(new java.awt.Color(255, 255, 254));
         MnPenjualan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPenjualan.setForeground(new java.awt.Color(50, 50, 50));
-        MnPenjualan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPenjualan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPenjualan.setText("Penjualan Obat/Alkes/Barang");
         MnPenjualan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnPenjualan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1043,7 +1043,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         MnHapusTagihan.setBackground(new java.awt.Color(255, 255, 254));
         MnHapusTagihan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusTagihan.setForeground(new java.awt.Color(50, 50, 50));
-        MnHapusTagihan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusTagihan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusTagihan.setText("Hapus Nota Salah");
         MnHapusTagihan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusTagihan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1066,7 +1066,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         internalFrame3.setWarnaBawah(new java.awt.Color(240, 245, 235));
         internalFrame3.setLayout(null);
 
-        BtnCloseIn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/cross.png"))); // NOI18N
+        BtnCloseIn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cross.png"))); // NOI18N
         BtnCloseIn1.setMnemonic('U');
         BtnCloseIn1.setText("Tutup");
         BtnCloseIn1.setToolTipText("Alt+U");
@@ -1084,7 +1084,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         internalFrame3.add(BtnCloseIn1);
         BtnCloseIn1.setBounds(510, 30, 100, 30);
 
-        BtnSimpan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan1.setMnemonic('S');
         BtnSimpan1.setText("Simpan");
         BtnSimpan1.setToolTipText("Alt+S");
@@ -1127,7 +1127,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         internalFrame3.add(TDokter);
         TDokter.setBounds(183, 32, 181, 23);
 
-        btnCariDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnCariDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnCariDokter.setMnemonic('7');
         btnCariDokter.setToolTipText("ALt+7");
         btnCariDokter.setName("btnCariDokter"); // NOI18N
@@ -1167,7 +1167,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         internalFrame2.add(jLabel8);
         jLabel8.setBounds(0, 30, 57, 23);
 
-        BtnCloseIn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/cross.png"))); // NOI18N
+        BtnCloseIn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cross.png"))); // NOI18N
         BtnCloseIn.setMnemonic('U');
         BtnCloseIn.setText("Tutup");
         BtnCloseIn.setToolTipText("Alt+U");
@@ -1185,7 +1185,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         internalFrame2.add(BtnCloseIn);
         BtnCloseIn.setBounds(465, 30, 100, 30);
 
-        BtnSimpan2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan2.setMnemonic('S');
         BtnSimpan2.setText("Simpan");
         BtnSimpan2.setToolTipText("Alt+S");
@@ -1203,7 +1203,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         internalFrame2.add(BtnSimpan2);
         BtnSimpan2.setBounds(255, 30, 100, 30);
 
-        BtnBatal1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/stop_f2.png"))); // NOI18N
+        BtnBatal1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         BtnBatal1.setMnemonic('H');
         BtnBatal1.setText("Hapus");
         BtnBatal1.setToolTipText("Alt+H");
@@ -1271,7 +1271,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         });
         panelisi1.add(norawat);
 
-        BtnTambah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/add-file-16x16.png"))); // NOI18N
+        BtnTambah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/add-file-16x16.png"))); // NOI18N
         BtnTambah.setMnemonic('T');
         BtnTambah.setText("Tambah");
         BtnTambah.setToolTipText("Alt+T");
@@ -1284,7 +1284,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         });
         panelisi1.add(BtnTambah);
 
-        BtnSimpan3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan3.setMnemonic('S');
         BtnSimpan3.setText("Simpan");
         BtnSimpan3.setToolTipText("Alt+S");
@@ -1296,7 +1296,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         });
         panelisi1.add(BtnSimpan3);
 
-        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/stop_f2.png"))); // NOI18N
+        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         BtnHapus.setMnemonic('H');
         BtnHapus.setText("Hapus");
         BtnHapus.setToolTipText("Alt+H");
@@ -1309,7 +1309,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         });
         panelisi1.add(BtnHapus);
 
-        BtnKeluar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/cross.png"))); // NOI18N
+        BtnKeluar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cross.png"))); // NOI18N
         BtnKeluar1.setMnemonic('U');
         BtnKeluar1.setText("Tutup");
         BtnKeluar1.setToolTipText("Alt+U");
@@ -1336,7 +1336,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         internalFrame5.setWarnaBawah(new java.awt.Color(240, 245, 235));
         internalFrame5.setLayout(null);
 
-        BtnCloseIn4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/cross.png"))); // NOI18N
+        BtnCloseIn4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cross.png"))); // NOI18N
         BtnCloseIn4.setMnemonic('U');
         BtnCloseIn4.setText("Tutup");
         BtnCloseIn4.setToolTipText("Alt+U");
@@ -1349,7 +1349,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         internalFrame5.add(BtnCloseIn4);
         BtnCloseIn4.setBounds(510, 30, 100, 30);
 
-        BtnSimpan4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan4.setMnemonic('S');
         BtnSimpan4.setText("Simpan");
         BtnSimpan4.setToolTipText("Alt+S");
@@ -1382,7 +1382,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         internalFrame5.add(nmpoli);
         nmpoli.setBounds(183, 32, 181, 23);
 
-        btnCariPoli.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnCariPoli.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnCariPoli.setMnemonic('7');
         btnCariPoli.setToolTipText("ALt+7");
         btnCariPoli.setName("btnCariPoli"); // NOI18N
@@ -1444,7 +1444,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         });
         panelisi2.add(norawatpotongan);
 
-        BtnTambahPotongan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/add-file-16x16.png"))); // NOI18N
+        BtnTambahPotongan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/add-file-16x16.png"))); // NOI18N
         BtnTambahPotongan.setMnemonic('T');
         BtnTambahPotongan.setText("Tambah");
         BtnTambahPotongan.setToolTipText("Alt+T");
@@ -1457,7 +1457,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         });
         panelisi2.add(BtnTambahPotongan);
 
-        BtnSimpanPotongan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpanPotongan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpanPotongan.setMnemonic('S');
         BtnSimpanPotongan.setText("Simpan");
         BtnSimpanPotongan.setToolTipText("Alt+S");
@@ -1469,7 +1469,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         });
         panelisi2.add(BtnSimpanPotongan);
 
-        BtnHapusPotongan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/stop_f2.png"))); // NOI18N
+        BtnHapusPotongan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         BtnHapusPotongan.setMnemonic('H');
         BtnHapusPotongan.setText("Hapus");
         BtnHapusPotongan.setToolTipText("Alt+H");
@@ -1482,7 +1482,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         });
         panelisi2.add(BtnHapusPotongan);
 
-        BtnKeluarPotongan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/cross.png"))); // NOI18N
+        BtnKeluarPotongan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cross.png"))); // NOI18N
         BtnKeluarPotongan.setMnemonic('U');
         BtnKeluarPotongan.setText("Tutup");
         BtnKeluarPotongan.setToolTipText("Alt+U");
@@ -1509,7 +1509,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         internalFrame7.setWarnaBawah(new java.awt.Color(240, 245, 235));
         internalFrame7.setLayout(null);
 
-        BtnCloseIn5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/cross.png"))); // NOI18N
+        BtnCloseIn5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cross.png"))); // NOI18N
         BtnCloseIn5.setMnemonic('P');
         BtnCloseIn5.setText("Tutup");
         BtnCloseIn5.setToolTipText("Alt+P");
@@ -1522,7 +1522,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         internalFrame7.add(BtnCloseIn5);
         BtnCloseIn5.setBounds(510, 30, 100, 30);
 
-        BtnSimpan5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan5.setMnemonic('S');
         BtnSimpan5.setText("Simpan");
         BtnSimpan5.setToolTipText("Alt+S");
@@ -1554,7 +1554,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         internalFrame7.add(nmpenjab);
         nmpenjab.setBounds(183, 32, 181, 23);
 
-        btnPenjab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnPenjab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnPenjab.setMnemonic('7');
         btnPenjab.setToolTipText("ALt+7");
         btnPenjab.setName("btnPenjab"); // NOI18N
@@ -1573,7 +1573,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         ppBersihkan.setBackground(new java.awt.Color(255, 255, 254));
         ppBersihkan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBersihkan.setForeground(new java.awt.Color(50, 50, 50));
-        ppBersihkan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppBersihkan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppBersihkan.setText("Bersihkan Pembayaran");
         ppBersihkan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBersihkan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1591,7 +1591,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         ppBersihkan1.setBackground(new java.awt.Color(255, 255, 254));
         ppBersihkan1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBersihkan1.setForeground(new java.awt.Color(50, 50, 50));
-        ppBersihkan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppBersihkan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppBersihkan1.setText("Bersihkan Piutang");
         ppBersihkan1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBersihkan1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1642,7 +1642,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         TPasien.setPreferredSize(new java.awt.Dimension(320, 23));
         panelGlass1.add(TPasien);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('R');
         BtnCari.setToolTipText("Alt+R");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -1967,7 +1967,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         panelBayar.add(TCari);
         TCari.setBounds(110, 67, 762, 23);
 
-        BtnCariBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCariBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCariBayar.setMnemonic('3');
         BtnCariBayar.setToolTipText("Alt+3");
         BtnCariBayar.setName("BtnCariBayar"); // NOI18N
@@ -1995,7 +1995,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         panelBayar.add(TCari1);
         TCari1.setBounds(110, 222, 762, 23);
 
-        btnCariPiutang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        btnCariPiutang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         btnCariPiutang.setMnemonic('3');
         btnCariPiutang.setToolTipText("Alt+3");
         btnCariPiutang.setName("btnCariPiutang"); // NOI18N
@@ -2097,7 +2097,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         panelGlass8.setPreferredSize(new java.awt.Dimension(55, 55));
         panelGlass8.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
-        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan.setMnemonic('S');
         BtnSimpan.setText("Simpan");
         BtnSimpan.setToolTipText("Alt+S");
@@ -2117,7 +2117,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         });
         panelGlass8.add(BtnSimpan);
 
-        BtnNota.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Agenda-1-16x16.png"))); // NOI18N
+        BtnNota.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Agenda-1-16x16.png"))); // NOI18N
         BtnNota.setMnemonic('N');
         BtnNota.setText(" Nota");
         BtnNota.setToolTipText("Alt+N");
@@ -2137,7 +2137,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         });
         panelGlass8.add(BtnNota);
 
-        BtnView.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnView.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnView.setMnemonic('L');
         BtnView.setText("Lihat");
         BtnView.setToolTipText("Alt+L");
@@ -2157,7 +2157,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
         });
         panelGlass8.add(BtnView);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");

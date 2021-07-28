@@ -161,7 +161,7 @@ public final class DlgInputResepPulang extends javax.swing.JDialog {
 
         ppOrder.setBackground(new java.awt.Color(242, 242, 242));
         ppOrder.setForeground(new java.awt.Color(70, 70, 70));
-        ppOrder.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        ppOrder.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         ppOrder.setText("Urutkan Berdasar");
         ppOrder.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppOrder.setIconTextGap(8);
@@ -170,7 +170,7 @@ public final class DlgInputResepPulang extends javax.swing.JDialog {
 
         ppOrderKode.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppOrderKode.setForeground(new java.awt.Color(70, 70, 70));
-        ppOrderKode.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        ppOrderKode.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         ppOrderKode.setText("Kode Obat");
         ppOrderKode.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppOrderKode.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -186,7 +186,7 @@ public final class DlgInputResepPulang extends javax.swing.JDialog {
 
         ppOrderNama.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppOrderNama.setForeground(new java.awt.Color(70, 70, 70));
-        ppOrderNama.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        ppOrderNama.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         ppOrderNama.setText("Nama Obat");
         ppOrderNama.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppOrderNama.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -204,7 +204,7 @@ public final class DlgInputResepPulang extends javax.swing.JDialog {
 
         ppBersihkan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBersihkan.setForeground(new java.awt.Color(70, 70, 70));
-        ppBersihkan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/stop_f2.png"))); // NOI18N
+        ppBersihkan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         ppBersihkan.setText("Bersihkan Jumlah");
         ppBersihkan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBersihkan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -220,7 +220,7 @@ public final class DlgInputResepPulang extends javax.swing.JDialog {
 
         ppHapusObat.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppHapusObat.setForeground(new java.awt.Color(70, 70, 70));
-        ppHapusObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/stop_f2.png"))); // NOI18N
+        ppHapusObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         ppHapusObat.setText("Hapus Obat Terpilih");
         ppHapusObat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppHapusObat.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -310,7 +310,7 @@ public final class DlgInputResepPulang extends javax.swing.JDialog {
         });
         panelisi3.add(TCari);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('1');
         BtnCari.setToolTipText("Alt+1");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -327,7 +327,7 @@ public final class DlgInputResepPulang extends javax.swing.JDialog {
         });
         panelisi3.add(BtnCari);
 
-        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAll.setMnemonic('2');
         BtnAll.setToolTipText("Alt+2");
         BtnAll.setName("BtnAll"); // NOI18N
@@ -344,7 +344,7 @@ public final class DlgInputResepPulang extends javax.swing.JDialog {
         });
         panelisi3.add(BtnAll);
 
-        BtnTambah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/plus_16.png"))); // NOI18N
+        BtnTambah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/plus_16.png"))); // NOI18N
         BtnTambah.setMnemonic('3');
         BtnTambah.setToolTipText("Alt+3");
         BtnTambah.setName("BtnTambah"); // NOI18N
@@ -356,7 +356,7 @@ public final class DlgInputResepPulang extends javax.swing.JDialog {
         });
         panelisi3.add(BtnTambah);
 
-        BtnSeek5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/011.png"))); // NOI18N
+        BtnSeek5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/011.png"))); // NOI18N
         BtnSeek5.setMnemonic('4');
         BtnSeek5.setToolTipText("Alt+4");
         BtnSeek5.setName("BtnSeek5"); // NOI18N
@@ -373,7 +373,7 @@ public final class DlgInputResepPulang extends javax.swing.JDialog {
         });
         panelisi3.add(BtnSeek5);
 
-        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan.setMnemonic('S');
         BtnSimpan.setToolTipText("Alt+S");
         BtnSimpan.setName("BtnSimpan"); // NOI18N
@@ -405,7 +405,7 @@ public final class DlgInputResepPulang extends javax.swing.JDialog {
         });
         panelisi3.add(Jeniskelas);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('5');
         BtnKeluar.setToolTipText("Alt+5");
         BtnKeluar.setName("BtnKeluar"); // NOI18N

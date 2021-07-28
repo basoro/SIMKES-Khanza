@@ -437,7 +437,7 @@ public final class RMDataResumePasien extends javax.swing.JDialog {
         MnLaporanResume.setBackground(new java.awt.Color(255, 255, 254));
         MnLaporanResume.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnLaporanResume.setForeground(new java.awt.Color(50, 50, 50));
-        MnLaporanResume.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnLaporanResume.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnLaporanResume.setText("Laporan Resume Pasien");
         MnLaporanResume.setName("MnLaporanResume"); // NOI18N
         MnLaporanResume.setPreferredSize(new java.awt.Dimension(220, 26));
@@ -451,7 +451,7 @@ public final class RMDataResumePasien extends javax.swing.JDialog {
         MnInputDiagnosa.setBackground(new java.awt.Color(255, 255, 254));
         MnInputDiagnosa.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnInputDiagnosa.setForeground(new java.awt.Color(50, 50, 50));
-        MnInputDiagnosa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnInputDiagnosa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnInputDiagnosa.setText("Input Diagnosa Pasien");
         MnInputDiagnosa.setName("MnInputDiagnosa"); // NOI18N
         MnInputDiagnosa.setPreferredSize(new java.awt.Dimension(220, 26));
@@ -465,7 +465,7 @@ public final class RMDataResumePasien extends javax.swing.JDialog {
         ppBerkasDigital.setBackground(new java.awt.Color(255, 255, 254));
         ppBerkasDigital.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBerkasDigital.setForeground(new java.awt.Color(50, 50, 50));
-        ppBerkasDigital.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppBerkasDigital.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppBerkasDigital.setText("Berkas Digital Perawatan");
         ppBerkasDigital.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBerkasDigital.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -518,7 +518,7 @@ public final class RMDataResumePasien extends javax.swing.JDialog {
         panelGlass8.setPreferredSize(new java.awt.Dimension(44, 44));
         panelGlass8.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
-        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan.setMnemonic('S');
         BtnSimpan.setText("Simpan");
         BtnSimpan.setToolTipText("Alt+S");
@@ -536,7 +536,7 @@ public final class RMDataResumePasien extends javax.swing.JDialog {
         });
         panelGlass8.add(BtnSimpan);
 
-        BtnBatal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Cancel-2-16x16.png"))); // NOI18N
+        BtnBatal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Cancel-2-16x16.png"))); // NOI18N
         BtnBatal.setMnemonic('B');
         BtnBatal.setText("Baru");
         BtnBatal.setToolTipText("Alt+B");
@@ -554,7 +554,7 @@ public final class RMDataResumePasien extends javax.swing.JDialog {
         });
         panelGlass8.add(BtnBatal);
 
-        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/stop_f2.png"))); // NOI18N
+        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         BtnHapus.setMnemonic('H');
         BtnHapus.setText("Hapus");
         BtnHapus.setToolTipText("Alt+H");
@@ -572,7 +572,7 @@ public final class RMDataResumePasien extends javax.swing.JDialog {
         });
         panelGlass8.add(BtnHapus);
 
-        BtnEdit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/inventaris.png"))); // NOI18N
+        BtnEdit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/inventaris.png"))); // NOI18N
         BtnEdit.setMnemonic('G');
         BtnEdit.setText("Ganti");
         BtnEdit.setToolTipText("Alt+G");
@@ -590,7 +590,7 @@ public final class RMDataResumePasien extends javax.swing.JDialog {
         });
         panelGlass8.add(BtnEdit);
 
-        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnPrint.setMnemonic('T');
         BtnPrint.setText("Cetak");
         BtnPrint.setToolTipText("Alt+T");
@@ -619,7 +619,7 @@ public final class RMDataResumePasien extends javax.swing.JDialog {
         LCount.setPreferredSize(new java.awt.Dimension(70, 23));
         panelGlass8.add(LCount);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");
@@ -684,7 +684,7 @@ public final class RMDataResumePasien extends javax.swing.JDialog {
         });
         panelGlass9.add(TCari);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('3');
         BtnCari.setToolTipText("Alt+3");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -701,7 +701,7 @@ public final class RMDataResumePasien extends javax.swing.JDialog {
         });
         panelGlass9.add(BtnCari);
 
-        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAll.setMnemonic('M');
         BtnAll.setToolTipText("Alt+M");
         BtnAll.setName("BtnAll"); // NOI18N
@@ -727,7 +727,7 @@ public final class RMDataResumePasien extends javax.swing.JDialog {
         PanelInput.setPreferredSize(new java.awt.Dimension(192, 448));
         PanelInput.setLayout(new java.awt.BorderLayout(1, 1));
 
-        ChkInput.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/143.png"))); // NOI18N
+        ChkInput.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/143.png"))); // NOI18N
         ChkInput.setMnemonic('I');
         ChkInput.setText(".: Input Data");
         ChkInput.setToolTipText("Alt+I");
@@ -738,9 +738,9 @@ public final class RMDataResumePasien extends javax.swing.JDialog {
         ChkInput.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         ChkInput.setName("ChkInput"); // NOI18N
         ChkInput.setPreferredSize(new java.awt.Dimension(192, 20));
-        ChkInput.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/143.png"))); // NOI18N
-        ChkInput.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/145.png"))); // NOI18N
-        ChkInput.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/145.png"))); // NOI18N
+        ChkInput.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/143.png"))); // NOI18N
+        ChkInput.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/145.png"))); // NOI18N
+        ChkInput.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/145.png"))); // NOI18N
         ChkInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ChkInputActionPerformed(evt);
@@ -1161,7 +1161,7 @@ public final class RMDataResumePasien extends javax.swing.JDialog {
         FormInput.add(NamaDokter);
         NamaDokter.setBounds(247, 40, 270, 23);
 
-        BtnDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnDokter.setMnemonic('2');
         BtnDokter.setToolTipText("Alt+2");
         BtnDokter.setName("BtnDokter"); // NOI18N
@@ -1194,7 +1194,7 @@ public final class RMDataResumePasien extends javax.swing.JDialog {
         FormInput.add(jLabel12);
         jLabel12.setBounds(551, 40, 130, 23);
 
-        BtnDokter1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnDokter1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnDokter1.setMnemonic('2');
         BtnDokter1.setToolTipText("Alt+2");
         BtnDokter1.setName("BtnDokter1"); // NOI18N
@@ -1207,7 +1207,7 @@ public final class RMDataResumePasien extends javax.swing.JDialog {
         FormInput.add(BtnDokter1);
         BtnDokter1.setBounds(212, 96, 28, 23);
 
-        BtnDokter2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnDokter2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnDokter2.setMnemonic('2');
         BtnDokter2.setToolTipText("Alt+2");
         BtnDokter2.setName("BtnDokter2"); // NOI18N
@@ -1220,7 +1220,7 @@ public final class RMDataResumePasien extends javax.swing.JDialog {
         FormInput.add(BtnDokter2);
         BtnDokter2.setBounds(212, 210, 28, 23);
 
-        BtnDokter3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnDokter3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnDokter3.setMnemonic('2');
         BtnDokter3.setToolTipText("Alt+2");
         BtnDokter3.setName("BtnDokter3"); // NOI18N
@@ -1233,7 +1233,7 @@ public final class RMDataResumePasien extends javax.swing.JDialog {
         FormInput.add(BtnDokter3);
         BtnDokter3.setBounds(212, 267, 28, 23);
 
-        BtnDokter4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnDokter4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnDokter4.setMnemonic('2');
         BtnDokter4.setToolTipText("Alt+2");
         BtnDokter4.setName("BtnDokter4"); // NOI18N
@@ -1781,8 +1781,8 @@ public final class RMDataResumePasien extends javax.swing.JDialog {
                     DlgBerkasRawat berkas=new DlgBerkasRawat(null,true);
                     berkas.setJudul("::[ Berkas Digital Perawatan ]::","berkasrawat/pages");
                     try {
-                        //berkas.loadURL("http://"+koneksiDB.HOST()+":"+koneksiDB.PORTWEB()+"/"+koneksiDB.HYBRIDWEB()+"/"+"berkasrawat/login2.php?act=login&usere=admin&passwordte=akusayangsamakamu&no_rawat="+tbObat.getValueAt(tbObat.getSelectedRow(),2).toString());
-                        berkas.loadURL("http://"+koneksiDB.HOST()+":"+prop.getProperty("PORTWEB")+"/"+prop.getProperty("HYBRIDWEB")+"/"+"berkasrawat/login2.php?act=login&usere=admin&passwordte=akusayangsamakamu&no_rawat="+tbObat.getValueAt(tbObat.getSelectedRow(),2).toString());
+                        //berkas.loadURL("http://"+prop.getProperty("HOSTHYBRIDWEB")+":"+koneksiDB.PORTWEB()+"/"+koneksiDB.HYBRIDWEB()+"/"+"berkasrawat/login2.php?act=login&usere=admin&passwordte=akusayangsamakamu&no_rawat="+tbObat.getValueAt(tbObat.getSelectedRow(),2).toString());
+                        berkas.loadURL("http://"+prop.getProperty("HOSTHYBRIDWEB")+":"+prop.getProperty("PORTWEB")+"/"+prop.getProperty("HYBRIDWEB")+"/"+"berkasrawat/login2.php?act=login&usere=admin&passwordte=akusayangsamakamu&no_rawat="+tbObat.getValueAt(tbObat.getSelectedRow(),2).toString());
                     } catch (Exception ex) {
                         System.out.println("Notifikasi : "+ex);
                     }

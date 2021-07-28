@@ -301,7 +301,7 @@ public class PanelDiagnosa extends widget.panelisi {
 
         MnStatusBaru.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnStatusBaru.setForeground(new java.awt.Color(70, 70, 70));
-        MnStatusBaru.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnStatusBaru.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnStatusBaru.setText("Status Penyakit Baru");
         MnStatusBaru.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnStatusBaru.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -315,7 +315,7 @@ public class PanelDiagnosa extends widget.panelisi {
 
         MnStatusLama.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnStatusLama.setForeground(new java.awt.Color(70, 70, 70));
-        MnStatusLama.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnStatusLama.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnStatusLama.setText("Status Penyakit Lama");
         MnStatusLama.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnStatusLama.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -359,7 +359,7 @@ public class PanelDiagnosa extends widget.panelisi {
         FormData.add(Diagnosa);
         Diagnosa.setBounds(71, 10, 687, 23);
 
-        BtnCariPenyakit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCariPenyakit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCariPenyakit.setMnemonic('1');
         BtnCariPenyakit.setToolTipText("Alt+1");
         BtnCariPenyakit.setPreferredSize(new java.awt.Dimension(28, 23));
@@ -371,7 +371,7 @@ public class PanelDiagnosa extends widget.panelisi {
         FormData.add(BtnCariPenyakit);
         BtnCariPenyakit.setBounds(761, 10, 28, 23);
 
-        btnTambahPenyakit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/plus_16.png"))); // NOI18N
+        btnTambahPenyakit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/plus_16.png"))); // NOI18N
         btnTambahPenyakit.setMnemonic('2');
         btnTambahPenyakit.setToolTipText("Alt+2");
         btnTambahPenyakit.addActionListener(new java.awt.event.ActionListener() {
@@ -404,7 +404,7 @@ public class PanelDiagnosa extends widget.panelisi {
         FormData.add(Prosedur);
         Prosedur.setBounds(71, 211, 687, 23);
 
-        btnTambahProsedur.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/plus_16.png"))); // NOI18N
+        btnTambahProsedur.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/plus_16.png"))); // NOI18N
         btnTambahProsedur.setMnemonic('2');
         btnTambahProsedur.setToolTipText("Alt+2");
         btnTambahProsedur.addActionListener(new java.awt.event.ActionListener() {
@@ -415,7 +415,7 @@ public class PanelDiagnosa extends widget.panelisi {
         FormData.add(btnTambahProsedur);
         btnTambahProsedur.setBounds(792, 211, 28, 23);
 
-        BtnCariProsedur.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCariProsedur.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCariProsedur.setMnemonic('1');
         BtnCariProsedur.setToolTipText("Alt+1");
         BtnCariProsedur.setPreferredSize(new java.awt.Dimension(28, 23));

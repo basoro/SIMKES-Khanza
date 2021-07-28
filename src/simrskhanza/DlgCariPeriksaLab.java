@@ -356,7 +356,7 @@ public class DlgCariPeriksaLab extends javax.swing.JDialog {
 
         MnCetakHasilLab.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnCetakHasilLab.setForeground(new java.awt.Color(70, 70, 70));
-        MnCetakHasilLab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnCetakHasilLab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnCetakHasilLab.setText("Cetak Hasil Lab Model 1");
         MnCetakHasilLab.setName("MnCetakHasilLab"); // NOI18N
         MnCetakHasilLab.setPreferredSize(new java.awt.Dimension(200, 28));
@@ -369,7 +369,7 @@ public class DlgCariPeriksaLab extends javax.swing.JDialog {
 
         MnCetakHasilLab1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnCetakHasilLab1.setForeground(new java.awt.Color(70, 70, 70));
-        MnCetakHasilLab1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnCetakHasilLab1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnCetakHasilLab1.setText("Cetak Hasil Lab Model 2");
         MnCetakHasilLab1.setName("MnCetakHasilLab1"); // NOI18N
         MnCetakHasilLab1.setPreferredSize(new java.awt.Dimension(200, 28));
@@ -382,7 +382,7 @@ public class DlgCariPeriksaLab extends javax.swing.JDialog {
 
         MnCetakHasilLab2.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnCetakHasilLab2.setForeground(new java.awt.Color(70, 70, 70));
-        MnCetakHasilLab2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnCetakHasilLab2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnCetakHasilLab2.setText("Cetak Hasil Lab Model 3");
         MnCetakHasilLab2.setName("MnCetakHasilLab2"); // NOI18N
         MnCetakHasilLab2.setPreferredSize(new java.awt.Dimension(200, 28));
@@ -395,7 +395,7 @@ public class DlgCariPeriksaLab extends javax.swing.JDialog {
 
         MnCetakHasilLab3.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnCetakHasilLab3.setForeground(new java.awt.Color(70, 70, 70));
-        MnCetakHasilLab3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnCetakHasilLab3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnCetakHasilLab3.setText("Cetak Hasil Lab Model 4");
         MnCetakHasilLab3.setName("MnCetakHasilLab3"); // NOI18N
         MnCetakHasilLab3.setPreferredSize(new java.awt.Dimension(200, 28));
@@ -408,7 +408,7 @@ public class DlgCariPeriksaLab extends javax.swing.JDialog {
 
         MnCetakHasilLab4.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnCetakHasilLab4.setForeground(new java.awt.Color(70, 70, 70));
-        MnCetakHasilLab4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnCetakHasilLab4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnCetakHasilLab4.setText("Cetak Hasil Lab Model 5");
         MnCetakHasilLab4.setName("MnCetakHasilLab4"); // NOI18N
         MnCetakHasilLab4.setPreferredSize(new java.awt.Dimension(200, 28));
@@ -421,7 +421,7 @@ public class DlgCariPeriksaLab extends javax.swing.JDialog {
 
         MnCetakHasilLab5.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnCetakHasilLab5.setForeground(new java.awt.Color(70, 70, 70));
-        MnCetakHasilLab5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnCetakHasilLab5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnCetakHasilLab5.setText("Cetak Hasil Lab Model 6");
         MnCetakHasilLab5.setName("MnCetakHasilLab5"); // NOI18N
         MnCetakHasilLab5.setPreferredSize(new java.awt.Dimension(200, 28));
@@ -434,7 +434,7 @@ public class DlgCariPeriksaLab extends javax.swing.JDialog {
 
         MnCetakHasilLab6.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnCetakHasilLab6.setForeground(new java.awt.Color(70, 70, 70));
-        MnCetakHasilLab6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnCetakHasilLab6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnCetakHasilLab6.setText("Cetak Hasil Lab Model 7");
         MnCetakHasilLab6.setName("MnCetakHasilLab6"); // NOI18N
         MnCetakHasilLab6.setPreferredSize(new java.awt.Dimension(200, 28));
@@ -447,7 +447,7 @@ public class DlgCariPeriksaLab extends javax.swing.JDialog {
 
         MnCetakHasilLab7.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnCetakHasilLab7.setForeground(new java.awt.Color(70, 70, 70));
-        MnCetakHasilLab7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnCetakHasilLab7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnCetakHasilLab7.setText("Cetak Hasil Lab Model 8");
         MnCetakHasilLab7.setName("MnCetakHasilLab7"); // NOI18N
         MnCetakHasilLab7.setPreferredSize(new java.awt.Dimension(200, 28));
@@ -460,7 +460,7 @@ public class DlgCariPeriksaLab extends javax.swing.JDialog {
 
         MnCetakHasilLab8.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnCetakHasilLab8.setForeground(new java.awt.Color(70, 70, 70));
-        MnCetakHasilLab8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnCetakHasilLab8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnCetakHasilLab8.setText("Cetak Hasil Lab Model 9");
         MnCetakHasilLab8.setName("MnCetakHasilLab8"); // NOI18N
         MnCetakHasilLab8.setPreferredSize(new java.awt.Dimension(200, 28));
@@ -473,7 +473,7 @@ public class DlgCariPeriksaLab extends javax.swing.JDialog {
 
         MnCetakHasilLab9.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnCetakHasilLab9.setForeground(new java.awt.Color(70, 70, 70));
-        MnCetakHasilLab9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnCetakHasilLab9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnCetakHasilLab9.setText("Cetak Hasil Lab Model 10");
         MnCetakHasilLab9.setName("MnCetakHasilLab9"); // NOI18N
         MnCetakHasilLab9.setPreferredSize(new java.awt.Dimension(200, 28));
@@ -486,7 +486,7 @@ public class DlgCariPeriksaLab extends javax.swing.JDialog {
 
         MnCetakHasilLab10.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnCetakHasilLab10.setForeground(new java.awt.Color(70, 70, 70));
-        MnCetakHasilLab10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnCetakHasilLab10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnCetakHasilLab10.setText("Cetak Hasil Lab Model 11");
         MnCetakHasilLab10.setName("MnCetakHasilLab10"); // NOI18N
         MnCetakHasilLab10.setPreferredSize(new java.awt.Dimension(200, 28));
@@ -499,7 +499,7 @@ public class DlgCariPeriksaLab extends javax.swing.JDialog {
 
         MnCetakNota.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnCetakNota.setForeground(new java.awt.Color(70, 70, 70));
-        MnCetakNota.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnCetakNota.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnCetakNota.setText("Cetak Nota Lab");
         MnCetakNota.setName("MnCetakNota"); // NOI18N
         MnCetakNota.setPreferredSize(new java.awt.Dimension(200, 28));
@@ -512,7 +512,7 @@ public class DlgCariPeriksaLab extends javax.swing.JDialog {
 
         MnUbah.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUbah.setForeground(new java.awt.Color(70, 70, 70));
-        MnUbah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUbah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUbah.setText("Ubah Periksa Lab");
         MnUbah.setName("MnUbah"); // NOI18N
         MnUbah.setPreferredSize(new java.awt.Dimension(200, 28));
@@ -525,7 +525,7 @@ public class DlgCariPeriksaLab extends javax.swing.JDialog {
 
         MnSaranKesan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnSaranKesan.setForeground(new java.awt.Color(70, 70, 70));
-        MnSaranKesan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnSaranKesan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnSaranKesan.setText("Kesan & Saran");
         MnSaranKesan.setName("MnSaranKesan"); // NOI18N
         MnSaranKesan.setPreferredSize(new java.awt.Dimension(200, 28));
@@ -549,7 +549,7 @@ public class DlgCariPeriksaLab extends javax.swing.JDialog {
         panelGlass6.setPreferredSize(new java.awt.Dimension(55, 55));
         panelGlass6.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
-        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan.setMnemonic('U');
         BtnSimpan.setText("Update");
         BtnSimpan.setToolTipText("Alt+U");
@@ -567,7 +567,7 @@ public class DlgCariPeriksaLab extends javax.swing.JDialog {
         });
         panelGlass6.add(BtnSimpan);
 
-        BtnCloseIn5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/cross.png"))); // NOI18N
+        BtnCloseIn5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cross.png"))); // NOI18N
         BtnCloseIn5.setMnemonic('U');
         BtnCloseIn5.setText("Tutup");
         BtnCloseIn5.setToolTipText("Alt+U");
@@ -710,7 +710,7 @@ public class DlgCariPeriksaLab extends javax.swing.JDialog {
         panelisi3.add(nmptg);
         nmptg.setBounds(531, 40, 240, 23);
 
-        btnPasien.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnPasien.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnPasien.setMnemonic('1');
         btnPasien.setToolTipText("Alt+1");
         btnPasien.setName("btnPasien"); // NOI18N
@@ -723,7 +723,7 @@ public class DlgCariPeriksaLab extends javax.swing.JDialog {
         panelisi3.add(btnPasien);
         btnPasien.setBounds(774, 10, 28, 23);
 
-        btnPetugas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnPetugas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnPetugas.setMnemonic('2');
         btnPetugas.setToolTipText("Alt+2");
         btnPetugas.setName("btnPetugas"); // NOI18N
@@ -773,7 +773,7 @@ public class DlgCariPeriksaLab extends javax.swing.JDialog {
         });
         panelisi1.add(TCari);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('5');
         BtnCari.setToolTipText("Alt+5");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -794,7 +794,7 @@ public class DlgCariPeriksaLab extends javax.swing.JDialog {
         label9.setPreferredSize(new java.awt.Dimension(30, 30));
         panelisi1.add(label9);
 
-        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/stop_f2.png"))); // NOI18N
+        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         BtnHapus.setMnemonic('H');
         BtnHapus.setText("Hapus");
         BtnHapus.setToolTipText("Alt+H");
@@ -812,7 +812,7 @@ public class DlgCariPeriksaLab extends javax.swing.JDialog {
         });
         panelisi1.add(BtnHapus);
 
-        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAll.setMnemonic('M');
         BtnAll.setText("Semua");
         BtnAll.setToolTipText("Alt+M");
@@ -830,7 +830,7 @@ public class DlgCariPeriksaLab extends javax.swing.JDialog {
         });
         panelisi1.add(BtnAll);
 
-        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnPrint.setMnemonic('T');
         BtnPrint.setText("Cetak");
         BtnPrint.setToolTipText("Alt+T");
@@ -848,7 +848,7 @@ public class DlgCariPeriksaLab extends javax.swing.JDialog {
         });
         panelisi1.add(BtnPrint);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");

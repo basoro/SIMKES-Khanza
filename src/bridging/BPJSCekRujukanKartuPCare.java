@@ -1368,7 +1368,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         MnDocument.setBackground(new java.awt.Color(255, 255, 254));
         MnDocument.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnDocument.setForeground(new java.awt.Color(50, 50, 50));
-        MnDocument.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnDocument.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnDocument.setText("Cetak Document");
         MnDocument.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnDocument.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1384,7 +1384,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         ppPengajuan.setBackground(new java.awt.Color(255, 255, 254));
         ppPengajuan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppPengajuan.setForeground(new java.awt.Color(50, 50, 50));
-        ppPengajuan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppPengajuan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppPengajuan.setText("Pengajuan SEP");
         ppPengajuan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppPengajuan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1400,7 +1400,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         ppPengajuan1.setBackground(new java.awt.Color(255, 255, 254));
         ppPengajuan1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppPengajuan1.setForeground(new java.awt.Color(50, 50, 50));
-        ppPengajuan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppPengajuan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppPengajuan1.setText("Aproval SEP");
         ppPengajuan1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppPengajuan1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1495,7 +1495,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         PanelInput.setPreferredSize(new java.awt.Dimension(200, 877));
         PanelInput.setLayout(new java.awt.BorderLayout(1, 1));
 
-        ChkCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/145.png"))); // NOI18N
+        ChkCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/145.png"))); // NOI18N
         ChkCari.setMnemonic('I');
         ChkCari.setText("  .: Input Registrasi");
         ChkCari.setToolTipText("Alt+I");
@@ -1506,9 +1506,9 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         ChkCari.setIconTextGap(2);
         ChkCari.setName("ChkCari"); // NOI18N
         ChkCari.setPreferredSize(new java.awt.Dimension(632, 22));
-        ChkCari.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/145.png"))); // NOI18N
-        ChkCari.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/143.png"))); // NOI18N
-        ChkCari.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/143.png"))); // NOI18N
+        ChkCari.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/145.png"))); // NOI18N
+        ChkCari.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/143.png"))); // NOI18N
+        ChkCari.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/143.png"))); // NOI18N
         ChkCari.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ChkCariActionPerformed(evt);
@@ -1534,7 +1534,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         });
         panelGlass6.add(NoKartu);
 
-        btnPasien.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnPasien.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnPasien.setMnemonic('5');
         btnPasien.setToolTipText("Alt+5");
         btnPasien.setName("btnPasien"); // NOI18N
@@ -1551,7 +1551,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         });
         panelGlass6.add(btnPasien);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('6');
         BtnCari.setToolTipText("Alt+6");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -1572,7 +1572,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         jLabel17.setPreferredSize(new java.awt.Dimension(30, 23));
         panelGlass6.add(jLabel17);
 
-        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnPrint.setMnemonic('T');
         BtnPrint.setText("Cetak");
         BtnPrint.setToolTipText("Alt+T");
@@ -1585,7 +1585,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         });
         panelGlass6.add(BtnPrint);
 
-        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan.setMnemonic('S');
         BtnSimpan.setText("Simpan");
         BtnSimpan.setToolTipText("Alt+S");
@@ -1603,7 +1603,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         });
         panelGlass6.add(BtnSimpan);
 
-        BtnCari1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnCari1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnCari1.setMnemonic('E');
         BtnCari1.setText("Cari");
         BtnCari1.setToolTipText("Alt+E");
@@ -1621,7 +1621,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         });
         panelGlass6.add(BtnCari1);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");
@@ -1891,7 +1891,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         FormKelengkapanPasien.add(nmpnj);
         nmpnj.setBounds(189, 205, 216, 23);
 
-        BtnPenjab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnPenjab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnPenjab.setMnemonic('1');
         BtnPenjab.setToolTipText("ALt+1");
         BtnPenjab.setName("BtnPenjab"); // NOI18N
@@ -1966,7 +1966,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         FormKelengkapanPasien.add(Kabupaten);
         Kabupaten.setBounds(534, 85, 156, 23);
 
-        BtnKelurahan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnKelurahan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnKelurahan.setMnemonic('2');
         BtnKelurahan.setToolTipText("ALt+2");
         BtnKelurahan.setName("BtnKelurahan"); // NOI18N
@@ -1978,7 +1978,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         FormKelengkapanPasien.add(BtnKelurahan);
         BtnKelurahan.setBounds(692, 55, 28, 23);
 
-        BtnKecamatan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnKecamatan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnKecamatan.setMnemonic('3');
         BtnKecamatan.setToolTipText("ALt+3");
         BtnKecamatan.setName("BtnKecamatan"); // NOI18N
@@ -1990,7 +1990,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         FormKelengkapanPasien.add(BtnKecamatan);
         BtnKecamatan.setBounds(881, 55, 28, 23);
 
-        BtnKabupaten.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnKabupaten.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnKabupaten.setMnemonic('4');
         BtnKabupaten.setToolTipText("ALt+4");
         BtnKabupaten.setName("BtnKabupaten"); // NOI18N
@@ -2087,7 +2087,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         FormKelengkapanPasien.add(KecamatanPj);
         KecamatanPj.setBounds(723, 205, 156, 23);
 
-        BtnKecamatanPj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnKecamatanPj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnKecamatanPj.setMnemonic('3');
         BtnKecamatanPj.setToolTipText("ALt+3");
         BtnKecamatanPj.setName("BtnKecamatanPj"); // NOI18N
@@ -2120,7 +2120,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         FormKelengkapanPasien.add(KabupatenPj);
         KabupatenPj.setBounds(534, 235, 156, 23);
 
-        BtnKabupatenPj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnKabupatenPj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnKabupatenPj.setMnemonic('4');
         BtnKabupatenPj.setToolTipText("ALt+4");
         BtnKabupatenPj.setName("BtnKabupatenPj"); // NOI18N
@@ -2132,7 +2132,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         FormKelengkapanPasien.add(BtnKabupatenPj);
         BtnKabupatenPj.setBounds(692, 235, 28, 23);
 
-        BtnKelurahanPj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnKelurahanPj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnKelurahanPj.setMnemonic('2');
         BtnKelurahanPj.setToolTipText("ALt+2");
         BtnKelurahanPj.setName("BtnKelurahanPj"); // NOI18N
@@ -2195,7 +2195,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         FormKelengkapanPasien.add(nmsukubangsa);
         nmsukubangsa.setBounds(107, 235, 298, 23);
 
-        BtnSuku.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSuku.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSuku.setMnemonic('1');
         BtnSuku.setToolTipText("ALt+1");
         BtnSuku.setName("BtnSuku"); // NOI18N
@@ -2222,7 +2222,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         FormKelengkapanPasien.add(nmbahasa);
         nmbahasa.setBounds(107, 265, 298, 23);
 
-        BtnBahasa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnBahasa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnBahasa.setMnemonic('1');
         BtnBahasa.setToolTipText("ALt+1");
         BtnBahasa.setName("BtnBahasa"); // NOI18N
@@ -2249,7 +2249,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         FormKelengkapanPasien.add(nmcacat);
         nmcacat.setBounds(107, 295, 298, 23);
 
-        BtnCacat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnCacat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnCacat.setMnemonic('1');
         BtnCacat.setToolTipText("ALt+1");
         BtnCacat.setName("BtnCacat"); // NOI18N
@@ -2276,7 +2276,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         FormKelengkapanPasien.add(nmperusahaan);
         nmperusahaan.setBounds(534, 265, 340, 23);
 
-        BtnPerusahaan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnPerusahaan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnPerusahaan.setMnemonic('1');
         BtnPerusahaan.setToolTipText("ALt+1");
         BtnPerusahaan.setName("BtnPerusahaan"); // NOI18N
@@ -2344,7 +2344,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         FormKelengkapanPasien.add(Propinsi);
         Propinsi.setBounds(723, 85, 156, 23);
 
-        BtnPropinsi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnPropinsi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnPropinsi.setMnemonic('4');
         BtnPropinsi.setToolTipText("ALt+4");
         BtnPropinsi.setName("BtnPropinsi"); // NOI18N
@@ -2377,7 +2377,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         FormKelengkapanPasien.add(PropinsiPj);
         PropinsiPj.setBounds(723, 235, 156, 23);
 
-        btnPropinsiPj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnPropinsiPj.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnPropinsiPj.setMnemonic('4');
         btnPropinsiPj.setToolTipText("ALt+4");
         btnPropinsiPj.setName("btnPropinsiPj"); // NOI18N
@@ -2481,7 +2481,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         FormKelengkapanSEP.add(NmPPK);
         NmPPK.setBounds(179, 55, 306, 23);
 
-        btnPPKRujukan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnPPKRujukan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnPPKRujukan.setMnemonic('X');
         btnPPKRujukan.setToolTipText("Alt+X");
         btnPPKRujukan.setName("btnPPKRujukan"); // NOI18N
@@ -2536,7 +2536,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         FormKelengkapanSEP.add(NmPenyakit);
         NmPenyakit.setBounds(199, 145, 255, 23);
 
-        btnDiagnosa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnDiagnosa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnDiagnosa.setMnemonic('X');
         btnDiagnosa.setToolTipText("Alt+X");
         btnDiagnosa.setName("btnDiagnosa"); // NOI18N
@@ -2553,7 +2553,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         FormKelengkapanSEP.add(btnDiagnosa);
         btnDiagnosa.setBounds(457, 145, 28, 23);
 
-        btnPoli.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnPoli.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnPoli.setMnemonic('X');
         btnPoli.setToolTipText("Alt+X");
         btnPoli.setName("btnPoli"); // NOI18N
@@ -2692,7 +2692,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         FormKelengkapanSEP.add(TDokter);
         TDokter.setBounds(681, 295, 197, 23);
 
-        BtnDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnDokter.setMnemonic('3');
         BtnDokter.setToolTipText("ALt+3");
         BtnDokter.setName("BtnDokter"); // NOI18N
@@ -2816,7 +2816,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         FormKelengkapanSEP.add(NmDPJP);
         NmDPJP.setBounds(199, 205, 255, 23);
 
-        btnDPJP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnDPJP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnDPJP.setMnemonic('X');
         btnDPJP.setToolTipText("Alt+X");
         btnDPJP.setName("btnDPJP"); // NOI18N
@@ -2934,7 +2934,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         FormKelengkapanSEP.add(NmPropinsi);
         NmPropinsi.setBounds(661, 205, 217, 23);
 
-        btnPropinsi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnPropinsi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnPropinsi.setMnemonic('X');
         btnPropinsi.setToolTipText("Alt+X");
         btnPropinsi.setName("btnPropinsi"); // NOI18N
@@ -2951,7 +2951,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         FormKelengkapanSEP.add(btnPropinsi);
         btnPropinsi.setBounds(880, 205, 28, 23);
 
-        btnKabupaten.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnKabupaten.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnKabupaten.setMnemonic('X');
         btnKabupaten.setToolTipText("Alt+X");
         btnKabupaten.setName("btnKabupaten"); // NOI18N
@@ -3006,7 +3006,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         FormKelengkapanSEP.add(NmKecamatan);
         NmKecamatan.setBounds(661, 265, 217, 23);
 
-        btnKecamatan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnKecamatan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnKecamatan.setMnemonic('X');
         btnKecamatan.setToolTipText("Alt+X");
         btnKecamatan.setName("btnKecamatan"); // NOI18N
@@ -3023,7 +3023,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         FormKelengkapanSEP.add(btnKecamatan);
         btnKecamatan.setBounds(880, 265, 28, 23);
 
-        btnSKDP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnSKDP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnSKDP.setMnemonic('X');
         btnSKDP.setToolTipText("Alt+X");
         btnSKDP.setName("btnSKDP"); // NOI18N
@@ -3045,7 +3045,7 @@ public final class BPJSCekRujukanKartuPCare extends javax.swing.JDialog {
         FormKelengkapanSEP.add(AsalRujukan);
         AsalRujukan.setBounds(107, 85, 125, 23);
 
-        btnSPRI.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnSPRI.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnSPRI.setMnemonic('X');
         btnSPRI.setToolTipText("Alt+X");
         btnSPRI.setName("btnSPRI"); // NOI18N

@@ -337,7 +337,7 @@ public final class DlgResepObat extends javax.swing.JDialog {
 
         ppResepObat.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppResepObat.setForeground(new java.awt.Color(70, 70, 70));
-        ppResepObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppResepObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppResepObat.setText("Cetak Aturan Pakai Model 1");
         ppResepObat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppResepObat.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -353,7 +353,7 @@ public final class DlgResepObat extends javax.swing.JDialog {
 
         ppResepObat1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppResepObat1.setForeground(new java.awt.Color(70, 70, 70));
-        ppResepObat1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppResepObat1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppResepObat1.setText("Cetak Aturan Pakai Model 2");
         ppResepObat1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppResepObat1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -369,7 +369,7 @@ public final class DlgResepObat extends javax.swing.JDialog {
 
         ppResepObat2.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppResepObat2.setForeground(new java.awt.Color(70, 70, 70));
-        ppResepObat2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppResepObat2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppResepObat2.setText("Cetak Aturan Pakai Model 3");
         ppResepObat2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppResepObat2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -385,7 +385,7 @@ public final class DlgResepObat extends javax.swing.JDialog {
 
         ppLembarObat.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppLembarObat.setForeground(new java.awt.Color(70, 70, 70));
-        ppLembarObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppLembarObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppLembarObat.setText("Lembar Pemberian Obat");
         ppLembarObat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppLembarObat.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -401,7 +401,7 @@ public final class DlgResepObat extends javax.swing.JDialog {
 
         ppUbahAturanPakai.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppUbahAturanPakai.setForeground(new java.awt.Color(70, 70, 70));
-        ppUbahAturanPakai.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppUbahAturanPakai.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppUbahAturanPakai.setText("Ubah Aturan Pakai Obat Umum");
         ppUbahAturanPakai.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppUbahAturanPakai.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -417,7 +417,7 @@ public final class DlgResepObat extends javax.swing.JDialog {
 
         ppUbahAturanPakai1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppUbahAturanPakai1.setForeground(new java.awt.Color(70, 70, 70));
-        ppUbahAturanPakai1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppUbahAturanPakai1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppUbahAturanPakai1.setText("Ubah Aturan Pakai Obat Racikan");
         ppUbahAturanPakai1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppUbahAturanPakai1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -484,7 +484,7 @@ public final class DlgResepObat extends javax.swing.JDialog {
         });
         panelisi1.add(NoResepUbah);
 
-        BtnSimpan3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan3.setMnemonic('S');
         BtnSimpan3.setText("Simpan");
         BtnSimpan3.setToolTipText("Alt+S");
@@ -497,7 +497,7 @@ public final class DlgResepObat extends javax.swing.JDialog {
         });
         panelisi1.add(BtnSimpan3);
 
-        BtnKeluar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar1.setMnemonic('K');
         BtnKeluar1.setText("Keluar");
         BtnKeluar1.setToolTipText("Alt+K");
@@ -567,7 +567,7 @@ public final class DlgResepObat extends javax.swing.JDialog {
         });
         panelisi2.add(NoResepUbah1);
 
-        BtnSimpan4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan4.setMnemonic('S');
         BtnSimpan4.setText("Simpan");
         BtnSimpan4.setToolTipText("Alt+S");
@@ -580,7 +580,7 @@ public final class DlgResepObat extends javax.swing.JDialog {
         });
         panelisi2.add(BtnSimpan4);
 
-        BtnKeluar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar2.setMnemonic('K');
         BtnKeluar2.setText("Keluar");
         BtnKeluar2.setToolTipText("Alt+K");
@@ -637,7 +637,7 @@ public final class DlgResepObat extends javax.swing.JDialog {
         panelGlass8.setPreferredSize(new java.awt.Dimension(44, 44));
         panelGlass8.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
-        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan.setMnemonic('S');
         BtnSimpan.setText("Simpan");
         BtnSimpan.setToolTipText("Alt+S");
@@ -655,7 +655,7 @@ public final class DlgResepObat extends javax.swing.JDialog {
         });
         panelGlass8.add(BtnSimpan);
 
-        BtnBatal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Cancel-2-16x16.png"))); // NOI18N
+        BtnBatal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Cancel-2-16x16.png"))); // NOI18N
         BtnBatal.setMnemonic('B');
         BtnBatal.setText("Baru");
         BtnBatal.setToolTipText("Alt+B");
@@ -673,7 +673,7 @@ public final class DlgResepObat extends javax.swing.JDialog {
         });
         panelGlass8.add(BtnBatal);
 
-        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/stop_f2.png"))); // NOI18N
+        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         BtnHapus.setMnemonic('H');
         BtnHapus.setText("Hapus");
         BtnHapus.setToolTipText("Alt+H");
@@ -691,7 +691,7 @@ public final class DlgResepObat extends javax.swing.JDialog {
         });
         panelGlass8.add(BtnHapus);
 
-        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnPrint.setMnemonic('T');
         BtnPrint.setText("Cetak");
         BtnPrint.setToolTipText("Alt+T");
@@ -709,7 +709,7 @@ public final class DlgResepObat extends javax.swing.JDialog {
         });
         panelGlass8.add(BtnPrint);
 
-        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAll.setMnemonic('M');
         BtnAll.setText("Semua");
         BtnAll.setToolTipText("Alt+M");
@@ -738,7 +738,7 @@ public final class DlgResepObat extends javax.swing.JDialog {
         LCount.setPreferredSize(new java.awt.Dimension(52, 30));
         panelGlass8.add(LCount);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");
@@ -803,7 +803,7 @@ public final class DlgResepObat extends javax.swing.JDialog {
         });
         panelGlass9.add(TCari);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('4');
         BtnCari.setToolTipText("Alt+4");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -874,7 +874,7 @@ public final class DlgResepObat extends javax.swing.JDialog {
         FormInput.add(jLabel13);
         jLabel13.setBounds(0, 72, 95, 23);
 
-        btnDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnDokter.setMnemonic('3');
         btnDokter.setToolTipText("Alt+3");
         btnDokter.setName("btnDokter"); // NOI18N
@@ -981,7 +981,7 @@ public final class DlgResepObat extends javax.swing.JDialog {
 
         PanelInput.add(FormInput, java.awt.BorderLayout.CENTER);
 
-        ChkInput.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/143.png"))); // NOI18N
+        ChkInput.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/143.png"))); // NOI18N
         ChkInput.setMnemonic('I');
         ChkInput.setText(".: Input Data");
         ChkInput.setToolTipText("Alt+I");
@@ -992,9 +992,9 @@ public final class DlgResepObat extends javax.swing.JDialog {
         ChkInput.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         ChkInput.setName("ChkInput"); // NOI18N
         ChkInput.setPreferredSize(new java.awt.Dimension(192, 20));
-        ChkInput.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/143.png"))); // NOI18N
-        ChkInput.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/145.png"))); // NOI18N
-        ChkInput.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/145.png"))); // NOI18N
+        ChkInput.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/143.png"))); // NOI18N
+        ChkInput.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/145.png"))); // NOI18N
+        ChkInput.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/145.png"))); // NOI18N
         ChkInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ChkInputActionPerformed(evt);

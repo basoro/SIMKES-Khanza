@@ -120,7 +120,7 @@ public final class DlgPilihanCetakDokumen extends javax.swing.JDialog {
         panelisi3.setPreferredSize(new java.awt.Dimension(44, 54));
         panelisi3.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 4, 9));
 
-        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnPrint.setMnemonic('T');
         BtnPrint.setText("Cetak");
         BtnPrint.setToolTipText("Alt+T");
@@ -133,7 +133,7 @@ public final class DlgPilihanCetakDokumen extends javax.swing.JDialog {
         });
         panelisi3.add(BtnPrint);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('U');
         BtnKeluar.setText("Tutup");
         BtnKeluar.setToolTipText("Alt+U");

@@ -173,7 +173,7 @@ public final class DlgPulang extends javax.swing.JDialog {
         internalFrame2.add(label2);
         label2.setBounds(-10, 55, 820, 14);
 
-        BtnClose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/cross.png"))); // NOI18N
+        BtnClose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cross.png"))); // NOI18N
         BtnClose.setMnemonic('U');
         BtnClose.setText("Tutup");
         BtnClose.setToolTipText("Alt+U");
@@ -192,7 +192,7 @@ public final class DlgPulang extends javax.swing.JDialog {
         internalFrame2.add(BtnClose);
         BtnClose.setBounds(630, 75, 100, 30);
 
-        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16i.png"))); // NOI18N
+        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan.setMnemonic('S');
         BtnSimpan.setText("Simpan");
         BtnSimpan.setToolTipText("Alt+S");
@@ -210,7 +210,7 @@ public final class DlgPulang extends javax.swing.JDialog {
         internalFrame2.add(BtnSimpan);
         BtnSimpan.setBounds(13, 75, 100, 30);
 
-        BtnBatal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Cancel-2-16x16.png"))); // NOI18N
+        BtnBatal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Cancel-2-16x16.png"))); // NOI18N
         BtnBatal.setMnemonic('B');
         BtnBatal.setText("Baru");
         BtnBatal.setToolTipText("Alt+B");
@@ -256,7 +256,7 @@ public final class DlgPulang extends javax.swing.JDialog {
         inpketerangan.setBackground(new java.awt.Color(255, 255, 255));
         inpketerangan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         inpketerangan.setForeground(new java.awt.Color(91, 137, 58));
-        inpketerangan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        inpketerangan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         inpketerangan.setMnemonic('A');
         inpketerangan.setText("Keterangan Presensi");
         inpketerangan.setToolTipText("Alt+K");
@@ -324,7 +324,7 @@ public final class DlgPulang extends javax.swing.JDialog {
         });
         panelGlass7.add(TCari);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('1');
         BtnCari.setToolTipText("Alt+1");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -358,7 +358,7 @@ public final class DlgPulang extends javax.swing.JDialog {
         panelGlass5.setPreferredSize(new java.awt.Dimension(55, 55));
         panelGlass5.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
-        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAll.setMnemonic('m');
         BtnAll.setText("Semua");
         BtnAll.setToolTipText("Alt+m");
@@ -376,7 +376,7 @@ public final class DlgPulang extends javax.swing.JDialog {
         });
         panelGlass5.add(BtnAll);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");

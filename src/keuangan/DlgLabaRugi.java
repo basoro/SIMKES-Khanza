@@ -174,7 +174,7 @@ public class DlgLabaRugi extends javax.swing.JDialog {
         Tgl2.setPreferredSize(new java.awt.Dimension(100, 23));
         panelisi1.add(Tgl2);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('1');
         BtnCari.setToolTipText("Alt+1");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -195,7 +195,7 @@ public class DlgLabaRugi extends javax.swing.JDialog {
         label12.setPreferredSize(new java.awt.Dimension(85, 23));
         panelisi1.add(label12);
 
-        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnPrint.setMnemonic('P');
         BtnPrint.setText("Cetak");
         BtnPrint.setToolTipText("Alt+P");
@@ -213,7 +213,7 @@ public class DlgLabaRugi extends javax.swing.JDialog {
         });
         panelisi1.add(BtnPrint);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");

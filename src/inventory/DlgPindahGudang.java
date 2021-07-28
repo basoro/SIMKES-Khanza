@@ -202,7 +202,7 @@ public final class DlgPindahGudang extends javax.swing.JDialog {
         ppHapus.setBackground(new java.awt.Color(242, 242, 242));
         ppHapus.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         ppHapus.setForeground(new java.awt.Color(102, 51, 0));
-        ppHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/stop_f2.png"))); // NOI18N
+        ppHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         ppHapus.setText("Hapus");
         ppHapus.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppHapus.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -260,7 +260,7 @@ public final class DlgPindahGudang extends javax.swing.JDialog {
         panelisi4.add(nmdari);
         nmdari.setBounds(151, 10, 257, 23);
 
-        btnDari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnDari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnDari.setMnemonic('1');
         btnDari.setToolTipText("Alt+1");
         btnDari.setName("btnDari"); // NOI18N
@@ -316,7 +316,7 @@ public final class DlgPindahGudang extends javax.swing.JDialog {
         panelisi4.add(nmke);
         nmke.setBounds(151, 40, 257, 23);
 
-        btnKe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnKe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnKe.setMnemonic('1');
         btnKe.setToolTipText("Alt+1");
         btnKe.setName("btnKe"); // NOI18N
@@ -438,7 +438,7 @@ public final class DlgPindahGudang extends javax.swing.JDialog {
         });
         panelisi3.add(TCari);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('2');
         BtnCari.setToolTipText("Alt+2");
         BtnCari.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -461,7 +461,7 @@ public final class DlgPindahGudang extends javax.swing.JDialog {
         panelisi1.setName("panelisi1"); // NOI18N
         panelisi1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
-        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/stop_f2.png"))); // NOI18N
+        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         BtnHapus.setMnemonic('H');
         BtnHapus.setText("Hapus");
         BtnHapus.setToolTipText("Alt+H");
@@ -479,7 +479,7 @@ public final class DlgPindahGudang extends javax.swing.JDialog {
         });
         panelisi1.add(BtnHapus);
 
-        BtnCetak.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnCetak.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnCetak.setMnemonic('C');
         BtnCetak.setText("Cetak");
         BtnCetak.setToolTipText("Alt+C");
@@ -497,7 +497,7 @@ public final class DlgPindahGudang extends javax.swing.JDialog {
         });
         panelisi1.add(BtnCetak);
 
-        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAll.setMnemonic('M');
         BtnAll.setText("Semua");
         BtnAll.setToolTipText("Alt+M");
@@ -526,7 +526,7 @@ public final class DlgPindahGudang extends javax.swing.JDialog {
         LCount.setPreferredSize(new java.awt.Dimension(150, 30));
         panelisi1.add(LCount);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");

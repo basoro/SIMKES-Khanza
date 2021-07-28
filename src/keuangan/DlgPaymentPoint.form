@@ -78,7 +78,7 @@
             <Component class="widget.Button" name="BtnCloseIn">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/cross.png"/>
+                  <Image iconType="3" name="/icons/cross.png"/>
                 </Property>
                 <Property name="mnemonic" type="int" value="85"/>
                 <Property name="text" type="java.lang.String" value="Tutup"/>
@@ -98,7 +98,7 @@
             <Component class="widget.Button" name="BtnSimpan2">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/save-16x16.png"/>
+                  <Image iconType="3" name="/icons/save-16x16.png"/>
                 </Property>
                 <Property name="mnemonic" type="int" value="83"/>
                 <Property name="text" type="java.lang.String" value="Simpan"/>
@@ -237,7 +237,7 @@
             <Component class="widget.Button" name="BtnCari">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/accept.png"/>
+                  <Image iconType="3" name="/icons/accept.png"/>
                 </Property>
                 <Property name="mnemonic" type="int" value="50"/>
                 <Property name="toolTipText" type="java.lang.String" value="Alt+2"/>
@@ -254,7 +254,7 @@
             <Component class="widget.Button" name="BtnAll">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/Search-16x16.png"/>
+                  <Image iconType="3" name="/icons/Search-16x16.png"/>
                 </Property>
                 <Property name="mnemonic" type="int" value="77"/>
                 <Property name="toolTipText" type="java.lang.String" value="Alt+M"/>
@@ -286,7 +286,7 @@
             <Component class="widget.Button" name="BtnPrint">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/b_print.png"/>
+                  <Image iconType="3" name="/icons/b_print.png"/>
                 </Property>
                 <Property name="mnemonic" type="int" value="84"/>
                 <Property name="text" type="java.lang.String" value="Cetak"/>
@@ -304,7 +304,7 @@
             <Component class="widget.Button" name="BtnKeluar">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/exit.png"/>
+                  <Image iconType="3" name="/icons/exit.png"/>
                 </Property>
                 <Property name="mnemonic" type="int" value="75"/>
                 <Property name="text" type="java.lang.String" value="Keluar"/>
@@ -409,7 +409,7 @@
             <Component class="widget.Button" name="BtnSeek4">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/190.png"/>
+                  <Image iconType="3" name="/icons/190.png"/>
                 </Property>
                 <Property name="mnemonic" type="int" value="53"/>
                 <Property name="toolTipText" type="java.lang.String" value="ALt+5"/>

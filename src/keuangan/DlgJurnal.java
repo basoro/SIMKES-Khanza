@@ -182,7 +182,7 @@ public class DlgJurnal extends javax.swing.JDialog {
         ppTambah.setBackground(new java.awt.Color(242, 242, 242));
         ppTambah.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         ppTambah.setForeground(new java.awt.Color(102, 51, 0));
-        ppTambah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/add-file-16x16.png"))); // NOI18N
+        ppTambah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/add-file-16x16.png"))); // NOI18N
         ppTambah.setText("Tambah");
         ppTambah.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppTambah.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -199,7 +199,7 @@ public class DlgJurnal extends javax.swing.JDialog {
         ppHapus.setBackground(new java.awt.Color(242, 242, 242));
         ppHapus.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         ppHapus.setForeground(new java.awt.Color(102, 51, 0));
-        ppHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/stop_f2.png"))); // NOI18N
+        ppHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         ppHapus.setText("Hapus");
         ppHapus.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppHapus.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -267,7 +267,7 @@ public class DlgJurnal extends javax.swing.JDialog {
         panelisi1.setPreferredSize(new java.awt.Dimension(100, 56));
         panelisi1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
-        BtnTambah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/add-file-16x16.png"))); // NOI18N
+        BtnTambah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/add-file-16x16.png"))); // NOI18N
         BtnTambah.setMnemonic('T');
         BtnTambah.setText("Tambah");
         BtnTambah.setToolTipText("Alt+T");
@@ -285,7 +285,7 @@ public class DlgJurnal extends javax.swing.JDialog {
         });
         panelisi1.add(BtnTambah);
 
-        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/stop_f2.png"))); // NOI18N
+        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         BtnHapus.setMnemonic('H');
         BtnHapus.setText("Hapus");
         BtnHapus.setToolTipText("Alt+H");
@@ -312,7 +312,7 @@ public class DlgJurnal extends javax.swing.JDialog {
         LTotal.setPreferredSize(new java.awt.Dimension(100, 23));
         panelisi1.add(LTotal);
 
-        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan.setMnemonic('S');
         BtnSimpan.setText("Simpan");
         BtnSimpan.setToolTipText("Alt+S");
@@ -329,7 +329,7 @@ public class DlgJurnal extends javax.swing.JDialog {
         });
         panelisi1.add(BtnSimpan);
 
-        BtnBatal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Cancel-2-16x16.png"))); // NOI18N
+        BtnBatal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Cancel-2-16x16.png"))); // NOI18N
         BtnBatal.setMnemonic('L');
         BtnBatal.setText("Clear");
         BtnBatal.setToolTipText("Alt+L");
@@ -347,7 +347,7 @@ public class DlgJurnal extends javax.swing.JDialog {
         });
         panelisi1.add(BtnBatal);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnCari.setMnemonic('C');
         BtnCari.setText("Cari");
         BtnCari.setToolTipText("Alt+C");
@@ -365,7 +365,7 @@ public class DlgJurnal extends javax.swing.JDialog {
         });
         panelisi1.add(BtnCari);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");
@@ -411,7 +411,7 @@ public class DlgJurnal extends javax.swing.JDialog {
         panelisi4.add(nmrek);
         nmrek.setBounds(186, 10, 300, 23);
 
-        BtnCari6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnCari6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnCari6.setMnemonic('1');
         BtnCari6.setToolTipText("Alt+1");
         BtnCari6.setName("BtnCari6"); // NOI18N

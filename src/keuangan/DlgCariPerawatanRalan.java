@@ -321,7 +321,7 @@ public final class DlgCariPerawatanRalan extends javax.swing.JDialog {
 
         ppBersihkan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBersihkan.setForeground(new java.awt.Color(70, 70, 70));
-        ppBersihkan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/stop_f2.png"))); // NOI18N
+        ppBersihkan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         ppBersihkan.setText("Hilangkan Centang/Tindakan Terpilih");
         ppBersihkan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBersihkan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -337,7 +337,7 @@ public final class DlgCariPerawatanRalan extends javax.swing.JDialog {
 
         ppDokter.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppDokter.setForeground(new java.awt.Color(70, 70, 70));
-        ppDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/inventaris.png"))); // NOI18N
+        ppDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/inventaris.png"))); // NOI18N
         ppDokter.setText("Ubah Ke Tindakan Dokter");
         ppDokter.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppDokter.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -353,7 +353,7 @@ public final class DlgCariPerawatanRalan extends javax.swing.JDialog {
 
         ppPetugas.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppPetugas.setForeground(new java.awt.Color(70, 70, 70));
-        ppPetugas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/inventaris.png"))); // NOI18N
+        ppPetugas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/inventaris.png"))); // NOI18N
         ppPetugas.setText("Ubah Ke Tindakan Petugas");
         ppPetugas.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppPetugas.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -369,7 +369,7 @@ public final class DlgCariPerawatanRalan extends javax.swing.JDialog {
 
         ppPetugasDokter.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppPetugasDokter.setForeground(new java.awt.Color(70, 70, 70));
-        ppPetugasDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/inventaris.png"))); // NOI18N
+        ppPetugasDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/inventaris.png"))); // NOI18N
         ppPetugasDokter.setText("Ubah Ke Tindakan Dokter & Petugas");
         ppPetugasDokter.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppPetugasDokter.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -505,7 +505,7 @@ public final class DlgCariPerawatanRalan extends javax.swing.JDialog {
         });
         panelisi3.add(TCariTindakan);
 
-        BtnCariTindakan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCariTindakan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCariTindakan.setMnemonic('1');
         BtnCariTindakan.setToolTipText("Alt+1");
         BtnCariTindakan.setName("BtnCariTindakan"); // NOI18N
@@ -522,7 +522,7 @@ public final class DlgCariPerawatanRalan extends javax.swing.JDialog {
         });
         panelisi3.add(BtnCariTindakan);
 
-        BtnAllTindakan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAllTindakan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAllTindakan.setMnemonic('2');
         BtnAllTindakan.setToolTipText("Alt+2");
         BtnAllTindakan.setName("BtnAllTindakan"); // NOI18N
@@ -539,7 +539,7 @@ public final class DlgCariPerawatanRalan extends javax.swing.JDialog {
         });
         panelisi3.add(BtnAllTindakan);
 
-        BtnTambahTindakan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/plus_16.png"))); // NOI18N
+        BtnTambahTindakan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/plus_16.png"))); // NOI18N
         BtnTambahTindakan.setMnemonic('3');
         BtnTambahTindakan.setToolTipText("Alt+3");
         BtnTambahTindakan.setName("BtnTambahTindakan"); // NOI18N
@@ -551,7 +551,7 @@ public final class DlgCariPerawatanRalan extends javax.swing.JDialog {
         });
         panelisi3.add(BtnTambahTindakan);
 
-        BtnSimpanTindakan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpanTindakan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpanTindakan.setMnemonic('S');
         BtnSimpanTindakan.setToolTipText("Alt+S");
         BtnSimpanTindakan.setName("BtnSimpanTindakan"); // NOI18N
@@ -574,7 +574,7 @@ public final class DlgCariPerawatanRalan extends javax.swing.JDialog {
         LCount.setPreferredSize(new java.awt.Dimension(55, 23));
         panelisi3.add(LCount);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('4');
         BtnKeluar.setToolTipText("Alt+4");
         BtnKeluar.setName("BtnKeluar"); // NOI18N
@@ -617,7 +617,7 @@ public final class DlgCariPerawatanRalan extends javax.swing.JDialog {
         FormInput.add(nmdokter);
         nmdokter.setBounds(162, 10, 240, 23);
 
-        btnDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnDokter.setMnemonic('4');
         btnDokter.setToolTipText("ALt+4");
         btnDokter.setName("btnDokter"); // NOI18N
@@ -654,7 +654,7 @@ public final class DlgCariPerawatanRalan extends javax.swing.JDialog {
         FormInput.add(NmPetugas2);
         NmPetugas2.setBounds(162, 40, 240, 23);
 
-        btnPetugas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnPetugas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnPetugas.setMnemonic('4');
         btnPetugas.setToolTipText("ALt+4");
         btnPetugas.setName("btnPetugas"); // NOI18N

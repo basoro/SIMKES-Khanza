@@ -157,7 +157,7 @@ public final class DlgTemplateLaboratorium extends javax.swing.JDialog {
         NmPeriksa.setPreferredSize(new java.awt.Dimension(330, 23));
         panelisi3.add(NmPeriksa);
 
-        BtnTambah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        BtnTambah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         BtnTambah.setMnemonic('3');
         BtnTambah.setToolTipText("Alt+3");
         BtnTambah.setName("BtnTambah"); // NOI18N
@@ -169,7 +169,7 @@ public final class DlgTemplateLaboratorium extends javax.swing.JDialog {
         });
         panelisi3.add(BtnTambah);
 
-        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan.setMnemonic('S');
         BtnSimpan.setToolTipText("Alt+S");
         BtnSimpan.setName("BtnSimpan"); // NOI18N
@@ -181,7 +181,7 @@ public final class DlgTemplateLaboratorium extends javax.swing.JDialog {
         });
         panelisi3.add(BtnSimpan);
 
-        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/stop_f2.png"))); // NOI18N
+        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         BtnHapus.setMnemonic('H');
         BtnHapus.setToolTipText("Alt+H");
         BtnHapus.setName("BtnHapus"); // NOI18N
@@ -197,7 +197,7 @@ public final class DlgTemplateLaboratorium extends javax.swing.JDialog {
         jLabel10.setPreferredSize(new java.awt.Dimension(70, 23));
         panelisi3.add(jLabel10);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('4');
         BtnKeluar.setToolTipText("Alt+4");
         BtnKeluar.setName("BtnKeluar"); // NOI18N

@@ -42,7 +42,7 @@
               <Color blue="0" green="33" red="66" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/picture/category.png"/>
+              <Image iconType="3" name="/icons/category.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Bersihkan Pilihan"/>
             <Property name="horizontalAlignment" type="int" value="2"/>
@@ -69,7 +69,7 @@
               <Color blue="0" green="33" red="66" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/picture/category.png"/>
+              <Image iconType="3" name="/icons/category.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Pilih Semua"/>
             <Property name="horizontalAlignment" type="int" value="2"/>
@@ -187,7 +187,7 @@
             <Component class="widget.Button" name="BtnSimpan">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/inventaris.png"/>
+                  <Image iconType="3" name="/icons/inventaris.png"/>
                 </Property>
                 <Property name="mnemonic" type="int" value="83"/>
                 <Property name="text" type="java.lang.String" value="Simpan"/>
@@ -205,7 +205,7 @@
             <Component class="widget.Button" name="BtnHapus">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/stop_f2.png"/>
+                  <Image iconType="3" name="/icons/stop_f2.png"/>
                 </Property>
                 <Property name="mnemonic" type="int" value="72"/>
                 <Property name="text" type="java.lang.String" value="Hapus"/>
@@ -231,7 +231,7 @@
             <Component class="widget.Button" name="BtnKeluar">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/exit.png"/>
+                  <Image iconType="3" name="/icons/exit.png"/>
                 </Property>
                 <Property name="mnemonic" type="int" value="75"/>
                 <Property name="text" type="java.lang.String" value="Keluar"/>
@@ -270,7 +270,7 @@
             <Component class="widget.CekBox" name="ChkInput">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/143.png"/>
+                  <Image iconType="3" name="/icons/143.png"/>
                 </Property>
                 <Property name="mnemonic" type="int" value="73"/>
                 <Property name="text" type="java.lang.String" value=".: Input Data"/>
@@ -285,13 +285,13 @@
                   <Dimension value="[192, 20]"/>
                 </Property>
                 <Property name="rolloverIcon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/143.png"/>
+                  <Image iconType="3" name="/icons/143.png"/>
                 </Property>
                 <Property name="rolloverSelectedIcon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/145.png"/>
+                  <Image iconType="3" name="/icons/145.png"/>
                 </Property>
                 <Property name="selectedIcon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/picture/145.png"/>
+                  <Image iconType="3" name="/icons/145.png"/>
                 </Property>
               </Properties>
               <Events>
@@ -469,7 +469,7 @@
                 <Component class="widget.Button" name="BtnCari1">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/picture/accept.png"/>
+                      <Image iconType="3" name="/icons/accept.png"/>
                     </Property>
                     <Property name="mnemonic" type="int" value="49"/>
                     <Property name="toolTipText" type="java.lang.String" value="Alt+1"/>
@@ -520,7 +520,7 @@
                 <Component class="widget.Button" name="btnTarif">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/picture/plus_16.png"/>
+                      <Image iconType="3" name="/icons/plus_16.png"/>
                     </Property>
                     <Property name="mnemonic" type="int" value="50"/>
                     <Property name="toolTipText" type="java.lang.String" value="Alt+2"/>

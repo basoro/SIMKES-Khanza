@@ -266,7 +266,7 @@ public final class DlgCariObatPenyakit extends javax.swing.JDialog {
         });
         panelisi3.add(PenyakitCari);
 
-        BtnSeek3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSeek3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeek3.setMnemonic('4');
         BtnSeek3.setToolTipText("Alt+4");
         BtnSeek3.setName("BtnSeek3"); // NOI18N
@@ -283,7 +283,7 @@ public final class DlgCariObatPenyakit extends javax.swing.JDialog {
         });
         panelisi3.add(BtnSeek3);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('1');
         BtnCari.setToolTipText("Alt+1");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -300,7 +300,7 @@ public final class DlgCariObatPenyakit extends javax.swing.JDialog {
         });
         panelisi3.add(BtnCari);
 
-        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAll.setMnemonic('2');
         BtnAll.setToolTipText("2Alt+2");
         BtnAll.setName("BtnAll"); // NOI18N
@@ -317,7 +317,7 @@ public final class DlgCariObatPenyakit extends javax.swing.JDialog {
         });
         panelisi3.add(BtnAll);
 
-        BtnTambah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/plus_16.png"))); // NOI18N
+        BtnTambah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/plus_16.png"))); // NOI18N
         BtnTambah.setMnemonic('3');
         BtnTambah.setToolTipText("Alt+3");
         BtnTambah.setName("BtnTambah"); // NOI18N
@@ -329,7 +329,7 @@ public final class DlgCariObatPenyakit extends javax.swing.JDialog {
         });
         panelisi3.add(BtnTambah);
 
-        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan.setMnemonic('S');
         BtnSimpan.setToolTipText("Alt+S");
         BtnSimpan.setName("BtnSimpan"); // NOI18N
@@ -362,7 +362,7 @@ public final class DlgCariObatPenyakit extends javax.swing.JDialog {
         LCount.setPreferredSize(new java.awt.Dimension(50, 23));
         panelisi3.add(LCount);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('4');
         BtnKeluar.setToolTipText("Alt+4");
         BtnKeluar.setName("BtnKeluar"); // NOI18N

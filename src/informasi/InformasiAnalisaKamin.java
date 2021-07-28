@@ -188,7 +188,7 @@ public class InformasiAnalisaKamin extends javax.swing.JDialog {
         nmbangsal.setPreferredSize(new java.awt.Dimension(203, 23));
         panelisi1.add(nmbangsal);
 
-        btnBangsal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnBangsal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnBangsal.setMnemonic('3');
         btnBangsal.setToolTipText("Alt+3");
         btnBangsal.setName("btnBangsal"); // NOI18N
@@ -205,7 +205,7 @@ public class InformasiAnalisaKamin extends javax.swing.JDialog {
         });
         panelisi1.add(btnBangsal);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('2');
         BtnCari.setToolTipText("Alt+2");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -226,7 +226,7 @@ public class InformasiAnalisaKamin extends javax.swing.JDialog {
         label18.setPreferredSize(new java.awt.Dimension(45, 23));
         panelisi1.add(label18);
 
-        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAll.setMnemonic('M');
         BtnAll.setText("Semua");
         BtnAll.setToolTipText("Alt+M");
@@ -245,7 +245,7 @@ public class InformasiAnalisaKamin extends javax.swing.JDialog {
         });
         panelisi1.add(BtnAll);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");

@@ -155,7 +155,7 @@ public final class DlgPaymentPoint extends javax.swing.JDialog {
         internalFrame2.add(jLabel8);
         jLabel8.setBounds(0, 27, 80, 23);
 
-        BtnCloseIn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/cross.png"))); // NOI18N
+        BtnCloseIn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cross.png"))); // NOI18N
         BtnCloseIn.setMnemonic('U');
         BtnCloseIn.setText("Tutup");
         BtnCloseIn.setToolTipText("Alt+U");
@@ -173,7 +173,7 @@ public final class DlgPaymentPoint extends javax.swing.JDialog {
         internalFrame2.add(BtnCloseIn);
         BtnCloseIn.setBounds(380, 25, 100, 30);
 
-        BtnSimpan2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan2.setMnemonic('S');
         BtnSimpan2.setText("Simpan");
         BtnSimpan2.setToolTipText("Alt+S");
@@ -233,7 +233,7 @@ public final class DlgPaymentPoint extends javax.swing.JDialog {
         });
         panelGlass5.add(TCari);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('2');
         BtnCari.setToolTipText("Alt+2");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -250,7 +250,7 @@ public final class DlgPaymentPoint extends javax.swing.JDialog {
         });
         panelGlass5.add(BtnCari);
 
-        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAll.setMnemonic('M');
         BtnAll.setToolTipText("Alt+M");
         BtnAll.setName("BtnAll"); // NOI18N
@@ -274,7 +274,7 @@ public final class DlgPaymentPoint extends javax.swing.JDialog {
         jLabel11.setPreferredSize(new java.awt.Dimension(40, 23));
         panelGlass5.add(jLabel11);
 
-        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnPrint.setMnemonic('T');
         BtnPrint.setText("Cetak");
         BtnPrint.setToolTipText("Alt+T");
@@ -292,7 +292,7 @@ public final class DlgPaymentPoint extends javax.swing.JDialog {
         });
         panelGlass5.add(BtnPrint);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");
@@ -349,7 +349,7 @@ public final class DlgPaymentPoint extends javax.swing.JDialog {
         ModalAwal.setPreferredSize(new java.awt.Dimension(150, 23));
         panelGlass6.add(ModalAwal);
 
-        BtnSeek4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSeek4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeek4.setMnemonic('5');
         BtnSeek4.setToolTipText("ALt+5");
         BtnSeek4.setName("BtnSeek4"); // NOI18N

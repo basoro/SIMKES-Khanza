@@ -418,7 +418,7 @@ public final class BPJSCekTanggalRujukan extends javax.swing.JDialog {
         });
         panelGlass5.add(cmbStatus);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('2');
         BtnCari.setToolTipText("Alt+2");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -439,7 +439,7 @@ public final class BPJSCekTanggalRujukan extends javax.swing.JDialog {
         jLabel7.setPreferredSize(new java.awt.Dimension(30, 23));
         panelGlass5.add(jLabel7);
 
-        BtnEdit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/add-file-16x16.png"))); // NOI18N
+        BtnEdit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/add-file-16x16.png"))); // NOI18N
         BtnEdit.setMnemonic('G');
         BtnEdit.setText("Regist");
         BtnEdit.setToolTipText("Alt+G");
@@ -457,7 +457,7 @@ public final class BPJSCekTanggalRujukan extends javax.swing.JDialog {
         });
         panelGlass5.add(BtnEdit);
 
-        BtnCari1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnCari1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnCari1.setMnemonic('E');
         BtnCari1.setText("Data SEP");
         BtnCari1.setToolTipText("Alt+E");
@@ -475,7 +475,7 @@ public final class BPJSCekTanggalRujukan extends javax.swing.JDialog {
         });
         panelGlass5.add(BtnCari1);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");

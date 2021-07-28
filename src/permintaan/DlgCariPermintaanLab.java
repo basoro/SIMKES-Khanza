@@ -424,7 +424,7 @@ public class DlgCariPermintaanLab extends javax.swing.JDialog {
 
         MnCetakHasilLab.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnCetakHasilLab.setForeground(new java.awt.Color(70, 70, 70));
-        MnCetakHasilLab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnCetakHasilLab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnCetakHasilLab.setText("Cetak Permintaan Lab");
         MnCetakHasilLab.setName("MnCetakHasilLab"); // NOI18N
         MnCetakHasilLab.setPreferredSize(new java.awt.Dimension(200, 28));
@@ -437,7 +437,7 @@ public class DlgCariPermintaanLab extends javax.swing.JDialog {
 
         MnBarcodePermintaan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnBarcodePermintaan.setForeground(new java.awt.Color(70, 70, 70));
-        MnBarcodePermintaan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnBarcodePermintaan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnBarcodePermintaan.setText("Barcode No.Permintaan");
         MnBarcodePermintaan.setName("MnBarcodePermintaan"); // NOI18N
         MnBarcodePermintaan.setPreferredSize(new java.awt.Dimension(200, 28));
@@ -450,7 +450,7 @@ public class DlgCariPermintaanLab extends javax.swing.JDialog {
 
         MnBarcodePermintaan1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnBarcodePermintaan1.setForeground(new java.awt.Color(70, 70, 70));
-        MnBarcodePermintaan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnBarcodePermintaan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnBarcodePermintaan1.setText("Barcode No.Permintaan 2");
         MnBarcodePermintaan1.setName("MnBarcodePermintaan1"); // NOI18N
         MnBarcodePermintaan1.setPreferredSize(new java.awt.Dimension(200, 28));
@@ -470,7 +470,7 @@ public class DlgCariPermintaanLab extends javax.swing.JDialog {
         internalFrame5.setName("internalFrame5"); // NOI18N
         internalFrame5.setLayout(null);
 
-        BtnCloseIn4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/cross.png"))); // NOI18N
+        BtnCloseIn4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cross.png"))); // NOI18N
         BtnCloseIn4.setMnemonic('U');
         BtnCloseIn4.setText("Tutup");
         BtnCloseIn4.setToolTipText("Alt+U");
@@ -483,7 +483,7 @@ public class DlgCariPermintaanLab extends javax.swing.JDialog {
         internalFrame5.add(BtnCloseIn4);
         BtnCloseIn4.setBounds(410, 30, 100, 30);
 
-        BtnSimpan4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan4.setMnemonic('S');
         BtnSimpan4.setText("Simpan");
         BtnSimpan4.setToolTipText("Alt+S");
@@ -583,7 +583,7 @@ public class DlgCariPermintaanLab extends javax.swing.JDialog {
         });
         panelGlass8.add(TCari);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('5');
         BtnCari.setToolTipText("Alt+5");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -606,7 +606,7 @@ public class DlgCariPermintaanLab extends javax.swing.JDialog {
         panelisi1.setPreferredSize(new java.awt.Dimension(100, 56));
         panelisi1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
-        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/stop_f2.png"))); // NOI18N
+        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         BtnHapus.setMnemonic('H');
         BtnHapus.setText("Hapus");
         BtnHapus.setToolTipText("Alt+H");
@@ -624,7 +624,7 @@ public class DlgCariPermintaanLab extends javax.swing.JDialog {
         });
         panelisi1.add(BtnHapus);
 
-        BtnSampel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/file-edit-16x16.png"))); // NOI18N
+        BtnSampel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/file-edit-16x16.png"))); // NOI18N
         BtnSampel.setMnemonic('P');
         BtnSampel.setText("Sampel");
         BtnSampel.setToolTipText("Alt+P");
@@ -642,7 +642,7 @@ public class DlgCariPermintaanLab extends javax.swing.JDialog {
         });
         panelisi1.add(BtnSampel);
 
-        BtnHasil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Agenda-1-16x16.png"))); // NOI18N
+        BtnHasil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Agenda-1-16x16.png"))); // NOI18N
         BtnHasil.setMnemonic('I');
         BtnHasil.setText("Hasil");
         BtnHasil.setToolTipText("Alt+I");
@@ -660,7 +660,7 @@ public class DlgCariPermintaanLab extends javax.swing.JDialog {
         });
         panelisi1.add(BtnHasil);
 
-        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAll.setMnemonic('M');
         BtnAll.setText("Semua");
         BtnAll.setToolTipText("Alt+M");
@@ -678,7 +678,7 @@ public class DlgCariPermintaanLab extends javax.swing.JDialog {
         });
         panelisi1.add(BtnAll);
 
-        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnPrint.setMnemonic('T');
         BtnPrint.setText("Cetak");
         BtnPrint.setToolTipText("Alt+T");
@@ -707,7 +707,7 @@ public class DlgCariPermintaanLab extends javax.swing.JDialog {
         LCount.setPreferredSize(new java.awt.Dimension(53, 23));
         panelisi1.add(LCount);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");
@@ -758,7 +758,7 @@ public class DlgCariPermintaanLab extends javax.swing.JDialog {
         CrDokter.setPreferredSize(new java.awt.Dimension(257, 23));
         panelGlass9.add(CrDokter);
 
-        BtnSeek3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSeek3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeek3.setMnemonic('6');
         BtnSeek3.setToolTipText("ALt+6");
         BtnSeek3.setName("BtnSeek3"); // NOI18N
@@ -780,7 +780,7 @@ public class DlgCariPermintaanLab extends javax.swing.JDialog {
         CrPoli.setPreferredSize(new java.awt.Dimension(257, 23));
         panelGlass9.add(CrPoli);
 
-        BtnSeek4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSeek4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeek4.setMnemonic('5');
         BtnSeek4.setToolTipText("ALt+5");
         BtnSeek4.setName("BtnSeek4"); // NOI18N
@@ -890,7 +890,7 @@ public class DlgCariPermintaanLab extends javax.swing.JDialog {
         CrDokter2.setPreferredSize(new java.awt.Dimension(250, 23));
         panelGlass10.add(CrDokter2);
 
-        BtnSeek5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSeek5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeek5.setMnemonic('6');
         BtnSeek5.setToolTipText("ALt+6");
         BtnSeek5.setName("BtnSeek5"); // NOI18N
@@ -912,7 +912,7 @@ public class DlgCariPermintaanLab extends javax.swing.JDialog {
         Kamar.setPreferredSize(new java.awt.Dimension(250, 23));
         panelGlass10.add(Kamar);
 
-        BtnSeek6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSeek6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeek6.setMnemonic('5');
         BtnSeek6.setToolTipText("ALt+5");
         BtnSeek6.setName("BtnSeek6"); // NOI18N

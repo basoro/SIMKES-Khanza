@@ -259,7 +259,7 @@ public class DlgPembelianIPSRS extends javax.swing.JDialog {
         ppBersihkan.setBackground(new java.awt.Color(255, 255, 255));
         ppBersihkan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBersihkan.setForeground(new java.awt.Color(102, 51, 0));
-        ppBersihkan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppBersihkan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppBersihkan.setText("Bersihkan Jumlah");
         ppBersihkan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBersihkan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -322,7 +322,7 @@ public class DlgPembelianIPSRS extends javax.swing.JDialog {
         panelisi1.setPreferredSize(new java.awt.Dimension(100, 107));
         panelisi1.setLayout(null);
 
-        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan.setMnemonic('S');
         BtnSimpan.setText("Simpan");
         BtnSimpan.setToolTipText("Alt+S");
@@ -356,7 +356,7 @@ public class DlgPembelianIPSRS extends javax.swing.JDialog {
         panelisi1.add(TCari);
         TCari.setBounds(190, 65, 290, 23);
 
-        BtnCari1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari1.setMnemonic('1');
         BtnCari1.setToolTipText("Alt+1");
         BtnCari1.setName("BtnCari1"); // NOI18N
@@ -389,7 +389,7 @@ public class DlgPembelianIPSRS extends javax.swing.JDialog {
         panelisi1.add(LSubtotal);
         LSubtotal.setBounds(10, 20, 120, 30);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnCari.setMnemonic('C');
         BtnCari.setText("Cari");
         BtnCari.setToolTipText("Alt+C");
@@ -408,7 +408,7 @@ public class DlgPembelianIPSRS extends javax.swing.JDialog {
         panelisi1.add(BtnCari);
         BtnCari.setBounds(560, 62, 100, 30);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");
@@ -457,7 +457,7 @@ public class DlgPembelianIPSRS extends javax.swing.JDialog {
         panelisi1.add(LTotal);
         LTotal.setBounds(250, 20, 120, 30);
 
-        BtnTambah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/plus_16.png"))); // NOI18N
+        BtnTambah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/plus_16.png"))); // NOI18N
         BtnTambah.setMnemonic('3');
         BtnTambah.setToolTipText("Alt+3");
         BtnTambah.setName("BtnTambah"); // NOI18N
@@ -602,7 +602,7 @@ public class DlgPembelianIPSRS extends javax.swing.JDialog {
         panelisi3.add(nmptg);
         nmptg.setBounds(491, 40, 240, 23);
 
-        btnSuplier.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnSuplier.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnSuplier.setMnemonic('1');
         btnSuplier.setToolTipText("Alt+1");
         btnSuplier.setName("btnSuplier"); // NOI18N
@@ -615,7 +615,7 @@ public class DlgPembelianIPSRS extends javax.swing.JDialog {
         panelisi3.add(btnSuplier);
         btnSuplier.setBounds(734, 10, 28, 23);
 
-        btnPetugas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnPetugas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnPetugas.setMnemonic('2');
         btnPetugas.setToolTipText("Alt+2");
         btnPetugas.setName("btnPetugas"); // NOI18N

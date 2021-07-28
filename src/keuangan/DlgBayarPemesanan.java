@@ -272,7 +272,7 @@ public final class DlgBayarPemesanan extends javax.swing.JDialog {
         ppSimpan.setBackground(new java.awt.Color(242, 242, 242));
         ppSimpan.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         ppSimpan.setForeground(new java.awt.Color(102, 51, 0));
-        ppSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        ppSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         ppSimpan.setText("Simpan");
         ppSimpan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppSimpan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -419,7 +419,7 @@ public final class DlgBayarPemesanan extends javax.swing.JDialog {
         panelisi4.add(sisa_hutang);
         sisa_hutang.setBounds(610, 70, 100, 23);
 
-        BtnPetugas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnPetugas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnPetugas.setMnemonic('1');
         BtnPetugas.setToolTipText("ALt+1");
         BtnPetugas.setName("BtnPetugas"); // NOI18N
@@ -493,7 +493,7 @@ public final class DlgBayarPemesanan extends javax.swing.JDialog {
         });
         panelisi3.add(TCari);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('2');
         BtnCari.setToolTipText("Alt+2");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -510,7 +510,7 @@ public final class DlgBayarPemesanan extends javax.swing.JDialog {
         });
         panelisi3.add(BtnCari);
 
-        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAll.setMnemonic('1');
         BtnAll.setToolTipText("Alt+1");
         BtnAll.setName("BtnAll"); // NOI18N
@@ -543,7 +543,7 @@ public final class DlgBayarPemesanan extends javax.swing.JDialog {
         panelisi1.setName("panelisi1"); // NOI18N
         panelisi1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
-        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan.setMnemonic('S');
         BtnSimpan.setText("Simpan");
         BtnSimpan.setToolTipText("Alt+S");
@@ -560,7 +560,7 @@ public final class DlgBayarPemesanan extends javax.swing.JDialog {
         });
         panelisi1.add(BtnSimpan);
 
-        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/stop_f2.png"))); // NOI18N
+        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         BtnHapus.setMnemonic('H');
         BtnHapus.setText("Hapus");
         BtnHapus.setToolTipText("Alt+H");
@@ -578,7 +578,7 @@ public final class DlgBayarPemesanan extends javax.swing.JDialog {
         });
         panelisi1.add(BtnHapus);
 
-        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnPrint.setMnemonic('T');
         BtnPrint.setText("Cetak");
         BtnPrint.setToolTipText("Alt+T");
@@ -607,7 +607,7 @@ public final class DlgBayarPemesanan extends javax.swing.JDialog {
         LTotal.setPreferredSize(new java.awt.Dimension(195, 30));
         panelisi1.add(LTotal);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");
@@ -683,7 +683,7 @@ public final class DlgBayarPemesanan extends javax.swing.JDialog {
         nmsup.setPreferredSize(new java.awt.Dimension(200, 23));
         panelisi5.add(nmsup);
 
-        BtnSeek2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSeek2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeek2.setMnemonic('3');
         BtnSeek2.setToolTipText("Alt+3");
         BtnSeek2.setName("BtnSeek2"); // NOI18N

@@ -208,7 +208,7 @@ public class DlgPengaturanRekening extends javax.swing.JDialog {
         panelGlass8.setPreferredSize(new java.awt.Dimension(44, 56));
         panelGlass8.setLayout(null);
 
-        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan.setMnemonic('U');
         BtnSimpan.setText("Update");
         BtnSimpan.setToolTipText("Alt+U");
@@ -226,7 +226,7 @@ public class DlgPengaturanRekening extends javax.swing.JDialog {
         panelGlass8.add(BtnSimpan);
         BtnSimpan.setBounds(6, 10, 100, 30);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");

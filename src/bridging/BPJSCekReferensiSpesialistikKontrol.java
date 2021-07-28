@@ -196,7 +196,7 @@ public final class BPJSCekReferensiSpesialistikKontrol extends javax.swing.JDial
         });
         panelGlass6.add(Poli);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('6');
         BtnCari.setToolTipText("Alt+6");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -217,7 +217,7 @@ public final class BPJSCekReferensiSpesialistikKontrol extends javax.swing.JDial
         jLabel17.setPreferredSize(new java.awt.Dimension(25, 23));
         panelGlass6.add(jLabel17);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");

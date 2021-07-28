@@ -148,7 +148,7 @@ public final class DlgCariKonversi extends javax.swing.JDialog {
         panelisi4.add(nmsat2);
         nmsat2.setBounds(413, 12, 150, 23);
 
-        BtnKeluar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar1.setMnemonic('K');
         BtnKeluar1.setToolTipText("Alt+K");
         BtnKeluar1.setName("BtnKeluar1"); // NOI18N

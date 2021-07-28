@@ -17,7 +17,7 @@
               <Color blue="46" green="46" red="46" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/picture/category.png"/>
+              <Image iconType="3" name="/icons/category.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Status Penyakit Baru"/>
             <Property name="horizontalAlignment" type="int" value="2"/>
@@ -39,7 +39,7 @@
               <Color blue="46" green="46" red="46" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/picture/category.png"/>
+              <Image iconType="3" name="/icons/category.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Status Penyakit Lama"/>
             <Property name="horizontalAlignment" type="int" value="2"/>
@@ -176,7 +176,7 @@
                 <Component class="widget.Button" name="BtnCariPenyakit">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/picture/accept.png"/>
+                      <Image iconType="3" name="/icons/accept.png"/>
                     </Property>
                     <Property name="mnemonic" type="int" value="49"/>
                     <Property name="toolTipText" type="java.lang.String" value="Alt+1"/>
@@ -196,7 +196,7 @@
                 <Component class="widget.Button" name="btnTambahPenyakit">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/picture/plus_16.png"/>
+                      <Image iconType="3" name="/icons/plus_16.png"/>
                     </Property>
                     <Property name="mnemonic" type="int" value="50"/>
                     <Property name="toolTipText" type="java.lang.String" value="Alt+2"/>
@@ -270,7 +270,7 @@
                 <Component class="widget.Button" name="btnTambahProsedur">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/picture/plus_16.png"/>
+                      <Image iconType="3" name="/icons/plus_16.png"/>
                     </Property>
                     <Property name="mnemonic" type="int" value="50"/>
                     <Property name="toolTipText" type="java.lang.String" value="Alt+2"/>
@@ -290,7 +290,7 @@
                 <Component class="widget.Button" name="BtnCariProsedur">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/picture/accept.png"/>
+                      <Image iconType="3" name="/icons/accept.png"/>
                     </Property>
                     <Property name="mnemonic" type="int" value="49"/>
                     <Property name="toolTipText" type="java.lang.String" value="Alt+1"/>

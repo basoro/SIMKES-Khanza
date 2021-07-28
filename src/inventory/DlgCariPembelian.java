@@ -337,7 +337,7 @@ public class DlgCariPembelian extends javax.swing.JDialog {
         ppHapus.setBackground(new java.awt.Color(255, 255, 255));
         ppHapus.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppHapus.setForeground(new java.awt.Color(60, 80, 50));
-        ppHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppHapus.setText("Hapus Pengadaan");
         ppHapus.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppHapus.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -409,7 +409,7 @@ public class DlgCariPembelian extends javax.swing.JDialog {
         });
         panelisi1.add(TCari);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('5');
         BtnCari.setToolTipText("Alt+5");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -437,7 +437,7 @@ public class DlgCariPembelian extends javax.swing.JDialog {
         LTotal.setPreferredSize(new java.awt.Dimension(120, 30));
         panelisi1.add(LTotal);
 
-        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAll.setMnemonic('M');
         BtnAll.setText("Semua");
         BtnAll.setToolTipText("Alt+M");
@@ -455,7 +455,7 @@ public class DlgCariPembelian extends javax.swing.JDialog {
         });
         panelisi1.add(BtnAll);
 
-        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnPrint.setMnemonic('T');
         BtnPrint.setText("Cetak");
         BtnPrint.setToolTipText("Alt+T");
@@ -473,7 +473,7 @@ public class DlgCariPembelian extends javax.swing.JDialog {
         });
         panelisi1.add(BtnPrint);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");
@@ -519,7 +519,7 @@ public class DlgCariPembelian extends javax.swing.JDialog {
         panelisi4.add(nmbar);
         nmbar.setBounds(501, 10, 230, 23);
 
-        btnBarang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnBarang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnBarang.setMnemonic('4');
         btnBarang.setToolTipText("Alt+4");
         btnBarang.setName("btnBarang"); // NOI18N
@@ -548,7 +548,7 @@ public class DlgCariPembelian extends javax.swing.JDialog {
         panelisi4.add(kdsat);
         kdsat.setBounds(80, 10, 53, 23);
 
-        btnSatuan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnSatuan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnSatuan.setMnemonic('3');
         btnSatuan.setToolTipText("Alt+3");
         btnSatuan.setName("btnSatuan"); // NOI18N
@@ -656,7 +656,7 @@ public class DlgCariPembelian extends javax.swing.JDialog {
         panelisi3.add(nmptg);
         nmptg.setBounds(471, 40, 260, 23);
 
-        btnSuplier.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnSuplier.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnSuplier.setMnemonic('1');
         btnSuplier.setToolTipText("Alt+1");
         btnSuplier.setName("btnSuplier"); // NOI18N
@@ -669,7 +669,7 @@ public class DlgCariPembelian extends javax.swing.JDialog {
         panelisi3.add(btnSuplier);
         btnSuplier.setBounds(734, 10, 28, 23);
 
-        btnPetugas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnPetugas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnPetugas.setMnemonic('2');
         btnPetugas.setToolTipText("Alt+2");
         btnPetugas.setName("btnPetugas"); // NOI18N
@@ -722,7 +722,7 @@ public class DlgCariPembelian extends javax.swing.JDialog {
         panelisi3.add(NmIF);
         NmIF.setBounds(471, 70, 260, 23);
 
-        btnIF.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnIF.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnIF.setMnemonic('2');
         btnIF.setToolTipText("Alt+2");
         btnIF.setName("btnIF"); // NOI18N

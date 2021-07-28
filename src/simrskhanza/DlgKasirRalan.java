@@ -685,7 +685,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnPermintaan.setBackground(new java.awt.Color(252, 255, 250));
         MnPermintaan.setForeground(new java.awt.Color(70, 70, 70));
-        MnPermintaan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPermintaan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPermintaan.setText("Permintaan");
         MnPermintaan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPermintaan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -696,7 +696,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnJadwalOperasi.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnJadwalOperasi.setForeground(new java.awt.Color(70, 70, 70));
-        MnJadwalOperasi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnJadwalOperasi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnJadwalOperasi.setText("Jadwal Operasi");
         MnJadwalOperasi.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnJadwalOperasi.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -712,7 +712,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnSKDPBPJS.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnSKDPBPJS.setForeground(new java.awt.Color(70, 70, 70));
-        MnSKDPBPJS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnSKDPBPJS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnSKDPBPJS.setText("SKDP BPJS");
         MnSKDPBPJS.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnSKDPBPJS.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -728,7 +728,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnPermintaanLab.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPermintaanLab.setForeground(new java.awt.Color(70, 70, 70));
-        MnPermintaanLab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPermintaanLab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPermintaanLab.setText("Pemeriksaan Lab");
         MnPermintaanLab.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnPermintaanLab.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -744,7 +744,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnPermintaanRadiologi.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPermintaanRadiologi.setForeground(new java.awt.Color(70, 70, 70));
-        MnPermintaanRadiologi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPermintaanRadiologi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPermintaanRadiologi.setText("Pemeriksaan Radiologi");
         MnPermintaanRadiologi.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnPermintaanRadiologi.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -762,7 +762,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnKamarInap.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnKamarInap.setForeground(new java.awt.Color(70, 70, 70));
-        MnKamarInap.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnKamarInap.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnKamarInap.setText("Kamar Inap");
         MnKamarInap.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnKamarInap.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -778,7 +778,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnTindakanRalan.setBackground(new java.awt.Color(252, 255, 250));
         MnTindakanRalan.setForeground(new java.awt.Color(70, 70, 70));
-        MnTindakanRalan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnTindakanRalan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnTindakanRalan.setText("Tindakan & Pemeriksaan");
         MnTindakanRalan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnTindakanRalan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -789,7 +789,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnDataRalan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnDataRalan.setForeground(new java.awt.Color(70, 70, 70));
-        MnDataRalan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnDataRalan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnDataRalan.setText("Data Tindakan Rawat Jalan");
         MnDataRalan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnDataRalan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -805,7 +805,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnPeriksaLab.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPeriksaLab.setForeground(new java.awt.Color(70, 70, 70));
-        MnPeriksaLab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPeriksaLab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPeriksaLab.setText("Periksa Lab");
         MnPeriksaLab.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnPeriksaLab.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -821,7 +821,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnPeriksaRadiologi.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPeriksaRadiologi.setForeground(new java.awt.Color(70, 70, 70));
-        MnPeriksaRadiologi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPeriksaRadiologi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPeriksaRadiologi.setText("Periksa Radiologi");
         MnPeriksaRadiologi.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnPeriksaRadiologi.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -837,7 +837,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnOperasi.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnOperasi.setForeground(new java.awt.Color(70, 70, 70));
-        MnOperasi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnOperasi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnOperasi.setText("Tagihan Operasi/VK");
         MnOperasi.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnOperasi.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -855,7 +855,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnObatRalan.setBackground(new java.awt.Color(252, 255, 250));
         MnObatRalan.setForeground(new java.awt.Color(70, 70, 70));
-        MnObatRalan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnObatRalan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnObatRalan.setText("Obat");
         MnObatRalan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnObatRalan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -866,7 +866,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnPemberianObat.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPemberianObat.setForeground(new java.awt.Color(70, 70, 70));
-        MnPemberianObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPemberianObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPemberianObat.setText("Pemberian Obat");
         MnPemberianObat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnPemberianObat.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -882,7 +882,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnNoResep.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnNoResep.setForeground(new java.awt.Color(70, 70, 70));
-        MnNoResep.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnNoResep.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnNoResep.setText("Input No.Resep");
         MnNoResep.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnNoResep.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -898,7 +898,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnResepDOkter.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnResepDOkter.setForeground(new java.awt.Color(70, 70, 70));
-        MnResepDOkter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnResepDOkter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnResepDOkter.setText("Input Resep Dokter");
         MnResepDOkter.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnResepDOkter.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -914,7 +914,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnObatLangsung.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnObatLangsung.setForeground(new java.awt.Color(70, 70, 70));
-        MnObatLangsung.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnObatLangsung.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnObatLangsung.setText("Total Tagihan Obat");
         MnObatLangsung.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnObatLangsung.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -930,7 +930,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnDataPemberianObat.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnDataPemberianObat.setForeground(new java.awt.Color(70, 70, 70));
-        MnDataPemberianObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnDataPemberianObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnDataPemberianObat.setText("Data Pemberian Obat");
         MnDataPemberianObat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnDataPemberianObat.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -946,7 +946,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnPenjualan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPenjualan.setForeground(new java.awt.Color(70, 70, 70));
-        MnPenjualan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPenjualan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPenjualan.setText("Penjualan Obat/Alkes/Barang");
         MnPenjualan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnPenjualan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -962,7 +962,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnPiutangObat.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPiutangObat.setForeground(new java.awt.Color(70, 70, 70));
-        MnPiutangObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPiutangObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPiutangObat.setText("Piutang Obat/Alkes/Barang");
         MnPiutangObat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnPiutangObat.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -980,7 +980,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnPilihBilling.setBackground(new java.awt.Color(252, 255, 250));
         MnPilihBilling.setForeground(new java.awt.Color(70, 70, 70));
-        MnPilihBilling.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPilihBilling.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPilihBilling.setText("Billing/Pembayaran Pasien");
         MnPilihBilling.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPilihBilling.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -991,7 +991,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnBillingParsial.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnBillingParsial.setForeground(new java.awt.Color(70, 70, 70));
-        MnBillingParsial.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnBillingParsial.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnBillingParsial.setText("Billing Parsial");
         MnBillingParsial.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnBillingParsial.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1007,7 +1007,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnBilling.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnBilling.setForeground(new java.awt.Color(70, 70, 70));
-        MnBilling.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnBilling.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnBilling.setText("Billing Total");
         MnBilling.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnBilling.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1025,7 +1025,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnGanti.setBackground(new java.awt.Color(252, 255, 250));
         MnGanti.setForeground(new java.awt.Color(70, 70, 70));
-        MnGanti.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnGanti.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnGanti.setText("Ganti");
         MnGanti.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnGanti.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -1036,7 +1036,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnPoli.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPoli.setForeground(new java.awt.Color(70, 70, 70));
-        MnPoli.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPoli.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPoli.setText("Poliklinik");
         MnPoli.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnPoli.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1052,7 +1052,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnDokter.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnDokter.setForeground(new java.awt.Color(70, 70, 70));
-        MnDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnDokter.setText("Dokter Poli");
         MnDokter.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnDokter.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1068,7 +1068,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnPenjab.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPenjab.setForeground(new java.awt.Color(70, 70, 70));
-        MnPenjab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPenjab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPenjab.setText("Jenis Bayar");
         MnPenjab.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnPenjab.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1086,7 +1086,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnRujukan.setBackground(new java.awt.Color(252, 255, 250));
         MnRujukan.setForeground(new java.awt.Color(70, 70, 70));
-        MnRujukan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnRujukan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnRujukan.setText("Rujukan");
         MnRujukan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnRujukan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -1097,7 +1097,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnRujuk.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnRujuk.setForeground(new java.awt.Color(70, 70, 70));
-        MnRujuk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnRujuk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnRujuk.setText("Rujukan Keluar");
         MnRujuk.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnRujuk.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1113,7 +1113,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnPoliInternal.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPoliInternal.setForeground(new java.awt.Color(70, 70, 70));
-        MnPoliInternal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPoliInternal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPoliInternal.setText("Poli Internal");
         MnPoliInternal.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnPoliInternal.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1131,7 +1131,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnRekap.setBackground(new java.awt.Color(252, 255, 250));
         MnRekap.setForeground(new java.awt.Color(70, 70, 70));
-        MnRekap.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnRekap.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnRekap.setText("Rekap Data");
         MnRekap.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnRekap.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -1142,7 +1142,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnRekapHarianDokter.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnRekapHarianDokter.setForeground(new java.awt.Color(70, 70, 70));
-        MnRekapHarianDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnRekapHarianDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnRekapHarianDokter.setText("Rekap Harian Dokter ");
         MnRekapHarianDokter.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnRekapHarianDokter.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1158,7 +1158,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnRekapHarianParamedis.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnRekapHarianParamedis.setForeground(new java.awt.Color(70, 70, 70));
-        MnRekapHarianParamedis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnRekapHarianParamedis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnRekapHarianParamedis.setText("Rekap Harian Paramedis");
         MnRekapHarianParamedis.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnRekapHarianParamedis.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1174,7 +1174,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnRekapBulananDokter.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnRekapBulananDokter.setForeground(new java.awt.Color(70, 70, 70));
-        MnRekapBulananDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnRekapBulananDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnRekapBulananDokter.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnRekapBulananDokter.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         MnRekapBulananDokter.setIconTextGap(5);
@@ -1190,7 +1190,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnRekapBulananParamedis.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnRekapBulananParamedis.setForeground(new java.awt.Color(70, 70, 70));
-        MnRekapBulananParamedis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnRekapBulananParamedis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnRekapBulananParamedis.setText("Rekap Bulanan Paramedis");
         MnRekapBulananParamedis.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnRekapBulananParamedis.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1206,7 +1206,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnRekapHarianPoli.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnRekapHarianPoli.setForeground(new java.awt.Color(70, 70, 70));
-        MnRekapHarianPoli.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnRekapHarianPoli.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnRekapHarianPoli.setText("Rekap Harian Poli");
         MnRekapHarianPoli.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnRekapHarianPoli.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1222,7 +1222,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnRekapHarianObat.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnRekapHarianObat.setForeground(new java.awt.Color(70, 70, 70));
-        MnRekapHarianObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnRekapHarianObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnRekapHarianObat.setText("Rekap Harian Obat");
         MnRekapHarianObat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnRekapHarianObat.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1240,7 +1240,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnStatus.setBackground(new java.awt.Color(252, 255, 250));
         MnStatus.setForeground(new java.awt.Color(70, 70, 70));
-        MnStatus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnStatus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnStatus.setText("Set Status");
         MnStatus.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnStatus.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -1251,7 +1251,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         ppBerkas.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBerkas.setForeground(new java.awt.Color(70, 70, 70));
-        ppBerkas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppBerkas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppBerkas.setText("Berkas R.M. Di Ranap");
         ppBerkas.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBerkas.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1267,7 +1267,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         ppBerkasRanap.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBerkasRanap.setForeground(new java.awt.Color(70, 70, 70));
-        ppBerkasRanap.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppBerkasRanap.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppBerkasRanap.setText("Berkas R.M. Diterima");
         ppBerkasRanap.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBerkasRanap.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1283,7 +1283,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnSudah.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnSudah.setForeground(new java.awt.Color(70, 70, 70));
-        MnSudah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnSudah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnSudah.setText("Sudah Periksa");
         MnSudah.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnSudah.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1299,7 +1299,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnBelum.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnBelum.setForeground(new java.awt.Color(70, 70, 70));
-        MnBelum.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnBelum.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnBelum.setText("Belum Periksa");
         MnBelum.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnBelum.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1315,7 +1315,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnBatal.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnBatal.setForeground(new java.awt.Color(70, 70, 70));
-        MnBatal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnBatal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnBatal.setText("Batal Periksa");
         MnBatal.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnBatal.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1331,7 +1331,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnDirujuk.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnDirujuk.setForeground(new java.awt.Color(70, 70, 70));
-        MnDirujuk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnDirujuk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnDirujuk.setText("Dirujuk");
         MnDirujuk.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnDirujuk.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1347,7 +1347,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnDIrawat.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnDIrawat.setForeground(new java.awt.Color(70, 70, 70));
-        MnDIrawat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnDIrawat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnDIrawat.setText("Dirawat");
         MnDIrawat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnDIrawat.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1363,7 +1363,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnMeninggal.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnMeninggal.setForeground(new java.awt.Color(70, 70, 70));
-        MnMeninggal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnMeninggal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnMeninggal.setText("Meninggal");
         MnMeninggal.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnMeninggal.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1379,7 +1379,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnPulangPaksa.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPulangPaksa.setForeground(new java.awt.Color(70, 70, 70));
-        MnPulangPaksa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPulangPaksa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPulangPaksa.setText("Pulang Paksa");
         MnPulangPaksa.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnPulangPaksa.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1394,7 +1394,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
         MnStatus.add(MnPulangPaksa);
 
         jMenu7.setForeground(new java.awt.Color(70, 70, 70));
-        jMenu7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        jMenu7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         jMenu7.setText("Status Poli");
         jMenu7.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         jMenu7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -1405,7 +1405,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnStatusBaru.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnStatusBaru.setForeground(new java.awt.Color(70, 70, 70));
-        MnStatusBaru.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnStatusBaru.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnStatusBaru.setText("Status Poli Baru");
         MnStatusBaru.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnStatusBaru.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1421,7 +1421,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnStatusLama.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnStatusLama.setForeground(new java.awt.Color(70, 70, 70));
-        MnStatusLama.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnStatusLama.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnStatusLama.setText("Status Poli Lama");
         MnStatusLama.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnStatusLama.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1441,7 +1441,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusData.setBackground(new java.awt.Color(252, 255, 250));
         MnHapusData.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusData.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusData.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusData.setText("Hapus Data");
         MnHapusData.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusData.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -1452,7 +1452,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusTagihanOperasi.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusTagihanOperasi.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusTagihanOperasi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusTagihanOperasi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusTagihanOperasi.setText("Tagihan Operasi");
         MnHapusTagihanOperasi.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusTagihanOperasi.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1468,7 +1468,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusObatOperasi.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusObatOperasi.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusObatOperasi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusObatOperasi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusObatOperasi.setText("Obat Operasi");
         MnHapusObatOperasi.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusObatOperasi.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1484,7 +1484,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusBilling.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusBilling.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusBilling.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusBilling.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusBilling.setText("Billing");
         MnHapusBilling.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusBilling.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1500,7 +1500,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusDeposit.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusDeposit.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusDeposit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusDeposit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusDeposit.setText("Deposit");
         MnHapusDeposit.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusDeposit.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1516,7 +1516,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusDiet.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusDiet.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusDiet.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusDiet.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusDiet.setText("Pemberian Diet");
         MnHapusDiet.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusDiet.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1532,7 +1532,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusDiagnosa.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusDiagnosa.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusDiagnosa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusDiagnosa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusDiagnosa.setText("Diagnosa/Penyakit");
         MnHapusDiagnosa.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusDiagnosa.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1548,7 +1548,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusDpjp.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusDpjp.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusDpjp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusDpjp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusDpjp.setText("DPJP Ranap");
         MnHapusDpjp.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusDpjp.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1564,7 +1564,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusHemodialisa.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusHemodialisa.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusHemodialisa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusHemodialisa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusHemodialisa.setText("Hemodialisa");
         MnHapusHemodialisa.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusHemodialisa.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1580,7 +1580,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusKamarInap.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusKamarInap.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusKamarInap.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusKamarInap.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusKamarInap.setText("Kamar Inap");
         MnHapusKamarInap.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusKamarInap.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1596,7 +1596,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusPotongan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusPotongan.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusPotongan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusPotongan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusPotongan.setText("Potongan Biaya");
         MnHapusPotongan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusPotongan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1612,7 +1612,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusPiutang.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusPiutang.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusPiutang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusPiutang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusPiutang.setText("Piutang Pasien");
         MnHapusPiutang.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusPiutang.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1628,7 +1628,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusProsedur.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusProsedur.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusProsedur.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusProsedur.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusProsedur.setText("Prosedur Tindakan");
         MnHapusProsedur.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusProsedur.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1644,7 +1644,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusRanapGabung.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusRanapGabung.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusRanapGabung.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusRanapGabung.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusRanapGabung.setText("Ranap Gabung");
         MnHapusRanapGabung.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusRanapGabung.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1660,7 +1660,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusRujukKeluar.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusRujukKeluar.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusRujukKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusRujukKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusRujukKeluar.setText("Rujuk Keluar");
         MnHapusRujukKeluar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusRujukKeluar.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1676,7 +1676,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusRujukMasuk.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusRujukMasuk.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusRujukMasuk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusRujukMasuk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusRujukMasuk.setText("Rujuk Masuk");
         MnHapusRujukMasuk.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusRujukMasuk.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1692,7 +1692,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusTambahan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusTambahan.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusTambahan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusTambahan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusTambahan.setText("Tambahan Biaya");
         MnHapusTambahan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusTambahan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1708,7 +1708,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusBookingOperasi.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusBookingOperasi.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusBookingOperasi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusBookingOperasi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusBookingOperasi.setText("Booking Operasi");
         MnHapusBookingOperasi.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusBookingOperasi.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1724,7 +1724,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnTindakan.setBackground(new java.awt.Color(252, 255, 250));
         MnTindakan.setForeground(new java.awt.Color(70, 70, 70));
-        MnTindakan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnTindakan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnTindakan.setText("Tindakan");
         MnTindakan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnTindakan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -1735,7 +1735,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusTindakanRanapDokter.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusTindakanRanapDokter.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusTindakanRanapDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusTindakanRanapDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusTindakanRanapDokter.setText("Ranap Dokter");
         MnHapusTindakanRanapDokter.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusTindakanRanapDokter.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1751,7 +1751,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusTindakanRanapDokterParamedis.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusTindakanRanapDokterParamedis.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusTindakanRanapDokterParamedis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusTindakanRanapDokterParamedis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusTindakanRanapDokterParamedis.setText("Ranap Dokter & Paramedis");
         MnHapusTindakanRanapDokterParamedis.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusTindakanRanapDokterParamedis.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1767,7 +1767,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusTindakanRanapParamedis.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusTindakanRanapParamedis.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusTindakanRanapParamedis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusTindakanRanapParamedis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusTindakanRanapParamedis.setText("Ranap Paramedis");
         MnHapusTindakanRanapParamedis.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusTindakanRanapParamedis.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1783,7 +1783,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusTindakanRalanDokter.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusTindakanRalanDokter.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusTindakanRalanDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusTindakanRalanDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusTindakanRalanDokter.setText("Ralan Dokter");
         MnHapusTindakanRalanDokter.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusTindakanRalanDokter.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1799,7 +1799,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusTindakanRalanDokterParamedis.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusTindakanRalanDokterParamedis.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusTindakanRalanDokterParamedis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusTindakanRalanDokterParamedis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusTindakanRalanDokterParamedis.setText("Ralan Dokter & Paramedis");
         MnHapusTindakanRalanDokterParamedis.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusTindakanRalanDokterParamedis.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1815,7 +1815,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusTindakanRalanParamedis.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusTindakanRalanParamedis.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusTindakanRalanParamedis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusTindakanRalanParamedis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusTindakanRalanParamedis.setText("Ralan Paramedis");
         MnHapusTindakanRalanParamedis.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusTindakanRalanParamedis.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1833,7 +1833,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnPemeriksaan.setBackground(new java.awt.Color(252, 255, 250));
         MnPemeriksaan.setForeground(new java.awt.Color(70, 70, 70));
-        MnPemeriksaan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPemeriksaan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPemeriksaan.setText("Pemeriksaan");
         MnPemeriksaan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPemeriksaan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -1844,7 +1844,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusPemeriksaanRalan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusPemeriksaanRalan.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusPemeriksaanRalan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusPemeriksaanRalan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusPemeriksaanRalan.setText("Ralan");
         MnHapusPemeriksaanRalan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusPemeriksaanRalan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1860,7 +1860,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusPemeriksaanRanap.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusPemeriksaanRanap.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusPemeriksaanRanap.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusPemeriksaanRanap.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusPemeriksaanRanap.setText("Ranap");
         MnHapusPemeriksaanRanap.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusPemeriksaanRanap.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1876,7 +1876,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusLab.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusLab.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusLab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusLab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusLab.setText("Laborat");
         MnHapusLab.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusLab.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1892,7 +1892,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusRadiologi.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusRadiologi.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusRadiologi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusRadiologi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusRadiologi.setText("Radiologi");
         MnHapusRadiologi.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusRadiologi.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1910,7 +1910,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnObat.setBackground(new java.awt.Color(252, 255, 250));
         MnObat.setForeground(new java.awt.Color(70, 70, 70));
-        MnObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnObat.setText("Obat");
         MnObat.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnObat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -1921,7 +1921,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusAturanPkaiObat.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusAturanPkaiObat.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusAturanPkaiObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusAturanPkaiObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusAturanPkaiObat.setText("Aturan Pakai Obat");
         MnHapusAturanPkaiObat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusAturanPkaiObat.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1937,7 +1937,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusObat.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusObat.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusObat.setText("Pemberian Obat");
         MnHapusObat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusObat.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1953,7 +1953,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusResepObat.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusResepObat.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusResepObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusResepObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusResepObat.setText("Resep Obat");
         MnHapusResepObat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusResepObat.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1969,7 +1969,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusResepPulang.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusResepPulang.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusResepPulang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusResepPulang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusResepPulang.setText("Resep Pulang");
         MnHapusResepPulang.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusResepPulang.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1985,7 +1985,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusReturObat.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusReturObat.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusReturObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusReturObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusReturObat.setText("Retur Obat Pasien");
         MnHapusReturObat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusReturObat.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2001,7 +2001,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusStokObatRanap.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusStokObatRanap.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusStokObatRanap.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusStokObatRanap.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusStokObatRanap.setText("Stok Obat Ranap");
         MnHapusStokObatRanap.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusStokObatRanap.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2019,7 +2019,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusSemua.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusSemua.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusSemua.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusSemua.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusSemua.setText("Semua Transaksi & Registrasi");
         MnHapusSemua.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusSemua.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2037,7 +2037,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrut.setBackground(new java.awt.Color(252, 255, 250));
         MnUrut.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrut.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrut.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrut.setText("Urutkan Data Berdasar");
         MnUrut.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrut.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -2048,7 +2048,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutNoRawatDesc.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutNoRawatDesc.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutNoRawatDesc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutNoRawatDesc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutNoRawatDesc.setText("No.Rawat Descending");
         MnUrutNoRawatDesc.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutNoRawatDesc.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2064,7 +2064,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutNoRawatAsc.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutNoRawatAsc.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutNoRawatAsc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutNoRawatAsc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutNoRawatAsc.setText("No.Rawat Ascending");
         MnUrutNoRawatAsc.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutNoRawatAsc.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2080,7 +2080,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutTanggalDesc.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutTanggalDesc.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutTanggalDesc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutTanggalDesc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutTanggalDesc.setText("Tanggal Descending");
         MnUrutTanggalDesc.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutTanggalDesc.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2096,7 +2096,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutTanggalAsc.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutTanggalAsc.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutTanggalAsc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutTanggalAsc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutTanggalAsc.setText("Tanggal Ascending");
         MnUrutTanggalAsc.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutTanggalAsc.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2112,7 +2112,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutDokterDesc.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutDokterDesc.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutDokterDesc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutDokterDesc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutDokterDesc.setText("Dokter Descending");
         MnUrutDokterDesc.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutDokterDesc.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2128,7 +2128,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutDokterAsc.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutDokterAsc.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutDokterAsc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutDokterAsc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutDokterAsc.setText("Dokter Ascending");
         MnUrutDokterAsc.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutDokterAsc.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2144,7 +2144,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutPoliklinikDesc.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutPoliklinikDesc.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutPoliklinikDesc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutPoliklinikDesc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutPoliklinikDesc.setText("Poli/Unit Descending");
         MnUrutPoliklinikDesc.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutPoliklinikDesc.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2160,7 +2160,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutPoliklinikAsc.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutPoliklinikAsc.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutPoliklinikAsc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutPoliklinikAsc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutPoliklinikAsc.setText("Poli/Unit Ascending");
         MnUrutPoliklinikAsc.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutPoliklinikAsc.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2176,7 +2176,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutPenjabDesc.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutPenjabDesc.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutPenjabDesc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutPenjabDesc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutPenjabDesc.setText("Cara Bayar Descending");
         MnUrutPenjabDesc.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutPenjabDesc.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2192,7 +2192,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutPenjabAsc.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutPenjabAsc.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutPenjabAsc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutPenjabAsc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutPenjabAsc.setText("Cara Bayar Ascending");
         MnUrutPenjabAsc.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutPenjabAsc.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2208,7 +2208,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutStatusDesc.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutStatusDesc.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutStatusDesc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutStatusDesc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutStatusDesc.setText("Status Descending");
         MnUrutStatusDesc.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutStatusDesc.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2224,7 +2224,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutStatusAsc.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutStatusAsc.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutStatusAsc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutStatusAsc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutStatusAsc.setText("Status Ascending");
         MnUrutStatusAsc.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutStatusAsc.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2240,7 +2240,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutRegDesc1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutRegDesc1.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutRegDesc1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutRegDesc1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutRegDesc1.setText("No. Reg. Descending");
         MnUrutRegDesc1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutRegDesc1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2256,7 +2256,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutRegAsc1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutRegAsc1.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutRegAsc1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutRegAsc1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutRegAsc1.setText("No. Reg. Ascending");
         MnUrutRegAsc1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutRegAsc1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2274,7 +2274,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         jMenu6.setBackground(new java.awt.Color(252, 255, 250));
         jMenu6.setForeground(new java.awt.Color(70, 70, 70));
-        jMenu6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        jMenu6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         jMenu6.setText("Label & Barcode");
         jMenu6.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         jMenu6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -2285,7 +2285,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnLabelTracker.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnLabelTracker.setForeground(new java.awt.Color(70, 70, 70));
-        MnLabelTracker.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnLabelTracker.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnLabelTracker.setText("Label Tracker 1");
         MnLabelTracker.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnLabelTracker.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2301,7 +2301,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnLabelTracker1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnLabelTracker1.setForeground(new java.awt.Color(70, 70, 70));
-        MnLabelTracker1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnLabelTracker1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnLabelTracker1.setText("Label Tracker 2");
         MnLabelTracker1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnLabelTracker1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2317,7 +2317,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnLabelTracker2.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnLabelTracker2.setForeground(new java.awt.Color(70, 70, 70));
-        MnLabelTracker2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnLabelTracker2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnLabelTracker2.setText("Label Tracker 3");
         MnLabelTracker2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnLabelTracker2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2333,7 +2333,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnLabelTracker3.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnLabelTracker3.setForeground(new java.awt.Color(70, 70, 70));
-        MnLabelTracker3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnLabelTracker3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnLabelTracker3.setText("Label Tracker 4");
         MnLabelTracker3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnLabelTracker3.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2349,7 +2349,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnBarcode.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnBarcode.setForeground(new java.awt.Color(70, 70, 70));
-        MnBarcode.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnBarcode.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnBarcode.setText("Barcode Perawatan 1");
         MnBarcode.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnBarcode.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2365,7 +2365,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnBarcode1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnBarcode1.setForeground(new java.awt.Color(70, 70, 70));
-        MnBarcode1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnBarcode1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnBarcode1.setText("Barcode Perawatan 2");
         MnBarcode1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnBarcode1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2381,7 +2381,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnBarcodeRM9.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnBarcodeRM9.setForeground(new java.awt.Color(70, 70, 70));
-        MnBarcodeRM9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnBarcodeRM9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnBarcodeRM9.setMnemonic('L');
         MnBarcodeRM9.setText("Label Rekam Medis 10");
         MnBarcodeRM9.setToolTipText("L");
@@ -2397,7 +2397,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnGelang1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnGelang1.setForeground(new java.awt.Color(70, 70, 70));
-        MnGelang1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnGelang1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnGelang1.setText("Gelang Pasien 1");
         MnGelang1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnGelang1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2413,7 +2413,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnGelang2.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnGelang2.setForeground(new java.awt.Color(70, 70, 70));
-        MnGelang2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnGelang2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnGelang2.setText("Gelang Pasien 2");
         MnGelang2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnGelang2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2429,7 +2429,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnGelang3.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnGelang3.setForeground(new java.awt.Color(70, 70, 70));
-        MnGelang3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnGelang3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnGelang3.setText("Gelang Pasien 3");
         MnGelang3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnGelang3.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2445,7 +2445,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnGelang4.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnGelang4.setForeground(new java.awt.Color(70, 70, 70));
-        MnGelang4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnGelang4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnGelang4.setText("Gelang Pasien 4");
         MnGelang4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnGelang4.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2461,7 +2461,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnGelang5.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnGelang5.setForeground(new java.awt.Color(70, 70, 70));
-        MnGelang5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnGelang5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnGelang5.setText("Gelang Pasien 5");
         MnGelang5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnGelang5.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2477,7 +2477,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnGelang6.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnGelang6.setForeground(new java.awt.Color(70, 70, 70));
-        MnGelang6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnGelang6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnGelang6.setText("Gelang Pasien 6");
         MnGelang6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnGelang6.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2493,7 +2493,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnGelang7.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnGelang7.setForeground(new java.awt.Color(70, 70, 70));
-        MnGelang7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnGelang7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnGelang7.setText("Gelang Pasien 7");
         MnGelang7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnGelang7.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2511,7 +2511,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         jMenu4.setBackground(new java.awt.Color(252, 255, 250));
         jMenu4.setForeground(new java.awt.Color(70, 70, 70));
-        jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         jMenu4.setText("Surat-Surat");
         jMenu4.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         jMenu4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -2522,7 +2522,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnCetakSuratSehat.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnCetakSuratSehat.setForeground(new java.awt.Color(70, 70, 70));
-        MnCetakSuratSehat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnCetakSuratSehat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnCetakSuratSehat.setText("Surat Keterangan Sehat 1");
         MnCetakSuratSehat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnCetakSuratSehat.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2538,7 +2538,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnCetakSuratSehat1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnCetakSuratSehat1.setForeground(new java.awt.Color(70, 70, 70));
-        MnCetakSuratSehat1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnCetakSuratSehat1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnCetakSuratSehat1.setText("Surat Keterangan Sehat 2");
         MnCetakSuratSehat1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnCetakSuratSehat1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2554,7 +2554,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnCetakBebasNarkoba.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnCetakBebasNarkoba.setForeground(new java.awt.Color(70, 70, 70));
-        MnCetakBebasNarkoba.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnCetakBebasNarkoba.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnCetakBebasNarkoba.setText("Surat Keterangan Bebas Narkoba");
         MnCetakBebasNarkoba.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnCetakBebasNarkoba.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2570,7 +2570,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnCetakSuratSakit.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnCetakSuratSakit.setForeground(new java.awt.Color(70, 70, 70));
-        MnCetakSuratSakit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnCetakSuratSakit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnCetakSuratSakit.setText("Surat Cuti Sakit 1");
         MnCetakSuratSakit.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnCetakSuratSakit.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2586,7 +2586,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnCetakSuratSakit2.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnCetakSuratSakit2.setForeground(new java.awt.Color(70, 70, 70));
-        MnCetakSuratSakit2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnCetakSuratSakit2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnCetakSuratSakit2.setText("Surat Cuti Sakit 2");
         MnCetakSuratSakit2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnCetakSuratSakit2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2602,7 +2602,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnCetakSuratSakit3.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnCetakSuratSakit3.setForeground(new java.awt.Color(70, 70, 70));
-        MnCetakSuratSakit3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnCetakSuratSakit3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnCetakSuratSakit3.setText("Surat Cuti Sakit 3");
         MnCetakSuratSakit3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnCetakSuratSakit3.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2618,7 +2618,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnCetakSuratSakit1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnCetakSuratSakit1.setForeground(new java.awt.Color(70, 70, 70));
-        MnCetakSuratSakit1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnCetakSuratSakit1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnCetakSuratSakit1.setText("Surat Keterangan Rawat Inap");
         MnCetakSuratSakit1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnCetakSuratSakit1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2634,7 +2634,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnPersetujuanMedis.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPersetujuanMedis.setForeground(new java.awt.Color(70, 70, 70));
-        MnPersetujuanMedis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPersetujuanMedis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPersetujuanMedis.setText("Persetujuan Medis");
         MnPersetujuanMedis.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnPersetujuanMedis.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2650,7 +2650,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnBuktiPelayananRalan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnBuktiPelayananRalan.setForeground(new java.awt.Color(70, 70, 70));
-        MnBuktiPelayananRalan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnBuktiPelayananRalan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnBuktiPelayananRalan.setText("Surat Jaminan & Bukti Pelayanan Ralan");
         MnBuktiPelayananRalan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnBuktiPelayananRalan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2666,7 +2666,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnLembarRalan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnLembarRalan.setForeground(new java.awt.Color(70, 70, 70));
-        MnLembarRalan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnLembarRalan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnLembarRalan.setMnemonic('w');
         MnLembarRalan.setText("Lembar Rawat Jalan");
         MnLembarRalan.setToolTipText("W");
@@ -2684,7 +2684,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnBlangkoResep.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnBlangkoResep.setForeground(new java.awt.Color(70, 70, 70));
-        MnBlangkoResep.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnBlangkoResep.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnBlangkoResep.setMnemonic('w');
         MnBlangkoResep.setText("Blanko Resep");
         MnBlangkoResep.setToolTipText("W");
@@ -2704,7 +2704,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         ppTampilkanSeleksi.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppTampilkanSeleksi.setForeground(new java.awt.Color(70, 70, 70));
-        ppTampilkanSeleksi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppTampilkanSeleksi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppTampilkanSeleksi.setText("Tampilkan Per Jenis Bayar");
         ppTampilkanSeleksi.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppTampilkanSeleksi.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2720,7 +2720,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnBridging.setBackground(new java.awt.Color(252, 255, 250));
         MnBridging.setForeground(new java.awt.Color(70, 70, 70));
-        MnBridging.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnBridging.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnBridging.setText("Bridging");
         MnBridging.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnBridging.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -2731,7 +2731,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnSEP.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnSEP.setForeground(new java.awt.Color(70, 70, 70));
-        MnSEP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnSEP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnSEP.setText("SEP BPJS");
         MnSEP.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnSEP.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2747,7 +2747,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnRujukSisrute.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnRujukSisrute.setForeground(new java.awt.Color(70, 70, 70));
-        MnRujukSisrute.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnRujukSisrute.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnRujukSisrute.setText("Rujuk Keluar Via Sisrute");
         MnRujukSisrute.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnRujukSisrute.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2765,7 +2765,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MenuInputData.setBackground(new java.awt.Color(252, 255, 250));
         MenuInputData.setForeground(new java.awt.Color(70, 70, 70));
-        MenuInputData.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MenuInputData.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MenuInputData.setText("Input Data");
         MenuInputData.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MenuInputData.setIconTextGap(5);
@@ -2774,7 +2774,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnDiagnosa.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnDiagnosa.setForeground(new java.awt.Color(70, 70, 70));
-        MnDiagnosa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnDiagnosa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnDiagnosa.setText("Diagnosa Pasien");
         MnDiagnosa.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnDiagnosa.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2790,7 +2790,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         ppCatatanPasien.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppCatatanPasien.setForeground(new java.awt.Color(70, 70, 70));
-        ppCatatanPasien.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppCatatanPasien.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppCatatanPasien.setText("Catatan Untuk Pasien");
         ppCatatanPasien.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppCatatanPasien.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2806,7 +2806,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         ppBerkasDigital.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBerkasDigital.setForeground(new java.awt.Color(70, 70, 70));
-        ppBerkasDigital.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppBerkasDigital.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppBerkasDigital.setText("Berkas Digital Perawatan");
         ppBerkasDigital.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBerkasDigital.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2822,7 +2822,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         ppIKP.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppIKP.setForeground(new java.awt.Color(70, 70, 70));
-        ppIKP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppIKP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppIKP.setText("Insiden Keselamatan Pasien");
         ppIKP.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppIKP.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2840,7 +2840,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         ppRiwayat.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppRiwayat.setForeground(new java.awt.Color(70, 70, 70));
-        ppRiwayat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppRiwayat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppRiwayat.setText("Riwayat Perawatan");
         ppRiwayat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppRiwayat.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -2886,7 +2886,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
         internalFrame2.add(jLabel3);
         jLabel3.setBounds(0, 30, 57, 23);
 
-        BtnCloseIn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/cross.png"))); // NOI18N
+        BtnCloseIn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cross.png"))); // NOI18N
         BtnCloseIn.setMnemonic('U');
         BtnCloseIn.setText("Tutup");
         BtnCloseIn.setToolTipText("Alt+U");
@@ -2904,7 +2904,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
         internalFrame2.add(BtnCloseIn);
         BtnCloseIn.setBounds(465, 30, 100, 30);
 
-        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan.setMnemonic('S');
         BtnSimpan.setText("Simpan");
         BtnSimpan.setToolTipText("Alt+S");
@@ -2922,7 +2922,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
         internalFrame2.add(BtnSimpan);
         BtnSimpan.setBounds(255, 30, 100, 30);
 
-        BtnBatal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/stop_f2.png"))); // NOI18N
+        BtnBatal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         BtnBatal.setMnemonic('H');
         BtnBatal.setText("Hapus");
         BtnBatal.setToolTipText("Alt+H");
@@ -2951,7 +2951,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
         internalFrame3.setName("internalFrame3"); // NOI18N
         internalFrame3.setLayout(null);
 
-        BtnCloseIn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/cross.png"))); // NOI18N
+        BtnCloseIn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cross.png"))); // NOI18N
         BtnCloseIn1.setMnemonic('U');
         BtnCloseIn1.setText("Tutup");
         BtnCloseIn1.setToolTipText("Alt+U");
@@ -2969,7 +2969,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
         internalFrame3.add(BtnCloseIn1);
         BtnCloseIn1.setBounds(510, 30, 100, 30);
 
-        BtnSimpan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan1.setMnemonic('S');
         BtnSimpan1.setText("Simpan");
         BtnSimpan1.setToolTipText("Alt+S");
@@ -3007,7 +3007,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
         internalFrame3.add(TDokter);
         TDokter.setBounds(183, 32, 181, 23);
 
-        btnCariDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnCariDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnCariDokter.setMnemonic('7');
         btnCariDokter.setToolTipText("ALt+7");
         btnCariDokter.setName("btnCariDokter"); // NOI18N
@@ -3046,7 +3046,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
         internalFrame5.setName("internalFrame5"); // NOI18N
         internalFrame5.setLayout(null);
 
-        BtnCloseIn4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/cross.png"))); // NOI18N
+        BtnCloseIn4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cross.png"))); // NOI18N
         BtnCloseIn4.setMnemonic('U');
         BtnCloseIn4.setText("Tutup");
         BtnCloseIn4.setToolTipText("Alt+U");
@@ -3059,7 +3059,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
         internalFrame5.add(BtnCloseIn4);
         BtnCloseIn4.setBounds(510, 30, 100, 30);
 
-        BtnSimpan4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan4.setMnemonic('S');
         BtnSimpan4.setText("Simpan");
         BtnSimpan4.setToolTipText("Alt+S");
@@ -3092,7 +3092,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
         internalFrame5.add(nmpoli);
         nmpoli.setBounds(183, 32, 181, 23);
 
-        btnCariPoli.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnCariPoli.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnCariPoli.setMnemonic('7');
         btnCariPoli.setToolTipText("ALt+7");
         btnCariPoli.setName("btnCariPoli"); // NOI18N
@@ -3115,7 +3115,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
         internalFrame6.setName("internalFrame6"); // NOI18N
         internalFrame6.setLayout(null);
 
-        BtnCloseIn5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/cross.png"))); // NOI18N
+        BtnCloseIn5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cross.png"))); // NOI18N
         BtnCloseIn5.setMnemonic('U');
         BtnCloseIn5.setText("Tutup");
         BtnCloseIn5.setToolTipText("Alt+U");
@@ -3128,7 +3128,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
         internalFrame6.add(BtnCloseIn5);
         BtnCloseIn5.setBounds(510, 30, 100, 30);
 
-        BtnSimpan5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan5.setMnemonic('S');
         BtnSimpan5.setText("Simpan");
         BtnSimpan5.setToolTipText("Alt+S");
@@ -3161,7 +3161,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
         internalFrame6.add(nmpenjab);
         nmpenjab.setBounds(183, 32, 181, 23);
 
-        btnBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnBayar.setMnemonic('7');
         btnBayar.setToolTipText("ALt+7");
         btnBayar.setName("btnBayar"); // NOI18N
@@ -3179,7 +3179,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnPermintaan1.setBackground(new java.awt.Color(252, 255, 250));
         MnPermintaan1.setForeground(new java.awt.Color(70, 70, 70));
-        MnPermintaan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPermintaan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPermintaan1.setText("Permintaan");
         MnPermintaan1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPermintaan1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -3190,7 +3190,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnJadwalOperasi1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnJadwalOperasi1.setForeground(new java.awt.Color(70, 70, 70));
-        MnJadwalOperasi1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnJadwalOperasi1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnJadwalOperasi1.setText("Jadwal Operasi");
         MnJadwalOperasi1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnJadwalOperasi1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3206,7 +3206,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnSKDPBPJS1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnSKDPBPJS1.setForeground(new java.awt.Color(70, 70, 70));
-        MnSKDPBPJS1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnSKDPBPJS1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnSKDPBPJS1.setText("SKDP BPJS");
         MnSKDPBPJS1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnSKDPBPJS1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3222,7 +3222,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnPermintaanLab1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPermintaanLab1.setForeground(new java.awt.Color(70, 70, 70));
-        MnPermintaanLab1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPermintaanLab1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPermintaanLab1.setText("Pemeriksaan Lab");
         MnPermintaanLab1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnPermintaanLab1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3238,7 +3238,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnPermintaanRadiologi1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPermintaanRadiologi1.setForeground(new java.awt.Color(70, 70, 70));
-        MnPermintaanRadiologi1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPermintaanRadiologi1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPermintaanRadiologi1.setText("Pemeriksaan Radiologi");
         MnPermintaanRadiologi1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnPermintaanRadiologi1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3256,7 +3256,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnKamarInap1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnKamarInap1.setForeground(new java.awt.Color(70, 70, 70));
-        MnKamarInap1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnKamarInap1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnKamarInap1.setText("Kamar Inap");
         MnKamarInap1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnKamarInap1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3272,7 +3272,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnHapusRujukan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnHapusRujukan.setForeground(new java.awt.Color(70, 70, 70));
-        MnHapusRujukan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnHapusRujukan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnHapusRujukan.setText("Hapus Rujukan Poli Internal");
         MnHapusRujukan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnHapusRujukan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3288,7 +3288,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnTindakan1.setBackground(new java.awt.Color(252, 255, 250));
         MnTindakan1.setForeground(new java.awt.Color(70, 70, 70));
-        MnTindakan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnTindakan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnTindakan1.setText("Tindakan & Pemeriksaan");
         MnTindakan1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnTindakan1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -3299,7 +3299,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnRawatJalan1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnRawatJalan1.setForeground(new java.awt.Color(70, 70, 70));
-        MnRawatJalan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnRawatJalan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnRawatJalan1.setText("Tagihan/Tindakan Rawat Jalan");
         MnRawatJalan1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnRawatJalan1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3315,7 +3315,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnPeriksaLab1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPeriksaLab1.setForeground(new java.awt.Color(70, 70, 70));
-        MnPeriksaLab1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPeriksaLab1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPeriksaLab1.setText("Periksa Laborat");
         MnPeriksaLab1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnPeriksaLab1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3331,7 +3331,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnPeriksaRadiologi1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPeriksaRadiologi1.setForeground(new java.awt.Color(70, 70, 70));
-        MnPeriksaRadiologi1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPeriksaRadiologi1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPeriksaRadiologi1.setText("Periksa Radiologi");
         MnPeriksaRadiologi1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnPeriksaRadiologi1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3347,7 +3347,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnOperasi1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnOperasi1.setForeground(new java.awt.Color(70, 70, 70));
-        MnOperasi1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnOperasi1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnOperasi1.setText("Tagihan Operasi/VK");
         MnOperasi1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnOperasi1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3363,7 +3363,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnDataRalan1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnDataRalan1.setForeground(new java.awt.Color(70, 70, 70));
-        MnDataRalan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnDataRalan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnDataRalan1.setText("Data Tindakan Rawat Jalan");
         MnDataRalan1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnDataRalan1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3381,7 +3381,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnObat1.setBackground(new java.awt.Color(252, 255, 250));
         MnObat1.setForeground(new java.awt.Color(70, 70, 70));
-        MnObat1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnObat1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnObat1.setText("Obat");
         MnObat1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnObat1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -3392,7 +3392,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnPemberianObat1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPemberianObat1.setForeground(new java.awt.Color(70, 70, 70));
-        MnPemberianObat1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPemberianObat1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPemberianObat1.setText("Pemberian Obat/BHP");
         MnPemberianObat1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnPemberianObat1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3408,7 +3408,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnNoResep1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnNoResep1.setForeground(new java.awt.Color(70, 70, 70));
-        MnNoResep1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnNoResep1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnNoResep1.setText("Input No.Resep");
         MnNoResep1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnNoResep1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3424,7 +3424,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnResepDOkter1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnResepDOkter1.setForeground(new java.awt.Color(70, 70, 70));
-        MnResepDOkter1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnResepDOkter1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnResepDOkter1.setText("Input Resep Dokter");
         MnResepDOkter1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnResepDOkter1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3440,7 +3440,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnObatLangsung1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnObatLangsung1.setForeground(new java.awt.Color(70, 70, 70));
-        MnObatLangsung1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnObatLangsung1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnObatLangsung1.setText("Total Tagihan Obat");
         MnObatLangsung1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnObatLangsung1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3456,7 +3456,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnDataPemberianObat1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnDataPemberianObat1.setForeground(new java.awt.Color(70, 70, 70));
-        MnDataPemberianObat1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnDataPemberianObat1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnDataPemberianObat1.setText("Data Pemberian Obat");
         MnDataPemberianObat1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnDataPemberianObat1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3472,7 +3472,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnPenjualan1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnPenjualan1.setForeground(new java.awt.Color(70, 70, 70));
-        MnPenjualan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnPenjualan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnPenjualan1.setText("Penjualan Obat/Alkes/Barang");
         MnPenjualan1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnPenjualan1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3490,7 +3490,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnBilling1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnBilling1.setForeground(new java.awt.Color(70, 70, 70));
-        MnBilling1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnBilling1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnBilling1.setText("Billing/Pembayaran Pasien");
         MnBilling1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnBilling1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3506,7 +3506,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnDiagnosa1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnDiagnosa1.setForeground(new java.awt.Color(70, 70, 70));
-        MnDiagnosa1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnDiagnosa1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnDiagnosa1.setText("Diagnosa Pasien");
         MnDiagnosa1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnDiagnosa1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3522,7 +3522,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrut1.setBackground(new java.awt.Color(252, 255, 250));
         MnUrut1.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrut1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrut1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrut1.setText("Urutkan Data Berdasar");
         MnUrut1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrut1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -3533,7 +3533,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutNoRawatDesc2.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutNoRawatDesc2.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutNoRawatDesc2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutNoRawatDesc2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutNoRawatDesc2.setText("No.Rawat Descending");
         MnUrutNoRawatDesc2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutNoRawatDesc2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3549,7 +3549,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutNoRawatAsc2.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutNoRawatAsc2.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutNoRawatAsc2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutNoRawatAsc2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutNoRawatAsc2.setText("No.Rawat Ascending");
         MnUrutNoRawatAsc2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutNoRawatAsc2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3565,7 +3565,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutTanggalDesc2.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutTanggalDesc2.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutTanggalDesc2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutTanggalDesc2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutTanggalDesc2.setText("Tanggal Descending");
         MnUrutTanggalDesc2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutTanggalDesc2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3581,7 +3581,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutTanggalAsc2.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutTanggalAsc2.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutTanggalAsc2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutTanggalAsc2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutTanggalAsc2.setText("Tanggal Ascending");
         MnUrutTanggalAsc2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutTanggalAsc2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3597,7 +3597,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutDokterDesc2.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutDokterDesc2.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutDokterDesc2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutDokterDesc2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutDokterDesc2.setText("Dokter Descending");
         MnUrutDokterDesc2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutDokterDesc2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3613,7 +3613,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutDokterAsc2.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutDokterAsc2.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutDokterAsc2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutDokterAsc2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutDokterAsc2.setText("Dokter Ascending");
         MnUrutDokterAsc2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutDokterAsc2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3629,7 +3629,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutPoliklinikDesc2.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutPoliklinikDesc2.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutPoliklinikDesc2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutPoliklinikDesc2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutPoliklinikDesc2.setText("Poli/Unit Descending");
         MnUrutPoliklinikDesc2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutPoliklinikDesc2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3645,7 +3645,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutPoliklinikAsc2.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutPoliklinikAsc2.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutPoliklinikAsc2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutPoliklinikAsc2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutPoliklinikAsc2.setText("Poli/Unit Ascending");
         MnUrutPoliklinikAsc2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutPoliklinikAsc2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3661,7 +3661,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutPenjabDesc2.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutPenjabDesc2.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutPenjabDesc2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutPenjabDesc2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutPenjabDesc2.setText("Cara Bayar Descending");
         MnUrutPenjabDesc2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutPenjabDesc2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3677,7 +3677,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutPenjabAsc2.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutPenjabAsc2.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutPenjabAsc2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutPenjabAsc2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutPenjabAsc2.setText("Cara Bayar Ascending");
         MnUrutPenjabAsc2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutPenjabAsc2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3693,7 +3693,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutStatusDesc2.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutStatusDesc2.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutStatusDesc2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutStatusDesc2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutStatusDesc2.setText("Status Descending");
         MnUrutStatusDesc2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutStatusDesc2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3709,7 +3709,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MnUrutStatusAsc2.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnUrutStatusAsc2.setForeground(new java.awt.Color(70, 70, 70));
-        MnUrutStatusAsc2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnUrutStatusAsc2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnUrutStatusAsc2.setText("Status Ascending");
         MnUrutStatusAsc2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnUrutStatusAsc2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3727,7 +3727,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         MenuInputData1.setBackground(new java.awt.Color(252, 255, 250));
         MenuInputData1.setForeground(new java.awt.Color(70, 70, 70));
-        MenuInputData1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MenuInputData1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MenuInputData1.setText("Input Data");
         MenuInputData1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MenuInputData1.setIconTextGap(5);
@@ -3736,7 +3736,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         ppBerkasDigital1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBerkasDigital1.setForeground(new java.awt.Color(70, 70, 70));
-        ppBerkasDigital1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppBerkasDigital1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppBerkasDigital1.setText("Berkas Digital Perawatan");
         ppBerkasDigital1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBerkasDigital1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3752,7 +3752,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         ppIKP1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppIKP1.setForeground(new java.awt.Color(70, 70, 70));
-        ppIKP1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppIKP1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppIKP1.setText("Insiden Keselamatan Pasien");
         ppIKP1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppIKP1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3770,7 +3770,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
 
         ppRiwayat1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppRiwayat1.setForeground(new java.awt.Color(70, 70, 70));
-        ppRiwayat1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppRiwayat1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppRiwayat1.setText("Riwayat Perawatan");
         ppRiwayat1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppRiwayat1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3839,7 +3839,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
         panelBiasa2.add(jLabel31);
         jLabel31.setBounds(297, 10, 110, 23);
 
-        BtnPrint2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnPrint2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnPrint2.setMnemonic('T');
         BtnPrint2.setText("Cetak");
         BtnPrint2.setToolTipText("Alt+T");
@@ -3853,7 +3853,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
         panelBiasa2.add(BtnPrint2);
         BtnPrint2.setBounds(10, 50, 100, 30);
 
-        BtnKeluar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar2.setMnemonic('K');
         BtnKeluar2.setText("Keluar");
         BtnKeluar2.setToolTipText("Alt+K");
@@ -3912,7 +3912,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
         panelBiasa4.add(jLabel37);
         jLabel37.setBounds(7, 10, 140, 23);
 
-        BtnPrint5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnPrint5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnPrint5.setMnemonic('T');
         BtnPrint5.setText("Cetak");
         BtnPrint5.setToolTipText("Alt+T");
@@ -3926,7 +3926,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
         panelBiasa4.add(BtnPrint5);
         BtnPrint5.setBounds(10, 80, 100, 30);
 
-        BtnKeluar4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar4.setMnemonic('K');
         BtnKeluar4.setText("Keluar");
         BtnKeluar4.setToolTipText("Alt+K");
@@ -3945,7 +3945,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
         panelBiasa4.add(NomorSurat);
         NomorSurat.setBounds(150, 10, 370, 23);
 
-        BtnSeek5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSeek5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeek5.setMnemonic('6');
         BtnSeek5.setToolTipText("ALt+6");
         BtnSeek5.setName("BtnSeek5"); // NOI18N
@@ -4004,7 +4004,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
         });
         panelGlass6.add(TCari);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('6');
         BtnCari.setToolTipText("Alt+6");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -4021,7 +4021,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
         });
         panelGlass6.add(BtnCari);
 
-        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAll.setMnemonic('M');
         BtnAll.setToolTipText("Alt+M");
         BtnAll.setName("BtnAll"); // NOI18N
@@ -4049,7 +4049,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
         LCount.setPreferredSize(new java.awt.Dimension(100, 30));
         panelGlass6.add(LCount);
 
-        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnPrint.setMnemonic('T');
         BtnPrint.setText("Cetak");
         BtnPrint.setToolTipText("Alt+T");
@@ -4067,7 +4067,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
         });
         panelGlass6.add(BtnPrint);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");
@@ -4101,7 +4101,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
         CrPtg.setPreferredSize(new java.awt.Dimension(280, 23));
         panelGlass7.add(CrPtg);
 
-        BtnSeek3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSeek3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeek3.setMnemonic('4');
         BtnSeek3.setToolTipText("ALt+4");
         BtnSeek3.setName("BtnSeek3"); // NOI18N
@@ -4123,7 +4123,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
         CrPoli.setPreferredSize(new java.awt.Dimension(280, 23));
         panelGlass7.add(CrPoli);
 
-        BtnSeek4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSeek4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeek4.setMnemonic('5');
         BtnSeek4.setToolTipText("ALt+5");
         BtnSeek4.setName("BtnSeek4"); // NOI18N
@@ -6403,7 +6403,7 @@ private void MnDataPemberianObatActionPerformed(java.awt.event.ActionEvent evt) 
             DlgBerkasRawat berkas=new DlgBerkasRawat(null,true);
             berkas.setJudul("::[ Berkas Digital Perawatan ]::","berkasrawat/pages");
             try {
-                berkas.loadURL("http://"+koneksiDB.HOST()+":"+prop.getProperty("PORTWEB")+"/"+prop.getProperty("HYBRIDWEB")+"/"+"berkasrawat/login2.php?act=login&usere=admin&passwordte=akusayangsamakamu&no_rawat="+TNoRw.getText());
+                berkas.loadURL("http://"+prop.getProperty("HOSTHYBRIDWEB")+":"+prop.getProperty("PORTWEB")+"/"+prop.getProperty("HYBRIDWEB")+"/"+"berkasrawat/login2.php?act=login&usere=admin&passwordte=akusayangsamakamu&no_rawat="+TNoRw.getText());
             } catch (Exception ex) {
                 System.out.println("Notifikasi : "+ex);
             }
@@ -6425,7 +6425,7 @@ private void MnDataPemberianObatActionPerformed(java.awt.event.ActionEvent evt) 
                 DlgBerkasRawat berkas=new DlgBerkasRawat(null,true);
                 berkas.setJudul("::[ Berkas Digital Perawatan ]::","berkasrawat/pages");
                 try {
-                    berkas.loadURL("http://"+koneksiDB.HOST()+":"+prop.getProperty("PORTWEB")+"/"+prop.getProperty("HYBRIDWEB")+"/"+"berkasrawat/login2.php?act=login&usere=admin&passwordte=akusayangsamakamu&no_rawat="+tbKasirRalan2.getValueAt(tbKasirRalan2.getSelectedRow(),10).toString());
+                    berkas.loadURL("http://"+prop.getProperty("HOSTHYBRIDWEB")+":"+prop.getProperty("PORTWEB")+"/"+prop.getProperty("HYBRIDWEB")+"/"+"berkasrawat/login2.php?act=login&usere=admin&passwordte=akusayangsamakamu&no_rawat="+tbKasirRalan2.getValueAt(tbKasirRalan2.getSelectedRow(),10).toString());
                 } catch (Exception ex) {
                     System.out.println("Notifikasi : "+ex);
                 }

@@ -214,7 +214,7 @@ public class InformasiKamarInap extends javax.swing.JDialog {
         });
         panelGlass11.add(BangsalCari);
 
-        btnBangsalCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        btnBangsalCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnBangsalCari.setMnemonic('3');
         btnBangsalCari.setToolTipText("Alt+3");
         btnBangsalCari.setName("btnBangsalCari"); // NOI18N
@@ -245,7 +245,7 @@ public class InformasiKamarInap extends javax.swing.JDialog {
         });
         panelGlass11.add(TCari);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('4');
         BtnCari.setToolTipText("Alt+4");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -262,7 +262,7 @@ public class InformasiKamarInap extends javax.swing.JDialog {
         });
         panelGlass11.add(BtnCari);
 
-        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAll.setMnemonic('4');
         BtnAll.setToolTipText("Alt+4");
         BtnAll.setName("BtnAll"); // NOI18N
@@ -290,7 +290,7 @@ public class InformasiKamarInap extends javax.swing.JDialog {
         LCount.setPreferredSize(new java.awt.Dimension(45, 23));
         panelGlass11.add(LCount);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('4');
         BtnKeluar.setToolTipText("Alt+4");
         BtnKeluar.setName("BtnKeluar"); // NOI18N

@@ -154,7 +154,7 @@ public final class DlgTemporaryPresensi extends javax.swing.JDialog {
         ppVerify.setBackground(new java.awt.Color(255, 255, 255));
         ppVerify.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppVerify.setForeground(new java.awt.Color(60, 80, 50));
-        ppVerify.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppVerify.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppVerify.setText("Verifikasi Presensi Yang Lebih Dari 16 Jam");
         ppVerify.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppVerify.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -171,7 +171,7 @@ public final class DlgTemporaryPresensi extends javax.swing.JDialog {
         ppVerifySemua.setBackground(new java.awt.Color(255, 255, 255));
         ppVerifySemua.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppVerifySemua.setForeground(new java.awt.Color(60, 80, 50));
-        ppVerifySemua.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppVerifySemua.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppVerifySemua.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppVerifySemua.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         ppVerifySemua.setIconTextGap(8);
@@ -188,7 +188,7 @@ public final class DlgTemporaryPresensi extends javax.swing.JDialog {
         ppHapusSemua.setBackground(new java.awt.Color(255, 255, 255));
         ppHapusSemua.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppHapusSemua.setForeground(new java.awt.Color(60, 80, 50));
-        ppHapusSemua.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppHapusSemua.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppHapusSemua.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppHapusSemua.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         ppHapusSemua.setIconTextGap(8);
@@ -205,7 +205,7 @@ public final class DlgTemporaryPresensi extends javax.swing.JDialog {
         ppPilihSemua.setBackground(new java.awt.Color(255, 255, 255));
         ppPilihSemua.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppPilihSemua.setForeground(new java.awt.Color(60, 80, 50));
-        ppPilihSemua.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppPilihSemua.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppPilihSemua.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppPilihSemua.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         ppPilihSemua.setIconTextGap(8);
@@ -222,7 +222,7 @@ public final class DlgTemporaryPresensi extends javax.swing.JDialog {
         ppBersihkanSemua.setBackground(new java.awt.Color(255, 255, 255));
         ppBersihkanSemua.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBersihkanSemua.setForeground(new java.awt.Color(60, 80, 50));
-        ppBersihkanSemua.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppBersihkanSemua.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppBersihkanSemua.setText("Bersihkan Pilihan");
         ppBersihkanSemua.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBersihkanSemua.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -239,7 +239,7 @@ public final class DlgTemporaryPresensi extends javax.swing.JDialog {
         ppVerifyOtomatis.setBackground(new java.awt.Color(255, 255, 255));
         ppVerifyOtomatis.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppVerifyOtomatis.setForeground(new java.awt.Color(60, 80, 50));
-        ppVerifyOtomatis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppVerifyOtomatis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppVerifyOtomatis.setText("Jalan Verifikasi Otomatis");
         ppVerifyOtomatis.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppVerifyOtomatis.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -304,7 +304,7 @@ public final class DlgTemporaryPresensi extends javax.swing.JDialog {
         });
         panelGlass7.add(TCari);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('1');
         BtnCari.setToolTipText("Alt+1");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -338,7 +338,7 @@ public final class DlgTemporaryPresensi extends javax.swing.JDialog {
         panelGlass5.setPreferredSize(new java.awt.Dimension(55, 55));
         panelGlass5.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
-        BtnTambah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/add-file-16x16.png"))); // NOI18N
+        BtnTambah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/add-file-16x16.png"))); // NOI18N
         BtnTambah.setMnemonic('A');
         BtnTambah.setText("Verifi");
         BtnTambah.setToolTipText("Alt+A");
@@ -356,7 +356,7 @@ public final class DlgTemporaryPresensi extends javax.swing.JDialog {
         });
         panelGlass5.add(BtnTambah);
 
-        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/stop_f2.png"))); // NOI18N
+        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         BtnHapus.setMnemonic('H');
         BtnHapus.setText("Hapus");
         BtnHapus.setToolTipText("Alt+H");
@@ -374,7 +374,7 @@ public final class DlgTemporaryPresensi extends javax.swing.JDialog {
         });
         panelGlass5.add(BtnHapus);
 
-        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnPrint.setMnemonic('T');
         BtnPrint.setText("Cetak");
         BtnPrint.setToolTipText("Alt+T");
@@ -392,7 +392,7 @@ public final class DlgTemporaryPresensi extends javax.swing.JDialog {
         });
         panelGlass5.add(BtnPrint);
 
-        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAll.setMnemonic('M');
         BtnAll.setText("Semua");
         BtnAll.setToolTipText("Alt+M");
@@ -410,7 +410,7 @@ public final class DlgTemporaryPresensi extends javax.swing.JDialog {
         });
         panelGlass5.add(BtnAll);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");

@@ -1296,7 +1296,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppBersihkanTindakanDr.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBersihkanTindakanDr.setForeground(new java.awt.Color(70, 70, 70));
-        ppBersihkanTindakanDr.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppBersihkanTindakanDr.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppBersihkanTindakanDr.setText("Bersihkan Pilihan");
         ppBersihkanTindakanDr.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBersihkanTindakanDr.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1311,7 +1311,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppSemuaTindakanDr.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppSemuaTindakanDr.setForeground(new java.awt.Color(70, 70, 70));
-        ppSemuaTindakanDr.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppSemuaTindakanDr.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppSemuaTindakanDr.setText("Pilih Semua");
         ppSemuaTindakanDr.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppSemuaTindakanDr.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1326,7 +1326,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppBersihkanTindakanDrBayar.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBersihkanTindakanDrBayar.setForeground(new java.awt.Color(70, 70, 70));
-        ppBersihkanTindakanDrBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppBersihkanTindakanDrBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppBersihkanTindakanDrBayar.setText("Bersihkan Pilihan");
         ppBersihkanTindakanDrBayar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBersihkanTindakanDrBayar.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1341,7 +1341,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppSemuaTindakanDrBayar.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppSemuaTindakanDrBayar.setForeground(new java.awt.Color(70, 70, 70));
-        ppSemuaTindakanDrBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppSemuaTindakanDrBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppSemuaTindakanDrBayar.setText("Pilih Semua");
         ppSemuaTindakanDrBayar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppSemuaTindakanDrBayar.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1356,7 +1356,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppBersihkanTindakanPr.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBersihkanTindakanPr.setForeground(new java.awt.Color(70, 70, 70));
-        ppBersihkanTindakanPr.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppBersihkanTindakanPr.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppBersihkanTindakanPr.setText("Bersihkan Pilihan");
         ppBersihkanTindakanPr.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBersihkanTindakanPr.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1371,7 +1371,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppSemuaTindakanPr.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppSemuaTindakanPr.setForeground(new java.awt.Color(70, 70, 70));
-        ppSemuaTindakanPr.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppSemuaTindakanPr.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppSemuaTindakanPr.setText("Pilih Semua");
         ppSemuaTindakanPr.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppSemuaTindakanPr.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1386,7 +1386,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppBersihkanTindakanPrBayar.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBersihkanTindakanPrBayar.setForeground(new java.awt.Color(70, 70, 70));
-        ppBersihkanTindakanPrBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppBersihkanTindakanPrBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppBersihkanTindakanPrBayar.setText("Bersihkan Pilihan");
         ppBersihkanTindakanPrBayar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBersihkanTindakanPrBayar.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1401,7 +1401,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppSemuaTindakanPrBayar.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppSemuaTindakanPrBayar.setForeground(new java.awt.Color(70, 70, 70));
-        ppSemuaTindakanPrBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppSemuaTindakanPrBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppSemuaTindakanPrBayar.setText("Pilih Semua");
         ppSemuaTindakanPrBayar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppSemuaTindakanPrBayar.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1416,7 +1416,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppBersihkanTindakanDrPr.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBersihkanTindakanDrPr.setForeground(new java.awt.Color(70, 70, 70));
-        ppBersihkanTindakanDrPr.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppBersihkanTindakanDrPr.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppBersihkanTindakanDrPr.setText("Bersihkan Pilihan");
         ppBersihkanTindakanDrPr.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBersihkanTindakanDrPr.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1431,7 +1431,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppSemuaTindakanDrPr.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppSemuaTindakanDrPr.setForeground(new java.awt.Color(70, 70, 70));
-        ppSemuaTindakanDrPr.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppSemuaTindakanDrPr.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppSemuaTindakanDrPr.setText("Pilih Semua");
         ppSemuaTindakanDrPr.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppSemuaTindakanDrPr.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1446,7 +1446,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppBersihkanTindakanDrPrBayar.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBersihkanTindakanDrPrBayar.setForeground(new java.awt.Color(70, 70, 70));
-        ppBersihkanTindakanDrPrBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppBersihkanTindakanDrPrBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppBersihkanTindakanDrPrBayar.setText("Bersihkan Pilihan");
         ppBersihkanTindakanDrPrBayar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBersihkanTindakanDrPrBayar.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1461,7 +1461,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppSemuaTindakanDrPrBayar.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppSemuaTindakanDrPrBayar.setForeground(new java.awt.Color(70, 70, 70));
-        ppSemuaTindakanDrPrBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppSemuaTindakanDrPrBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppSemuaTindakanDrPrBayar.setText("Pilih Semua");
         ppSemuaTindakanDrPrBayar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppSemuaTindakanDrPrBayar.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1476,7 +1476,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppBersihkanRadiologi.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBersihkanRadiologi.setForeground(new java.awt.Color(70, 70, 70));
-        ppBersihkanRadiologi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppBersihkanRadiologi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppBersihkanRadiologi.setText("Bersihkan Pilihan");
         ppBersihkanRadiologi.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBersihkanRadiologi.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1491,7 +1491,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppSemuaRadiologi.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppSemuaRadiologi.setForeground(new java.awt.Color(70, 70, 70));
-        ppSemuaRadiologi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppSemuaRadiologi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppSemuaRadiologi.setText("Pilih Semua");
         ppSemuaRadiologi.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppSemuaRadiologi.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1506,7 +1506,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppBersihkanRadiologiBayar.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBersihkanRadiologiBayar.setForeground(new java.awt.Color(70, 70, 70));
-        ppBersihkanRadiologiBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppBersihkanRadiologiBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppBersihkanRadiologiBayar.setText("Bersihkan Pilihan");
         ppBersihkanRadiologiBayar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBersihkanRadiologiBayar.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1521,7 +1521,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppSemuaRadiologiBayar.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppSemuaRadiologiBayar.setForeground(new java.awt.Color(70, 70, 70));
-        ppSemuaRadiologiBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppSemuaRadiologiBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppSemuaRadiologiBayar.setText("Pilih Semua");
         ppSemuaRadiologiBayar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppSemuaRadiologiBayar.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1536,7 +1536,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppBersihkanLaborat.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBersihkanLaborat.setForeground(new java.awt.Color(70, 70, 70));
-        ppBersihkanLaborat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppBersihkanLaborat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppBersihkanLaborat.setText("Bersihkan Pilihan");
         ppBersihkanLaborat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBersihkanLaborat.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1551,7 +1551,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppSemuaLaborat.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppSemuaLaborat.setForeground(new java.awt.Color(70, 70, 70));
-        ppSemuaLaborat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppSemuaLaborat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppSemuaLaborat.setText("Pilih Semua");
         ppSemuaLaborat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppSemuaLaborat.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1566,7 +1566,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppBersihkanDetailLaborat.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBersihkanDetailLaborat.setForeground(new java.awt.Color(70, 70, 70));
-        ppBersihkanDetailLaborat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppBersihkanDetailLaborat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppBersihkanDetailLaborat.setText("Bersihkan Pilihan");
         ppBersihkanDetailLaborat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBersihkanDetailLaborat.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1581,7 +1581,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppSemuaDetailLaborat.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppSemuaDetailLaborat.setForeground(new java.awt.Color(70, 70, 70));
-        ppSemuaDetailLaborat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppSemuaDetailLaborat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppSemuaDetailLaborat.setText("Pilih Semua");
         ppSemuaDetailLaborat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppSemuaDetailLaborat.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1596,7 +1596,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppBersihkanLaboratBayar.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBersihkanLaboratBayar.setForeground(new java.awt.Color(70, 70, 70));
-        ppBersihkanLaboratBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppBersihkanLaboratBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppBersihkanLaboratBayar.setText("Bersihkan Pilihan");
         ppBersihkanLaboratBayar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBersihkanLaboratBayar.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1611,7 +1611,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppSemuaLaboratBayar.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppSemuaLaboratBayar.setForeground(new java.awt.Color(70, 70, 70));
-        ppSemuaLaboratBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppSemuaLaboratBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppSemuaLaboratBayar.setText("Pilih Semua");
         ppSemuaLaboratBayar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppSemuaLaboratBayar.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1626,7 +1626,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppBersihkanDetailLaboratBayar.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBersihkanDetailLaboratBayar.setForeground(new java.awt.Color(70, 70, 70));
-        ppBersihkanDetailLaboratBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppBersihkanDetailLaboratBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppBersihkanDetailLaboratBayar.setText("Bersihkan Pilihan");
         ppBersihkanDetailLaboratBayar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBersihkanDetailLaboratBayar.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1641,7 +1641,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppSemuaDetailLaboratBayar.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppSemuaDetailLaboratBayar.setForeground(new java.awt.Color(70, 70, 70));
-        ppSemuaDetailLaboratBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppSemuaDetailLaboratBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppSemuaDetailLaboratBayar.setText("Pilih Semua");
         ppSemuaDetailLaboratBayar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppSemuaDetailLaboratBayar.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1656,7 +1656,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppBersihkanObat.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBersihkanObat.setForeground(new java.awt.Color(70, 70, 70));
-        ppBersihkanObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppBersihkanObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppBersihkanObat.setText("Bersihkan Pilihan");
         ppBersihkanObat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBersihkanObat.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1671,7 +1671,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppSemuaObat.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppSemuaObat.setForeground(new java.awt.Color(70, 70, 70));
-        ppSemuaObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppSemuaObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppSemuaObat.setText("Pilih Semua");
         ppSemuaObat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppSemuaObat.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1686,7 +1686,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppBersihkanObatBayar.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppBersihkanObatBayar.setForeground(new java.awt.Color(70, 70, 70));
-        ppBersihkanObatBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppBersihkanObatBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppBersihkanObatBayar.setText("Bersihkan Pilihan");
         ppBersihkanObatBayar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppBersihkanObatBayar.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1701,7 +1701,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
 
         ppSemuaObatBayar.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ppSemuaObatBayar.setForeground(new java.awt.Color(70, 70, 70));
-        ppSemuaObatBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        ppSemuaObatBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         ppSemuaObatBayar.setText("Pilih Semua");
         ppSemuaObatBayar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         ppSemuaObatBayar.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -1752,7 +1752,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
         TPasien.setPreferredSize(new java.awt.Dimension(300, 23));
         panelGlass1.add(TPasien);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('R');
         BtnCari.setToolTipText("Alt+R");
         BtnCari.setPreferredSize(new java.awt.Dimension(28, 23));
@@ -1802,7 +1802,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
         panelGlass8.add(TCariTindakan);
         TCariTindakan.setBounds(74, 10, 210, 23);
 
-        BtnCariTindakan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCariTindakan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCariTindakan.setMnemonic('1');
         BtnCariTindakan.setToolTipText("Alt+1");
         BtnCariTindakan.setPreferredSize(new java.awt.Dimension(28, 23));
@@ -1819,7 +1819,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
         panelGlass8.add(BtnCariTindakan);
         BtnCariTindakan.setBounds(286, 10, 28, 23);
 
-        BtnAllTindakan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAllTindakan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAllTindakan.setMnemonic('2');
         BtnAllTindakan.setToolTipText("Alt+2");
         BtnAllTindakan.setPreferredSize(new java.awt.Dimension(28, 23));
@@ -1836,7 +1836,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
         panelGlass8.add(BtnAllTindakan);
         BtnAllTindakan.setBounds(317, 10, 28, 23);
 
-        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/stop_f2.png"))); // NOI18N
+        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         BtnHapus.setMnemonic('H');
         BtnHapus.setText("Hapus");
         BtnHapus.setToolTipText("Alt+H");
@@ -1854,7 +1854,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
         panelGlass8.add(BtnHapus);
         BtnHapus.setBounds(670, 180, 100, 30);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");
@@ -1934,7 +1934,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
         panelGlass8.add(scrollPane3);
         scrollPane3.setBounds(91, 69, 784, 105);
 
-        BtnCariBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCariBayar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCariBayar.setMnemonic('3');
         BtnCariBayar.setToolTipText("Alt+3");
         BtnCariBayar.setPreferredSize(new java.awt.Dimension(28, 23));
@@ -1963,7 +1963,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
         panelGlass8.add(TKembali);
         TKembali.setBounds(91, 180, 230, 23);
 
-        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan.setMnemonic('S');
         BtnSimpan.setText("Simpan");
         BtnSimpan.setToolTipText("Alt+S");
@@ -1983,7 +1983,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
         panelGlass8.add(BtnSimpan);
         BtnSimpan.setBounds(460, 180, 100, 30);
 
-        BtnNota.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Agenda-1-16x16.png"))); // NOI18N
+        BtnNota.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Agenda-1-16x16.png"))); // NOI18N
         BtnNota.setMnemonic('N');
         BtnNota.setText(" Nota");
         BtnNota.setToolTipText("Alt+N");
@@ -2054,7 +2054,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
         panelGlass7.add(KdDok);
         KdDok.setBounds(74, 10, 130, 23);
 
-        BtnSeekDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSeekDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeekDokter.setMnemonic('4');
         BtnSeekDokter.setToolTipText("ALt+4");
         BtnSeekDokter.addActionListener(new java.awt.event.ActionListener() {
@@ -2120,7 +2120,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
         panelGlass10.add(kdptg);
         kdptg.setBounds(74, 10, 130, 23);
 
-        BtnSeekPetugas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSeekPetugas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeekPetugas.setMnemonic('5');
         BtnSeekPetugas.setToolTipText("ALt+5");
         BtnSeekPetugas.addActionListener(new java.awt.event.ActionListener() {
@@ -2197,7 +2197,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
         panelGlass11.add(kdptg2);
         kdptg2.setBounds(514, 10, 110, 23);
 
-        BtnSeekPetugas2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSeekPetugas2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeekPetugas2.setMnemonic('5');
         BtnSeekPetugas2.setToolTipText("ALt+5");
         BtnSeekPetugas2.addActionListener(new java.awt.event.ActionListener() {
@@ -2233,7 +2233,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
         panelGlass11.add(TDokter2);
         TDokter2.setBounds(166, 10, 221, 23);
 
-        BtnSeekDokter2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSeekDokter2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeekDokter2.setMnemonic('4');
         BtnSeekDokter2.setToolTipText("ALt+4");
         BtnSeekDokter2.addActionListener(new java.awt.event.ActionListener() {
@@ -2319,7 +2319,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
         panelGlass9.add(KdDokPerujukRad);
         KdDokPerujukRad.setBounds(74, 10, 130, 23);
 
-        BtnSeekDokter1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSeekDokter1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeekDokter1.setMnemonic('4');
         BtnSeekDokter1.setToolTipText("ALt+4");
         BtnSeekDokter1.addActionListener(new java.awt.event.ActionListener() {
@@ -2360,7 +2360,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
         panelGlass12.add(KdDokPerujukLab);
         KdDokPerujukLab.setBounds(74, 10, 130, 23);
 
-        BtnSeekDokter3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSeekDokter3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeekDokter3.setMnemonic('4');
         BtnSeekDokter3.setToolTipText("ALt+4");
         BtnSeekDokter3.addActionListener(new java.awt.event.ActionListener() {

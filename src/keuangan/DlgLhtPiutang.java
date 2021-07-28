@@ -203,7 +203,7 @@ public final class DlgLhtPiutang extends javax.swing.JDialog {
         MnDetailPiutang.setBackground(new java.awt.Color(255, 255, 255));
         MnDetailPiutang.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnDetailPiutang.setForeground(java.awt.Color.darkGray);
-        MnDetailPiutang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnDetailPiutang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnDetailPiutang.setText("Detail Piutang");
         MnDetailPiutang.setName("MnDetailPiutang"); // NOI18N
         MnDetailPiutang.setPreferredSize(new java.awt.Dimension(250, 28));
@@ -217,7 +217,7 @@ public final class DlgLhtPiutang extends javax.swing.JDialog {
         MnDetailCicilan.setBackground(new java.awt.Color(255, 255, 255));
         MnDetailCicilan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         MnDetailCicilan.setForeground(java.awt.Color.darkGray);
-        MnDetailCicilan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnDetailCicilan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
         MnDetailCicilan.setText("Detail Cicilan");
         MnDetailCicilan.setName("MnDetailCicilan"); // NOI18N
         MnDetailCicilan.setPreferredSize(new java.awt.Dimension(250, 28));
@@ -280,7 +280,7 @@ public final class DlgLhtPiutang extends javax.swing.JDialog {
         });
         panelGlass5.add(TCari);
 
-        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/accept.png"))); // NOI18N
+        BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('2');
         BtnCari.setToolTipText("Alt+2");
         BtnCari.setName("BtnCari"); // NOI18N
@@ -297,7 +297,7 @@ public final class DlgLhtPiutang extends javax.swing.JDialog {
         });
         panelGlass5.add(BtnCari);
 
-        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Search-16x16.png"))); // NOI18N
+        BtnAll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Search-16x16.png"))); // NOI18N
         BtnAll.setMnemonic('M');
         BtnAll.setToolTipText("Alt+M");
         BtnAll.setName("BtnAll"); // NOI18N
@@ -330,7 +330,7 @@ public final class DlgLhtPiutang extends javax.swing.JDialog {
         LCount.setPreferredSize(new java.awt.Dimension(180, 23));
         panelGlass5.add(LCount);
 
-        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/b_print.png"))); // NOI18N
+        BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
         BtnPrint.setMnemonic('T');
         BtnPrint.setText("Cetak");
         BtnPrint.setToolTipText("Alt+T");
@@ -348,7 +348,7 @@ public final class DlgLhtPiutang extends javax.swing.JDialog {
         });
         panelGlass5.add(BtnPrint);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/exit.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");
@@ -414,7 +414,7 @@ public final class DlgLhtPiutang extends javax.swing.JDialog {
         nmpenjab.setPreferredSize(new java.awt.Dimension(295, 23));
         panelisi4.add(nmpenjab);
 
-        BtnSeek2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnSeek2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeek2.setMnemonic('3');
         BtnSeek2.setToolTipText("Alt+3");
         BtnSeek2.setName("BtnSeek2"); // NOI18N

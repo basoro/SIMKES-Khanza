@@ -220,7 +220,7 @@ public class DlgRujukanPoliInternal extends javax.swing.JDialog {
         FormInput.add(TDokter);
         TDokter.setBounds(175, 42, 180, 23);
 
-        BtnDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnDokter.setMnemonic('3');
         BtnDokter.setToolTipText("ALt+3");
         BtnDokter.setName("BtnDokter"); // NOI18N
@@ -232,7 +232,7 @@ public class DlgRujukanPoliInternal extends javax.swing.JDialog {
         FormInput.add(BtnDokter);
         BtnDokter.setBounds(358, 42, 28, 23);
 
-        BtnUnit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/190.png"))); // NOI18N
+        BtnUnit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnUnit.setMnemonic('4');
         BtnUnit.setToolTipText("ALt+4");
         BtnUnit.setName("BtnUnit"); // NOI18N
@@ -300,7 +300,7 @@ public class DlgRujukanPoliInternal extends javax.swing.JDialog {
         panelGlass8.setPreferredSize(new java.awt.Dimension(100, 56));
         panelGlass8.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
-        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/save-16x16.png"))); // NOI18N
+        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan.setMnemonic('S');
         BtnSimpan.setText("Simpan");
         BtnSimpan.setToolTipText("Alt+S");
@@ -322,7 +322,7 @@ public class DlgRujukanPoliInternal extends javax.swing.JDialog {
         jLabel14.setPreferredSize(new java.awt.Dimension(520, 23));
         panelGlass8.add(jLabel14);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/cross.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cross.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Tutup");
         BtnKeluar.setToolTipText("Alt+K");
