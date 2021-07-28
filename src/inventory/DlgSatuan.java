@@ -732,15 +732,15 @@ private void NmKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_NmKeyP
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getsatuan_barang());
-        BtnHapus.setEnabled(var.getsatuan_barang());
-        BtnEdit.setEnabled(var.getsatuan_barang());
-        BtnPrint.setEnabled(var.getsatuan_barang());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
         
-        ppGanti.setEnabled(var.getsatuan_barang());        
-        ppHapus.setEnabled(var.getsatuan_barang());
-        ppCetak.setEnabled(var.getsatuan_barang());
-        ppSimpan.setEnabled(var.getsatuan_barang());
+        ppGanti.setEnabled(var.getmanajemen());        
+        ppHapus.setEnabled(var.getmanajemen());
+        ppCetak.setEnabled(var.getmanajemen());
+        ppSimpan.setEnabled(var.getmanajemen());
     }
     
 }

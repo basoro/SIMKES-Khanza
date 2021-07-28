@@ -582,9 +582,9 @@ public final class DlgReturObatPasien extends javax.swing.JDialog {
 
 
     public void isCek(){
-        BtnHapus.setEnabled(var.getretur_obat_ranap());
-        BtnPrint.setEnabled(var.getretur_obat_ranap());
-        ppHapus.setEnabled(var.getretur_obat_ranap());
-        ppCetak.setEnabled(var.getretur_obat_ranap());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
+        ppHapus.setEnabled(var.getmanajemen());
+        ppCetak.setEnabled(var.getmanajemen());
     }
 }

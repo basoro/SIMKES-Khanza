@@ -3276,9 +3276,9 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
        // Valid.autoNomer3("select ifnull(MAX(CONVERT(RIGHT(nota_jual,6),signed)),0) from penjualan ","PJ",6,NoNota); 
         TCari.requestFocus();
         if(var.getjml2()>=1){
-            BtnSimpan.setEnabled(var.getoperasi());
-            BtnTambahOperasi.setEnabled(var.gettarif_operasi());
-            BtnTambah.setEnabled(var.getoperasi());
+            BtnSimpan.setEnabled(var.getmanajemen());
+            BtnTambahOperasi.setEnabled(var.getmanajemen());
+            BtnTambah.setEnabled(var.getmanajemen());
         }        
     }
     

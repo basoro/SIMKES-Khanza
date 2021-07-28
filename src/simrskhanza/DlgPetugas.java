@@ -1367,10 +1367,10 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getpetugas());
-        BtnHapus.setEnabled(var.getpetugas());
-        BtnEdit.setEnabled(var.getpetugas());
-        BtnPrint.setEnabled(var.getpetugas());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
         if(var.getkode().equals("Admin Utama")){
             MnRestore.setEnabled(true);
         }else{

@@ -4892,18 +4892,18 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
       
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getbpjs_sep());
-        BtnHapus.setEnabled(var.getbpjs_sep());
-        BtnPrint.setEnabled(var.getbpjs_sep());
-        BtnEdit.setEnabled(var.getbpjs_sep());      
-        ppDetailSEPPeserta.setEnabled(var.getbpjs_sep());
-        ppPengajuan.setEnabled(var.getbpjs_sep());
-        ppPengajuan1.setEnabled(var.getbpjs_sep());
-        ppPulang.setEnabled(var.getbpjs_sep());
-        ppSEP.setEnabled(var.getbpjs_sep());               
-        ppRiwayatPerawatan.setEnabled(var.getresume_pasien());    
-        //ppSuratKontrol.setEnabled(var.getbpjs_surat_kontrol());    
-        //ppRujukan.setEnabled(var.getbpjs_rujukan_keluar());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());      
+        ppDetailSEPPeserta.setEnabled(var.getmanajemen());
+        ppPengajuan.setEnabled(var.getmanajemen());
+        ppPengajuan1.setEnabled(var.getmanajemen());
+        ppPulang.setEnabled(var.getmanajemen());
+        ppSEP.setEnabled(var.getmanajemen());               
+        ppRiwayatPerawatan.setEnabled(var.getmanajemen());    
+        ppSuratKontrol.setEnabled(var.getmanajemen());    
+        ppRujukan.setEnabled(var.getmanajemen());
     }
     
     public void tutupInput(){

@@ -1027,7 +1027,7 @@ private void ppHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST
     }
 
     public void isCek(){
-        BtnPrint.setEnabled(var.getretur_dari_pembeli());
+        BtnPrint.setEnabled(var.getmanajemen());
         if(var.getkode().equals("Admin Utama")){
             ppHapus.setEnabled(true);
         }else{

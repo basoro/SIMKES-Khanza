@@ -1951,11 +1951,11 @@ private void BtnEditKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_B
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getberi_obat());
-        BtnHapus.setEnabled(var.getberi_obat());
-        BtnEdit.setEnabled(var.getberi_obat());
-        BtnPrint.setEnabled(var.getberi_obat());
-        ppResepObat.setEnabled(var.getresep_obat());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
+        ppResepObat.setEnabled(var.getmanajemen());
         
     }
     

@@ -1357,11 +1357,11 @@ private void NmKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_NmKeyP
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getakun_rekening());
-        BtnBatal.setEnabled(var.getakun_rekening());
-        BtnEdit.setEnabled(var.getakun_rekening());
-        BtnHapus.setEnabled(var.getakun_rekening());
-        BtnPrint.setEnabled(var.getakun_rekening());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnBatal.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
     }
         
 }

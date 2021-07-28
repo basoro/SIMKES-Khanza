@@ -1134,8 +1134,8 @@ private void btnPenyakitCariKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST
     }  
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getobat_penyakit());
-        BtnHapus.setEnabled(var.getobat_penyakit());
-        BtnPrint.setEnabled(var.getobat_penyakit());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
     }
 }

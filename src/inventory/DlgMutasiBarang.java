@@ -840,7 +840,7 @@ private void ppBersihkanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
     }
 
     public void isCek(){
-        BtnSimpan.setEnabled(var.getmutasi_barang());
+        BtnSimpan.setEnabled(var.getmanajemen());
     }
 
  

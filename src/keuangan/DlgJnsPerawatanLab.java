@@ -1251,10 +1251,10 @@ private void btnPjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.gettarif_lab());
-        BtnHapus.setEnabled(var.gettarif_lab());
-        BtnEdit.setEnabled(var.gettarif_lab());
-        BtnPrint.setEnabled(var.gettarif_lab());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
         
         if(var.getkode().equals("Admin Utama")){
             MnRestore.setEnabled(true);

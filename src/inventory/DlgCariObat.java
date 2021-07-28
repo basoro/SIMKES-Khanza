@@ -3057,7 +3057,7 @@ private void JeniskelasKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:even
         }            
         kdgudang.setText(bangsal);
         Sequel.cariIsi("select bangsal.nm_bangsal from bangsal where bangsal.kd_bangsal=?",nmgudang,kdgudang.getText());            
-        BtnTambah.setEnabled(var.getobat());
+        BtnTambah.setEnabled(var.getmanajemen());
         TCari.requestFocus();
         if(var.getkode().equals("Admin Utama")){
             kdgudang.setEditable(true);

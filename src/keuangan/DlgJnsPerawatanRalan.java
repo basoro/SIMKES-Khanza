@@ -1511,10 +1511,10 @@ private void BtnPenjabActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.gettarif_ralan());
-        BtnHapus.setEnabled(var.gettarif_ralan());
-        BtnEdit.setEnabled(var.gettarif_ralan());
-        BtnPrint.setEnabled(var.gettarif_ralan());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
         if(var.getkode().equals("Admin Utama")){
             MnRestore.setEnabled(true);
         }else{

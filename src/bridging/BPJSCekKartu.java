@@ -5482,9 +5482,9 @@ public final class BPJSCekKartu extends javax.swing.JDialog {
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getbpjs_sep());
-        ppPengajuan.setEnabled(var.getbpjs_sep());
-        ppPengajuan1.setEnabled(var.getbpjs_sep());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        ppPengajuan.setEnabled(var.getmanajemen());
+        ppPengajuan1.setEnabled(var.getmanajemen());
     }
     
     public void SetNoKartu(String NoPeserta){

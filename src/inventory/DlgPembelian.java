@@ -971,7 +971,7 @@ private void tbDokterKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
                                             hargappn=0;
                                         }
                                         
-                                        if(var.getobat()==true){
+                                        if(var.getmanajemen()==true){
                                             Sequel.mengedit("databarang","kode_brng=?","expire=?,h_beli=?,ralan=?,kelas1=?,kelas2=?,kelas3=?,utama=?,vip=?,vvip=?,beliluar=?,jualbebas=?,karyawan=?",13,new String[]{
                                                 Valid.SetTgl(tbDokter.getValueAt(tbDokter.getSelectedRow(),6).toString()),
                                                 hargappn+"",
@@ -1010,7 +1010,7 @@ private void tbDokterKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
                                                     hargappn=0;
                                                 }
                                                 
-                                                if(var.getobat()==true){
+                                                if(var.getmanajemen()==true){
                                                     Sequel.mengedit("databarang","kode_brng=?","expire=?,h_beli=?,ralan=?,kelas1=?,kelas2=?,kelas3=?,utama=?,vip=?,vvip=?,beliluar=?,jualbebas=?,karyawan=?",13,new String[]{
                                                         Valid.SetTgl(tbDokter.getValueAt(tbDokter.getSelectedRow(),6).toString()),
                                                         hargappn+"",
@@ -1068,7 +1068,7 @@ private void tbDokterKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
                                                 hargappn=0;
                                             }
 
-                                            if(var.getobat()==true){
+                                            if(var.getmanajemen()==true){
                                                 Sequel.mengedit("databarang","kode_brng=?","expire=?,h_beli=?,ralan=?,kelas1=?,kelas2=?,kelas3=?,utama=?,vip=?,vvip=?,beliluar=?,jualbebas=?,karyawan=?",13,new String[]{
                                                     Valid.SetTgl(tbDokter.getValueAt(tbDokter.getSelectedRow(),6).toString()),
                                                     hargappn+"",
@@ -1107,7 +1107,7 @@ private void tbDokterKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
                                                         hargappn=0;
                                                     }
 
-                                                    if(var.getobat()==true){
+                                                    if(var.getmanajemen()==true){
                                                         Sequel.mengedit("databarang","kode_brng=?","expire=?,h_beli=?,ralan=?,kelas1=?,kelas2=?,kelas3=?,utama=?,vip=?,vvip=?,beliluar=?,jualbebas=?,karyawan=?",13,new String[]{
                                                             Valid.SetTgl(tbDokter.getValueAt(tbDokter.getSelectedRow(),6).toString()),
                                                             hargappn+"",
@@ -1288,7 +1288,7 @@ private void tbDokterKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
                                         hargappn=0;
                                     }
                                      
-                                    if(var.getobat()==true){
+                                    if(var.getmanajemen()==true){
                                         Sequel.mengedit("databarang","kode_brng=?","expire=?,h_beli=?,ralan=?,kelas1=?,kelas2=?,kelas3=?,utama=?,vip=?,vvip=?,beliluar=?,jualbebas=?,karyawan=?",13,new String[]{
                                             Valid.SetTgl(tbDokter.getValueAt(tbDokter.getSelectedRow(),6).toString()),
                                             hargappn+"",
@@ -1317,7 +1317,7 @@ private void tbDokterKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
                                             hargappn=0;
                                         }
 
-                                        if(var.getobat()==true){
+                                        if(var.getmanajemen()==true){
                                             Sequel.mengedit("databarang","kode_brng=?","expire=?,h_beli=?,ralan=?,kelas1=?,kelas2=?,kelas3=?,utama=?,vip=?,vvip=?,beliluar=?,jualbebas=?,karyawan=?",13,new String[]{
                                                 Valid.SetTgl(tbDokter.getValueAt(tbDokter.getSelectedRow(),6).toString()),
                                                 hargappn+"",
@@ -1704,8 +1704,8 @@ private void btnGudangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
             kdptg.setEditable(false);
             btnPetugas.setEnabled(false);
             kdptg.setText(var.getkode());
-            BtnSimpan.setEnabled(var.getpengadaan_obat());
-            BtnTambah.setEnabled(var.getobat());
+            BtnSimpan.setEnabled(var.getmanajemen());
+            BtnTambah.setEnabled(var.getmanajemen());
             Sequel.cariIsi("select nama from petugas where nip=?", nmptg,kdptg.getText());
         }        
     }

@@ -1388,7 +1388,7 @@ private void ppPetugasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     
     
     public void isCek(){
-        BtnTambahTindakan.setEnabled(var.gettarif_ralan());
+        BtnTambahTindakan.setEnabled(var.getmanajemen());
     }
     
     public void setPoli(String KodePoli){

@@ -2125,7 +2125,7 @@ private void ppGrafikTerkecilPieActionPerformed(java.awt.event.ActionEvent evt) 
     }
     
     public void isCek(){
-        BtnPrint.setEnabled(var.getpenyakit_ralan());
+        BtnPrint.setEnabled(var.getmanajemen());
     }
     
     private void isForm(){

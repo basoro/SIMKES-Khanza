@@ -5429,8 +5429,8 @@ public final class BPJSCekNoRujukanRS extends javax.swing.JDialog {
     }
 
     public void isCek(){
-        BtnSimpan.setEnabled(var.getbpjs_sep());
-        ppPengajuan.setEnabled(var.getbpjs_sep());
-        ppPengajuan1.setEnabled(var.getbpjs_sep());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        ppPengajuan.setEnabled(var.getmanajemen());
+        ppPengajuan1.setEnabled(var.getmanajemen());
     }
 }

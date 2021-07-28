@@ -3596,7 +3596,7 @@ public final class DlgIGD extends javax.swing.JDialog {
                             biaya=Sequel.cariIsiAngka("select registrasi from poliklinik where kd_poli='IGDK'");
                             break;
                 }
-                if(var.getedit_registrasi()==true){
+                if(var.getmanajemen()==true){
                     Sequel.queryu2("update reg_periksa set no_rawat=?,no_reg=?,tgl_registrasi=?,jam_reg=?,kd_dokter=?,no_rkm_medis=?,kd_poli=?,"+
                             "p_jawab=?,almt_pj=?,biaya_reg=?,hubunganpj=?,stts_daftar=?,kd_pj=?,umurdaftar=?,sttsumur=? where no_rawat=?",16,
                             new String[]{TNoRw.getText(),TNoReg.getText(),Valid.SetTgl(DTPReg.getSelectedItem()+""),CmbJam.getSelectedItem()+":"+CmbMenit.getSelectedItem()+":"+CmbDetik.getSelectedItem(),
@@ -3684,19 +3684,19 @@ public final class DlgIGD extends javax.swing.JDialog {
                         MnKamarInapActionPerformed(null);
                     }                    
                 }else if(i==2){
-                    if(var.gettindakan_ralan()==true){
+                    if(var.getmanajemen()==true){
                         MnRawatJalanActionPerformed(null);
                     }                    
                 }else if(i==3){
-                    if(var.getberi_obat()==true){
+                    if(var.getmanajemen()==true){
                         MnPemberianObatActionPerformed(null);
                     }                   
                 }else if(i==4){
-                    if(var.getperiksa_lab()==true){
+                    if(var.getmanajemen()==true){
                         MnPeriksaLabActionPerformed(null);
                     }                    
                 }else if(i==5){
-                    if(var.getrujukan_masuk()==true){
+                    if(var.getmanajemen()==true){
                         MnRujukMasukActionPerformed(null);
                     }                    
                 }
@@ -3715,19 +3715,19 @@ public final class DlgIGD extends javax.swing.JDialog {
                         MnKamarInapActionPerformed(null);
                     }                    
                 }else if(i==2){
-                    if(var.gettindakan_ralan()==true){
+                    if(var.getmanajemen()==true){
                         MnRawatJalanActionPerformed(null);
                     }                    
                 }else if(i==3){
-                    if(var.getberi_obat()==true){
+                    if(var.getmanajemen()==true){
                         MnPemberianObatActionPerformed(null);
                     }                   
                 }else if(i==4){
-                    if(var.getperiksa_lab()==true){
+                    if(var.getmanajemen()==true){
                         MnPeriksaLabActionPerformed(null);
                     }                    
                 }else if(i==5){
-                    if(var.getrujukan_masuk()==true){
+                    if(var.getmanajemen()==true){
                         MnRujukMasukActionPerformed(null);
                     }                    
                 }
@@ -6231,31 +6231,31 @@ private void MnLaporanRekapKunjunganBulananPoliActionPerformed(java.awt.event.Ac
         DTPReg.setDate(new Date());
         DTPCari1.setDate(new Date());
         DTPCari2.setDate(new Date());
-        BtnSimpan.setEnabled(var.getigd());
-        BtnHapus.setEnabled(var.getigd());
-        BtnEdit.setEnabled(var.getigd());
-        BtnPrint.setEnabled(var.getigd());
-        MnKamarInap.setEnabled(var.getkamar_inap());
-        MnRawatJalan.setEnabled(var.gettindakan_ralan());
-        MnPemberianObat.setEnabled(var.getberi_obat());
-        MnBilling.setEnabled(var.getbilling_ralan());
-        MnPeriksaLab.setEnabled(var.getperiksa_lab());
-        MnPeriksaRadiologi.setEnabled(var.getperiksa_radiologi());
-        MnNoResep.setEnabled(var.getresep_obat());
-        //MnBillingParsial.setEnabled(var.getbilling_parsial());
-        MnOperasi.setEnabled(var.getoperasi());
-        MnRujuk.setEnabled(var.getrujukan_keluar());
-        MnRujukMasuk.setEnabled(var.getrujukan_masuk());
-        MnDiagnosa.setEnabled(var.getdiagnosa_pasien());
-        MnHapusTagihanOperasi.setEnabled(var.getoperasi());
-        MnHapusObatOperasi.setEnabled(var.getoperasi());  
-        //ppCatatanPasien.setEnabled(var.getcatatan_pasien());
-        //ppIKP.setEnabled(var.getinsiden_keselamatan_pasien());
-        //ppBerkasDigital.setEnabled(var.getberkas_digital_perawatan());   
-        //MnJadwalOperasi.setEnabled(var.getbooking_operasi());     
-        //MnSKDPBPJS.setEnabled(var.getskdp_bpjs());
-        //MnPermintaanLab.setEnabled(var.getpermintaan_lab());
-        //MnPermintaanRadiologi.setEnabled(var.getpermintaan_radiologi());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
+        MnKamarInap.setEnabled(var.getmanajemen());
+        MnRawatJalan.setEnabled(var.getmanajemen());
+        MnPemberianObat.setEnabled(var.getmanajemen());
+        MnBilling.setEnabled(var.getmanajemen());
+        MnPeriksaLab.setEnabled(var.getmanajemen());
+        MnPeriksaRadiologi.setEnabled(var.getmanajemen());
+        MnNoResep.setEnabled(var.getmanajemen());
+        MnBillingParsial.setEnabled(var.getmanajemen());
+        MnOperasi.setEnabled(var.getmanajemen());
+        MnRujuk.setEnabled(var.getmanajemen());
+        MnRujukMasuk.setEnabled(var.getmanajemen());
+        MnDiagnosa.setEnabled(var.getmanajemen());
+        MnHapusTagihanOperasi.setEnabled(var.getmanajemen());
+        MnHapusObatOperasi.setEnabled(var.getmanajemen());  
+        ppCatatanPasien.setEnabled(var.getmanajemen());
+        ppIKP.setEnabled(var.getmanajemen());
+        ppBerkasDigital.setEnabled(var.getmanajemen());   
+        MnJadwalOperasi.setEnabled(var.getmanajemen());     
+        MnSKDPBPJS.setEnabled(var.getmanajemen());
+        MnPermintaanLab.setEnabled(var.getmanajemen());
+        MnPermintaanRadiologi.setEnabled(var.getmanajemen());
     }
     
     private void isNumber(){

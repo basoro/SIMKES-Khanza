@@ -818,14 +818,14 @@ private void KeteranganKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:even
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getjenis_barang());
-        BtnHapus.setEnabled(var.getjenis_barang());
-        BtnEdit.setEnabled(var.getjenis_barang());
-        BtnPrint.setEnabled(var.getjenis_barang());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
         
-        ppGanti.setEnabled(var.getjenis_barang());        
-        ppHapus.setEnabled(var.getjenis_barang());
-        ppCetak.setEnabled(var.getjenis_barang());
-        ppSimpan.setEnabled(var.getjenis_barang());
+        ppGanti.setEnabled(var.getmanajemen());        
+        ppHapus.setEnabled(var.getmanajemen());
+        ppCetak.setEnabled(var.getmanajemen());
+        ppSimpan.setEnabled(var.getmanajemen());
     }
 }

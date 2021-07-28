@@ -1424,10 +1424,10 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     }
 
     public void isCek(){
-        BtnSimpan.setEnabled(var.getdokter());
-        BtnHapus.setEnabled(var.getdokter());
-        BtnEdit.setEnabled(var.getdokter());
-        BtnPrint.setEnabled(var.getdokter());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
         if(var.getkode().equals("Admin Utama")){
             MnRestore.setEnabled(true);
         }else{

@@ -381,6 +381,6 @@ public final class DlgCariJenisIPSRS extends javax.swing.JDialog {
     }
     
     public void isCek(){        
-        BtnTambah.setEnabled(var.getipsrs_jenis_barang());
+        BtnTambah.setEnabled(var.getmanajemen());
     }
 }

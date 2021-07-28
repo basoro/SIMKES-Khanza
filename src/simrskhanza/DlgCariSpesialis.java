@@ -370,6 +370,6 @@ public final class DlgCariSpesialis extends javax.swing.JDialog {
     }
     
     public void isCek(){        
-        BtnTambah.setEnabled(var.getdokter());
+        BtnTambah.setEnabled(var.getmanajemen());
     }
 }

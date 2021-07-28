@@ -2307,11 +2307,11 @@ private void tbLabRalanKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:even
     }
     
     public void isCek(){
-        //MnCetakHasilLab.setEnabled(var.getpermintaan_lab());
-        //BtnHasil.setEnabled(var.getpermintaan_lab());
-        BtnSampel.setEnabled(var.getperiksa_lab());
-        //BtnHapus.setEnabled(var.getpermintaan_lab());
-        //BtnPrint.setEnabled(var.getpermintaan_lab());
+        MnCetakHasilLab.setEnabled(var.getmanajemen());
+        BtnHasil.setEnabled(var.getmanajemen());
+        BtnSampel.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
     }
     
     public void setPasien(String pasien){

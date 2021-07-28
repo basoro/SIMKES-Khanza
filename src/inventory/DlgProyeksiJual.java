@@ -626,7 +626,7 @@ private void KdKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TKdKey
     }
     
     public void isCek(){
-         BtnPrint.setEnabled(var.getkeuntungan_penjualan());
+         BtnPrint.setEnabled(var.getmanajemen());
     }
      
  

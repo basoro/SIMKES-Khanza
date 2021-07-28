@@ -2099,11 +2099,11 @@ private void tbRadiologiRalanKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRS
     }
     
     public void isCek(){
-        //MnCetakHasilRadiologi.setEnabled(var.getpermintaan_radiologi());
-        //BtnSampel.setEnabled(var.getpermintaan_radiologi());
-        BtnHasil.setEnabled(var.getperiksa_radiologi());
-        //BtnHapus.setEnabled(var.getpermintaan_radiologi());
-        //BtnPrint.setEnabled(var.getpermintaan_radiologi());
+        MnCetakHasilRadiologi.setEnabled(var.getmanajemen());
+        BtnSampel.setEnabled(var.getmanajemen());
+        BtnHasil.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
     }
     
     public void setPasien(String pasien){

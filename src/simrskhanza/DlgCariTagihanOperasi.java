@@ -2835,9 +2835,9 @@ private void MnHapusObatOperasiActionPerformed(java.awt.event.ActionEvent evt) {
     }
 
     public void isCek(){
-        MnHapusObatOperasi.setEnabled(var.getoperasi());
-        MnHapusTagihanOperasi.setEnabled(var.getoperasi());
-        BtnPrint.setEnabled(var.getoperasi());
+        MnHapusObatOperasi.setEnabled(var.getmanajemen());
+        MnHapusTagihanOperasi.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
     }
      
     private void getData() {

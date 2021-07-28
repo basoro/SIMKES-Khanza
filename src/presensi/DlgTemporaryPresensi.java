@@ -733,9 +733,9 @@ public final class DlgTemporaryPresensi extends javax.swing.JDialog {
     }
 
     public void isCek(){
-        BtnTambah.setEnabled(var.gettemporary_presensi());
-        BtnHapus.setEnabled(var.gettemporary_presensi());
-        BtnPrint.setEnabled(var.gettemporary_presensi());
+        BtnTambah.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
         
         if(var.getkode().equals("Admin Utama")){
             ppVerifyOtomatis.setEnabled(true);

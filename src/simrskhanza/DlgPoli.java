@@ -933,9 +933,9 @@ private void NmKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_NmKeyP
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getregistrasi());
-        BtnHapus.setEnabled(var.getregistrasi());
-        BtnEdit.setEnabled(var.getregistrasi());
-        BtnPrint.setEnabled(var.getregistrasi());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
     }
 }

@@ -381,6 +381,6 @@ public final class DlgCariJenis extends javax.swing.JDialog {
     }
     
     public void isCek(){        
-        BtnTambah.setEnabled(var.getobat());
+        BtnTambah.setEnabled(var.getmanajemen());
     }
 }

@@ -1495,13 +1495,13 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     }
     
     public void isCek(){
-        //BtnSimpan.setEnabled(var.getbooking_operasi());
-        //BtnHapus.setEnabled(var.getbooking_operasi());
-        //BtnPrint.setEnabled(var.getbooking_operasi());
-        MnKamarInap.setEnabled(var.getkamar_inap());
-        ppRiwayat.setEnabled(var.getresume_pasien());
-        MnOperasi.setEnabled(var.getoperasi());
-        //BtnEdit.setEnabled(var.getbooking_operasi());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
+        MnKamarInap.setEnabled(var.getmanajemen());
+        ppRiwayat.setEnabled(var.getmanajemen());
+        MnOperasi.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
     }
 
     

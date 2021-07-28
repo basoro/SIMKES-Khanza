@@ -1110,7 +1110,7 @@ private void ppHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST
     }
     
     public void isCek(){
-        BtnPrint.setEnabled(var.getipsrs_stok_keluar());
+        BtnPrint.setEnabled(var.getmanajemen());
     }
     
 }

@@ -768,11 +768,11 @@ public class DlgDiagnosaPenyakit extends javax.swing.JDialog {
     
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getdiagnosa_pasien());
-        BtnHapus.setEnabled(var.getdiagnosa_pasien());        
-        BtnPrint.setEnabled(var.getdiagnosa_pasien());
-        panelDiagnosa1.btnTambahPenyakit.setEnabled(var.getpenyakit());
-        panelDiagnosa1.btnTambahProsedur.setEnabled(var.geticd9());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());        
+        BtnPrint.setEnabled(var.getmanajemen());
+        panelDiagnosa1.btnTambahPenyakit.setEnabled(var.getmanajemen());
+        panelDiagnosa1.btnTambahProsedur.setEnabled(var.getmanajemen());
     }
 
     

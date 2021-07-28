@@ -1404,13 +1404,13 @@ private void ppHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST
     }
     
     public void isCek(){
-        BtnPrint.setEnabled(var.getpemesanan_obat());
+        BtnPrint.setEnabled(var.getmanajemen());
         if(var.getkode().equals("Admin Utama")){
             ppHapus.setEnabled(true);
         }else{
             ppHapus.setEnabled(false);
         }        
-        ppBayar.setEnabled(var.getpemesanan_obat());
+        ppBayar.setEnabled(var.getmanajemen());
     }
     
 }

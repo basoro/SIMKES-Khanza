@@ -4706,25 +4706,25 @@ private void BtnEditKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_B
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.gettindakan_ranap());
-        BtnHapus.setEnabled(var.gettindakan_ranap());
-        BtnEdit.setEnabled(var.gettindakan_ranap());
-        BtnDiagnosa.setVisible(var.getdiagnosa_pasien());         
-        BtnRiwayat.setVisible(var.getresume_pasien());    
-        //BtnResepObat.setVisible(var.getresep_dokter());
-        //BtnCopyResep.setVisible(var.getresep_dokter());
-        //BtnPermintaanStok.setVisible(var.getpermintaan_stok_obat_pasien());
-        BtnObatBhp.setVisible(var.getberi_obat());  
-        BtnInputObat.setVisible(var.getberi_obat());   
-        //BtnPermintaanLab.setVisible(var.getpermintaan_lab());     
-        //BtnBerkasDigital.setVisible(var.getberkas_digital_perawatan());    
-        //BtnPermintaanRad.setVisible(var.getpermintaan_radiologi());  
-        BtnRujukKeluar.setVisible(var.getrujukan_keluar());
-        //BtnSKDP.setVisible(var.getskdp_bpjs());     
-        //BtnCatatan.setVisible(var.getcatatan_pasien());  
-        //BtnAsuhanGizi.setVisible(var.getasuhan_gizi());
-        //BtnResume.setVisible(var.getdata_resume_pasien());
-        //BtnMonitoringAsuhanGizi.setVisible(var.getmonitoring_asuhan_gizi());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnDiagnosa.setVisible(var.getmanajemen());         
+        BtnRiwayat.setVisible(var.getmanajemen());    
+        BtnResepObat.setVisible(var.getmanajemen());
+        BtnCopyResep.setVisible(var.getmanajemen());
+        //BtnPermintaanStok.setVisible(var.getmanajemen());
+        BtnObatBhp.setVisible(var.getmanajemen());  
+        BtnInputObat.setVisible(var.getmanajemen());   
+        BtnPermintaanLab.setVisible(var.getmanajemen());     
+        BtnBerkasDigital.setVisible(var.getmanajemen());    
+        BtnPermintaanRad.setVisible(var.getmanajemen());  
+        BtnRujukKeluar.setVisible(var.getmanajemen());
+        BtnSKDP.setVisible(var.getmanajemen());     
+        BtnCatatan.setVisible(var.getmanajemen());  
+        //BtnAsuhanGizi.setVisible(var.getmanajemen());
+        BtnResume.setVisible(var.getmanajemen());
+        //BtnMonitoringAsuhanGizi.setVisible(var.getmanajemen());
     }
     
     private void jam(){

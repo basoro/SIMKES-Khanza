@@ -758,9 +758,9 @@ public class DlgClosingKasir extends javax.swing.JDialog {
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getclosing_kasir());
-        BtnHapus.setEnabled(var.getclosing_kasir());
-        BtnEdit.setEnabled(var.getclosing_kasir());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
     }
     
     public JTable getTable(){

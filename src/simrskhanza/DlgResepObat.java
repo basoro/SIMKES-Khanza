@@ -1922,9 +1922,9 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getresep_obat());
-        BtnHapus.setEnabled(var.getresep_obat());
-        BtnPrint.setEnabled(var.getresep_obat());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
     }
 
     private void tampilresep() {

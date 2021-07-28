@@ -972,12 +972,12 @@ private void KdKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TKdKey
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getposting_jurnal());
-        BtnHapus.setEnabled(var.getposting_jurnal());
-        BtnBatal.setEnabled(var.getposting_jurnal());
-        BtnTambah.setEnabled(var.getposting_jurnal());      
-        ppHapus.setEnabled(var.getposting_jurnal());
-        ppTambah.setEnabled(var.getposting_jurnal());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnBatal.setEnabled(var.getmanajemen());
+        BtnTambah.setEnabled(var.getmanajemen());      
+        ppHapus.setEnabled(var.getmanajemen());
+        ppTambah.setEnabled(var.getmanajemen());
     }
    
  

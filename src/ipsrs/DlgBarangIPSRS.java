@@ -992,10 +992,10 @@ private void btnSatuanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getipsrs_barang());
-        BtnHapus.setEnabled(var.getipsrs_barang());
-        BtnEdit.setEnabled(var.getipsrs_barang());
-        BtnPrint.setEnabled(var.getipsrs_barang());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
         TCari.requestFocus();
     }
     

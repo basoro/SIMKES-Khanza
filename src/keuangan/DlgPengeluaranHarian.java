@@ -1042,9 +1042,9 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
             KdPtg.setEditable(false);
             btnPetugas.setEnabled(false);
             KdPtg.setText(var.getkode());
-            BtnSimpan.setEnabled(var.getpengeluaran());
-            BtnHapus.setEnabled(var.getpengeluaran());
-            BtnPrint.setEnabled(var.getpengeluaran());
+            BtnSimpan.setEnabled(var.getmanajemen());
+            BtnHapus.setEnabled(var.getmanajemen());
+            BtnPrint.setEnabled(var.getmanajemen());
             Sequel.cariIsi("select nama from petugas where nip=?", NmPtg,KdPtg.getText());
         }      
         

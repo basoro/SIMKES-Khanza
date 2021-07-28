@@ -1227,10 +1227,10 @@ public final class DlgJnsPerawatanRadiologi extends javax.swing.JDialog {
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.gettarif_radiologi());
-        BtnHapus.setEnabled(var.gettarif_radiologi());
-        BtnEdit.setEnabled(var.gettarif_radiologi());
-        BtnPrint.setEnabled(var.gettarif_radiologi());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
         if(var.getkode().equals("Admin Utama")){
             MnRestore.setEnabled(true);
         }else{

@@ -1380,10 +1380,10 @@ private void BtnGudangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
         if(var.getjml2()>=1){
             Kdptg.setEditable(false);
             BtnPtg.setEnabled(false);
-            BtnSimpan.setEnabled(var.getretur_ke_suplier());
-            BtnTambah.setEnabled(var.getretur_ke_suplier());
-            BtnHapus.setEnabled(var.getretur_ke_suplier());
-            BtnBatal.setEnabled(var.getretur_ke_suplier());
+            BtnSimpan.setEnabled(var.getmanajemen());
+            BtnTambah.setEnabled(var.getmanajemen());
+            BtnHapus.setEnabled(var.getmanajemen());
+            BtnBatal.setEnabled(var.getmanajemen());
             Kdptg.setText(var.getkode());
             Sequel.cariIsi("select nama from petugas where nip='"+Kdptg.getText()+"'", Nmptg);
         }        

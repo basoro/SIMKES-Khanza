@@ -1310,7 +1310,7 @@ public class DlgPengaturanRekening extends javax.swing.JDialog {
     }
 
     public void isCek(){
-        BtnSimpan.setEnabled(var.getpengaturan_rekening());
+        BtnSimpan.setEnabled(var.getmanajemen());
     }
 
 

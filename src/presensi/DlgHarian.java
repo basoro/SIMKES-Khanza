@@ -1312,10 +1312,10 @@ public final class DlgHarian extends javax.swing.JDialog {
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getpresensi_harian());
-        BtnHapus.setEnabled(var.getpresensi_harian());
-        BtnEdit.setEnabled(var.getpresensi_harian());
-        BtnPrint.setEnabled(var.getpresensi_harian());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
      }
 
 }

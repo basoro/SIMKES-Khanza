@@ -1067,8 +1067,8 @@ private void btnPetugasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
             kdptg.setEditable(false);
             btnPetugas.setEnabled(false);
             kdptg.setText(var.getkode());
-            BtnSimpan.setEnabled(var.getipsrs_pengadaan_barang());
-            BtnTambah.setEnabled(var.getipsrs_barang());
+            BtnSimpan.setEnabled(var.getmanajemen());
+            BtnTambah.setEnabled(var.getmanajemen());
             Sequel.cariIsi("select nama from petugas where nip=?", nmptg,kdptg.getText());
         }        
     }

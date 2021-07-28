@@ -494,8 +494,8 @@ public class DlgPenelusuranLogin extends javax.swing.JDialog {
 
     
     public void isCek(){
-        BtnHapus.setEnabled(var.gettracer_login());
-        BtnPrint.setEnabled(var.gettracer_login());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
     }
 
     

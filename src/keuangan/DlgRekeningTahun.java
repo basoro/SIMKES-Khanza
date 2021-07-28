@@ -1019,14 +1019,14 @@ private void NmKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_NmKeyP
     
     public void isCek(){
         asalform=var.getform();       
-        BtnSimpan.setEnabled(var.getrekening_tahun());
-        BtnBatal.setEnabled(var.getrekening_tahun());
-        BtnEdit.setEnabled(var.getrekening_tahun());
-        BtnHapus.setEnabled(var.getrekening_tahun());
-        BtnPrint.setEnabled(var.getrekening_tahun());
-        ppSimpan.setEnabled(var.getrekening_tahun());
-        ppGanti.setEnabled(var.getrekening_tahun());        
-        ppHapus.setEnabled(var.getrekening_tahun());
-        ppCetak.setEnabled(var.getrekening_tahun());        
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnBatal.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
+        ppSimpan.setEnabled(var.getmanajemen());
+        ppGanti.setEnabled(var.getmanajemen());        
+        ppHapus.setEnabled(var.getmanajemen());
+        ppCetak.setEnabled(var.getmanajemen());        
     }
 }

@@ -1087,8 +1087,8 @@ private void BtnSeekActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getbayar_piutang());
-        BtnHapus.setEnabled(var.getbayar_piutang());
-        BtnPrint.setEnabled(var.getbayar_piutang());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
     }
 }

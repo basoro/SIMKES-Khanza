@@ -775,9 +775,9 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.geticd9());
-        BtnHapus.setEnabled(var.geticd9());
-        BtnEdit.setEnabled(var.geticd9());
-        BtnPrint.setEnabled(var.geticd9());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
     }
 }

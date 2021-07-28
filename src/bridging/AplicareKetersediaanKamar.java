@@ -1253,10 +1253,10 @@ private void btnKamarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getaplicare_ketersediaan_kamar());
-        BtnHapus.setEnabled(var.getaplicare_ketersediaan_kamar());
-        BtnEdit.setEnabled(var.getaplicare_ketersediaan_kamar());
-        BtnPrint.setEnabled(var.getaplicare_ketersediaan_kamar());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
     }
     
     public JTable getTable(){

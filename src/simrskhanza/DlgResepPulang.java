@@ -1086,9 +1086,9 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getresep_pulang());
-        BtnHapus.setEnabled(var.getresep_pulang());
-        BtnPrint.setEnabled(var.getresep_pulang());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
     }
     
     private void isHitung(){

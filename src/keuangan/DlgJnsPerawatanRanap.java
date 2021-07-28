@@ -1500,10 +1500,10 @@ private void btnBayarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.gettarif_ranap());
-        BtnHapus.setEnabled(var.gettarif_ranap());
-        BtnEdit.setEnabled(var.gettarif_ranap());
-        BtnPrint.setEnabled(var.gettarif_ranap());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
         if(var.getkode().equals("Admin Utama")){
             MnRestore.setEnabled(true);
         }else{

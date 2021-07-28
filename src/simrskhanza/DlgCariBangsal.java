@@ -395,6 +395,6 @@ public final class DlgCariBangsal extends javax.swing.JDialog {
     }
     
     public void isCek(){        
-       BtnTambah.setEnabled(var.getkamar());
+       BtnTambah.setEnabled(var.getmanajemen());
     }
 }

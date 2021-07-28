@@ -1129,7 +1129,7 @@ private void ppHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST
     }
     
     public void isCek(){
-        BtnPrint.setEnabled(var.getipsrs_pengadaan_barang());
+        BtnPrint.setEnabled(var.getmanajemen());
     }
     
 }

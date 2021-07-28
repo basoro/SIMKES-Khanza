@@ -2198,12 +2198,12 @@ public final class RMDataResumePasien extends javax.swing.JDialog {
     }
     
     public void isCek(){
-        //BtnSimpan.setEnabled(var.getdata_resume_pasien());
-        //BtnHapus.setEnabled(var.getdata_resume_pasien());
-        //BtnEdit.setEnabled(var.getdata_resume_pasien());
-        //BtnPrint.setEnabled(var.getdata_resume_pasien()); 
-        MnInputDiagnosa.setEnabled(var.getdiagnosa_pasien());   
-        //ppBerkasDigital.setEnabled(var.getberkas_digital_perawatan());    
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen()); 
+        MnInputDiagnosa.setEnabled(var.getmanajemen());   
+        ppBerkasDigital.setEnabled(var.getmanajemen());    
         if(var.getjml2()>=1){
             KodeDokter.setEditable(false);
             BtnDokter.setEnabled(false);

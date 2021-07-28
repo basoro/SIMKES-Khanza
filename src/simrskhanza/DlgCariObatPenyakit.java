@@ -771,7 +771,7 @@ private void BtnSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     }
     
     public void isCek(){        
-        BtnTambah.setEnabled(var.getobat_penyakit());
+        BtnTambah.setEnabled(var.getmanajemen());
     }
     
     public void setNoRm(String norwt,String penyakit) {

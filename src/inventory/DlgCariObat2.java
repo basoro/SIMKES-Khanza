@@ -2389,7 +2389,7 @@ private void ChkJlnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:
     public void isCek(){  
         kdgudang.setText(var.getkdbangsal());
         Sequel.cariIsi("select bangsal.nm_bangsal from bangsal where bangsal.kd_bangsal=?",nmgudang,kdgudang.getText());  
-        BtnTambah.setEnabled(var.getobat());
+        BtnTambah.setEnabled(var.getmanajemen());
         TCari.requestFocus();
         
         if(Sequel.cariIsi("select kd_depo from set_depo_ranap where kd_bangsal=?",kdgudang.getText()).equals("")){

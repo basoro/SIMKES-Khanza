@@ -6397,13 +6397,13 @@ private void KabupatenMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:eve
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getpasien());
-        BtnHapus.setEnabled(var.getpasien());
-        BtnEdit.setEnabled(var.getpasien());
-        BtnPrint.setEnabled(var.getpasien());
-        ppGabungRM.setEnabled(var.getpasien());
-        ppRiwayat.setEnabled(var.getresume_pasien());
-        //ppCatatanPasien.setEnabled(var.getcatatan_pasien());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
+        ppGabungRM.setEnabled(var.getmanajemen());
+        ppRiwayat.setEnabled(var.getmanajemen());
+        ppCatatanPasien.setEnabled(var.getmanajemen());
         asalform=var.getform();
     }
 

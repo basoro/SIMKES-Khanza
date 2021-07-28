@@ -892,7 +892,7 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
                tampildiagnosa();   
             }            
         }else if(evt.getKeyCode()==KeyEvent.VK_UP){
-            if(var.getpenyakit()==true){
+            if(var.getmanajemen()==true){
                 btnTarifActionPerformed(null);
             }
         }else if(evt.getKeyCode()==KeyEvent.VK_UP){
@@ -1116,10 +1116,10 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getdpjp_ranap());
-        BtnHapus.setEnabled(var.getdpjp_ranap());
-        btnTarif.setEnabled(var.getdokter());
-        BtnPrint.setEnabled(var.getdpjp_ranap());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        btnTarif.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
         
     }
 

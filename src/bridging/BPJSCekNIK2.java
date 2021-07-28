@@ -5955,9 +5955,9 @@ public final class BPJSCekNIK2 extends javax.swing.JDialog {
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getbpjs_sep());
-        ppPengajuan.setEnabled(var.getbpjs_sep());
-        ppPengajuan1.setEnabled(var.getbpjs_sep());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        ppPengajuan.setEnabled(var.getmanajemen());
+        ppPengajuan1.setEnabled(var.getmanajemen());
     }
     
     public void SetNoKTP(String NoKTP){

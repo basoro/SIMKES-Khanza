@@ -1238,14 +1238,14 @@ private void BtnPetugasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getbayar_pemesanan_obat());
-        BtnHapus.setEnabled(var.getbayar_pemesanan_obat());
-        BtnPrint.setEnabled(var.getbayar_pemesanan_obat());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
         if(var.getjml2()>=1){
             nip.setEditable(false);
             BtnPetugas.setEnabled(false);
             nip.setText(var.getkode());
-            BtnSimpan.setEnabled(var.getbayar_pemesanan_obat());
+            BtnSimpan.setEnabled(var.getmanajemen());
             Sequel.cariIsi("select nama from petugas where nip=?", nama_petugas,nip.getText());
         }else if(var.getjml1()>=1){
             nip.setEditable(true);

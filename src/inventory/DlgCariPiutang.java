@@ -1247,9 +1247,9 @@ private void ppHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST
     } 
      
     public void isCek(){
-        MnDetailCicilan.setEnabled(var.getbayar_piutang());
-        BtnPrint.setEnabled(var.getpiutang_obat());
-        ppCetakNota.setEnabled(var.getpiutang_obat());
+        MnDetailCicilan.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
+        ppCetakNota.setEnabled(var.getmanajemen());
         if(var.getkode().equals("Admin Utama")){
             ppHapus.setEnabled(true);
         }else{

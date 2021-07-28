@@ -509,7 +509,7 @@ public final class DlgCariDokter2 extends javax.swing.JDialog {
     }
     
     public void isCek(){        
-        BtnTambah.setEnabled(var.getdokter());
+        BtnTambah.setEnabled(var.getmanajemen());
     }
     
     public void SetHari(Date tanggal){

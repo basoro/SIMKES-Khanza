@@ -1918,9 +1918,9 @@ private void ChkJlnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:
             KdPtg.setText("");
             NmPtg.setText("");
         }
-        BtnSimpan.setEnabled(var.getperiksa_radiologi());
-        BtnTambahPeriksa.setEnabled(var.gettarif_radiologi());
-        BtnTambahBhp.setEnabled(var.getipsrs_barang());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnTambahPeriksa.setEnabled(var.getmanajemen());
+        BtnTambahBhp.setEnabled(var.getmanajemen());
     }
     
     private void isForm(){

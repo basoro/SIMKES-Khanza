@@ -678,7 +678,7 @@ private void KdKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TKdKey
     }//GEN-LAST:event_formWindowOpened
 
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
-        BtnPrint.setEnabled(var.getposting_jurnal());         
+        BtnPrint.setEnabled(var.getmanajemen());         
     }//GEN-LAST:event_formWindowActivated
 
     /**

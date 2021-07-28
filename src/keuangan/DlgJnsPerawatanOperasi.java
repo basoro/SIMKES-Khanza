@@ -2056,10 +2056,10 @@ private void TOmloop1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
     }    
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.gettarif_operasi());
-        BtnHapus.setEnabled(var.gettarif_operasi());
-        BtnEdit.setEnabled(var.gettarif_operasi());
-        BtnPrint.setEnabled(var.gettarif_operasi());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
         if(var.getkode().equals("Admin Utama")){
             MnRestore.setEnabled(true);
         }else{

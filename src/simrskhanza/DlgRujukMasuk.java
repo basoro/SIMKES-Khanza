@@ -1388,10 +1388,10 @@ private void TAlamatKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_T
 
 
     public void isCek(){
-        BtnSimpan.setEnabled(var.getrujukan_masuk());
-        BtnHapus.setEnabled(var.getrujukan_masuk());
-        BtnPrint.setEnabled(var.getrujukan_masuk());
-        BtnEdit.setEnabled(var.getrujukan_masuk());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
 
     }
 

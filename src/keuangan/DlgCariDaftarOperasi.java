@@ -552,6 +552,6 @@ public final class DlgCariDaftarOperasi extends javax.swing.JDialog {
         this.kelas=kelasoperasi;
     }
     public void isCek(){        
-       BtnTambah.setEnabled(var.gettarif_operasi());
+       BtnTambah.setEnabled(var.getmanajemen());
     }
 }

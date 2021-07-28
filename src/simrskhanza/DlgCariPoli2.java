@@ -428,7 +428,7 @@ public final class DlgCariPoli2 extends javax.swing.JDialog {
     }
     
     public void isCek(){        
-        BtnTambah.setEnabled(var.getregistrasi());
+        BtnTambah.setEnabled(var.getmanajemen());
     }
     
     public void SetHari(Date tanggal){

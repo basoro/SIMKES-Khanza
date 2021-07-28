@@ -744,13 +744,13 @@ public final class DlgKonversi extends javax.swing.JDialog {
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getkonversi_satuan());
-        BtnHapus.setEnabled(var.getkonversi_satuan());
-        BtnPrint.setEnabled(var.getkonversi_satuan());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
                
-        ppHapus.setEnabled(var.getkonversi_satuan());
-        ppCetak.setEnabled(var.getkonversi_satuan());
-        ppSimpan.setEnabled(var.getkonversi_satuan());
+        ppHapus.setEnabled(var.getmanajemen());
+        ppCetak.setEnabled(var.getmanajemen());
+        ppSimpan.setEnabled(var.getmanajemen());
     }
 
 

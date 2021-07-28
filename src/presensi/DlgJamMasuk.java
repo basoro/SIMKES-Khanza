@@ -756,9 +756,9 @@ public class DlgJamMasuk extends javax.swing.JDialog {
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getjam_masuk());
-        BtnHapus.setEnabled(var.getjam_masuk());
-        BtnEdit.setEnabled(var.getjam_masuk());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
     }
     
     public JTable getTable(){

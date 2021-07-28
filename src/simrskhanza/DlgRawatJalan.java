@@ -2545,7 +2545,7 @@ public final class DlgRawatJalan extends javax.swing.JDialog {
                     }
                     break;
                 case 4:
-                    if(var.getdiagnosa_pasien()==true){
+                    if(var.getmanajemen()==true){
                         panelDiagnosa1.setRM(TNoRw.getText(),TNoRM.getText(),Valid.SetTgl(DTPCari1.getSelectedItem()+""),Valid.SetTgl(DTPCari2.getSelectedItem()+""),"Ralan",TCari.getText().trim());
                         panelDiagnosa1.simpan();
                     }
@@ -2914,12 +2914,12 @@ public final class DlgRawatJalan extends javax.swing.JDialog {
                                             "order by pemeriksaan_ralan.no_rawat desc",param);
                 }   break;
             case 4:
-                if(var.getresume_pasien()==true){
+                if(var.getmanajemen()==true){
                     panelResume.laporan();
                 }   
                 break;
             case 5:
-                if(var.getdiagnosa_pasien()==true){
+                if(var.getmanajemen()==true){
                     panelDiagnosa1.cetak();
                 } 
                 break;
@@ -3050,37 +3050,37 @@ public final class DlgRawatJalan extends javax.swing.JDialog {
     private void TabRawatMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TabRawatMouseClicked
         switch (TabRawat.getSelectedIndex()) {
             case 0:
-                BtnSimpan.setEnabled(var.gettindakan_ralan());
-                BtnHapus.setEnabled(var.gettindakan_ralan());
-                BtnEdit.setEnabled(var.gettindakan_ralan());
-                BtnPrint.setEnabled(var.gettindakan_ralan());
+                BtnSimpan.setEnabled(var.getmanajemen());
+                BtnHapus.setEnabled(var.getmanajemen());
+                BtnEdit.setEnabled(var.getmanajemen());
+                BtnPrint.setEnabled(var.getmanajemen());
                 BtnTambahTindakan.setVisible(true);
                 TCari.setPreferredSize(new Dimension(207,23));            
                 TabRawatTindakanDokterMouseClicked(null);
                 break;
             case 1:
-                BtnSimpan.setEnabled(var.gettindakan_ralan());
-                BtnHapus.setEnabled(var.gettindakan_ralan());
-                BtnEdit.setEnabled(var.gettindakan_ralan());
-                BtnPrint.setEnabled(var.gettindakan_ralan());
+                BtnSimpan.setEnabled(var.getmanajemen());
+                BtnHapus.setEnabled(var.getmanajemen());
+                BtnEdit.setEnabled(var.getmanajemen());
+                BtnPrint.setEnabled(var.getmanajemen());
                 BtnTambahTindakan.setVisible(true); 
                 TCari.setPreferredSize(new Dimension(207,23));
                 TabRawatTindakanPetugasMouseClicked(null);
                 break;
             case 2:
-                BtnSimpan.setEnabled(var.gettindakan_ralan());
-                BtnHapus.setEnabled(var.gettindakan_ralan());
-                BtnEdit.setEnabled(var.gettindakan_ralan());
-                BtnPrint.setEnabled(var.gettindakan_ralan());
+                BtnSimpan.setEnabled(var.getmanajemen());
+                BtnHapus.setEnabled(var.getmanajemen());
+                BtnEdit.setEnabled(var.getmanajemen());
+                BtnPrint.setEnabled(var.getmanajemen());
                 BtnTambahTindakan.setVisible(true); 
                 TCari.setPreferredSize(new Dimension(207,23));
                 TabRawatTindakanDokterPetugasMouseClicked(null);
                 break;
             case 3:
-                BtnSimpan.setEnabled(var.gettindakan_ralan());
-                BtnHapus.setEnabled(var.gettindakan_ralan());
-                BtnEdit.setEnabled(var.gettindakan_ralan());
-                BtnPrint.setEnabled(var.gettindakan_ralan());
+                BtnSimpan.setEnabled(var.getmanajemen());
+                BtnHapus.setEnabled(var.getmanajemen());
+                BtnEdit.setEnabled(var.getmanajemen());
+                BtnPrint.setEnabled(var.getmanajemen());
                 BtnTambahTindakan.setVisible(false); 
                 TCari.setPreferredSize(new Dimension(240,23));
                 TCariPasien.setText(TNoRM.getText());
@@ -3090,37 +3090,37 @@ public final class DlgRawatJalan extends javax.swing.JDialog {
                 BtnTambahTindakan.setVisible(false); 
                 TCari.setPreferredSize(new Dimension(240,23));
                 TCariPasien.setText(TNoRM.getText());
-                if(var.getresume_pasien()==true){
+                if(var.getmanajemen()==true){
                     panelResume.setRM(TNoRM.getText(),Valid.SetTgl(DTPCari1.getSelectedItem()+""), Valid.SetTgl(DTPCari2.getSelectedItem()+""),false);
                     panelResume.pilihTab();
                 }                    
                 LCount.setText("0");
                 break;
             case 5:
-                BtnSimpan.setEnabled(var.getdiagnosa_pasien());
-                BtnHapus.setEnabled(var.getdiagnosa_pasien());
-                BtnEdit.setEnabled(var.getdiagnosa_pasien());
-                BtnPrint.setEnabled(var.getdiagnosa_pasien());
+                BtnSimpan.setEnabled(var.getmanajemen());
+                BtnHapus.setEnabled(var.getmanajemen());
+                BtnEdit.setEnabled(var.getmanajemen());
+                BtnPrint.setEnabled(var.getmanajemen());
                 BtnTambahTindakan.setVisible(false);
                 TCari.setPreferredSize(new Dimension(240,23));
                 TCariPasien.setText(TNoRM.getText());
-                if(var.getdiagnosa_pasien()==true){
+                if(var.getmanajemen()==true){
                     panelDiagnosa1.setRM(TNoRw.getText(),TNoRM.getText(),Valid.SetTgl(DTPCari1.getSelectedItem()+""), Valid.SetTgl(DTPCari2.getSelectedItem()+""),"Ralan",TCari.getText().trim());
                     panelDiagnosa1.pilihTab();
                     LCount.setText(panelDiagnosa1.getRecord()+"");
                 } 
                 break;
             case 6:
-                //BtnSimpan.setEnabled(var.getcatatan_perawatan());
-                //BtnHapus.setEnabled(var.getcatatan_perawatan());
-                //BtnEdit.setEnabled(var.getcatatan_perawatan());
-                //BtnPrint.setEnabled(var.getcatatan_perawatan());
+                BtnSimpan.setEnabled(var.getmanajemen());
+                BtnHapus.setEnabled(var.getmanajemen());
+                BtnEdit.setEnabled(var.getmanajemen());
+                BtnPrint.setEnabled(var.getmanajemen());
                 BtnTambahTindakan.setVisible(false);
                 TCari.setPreferredSize(new Dimension(240,23));
                 TCariPasien.setText(TNoRM.getText());
-                //if(var.getcatatan_perawatan()==true){
+                if(var.getmanajemen()==true){
                     tampilCatatan();
-                //} 
+                } 
                 break;
             default:
                 break;
@@ -4390,23 +4390,23 @@ private void BtnEditKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_B
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.gettindakan_ralan());
-        BtnHapus.setEnabled(var.gettindakan_ralan());
-        BtnEdit.setEnabled(var.gettindakan_ralan());
-        BtnPrint.setEnabled(var.gettindakan_ralan());
-        //BtnResepObat.setEnabled(var.getresep_dokter());
-        //BtnCopyResep.setEnabled(var.getresep_dokter());
-        BtnObatBhp.setEnabled(var.getberi_obat());  
-        BtnInputObat.setEnabled(var.getberi_obat());   
-        //BtnPermintaanLab.setEnabled(var.getpermintaan_lab());     
-        //BtnBerkasDigital.setEnabled(var.getberkas_digital_perawatan());    
-        //BtnPermintaanRad.setEnabled(var.getpermintaan_radiologi());  
-        BtnTambahTindakan.setEnabled(var.gettarif_ralan());    
-        BtnKamar.setEnabled(var.getkamar_inap());   
-        //BtnRujukInternal.setEnabled(var.getrujukan_poli_internal());
-        BtnRujukKeluar.setEnabled(var.getrujukan_keluar());
-        //BtnSKDP.setEnabled(var.getskdp_bpjs());     
-        //BtnCatatan.setEnabled(var.getcatatan_pasien());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
+        BtnResepObat.setEnabled(var.getmanajemen());
+        BtnCopyResep.setEnabled(var.getmanajemen());
+        BtnObatBhp.setEnabled(var.getmanajemen());  
+        BtnInputObat.setEnabled(var.getmanajemen());   
+        BtnPermintaanLab.setEnabled(var.getmanajemen());     
+        BtnBerkasDigital.setEnabled(var.getmanajemen());    
+        BtnPermintaanRad.setEnabled(var.getmanajemen());  
+        BtnTambahTindakan.setEnabled(var.getmanajemen());    
+        BtnKamar.setEnabled(var.getmanajemen());   
+        BtnRujukInternal.setEnabled(var.getmanajemen());
+        BtnRujukKeluar.setEnabled(var.getmanajemen());
+        BtnSKDP.setEnabled(var.getmanajemen());     
+        BtnCatatan.setEnabled(var.getmanajemen());
         TCari.setPreferredSize(new Dimension(207,23));
         TabRawat.setSelectedIndex(0);    
     }
@@ -5145,14 +5145,14 @@ private void BtnEditKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_B
                 tampilPemeriksaan();
                 break;
             case 4:
-                if(var.getresume_pasien()==true){
+                if(var.getmanajemen()==true){
                     panelResume.setRM(TNoRM.getText(),Valid.SetTgl(DTPCari1.getSelectedItem()+""), Valid.SetTgl(DTPCari2.getSelectedItem()+""),false);
                     panelResume.pilihTab();
                 }  
                 LCount.setText("0");
                 break;
             case 5:
-                if(var.getdiagnosa_pasien()==true){
+                if(var.getmanajemen()==true){
                     panelDiagnosa1.setRM(TNoRw.getText(),TNoRM.getText(),Valid.SetTgl(DTPCari1.getSelectedItem()+""), Valid.SetTgl(DTPCari2.getSelectedItem()+""),"Ralan",TCari.getText().trim());
                     panelDiagnosa1.pilihTab();
                     LCount.setText(panelDiagnosa1.getRecord()+"");

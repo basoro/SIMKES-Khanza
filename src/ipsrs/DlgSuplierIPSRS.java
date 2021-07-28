@@ -904,14 +904,14 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getsuplier());
-        BtnHapus.setEnabled(var.getsuplier());
-        BtnEdit.setEnabled(var.getsuplier());
-        BtnPrint.setEnabled(var.getsuplier());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
         
-        ppGanti.setEnabled(var.getsuplier());        
-        ppHapus.setEnabled(var.getsuplier());
-        ppCetak.setEnabled(var.getsuplier());
+        ppGanti.setEnabled(var.getmanajemen());        
+        ppHapus.setEnabled(var.getmanajemen());
+        ppCetak.setEnabled(var.getmanajemen());
     }
     
     private void isForm(){

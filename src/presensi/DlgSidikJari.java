@@ -412,8 +412,8 @@ public final class DlgSidikJari extends javax.swing.JDialog {
     }
        
      public void isCek(){
-        BtnHapus.setEnabled(var.getsidikjari());
-        BtnPrint.setEnabled(var.getsidikjari());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
      }
 
 }

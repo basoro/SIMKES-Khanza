@@ -1295,10 +1295,10 @@ public final class DlgBulanan extends javax.swing.JDialog {
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getpresensi_bulanan());
-        BtnHapus.setEnabled(var.getpresensi_bulanan());
-        BtnEdit.setEnabled(var.getpresensi_bulanan());
-        BtnPrint.setEnabled(var.getpresensi_bulanan());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
      }
 
 }

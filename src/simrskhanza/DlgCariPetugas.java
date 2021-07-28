@@ -436,6 +436,6 @@ public final class DlgCariPetugas extends javax.swing.JDialog {
     }
     
     public void isCek(){        
-        BtnTambah.setEnabled(var.getpetugas());
+        BtnTambah.setEnabled(var.getmanajemen());
     }
 }

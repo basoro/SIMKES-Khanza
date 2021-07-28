@@ -681,8 +681,8 @@ private void BtnCetakKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
 }//GEN-LAST:event_BtnCetakKeyPressed
 
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
-        BtnHapus.setEnabled(var.getmutasi_barang());     
-        ppHapus.setEnabled(var.getmutasi_barang());        
+        BtnHapus.setEnabled(var.getmanajemen());     
+        ppHapus.setEnabled(var.getmanajemen());        
     }//GEN-LAST:event_formWindowActivated
 
     private void btnKeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKeActionPerformed

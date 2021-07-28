@@ -855,8 +855,8 @@ public class DlgJadwalTambahan extends javax.swing.JDialog {
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getjadwal_pegawai());
-        BtnHapus.setEnabled(var.getjadwal_pegawai());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
     }
     
     String konversi(int year, int month, int day){

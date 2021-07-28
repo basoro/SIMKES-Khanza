@@ -740,10 +740,10 @@ public final class DlgBarcode extends javax.swing.JDialog {
     }
        
      public void isCek(){
-        BtnSimpan.setEnabled(var.getbarcode());
-        BtnHapus.setEnabled(var.getbarcode());
-        BtnEdit.setEnabled(var.getbarcode());
-        BtnPrint.setEnabled(var.getbarcode());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
      }
 
 }

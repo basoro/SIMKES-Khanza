@@ -489,7 +489,7 @@ private void KdKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TKdKey
     }
     
     public void isCek(){
-        BtnPrint.setEnabled(var.getcashflow());
+        BtnPrint.setEnabled(var.getmanajemen());
     }
      
  

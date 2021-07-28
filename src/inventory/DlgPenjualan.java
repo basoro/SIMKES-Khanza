@@ -1681,8 +1681,8 @@ private void BtnGudangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
         if(var.getjml2()>=1){
             kdptg.setEditable(false);
             BtnPtg.setEnabled(false);
-            BtnSimpan.setEnabled(var.getpenjualan_obat());
-            BtnTambah.setEnabled(var.getobat());
+            BtnSimpan.setEnabled(var.getmanajemen());
+            BtnTambah.setEnabled(var.getmanajemen());
             kdptg.setText(var.getkode());
             Sequel.cariIsi("select nama from petugas where nip=?", nmptg,kdptg.getText());
         }      

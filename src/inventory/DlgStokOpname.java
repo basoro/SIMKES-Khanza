@@ -882,9 +882,9 @@ private void StokKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Stok
 
 
     public void isCek(){
-        BtnHapus.setEnabled(var.getstok_opname_obat());
-        BtnPrint.setEnabled(var.getstok_opname_obat());
-        ppHapus.setEnabled(var.getstok_opname_obat());
-        ppCetak.setEnabled(var.getstok_opname_obat());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
+        ppHapus.setEnabled(var.getmanajemen());
+        ppCetak.setEnabled(var.getmanajemen());
     }
 }

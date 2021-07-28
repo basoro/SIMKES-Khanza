@@ -1069,9 +1069,9 @@ private void MnCetakSuratMatiActionPerformed(java.awt.event.ActionEvent evt) {//
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getpasien_meninggal());
-        BtnHapus.setEnabled(var.getpasien_meninggal());
-        BtnPrint.setEnabled(var.getpasien_meninggal());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
     }
     
     public void setNoRm(String norm) {

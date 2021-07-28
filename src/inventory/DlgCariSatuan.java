@@ -380,6 +380,6 @@ public final class DlgCariSatuan extends javax.swing.JDialog {
     }
     
     public void isCek(){        
-        BtnTambah.setEnabled(var.getsatuan_barang());
+        BtnTambah.setEnabled(var.getmanajemen());
     }
 }

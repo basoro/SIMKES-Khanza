@@ -1001,14 +1001,14 @@ private void NmAkunKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Nm
     
     public void isCek(){
         asalform=var.getform();       
-        BtnSimpan.setEnabled(var.getpemasukan_lain());
-        BtnBatal.setEnabled(var.getpemasukan_lain());
-        BtnEdit.setEnabled(var.getpemasukan_lain());
-        BtnHapus.setEnabled(var.getpemasukan_lain());
-        BtnPrint.setEnabled(var.getpemasukan_lain());
-        ppSimpan.setEnabled(var.getpemasukan_lain());
-        ppGanti.setEnabled(var.getpemasukan_lain());        
-        ppHapus.setEnabled(var.getpemasukan_lain());
-        ppCetak.setEnabled(var.getpemasukan_lain());        
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnBatal.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
+        ppSimpan.setEnabled(var.getmanajemen());
+        ppGanti.setEnabled(var.getmanajemen());        
+        ppHapus.setEnabled(var.getmanajemen());
+        ppCetak.setEnabled(var.getmanajemen());        
     }
 }

@@ -2191,10 +2191,10 @@ private void MnKartuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getkelahiran_bayi());
-        BtnHapus.setEnabled(var.getkelahiran_bayi());
-        BtnEdit.setEnabled(var.getkelahiran_bayi());
-        BtnPrint.setEnabled(var.getkelahiran_bayi());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
     }
     
     private void autoNomor() {  

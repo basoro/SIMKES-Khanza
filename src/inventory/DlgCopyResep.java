@@ -292,7 +292,7 @@ public class DlgCopyResep extends javax.swing.JDialog {
     private void tbPemisahanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbPemisahanMouseClicked
         if(tabMode.getRowCount()!=0){
             if(evt.getClickCount()==2){
-                if(var.getberi_obat()==true){
+                if(var.getmanajemen()==true){
                     BtnTambahActionPerformed(null);
                 }
             }
@@ -302,7 +302,7 @@ public class DlgCopyResep extends javax.swing.JDialog {
     private void tbPemisahanKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tbPemisahanKeyPressed
         if(tabMode.getRowCount()!=0){
             if(evt.getKeyCode()==KeyEvent.VK_SPACE){
-                if(var.getberi_obat()==true){
+                if(var.getmanajemen()==true){
                     BtnTambahActionPerformed(null);
                 }
             }

@@ -477,7 +477,7 @@ public class PanelDiagnosa extends widget.panelisi {
         if(evt.getKeyCode()==KeyEvent.VK_ENTER){
             tampildiagnosa();            
         }else if(evt.getKeyCode()==KeyEvent.VK_UP){
-            if(var.getpenyakit()==true){
+            if(var.getmanajemen()==true){
                 btnTambahPenyakitActionPerformed(null);
             }
         }else if(evt.getKeyCode()==KeyEvent.VK_UP){
@@ -504,7 +504,7 @@ public class PanelDiagnosa extends widget.panelisi {
         if(evt.getKeyCode()==KeyEvent.VK_ENTER){
             tampilprosedure();
         }else if(evt.getKeyCode()==KeyEvent.VK_UP){
-            if(var.geticd9()==true){
+            if(var.getmanajemen()==true){
                 btnTambahProsedurActionPerformed(null);
             }
         }else if(evt.getKeyCode()==KeyEvent.VK_UP){

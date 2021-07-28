@@ -849,7 +849,7 @@ private void BtnGudangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     }
 
     public void isCek(){
-         BtnSimpan.setEnabled(var.getstok_obat_pasien());
+         BtnSimpan.setEnabled(var.getmanajemen());
     }
 
     public void setNoRm(String no_rawat,String pasien){

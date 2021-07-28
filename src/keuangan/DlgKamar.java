@@ -1159,13 +1159,13 @@ private void CmbCrIsiItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST
     }
        
      public void isCek(){
-        BtnSimpan.setEnabled(var.getkamar());
-        BtnHapus.setEnabled(var.getkamar());
-        BtnPrint.setEnabled(var.getkamar());
-        TKd.setEditable(var.getkamar());
-        TTarif.setEditable(var.getkamar());
-        kd_bangsal.setEditable(var.getkamar());
-        Kelas.setEnabled(var.getkamar());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
+        TKd.setEditable(var.getmanajemen());
+        TTarif.setEditable(var.getmanajemen());
+        kd_bangsal.setEditable(var.getmanajemen());
+        Kelas.setEnabled(var.getmanajemen());
         asalform=var.getform();
         if(var.getkode().equals("Admin Utama")){
             MnRestore.setEnabled(true);

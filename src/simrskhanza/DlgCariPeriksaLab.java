@@ -3704,11 +3704,11 @@ private void tbDokterKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
     }
     
     public void isCek(){
-        MnCetakHasilLab.setEnabled(var.getperiksa_lab());
-        MnCetakNota.setEnabled(var.getperiksa_lab());
-        MnUbah.setEnabled(var.getperiksa_lab());
-        BtnHapus.setEnabled(var.getperiksa_lab());
-        BtnPrint.setEnabled(var.getperiksa_lab());
+        MnCetakHasilLab.setEnabled(var.getmanajemen());
+        MnCetakNota.setEnabled(var.getmanajemen());
+        MnUbah.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
     }
     
     public void setPasien(String pasien){

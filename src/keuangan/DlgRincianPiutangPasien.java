@@ -494,7 +494,7 @@ public final class DlgRincianPiutangPasien extends javax.swing.JDialog {
                 int kolom=tbBangsal.getSelectedColumn();
                 if(kolom==1){
                     this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                    if(var.getbayar_piutang()==true){
+                    if(var.getmanajemen()==true){
                         DlgBayarPiutang bayarpiutang=new DlgBayarPiutang(null,false);
                         bayarpiutang.emptTeks();
                         String norm=Sequel.cariIsi("select no_rkm_medis from piutang_pasien where no_rawat='"+tbBangsal.getValueAt(tbBangsal.getSelectedRow(),0).toString() +"'");
@@ -527,7 +527,7 @@ public final class DlgRincianPiutangPasien extends javax.swing.JDialog {
             if(evt.getKeyCode()==KeyEvent.VK_SPACE){
                 int kolom=tbBangsal.getSelectedColumn();
                 if(kolom==1){
-                    if(var.getbayar_piutang()==true){
+                    if(var.getmanajemen()==true){
                         this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
                         DlgBayarPiutang bayarpiutang=new DlgBayarPiutang(null,false);
                         bayarpiutang.emptTeks();

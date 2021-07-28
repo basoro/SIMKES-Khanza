@@ -3043,10 +3043,10 @@ private void KapasitasKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             
     public void isCek() {
         TCari.requestFocus();
-        BtnSimpan.setEnabled(var.getobat());
-        BtnHapus.setEnabled(var.getobat());
-        BtnEdit.setEnabled(var.getobat());
-        BtnPrint.setEnabled(var.getobat());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
         if(var.getkode().equals("Admin Utama")){
             MnRestore.setEnabled(true);
         }else{

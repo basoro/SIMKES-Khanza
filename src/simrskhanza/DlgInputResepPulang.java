@@ -823,7 +823,7 @@ private void JeniskelasKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:even
     }
     
     public void isCek(){        
-        BtnTambah.setEnabled(var.getobat());
+        BtnTambah.setEnabled(var.getmanajemen());
     }
     
     public void setNoRm(String norwt,String penyakit, String tanggal, String jam) {        

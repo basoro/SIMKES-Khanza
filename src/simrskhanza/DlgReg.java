@@ -4943,7 +4943,7 @@ public final class DlgReg extends javax.swing.JDialog {
             Valid.textKosong(TBiaya,"biaya regristrasi");
         }else{
             if(tbPetugas.getSelectedRow()>-1){
-                if(var.getedit_registrasi()==true){
+                if(var.getmanajemen()==true){
                     Sequel.queryu2("update reg_periksa set no_rawat=?,no_reg=?,tgl_registrasi=?,jam_reg=?,kd_dokter=?,no_rkm_medis=?,kd_poli=?,"+
                         "p_jawab=?,almt_pj=?,biaya_reg=?,hubunganpj=?,stts_daftar=?,kd_pj=?,umurdaftar=?,sttsumur=? where no_rawat=?",16,
                         new String[]{TNoRw.getText(),TNoReg.getText(),Valid.SetTgl(DTPReg.getSelectedItem()+""),CmbJam.getSelectedItem()+":"+CmbMenit.getSelectedItem()+":"+CmbDetik.getSelectedItem(),
@@ -5040,19 +5040,19 @@ public final class DlgReg extends javax.swing.JDialog {
                         MnKamarInapActionPerformed(null);
                     }                    
                 }else if(i==2){
-                    if(var.gettindakan_ralan()==true){
+                    if(var.getmanajemen()==true){
                         MnRawatJalanActionPerformed(null);
                     }                    
                 }else if(i==3){
-                    if(var.getberi_obat()==true){
+                    if(var.getmanajemen()==true){
                         MnPemberianObatActionPerformed(null);
                     }                   
                 }else if(i==4){
-                    if(var.getperiksa_lab()==true){
+                    if(var.getmanajemen()==true){
                         MnPeriksaLabActionPerformed(null);
                     }                    
                 }else if(i==5){
-                    if(var.getrujukan_masuk()==true){
+                    if(var.getmanajemen()==true){
                         MnRujukMasukActionPerformed(null);
                     }                    
                 }else if(i==6){
@@ -5077,19 +5077,19 @@ public final class DlgReg extends javax.swing.JDialog {
                         MnKamarInapActionPerformed(null);
                     }                    
                 }else if(i==2){
-                    if(var.gettindakan_ralan()==true){
+                    if(var.getmanajemen()==true){
                         MnRawatJalanActionPerformed(null);
                     }                    
                 }else if(i==3){
-                    if(var.getberi_obat()==true){
+                    if(var.getmanajemen()==true){
                         MnPemberianObatActionPerformed(null);
                     }                   
                 }else if(i==4){
-                    if(var.getperiksa_lab()==true){
+                    if(var.getmanajemen()==true){
                         MnPeriksaLabActionPerformed(null);
                     }                    
                 }else if(i==5){
-                    if(var.getrujukan_masuk()==true){
+                    if(var.getmanajemen()==true){
                         MnRujukMasukActionPerformed(null);
                     }                    
                 }else if(i==6){
@@ -7068,15 +7068,15 @@ private void MnLaporanRekapKunjunganBulananPoliActionPerformed(java.awt.event.Ac
                         MnKamarInap1ActionPerformed(null);
                     }                    
                 }else if(i==2){
-                    if(var.gettindakan_ralan()==true){
+                    if(var.getmanajemen()==true){
                         MnRawatJalan1ActionPerformed(null);
                     }                    
                 }else if(i==3){
-                    if(var.getberi_obat()==true){
+                    if(var.getmanajemen()==true){
                         MnPemberianObat1ActionPerformed(null);
                     }                   
                 }else if(i==4){
-                    if(var.getperiksa_lab()==true){
+                    if(var.getmanajemen()==true){
                         MnPeriksaLab1ActionPerformed(null);
                     }                    
                 }
@@ -7094,15 +7094,15 @@ private void MnLaporanRekapKunjunganBulananPoliActionPerformed(java.awt.event.Ac
                         MnKamarInap1ActionPerformed(null);
                     }                    
                 }else if(i==2){
-                    if(var.gettindakan_ralan()==true){
+                    if(var.getmanajemen()==true){
                         MnRawatJalan1ActionPerformed(null);
                     }                    
                 }else if(i==3){
-                    if(var.getberi_obat()==true){
+                    if(var.getmanajemen()==true){
                         MnPemberianObat1ActionPerformed(null);
                     }                   
                 }else if(i==4){
-                    if(var.getperiksa_lab()==true){
+                    if(var.getmanajemen()==true){
                         MnPeriksaLab1ActionPerformed(null);
                     }                    
                 }
@@ -9008,47 +9008,47 @@ private void MnLaporanRekapKunjunganBulananPoliActionPerformed(java.awt.event.Ac
         DTPReg.setDate(new Date());
         DTPCari1.setDate(new Date());
         DTPCari2.setDate(new Date());
-        BtnSimpan.setEnabled(var.getregistrasi());
-        BtnHapus.setEnabled(var.getregistrasi());
-        BtnEdit.setEnabled(var.getregistrasi());
-        BtnPrint.setEnabled(var.getregistrasi());
-        MnOperasi.setEnabled(var.getoperasi());
-        MnOperasi1.setEnabled(var.getoperasi());
-        MnKamarInap.setEnabled(var.getkamar_inap());
-        MnKamarInap1.setEnabled(var.getkamar_inap());
-        MnRawatJalan.setEnabled(var.gettindakan_ralan());
-        MnRawatJalan1.setEnabled(var.gettindakan_ralan());
-        MnPemberianObat.setEnabled(var.getberi_obat());
-        MnPemberianObat1.setEnabled(var.getberi_obat());
-        MnBilling.setEnabled(var.getbilling_ralan());
-        MnPeriksaLab.setEnabled(var.getperiksa_lab());
-        MnPeriksaLab1.setEnabled(var.getperiksa_lab());
-        MnPeriksaRadiologi.setEnabled(var.getperiksa_radiologi());
-        MnPeriksaRadiologi1.setEnabled(var.getperiksa_radiologi());
-        MnNoResep.setEnabled(var.getresep_obat());
-        MnRujuk.setEnabled(var.getrujukan_keluar());
-        MnRujukMasuk.setEnabled(var.getrujukan_masuk());
-        MnDiagnosa.setEnabled(var.getdiagnosa_pasien());
-        MnHapusTagihanOperasi.setEnabled(var.getoperasi());
-        MnHapusObatOperasi.setEnabled(var.getoperasi());  
-        MnSEP.setEnabled(var.getbpjs_sep());  
-        ppRiwayat.setEnabled(var.getresume_pasien());
-        /*ppCatatanPasien.setEnabled(var.getcatatan_pasien());
-        MnPoliInternal.setEnabled(var.getrujukan_poli_internal());
-        MnHapusRujukan.setEnabled(var.getrujukan_poli_internal());        
-        ppIKP.setEnabled(var.getinsiden_keselamatan_pasien());
-        ppIKP1.setEnabled(var.getinsiden_keselamatan_pasien());   
-        ppBerkasDigital.setEnabled(var.getberkas_digital_perawatan());        
-        ppBerkasDigital1.setEnabled(var.getberkas_digital_perawatan());  
-        MnJadwalOperasi.setEnabled(var.getbooking_operasi());  
-        MnBillingParsial.setEnabled(var.getbilling_parsial()); 
-        MnSKDPBPJS.setEnabled(var.getskdp_bpjs());  
-        MnPermintaanLab.setEnabled(var.getpermintaan_lab());
-        MnPermintaanRadiologi.setEnabled(var.getpermintaan_radiologi());
-        MnJadwalOperasi1.setEnabled(var.getbooking_operasi());   
-        MnSKDPBPJS1.setEnabled(var.getskdp_bpjs());  
-        MnPermintaanLab1.setEnabled(var.getpermintaan_lab());
-        MnPermintaanRadiologi1.setEnabled(var.getpermintaan_radiologi());*/
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
+        MnOperasi.setEnabled(var.getmanajemen());
+        MnOperasi1.setEnabled(var.getmanajemen());
+        MnKamarInap.setEnabled(var.getmanajemen());
+        MnKamarInap1.setEnabled(var.getmanajemen());
+        MnRawatJalan.setEnabled(var.getmanajemen());
+        MnRawatJalan1.setEnabled(var.getmanajemen());
+        MnPemberianObat.setEnabled(var.getmanajemen());
+        MnPemberianObat1.setEnabled(var.getmanajemen());
+        MnBilling.setEnabled(var.getmanajemen());
+        MnPeriksaLab.setEnabled(var.getmanajemen());
+        MnPeriksaLab1.setEnabled(var.getmanajemen());
+        MnPeriksaRadiologi.setEnabled(var.getmanajemen());
+        MnPeriksaRadiologi1.setEnabled(var.getmanajemen());
+        MnNoResep.setEnabled(var.getmanajemen());
+        MnRujuk.setEnabled(var.getmanajemen());
+        MnRujukMasuk.setEnabled(var.getmanajemen());
+        MnDiagnosa.setEnabled(var.getmanajemen());
+        MnHapusTagihanOperasi.setEnabled(var.getmanajemen());
+        MnHapusObatOperasi.setEnabled(var.getmanajemen());  
+        MnSEP.setEnabled(var.getmanajemen());  
+        ppRiwayat.setEnabled(var.getmanajemen());
+        ppCatatanPasien.setEnabled(var.getmanajemen());
+        MnPoliInternal.setEnabled(var.getmanajemen());
+        MnHapusRujukan.setEnabled(var.getmanajemen());        
+        ppIKP.setEnabled(var.getmanajemen());
+        ppIKP1.setEnabled(var.getmanajemen());   
+        ppBerkasDigital.setEnabled(var.getmanajemen());        
+        ppBerkasDigital1.setEnabled(var.getmanajemen());  
+        MnJadwalOperasi.setEnabled(var.getmanajemen());  
+        MnBillingParsial.setEnabled(var.getmanajemen()); 
+        MnSKDPBPJS.setEnabled(var.getmanajemen());  
+        MnPermintaanLab.setEnabled(var.getmanajemen());
+        MnPermintaanRadiologi.setEnabled(var.getmanajemen());
+        MnJadwalOperasi1.setEnabled(var.getmanajemen());   
+        MnSKDPBPJS1.setEnabled(var.getmanajemen());  
+        MnPermintaanLab1.setEnabled(var.getmanajemen());
+        MnPermintaanRadiologi1.setEnabled(var.getmanajemen());
     }
     
     private void isNumber(){         

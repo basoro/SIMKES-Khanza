@@ -2191,7 +2191,7 @@ public class DlgBilingRalan extends javax.swing.JDialog {
 }//GEN-LAST:event_TNoRwKeyPressed
 
     private void BtnKeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnKeluarActionPerformed
-        if(var.getbilling_ralan()==true){
+        if(var.getmanajemen()==true){
             try {
                 pscekbilling=koneksi.prepareStatement(sqlpscekbilling);
                 try {
@@ -2464,23 +2464,23 @@ private void tbBillingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:e
                             var.setform("DlgBilingRalan");
                             switch (tbBilling.getValueAt(tbBilling.getSelectedRow(),i).toString()) {
                                 case "Tindakan":
-                                    if(var.gettindakan_ralan()==true){
+                                    if(var.getmanajemen()==true){
                                         MnInputTindakanActionPerformed(null);
                                     }                            
                                     break;
                                 case "Obat & BHP":
-                                    if(var.getberi_obat()==true){
+                                    if(var.getmanajemen()==true){
                                         MnInputObatActionPerformed(null);
                                     }                            
                                     //dispose();
                                     break;
                                 case "Tambahan Biaya":
-                                    if(var.gettambahan_biaya()==true){
+                                    if(var.getmanajemen()==true){
                                         MnTambahanActionPerformed(null);
                                     }                            
                                     break;
                                 case "Potongan Biaya":
-                                    if(var.getpotongan_biaya()==true){
+                                    if(var.getmanajemen()==true){
                                         MnPotonganActionPerformed(null);
                                     }
                                     break;
@@ -2489,23 +2489,23 @@ private void tbBillingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:e
                             var.setform("DlgBilingRalan");
                             switch (tbBilling.getValueAt(tbBilling.getSelectedRow(),i).toString()) {
                                 case "Tindakan":
-                                    if(var.gettindakan_ralan()==true){
+                                    if(var.getmanajemen()==true){
                                         MnInputTindakanActionPerformed(null);
                                     }                            
                                     break;
                                 case "Obat & BHP":
-                                    if(var.getberi_obat()==true){
+                                    if(var.getmanajemen()==true){
                                         MnInputObatActionPerformed(null);
                                     }                            
                                     //dispose();
                                     break;
                                 case "Tambahan Biaya":
-                                    if(var.gettambahan_biaya()==true){
+                                    if(var.getmanajemen()==true){
                                         MnTambahanActionPerformed(null);
                                     }                            
                                     break;
                                 case "Potongan Biaya":
-                                    if(var.getpotongan_biaya()==true){
+                                    if(var.getmanajemen()==true){
                                         MnPotonganActionPerformed(null);
                                     }
                                     break;
@@ -2523,7 +2523,7 @@ private void tbBillingKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
                 if(evt.getKeyCode()==KeyEvent.VK_ENTER){
                     i=tbBilling.getSelectedColumn();
                     if(i==6){  
-                        if(var.getbilling_ralan()==true){
+                        if(var.getmanajemen()==true){
                             try {
                                 switch (tbBilling.getValueAt(tbBilling.getSelectedRow(),8).toString()) {
                                     case "Laborat":
@@ -2572,23 +2572,23 @@ private void tbBillingKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
                             var.setform("DlgBilingRalan");
                             switch (tbBilling.getValueAt(tbBilling.getSelectedRow(), i).toString()) {
                                 case "Tindakan":
-                                    if(var.gettindakan_ralan()==true){
+                                    if(var.getmanajemen()==true){
                                         MnInputTindakanActionPerformed(null);
                                     }
                                     break;
                                 case "Obat & BHP":
-                                    if(var.getberi_obat()==true){
+                                    if(var.getmanajemen()==true){
                                         MnInputObatActionPerformed(null);
                                     }                            
                                     //dispose();
                                     break;
                                 case "Tambahan Biaya":
-                                    if(var.gettambahan_biaya()==true){
+                                    if(var.getmanajemen()==true){
                                         MnTambahanActionPerformed(null);
                                     }                            
                                     break;
                                 case "Potongan Biaya":
-                                    if(var.getpotongan_biaya()==true){
+                                    if(var.getmanajemen()==true){
                                         MnPotonganActionPerformed(null);
                                     }
                                     break;
@@ -2597,23 +2597,23 @@ private void tbBillingKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
                             var.setform("DlgBilingRalan");
                             switch (tbBilling.getValueAt(tbBilling.getSelectedRow(), i).toString()) {
                                 case "Tindakan":
-                                    if(var.gettindakan_ralan()==true){
+                                    if(var.getmanajemen()==true){
                                         MnInputTindakanActionPerformed(null);
                                     }
                                     break;
                                 case "Obat & BHP":
-                                    if(var.getberi_obat()==true){
+                                    if(var.getmanajemen()==true){
                                         MnInputObatActionPerformed(null);
                                     }                            
                                     //dispose();
                                     break;
                                 case "Tambahan Biaya":
-                                    if(var.gettambahan_biaya()==true){
+                                    if(var.getmanajemen()==true){
                                         MnTambahanActionPerformed(null);
                                     }                            
                                     break;
                                 case "Potongan Biaya":
-                                    if(var.getpotongan_biaya()==true){
+                                    if(var.getmanajemen()==true){
                                         MnPotonganActionPerformed(null);
                                     }
                                     break;
@@ -4567,26 +4567,26 @@ private void MnPeriksaLabActionPerformed(java.awt.event.ActionEvent evt) {//GEN-
         Valid.tabelKosong(tabModeAkunBayar);
         Valid.tabelKosong(tabModeAkunPiutang);
         DTPTgl.setDate(new Date());
-        BtnNota.setEnabled(var.getbilling_ralan());
-        BtnSimpan.setEnabled(var.getbilling_ralan());
-        BtnView.setEnabled(var.getbilling_ralan());
-        MnRawatJalan.setEnabled(var.gettindakan_ralan());
-        MnInputTindakan.setEnabled(var.gettindakan_ralan());
-        MnPemberianObat.setEnabled(var.getberi_obat());
-        MnInputObat.setEnabled(var.getberi_obat());
-        MnOperasi.setEnabled(var.getoperasi());
-        MnObatLangsung.setEnabled(var.getberi_obat());
-        MnTambahan.setEnabled(var.gettambahan_biaya());
-        MnPotongan.setEnabled(var.getpotongan_biaya());
-        MnPeriksaLab.setEnabled(var.getperiksa_lab());
-        MnCariPeriksaLab.setEnabled(var.getperiksa_lab());
-        MnPeriksaRadiologi.setEnabled(var.getperiksa_radiologi());
-        MnCariRadiologi.setEnabled(var.getperiksa_radiologi());
-        MnPenjualan.setEnabled(var.getpenjualan_obat());        
-        //MnHapusTagihan.setEnabled(var.gethapus_nota_salah());  
-        MnPoli.setEnabled(var.getbilling_ralan());
-        MnDokter.setEnabled(var.getbilling_ralan());
-        MnPenjab.setEnabled(var.getbilling_ralan());
+        BtnNota.setEnabled(var.getmanajemen());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnView.setEnabled(var.getmanajemen());
+        MnRawatJalan.setEnabled(var.getmanajemen());
+        MnInputTindakan.setEnabled(var.getmanajemen());
+        MnPemberianObat.setEnabled(var.getmanajemen());
+        MnInputObat.setEnabled(var.getmanajemen());
+        MnOperasi.setEnabled(var.getmanajemen());
+        MnObatLangsung.setEnabled(var.getmanajemen());
+        MnTambahan.setEnabled(var.getmanajemen());
+        MnPotongan.setEnabled(var.getmanajemen());
+        MnPeriksaLab.setEnabled(var.getmanajemen());
+        MnCariPeriksaLab.setEnabled(var.getmanajemen());
+        MnPeriksaRadiologi.setEnabled(var.getmanajemen());
+        MnCariRadiologi.setEnabled(var.getmanajemen());
+        MnPenjualan.setEnabled(var.getmanajemen());        
+        MnHapusTagihan.setEnabled(var.getmanajemen());  
+        MnPoli.setEnabled(var.getmanajemen());
+        MnDokter.setEnabled(var.getmanajemen());
+        MnPenjab.setEnabled(var.getmanajemen());
         if(Sequel.cariIsi("select tampilkan_tombol_nota_ralan from set_nota").equals("Yes")){
             BtnNota.setVisible(true);
         }else{

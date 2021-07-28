@@ -577,9 +577,9 @@ public final class DlgStokPasien extends javax.swing.JDialog {
 
 
     public void isCek(){
-        BtnHapus.setEnabled(var.getstok_obat_pasien());
-        BtnPrint.setEnabled(var.getstok_obat_pasien());
-        ppHapus.setEnabled(var.getstok_obat_pasien());
-        ppCetak.setEnabled(var.getstok_obat_pasien());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
+        ppHapus.setEnabled(var.getmanajemen());
+        ppCetak.setEnabled(var.getmanajemen());
     }
 }

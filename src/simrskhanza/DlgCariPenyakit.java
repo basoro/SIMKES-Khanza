@@ -459,6 +459,6 @@ public final class DlgCariPenyakit extends javax.swing.JDialog {
     }
     
     public void isCek(){
-        BtnTambah.setEnabled(var.getpenyakit());
+        BtnTambah.setEnabled(var.getmanajemen());
     }
 }

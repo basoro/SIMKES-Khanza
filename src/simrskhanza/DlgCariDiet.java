@@ -370,6 +370,6 @@ public final class DlgCariDiet extends javax.swing.JDialog {
     }
     
     public void isCek(){        
-       BtnTambah.setEnabled(var.getdiet_pasien());
+       BtnTambah.setEnabled(var.getmanajemen());
     }
 }
