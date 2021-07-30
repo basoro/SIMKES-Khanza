@@ -1,8 +1,5 @@
 package simrskhanza;
 
-import bridging.AplicareCekReferensiKamar;
-import bridging.AplicareKetersediaanKamar;
-import bridging.SiranapKetersediaanKamarC19;
 import bridging.BPJSCekKartu;
 import bridging.BPJSCekNIK2;
 import bridging.BPJSCekReferensiFaskes;
@@ -69,8 +66,6 @@ import presensi.DlgJadwalTambahan;
 import presensi.DlgJamMasuk;
 import presensi.DlgSidikJari;
 import presensi.DlgTemporaryPresensi;
-import bridging.MobileJKNPembatalanPendaftaran;
-import bridging.MobileJKNReferensiPendaftaran;
 import setting.DlgAdmin;
 import setting.DlgUser;
 import setting.DlgSetAplikasi;
@@ -333,11 +328,6 @@ public class frmUtama extends javax.swing.JFrame {
         MnRefFaskes = new javax.swing.JMenuItem();
         MnBridging = new javax.swing.JMenuItem();
         MnMonitoringKlaim = new javax.swing.JMenuItem();
-        MnRefKmrAplicare = new javax.swing.JMenuItem();
-        MnKmrAplicare = new javax.swing.JMenuItem();
-        MnKmrSiranapCovid = new javax.swing.JMenuItem();
-        MnRefMblJkn = new javax.swing.JMenuItem();
-        MnBtlMblJkn = new javax.swing.JMenuItem();
         jMenuLaporan = new javax.swing.JMenu();
         MenuLapObat = new javax.swing.JMenu();
         MnLapObtPoli = new javax.swing.JMenuItem();
@@ -2615,70 +2605,6 @@ public class frmUtama extends javax.swing.JFrame {
         });
         jMenuBridging.add(MnMonitoringKlaim);
 
-        MnRefKmrAplicare.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        MnRefKmrAplicare.setForeground(new java.awt.Color(51, 51, 51));
-        MnRefKmrAplicare.setText("Referensi Kamar Aplicare");
-        MnRefKmrAplicare.setEnabled(false);
-        MnRefKmrAplicare.setName("MnRefKmrAplicare"); // NOI18N
-        MnRefKmrAplicare.setPreferredSize(new java.awt.Dimension(200, 22));
-        MnRefKmrAplicare.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MnRefKmrAplicareActionPerformed(evt);
-            }
-        });
-        jMenuBridging.add(MnRefKmrAplicare);
-
-        MnKmrAplicare.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        MnKmrAplicare.setForeground(new java.awt.Color(51, 51, 51));
-        MnKmrAplicare.setText("Ketersediaan Kamar Aplicare");
-        MnKmrAplicare.setEnabled(false);
-        MnKmrAplicare.setName("MnKmrAplicare"); // NOI18N
-        MnKmrAplicare.setPreferredSize(new java.awt.Dimension(200, 22));
-        MnKmrAplicare.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MnKmrAplicareActionPerformed(evt);
-            }
-        });
-        jMenuBridging.add(MnKmrAplicare);
-
-        MnKmrSiranapCovid.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        MnKmrSiranapCovid.setForeground(new java.awt.Color(51, 51, 51));
-        MnKmrSiranapCovid.setText("Ketersediaan Kamar Covid-19");
-        MnKmrSiranapCovid.setName("MnKmrSiranapCovid"); // NOI18N
-        MnKmrSiranapCovid.setPreferredSize(new java.awt.Dimension(200, 22));
-        MnKmrSiranapCovid.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MnKmrSiranapCovidActionPerformed(evt);
-            }
-        });
-        jMenuBridging.add(MnKmrSiranapCovid);
-
-        MnRefMblJkn.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        MnRefMblJkn.setForeground(new java.awt.Color(51, 51, 51));
-        MnRefMblJkn.setText("Referensi Pendaftaran Mobile JKN");
-        MnRefMblJkn.setEnabled(false);
-        MnRefMblJkn.setName("MnRefMblJkn"); // NOI18N
-        MnRefMblJkn.setPreferredSize(new java.awt.Dimension(200, 22));
-        MnRefMblJkn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MnRefMblJknActionPerformed(evt);
-            }
-        });
-        jMenuBridging.add(MnRefMblJkn);
-
-        MnBtlMblJkn.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        MnBtlMblJkn.setForeground(new java.awt.Color(51, 51, 51));
-        MnBtlMblJkn.setText("Batal Pendaftaran Mobile JKN");
-        MnBtlMblJkn.setEnabled(false);
-        MnBtlMblJkn.setName("MnBtlMblJkn"); // NOI18N
-        MnBtlMblJkn.setPreferredSize(new java.awt.Dimension(200, 22));
-        MnBtlMblJkn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MnBtlMblJknActionPerformed(evt);
-            }
-        });
-        jMenuBridging.add(MnBtlMblJkn);
-
         MenuBar.add(jMenuBridging);
 
         jMenuLaporan.setBorder(null);
@@ -3804,10 +3730,6 @@ public class frmUtama extends javax.swing.JFrame {
                 MnRefFaskes.setEnabled(false);
                 MnBridging.setEnabled(false);
                 MnMonitoringKlaim.setEnabled(false);
-                MnRefKmrAplicare.setEnabled(false);
-                MnKmrAplicare.setEnabled(false);
-                MnRefMblJkn.setEnabled(false);
-                MnBtlMblJkn.setEnabled(false);
                 MnLapObtPoli.setEnabled(false);
                 MnObtKmr.setEnabled(false);
                 MnObtDokRln.setEnabled(false);
@@ -4010,10 +3932,6 @@ public class frmUtama extends javax.swing.JFrame {
                     MnRefFaskes.setEnabled(true);
                     MnBridging.setEnabled(true);
                     MnMonitoringKlaim.setEnabled(true);
-                    MnRefKmrAplicare.setEnabled(true);
-                    MnKmrAplicare.setEnabled(true);
-                    MnRefMblJkn.setEnabled(true);
-                    MnBtlMblJkn.setEnabled(true);
                     MnLapObtPoli.setEnabled(true);
                     MnObtKmr.setEnabled(true);
                     MnObtDokRln.setEnabled(true);
@@ -4209,10 +4127,6 @@ public class frmUtama extends javax.swing.JFrame {
                     MnRefFaskes.setEnabled(var.getmanajemen());
                     MnBridging.setEnabled(var.getmanajemen());
                     MnMonitoringKlaim.setEnabled(var.getmanajemen());
-                    MnRefKmrAplicare.setEnabled(var.getmanajemen()); // Belum
-                    MnKmrAplicare.setEnabled(var.getmanajemen());
-                    MnRefMblJkn.setEnabled(var.getmanajemen());
-                    MnBtlMblJkn.setEnabled(var.getmanajemen());
                     MnLapObtPoli.setEnabled(var.getmanajemen());
                     MnObtKmr.setEnabled(var.getmanajemen());
                     MnObtDokRln.setEnabled(var.getmanajemen());
@@ -5657,46 +5571,6 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
         this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnMonitoringKlaimActionPerformed
 
-    private void MnRefKmrAplicareActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnRefKmrAplicareActionPerformed
-        isTutup();
-        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-        AplicareCekReferensiKamar form=new AplicareCekReferensiKamar(this,false);
-        form.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
-        form.setLocationRelativeTo(PanelUtama);
-        form.setVisible(true);
-        this.setCursor(Cursor.getDefaultCursor());
-    }//GEN-LAST:event_MnRefKmrAplicareActionPerformed
-
-    private void MnKmrAplicareActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnKmrAplicareActionPerformed
-        isTutup();
-        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-        AplicareKetersediaanKamar form=new AplicareKetersediaanKamar(this,false);
-        form.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
-        form.setLocationRelativeTo(PanelUtama);
-        form.setVisible(true);
-        this.setCursor(Cursor.getDefaultCursor());
-    }//GEN-LAST:event_MnKmrAplicareActionPerformed
-
-    private void MnRefMblJknActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnRefMblJknActionPerformed
-        isTutup();
-        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-        MobileJKNReferensiPendaftaran form=new MobileJKNReferensiPendaftaran(this,false);
-        form.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
-        form.setLocationRelativeTo(PanelUtama);
-        form.setVisible(true);
-        this.setCursor(Cursor.getDefaultCursor());
-    }//GEN-LAST:event_MnRefMblJknActionPerformed
-
-    private void MnBtlMblJknActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnBtlMblJknActionPerformed
-        isTutup();
-        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-        MobileJKNPembatalanPendaftaran form=new MobileJKNPembatalanPendaftaran(this,false);
-        form.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
-        form.setLocationRelativeTo(PanelUtama);
-        form.setVisible(true);
-        this.setCursor(Cursor.getDefaultCursor());
-    }//GEN-LAST:event_MnBtlMblJknActionPerformed
-
     private void MnPasienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnPasienActionPerformed
         isTutup();
         this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
@@ -5884,16 +5758,6 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
         this.setCursor(Cursor.getDefaultCursor());
     }
 
-    private void MnKmrSiranapCovidActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnKmrSiranapCovidActionPerformed
-        isTutup();
-        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-        SiranapKetersediaanKamarC19 form=new SiranapKetersediaanKamarC19(this,false);
-        form.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
-        form.setLocationRelativeTo(PanelUtama);
-        form.setVisible(true);
-        this.setCursor(Cursor.getDefaultCursor());
-    }//GEN-LAST:event_MnKmrSiranapCovidActionPerformed
-
     private void MnAboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnAboutActionPerformed
         isTutup();
         DlgAbout About=new DlgAbout(this,true);
@@ -6031,7 +5895,6 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
     private javax.swing.JMenuItem MnBlnParamedis;
     private javax.swing.JMenuItem MnBlnSrn;
     private javax.swing.JMenuItem MnBridging;
-    private javax.swing.JMenuItem MnBtlMblJkn;
     private javax.swing.JMenuItem MnBukuBesar;
     private javax.swing.JMenuItem MnBulananDok;
     private javax.swing.JMenuItem MnByrPiutang;
@@ -6086,8 +5949,6 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
     private javax.swing.JMenuItem MnKeu;
     private javax.swing.JMenuItem MnKeuntBeriObt;
     private javax.swing.JMenuItem MnKeuntunganPenj;
-    private javax.swing.JMenuItem MnKmrAplicare;
-    private javax.swing.JMenuItem MnKmrSiranapCovid;
     private javax.swing.JMenuItem MnKonvSat;
     private javax.swing.JMenuItem MnLapDepositPx;
     private javax.swing.JMenuItem MnLapIcd10;
@@ -6134,8 +5995,6 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
     private javax.swing.JMenuItem MnPresensiHarian1;
     private javax.swing.JMenuItem MnRefDiagBpjs;
     private javax.swing.JMenuItem MnRefFaskes;
-    private javax.swing.JMenuItem MnRefKmrAplicare;
-    private javax.swing.JMenuItem MnRefMblJkn;
     private javax.swing.JMenuItem MnRefPlBpjs;
     private javax.swing.JMenuItem MnRegistrasi;
     private javax.swing.JMenuItem MnRekThn;

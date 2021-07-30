@@ -163,7 +163,6 @@ public final class DlgResumePerawatan extends javax.swing.JDialog {
         label11.setPreferredSize(new java.awt.Dimension(65, 23));
         panelGlass5.add(label11);
 
-        Tgl1.setEditable(false);
         Tgl1.setDisplayFormat("dd-MM-yyyy");
         Tgl1.setName("Tgl1"); // NOI18N
         Tgl1.setPreferredSize(new java.awt.Dimension(90, 23));
@@ -180,7 +179,6 @@ public final class DlgResumePerawatan extends javax.swing.JDialog {
         label18.setPreferredSize(new java.awt.Dimension(30, 23));
         panelGlass5.add(label18);
 
-        Tgl2.setEditable(false);
         Tgl2.setDisplayFormat("dd-MM-yyyy");
         Tgl2.setName("Tgl2"); // NOI18N
         Tgl2.setPreferredSize(new java.awt.Dimension(90, 23));
@@ -1692,6 +1690,38 @@ private void BtnAllKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Bt
                       "<table width='100%' border='0' align='center' cellpadding='3px' cellspacing='0' class='tbl_form'>"+
                        htmlContent.toString()+
                       "</table>"+
+                      "<br>"+
+                      "<br>"+
+                      "<table width='100%' border='0 align='center' cellpadding='3px' cellspacing='0>"+
+                        "<tr>"+
+                          "<td width='33%'></td>"+
+                          "<td width='33%'></td>"+
+                          "<td width='33%'>Dokter PJ</td>"+
+                        "</tr>"+
+                        "<tr>"+
+                          "<td width='33%'></td>"+
+                          "<td width='33%'></td>"+
+                          "<td width='33%'>"+
+                            "<div id='qrcode'></div><br>"+
+                            "drg. FAISOL BASORO"+
+                          "</td>"+
+                        "</tr>"+
+                      "</table>"+
+/*                      "<br>"+
+                      "<br>"+
+                      "<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>"+
+                      "<script src='https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js'></script>"+
+                      "<script>"+
+                        "var qrcode = new QRCode('qrcode');"+
+                        "function makeCode() {"+
+                          "qrcode.makeCode('BASORO');"+
+                        "}"+
+                        "makeCode();"+
+                        "$('#text')."+
+                        "on('blur', function () {"+
+                          "makeCode();"+
+                        "});"+
+                      "</script>"+*/
                     "</html>");
             } catch (Exception e) {
                 System.out.println("Notifikasi : "+e);
