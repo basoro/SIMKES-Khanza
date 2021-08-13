@@ -133,6 +133,8 @@ public class InformasiJadwal extends javax.swing.JDialog {
 
         panelGlass9.setName("panelGlass9"); // NOI18N
         panelGlass9.setPreferredSize(new java.awt.Dimension(44, 44));
+        panelGlass9.setWarnaAtas(new java.awt.Color(255, 255, 255));
+        panelGlass9.setWarnaBawah(new java.awt.Color(255, 255, 255));
         panelGlass9.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
         jLabel6.setText("Key Word :");
