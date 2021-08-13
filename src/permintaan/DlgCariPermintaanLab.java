@@ -365,8 +365,6 @@ public class DlgCariPermintaanLab extends javax.swing.JDialog {
 
         jPopupMenu1 = new javax.swing.JPopupMenu();
         MnCetakHasilLab = new javax.swing.JMenuItem();
-        MnBarcodePermintaan = new javax.swing.JMenuItem();
-        MnBarcodePermintaan1 = new javax.swing.JMenuItem();
         WindowAmbilSampel = new javax.swing.JDialog();
         internalFrame5 = new widget.InternalFrame();
         BtnCloseIn4 = new widget.Button();
@@ -435,32 +433,6 @@ public class DlgCariPermintaanLab extends javax.swing.JDialog {
         });
         jPopupMenu1.add(MnCetakHasilLab);
 
-        MnBarcodePermintaan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
-        MnBarcodePermintaan.setForeground(new java.awt.Color(70, 70, 70));
-        MnBarcodePermintaan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
-        MnBarcodePermintaan.setText("Barcode No.Permintaan");
-        MnBarcodePermintaan.setName("MnBarcodePermintaan"); // NOI18N
-        MnBarcodePermintaan.setPreferredSize(new java.awt.Dimension(200, 28));
-        MnBarcodePermintaan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MnBarcodePermintaanActionPerformed(evt);
-            }
-        });
-        jPopupMenu1.add(MnBarcodePermintaan);
-
-        MnBarcodePermintaan1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
-        MnBarcodePermintaan1.setForeground(new java.awt.Color(70, 70, 70));
-        MnBarcodePermintaan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category.png"))); // NOI18N
-        MnBarcodePermintaan1.setText("Barcode No.Permintaan 2");
-        MnBarcodePermintaan1.setName("MnBarcodePermintaan1"); // NOI18N
-        MnBarcodePermintaan1.setPreferredSize(new java.awt.Dimension(200, 28));
-        MnBarcodePermintaan1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MnBarcodePermintaan1ActionPerformed(evt);
-            }
-        });
-        jPopupMenu1.add(MnBarcodePermintaan1);
-
         WindowAmbilSampel.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         WindowAmbilSampel.setName("WindowAmbilSampel"); // NOI18N
         WindowAmbilSampel.setUndecorated(true);
@@ -501,7 +473,7 @@ public class DlgCariPermintaanLab extends javax.swing.JDialog {
         internalFrame5.add(jLabel26);
         jLabel26.setBounds(6, 32, 100, 23);
 
-        TanggalPulang.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "21-02-2019 10:55:25" }));
+        TanggalPulang.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "27-02-2019 21:45:30" }));
         TanggalPulang.setDisplayFormat("dd-MM-yyyy HH:mm:ss");
         TanggalPulang.setName("TanggalPulang"); // NOI18N
         TanggalPulang.setOpaque(false);
@@ -1455,12 +1427,15 @@ private void tbLabRalanKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:even
                     param.put("pekerjaan",Sequel.cariIsi("select pekerjaan from pasien where no_rkm_medis=?",norm));
                     param.put("noktp",Sequel.cariIsi("select no_ktp from pasien where no_rkm_medis=?",norm));
                     param.put("namapasien",Sequel.cariIsi("select nm_pasien from pasien where no_rkm_medis=? ",norm));
-                    param.put("jkel",Sequel.cariIsi("select jk from pasien where no_rkm_medis=? ",norm));
+                    param.put("jkel",Sequel.cariIsi("select if(jk='L','Laki-laki','Perempuan') as jk from pasien where no_rkm_medis=? ",norm));
                     param.put("umur",Sequel.cariIsi("select umur from pasien where no_rkm_medis=?",norm));
                     param.put("lahir",Sequel.cariIsi("select DATE_FORMAT(tgl_lahir,'%d-%m-%Y') from pasien where no_rkm_medis=? ",norm));
                     param.put("pengirim",DokterPerujuk);
                     param.put("tanggal",Valid.SetTgl3(Permintaan));
                     param.put("alamat",Sequel.cariIsi("select concat(pasien.alamat,', ',kelurahan.nm_kel,', ',kecamatan.nm_kec,', ',kabupaten.nm_kab) as alamat from pasien inner join kelurahan inner join kecamatan inner join kabupaten on pasien.kd_kel=kelurahan.kd_kel and pasien.kd_kec=kecamatan.kd_kec and pasien.kd_kab=kabupaten.kd_kab where no_rkm_medis=? ",norm));
+                    param.put("klinis",Sequel.cariIsi("select klinis from diagnosa_pasien_klinis where noorder=? ", tbLabRalan.getValueAt(tbLabRalan.getSelectedRow(),0).toString()));  
+                    param.put("jns_bayar",Sequel.cariIsi("select penjab.png_jawab from reg_periksa, penjab where reg_periksa.kd_pj=penjab.kd_pj and reg_periksa.no_rawat=? ", tbLabRalan.getValueAt(tbLabRalan.getSelectedRow(),1).toString()));                     
+
                     kamar="Poli";
                     namakamar=Sequel.cariIsi("select nm_poli from poliklinik inner join reg_periksa on poliklinik.kd_poli=reg_periksa.kd_poli "+
                             "where reg_periksa.no_rawat=?",NoRawat);
@@ -1565,12 +1540,15 @@ private void tbLabRalanKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:even
                     param.put("pekerjaan",Sequel.cariIsi("select pekerjaan from pasien where no_rkm_medis=?",norm));
                     param.put("noktp",Sequel.cariIsi("select no_ktp from pasien where no_rkm_medis=?",norm));
                     param.put("namapasien",Sequel.cariIsi("select nm_pasien from pasien where no_rkm_medis=? ",norm));
-                    param.put("jkel",Sequel.cariIsi("select jk from pasien where no_rkm_medis=? ",norm));
+                    param.put("jkel",Sequel.cariIsi("select if(jk='L','Laki-laki','Perempuan') as jk from pasien where no_rkm_medis=? ",norm));
                     param.put("umur",Sequel.cariIsi("select umur from pasien where no_rkm_medis=?",norm));
                     param.put("lahir",Sequel.cariIsi("select DATE_FORMAT(tgl_lahir,'%d-%m-%Y') from pasien where no_rkm_medis=? ",norm));
                     param.put("pengirim",DokterPerujuk);
                     param.put("tanggal",Valid.SetTgl3(Permintaan));
                     param.put("alamat",Sequel.cariIsi("select concat(pasien.alamat,', ',kelurahan.nm_kel,', ',kecamatan.nm_kec,', ',kabupaten.nm_kab) as alamat from pasien inner join kelurahan inner join kecamatan inner join kabupaten on pasien.kd_kel=kelurahan.kd_kel and pasien.kd_kec=kecamatan.kd_kec and pasien.kd_kab=kabupaten.kd_kab where no_rkm_medis=? ",norm));
+                    param.put("klinis",Sequel.cariIsi("select klinis from diagnosa_pasien_klinis where noorder=? ", tbLabRalan.getValueAt(tbLabRalan.getSelectedRow(),0).toString()));  
+                    param.put("jns_bayar",Sequel.cariIsi("select penjab.png_jawab from reg_periksa, penjab where reg_periksa.kd_pj=penjab.kd_pj and reg_periksa.no_rawat=? ", tbLabRalan.getValueAt(tbLabRalan.getSelectedRow(),1).toString()));
+                    
                     kamar=Sequel.cariIsi("select ifnull(kd_kamar,'') from kamar_inap where no_rawat=? order by tgl_masuk desc limit 1",NoRawat);
                     namakamar=kamar+", "+Sequel.cariIsi("select nm_bangsal from bangsal inner join kamar on bangsal.kd_bangsal=kamar.kd_bangsal "+
                             " where kamar.kd_kamar=? ",kamar);            
@@ -1726,123 +1704,6 @@ private void tbLabRalanKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:even
         // TODO add your handling code here:
     }//GEN-LAST:event_BtnSampelKeyPressed
 
-    private void MnBarcodePermintaanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnBarcodePermintaanActionPerformed
-        if(TabPilihRawat.getSelectedIndex()==0){
-            if(!NoRawat.equals("")){
-                if(NoPermintaan.trim().equals("")){
-                    Valid.textKosong(TCari,"No.Permintaan");
-                }else{ 
-                    this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                    Map<String, Object> param = new HashMap<>();
-                    norm=Sequel.cariIsi("select no_rkm_medis from reg_periksa where no_rawat=? ",NoRawat);
-                    param.put("nama",Sequel.cariIsi("select nm_pasien from pasien where no_rkm_medis=? ",norm));
-                    param.put("alamat",Sequel.cariIsi("select date_format(tgl_lahir,'%d/%m/%Y') from pasien where no_rkm_medis=?",norm));
-                    param.put("norm",norm);
-                    param.put("parameter","%"+TCari.getText().trim()+"%");     
-                    param.put("namars",var.getnamars());
-                    param.put("alamatrs",var.getalamatrs());
-                    param.put("kotars",var.getkabupatenrs());
-                    param.put("propinsirs",var.getpropinsirs());
-                    param.put("kontakrs",var.getkontakrs());
-                    param.put("emailrs",var.getemailrs());   
-                    Valid.MyReport("rptBarcodePermintaanLab.jrxml","report","::[ Barcode No.Permintaan Lab ]::",
-                            "select noorder from permintaan_lab where no_rawat='"+NoRawat+"'",param); 
-                    TeksKosong();
-                    this.setCursor(Cursor.getDefaultCursor());
-                } 
-            }else{            
-                JOptionPane.showMessageDialog(null,"Maaf, silahkan pilih data permintaan...!!!!");
-                TCari.requestFocus();
-            } 
-        }else if(TabPilihRawat.getSelectedIndex()==1){
-            if(!NoRawat.equals("")){
-                if(NoPermintaan.trim().equals("")){
-                    Valid.textKosong(TCari,"No.Permintaan");
-                }else{ 
-                    this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                    Map<String, Object> param = new HashMap<>();
-                    norm=Sequel.cariIsi("select no_rkm_medis from reg_periksa where no_rawat=? ",NoRawat);
-                    param.put("nama",Sequel.cariIsi("select nm_pasien from pasien where no_rkm_medis=? ",norm));
-                    param.put("alamat",Sequel.cariIsi("select date_format(tgl_lahir,'%d/%m/%Y') from pasien where no_rkm_medis=?",norm));
-                    param.put("norm",norm);
-                    param.put("parameter","%"+TCari.getText().trim()+"%");     
-                    param.put("namars",var.getnamars());
-                    param.put("alamatrs",var.getalamatrs());
-                    param.put("kotars",var.getkabupatenrs());
-                    param.put("propinsirs",var.getpropinsirs());
-                    param.put("kontakrs",var.getkontakrs());
-                    param.put("emailrs",var.getemailrs());   
-                    Valid.MyReport("rptBarcodePermintaanLab.jrxml","report","::[ Barcode No.Permintaan Lab ]::",
-                            "select noorder from permintaan_lab where no_rawat='"+NoRawat+"'",param); 
-                    TeksKosong();
-                    this.setCursor(Cursor.getDefaultCursor());
-                } 
-            }else{            
-                JOptionPane.showMessageDialog(null,"Maaf, silahkan pilih data permintaan...!!!!");
-                TCari.requestFocus();
-            } 
-        }
-            
-    }//GEN-LAST:event_MnBarcodePermintaanActionPerformed
-
-    private void MnBarcodePermintaan1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnBarcodePermintaan1ActionPerformed
-        if(TabPilihRawat.getSelectedIndex()==0){
-            if(!NoRawat.equals("")){
-                if(NoPermintaan.trim().equals("")){
-                    Valid.textKosong(TCari,"No.Permintaan");
-                }else{ 
-                    this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                    Map<String, Object> param = new HashMap<>();
-                    norm=Sequel.cariIsi("select no_rkm_medis from reg_periksa where no_rawat=? ",NoRawat);
-                    param.put("nama",Sequel.cariIsi("select nm_pasien from pasien where no_rkm_medis=? ",norm));
-                    param.put("alamat",Sequel.cariIsi("select date_format(tgl_lahir,'%d/%m/%Y') from pasien where no_rkm_medis=?",norm));
-                    param.put("norm",norm);
-                    param.put("parameter","%"+TCari.getText().trim()+"%");     
-                    param.put("namars",var.getnamars());
-                    param.put("alamatrs",var.getalamatrs());
-                    param.put("kotars",var.getkabupatenrs());
-                    param.put("propinsirs",var.getpropinsirs());
-                    param.put("kontakrs",var.getkontakrs());
-                    param.put("emailrs",var.getemailrs());   
-                    Valid.MyReport("rptBarcodePermintaanLab2.jrxml","report","::[ Barcode No.Permintaan Lab ]::",
-                            "select noorder from permintaan_lab where no_rawat='"+NoRawat+"'",param); 
-                    TeksKosong();
-                    this.setCursor(Cursor.getDefaultCursor());
-                } 
-            }else{            
-                JOptionPane.showMessageDialog(null,"Maaf, silahkan pilih data permintaan...!!!!");
-                TCari.requestFocus();
-            } 
-        }else if(TabPilihRawat.getSelectedIndex()==1){
-            if(!NoRawat.equals("")){
-                if(NoPermintaan.trim().equals("")){
-                    Valid.textKosong(TCari,"No.Permintaan");
-                }else{ 
-                    this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                    Map<String, Object> param = new HashMap<>();
-                    norm=Sequel.cariIsi("select no_rkm_medis from reg_periksa where no_rawat=? ",NoRawat);
-                    param.put("nama",Sequel.cariIsi("select nm_pasien from pasien where no_rkm_medis=? ",norm));
-                    param.put("alamat",Sequel.cariIsi("select date_format(tgl_lahir,'%d/%m/%Y') from pasien where no_rkm_medis=?",norm));
-                    param.put("norm",norm);
-                    param.put("parameter","%"+TCari.getText().trim()+"%");     
-                    param.put("namars",var.getnamars());
-                    param.put("alamatrs",var.getalamatrs());
-                    param.put("kotars",var.getkabupatenrs());
-                    param.put("propinsirs",var.getpropinsirs());
-                    param.put("kontakrs",var.getkontakrs());
-                    param.put("emailrs",var.getemailrs());   
-                    Valid.MyReport("rptBarcodePermintaanLab2.jrxml","report","::[ Barcode No.Permintaan Lab ]::",
-                            "select noorder from permintaan_lab where no_rawat='"+NoRawat+"'",param); 
-                    TeksKosong();
-                    this.setCursor(Cursor.getDefaultCursor());
-                } 
-            }else{            
-                JOptionPane.showMessageDialog(null,"Maaf, silahkan pilih data permintaan...!!!!");
-                TCari.requestFocus();
-            } 
-        }            
-    }//GEN-LAST:event_MnBarcodePermintaan1ActionPerformed
-
     private void BtnCloseIn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCloseIn4ActionPerformed
         WindowAmbilSampel.dispose();
     }//GEN-LAST:event_BtnCloseIn4ActionPerformed
@@ -1994,8 +1855,6 @@ private void tbLabRalanKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:even
     private widget.TextBox CrPoli;
     private widget.TextBox Kamar;
     private widget.Label LCount;
-    private javax.swing.JMenuItem MnBarcodePermintaan;
-    private javax.swing.JMenuItem MnBarcodePermintaan1;
     private javax.swing.JMenuItem MnCetakHasilLab;
     private widget.TextBox TCari;
     private javax.swing.JTabbedPane TabPilihRawat;
