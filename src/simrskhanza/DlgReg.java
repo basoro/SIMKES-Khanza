@@ -165,7 +165,7 @@ public final class DlgReg extends javax.swing.JDialog {
         tabMode=new DefaultTableModel(null,new Object[]{
             "P","No.Reg","No.Rawat","Tanggal","Jam","Kd.Dokter","Dokter Dituju","Nomer RM",
             "Pasien","J.K.","Umur","Poliklinik","Jenis Bayar","Penanggung Jawab","Alamat P.J.","Hubungan P.J.",
-            "Biaya Regristrasi","Status","No.Telp","Stts Rawat","Stts Poli","Kode Poli","Kode PJ"
+            "Biaya Registrasi","Status","No.Telp","Stts Rawat","Stts Poli","Kode Poli","Kode PJ"
         }){
              @Override public boolean isCellEditable(int rowIndex, int colIndex){
                 boolean a = false;
@@ -3690,8 +3690,6 @@ public final class DlgReg extends javax.swing.JDialog {
         internalFrame7.setBackground(new java.awt.Color(255, 255, 255));
         internalFrame7.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 245, 235)), "::[ Interpretasi EKG ]::", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(70, 70, 70))); // NOI18N
         internalFrame7.setName("internalFrame7"); // NOI18N
-        internalFrame7.setWarnaAtas(new java.awt.Color(255, 255, 255));
-        internalFrame7.setWarnaBawah(new java.awt.Color(255, 255, 255));
 
         TNoRMint.setEditable(false);
         TNoRMint.setHighlighter(null);
@@ -3857,8 +3855,6 @@ public final class DlgReg extends javax.swing.JDialog {
         internalFrame1.setBackground(new java.awt.Color(255, 255, 255));
         internalFrame1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 245, 235)), "::[ Registrasi Periksa Hari Ini ]::", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(70, 70, 70))); // NOI18N
         internalFrame1.setName("internalFrame1"); // NOI18N
-        internalFrame1.setWarnaAtas(new java.awt.Color(255, 255, 255));
-        internalFrame1.setWarnaBawah(new java.awt.Color(255, 255, 255));
         internalFrame1.setLayout(new java.awt.BorderLayout(1, 1));
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
@@ -3868,8 +3864,6 @@ public final class DlgReg extends javax.swing.JDialog {
 
         panelGlass6.setName("panelGlass6"); // NOI18N
         panelGlass6.setPreferredSize(new java.awt.Dimension(55, 55));
-        panelGlass6.setWarnaAtas(new java.awt.Color(255, 255, 255));
-        panelGlass6.setWarnaBawah(new java.awt.Color(255, 255, 255));
         panelGlass6.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
         BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
@@ -4013,8 +4007,6 @@ public final class DlgReg extends javax.swing.JDialog {
 
         panelGlass7.setName("panelGlass7"); // NOI18N
         panelGlass7.setPreferredSize(new java.awt.Dimension(44, 44));
-        panelGlass7.setWarnaAtas(new java.awt.Color(255, 255, 255));
-        panelGlass7.setWarnaBawah(new java.awt.Color(255, 255, 255));
         panelGlass7.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
         jLabel15.setText("Periode :");
@@ -4078,8 +4070,6 @@ public final class DlgReg extends javax.swing.JDialog {
         panelGlass8.setBackground(new java.awt.Color(255, 255, 255));
         panelGlass8.setName("panelGlass8"); // NOI18N
         panelGlass8.setPreferredSize(new java.awt.Dimension(44, 44));
-        panelGlass8.setWarnaAtas(new java.awt.Color(255, 255, 255));
-        panelGlass8.setWarnaBawah(new java.awt.Color(255, 255, 255));
         panelGlass8.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
         jLabel14.setText("Dokter :");
@@ -4137,8 +4127,6 @@ public final class DlgReg extends javax.swing.JDialog {
 
         FormInput.setName("FormInput"); // NOI18N
         FormInput.setPreferredSize(new java.awt.Dimension(490, 167));
-        FormInput.setWarnaAtas(new java.awt.Color(255, 255, 255));
-        FormInput.setWarnaBawah(new java.awt.Color(255, 255, 255));
         FormInput.setLayout(null);
 
         jLabel3.setText("No. Reg. :");
@@ -4467,7 +4455,6 @@ public final class DlgReg extends javax.swing.JDialog {
 
         PanelInput.add(FormInput, java.awt.BorderLayout.CENTER);
 
-        ChkInput.setBackground(new java.awt.Color(255, 255, 255));
         ChkInput.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/143.png"))); // NOI18N
         ChkInput.setMnemonic('I');
         ChkInput.setText(".: Input Data");
@@ -4494,7 +4481,7 @@ public final class DlgReg extends javax.swing.JDialog {
         TabRawat.setBackground(new java.awt.Color(255, 255, 254));
         TabRawat.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(241, 246, 236)));
         TabRawat.setForeground(new java.awt.Color(70, 70, 70));
-        TabRawat.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
+        TabRawat.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         TabRawat.setName("TabRawat"); // NOI18N
         TabRawat.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -4511,7 +4498,6 @@ public final class DlgReg extends javax.swing.JDialog {
 
         tbPetugas.setToolTipText("Klik data di table, kemudian klik kanan untuk memilih menu yang diinginkan");
         tbPetugas.setComponentPopupMenu(jPopupMenu1);
-        tbPetugas.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         tbPetugas.setName("tbPetugas"); // NOI18N
         tbPetugas.setSelectionForeground(new java.awt.Color(255, 0, 0));
         tbPetugas.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -4540,7 +4526,6 @@ public final class DlgReg extends javax.swing.JDialog {
 
         tbPetugas2.setToolTipText("Klik data di table, kemudian klik kanan untuk memilih menu yang diinginkan");
         tbPetugas2.setComponentPopupMenu(jPopupMenu2);
-        tbPetugas2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         tbPetugas2.setName("tbPetugas2"); // NOI18N
         tbPetugas2.setSelectionForeground(new java.awt.Color(255, 0, 0));
         tbPetugas2.addMouseListener(new java.awt.event.MouseAdapter() {

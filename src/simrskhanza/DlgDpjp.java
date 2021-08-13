@@ -1115,6 +1115,14 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
         }
     }
     
+    public void setdariIGD(String norwt) {
+        TNoRw.setText(norwt);
+        isRawat();
+        isPsien();   
+        ChkInput.setSelected(true);
+        isForm();
+    }
+    
     public void isCek(){
         BtnSimpan.setEnabled(var.getmanajemen());
         BtnHapus.setEnabled(var.getmanajemen());

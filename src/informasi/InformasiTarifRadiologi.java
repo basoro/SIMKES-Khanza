@@ -116,12 +116,15 @@ public final class InformasiTarifRadiologi extends javax.swing.JDialog {
         tbJnsPerawatan.setAutoCreateRowSorter(true);
         tbJnsPerawatan.setToolTipText("Silahkan klik untuk memilih data yang mau diedit ataupun dihapus");
         tbJnsPerawatan.setName("tbJnsPerawatan"); // NOI18N
+        tbJnsPerawatan.setSelectionForeground(new java.awt.Color(255, 0, 0));
         Scroll.setViewportView(tbJnsPerawatan);
 
         internalFrame1.add(Scroll, java.awt.BorderLayout.CENTER);
 
         panelGlass9.setName("panelGlass9"); // NOI18N
         panelGlass9.setPreferredSize(new java.awt.Dimension(44, 44));
+        panelGlass9.setWarnaAtas(new java.awt.Color(255, 255, 255));
+        panelGlass9.setWarnaBawah(new java.awt.Color(255, 255, 255));
         panelGlass9.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
         jLabel6.setText("Key Word :");

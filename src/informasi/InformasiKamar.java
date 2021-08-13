@@ -164,6 +164,8 @@ public final class InformasiKamar extends javax.swing.JDialog {
 
         panelGlass6.setName("panelGlass6"); // NOI18N
         panelGlass6.setPreferredSize(new java.awt.Dimension(44, 44));
+        panelGlass6.setWarnaAtas(new java.awt.Color(255, 255, 255));
+        panelGlass6.setWarnaBawah(new java.awt.Color(255, 255, 255));
         panelGlass6.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
         jLabel6.setText("Key Word :");
