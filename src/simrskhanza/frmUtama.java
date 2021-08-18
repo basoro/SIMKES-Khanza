@@ -66,14 +66,91 @@ import presensi.DlgJadwalTambahan;
 import presensi.DlgJamMasuk;
 import presensi.DlgSidikJari;
 import presensi.DlgTemporaryPresensi;
+import presensi.DlgKehadiran;
+import informasi.InformasiKamar;
+import informasi.InformasiTarifOperasi;
 import setting.DlgAdmin;
 import setting.DlgUser;
 import setting.DlgSetAplikasi;
 import keuangan.DlgRBPaketBHP;
 import keuangan.DlgLhtPiutang;
+import keuangan.DlgAkunPiutang;
+import keuangan.DlgBayarPemesanan;
+import keuangan.DlgBayarPiutang;
+import keuangan.DlgBubes;
+import keuangan.DlgCashflow;
+import keuangan.DlgDetailJMDokter;
+import keuangan.DlgDetailPotongan;
+import keuangan.DlgDetailTambahan;
+import keuangan.DlgFeeBacaanEKG;
+import keuangan.DlgFeePeriksaRalan;
+import keuangan.DlgFeeRujukanRontgen;
+import keuangan.DlgFeeVisitDokter;
+import keuangan.DlgJnsPerawatanLab;
+import keuangan.DlgJnsPerawatanRadiologi;
+import keuangan.DlgJnsPerawatanRalan;
+import keuangan.DlgJurnal;
+import keuangan.DlgJurnalHarian;
+import keuangan.DlgLabaRugi;
+import keuangan.DlgLhtBiaya;
+import keuangan.DlgRBTindakanPoli;
+import keuangan.DlgRBKSO;
+import keuangan.DlgPaymentPoint;
+import keuangan.DlgPemasukanLain;
+//import keuangan.DlgPembayaranPerAKunBayar;
+import keuangan.DlgPembayaranRalan;
+import keuangan.DlgPembayaranRalanPerHari;
+import keuangan.DlgPembayaranRanap;
+import keuangan.DlgPembyaranRanapPerhari;
+import keuangan.DlgPengaturanRekening;
+import keuangan.DlgPengeluaranHarian;
+import keuangan.DlgPiutangBelumLunas;
+import keuangan.DlgRBJS;
+import keuangan.DlgRBJmDokter;
+import keuangan.DlgRBJmParamedis;
+import keuangan.DlgRBKSO;
+import keuangan.DlgRBMenejemen;
+import keuangan.DlgRBObatBangsal;
+import keuangan.DlgRBObatDokterPeresep;
+import keuangan.DlgRBObatDokterRalan;
+import keuangan.DlgRBObatDokterRanap;
+import keuangan.DlgRBObatPercaraBayar;
+import keuangan.DlgRBObatPoli;
+import keuangan.DlgRBTindakanDokter;
+import keuangan.DlgRBTindakanKamar;
+import keuangan.DlgRBTindakanPoli;
+import keuangan.DlgRHJS;
+import keuangan.DlgRHJmDokter;
+import keuangan.DlgRHJmParamedis;
+import keuangan.DlgRHKSO;
+import keuangan.DlgRHMenejemen;
+import keuangan.DlgRHPaketBHP;
+import keuangan.DlgRekapPerShift;
+import keuangan.DlgRekening;
+import keuangan.DlgRekeningTahun;
+import keuangan.DlgRincianPiutangPasien;
+import laporan.DlgICD9;
+import laporan.DlgKunjunganRalan;
+import laporan.DlgKunjunganRanap;
+import laporan.DlgSensusHarianPoli;
 import permintaan.DlgCariPermintaanLab;
 import permintaan.DlgCariPermintaanRadiologi;
-
+import setting.DlgBiayaHarian;
+import setting.DlgBiayaSekaliMasuk;
+import setting.DlgClosingKasir;
+import setting.DlgSetEmbalase;
+import setting.DlgSetHarga;
+import setting.DlgSetHargaKamar;
+import setting.DlgSetHargaObatRalan;
+import setting.DlgSetHargaObatRanap;
+import setting.DlgSetKamarInap;
+import setting.DlgSetKeterlambatan;
+import setting.DlgSetNota;
+import setting.DlgSetOtoLokasi;
+import setting.DlgSetOtoRalan;
+import setting.DlgSetPenjabLab;
+import setting.DlgSetRM;
+import setting.DlgSetTarif;
 
 
 /**
@@ -599,7 +676,7 @@ public class frmUtama extends javax.swing.JFrame {
 
         tanggal.setEditable(false);
         tanggal.setForeground(new java.awt.Color(50, 70, 50));
-        tanggal.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "28/07/2021" }));
+        tanggal.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "18/08/2021" }));
         tanggal.setDisplayFormat("dd/MM/yyyy");
         tanggal.setName("tanggal"); // NOI18N
         tanggal.setOpaque(false);
@@ -3551,7 +3628,7 @@ public class frmUtama extends javax.swing.JFrame {
 
         MnKeu.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         MnKeu.setForeground(new java.awt.Color(51, 51, 51));
-        MnKeu.setText("Keuangan");
+        MnKeu.setText("Neraca Rugi Laba");
         MnKeu.setEnabled(false);
         MnKeu.setName("MnKeu"); // NOI18N
         MnKeu.setPreferredSize(new java.awt.Dimension(200, 22));
@@ -4541,7 +4618,13 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
     }//GEN-LAST:event_MnRujukKeluarActionPerformed
 
     private void MnTindakanRalanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnTindakanRalanActionPerformed
-        // TODO add your handling code here:
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRawatJalan dlgrwjl=new DlgRawatJalan(null,false);
+        dlgrwjl.isCek();
+        dlgrwjl.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
+        dlgrwjl.setLocationRelativeTo(internalFrame1);
+        dlgrwjl.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnTindakanRalanActionPerformed
 
     private void MnKamarInapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnKamarInapActionPerformed
@@ -4829,7 +4912,13 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
     }//GEN-LAST:event_MnTempPresensiActionPerformed
 
     private void MnRekapKehadiranActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnRekapKehadiranActionPerformed
-        // TODO add your handling code here:
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        isTutup();
+        DlgKehadiran hadir=new DlgKehadiran(this,false);
+        hadir.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
+        hadir.setLocationRelativeTo(PanelUtama);
+        hadir.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnRekapKehadiranActionPerformed
 
     private void MnPresensiHarian1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnPresensiHarian1ActionPerformed
@@ -5202,103 +5291,267 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
     }//GEN-LAST:event_MnRekapStokActionPerformed
 
     private void MnHrDokActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnHrDokActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRBTindakanPoli rbpoli=new DlgRBTindakanPoli(this,false);
+        rbpoli.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rbpoli.setLocationRelativeTo(PanelUtama);
+        rbpoli.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnHrDokActionPerformed
 
     private void MnHrKamarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnHrKamarActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRBTindakanKamar rbpoli=new DlgRBTindakanKamar(this,false);
+        rbpoli.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rbpoli.setLocationRelativeTo(PanelUtama);
+        rbpoli.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnHrKamarActionPerformed
 
     private void MnHrDokRalanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnHrDokRalanActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRBTindakanDokter rbpoli=new DlgRBTindakanDokter(this,false);
+        rbpoli.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rbpoli.setLocationRelativeTo(PanelUtama);
+        rbpoli.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnHrDokRalanActionPerformed
 
     private void MnLapObtPoliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnLapObtPoliActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRBObatPoli rbpoli=new DlgRBObatPoli(this,false);
+        rbpoli.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rbpoli.setLocationRelativeTo(PanelUtama);
+        rbpoli.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnLapObtPoliActionPerformed
 
     private void MnObtKmrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnObtKmrActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRBObatBangsal rbobatbangsal=new DlgRBObatBangsal(this,false);
+        rbobatbangsal.isCek();
+        rbobatbangsal.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rbobatbangsal.setLocationRelativeTo(PanelUtama);
+        rbobatbangsal.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnObtKmrActionPerformed
 
     private void MnObtDokRlnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnObtDokRlnActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRBObatDokterRalan rbpoli=new DlgRBObatDokterRalan(this,false);
+        rbpoli.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rbpoli.setLocationRelativeTo(PanelUtama);
+        rbpoli.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnObtDokRlnActionPerformed
 
     private void MnObtDokRnpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnObtDokRnpActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRBObatDokterRanap rbpoli=new DlgRBObatDokterRanap(this,false);
+        rbpoli.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rbpoli.setLocationRelativeTo(PanelUtama);
+        rbpoli.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnObtDokRnpActionPerformed
 
     private void MnObtDokRspActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnObtDokRspActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRBObatDokterPeresep rbpoli=new DlgRBObatDokterPeresep(this,false);
+        rbpoli.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rbpoli.setLocationRelativeTo(PanelUtama);
+        rbpoli.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnObtDokRspActionPerformed
 
     private void MnObtCrByrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnObtCrByrActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRBObatPercaraBayar rbpoli=new DlgRBObatPercaraBayar(this,false);
+        rbpoli.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rbpoli.setLocationRelativeTo(PanelUtama);
+        rbpoli.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnObtCrByrActionPerformed
 
     private void MnDetJMDokActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnDetJMDokActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgDetailJMDokter rhtindakandokter=new DlgDetailJMDokter(this,false);
+        rhtindakandokter.isCek();
+        rhtindakandokter.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rhtindakandokter.setLocationRelativeTo(PanelUtama);
+        rhtindakandokter.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnDetJMDokActionPerformed
 
     private void MnHrDokAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnHrDokAllActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRHJmDokter rhtindakandokter=new DlgRHJmDokter(this,false);
+        rhtindakandokter.isCek();
+        rhtindakandokter.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rhtindakandokter.setLocationRelativeTo(PanelUtama);
+        rhtindakandokter.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnHrDokAllActionPerformed
 
     private void MnBulananDokActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnBulananDokActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRBJmDokter rbtindakandokter=new DlgRBJmDokter(this,false);
+        rbtindakandokter.isCek();
+        rbtindakandokter.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rbtindakandokter.setLocationRelativeTo(PanelUtama);
+        rbtindakandokter.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnBulananDokActionPerformed
 
     private void MnHrParamedisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnHrParamedisActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRHJmParamedis rhtindakanparamedis=new DlgRHJmParamedis(this,false);
+        rhtindakanparamedis.isCek();
+        rhtindakanparamedis.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rhtindakanparamedis.setLocationRelativeTo(PanelUtama);
+        rhtindakanparamedis.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnHrParamedisActionPerformed
 
     private void MnBlnParamedisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnBlnParamedisActionPerformed
-        // TODO add your handling code here:
+       isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRBJmParamedis rbtindakanparamedis=new DlgRBJmParamedis(this,false);
+        rbtindakanparamedis.isCek();
+        rbtindakanparamedis.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rbtindakanparamedis.setLocationRelativeTo(PanelUtama);
+        rbtindakanparamedis.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnBlnParamedisActionPerformed
 
     private void MnHrSrnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnHrSrnActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRHJS rhjs=new DlgRHJS(this,false);
+        rhjs.isCek();
+        rhjs.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rhjs.setLocationRelativeTo(PanelUtama);
+        rhjs.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnHrSrnActionPerformed
 
     private void MnBlnSrnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnBlnSrnActionPerformed
-        // TODO add your handling code here:
+       isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRBJS rbjs=new DlgRBJS(this,false);
+        rbjs.isCek();
+        rbjs.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rbjs.setLocationRelativeTo(PanelUtama);
+        rbjs.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnBlnSrnActionPerformed
 
     private void MnHrKsoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnHrKsoActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRHKSO rhkso=new DlgRHKSO(this,false);
+        rhkso.isCek();
+        rhkso.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rhkso.setLocationRelativeTo(PanelUtama);
+        rhkso.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnHrKsoActionPerformed
 
     private void MnBlnKsoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnBlnKsoActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRBKSO rbkso=new DlgRBKSO(this,false);
+        rbkso.isCek();
+        rbkso.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rbkso.setLocationRelativeTo(PanelUtama);
+        rbkso.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnBlnKsoActionPerformed
 
     private void MnHrMnjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnHrMnjActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRHMenejemen rhmenejemen=new DlgRHMenejemen(this,false);
+        rhmenejemen.isCek();
+        rhmenejemen.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rhmenejemen.setLocationRelativeTo(PanelUtama);
+        rhmenejemen.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnHrMnjActionPerformed
 
     private void MnBlnMnjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnBlnMnjActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRBMenejemen rbmenejemen=new DlgRBMenejemen(this,false);
+        rbmenejemen.isCek();
+        rbmenejemen.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rbmenejemen.setLocationRelativeTo(PanelUtama);
+        rbmenejemen.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnBlnMnjActionPerformed
 
     private void MnHrBhpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnHrBhpActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRHPaketBHP rhpaketbhp=new DlgRHPaketBHP(this,false);
+        rhpaketbhp.isCek();
+        rhpaketbhp.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rhpaketbhp.setLocationRelativeTo(PanelUtama);
+        rhpaketbhp.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnHrBhpActionPerformed
 
     private void MnBlnBhpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnBlnBhpActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRBPaketBHP rbpaketbhp=new DlgRBPaketBHP(this,false);
+        rbpaketbhp.isCek();
+        rbpaketbhp.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rbpaketbhp.setLocationRelativeTo(PanelUtama);
+        rbpaketbhp.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnBlnBhpActionPerformed
 
     private void MnFreeVstDokActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnFreeVstDokActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgFeeVisitDokter feevisitdokter=new DlgFeeVisitDokter(this,false);
+        feevisitdokter.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        feevisitdokter.setLocationRelativeTo(PanelUtama);
+        feevisitdokter.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnFreeVstDokActionPerformed
 
     private void MnFreeBcEkgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnFreeBcEkgActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgFeeBacaanEKG feebacaanekg=new DlgFeeBacaanEKG(this,false);
+        feebacaanekg.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        feebacaanekg.setLocationRelativeTo(PanelUtama);
+        feebacaanekg.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnFreeBcEkgActionPerformed
 
     private void MnFreeRujRotgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnFreeRujRotgActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgFeeRujukanRontgen feerujukanrontgen=new DlgFeeRujukanRontgen(this,false);
+        feerujukanrontgen.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        feerujukanrontgen.setLocationRelativeTo(PanelUtama);
+        feerujukanrontgen.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnFreeRujRotgActionPerformed
 
     private void MnFreeRujRnpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnFreeRujRnpActionPerformed
@@ -5306,71 +5559,185 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
     }//GEN-LAST:event_MnFreeRujRnpActionPerformed
 
     private void MnFreePrkRlnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnFreePrkRlnActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgFeePeriksaRalan feeperiksaralan=new DlgFeePeriksaRalan(this,false);
+        feeperiksaralan.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        feeperiksaralan.setLocationRelativeTo(PanelUtama);
+        feeperiksaralan.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnFreePrkRlnActionPerformed
 
     private void MnLapPembRalanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnLapPembRalanActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgPembayaranRalan billing=new DlgPembayaranRalan(this,false);
+        billing.tampil();
+        billing.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        billing.setLocationRelativeTo(PanelUtama);
+        billing.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnLapPembRalanActionPerformed
 
     private void MnLapPembRnpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnLapPembRnpActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgPembayaranRanap billing=new DlgPembayaranRanap(this,false);
+        billing.tampil();
+        billing.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        billing.setLocationRelativeTo(PanelUtama);
+        billing.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnLapPembRnpActionPerformed
 
     private void MnRkpPmbRlnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnRkpPmbRlnActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgPembayaranRalanPerHari rhkeluaripsrs=new DlgPembayaranRalanPerHari(this,false);
+        rhkeluaripsrs.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rhkeluaripsrs.setLocationRelativeTo(PanelUtama);
+        rhkeluaripsrs.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnRkpPmbRlnActionPerformed
 
     private void MnRkpPmbRnpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnRkpPmbRnpActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgPembyaranRanapPerhari rhkeluaripsrs=new DlgPembyaranRanapPerhari(this,false);
+        rhkeluaripsrs.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rhkeluaripsrs.setLocationRelativeTo(PanelUtama);
+        rhkeluaripsrs.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnRkpPmbRnpActionPerformed
 
     private void MnLapTagMskActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnLapTagMskActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgLhtBiaya billing=new DlgLhtBiaya(this,false);
+        billing.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        billing.setLocationRelativeTo(PanelUtama);
+        billing.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnLapTagMskActionPerformed
 
     private void MnLapTmbBiayaPxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnLapTmbBiayaPxActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgDetailTambahan pembelian=new DlgDetailTambahan(this,false);
+        pembelian.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        pembelian.setLocationRelativeTo(PanelUtama);
+        pembelian.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnLapTmbBiayaPxActionPerformed
 
     private void MnLapPotBiayaPxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnLapPotBiayaPxActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgDetailPotongan pembelian=new DlgDetailPotongan(this,false);
+        pembelian.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        pembelian.setLocationRelativeTo(PanelUtama);
+        pembelian.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnLapPotBiayaPxActionPerformed
 
     private void MnLapDepositPxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnLapDepositPxActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        keuangan.DlgDeposit deposit=new keuangan.DlgDeposit(this,false);
+        deposit.tampil();
+        deposit.isCek();
+        deposit.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        deposit.setLocationRelativeTo(PanelUtama);
+        deposit.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnLapDepositPxActionPerformed
 
     private void MnLapUangShiftActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnLapUangShiftActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRekapPerShift aplikasi=new DlgRekapPerShift(this,false);
+        aplikasi.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
+        aplikasi.setLocationRelativeTo(PanelUtama);
+        aplikasi.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnLapUangShiftActionPerformed
 
     private void MnLapPaymentPointActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnLapPaymentPointActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgPaymentPoint aplikasi=new DlgPaymentPoint(this,false);
+        aplikasi.tampil();
+        aplikasi.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
+        aplikasi.setLocationRelativeTo(PanelUtama);
+        aplikasi.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnLapPaymentPointActionPerformed
 
     private void MnLapIcd9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnLapIcd9ActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgICD9 aplikasi=new DlgICD9(this,false);
+        aplikasi.emptTeks();
+        aplikasi.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
+        aplikasi.setLocationRelativeTo(PanelUtama);
+        aplikasi.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnLapIcd9ActionPerformed
 
     private void MnLapIcd10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnLapIcd10ActionPerformed
-        // TODO add your handling code here:
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        isTutup();
+        kasirralan.kamarinap.billing.beriobat.dlgobtpny.penyakit.penyakit.isCek();
+        kasirralan.kamarinap.billing.beriobat.dlgobtpny.penyakit.penyakit.emptTeks();
+        kasirralan.kamarinap.billing.beriobat.dlgobtpny.penyakit.penyakit.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        kasirralan.kamarinap.billing.beriobat.dlgobtpny.penyakit.penyakit.setLocationRelativeTo(PanelUtama);
+        kasirralan.kamarinap.billing.beriobat.dlgobtpny.penyakit.penyakit.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnLapIcd10ActionPerformed
 
     private void MnLapObtPenyakitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnLapObtPenyakitActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgObatPenyakit obatpenyakit=new DlgObatPenyakit(this,false);
+        obatpenyakit.isCek();
+        obatpenyakit.emptTeks();
+        obatpenyakit.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        obatpenyakit.setLocationRelativeTo(PanelUtama);
+        obatpenyakit.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnLapObtPenyakitActionPerformed
 
     private void MnLapKjgRlnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnLapKjgRlnActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgKunjunganRalan aplikasi=new DlgKunjunganRalan(this,false);
+        aplikasi.tampil();
+        aplikasi.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
+        aplikasi.setLocationRelativeTo(PanelUtama);
+        aplikasi.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnLapKjgRlnActionPerformed
 
     private void MnLapKjgRanapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnLapKjgRanapActionPerformed
-        // TODO add your handling code here:
+         isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgKunjunganRanap aplikasi=new DlgKunjunganRanap(this,false);
+        aplikasi.tampil();
+        aplikasi.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
+        aplikasi.setLocationRelativeTo(PanelUtama);
+        aplikasi.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnLapKjgRanapActionPerformed
 
     private void MnSensusHrPoliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnSensusHrPoliActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgSensusHarianPoli aplikasi=new DlgSensusHarianPoli(this,false);
+        aplikasi.tampil();
+        aplikasi.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
+        aplikasi.setLocationRelativeTo(PanelUtama);
+        aplikasi.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnSensusHrPoliActionPerformed
 
     private void MnBantuanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnBantuanActionPerformed
@@ -5386,99 +5753,267 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
     }//GEN-LAST:event_MnDokumentasiActionPerformed
 
     private void MnTarifKamarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnTarifKamarActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        InformasiKamar belum=new InformasiKamar(this,true);
+        belum.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
+        belum.setLocationRelativeTo(PanelUtama);
+        belum.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnTarifKamarActionPerformed
 
     private void MnTarifRalanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnTarifRalanActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgJnsPerawatanRalan form=new DlgJnsPerawatanRalan(null,false);
+        form.emptTeks();
+        form.isCek();
+        form.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        form.setLocationRelativeTo(PanelUtama);
+        form.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnTarifRalanActionPerformed
 
     private void MnTarifRanapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnTarifRanapActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        kasirralan.kamarinap.billing.rawatinap.perawatan.perawatan.emptTeks();
+        kasirralan.kamarinap.billing.rawatinap.perawatan.perawatan.isCek();
+        kasirralan.kamarinap.billing.rawatinap.perawatan.perawatan.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        kasirralan.kamarinap.billing.rawatinap.perawatan.perawatan.setLocationRelativeTo(PanelUtama);
+        kasirralan.kamarinap.billing.rawatinap.perawatan.perawatan.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnTarifRanapActionPerformed
 
     private void MnTarifLabActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnTarifLabActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgJnsPerawatanLab tariflab=new DlgJnsPerawatanLab(this,false);
+        tariflab.emptTeks();
+        tariflab.isCek();
+        tariflab.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        tariflab.setLocationRelativeTo(PanelUtama);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnTarifLabActionPerformed
 
     private void MnTarifRadiologiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnTarifRadiologiActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgJnsPerawatanRadiologi tarifrad=new DlgJnsPerawatanRadiologi(this,false);
+        tarifrad.emptTeks();
+        tarifrad.isCek();
+        tarifrad.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        tarifrad.setLocationRelativeTo(PanelUtama);
+        tarifrad.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnTarifRadiologiActionPerformed
 
     private void MnTarifOperasiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnTarifOperasiActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        InformasiTarifOperasi belum=new InformasiTarifOperasi(this,true);
+        belum.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
+        belum.setLocationRelativeTo(PanelUtama);
+        belum.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnTarifOperasiActionPerformed
 
     private void MnAkunRekActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnAkunRekActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRekening rekening=new DlgRekening(this,false);
+        rekening.tampil();
+        rekening.isCek();
+        rekening.emptTeks();
+        rekening.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rekening.setLocationRelativeTo(PanelUtama);
+        rekening.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnAkunRekActionPerformed
 
     private void MnRekThnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnRekThnActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRekeningTahun rekeningtahun=new DlgRekeningTahun(this,false);
+        rekeningtahun.tampil();
+        rekeningtahun.isCek();
+        rekeningtahun.emptTeks();
+        rekeningtahun.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rekeningtahun.setLocationRelativeTo(PanelUtama);
+        rekeningtahun.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnRekThnActionPerformed
 
     private void MnAkunPiutangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnAkunPiutangActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgAkunPiutang form=new DlgAkunPiutang(this,false);
+        form.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        form.setLocationRelativeTo(PanelUtama);
+        form.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnAkunPiutangActionPerformed
 
     private void MnAkunBayarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnAkunBayarActionPerformed
-        // TODO add your handling code here:
     }//GEN-LAST:event_MnAkunBayarActionPerformed
 
     private void MnPengaturanRekActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnPengaturanRekActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgPengaturanRekening aplikasi=new DlgPengaturanRekening(this,false);
+        aplikasi.isCek();
+        aplikasi.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
+        aplikasi.setLocationRelativeTo(PanelUtama);
+        aplikasi.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnPengaturanRekActionPerformed
 
     private void MnPengeluaranHrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnPengeluaranHrActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgPengeluaranHarian pembelian=new DlgPengeluaranHarian(this,false);
+        pembelian.emptTeks();
+        pembelian.isCek();
+        pembelian.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        pembelian.setLocationRelativeTo(PanelUtama);
+        pembelian.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnPengeluaranHrActionPerformed
 
     private void MnPemasukanlainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnPemasukanlainActionPerformed
-        // TODO add your handling code here:
+       isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgPemasukanLain aplikasi=new DlgPemasukanLain(this,false);
+        aplikasi.isCek();
+        aplikasi.emptTeks();
+        aplikasi.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
+        aplikasi.setLocationRelativeTo(PanelUtama);
+        aplikasi.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnPemasukanlainActionPerformed
 
     private void MnPiutangPxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnPiutangPxActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgLhtPiutang billing=new DlgLhtPiutang(this,false);
+        billing.tampil();
+        billing.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        billing.setLocationRelativeTo(PanelUtama);
+        billing.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnPiutangPxActionPerformed
 
     private void MnRincPiutangPxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnRincPiutangPxActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRincianPiutangPasien billing=new DlgRincianPiutangPasien(this,false);
+        billing.tampil();
+        billing.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        billing.setLocationRelativeTo(PanelUtama);
+        billing.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnRincPiutangPxActionPerformed
 
     private void MnPiutangBlmLnsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnPiutangBlmLnsActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgPiutangBelumLunas rbpaketbhp=new DlgPiutangBelumLunas(this,false);
+        rbpaketbhp.tampil();
+        rbpaketbhp.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rbpaketbhp.setLocationRelativeTo(PanelUtama);
+        rbpaketbhp.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnPiutangBlmLnsActionPerformed
 
     private void MnByrPiutangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnByrPiutangActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgBayarPiutang bayarpiutang=new DlgBayarPiutang(this,false);
+        bayarpiutang.tampil();
+        bayarpiutang.emptTeks();
+        bayarpiutang.isCek();
+        bayarpiutang.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        bayarpiutang.setLocationRelativeTo(PanelUtama);
+        bayarpiutang.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnByrPiutangActionPerformed
 
     private void MnHtgObtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnHtgObtActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgHutangObatBelumLunas form=new DlgHutangObatBelumLunas(this,false);
+        form.tampil();
+        form.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        form.setLocationRelativeTo(PanelUtama);
+        form.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnHtgObtActionPerformed
 
     private void MnByrPsnObtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnByrPsnObtActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgBayarPemesanan bayarpesan=new DlgBayarPemesanan(this,false);
+        bayarpesan.tampil();
+        bayarpesan.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        bayarpesan.setLocationRelativeTo(PanelUtama);
+        bayarpesan.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnByrPsnObtActionPerformed
 
     private void MnPostingJurnalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnPostingJurnalActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgJurnal jurnal=new DlgJurnal(this,false);
+        jurnal.tampil();
+        jurnal.isCek();
+        jurnal.emptTeks();
+        jurnal.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        jurnal.setLocationRelativeTo(PanelUtama);
+        jurnal.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnPostingJurnalActionPerformed
 
     private void MnJurnalHrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnJurnalHrActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgJurnalHarian jh=new DlgJurnalHarian(this,false);
+        jh.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        jh.setLocationRelativeTo(PanelUtama);
+        jh.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnJurnalHrActionPerformed
 
     private void MnBukuBesarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnBukuBesarActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgBubes bubes=new DlgBubes(this,false);
+        bubes.isCek();
+        bubes.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        bubes.setLocationRelativeTo(PanelUtama);
+        bubes.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnBukuBesarActionPerformed
 
     private void MnCashFlowActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnCashFlowActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgCashflow bubes=new DlgCashflow(this,false);
+        bubes.isCek();
+        bubes.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        bubes.setLocationRelativeTo(PanelUtama);
+        bubes.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnCashFlowActionPerformed
 
     private void MnKeuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnKeuActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgLabaRugi labrug=new DlgLabaRugi(this,false);
+        labrug.isCek();
+        labrug.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        labrug.setLocationRelativeTo(PanelUtama);
+        labrug.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnKeuActionPerformed
 
     private void MnCekNoBpjsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnCekNoBpjsActionPerformed
@@ -5645,51 +6180,134 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
     }//GEN-LAST:event_MnRetBrksRmActionPerformed
 
     private void MnSetLambtPresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnSetLambtPresActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgSetKeterlambatan keterlambatan=new DlgSetKeterlambatan(this,false);
+        keterlambatan.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        keterlambatan.setLocationRelativeTo(PanelUtama);
+        keterlambatan.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnSetLambtPresActionPerformed
 
     private void MnClosingKsrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnClosingKsrActionPerformed
-        // TODO add your handling code here:
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        isTutup();
+        DlgClosingKasir ckas=new DlgClosingKasir(this,false);
+        ckas.isCek();
+        ckas.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        ckas.setLocationRelativeTo(PanelUtama);
+        ckas.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnClosingKsrActionPerformed
 
     private void MnSetBillingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnSetBillingActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgSetNota aplikasi=new DlgSetNota(this,false);
+        aplikasi.emptTeks();
+        aplikasi.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
+        aplikasi.setLocationRelativeTo(PanelUtama);
+        aplikasi.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnSetBillingActionPerformed
 
     private void MnSetRMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnSetRMActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgSetRM aplikasi=new DlgSetRM(this,false);
+        aplikasi.emptTeks();
+        aplikasi.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
+        aplikasi.setLocationRelativeTo(PanelUtama);
+        aplikasi.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnSetRMActionPerformed
 
     private void MnBiayaMskSklActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnBiayaMskSklActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgBiayaSekaliMasuk biayaharian=new DlgBiayaSekaliMasuk(this,false);
+        biayaharian.emptTeks();
+        biayaharian.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        biayaharian.setLocationRelativeTo(PanelUtama);
+        biayaharian.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnBiayaMskSklActionPerformed
 
     private void MnBiayaHarianActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnBiayaHarianActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgBiayaHarian biayaharian=new DlgBiayaHarian(this,false);
+        biayaharian.emptTeks();
+        biayaharian.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        biayaharian.setLocationRelativeTo(PanelUtama);
+        biayaharian.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnBiayaHarianActionPerformed
 
     private void MnSetOtoRalanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnSetOtoRalanActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgSetOtoRalan aplikasi=new DlgSetOtoRalan(this,false);
+        aplikasi.emptTeks();
+        aplikasi.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
+        aplikasi.setLocationRelativeTo(PanelUtama);
+        aplikasi.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnSetOtoRalanActionPerformed
 
     private void MnSetPenggTrfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnSetPenggTrfActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgSetTarif aplikasi=new DlgSetTarif(this,false);
+        aplikasi.emptTeks();
+        aplikasi.tampil();
+        aplikasi.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
+        aplikasi.setLocationRelativeTo(PanelUtama);
+        aplikasi.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnSetPenggTrfActionPerformed
 
     private void MnSetObtRnpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnSetObtRnpActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgSetHargaObatRanap aplikasi=new DlgSetHargaObatRanap(this,false);
+        aplikasi.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
+        aplikasi.setLocationRelativeTo(PanelUtama);
+        aplikasi.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnSetObtRnpActionPerformed
 
     private void MnSetHargaObtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnSetHargaObtActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgSetHarga setharga=new DlgSetHarga(this,false);
+        setharga.emptTeks();
+        setharga.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        setharga.setLocationRelativeTo(PanelUtama);
+        setharga.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnSetHargaObtActionPerformed
 
     private void MnDisplayAntrianActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnDisplayAntrianActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgRunTeks runteks=new DlgRunTeks(this,false);
+        runteks.emptTeks();
+        runteks.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        runteks.setLocationRelativeTo(PanelUtama);
+        runteks.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnDisplayAntrianActionPerformed
 
     private void MnSetTrackerLogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnSetTrackerLogActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgPenelusuranLogin rbpoli=new DlgPenelusuranLogin(this,false);
+        rbpoli.isCek();
+        rbpoli.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        rbpoli.setLocationRelativeTo(PanelUtama);
+        rbpoli.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnSetTrackerLogActionPerformed
 
     private void MnSetUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnSetUserActionPerformed
@@ -5705,23 +6323,55 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
     }//GEN-LAST:event_MnSetUserActionPerformed
 
     private void MnSetEmbTusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnSetEmbTusActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgSetEmbalase ktginventaris=new DlgSetEmbalase(this,false);
+        ktginventaris.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        ktginventaris.setLocationRelativeTo(PanelUtama);
+        ktginventaris.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnSetEmbTusActionPerformed
 
     private void MnSetHargaKamarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnSetHargaKamarActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgSetHargaKamar hargakamar=new DlgSetHargaKamar(this,false);
+        hargakamar.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        hargakamar.setLocationRelativeTo(PanelUtama);
+        hargakamar.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnSetHargaKamarActionPerformed
 
     private void MnSetKmrInpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnSetKmrInpActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgSetKamarInap form=new DlgSetKamarInap(this,false);
+        form.tampil();
+        form.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        form.setLocationRelativeTo(PanelUtama);
+        form.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnSetKmrInpActionPerformed
 
     private void MnSetOtoLokActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnSetOtoLokActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgSetOtoLokasi ktginventaris=new DlgSetOtoLokasi(this,false);
+        ktginventaris.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        ktginventaris.setLocationRelativeTo(PanelUtama);
+        ktginventaris.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnSetOtoLokActionPerformed
 
     private void MnPenujangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnPenujangActionPerformed
-        // TODO add your handling code here:
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgSetPenjabLab aplikasi=new DlgSetPenjabLab(this,false);
+        aplikasi.emptTeks();
+        aplikasi.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
+        aplikasi.setLocationRelativeTo(PanelUtama);
+        aplikasi.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnPenujangActionPerformed
 
     private void MnSetAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnSetAdminActionPerformed

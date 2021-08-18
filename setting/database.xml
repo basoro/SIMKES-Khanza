@@ -4,7 +4,7 @@
 <comment>SIMRSKhanza</comment>
 <entry key="HOST">localhost</entry>
 <entry key="PAS">basoro</entry>
-<entry key="DATABASE">rsas</entry>
+<entry key="DATABASE">sik_2017</entry>
 <entry key="USER">root</entry>
 <entry key="PORT">3306</entry>
 </properties>
