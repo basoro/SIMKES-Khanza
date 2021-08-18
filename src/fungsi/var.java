@@ -21,12 +21,13 @@ public final class var {
 
     private static String kode="",kdbangsal="",namars="",alamatrs="",kabupatenrs="",propinsirs="",kontakrs="",emailrs="",form="",namauser="";
     private static int jml1=0,jml2=0,lebar=0,tinggi=0;
-    private static boolean admin=false,user=false,status=false,manajemen=false,medis=false,paramedis=false;
+    private static boolean admin=false,user=false,status=false,manajemen=false,medis=false,paramedis=false,apoteker=false,laboratorium=false,radiologi=false,
+            rekammedis=false,kasir=false,pengguna=false;
 
     public static void setData(String user, String pass) {
        try {
                 ps=koneksi.prepareStatement("select * from admin where usere=AES_ENCRYPT(?,'nur') and passworde=AES_ENCRYPT(?,'windi')");
-                ps2=koneksi.prepareStatement("select * from user where id_user=AES_ENCRYPT(?,'nur') and password=AES_ENCRYPT(?,'windi')");
+                ps2=koneksi.prepareStatement("select * from usere where id_user=AES_ENCRYPT(?,'nur') and password=AES_ENCRYPT(?,'windi')");
                 try {
                     ps.setString(1,user);
                     ps.setString(2,pass);
@@ -46,6 +47,12 @@ public final class var {
                         var.manajemen=true;
                         var.medis=true;
                         var.paramedis=true;
+                        var.apoteker=true;
+                        var.laboratorium=true;
+                        var.radiologi=true;
+                        var.rekammedis=true;
+                        var.kasir=true;
+                        var.pengguna=true;
                         var.admin=true;
                         var.user=true;
                     }else if(rs2.getRow()>=1){
@@ -55,6 +62,12 @@ public final class var {
                         var.manajemen=rs2.getBoolean("manajemen");
                         var.medis=rs2.getBoolean("medis");
                         var.paramedis=rs2.getBoolean("paramedis");
+                        var.apoteker=rs2.getBoolean("apoteker");
+                        var.laboratorium=rs2.getBoolean("laboratorium");
+                        var.radiologi=rs2.getBoolean("radiologi");
+                        var.rekammedis=rs2.getBoolean("rekammedis");
+                        var.kasir=rs2.getBoolean("kasir");
+                        var.pengguna=rs2.getBoolean("pengguna");
                         var.admin=false;
                         var.user=false;
                     }else if((rs.getRow()==0)&&(rs2.getRow()==0)){
@@ -62,6 +75,12 @@ public final class var {
                         var.manajemen= false;
                         var.medis= false;
                         var.paramedis= false;
+                        var.apoteker=false;
+                        var.laboratorium=false;
+                        var.radiologi=false;
+                        var.rekammedis=false;
+                        var.kasir=false;
+                        var.pengguna=false;
                         var.admin= false;
                         var.user= false;
                     }
@@ -94,6 +113,12 @@ public final class var {
     public static boolean getmanajemen(){return var.manajemen;}
     public static boolean getmedis(){return var.medis;}
     public static boolean getparamedis(){return var.paramedis;}
+    public static boolean getapoteker(){return var.apoteker;}
+    public static boolean getlaboratorium(){return var.laboratorium;}
+    public static boolean getradiologi(){return var.radiologi;}
+    public static boolean getrekammedis(){return var.rekammedis;}
+    public static boolean getkasir(){return var.kasir;}
+    public static boolean getpengguna(){return var.pengguna;}
     public static String getkode(){return var.kode;}
     public static void setkdbangsal(String kdbangsal){var.kdbangsal=kdbangsal;}
     public static String getkdbangsal(){return var.kdbangsal;}
