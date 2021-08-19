@@ -1179,6 +1179,7 @@ public class frmUtama extends javax.swing.JFrame {
         jMenuSIMRSKhanza.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jMenuSIMRSKhanza.setIconTextGap(8);
         jMenuSIMRSKhanza.setName("jMenuSIMRSKhanza"); // NOI18N
+        jMenuSIMRSKhanza.setOpaque(false);
         jMenuSIMRSKhanza.setPreferredSize(new java.awt.Dimension(103, 24));
 
         MnAbout.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -1509,6 +1510,7 @@ public class frmUtama extends javax.swing.JFrame {
         jMenuPasien.setToolTipText("Alt+N");
         jMenuPasien.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jMenuPasien.setName("jMenuPasien"); // NOI18N
+        jMenuPasien.setOpaque(false);
         jMenuPasien.setPreferredSize(new java.awt.Dimension(62, 30));
 
         MnPasien.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -1598,6 +1600,7 @@ public class frmUtama extends javax.swing.JFrame {
         jMenuLayanan.setToolTipText("Alt+I");
         jMenuLayanan.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jMenuLayanan.setName("jMenuLayanan"); // NOI18N
+        jMenuLayanan.setOpaque(false);
         jMenuLayanan.setPreferredSize(new java.awt.Dimension(68, 21));
 
         MenuRawatJalan.setBorder(null);
@@ -1918,6 +1921,7 @@ public class frmUtama extends javax.swing.JFrame {
         jMenuManajemen.setToolTipText("Alt+N");
         jMenuManajemen.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jMenuManajemen.setName("jMenuManajemen"); // NOI18N
+        jMenuManajemen.setOpaque(false);
         jMenuManajemen.setPreferredSize(new java.awt.Dimension(88, 30));
 
         MnDataDokter.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -2114,6 +2118,7 @@ public class frmUtama extends javax.swing.JFrame {
         jMenuFarmasi.setToolTipText("Alt+N");
         jMenuFarmasi.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jMenuFarmasi.setName("jMenuFarmasi"); // NOI18N
+        jMenuFarmasi.setOpaque(false);
         jMenuFarmasi.setPreferredSize(new java.awt.Dimension(72, 30));
 
         MenuSuplier.setBorder(null);
@@ -2442,6 +2447,7 @@ public class frmUtama extends javax.swing.JFrame {
         jMenuInventory.setToolTipText("Alt+N");
         jMenuInventory.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jMenuInventory.setName("jMenuInventory"); // NOI18N
+        jMenuInventory.setOpaque(false);
         jMenuInventory.setPreferredSize(new java.awt.Dimension(74, 30));
 
         MnSatuanBrgNon.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -2580,12 +2586,14 @@ public class frmUtama extends javax.swing.JFrame {
         jMenuBridging.setToolTipText("Alt+N");
         jMenuBridging.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jMenuBridging.setName("jMenuBridging"); // NOI18N
+        jMenuBridging.setOpaque(false);
         jMenuBridging.setPreferredSize(new java.awt.Dimension(68, 30));
 
         MnCekNoBpjs.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         MnCekNoBpjs.setForeground(new java.awt.Color(51, 51, 51));
         MnCekNoBpjs.setText("Cek No. Kartu BPJS");
         MnCekNoBpjs.setEnabled(false);
+        MnCekNoBpjs.setIconTextGap(0);
         MnCekNoBpjs.setName("MnCekNoBpjs"); // NOI18N
         MnCekNoBpjs.setPreferredSize(new java.awt.Dimension(200, 22));
         MnCekNoBpjs.addActionListener(new java.awt.event.ActionListener() {
@@ -2599,6 +2607,7 @@ public class frmUtama extends javax.swing.JFrame {
         MnCekNikBpjs.setForeground(new java.awt.Color(51, 51, 51));
         MnCekNikBpjs.setText("Cek NIK BPJS");
         MnCekNikBpjs.setEnabled(false);
+        MnCekNikBpjs.setIconTextGap(0);
         MnCekNikBpjs.setName("MnCekNikBpjs"); // NOI18N
         MnCekNikBpjs.setPreferredSize(new java.awt.Dimension(200, 22));
         MnCekNikBpjs.addActionListener(new java.awt.event.ActionListener() {
@@ -2612,6 +2621,7 @@ public class frmUtama extends javax.swing.JFrame {
         MnRiwPesBpjs.setForeground(new java.awt.Color(51, 51, 51));
         MnRiwPesBpjs.setText("Riwayat Peserta BPJS");
         MnRiwPesBpjs.setEnabled(false);
+        MnRiwPesBpjs.setIconTextGap(0);
         MnRiwPesBpjs.setName("MnRiwPesBpjs"); // NOI18N
         MnRiwPesBpjs.setPreferredSize(new java.awt.Dimension(200, 22));
         MnRiwPesBpjs.addActionListener(new java.awt.event.ActionListener() {
@@ -2625,6 +2635,7 @@ public class frmUtama extends javax.swing.JFrame {
         MnCekNoRujPCare.setForeground(new java.awt.Color(51, 51, 51));
         MnCekNoRujPCare.setText("Cek No. Rujukan PCare");
         MnCekNoRujPCare.setEnabled(false);
+        MnCekNoRujPCare.setIconTextGap(0);
         MnCekNoRujPCare.setName("MnCekNoRujPCare"); // NOI18N
         MnCekNoRujPCare.setPreferredSize(new java.awt.Dimension(200, 22));
         MnCekNoRujPCare.addActionListener(new java.awt.event.ActionListener() {
@@ -2638,6 +2649,7 @@ public class frmUtama extends javax.swing.JFrame {
         MnRefDiagBpjs.setForeground(new java.awt.Color(51, 51, 51));
         MnRefDiagBpjs.setText("Referensi Diagnosa BPJS");
         MnRefDiagBpjs.setEnabled(false);
+        MnRefDiagBpjs.setIconTextGap(0);
         MnRefDiagBpjs.setName("MnRefDiagBpjs"); // NOI18N
         MnRefDiagBpjs.setPreferredSize(new java.awt.Dimension(200, 22));
         MnRefDiagBpjs.addActionListener(new java.awt.event.ActionListener() {
@@ -2651,6 +2663,7 @@ public class frmUtama extends javax.swing.JFrame {
         MnRefPlBpjs.setForeground(new java.awt.Color(51, 51, 51));
         MnRefPlBpjs.setText("Referensi Poli Bpjs");
         MnRefPlBpjs.setEnabled(false);
+        MnRefPlBpjs.setIconTextGap(0);
         MnRefPlBpjs.setName("MnRefPlBpjs"); // NOI18N
         MnRefPlBpjs.setPreferredSize(new java.awt.Dimension(200, 22));
         MnRefPlBpjs.addActionListener(new java.awt.event.ActionListener() {
@@ -2664,6 +2677,7 @@ public class frmUtama extends javax.swing.JFrame {
         MnRefFaskes.setForeground(new java.awt.Color(51, 51, 51));
         MnRefFaskes.setText("Referensi Faskes BPJS");
         MnRefFaskes.setEnabled(false);
+        MnRefFaskes.setIconTextGap(0);
         MnRefFaskes.setName("MnRefFaskes"); // NOI18N
         MnRefFaskes.setPreferredSize(new java.awt.Dimension(200, 22));
         MnRefFaskes.addActionListener(new java.awt.event.ActionListener() {
@@ -2677,6 +2691,7 @@ public class frmUtama extends javax.swing.JFrame {
         MnBridging.setForeground(new java.awt.Color(51, 51, 51));
         MnBridging.setText("Data Bridging BPJS");
         MnBridging.setEnabled(false);
+        MnBridging.setIconTextGap(0);
         MnBridging.setName("MnBridging"); // NOI18N
         MnBridging.setPreferredSize(new java.awt.Dimension(200, 22));
         MnBridging.addActionListener(new java.awt.event.ActionListener() {
@@ -2690,8 +2705,9 @@ public class frmUtama extends javax.swing.JFrame {
         MnMonitoringKlaim.setForeground(new java.awt.Color(51, 51, 51));
         MnMonitoringKlaim.setText("Monitoring Verifikasi Klaim BPJS");
         MnMonitoringKlaim.setEnabled(false);
+        MnMonitoringKlaim.setIconTextGap(0);
         MnMonitoringKlaim.setName("MnMonitoringKlaim"); // NOI18N
-        MnMonitoringKlaim.setPreferredSize(new java.awt.Dimension(200, 22));
+        MnMonitoringKlaim.setPreferredSize(new java.awt.Dimension(215, 22));
         MnMonitoringKlaim.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 MnMonitoringKlaimActionPerformed(evt);
@@ -2703,6 +2719,7 @@ public class frmUtama extends javax.swing.JFrame {
         MnRefKmrAplicare.setForeground(new java.awt.Color(51, 51, 51));
         MnRefKmrAplicare.setText("Referensi Kamar Aplicare");
         MnRefKmrAplicare.setEnabled(false);
+        MnRefKmrAplicare.setIconTextGap(0);
         MnRefKmrAplicare.setName("MnRefKmrAplicare"); // NOI18N
         MnRefKmrAplicare.setPreferredSize(new java.awt.Dimension(200, 22));
         MnRefKmrAplicare.addActionListener(new java.awt.event.ActionListener() {
@@ -2716,6 +2733,7 @@ public class frmUtama extends javax.swing.JFrame {
         MnKmrAplicare.setForeground(new java.awt.Color(51, 51, 51));
         MnKmrAplicare.setText("Ketersediaan Kamar Aplicare");
         MnKmrAplicare.setEnabled(false);
+        MnKmrAplicare.setIconTextGap(0);
         MnKmrAplicare.setName("MnKmrAplicare"); // NOI18N
         MnKmrAplicare.setPreferredSize(new java.awt.Dimension(200, 22));
         MnKmrAplicare.addActionListener(new java.awt.event.ActionListener() {
@@ -2728,6 +2746,7 @@ public class frmUtama extends javax.swing.JFrame {
         MnKmrSiranapCovid.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         MnKmrSiranapCovid.setForeground(new java.awt.Color(51, 51, 51));
         MnKmrSiranapCovid.setText("Ketersediaan Kamar Covid-19");
+        MnKmrSiranapCovid.setIconTextGap(0);
         MnKmrSiranapCovid.setName("MnKmrSiranapCovid"); // NOI18N
         MnKmrSiranapCovid.setPreferredSize(new java.awt.Dimension(200, 22));
         MnKmrSiranapCovid.addActionListener(new java.awt.event.ActionListener() {
@@ -2741,6 +2760,7 @@ public class frmUtama extends javax.swing.JFrame {
         MnRefMblJkn.setForeground(new java.awt.Color(51, 51, 51));
         MnRefMblJkn.setText("Referensi Pendaftaran Mobile JKN");
         MnRefMblJkn.setEnabled(false);
+        MnRefMblJkn.setIconTextGap(0);
         MnRefMblJkn.setName("MnRefMblJkn"); // NOI18N
         MnRefMblJkn.setPreferredSize(new java.awt.Dimension(200, 22));
         MnRefMblJkn.addActionListener(new java.awt.event.ActionListener() {
@@ -2754,6 +2774,7 @@ public class frmUtama extends javax.swing.JFrame {
         MnBtlMblJkn.setForeground(new java.awt.Color(51, 51, 51));
         MnBtlMblJkn.setText("Batal Pendaftaran Mobile JKN");
         MnBtlMblJkn.setEnabled(false);
+        MnBtlMblJkn.setIconTextGap(0);
         MnBtlMblJkn.setName("MnBtlMblJkn"); // NOI18N
         MnBtlMblJkn.setPreferredSize(new java.awt.Dimension(200, 22));
         MnBtlMblJkn.addActionListener(new java.awt.event.ActionListener() {
@@ -2772,6 +2793,7 @@ public class frmUtama extends javax.swing.JFrame {
         jMenuLaporan.setToolTipText("Alt+N");
         jMenuLaporan.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jMenuLaporan.setName("jMenuLaporan"); // NOI18N
+        jMenuLaporan.setOpaque(false);
         jMenuLaporan.setPreferredSize(new java.awt.Dimension(67, 30));
 
         MenuLapObat.setBorder(null);
@@ -3381,6 +3403,7 @@ public class frmUtama extends javax.swing.JFrame {
         jMenuKeu.setToolTipText("Alt+N");
         jMenuKeu.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jMenuKeu.setName("jMenuKeu"); // NOI18N
+        jMenuKeu.setOpaque(false);
         jMenuKeu.setPreferredSize(new java.awt.Dimension(80, 30));
 
         MenuTarif.setBorder(null);
@@ -3727,10 +3750,11 @@ public class frmUtama extends javax.swing.JFrame {
         jMenuBantuan.setToolTipText("Alt+N");
         jMenuBantuan.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jMenuBantuan.setName("jMenuBantuan"); // NOI18N
+        jMenuBantuan.setOpaque(false);
         jMenuBantuan.setPreferredSize(new java.awt.Dimension(200, 22));
 
         MnBantuan.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        MnBantuan.setText("Bantua Penggunaan");
+        MnBantuan.setText("Bantuan Penggunaan");
         MnBantuan.setName("MnBantuan"); // NOI18N
         MnBantuan.setPreferredSize(new java.awt.Dimension(200, 22));
         MnBantuan.addActionListener(new java.awt.event.ActionListener() {
@@ -3967,6 +3991,7 @@ public class frmUtama extends javax.swing.JFrame {
                 MnSetTrackerLog.setEnabled(false);
                 MnDisplayAntrian.setEnabled(false);
                 MnSetHargaObt.setEnabled(false);
+                MnSetObtRalan.setEnabled(false);
                 MnSetObtRnp.setEnabled(false);
                 MnSetPenggTrf.setEnabled(false);
                 MnSetOtoRalan.setEnabled(false);
@@ -4173,6 +4198,7 @@ public class frmUtama extends javax.swing.JFrame {
                     MnSetTrackerLog.setEnabled(true);
                     MnDisplayAntrian.setEnabled(true);
                     MnSetHargaObt.setEnabled(true);
+                    MnSetObtRalan.setEnabled(true);
                     MnSetObtRnp.setEnabled(true);
                     MnSetPenggTrf.setEnabled(true);
                     MnSetOtoRalan.setEnabled(true);
@@ -4189,8 +4215,8 @@ public class frmUtama extends javax.swing.JFrame {
                     MnLogin.setText("Log Out");
                     lblStts.setText("Admin : ");
                     lblUser.setText("Admin Utama");
+                    
                 }else if(var.getjml2()>=1){
-
 
                     jMenuLayanan.setEnabled(true);
                     jMenuManajemen.setEnabled(true);
@@ -4204,186 +4230,221 @@ public class frmUtama extends javax.swing.JFrame {
                     lblStts.setText("Admin : ");
                     lblUser.setText(var.getkode());
                     MnGantiPassword.setEnabled(true);
-                    BtnToolReg.setEnabled(var.getmanajemen());
-                    BtnToolKamnap.setEnabled(var.getmanajemen());
-                    BtnToolKasir.setEnabled(var.getmanajemen());
-                    btnToolLab.setEnabled(var.getmanajemen());
-                    btnToolRad.setEnabled(var.getmanajemen());
-                    BtnToolJualObat.setEnabled(var.getmanajemen());
-
+                    
                     //Jong Source first
-                    MnPasien.setEnabled(var.getmanajemen());
-                    MnKelahiranBayi.setEnabled(var.getmanajemen());
-                    MnPasienMeninggal.setEnabled(var.getmanajemen());
-                    MnDiagnosaPasien.setEnabled(var.getmanajemen());
-                    MnRiwayatPerawatan.setEnabled(var.getmanajemen());
-                    MnRetBrksRm.setEnabled(var.getmanajemen());
-                    MnRegistrasi.setEnabled(var.getmanajemen());
-                    MnTindakanRalan.setEnabled(var.getmanajemen());
-                    MnKamarInap.setEnabled(var.getmanajemen());
-                    MnDpjpRanap.setEnabled(var.getmanajemen());
-                    MnTindakanRanap.setEnabled(var.getmanajemen());
-                    MnRujukMasuk.setEnabled(var.getmanajemen());
-                    MnRujukKeluar.setEnabled(var.getmanajemen());
-                    MnInfoKamar.setEnabled(var.getmanajemen());
-                    MnIgd.setEnabled(var.getmanajemen());
-                    MnJadwalDokter.setEnabled(var.getmanajemen());
-                    MnOperasi.setEnabled(var.getmanajemen());
-                    MnPemberianObat.setEnabled(var.getmanajemen());
-                    MnResepObat.setEnabled(var.getmanajemen());
-                    MnResepPulang.setEnabled(var.getmanajemen());
-                    MnDietPasien.setEnabled(var.getmanajemen());
-                    MnPeriksaLab.setEnabled(var.getmanajemen());
-                    MnPeriksaRad.setEnabled(var.getmanajemen());
-                    MnKasirRalan.setEnabled(var.getmanajemen());
-                    MnDepositPasien.setEnabled(var.getmanajemen());
-                    MnPiutangPasien.setEnabled(var.getmanajemen());
-                    MnDataDokter.setEnabled(var.getmanajemen());
-                    MnDataPetugas.setEnabled(var.getmanajemen());
-                    MnDataPegawai.setEnabled(var.getmanajemen());
-                    MnBarcodePresensi.setEnabled(var.getmanajemen());
-                    MnJamPresensi.setEnabled(var.getmanajemen());
-                    MnPresensiHarian.setEnabled(var.getmanajemen());
-                    MnPresensiBulanan.setEnabled(var.getmanajemen());
-                    MnTempPresensi.setEnabled(var.getmanajemen());
-                    MnRekapKehadiran.setEnabled(var.getmanajemen());
-                    MnSidikJari.setEnabled(var.getmanajemen());
-                    MnJadwalPegawai.setEnabled(var.getmanajemen());
-                    MnJdwlTambahan.setEnabled(var.getmanajemen());
-                    MnPresensiHarian1.setEnabled(var.getmanajemen());
-                    MnIndustriFar.setEnabled(var.getmanajemen());
-                    MnSuplier.setEnabled(var.getmanajemen());
-                    MnSatuanBrg.setEnabled(var.getmanajemen());
-                    MnKonvSat.setEnabled(var.getmanajemen());
-                    MnJnsObt.setEnabled(var.getmanajemen()); //belum
-                    MnDataObat.setEnabled(var.getmanajemen()); // ada sama bingung yang mana
-                    MnStokOpname.setEnabled(var.getmanajemen());
-                    MnMutasiObat.setEnabled(var.getmanajemen());
-                    MnStokObtPx.setEnabled(var.getmanajemen());
-                    MnPengadaan.setEnabled(var.getmanajemen());
-                    MnPemesanan.setEnabled(var.getmanajemen());
-                    MnPenjualanObt.setEnabled(var.getmanajemen());
-                    MnReturKeSup.setEnabled(var.getmanajemen());
-                    MnReturPemb.setEnabled(var.getmanajemen());
-                    MnReturObtRanap.setEnabled(var.getmanajemen());
-                    MnReturPiutangPemb.setEnabled(var.getmanajemen());
-                    MnKeuntunganPenj.setEnabled(var.getmanajemen());
-                    MnKeuntBeriObt.setEnabled(var.getmanajemen());
-                    MnSirkulasiObt.setEnabled(var.getmanajemen());
-                    MnRiwayat.setEnabled(var.getmanajemen());
-                    MnDaruratStok.setEnabled(var.getmanajemen());
-                    MnSatuanBrgNon.setEnabled(var.getmanajemen());
-                    MnJnsBrgNon.setEnabled(var.getmanajemen());
-                    MnDataBrgNon.setEnabled(var.getmanajemen());
-                    MnSupNon.setEnabled(var.getmanajemen());
-                    MnPengadaanbrg.setEnabled(var.getmanajemen());
-                    MnStokKeluar.setEnabled(var.getmanajemen());
-                    MnBiayaPengadaan.setEnabled(var.getmanajemen());//belum
-                    MnRekapPengadaan.setEnabled(var.getmanajemen());
-                    MnRekapStok.setEnabled(var.getmanajemen());
-                    MnCekNoBpjs.setEnabled(var.getmanajemen());
-                    MnCekNikBpjs.setEnabled(var.getmanajemen());
-                    MnRiwPesBpjs.setEnabled(var.getmanajemen());
-                    MnCekNoRujPCare.setEnabled(var.getmanajemen());
-                    MnRefDiagBpjs.setEnabled(var.getmanajemen());
-                    MnRefPlBpjs.setEnabled(var.getmanajemen());
-                    MnRefFaskes.setEnabled(var.getmanajemen());
-                    MnBridging.setEnabled(var.getmanajemen());
-                    MnMonitoringKlaim.setEnabled(var.getmanajemen());
-                    MnRefKmrAplicare.setEnabled(var.getmanajemen()); // Belum
-                    MnKmrAplicare.setEnabled(var.getmanajemen());
-                    MnRefMblJkn.setEnabled(var.getmanajemen());
-                    MnBtlMblJkn.setEnabled(var.getmanajemen());
-                    MnLapObtPoli.setEnabled(var.getmanajemen());
-                    MnObtKmr.setEnabled(var.getmanajemen());
-                    MnObtDokRln.setEnabled(var.getmanajemen());
-                    MnObtDokRnp.setEnabled(var.getmanajemen());
-                    MnObtDokRsp.setEnabled(var.getmanajemen());
-                    MnObtCrByr.setEnabled(var.getmanajemen());
-                    MnDetJMDok.setEnabled(var.getmanajemen());
-                    MnHrDokAll.setEnabled(var.getmanajemen());
-                    MnHrDokRalan.setEnabled(var.getmanajemen());
-                    MnHrDok.setEnabled(var.getmanajemen());
-                    MnHrKamar.setEnabled(var.getmanajemen());
-                    MnHrBhp.setEnabled(var.getmanajemen());
-                    MnHrParamedis.setEnabled(var.getmanajemen());
-                    MnHrMnj.setEnabled(var.getmanajemen());
-                    MnHrKso.setEnabled(var.getmanajemen());
-                    MnHrSrn.setEnabled(var.getmanajemen());
-                    MnBulananDok.setEnabled(var.getmanajemen());
-                    MnBlnParamedis.setEnabled(var.getmanajemen());
-                    MnBlnSrn.setEnabled(var.getmanajemen());
-                    MnBlnKso.setEnabled(var.getmanajemen());
-                    MnBlnMnj.setEnabled(var.getmanajemen());
-                    MnBlnBhp.setEnabled(var.getmanajemen());
-                    MnFreeVstDok.setEnabled(var.getmanajemen());
-                    MnFreeBcEkg.setEnabled(var.getmanajemen());
-                    MnFreeRujRotg.setEnabled(var.getmanajemen());
-                    MnFreeRujRnp.setEnabled(var.getmanajemen());
-                    MnFreePrkRln.setEnabled(var.getmanajemen());
-                    MnLapPembRalan.setEnabled(var.getmanajemen());
-                    MnLapPembRnp.setEnabled(var.getmanajemen());
-                    MnRkpPmbRln.setEnabled(var.getmanajemen());
-                    MnRkpPmbRnp.setEnabled(var.getmanajemen());
-                    MnLapTagMsk.setEnabled(var.getmanajemen());
-                    MnLapTmbBiayaPx.setEnabled(var.getmanajemen());
-                    MnLapPotBiayaPx.setEnabled(var.getmanajemen());
-                    MnLapDepositPx.setEnabled(var.getmanajemen());
-                    MnLapUangShift.setEnabled(var.getmanajemen());
-                    MnLapPaymentPoint.setEnabled(var.getmanajemen());
-                    MnLapIcd9.setEnabled(var.getmanajemen());
-                    MnLapIcd10.setEnabled(var.getmanajemen());
-                    MnLapObtPenyakit.setEnabled(var.getmanajemen());
-                    MnLapKjgRln.setEnabled(var.getmanajemen());
-                    MnLapKjgRanap.setEnabled(var.getmanajemen());
-                    MnSensusHrPoli.setEnabled(var.getmanajemen());
-                    MnTarifKamar.setEnabled(var.getmanajemen());
-                    MnTarifRalan.setEnabled(var.getmanajemen());
-                    MnTarifRanap.setEnabled(var.getmanajemen());
-                    MnTarifLab.setEnabled(var.getmanajemen());
-                    MnTarifRadiologi.setEnabled(var.getmanajemen());
-                    MnTarifOperasi.setEnabled(var.getmanajemen());
-                    MnAkunRek.setEnabled(var.getmanajemen());
-                    MnRekThn.setEnabled(var.getmanajemen());
-                    MnPengaturanRek.setEnabled(var.getmanajemen());
-                    MnAkunPiutang.setEnabled(var.getmanajemen());
-                    MnAkunBayar.setEnabled(var.getmanajemen());
-                    MnPengeluaranHr.setEnabled(var.getmanajemen());
-                    MnPemasukanlain.setEnabled(var.getmanajemen());
-                    MnPiutangPx.setEnabled(var.getmanajemen());
-                    MnRincPiutangPx.setEnabled(var.getmanajemen());
-                    MnPiutangBlmLns.setEnabled(var.getmanajemen());
-                    MnByrPiutang.setEnabled(var.getmanajemen());
-                    MnHtgObt.setEnabled(var.getmanajemen());
-                    MnByrPsnObt.setEnabled(var.getmanajemen());
-                    MnPostingJurnal.setEnabled(var.getmanajemen());
-                    MnJurnalHr.setEnabled(var.getmanajemen());
-                    MnBukuBesar.setEnabled(var.getmanajemen());
-                    MnCashFlow.setEnabled(var.getmanajemen());
-                    MnKeu.setEnabled(var.getmanajemen());
-                    MnSetAplikasi.setEnabled(var.getmanajemen());
-                    MnSetAdmin.setEnabled(var.getadmin());
-                    MnPenujang.setEnabled(var.getmanajemen());
-                    MnSetOtoLok.setEnabled(var.getmanajemen());
-                    MnSetKmrInp.setEnabled(var.getmanajemen());
-                    MnSetHargaKamar.setEnabled(var.getmanajemen());
-                    MnSetEmbTus.setEnabled(var.getmanajemen());
-                    MnSetUser.setEnabled(var.getuser());
-                    MnSetTrackerLog.setEnabled(var.getmanajemen());
-                    MnDisplayAntrian.setEnabled(var.getmanajemen());
-                    MnSetHargaObt.setEnabled(var.getmanajemen());
-                    MnSetObtRnp.setEnabled(var.getmanajemen());
-                    MnSetPenggTrf.setEnabled(var.getmanajemen());
-                    MnSetOtoRalan.setEnabled(var.getmanajemen());
-                    MnBiayaHarian.setEnabled(var.getmanajemen());
-                    MnBiayaMskSkl.setEnabled(var.getmanajemen());
-                    MnSetRM.setEnabled(var.getmanajemen());
-                    MnSetBilling.setEnabled(var.getmanajemen());
-                    MnClosingKsr.setEnabled(var.getmanajemen());
-                    MnSetLambtPres.setEnabled(var.getmanajemen());
+                    if(var.getrekammedis() == true){
+                        BtnToolReg.setEnabled(true);
+                        btnToolIGD.setEnabled(true);
+                        BtnToolKamnap.setEnabled(true);
+                        MnPasien.setEnabled(true);
+                        MnKelahiranBayi.setEnabled(true);
+                        MnPasienMeninggal.setEnabled(true);
+                        MnDiagnosaPasien.setEnabled(true);
+                        MnRiwayatPerawatan.setEnabled(true);
+                        MnRetBrksRm.setEnabled(true);
+                        MnRegistrasi.setEnabled(true);
+                        MnIgd.setEnabled(true);
+                        MnCekNoBpjs.setEnabled(true);
+                        MnCekNikBpjs.setEnabled(true);
+                        MnRiwPesBpjs.setEnabled(true);
+                        MnCekNoRujPCare.setEnabled(true);
+                        MnRefDiagBpjs.setEnabled(true);
+                        MnRefPlBpjs.setEnabled(true);
+                        MnRefFaskes.setEnabled(true);
+                        MnBridging.setEnabled(true);
+                        MnMonitoringKlaim.setEnabled(true);
+                        MnRefKmrAplicare.setEnabled(true); // Belum
+                        MnKmrAplicare.setEnabled(true);
+                        MnRefMblJkn.setEnabled(true);
+                        MnBtlMblJkn.setEnabled(true);
+                        MnLapIcd9.setEnabled(true);
+                        MnLapIcd10.setEnabled(true);
+                        MnLapObtPenyakit.setEnabled(true);
+                        MnLapKjgRln.setEnabled(true);
+                        MnLapKjgRanap.setEnabled(true);
+                        MnSensusHrPoli.setEnabled(true);
+                    }
+
+                    // Menu Paramedis ================================================
+                    if(var.getparamedis() == true){
+                        MnTindakanRalan.setEnabled(true);
+                        MnKamarInap.setEnabled(true);
+                        MnDpjpRanap.setEnabled(true);
+                        MnTindakanRanap.setEnabled(true);
+                        MnRujukMasuk.setEnabled(true);
+                        MnRujukKeluar.setEnabled(true);
+                        MnInfoKamar.setEnabled(true);
+                        MnIgd.setEnabled(true);
+                        MnOperasi.setEnabled(true);
+                        BtnToolKamnap.setEnabled(true);
+                    }
+                    
+                    // MENU PENGGUNA ============================================
+                    if(var.getpengguna() == true){
+                        MnJadwalDokter.setEnabled(true);
+                        MnDietPasien.setEnabled(true);
+                        MnDataDokter.setEnabled(true);
+                        MnDataPetugas.setEnabled(true);
+                        MnDataPegawai.setEnabled(true);
+                        MnBarcodePresensi.setEnabled(true);
+                        MnJamPresensi.setEnabled(true);
+                        MnPresensiHarian.setEnabled(true);
+                        MnPresensiBulanan.setEnabled(true);
+                        MnTempPresensi.setEnabled(true);
+                        MnRekapKehadiran.setEnabled(true);
+                        MnSidikJari.setEnabled(true);
+                        MnJadwalPegawai.setEnabled(true);
+                        MnJdwlTambahan.setEnabled(true);
+                        MnPresensiHarian1.setEnabled(true);
+                        MnSatuanBrgNon.setEnabled(true);
+                        MnJnsBrgNon.setEnabled(true);
+                        MnDataBrgNon.setEnabled(true);
+                        MnSupNon.setEnabled(true);
+                        MnPengadaanbrg.setEnabled(true);
+                        MnStokKeluar.setEnabled(true);
+                        MnBiayaPengadaan.setEnabled(true);//belum
+                        MnRekapPengadaan.setEnabled(true);
+                        MnRekapStok.setEnabled(true);
+                    }
+                    
+                    if(var.getapoteker() == true){
+                        MnPemberianObat.setEnabled(true);
+                        MnResepObat.setEnabled(true);
+                        MnResepPulang.setEnabled(true);
+                        MnIndustriFar.setEnabled(true);
+                        MnSuplier.setEnabled(true);
+                        MnSatuanBrg.setEnabled(true);
+                        MnKonvSat.setEnabled(true);
+                        MnJnsObt.setEnabled(true); //belum
+                        MnDataObat.setEnabled(true); // ada sama bingung yang mana
+                        MnStokOpname.setEnabled(true);
+                        MnMutasiObat.setEnabled(true);
+                        MnStokObtPx.setEnabled(true);
+                        MnPengadaan.setEnabled(true);
+                        MnPemesanan.setEnabled(true);
+                        MnPenjualanObt.setEnabled(true);
+                        MnReturKeSup.setEnabled(true);
+                        MnReturPemb.setEnabled(true);
+                        MnReturObtRanap.setEnabled(true);
+                        MnReturPiutangPemb.setEnabled(true);
+                        MnKeuntunganPenj.setEnabled(true);
+                        MnKeuntBeriObt.setEnabled(true);
+                        MnSirkulasiObt.setEnabled(true);
+                        MnRiwayat.setEnabled(true);
+                        MnDaruratStok.setEnabled(true);
+                        BtnToolJualObat.setEnabled(true);
+                    }
+
+                    // Menu Laboratorium ============================================
+                    if(var.getlaboratorium() == true){
+                        MnPeriksaLab.setEnabled(true);
+                        btnToolLab.setEnabled(true);
+                    }
+                    
+                    // Menu Radiologi ============================================
+                    if(var.getradiologi() == true){
+                        MnPeriksaRad.setEnabled(true);
+                        btnToolRad.setEnabled(true);
+                    }
+                    
+                    // Menu Kasir ===============================================
+                    if(var.getkasir() == true){
+                        MnKasirRalan.setEnabled(true);
+                        MnDepositPasien.setEnabled(true);
+                        MnPiutangPasien.setEnabled(true);
+                        MnLapObtPoli.setEnabled(true);
+                        MnObtKmr.setEnabled(true);
+                        MnObtDokRln.setEnabled(true);
+                        MnObtDokRnp.setEnabled(true);
+                        MnObtDokRsp.setEnabled(true);
+                        MnObtCrByr.setEnabled(true);
+                        MnDetJMDok.setEnabled(true);
+                        MnHrDokAll.setEnabled(true);
+                        MnHrDokRalan.setEnabled(true);
+                        MnHrDok.setEnabled(true);
+                        MnHrKamar.setEnabled(true);
+                        MnHrBhp.setEnabled(true);
+                        MnHrParamedis.setEnabled(true);
+                        MnHrMnj.setEnabled(true);
+                        MnHrKso.setEnabled(true);
+                        MnHrSrn.setEnabled(true);
+                        MnBulananDok.setEnabled(true);
+                        MnBlnParamedis.setEnabled(true);
+                        MnBlnSrn.setEnabled(true);
+                        MnBlnKso.setEnabled(true);
+                        MnBlnMnj.setEnabled(true);
+                        MnBlnBhp.setEnabled(true);
+                        MnFreeVstDok.setEnabled(true);
+                        MnFreeBcEkg.setEnabled(true);
+                        MnFreeRujRotg.setEnabled(true);
+                        MnFreeRujRnp.setEnabled(true);
+                        MnFreePrkRln.setEnabled(true);
+                        MnLapPembRalan.setEnabled(true);
+                        MnLapPembRnp.setEnabled(true);
+                        MnRkpPmbRln.setEnabled(true);
+                        MnRkpPmbRnp.setEnabled(true);
+                        MnLapTagMsk.setEnabled(true);
+                        MnLapTmbBiayaPx.setEnabled(true);
+                        MnLapPotBiayaPx.setEnabled(true);
+                        MnLapDepositPx.setEnabled(true);
+                        MnLapUangShift.setEnabled(true);
+                        MnLapPaymentPoint.setEnabled(true);
+                        MnTarifKamar.setEnabled(true);
+                        MnTarifRalan.setEnabled(true);
+                        MnTarifRanap.setEnabled(true);
+                        MnTarifLab.setEnabled(true);
+                        MnTarifRadiologi.setEnabled(true);
+                        MnTarifOperasi.setEnabled(true);
+                        MnAkunRek.setEnabled(true);
+                        MnRekThn.setEnabled(true);
+                        MnPengaturanRek.setEnabled(true);
+                        MnAkunPiutang.setEnabled(true);
+                        MnAkunBayar.setEnabled(true);
+                        MnPengeluaranHr.setEnabled(true);
+                        MnPemasukanlain.setEnabled(true);
+                        MnPiutangPx.setEnabled(true);
+                        MnRincPiutangPx.setEnabled(true);
+                        MnPiutangBlmLns.setEnabled(true);
+                        MnByrPiutang.setEnabled(true);
+                        MnHtgObt.setEnabled(true);
+                        MnByrPsnObt.setEnabled(true);
+                        MnPostingJurnal.setEnabled(true);
+                        MnJurnalHr.setEnabled(true);
+                        MnBukuBesar.setEnabled(true);
+                        MnCashFlow.setEnabled(true);
+                        MnKeu.setEnabled(true);
+                        BtnToolKasir.setEnabled(true);
+                    }
+                    
+                    
+                   // ???
+                    
+                    
+                    // INI MENU ADMIN ONLY =============================================================
+//                    MnSetAplikasi.setEnabled(var.getmanajemen());
+//                    MnSetAdmin.setEnabled(var.getadmin());
+//                    MnPenujang.setEnabled(var.getmanajemen());
+//                    MnSetOtoLok.setEnabled(var.getmanajemen());
+//                    MnSetKmrInp.setEnabled(var.getmanajemen());
+//                    MnSetHargaKamar.setEnabled(var.getmanajemen());
+//                    MnSetEmbTus.setEnabled(var.getmanajemen());
+//                    MnSetUser.setEnabled(var.getuser());
+//                    MnSetTrackerLog.setEnabled(var.getmanajemen());
+//                    MnDisplayAntrian.setEnabled(var.getmanajemen());
+//                    MnSetHargaObt.setEnabled(var.getmanajemen());
+//                    MnSetObtRalan.setEnabled(false);
+//                    MnSetObtRnp.setEnabled(var.getmanajemen());
+//                    MnSetPenggTrf.setEnabled(var.getmanajemen());
+//                    MnSetOtoRalan.setEnabled(var.getmanajemen());
+//                    MnBiayaHarian.setEnabled(var.getmanajemen());
+//                    MnBiayaMskSkl.setEnabled(var.getmanajemen());
+//                    MnSetRM.setEnabled(var.getmanajemen());
+//                    MnSetBilling.setEnabled(var.getmanajemen());
+//                    MnClosingKsr.setEnabled(var.getmanajemen());
+//                    MnSetLambtPres.setEnabled(var.getmanajemen());
                     //Jong Source end
 
-                    btnToolIGD.setEnabled(var.getmanajemen());
+//                    btnToolIGD.setEnabled(var.getmanajemen());
                     Sequel.menyimpan("tracker","'"+edAdmin.getText()+"',current_date(),current_time()","Login");
                 }else if((var.getjml1()==0)&&(var.getjml2()==0)){
                     JOptionPane.showMessageDialog(null,"Maaf, Gagal login. ID User atau password ada yang salah ...!");
