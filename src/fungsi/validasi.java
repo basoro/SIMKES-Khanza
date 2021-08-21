@@ -40,7 +40,6 @@ import jxl.write.WritableSheet;
 import jxl.write.WritableWorkbook;
 import jxl.write.WriteException;
 import net.sf.jasperreports.engine.JRResultSetDataSource;
-import net.sf.jasperreports.engine.JasperExportManager;
 import net.sf.jasperreports.engine.JasperCompileManager;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
@@ -66,7 +65,7 @@ import java.math.RoundingMode;
  */
 public final class validasi {
     private int a,j,i,result=0;
-    private String s,s1,auto,PEMBULATANHARGAOBAT="";
+    private String s,s1,auto;
     private final Connection connect=koneksiDB.condb();
     private final sekuel sek=new sekuel();
     private final java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
@@ -79,15 +78,7 @@ public final class validasi {
     private final int year=(now.get(Calendar.YEAR));
     private static final Properties prop = new Properties();
 
-    public validasi(){
-        super();
-        try{
-            prop.loadFromXML(new FileInputStream("setting/config.xml"));
-            PEMBULATANHARGAOBAT=prop.getProperty("PEMBULATANHARGAOBAT");
-        }catch(Exception e){
-            PEMBULATANHARGAOBAT="no";
-        }
-    };
+    
 
     public void generateQRCodeImage(String text, int width, int height, String filePath)
         throws WriterException, IOException {
@@ -1200,7 +1191,7 @@ public final class validasi {
     }
 
     public double roundUp(double number, int multiple) {
-        if(PEMBULATANHARGAOBAT.equals("yes")){
+        if(config.bulatHarga().equals("yes")){
             result = multiple;
             if (number % multiple == 0) {
                 return (int) number;

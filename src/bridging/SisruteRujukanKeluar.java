@@ -16,6 +16,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import fungsi.WarnaTable;
 import fungsi.batasInput;
+import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -217,7 +218,7 @@ public final class SisruteRujukanKeluar extends javax.swing.JDialog {
         Radiologi.setDocument(new batasInput((int)1000).getKata(Radiologi));
         TerapiTindakan.setDocument(new batasInput((int)1000).getKata(TerapiTindakan));
         
-        if(koneksiDB.cariCepat().equals("aktif")){
+        if(config.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {

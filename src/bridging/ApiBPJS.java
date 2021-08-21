@@ -1,8 +1,6 @@
 package bridging;
 
-//import AESsecurity.EnkripsiAES;
-import fungsi.EnkripsiAES;
-import java.io.FileInputStream;
+import fungsi.config;
 import java.io.UnsupportedEncodingException;
 import java.security.GeneralSecurityException;
 import java.security.KeyManagementException;
@@ -24,7 +22,6 @@ import org.springframework.web.client.RestTemplate;
 
 public class ApiBPJS {        
     private static final Properties prop = new Properties();
-    private String Key,Consid;
     private long GetUTCdatetimeAsString;
     private String salt;
     private String generateHmacSHA256Signature;
@@ -37,21 +34,13 @@ public class ApiBPJS {
     private Scheme scheme;
     private HttpComponentsClientHttpRequestFactory factory;
     
-    public ApiBPJS(){
-        try {
-            prop.loadFromXML(new FileInputStream("setting/config.xml"));
-            Key = EnkripsiAES.decrypt(prop.getProperty("SECRETKEYAPIBPJS"));
-            Consid = EnkripsiAES.decrypt(prop.getProperty("CONSIDAPIBPJS"));
-        } catch (Exception ex) {
-            System.out.println("Notifikasi : "+ex);
-        }
-    }
+    
     public String getHmac() {        
         GetUTCdatetimeAsString = GetUTCdatetimeAsString();        
-        salt = Consid +"&"+String.valueOf(GetUTCdatetimeAsString);
+        salt = config.ApiConsBPJS() +"&"+String.valueOf(GetUTCdatetimeAsString);
 	generateHmacSHA256Signature = null;
 	try {
-	    generateHmacSHA256Signature = generateHmacSHA256Signature(salt,Key);
+	    generateHmacSHA256Signature = generateHmacSHA256Signature(salt,config.ApiKeyBPJS());
 	} catch (GeneralSecurityException e) {
 	    // TODO Auto-generated catch block
             System.out.println("Error Signature : "+e);

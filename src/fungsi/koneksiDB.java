@@ -20,7 +20,6 @@ public final class koneksiDB {
     private static Connection connection = null;
     private static final Properties prop = new Properties();
     private static final MysqlDataSource dataSource = new MysqlDataSource();
-    private static String caricepat = "", var = "";
 
     public koneksiDB() {
     }
@@ -69,56 +68,6 @@ public final class koneksiDB {
             }
         }
         return connection;
-    }
-
-    public static String cariCepat() {
-        try {
-            prop.loadFromXML(new FileInputStream("setting/config.xml"));
-            caricepat = prop.getProperty("CARICEPAT");
-        } catch (Exception e) {
-            caricepat = "tidak aktif";
-        }
-        return caricepat;
-    }
-
-    public static String HOST() {
-        try {
-            prop.loadFromXML(new FileInputStream("setting/config.xml"));
-            var = prop.getProperty("HOSTHYBRIDWEB");
-        } catch (Exception e) {
-            var = "localhost";
-        }
-        return var;
-    }
-
-    public static String HOSTHYBRIDWEB() {
-        try {
-            prop.loadFromXML(new FileInputStream("setting/config.xml"));
-            var = prop.getProperty("HOSTHYBRIDWEB");
-        } catch (Exception e) {
-            var = "";
-        }
-        return var;
-    }
-
-    public static String HYBRIDWEB() {
-        try {
-            prop.loadFromXML(new FileInputStream("setting/config.xml"));
-            var = prop.getProperty("HYBRIDWEB");
-        } catch (Exception e) {
-            var = "";
-        }
-        return var;
-    }
-
-    public static String PORTWEB() {
-        try {
-            prop.loadFromXML(new FileInputStream("setting/config.xml"));
-            var = prop.getProperty("PORTWEB");
-        } catch (Exception e) {
-            var = "";
-        }
-        return var;
     }
 
 }

@@ -6,17 +6,8 @@
 package simrskhanza;
 import fungsi.koneksiDB;
 import simrskhanza.DlgReg;
-import fungsi.batasInput;
-import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
-import java.awt.event.KeyEvent;
-import java.io.FileInputStream;
-import java.sql.Connection;
-import java.util.Properties;
 import javax.swing.JOptionPane;
-import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Statement;
 /**
  *
  * @author Dell-pc

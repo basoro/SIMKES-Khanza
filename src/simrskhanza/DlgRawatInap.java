@@ -4,6 +4,7 @@ package simrskhanza;
 import bridging.DlgSKDPBPJS;
 import fungsi.WarnaTable;
 import fungsi.batasInput;
+import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -391,7 +392,7 @@ public final class DlgRawatInap extends javax.swing.JDialog {
         TPemeriksaan.setDocument(new batasInput((int)400).getKata(TPemeriksaan));
         TCari.setDocument(new batasInput((int)100).getKata(TCari));       
         
-        if(koneksiDB.cariCepat().equals("aktif")){
+        if(config.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {
@@ -3912,7 +3913,7 @@ private void BtnEditKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_B
             DlgBerkasRawat berkas=new DlgBerkasRawat(null,true);
             berkas.setJudul("::[ Berkas Digital Perawatan ]::","berkasrawat/pages");
             try {
-                berkas.loadURL("http://"+koneksiDB.HOSTHYBRIDWEB()+":"+prop.getProperty("PORTWEB")+"/"+prop.getProperty("HYBRIDWEB")+"/"+"berkasrawat/login2.php?act=login&usere=admin&passwordte=akusayangsamakamu&no_rawat="+TNoRw.getText());
+                berkas.loadURL("http://"+config.HOSTHYBRIDWEB()+":"+prop.getProperty("PORTWEB")+"/"+prop.getProperty("HYBRIDWEB")+"/"+"berkasrawat/login2.php?act=login&usere=admin&passwordte=akusayangsamakamu&no_rawat="+TNoRw.getText());
             } catch (Exception ex) {
                 System.out.println("Notifikasi : "+ex);
             }
@@ -4706,9 +4707,13 @@ private void BtnEditKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_B
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getmanajemen());
+        if(var.getparamedis() == true || var.getadmin() == true){
+            BtnSimpan.setEnabled(true);
+            BtnEdit.setEnabled(true);
+        }
+        
         BtnHapus.setEnabled(var.getmanajemen());
-        BtnEdit.setEnabled(var.getmanajemen());
+        
         BtnDiagnosa.setVisible(var.getmanajemen());         
         BtnRiwayat.setVisible(var.getmanajemen());    
         BtnResepObat.setVisible(var.getmanajemen());

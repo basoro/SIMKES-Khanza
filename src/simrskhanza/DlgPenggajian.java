@@ -11,7 +11,6 @@
 
 package simrskhanza;
 
-import fungsi.koneksiDB;
 import fungsi.validasi;
 import java.awt.BorderLayout;
 import java.awt.Cursor;

@@ -12,7 +12,7 @@
 package laporan;
 
 import fungsi.batasInput;
-import fungsi.koneksiDB;
+import fungsi.config;
 import fungsi.sekuel;
 import fungsi.validasi;
 import fungsi.var;
@@ -49,7 +49,7 @@ public class DlgDiagnosaPenyakit extends javax.swing.JDialog {
         TNoRw.setDocument(new batasInput((byte)17).getKata(TNoRw));
         TCari.setDocument(new batasInput((byte)100).getKata(TCari));     
         TCariPasien.setDocument(new batasInput((byte)20).getKata(TCariPasien));     
-        if(koneksiDB.cariCepat().equals("aktif")){
+        if(config.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {
