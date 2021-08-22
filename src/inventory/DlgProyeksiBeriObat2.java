@@ -2,6 +2,7 @@ package inventory;
 import fungsi.WarnaTable;
 import fungsi.batasInput;
 import fungsi.koneksiDB;
+import java.io.FileInputStream;
 import fungsi.sekuel;
 import fungsi.validasi;
 import fungsi.var;

@@ -17,7 +17,6 @@ import javax.swing.JOptionPane;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
-import org.springframework.http.MediaType;
 
 /**
  *
@@ -31,43 +30,38 @@ public class BPJSCekNIK {
             mrnoMR="",mrnoTelepon="",nama="",nik="",noKartu="",pisa="",
             provUmumkdProvider="",provUmumnmProvider="",sex="",statusPesertaketerangan="",
             statusPesertakode="",tglCetakKartu="",tglLahir="",tglTAT="",
-            tglTMT="",umurumurSaatPelayanan="",umurumurSekarang="",informasi="",URL="",link="";
+            tglTMT="",umurumurSaatPelayanan="",umurumurSekarang="",informasi="",URL="";
     DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     Date date = new Date();
     private ApiBPJS api=new ApiBPJS();
     private HttpHeaders headers;
     private HttpEntity requestEntity;
-    private ObjectMapper mapper = new ObjectMapper();   
+    private ObjectMapper mapper = new ObjectMapper();
     private JsonNode root;
     private JsonNode nameNode;
     private JsonNode response;
-        
+    private JsonNode res1;
+
     public BPJSCekNIK(){
         super();
-        try {
-            prop.loadFromXML(new FileInputStream("setting/config.xml"));
-            link=prop.getProperty("URLAPIBPJS");   
-        } catch (Exception e) {
-            System.out.println("E : "+e);
-        }
+
     }
-    
+
     public void tampil(String nik) {
         try {
-            headers = new HttpHeaders();
-            headers.setContentType(MediaType.APPLICATION_JSON);
-	    headers.add("X-Cons-ID",prop.getProperty("CONSIDAPIBPJS"));
-	    headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));
-	    headers.add("X-Signature",api.getHmac());
+            headers = api.header("json");
 	    requestEntity = new HttpEntity(headers);
-            URL = link+"/Peserta/nik/"+nik+"/tglSEP/"+dateFormat.format(date);	
+            URL = koneksiDB.linkBpjs()+"/Peserta/nik/"+nik+"/tglSEP/"+dateFormat.format(date);
             root = mapper.readTree(api.getRest().exchange(URL, HttpMethod.GET, requestEntity, String.class).getBody());
             nameNode = root.path("metaData");
             System.out.println("code : "+nameNode.path("code").asText());
             System.out.println("message : "+nameNode.path("message").asText());
             informasi=nameNode.path("message").asText();
             if(nameNode.path("code").asText().equals("200")){
-                response = root.path("response");
+                res1 = root.path("response");
+                String res = api.decrypt(res1.asText());
+                String lz = api.lzDecrypt(res);
+                response = mapper.readTree(lz);
                 this.nik=response.path("peserta").path("nik").asText();
                 nama=response.path("peserta").path("nama").asText();
                 cobnmAsuransi=response.path("peserta").path("cob").path("nmAsuransi").asText();
@@ -98,8 +92,8 @@ public class BPJSCekNIK {
                 umurumurSaatPelayanan=response.path("peserta").path("umur").path("umurSaatPelayanan").asText();
                 umurumurSekarang=response.path("peserta").path("umur").path("umurSekarang").asText();
             }else {
-                JOptionPane.showMessageDialog(null,nameNode.path("message").asText());                
-            }   
+                JOptionPane.showMessageDialog(null,nameNode.path("message").asText());
+            }
         } catch (Exception ex) {
             System.out.println("Notifikasi Peserta : "+ex);
             if(ex.toString().contains("UnknownHostException")){
@@ -107,5 +101,5 @@ public class BPJSCekNIK {
             }
         }
     }
-    
+
 }

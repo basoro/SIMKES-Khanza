@@ -115,9 +115,9 @@ public class splash extends javax.swing.JFrame {
         progressBar.setFocusable(false);
         progressBar.setPreferredSize(new java.awt.Dimension(146, 0));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/splashscreen-yaski.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/splashscreen.png"))); // NOI18N
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/splashscreen-yaski.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/splashscreen.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

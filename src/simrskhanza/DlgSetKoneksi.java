@@ -6,32 +6,21 @@ import javax.swing.UIManager;
 import java.io.IOException;
 import java.io.FileNotFoundException;
 import javax.swing.JOptionPane;
-import java.io.OutputStream;
 import java.io.FileOutputStream;
 import java.io.File;
-import javax.swing.LayoutStyle;
-import java.awt.Component;
-import java.awt.LayoutManager;
 import javax.swing.GroupLayout;
 import java.awt.Dimension;
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.Color;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.io.InputStream;
 import java.io.FileInputStream;
-import javax.crypto.spec.SecretKeySpec;
-import java.security.Key;
-import javax.xml.bind.DatatypeConverter;
-import javax.crypto.Cipher;
 import javax.swing.JLabel;
-import javax.swing.JTextField;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
+import fungsi.EnkripsiAES;
 import java.util.Properties;
 import java.sql.Connection;
 import javax.swing.JFrame;
@@ -267,11 +256,11 @@ public class DlgSetKoneksi extends JFrame
 
     private void jButton1ActionPerformed(final ActionEvent evt) {
         try {
-            this.hostEn = this.THost.getText();
-            this.databaseEn = this.TDatabase.getText();
+            this.hostEn = EnkripsiAES.encrypt(this.THost.getText());
+            this.databaseEn = EnkripsiAES.encrypt(this.TDatabase.getText());
             this.portEn = this.TPort.getText();
-            this.userEn = this.TUser.getText();
-            this.pasEn = this.TPassword.getText();
+            this.userEn = EnkripsiAES.encrypt(this.TUser.getText());
+            this.pasEn = EnkripsiAES.encrypt(this.TPassword.getText());
             final Properties properties = new Properties();
             properties.setProperty("HOST", this.hostEn);
             properties.setProperty("DATABASE", this.databaseEn);
@@ -302,9 +291,9 @@ public class DlgSetKoneksi extends JFrame
     private void BtnTesKoneksiActionPerformed(final ActionEvent evt) {
         try {
             this.prop.loadFromXML(new FileInputStream("setting/database.xml"));
-            DlgSetKoneksi.dataSource.setURL("jdbc:mysql://" + this.prop.getProperty("HOST") + ":" + this.prop.getProperty("PORT") + "/" + this.prop.getProperty("DATABASE") + "?zeroDateTimeBehavior=convertToNull");
-            DlgSetKoneksi.dataSource.setUser(this.prop.getProperty("USER"));
-            DlgSetKoneksi.dataSource.setPassword(this.prop.getProperty("PAS"));
+            DlgSetKoneksi.dataSource.setURL("jdbc:mysql://" + EnkripsiAES.decrypt(this.prop.getProperty("HOST")) + ":" + this.prop.getProperty("PORT") + "/" + EnkripsiAES.decrypt(this.prop.getProperty("DATABASE")) + "?zeroDateTimeBehavior=convertToNull");
+            DlgSetKoneksi.dataSource.setUser(EnkripsiAES.decrypt(this.prop.getProperty("USER")));
+            DlgSetKoneksi.dataSource.setPassword(EnkripsiAES.decrypt(this.prop.getProperty("PAS")));
             DlgSetKoneksi.connection = DlgSetKoneksi.dataSource.getConnection();
             JOptionPane.showMessageDialog(null, "Koneksi Sukses");
         }

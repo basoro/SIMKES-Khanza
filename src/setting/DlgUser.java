@@ -47,9 +47,16 @@ public class DlgUser extends javax.swing.JDialog {
             "ID User",
             "Nama User",
             "Password",
-            "Manjemen",
+            "Admin",
+            "Manajemen",
             "Medis",
-            "Paramedis"
+            "Paramedis",
+            "Apoteker",
+            "Laboratorium",
+            "Radiologi",
+            "Rekam Medis",
+            "Kasir",
+            "Pengguna"
         };
 
         tabMode=new DefaultTableModel(null,row){
@@ -62,8 +69,10 @@ public class DlgUser extends javax.swing.JDialog {
                     return a;
               }
               Class[] types = new Class[] {
-                java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, 
-                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class
+                java.lang.Object.class, java.lang.Object.class, java.lang.Object.class,
+                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
+                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
+                java.lang.Boolean.class, java.lang.Boolean.class
              };
              @Override
              public Class getColumnClass(int columnIndex) {
@@ -76,7 +85,7 @@ public class DlgUser extends javax.swing.JDialog {
         tbUser.setPreferredScrollableViewportSize(new Dimension(500,500));
         tbUser.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
 
-        for (i = 0; i < 5; i++) {
+        for (i = 0; i < 13; i++) {
             TableColumn column = tbUser.getColumnModel().getColumn(i);
             if(i==0){
                 column.setPreferredWidth(150);
@@ -84,16 +93,8 @@ public class DlgUser extends javax.swing.JDialog {
                 column.setPreferredWidth(180);
             }else if(i==2){
                 column.setPreferredWidth(150);
-            }else if(i==3){
-                column.setPreferredWidth(100);
-            }else if(i==4){
-                column.setPreferredWidth(100);
-            }else if(i==5){
-                column.setPreferredWidth(100);
-            }else if(i==6){
-                column.setPreferredWidth(100);
             }else{
-                column.setPreferredWidth(120);
+                column.setPreferredWidth(80);
             }
         }
         tbUser.setDefaultRenderer(Object.class, new WarnaTable());
@@ -253,7 +254,7 @@ public class DlgUser extends javax.swing.JDialog {
         jLabel4.setText("Password :");
         jLabel4.setName("jLabel4"); // NOI18N
         panelGlass5.add(jLabel4);
-        jLabel4.setBounds(449, 12, 60, 23);
+        jLabel4.setBounds(520, 12, 60, 23);
 
         TKd.setHighlighter(null);
         TKd.setName("TKd"); // NOI18N
@@ -263,7 +264,7 @@ public class DlgUser extends javax.swing.JDialog {
             }
         });
         panelGlass5.add(TKd);
-        TKd.setBounds(107, 12, 107, 23);
+        TKd.setBounds(107, 12, 180, 23);
 
         TPass.setName("TPass"); // NOI18N
         TPass.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -272,7 +273,7 @@ public class DlgUser extends javax.swing.JDialog {
             }
         });
         panelGlass5.add(TPass);
-        TPass.setBounds(511, 12, 180, 23);
+        TPass.setBounds(590, 12, 180, 23);
 
         BtnSeek.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeek.setMnemonic('1');
@@ -289,7 +290,7 @@ public class DlgUser extends javax.swing.JDialog {
             }
         });
         panelGlass5.add(BtnSeek);
-        BtnSeek.setBounds(216, 12, 28, 23);
+        BtnSeek.setBounds(290, 12, 28, 23);
 
         BtnSeek1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnSeek1.setMnemonic('2');
@@ -306,7 +307,7 @@ public class DlgUser extends javax.swing.JDialog {
             }
         });
         panelGlass5.add(BtnSeek1);
-        BtnSeek1.setBounds(245, 12, 28, 23);
+        BtnSeek1.setBounds(320, 12, 28, 23);
 
         TNmUser.setEditable(false);
         TNmUser.setName("TNmUser"); // NOI18N
@@ -316,7 +317,7 @@ public class DlgUser extends javax.swing.JDialog {
             }
         });
         panelGlass5.add(TNmUser);
-        TNmUser.setBounds(275, 12, 160, 23);
+        TNmUser.setBounds(350, 12, 160, 23);
 
         internalFrame1.add(panelGlass5, java.awt.BorderLayout.PAGE_START);
 
@@ -520,7 +521,7 @@ public class DlgUser extends javax.swing.JDialog {
         }else if(TPass.getText().trim().equals("")){
             Valid.textKosong(TPass,"Password");
         }else{
-            if(Sequel.menyimpantf("user","AES_ENCRYPT('"+TKd.getText()+"','nur'),AES_ENCRYPT('"+TPass.getText()+"','windi'),'false','false','false'","User")==true){
+            if(Sequel.menyimpantf("usere","AES_ENCRYPT('"+TKd.getText()+"','nur'),AES_ENCRYPT('"+TPass.getText()+"','windi'),'false','false','false','false','false','false','false','false','false','false'","User")==true){
                 tampil();
                 emptTeks();
             }
@@ -542,7 +543,7 @@ public class DlgUser extends javax.swing.JDialog {
         }else if(TPass.getText().trim().equals("")){
             JOptionPane.showMessageDialog(null,"Maaf, Gagal menghapus. Pilih dulu data yang mau dihapus.\nKlik data pada table untuk memilih...!!!!");
         }else if(! TPass.getText().trim().equals("")){
-            Sequel.queryu("delete from user where id_user=AES_ENCRYPT('"+TKd.getText()+"','nur')");
+            Sequel.queryu("delete from usere where id_user=AES_ENCRYPT('"+TKd.getText()+"','nur')");
             tampil();
             emptTeks();
         }
@@ -564,12 +565,20 @@ public class DlgUser extends javax.swing.JDialog {
         }else{
             i=tbUser.getSelectedRow();
             if(i!= -1){
-                Sequel.mengedit("user","id_user=AES_ENCRYPT('"+tbUser.getValueAt(i,0).toString()+"','nur')",
+                Sequel.mengedit("usere","id_user=AES_ENCRYPT('"+tbUser.getValueAt(i,0).toString()+"','nur')",
                     "id_user=AES_ENCRYPT('"+TKd.getText()+"','nur'),"+
                     "password=AES_ENCRYPT('"+TPass.getText()+"','windi'),"+
-                    "manajemen='"+tbUser.getValueAt(i,3).toString()+"', "+
-                    "medis='"+tbUser.getValueAt(i,4).toString()+"',"+
-                    "paramedis='"+tbUser.getValueAt(i,5).toString()+"'");
+                    "admin='"+tbUser.getValueAt(i,3).toString()+"', "+
+                    "manajemen='"+tbUser.getValueAt(i,4).toString()+"', "+
+                    "medis='"+tbUser.getValueAt(i,5).toString()+"',"+
+                    "paramedis='"+tbUser.getValueAt(i,6).toString()+"',"+
+                    "apoteker='"+tbUser.getValueAt(i,7).toString()+"',"+
+                    "laboratorium='"+tbUser.getValueAt(i,8).toString()+"',"+
+                    "radiologi='"+tbUser.getValueAt(i,9).toString()+"',"+
+                    "rekammedis='"+tbUser.getValueAt(i,10).toString()+"',"+
+                    "kasir='"+tbUser.getValueAt(i,11).toString()+"',"+
+                    "pengguna='"+tbUser.getValueAt(i,12).toString()+"'"
+                );
             }
             tampil();
             emptTeks();
@@ -785,8 +794,9 @@ private void BtnPrintKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
     private void tampil() {
         try{
             Valid.tabelKosong(tabMode);
-            ps=koneksi.prepareStatement("select AES_DECRYPT(id_user,'nur'),AES_DECRYPT(password,'windi'),"+
-                        "manajemen, medis, paramedis from user order by AES_DECRYPT(id_user,'nur')");
+            ps=koneksi.prepareStatement("select AES_DECRYPT(id_user,'nur'),AES_DECRYPT(password,'windi'),"
+                    + " admin, manajemen, medis, paramedis , apoteker , laboratorium , radiologi , rekammedis , kasir , pengguna"
+                    + " from usere order by AES_DECRYPT(id_user,'nur')");
             try {
                 rs=ps.executeQuery();
                 while(rs.next()){
@@ -800,17 +810,31 @@ private void BtnPrintKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
                                 user.toLowerCase().contains(TCari.getText().toLowerCase())){
                             tabMode.addRow(new Object[]{rs.getString(1),
                                            user,rs.getString(2),
+                                           rs.getBoolean("admin"),
                                            rs.getBoolean("manajemen"),
                                            rs.getBoolean("medis"),
-                                           rs.getBoolean("paramedis")
+                                           rs.getBoolean("paramedis"),
+                                           rs.getBoolean("apoteker"),
+                                           rs.getBoolean("laboratorium"),
+                                           rs.getBoolean("radiologi"),
+                                           rs.getBoolean("rekammedis"),
+                                           rs.getBoolean("kasir"),
+                                           rs.getBoolean("pengguna")
                             });
                         }
                     } catch (Exception e) {
                         tabMode.addRow(new Object[]{rs.getString(1),
                                            "Turn Out",rs.getString(2),
+                                           rs.getBoolean("admin"),
                                            rs.getBoolean("manajemen"),
                                            rs.getBoolean("medis"),
-                                           rs.getBoolean("paramedis")
+                                           rs.getBoolean("paramedis"),
+                                           rs.getBoolean("apoteker"),
+                                           rs.getBoolean("laboratorium"),
+                                           rs.getBoolean("radiologi"),
+                                           rs.getBoolean("rekammedis"),
+                                           rs.getBoolean("kasir"),
+                                           rs.getBoolean("pengguna")
                             });
                     }
                  }
