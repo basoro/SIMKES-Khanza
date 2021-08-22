@@ -12,6 +12,7 @@
 package bridging;
 import fungsi.WarnaTable;
 import fungsi.batasInput;
+import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -85,7 +86,7 @@ public final class BPJSMapingDokterDPJP extends javax.swing.JDialog {
 
         TCari.setDocument(new batasInput((byte)100).getKata(TCari));                  
         
-        if(koneksiDB.cariCepat().equals("aktif")){
+        if(config.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {

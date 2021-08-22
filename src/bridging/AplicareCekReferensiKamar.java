@@ -16,6 +16,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import fungsi.WarnaTable;
 import fungsi.batasInput;
+import fungsi.config;
 import java.awt.Dimension;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
@@ -23,7 +24,6 @@ import javax.swing.table.TableColumn;
 import fungsi.sekuel;
 import fungsi.validasi;
 import fungsi.var;
-import fungsi.koneksiDB;
 import java.awt.Cursor;
 import java.awt.event.KeyEvent;
 import java.util.HashMap;
@@ -88,7 +88,7 @@ public final class AplicareCekReferensiKamar extends javax.swing.JDialog {
         
         Kelas.setDocument(new batasInput((byte)100).getKata(Kelas));
         
-        if(koneksiDB.cariCepat().equals("aktif")){
+        if(config.cariCepat().equals("aktif")){
             Kelas.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {

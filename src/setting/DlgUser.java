@@ -47,6 +47,7 @@ public class DlgUser extends javax.swing.JDialog {
             "ID User",
             "Nama User",
             "Password",
+            "Admin",
             "Manajemen",
             "Medis",
             "Paramedis",
@@ -71,7 +72,7 @@ public class DlgUser extends javax.swing.JDialog {
                 java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, 
                 java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
                 java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
-                java.lang.Boolean.class
+                java.lang.Boolean.class, java.lang.Boolean.class
              };
              @Override
              public Class getColumnClass(int columnIndex) {
@@ -84,7 +85,7 @@ public class DlgUser extends javax.swing.JDialog {
         tbUser.setPreferredScrollableViewportSize(new Dimension(500,500));
         tbUser.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
 
-        for (i = 0; i < 12; i++) {
+        for (i = 0; i < 13; i++) {
             TableColumn column = tbUser.getColumnModel().getColumn(i);
             if(i==0){
                 column.setPreferredWidth(150);
@@ -520,7 +521,7 @@ public class DlgUser extends javax.swing.JDialog {
         }else if(TPass.getText().trim().equals("")){
             Valid.textKosong(TPass,"Password");
         }else{
-            if(Sequel.menyimpantf("usere","AES_ENCRYPT('"+TKd.getText()+"','nur'),AES_ENCRYPT('"+TPass.getText()+"','windi'),'false','false','false','false','false','false','false','false','false'","User")==true){
+            if(Sequel.menyimpantf("usere","AES_ENCRYPT('"+TKd.getText()+"','nur'),AES_ENCRYPT('"+TPass.getText()+"','windi'),'false','false','false','false','false','false','false','false','false','false'","User")==true){
                 tampil();
                 emptTeks();
             }
@@ -567,15 +568,16 @@ public class DlgUser extends javax.swing.JDialog {
                 Sequel.mengedit("usere","id_user=AES_ENCRYPT('"+tbUser.getValueAt(i,0).toString()+"','nur')",
                     "id_user=AES_ENCRYPT('"+TKd.getText()+"','nur'),"+
                     "password=AES_ENCRYPT('"+TPass.getText()+"','windi'),"+
-                    "manajemen='"+tbUser.getValueAt(i,3).toString()+"', "+
-                    "medis='"+tbUser.getValueAt(i,4).toString()+"',"+
-                    "paramedis='"+tbUser.getValueAt(i,5).toString()+"',"+
-                    "apoteker='"+tbUser.getValueAt(i,6).toString()+"',"+
-                    "laboratorium='"+tbUser.getValueAt(i,7).toString()+"',"+
-                    "radiologi='"+tbUser.getValueAt(i,8).toString()+"',"+
-                    "rekammedis='"+tbUser.getValueAt(i,9).toString()+"',"+
-                    "kasir='"+tbUser.getValueAt(i,10).toString()+"',"+
-                    "pengguna='"+tbUser.getValueAt(i,11).toString()+"'"
+                    "admin='"+tbUser.getValueAt(i,3).toString()+"', "+
+                    "manajemen='"+tbUser.getValueAt(i,4).toString()+"', "+
+                    "medis='"+tbUser.getValueAt(i,5).toString()+"',"+
+                    "paramedis='"+tbUser.getValueAt(i,6).toString()+"',"+
+                    "apoteker='"+tbUser.getValueAt(i,7).toString()+"',"+
+                    "laboratorium='"+tbUser.getValueAt(i,8).toString()+"',"+
+                    "radiologi='"+tbUser.getValueAt(i,9).toString()+"',"+
+                    "rekammedis='"+tbUser.getValueAt(i,10).toString()+"',"+
+                    "kasir='"+tbUser.getValueAt(i,11).toString()+"',"+
+                    "pengguna='"+tbUser.getValueAt(i,12).toString()+"'"
                 );
             }
             tampil();
@@ -793,7 +795,7 @@ private void BtnPrintKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
         try{
             Valid.tabelKosong(tabMode);
             ps=koneksi.prepareStatement("select AES_DECRYPT(id_user,'nur'),AES_DECRYPT(password,'windi'),"
-                    + " manajemen, medis, paramedis , apoteker , laboratorium , radiologi , rekammedis , kasir , pengguna"
+                    + " admin, manajemen, medis, paramedis , apoteker , laboratorium , radiologi , rekammedis , kasir , pengguna"
                     + " from usere order by AES_DECRYPT(id_user,'nur')");
             try {
                 rs=ps.executeQuery();
@@ -808,6 +810,7 @@ private void BtnPrintKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
                                 user.toLowerCase().contains(TCari.getText().toLowerCase())){
                             tabMode.addRow(new Object[]{rs.getString(1),
                                            user,rs.getString(2),
+                                           rs.getBoolean("admin"),
                                            rs.getBoolean("manajemen"),
                                            rs.getBoolean("medis"),
                                            rs.getBoolean("paramedis"),
@@ -822,6 +825,7 @@ private void BtnPrintKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
                     } catch (Exception e) {
                         tabMode.addRow(new Object[]{rs.getString(1),
                                            "Turn Out",rs.getString(2),
+                                           rs.getBoolean("admin"),
                                            rs.getBoolean("manajemen"),
                                            rs.getBoolean("medis"),
                                            rs.getBoolean("paramedis"),

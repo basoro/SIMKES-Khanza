@@ -2,6 +2,7 @@ package simrskhanza;
 
 import fungsi.WarnaTable;
 import fungsi.batasInput;
+import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -128,7 +129,7 @@ public class SuratKontrol extends javax.swing.JDialog {
         Rtl2.setDocument(new batasInput((int)50).getKata(Rtl2));
         NoReg.setDocument(new batasInput((byte)6).getKata(NoReg));
         KdDokter.setDocument(new batasInput((byte)20).getKata(KdDokter));
-        if(koneksiDB.cariCepat().equals("aktif")){
+        if(config.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {

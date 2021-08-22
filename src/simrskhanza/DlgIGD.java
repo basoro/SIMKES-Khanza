@@ -12,16 +12,14 @@
 
 package simrskhanza;
 import permintaan.DlgBookingOperasi;
-import simrskhanza.DlgCariDokter;
-import simrskhanza.DlgPemberianObat;
 import bridging.BPJSDataSEP;
 import bridging.DlgSKDPBPJS;
 import bridging.BPJSSuratKontrol;
 import bridging.SisruteRujukanKeluar;
-import laporan.DlgFrekuensiPenyakitRalan;
 import keuangan.DlgBilingRalan;
 import fungsi.WarnaTable;
 import fungsi.batasInput;
+import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -242,7 +240,7 @@ public final class DlgIGD extends javax.swing.JDialog {
         THbngn.setDocument(new batasInput((byte)20).getKata(THbngn));
         TAlmt.setDocument(new batasInput((byte)60).getKata(TAlmt));
         TCari.setDocument(new batasInput((byte)100).getKata(TCari));
-        if(koneksiDB.cariCepat().equals("aktif")){
+        if(config.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {
@@ -5491,31 +5489,50 @@ private void btnPenjabActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
         DTPReg.setDate(new Date());
         DTPCari1.setDate(new Date());
         DTPCari2.setDate(new Date());
-        BtnSimpan.setEnabled(var.getmanajemen());
-        BtnHapus.setEnabled(var.getmanajemen());
-        BtnEdit.setEnabled(var.getmanajemen());
-        BtnPrint.setEnabled(var.getmanajemen());
+        if(var.getrekammedis() == true || var.getadmin()== true){
+            BtnSimpan.setEnabled(true);
+            BtnEdit.setEnabled(true);
+            BtnPrint.setEnabled(true);
+            MnSEP.setEnabled(true);
+            ppBerkasDigital.setEnabled(true);
+            MnRujukMasuk.setEnabled(true);
+        }
+        BtnHapus.setEnabled(var.getadmin());
         //MnKamarInap.setEnabled(var.getmanajemen());
-        MnRawatJalan.setEnabled(var.getmanajemen());
-        MnPemberianObat.setEnabled(var.getmanajemen());
-        MnBilling.setEnabled(var.getmanajemen());
-        MnPeriksaLab.setEnabled(var.getmanajemen());
-        MnPeriksaRadiologi.setEnabled(var.getmanajemen());
-        MnNoResep.setEnabled(var.getmanajemen());
-        MnBillingParsial.setEnabled(var.getmanajemen());
-        MnOperasi.setEnabled(var.getmanajemen());
-        MnRujuk.setEnabled(var.getmanajemen());
-        MnRujukMasuk.setEnabled(var.getmanajemen());
-        MnDiagnosa.setEnabled(var.getmanajemen());
+        if(var.getparamedis() == true || var.getadmin()== true){
+            MnRawatJalan.setEnabled(true);
+            MnPermintaanLab.setEnabled(true);
+            MnPermintaanRadiologi.setEnabled(true);
+            MnRujuk.setEnabled(true);
+            MnDiagnosa.setEnabled(true);
+            MnJadwalOperasi.setEnabled(true);     
+            MnSKDPBPJS.setEnabled(true);
+            MnOperasi.setEnabled(true);
+            ppIKP.setEnabled(true);
+            ppCatatanPasien.setEnabled(true);
+            ppBerkasDigital.setEnabled(true);
+        }
+        
+        if(var.getapoteker() == true || var.getadmin()== true){
+            MnPemberianObat.setEnabled(true);
+            MnNoResep.setEnabled(true);
+        }
+        
+        if(var.getkasir() == true || var.getadmin()== true){
+            MnBilling.setEnabled(true);
+            MnBillingParsial.setEnabled(true);
+        }
+        
+        if(var.getlaboratorium() == true || var.getadmin()== true){
+            MnPeriksaLab.setEnabled(true);
+        }
+        
+        if(var.getradiologi()== true || var.getadmin()== true){
+            MnPeriksaRadiologi.setEnabled(true);
+        }
+        
         //MnHapusTagihanOperasi.setEnabled(var.getmanajemen());
-        //MnHapusObatOperasi.setEnabled(var.getmanajemen());  
-        ppCatatanPasien.setEnabled(var.getmanajemen());
-        ppIKP.setEnabled(var.getmanajemen());
-        ppBerkasDigital.setEnabled(var.getmanajemen());   
-        MnJadwalOperasi.setEnabled(var.getmanajemen());     
-        MnSKDPBPJS.setEnabled(var.getmanajemen());
-        MnPermintaanLab.setEnabled(var.getmanajemen());
-        MnPermintaanRadiologi.setEnabled(var.getmanajemen());
+        //MnHapusObatOperasi.setEnabled(var.getmanajemen());   
     }
     
     private void isNumber(){

@@ -3,6 +3,7 @@ package simrskhanza;
 import bridging.DlgSKDPBPJS;
 import fungsi.WarnaTable;
 import fungsi.batasInput;
+import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -609,7 +610,7 @@ public final class DlgRawatJalan extends javax.swing.JDialog {
         TRespirasi.setDocument(new batasInput((byte)3).getOnlyAngka(TRespirasi));
         Catatan.setDocument(new batasInput((int)700).getKata(Catatan));
         
-        if(koneksiDB.cariCepat().equals("aktif")){
+        if(config.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {

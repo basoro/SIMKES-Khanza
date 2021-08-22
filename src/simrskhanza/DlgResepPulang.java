@@ -12,6 +12,7 @@
 package simrskhanza;
 import fungsi.WarnaTable;
 import fungsi.batasInput;
+import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -34,7 +35,6 @@ import javax.swing.JTable;
 import javax.swing.event.DocumentEvent;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
-import simrskhanza.DlgInputResepPulang;
 
 
 /**
@@ -97,7 +97,7 @@ public final class DlgResepPulang extends javax.swing.JDialog {
         HrgaObat.setDocument(new batasInput((byte)15).getOnlyAngka(HrgaObat));
         Dosis.setDocument(new batasInput((byte)20).getKata(Dosis));
         TCari.setDocument(new batasInput((byte)100).getKata(TCari));
-        if(koneksiDB.cariCepat().equals("aktif")){
+        if(config.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {

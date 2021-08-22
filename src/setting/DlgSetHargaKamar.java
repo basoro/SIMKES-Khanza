@@ -13,6 +13,7 @@ package setting;
 
 import fungsi.WarnaTable;
 import fungsi.batasInput;
+import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -99,7 +100,7 @@ public class DlgSetHargaKamar extends javax.swing.JDialog {
         kdpj.setDocument(new batasInput((byte)3).getKata(kdpj));
         Tarif.setDocument(new batasInput((byte)15).getKata(Tarif));
         TCari.setDocument(new batasInput((byte)100).getKata(TCari));
-        if(koneksiDB.cariCepat().equals("aktif")){
+        if(config.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {tampil();}

@@ -17,15 +17,6 @@ import fungsi.sekuel;
 import fungsi.validasi;
 import java.awt.event.KeyEvent;
 import java.sql.Connection;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import javax.swing.JOptionPane;
-import javax.swing.table.DefaultTableModel;
-import inventory.DlgCariKonversi;
-import inventory.DlgCariObat;
-import inventory.DlgCariObat2;
-import inventory.DlgCariObat3;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 

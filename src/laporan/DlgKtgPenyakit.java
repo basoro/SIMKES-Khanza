@@ -13,6 +13,7 @@ package laporan;
 
 import fungsi.WarnaTable;
 import fungsi.batasInput;
+import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -96,7 +97,7 @@ public final class DlgKtgPenyakit extends javax.swing.JDialog {
         TNm.setDocument(new batasInput((byte)30).getKata(TNm));
         TCiri.setDocument(new batasInput((int)200).getKata(TCiri));
         TCari.setDocument(new batasInput((byte)100).getKata(TCari));
-        if(koneksiDB.cariCepat().equals("aktif")){
+        if(config.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {tampil();}

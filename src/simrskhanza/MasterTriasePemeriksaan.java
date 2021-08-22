@@ -13,6 +13,7 @@ package simrskhanza;
 
 import fungsi.WarnaTable;
 import fungsi.batasInput;
+import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -72,7 +73,7 @@ public class MasterTriasePemeriksaan extends javax.swing.JDialog {
         TKd.setDocument(new batasInput((byte)3).getKata(TKd));
         TNm.setDocument(new batasInput((int)150).getKata(TNm));
         TCari.setDocument(new batasInput((byte)100).getKata(TCari));
-        if(koneksiDB.cariCepat().equals("aktif")){
+        if(config.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {

@@ -28,7 +28,6 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.sql.Connection;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.Calendar;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;

@@ -68,7 +68,7 @@ public final class var {
                         var.rekammedis=rs2.getBoolean("rekammedis");
                         var.kasir=rs2.getBoolean("kasir");
                         var.pengguna=rs2.getBoolean("pengguna");
-                        var.admin=false;
+                        var.admin=rs2.getBoolean("admin");
                         var.user=false;
                     }else if((rs.getRow()==0)&&(rs2.getRow()==0)){
                         var.kode="";

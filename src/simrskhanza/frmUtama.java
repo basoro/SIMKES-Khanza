@@ -92,8 +92,6 @@ import keuangan.DlgJurnal;
 import keuangan.DlgJurnalHarian;
 import keuangan.DlgLabaRugi;
 import keuangan.DlgLhtBiaya;
-import keuangan.DlgRBTindakanPoli;
-import keuangan.DlgRBKSO;
 import setting.DlgAdmin;
 import setting.DlgUser;
 import setting.DlgSetAplikasi;
@@ -4026,7 +4024,7 @@ public class frmUtama extends javax.swing.JFrame {
         }else {
             try {
                 var.setData(edAdmin.getText(),edPwd.getText());
-                if(var.getjml1()>=1){
+                if(var.getjml1()>=1 || var.getadmin() == true){
                     BtnToolReg.setEnabled(true);
                     BtnToolKamnap.setEnabled(true);
                     BtnToolKasir.setEnabled(true);
@@ -4267,6 +4265,8 @@ public class frmUtama extends javax.swing.JFrame {
 
                     // Menu Paramedis ================================================
                     if(var.getparamedis() == true){
+                        BtnToolReg.setEnabled(true);
+                        btnToolIGD.setEnabled(true);
                         MnTindakanRalan.setEnabled(true);
                         MnKamarInap.setEnabled(true);
                         MnDpjpRanap.setEnabled(true);
@@ -4416,35 +4416,31 @@ public class frmUtama extends javax.swing.JFrame {
                         BtnToolKasir.setEnabled(true);
                     }
                     
-                    
-                   // ???
-                    
-                    
                     // INI MENU ADMIN ONLY =============================================================
-//                    MnSetAplikasi.setEnabled(var.getmanajemen());
-//                    MnSetAdmin.setEnabled(var.getadmin());
-//                    MnPenujang.setEnabled(var.getmanajemen());
-//                    MnSetOtoLok.setEnabled(var.getmanajemen());
-//                    MnSetKmrInp.setEnabled(var.getmanajemen());
-//                    MnSetHargaKamar.setEnabled(var.getmanajemen());
-//                    MnSetEmbTus.setEnabled(var.getmanajemen());
-//                    MnSetUser.setEnabled(var.getuser());
-//                    MnSetTrackerLog.setEnabled(var.getmanajemen());
-//                    MnDisplayAntrian.setEnabled(var.getmanajemen());
-//                    MnSetHargaObt.setEnabled(var.getmanajemen());
-//                    MnSetObtRalan.setEnabled(false);
-//                    MnSetObtRnp.setEnabled(var.getmanajemen());
-//                    MnSetPenggTrf.setEnabled(var.getmanajemen());
-//                    MnSetOtoRalan.setEnabled(var.getmanajemen());
-//                    MnBiayaHarian.setEnabled(var.getmanajemen());
-//                    MnBiayaMskSkl.setEnabled(var.getmanajemen());
-//                    MnSetRM.setEnabled(var.getmanajemen());
-//                    MnSetBilling.setEnabled(var.getmanajemen());
-//                    MnClosingKsr.setEnabled(var.getmanajemen());
-//                    MnSetLambtPres.setEnabled(var.getmanajemen());
+//                    if(var.getadmin() == true){
+//                        MnSetAplikasi.setEnabled(true);
+//                        MnSetAdmin.setEnabled(true);
+//                        MnPenujang.setEnabled(true);
+//                        MnSetOtoLok.setEnabled(true);
+//                        MnSetKmrInp.setEnabled(true);
+//                        MnSetHargaKamar.setEnabled(true);
+//                        MnSetEmbTus.setEnabled(true);
+//                        MnSetUser.setEnabled(true);
+//                        MnSetTrackerLog.setEnabled(true);
+//                        MnDisplayAntrian.setEnabled(true);
+//                        MnSetHargaObt.setEnabled(true);
+//                        MnSetObtRalan.setEnabled(true);
+//                        MnSetObtRnp.setEnabled(true);
+//                        MnSetPenggTrf.setEnabled(true);
+//                        MnSetOtoRalan.setEnabled(true);
+//                        MnBiayaHarian.setEnabled(true);
+//                        MnBiayaMskSkl.setEnabled(true);
+//                        MnSetRM.setEnabled(true);
+//                        MnSetBilling.setEnabled(true);
+//                        MnClosingKsr.setEnabled(true);
+//                        MnSetLambtPres.setEnabled(true);
+//                    }
                     //Jong Source end
-
-//                    btnToolIGD.setEnabled(var.getmanajemen());
                     Sequel.menyimpan("tracker","'"+edAdmin.getText()+"',current_date(),current_time()","Login");
                 }else if((var.getjml1()==0)&&(var.getjml2()==0)){
                     JOptionPane.showMessageDialog(null,"Maaf, Gagal login. ID User atau password ada yang salah ...!");

@@ -12,6 +12,7 @@
 package presensi;
 import fungsi.WarnaTable;
 import fungsi.batasInput;
+import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -77,7 +78,7 @@ public final class DlgBarcode extends javax.swing.JDialog {
         Bcd.setDocument(new batasInput((int)25).getKata(Bcd));
         
         TCari.setDocument(new batasInput((int)100).getKata(TCari));
-        if(koneksiDB.cariCepat().equals("aktif")){
+        if(config.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {tampil();}

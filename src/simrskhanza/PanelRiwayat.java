@@ -7,6 +7,7 @@ package simrskhanza;
 
 import fungsi.WarnaTable;
 import fungsi.koneksiDB;
+import fungsi.config;
 import fungsi.sekuel;
 import fungsi.validasi;
 import fungsi.var;
@@ -4006,7 +4007,7 @@ public class PanelRiwayat extends widget.panelisi {
                                              "<tr>"+
                                                 "<td valign='top' align='center'>"+w+"</td>"+
                                                 "<td valign='top'>"+rs3.getString("tgl_periksa")+" "+rs3.getString("jam")+"</td>"+
-                                                "<td valign='top'><a href='http://"+koneksiDB.HOSTHYBRIDWEB()+":"+koneksiDB.PORTWEB()+"/"+koneksiDB.HYBRIDWEB()+"/radiologi/"+rs3.getString("lokasi_gambar")+"'>"+rs3.getString("lokasi_gambar").replaceAll("pages/upload/","")+"</a></td>"+
+                                                "<td valign='top'><a href='http://"+config.HOSTHYBRIDWEB()+":"+config.PORTWEB()+"/"+config.HYBRIDWEB()+"/radiologi/"+rs3.getString("lokasi_gambar")+"'>"+rs3.getString("lokasi_gambar").replaceAll("pages/upload/","")+"</a></td>"+
                                              "</tr>"); 
                                         w++;
                                     }
@@ -4411,7 +4412,7 @@ public class PanelRiwayat extends widget.panelisi {
                                         htmlContent.append(
                                              "<tr>"+
                                                 "<td valign='top' align='center'>"+w+"</td>"+
-                                                "<td valign='top'><a href='http://"+koneksiDB.HOSTHYBRIDWEB()+":"+koneksiDB.PORTWEB()+"/"+koneksiDB.HYBRIDWEB()+"/berkasrawat/"+rs3.getString("lokasi_file")+"'>"+rs3.getString("nama").replaceAll("pages/upload/","")+"</a></td>"+
+                                                "<td valign='top'><a href='http://"+config.HOSTHYBRIDWEB()+":"+config.PORTWEB()+"/"+config.HYBRIDWEB()+"/berkasrawat/"+rs3.getString("lokasi_file")+"'>"+rs3.getString("nama").replaceAll("pages/upload/","")+"</a></td>"+
                                              "</tr>"); 
                                         w++;
                                     }
@@ -6208,7 +6209,7 @@ public class PanelRiwayat extends widget.panelisi {
                                              "<tr>"+
                                                 "<td valign='top' align='center'>"+w+"</td>"+
                                                 "<td valign='top'>"+rs3.getString("tgl_periksa")+" "+rs3.getString("jam")+"</td>"+
-                                                "<td valign='top' align='center'><a href='http://"+koneksiDB.HOSTHYBRIDWEB()+":"+koneksiDB.PORTWEB()+"/"+koneksiDB.HYBRIDWEB()+"/radiologi/"+rs3.getString("lokasi_gambar")+"'><img alt='Gambar Radiologi' src='http://"+koneksiDB.HOSTHYBRIDWEB()+":"+koneksiDB.PORTWEB()+"/"+koneksiDB.HYBRIDWEB()+"/radiologi/"+rs3.getString("lokasi_gambar")+"' width='450' height='450'/></a></td>"+
+                                                "<td valign='top' align='center'><a href='http://"+config.HOSTHYBRIDWEB()+":"+config.PORTWEB()+"/"+config.HYBRIDWEB()+"/radiologi/"+rs3.getString("lokasi_gambar")+"'><img alt='Gambar Radiologi' src='http://"+config.HOSTHYBRIDWEB()+":"+config.PORTWEB()+"/"+config.HYBRIDWEB()+"/radiologi/"+rs3.getString("lokasi_gambar")+"' width='450' height='450'/></a></td>"+
                                              "</tr>"); 
                                         w++;
                                     }
@@ -7504,7 +7505,7 @@ public class PanelRiwayat extends widget.panelisi {
                                         htmlContent.append(
                                              "<tr>"+
                                                 "<td valign='top' align='center'>"+w+"</td>"+
-                                                "<td valign='top'><a href='http://"+koneksiDB.HOSTHYBRIDWEB()+":"+koneksiDB.PORTWEB()+"/"+koneksiDB.HYBRIDWEB()+"/berkasrawat/"+rs3.getString("lokasi_file")+"'>"+rs3.getString("nama").replaceAll("pages/upload/","")+"</a></td>"+
+                                                "<td valign='top'><a href='http://"+config.HOSTHYBRIDWEB()+":"+config.PORTWEB()+"/"+config.HYBRIDWEB()+"/berkasrawat/"+rs3.getString("lokasi_file")+"'>"+rs3.getString("nama").replaceAll("pages/upload/","")+"</a></td>"+
                                              "</tr>"); 
                                         w++;
                                     }
@@ -11044,7 +11045,7 @@ public class PanelRiwayat extends widget.panelisi {
                                              "<tr>"+
                                                 "<td valign='top' align='center'>"+w+"</td>"+
                                                 "<td valign='top'>"+rs3.getString("tgl_periksa")+" "+rs3.getString("jam")+"</td>"+
-                                                "<td valign='top' align='center'><a href='http://"+koneksiDB.HOSTHYBRIDWEB()+":"+koneksiDB.PORTWEB()+"/"+koneksiDB.HYBRIDWEB()+"/radiologi/"+rs3.getString("lokasi_gambar")+"'><img alt='Gambar Radiologi' src='http://"+koneksiDB.HOSTHYBRIDWEB()+":"+koneksiDB.PORTWEB()+"/"+koneksiDB.HYBRIDWEB()+"/radiologi/"+rs3.getString("lokasi_gambar")+"' width='450' height='450'/></a></td>"+
+                                                "<td valign='top' align='center'><a href='http://"+config.HOSTHYBRIDWEB()+":"+config.PORTWEB()+"/"+config.HYBRIDWEB()+"/radiologi/"+rs3.getString("lokasi_gambar")+"'><img alt='Gambar Radiologi' src='http://"+config.HOSTHYBRIDWEB()+":"+config.PORTWEB()+"/"+config.HYBRIDWEB()+"/radiologi/"+rs3.getString("lokasi_gambar")+"' width='450' height='450'/></a></td>"+
                                              "</tr>"); 
                                         w++;
                                     }
@@ -11449,7 +11450,7 @@ public class PanelRiwayat extends widget.panelisi {
                                         htmlContent.append(
                                              "<tr>"+
                                                 "<td valign='top' align='center'>"+w+"</td>"+
-                                                "<td valign='top'><a href='http://"+koneksiDB.HOSTHYBRIDWEB()+":"+koneksiDB.PORTWEB()+"/"+koneksiDB.HYBRIDWEB()+"/berkasrawat/"+rs3.getString("lokasi_file")+"'>"+rs3.getString("nama").replaceAll("pages/upload/","")+"</a></td>"+
+                                                "<td valign='top'><a href='http://"+config.HOSTHYBRIDWEB()+":"+config.PORTWEB()+"/"+config.HYBRIDWEB()+"/berkasrawat/"+rs3.getString("lokasi_file")+"'>"+rs3.getString("nama").replaceAll("pages/upload/","")+"</a></td>"+
                                              "</tr>"); 
                                         w++;
                                     }
