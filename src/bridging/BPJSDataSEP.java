@@ -87,7 +87,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
     private BPJSCekReferensiPropinsi propinsi=new BPJSCekReferensiPropinsi(null,false);
     private BPJSCekReferensiKabupaten kabupaten=new BPJSCekReferensiKabupaten(null,false);
     private BPJSCekReferensiKecamatan kecamatan=new BPJSCekReferensiKecamatan(null,false);
-    private String prb="",no_peserta="",link="", requestJson,URL="",jkel="",duplikat="",user="",penjamin="",jasaraharja="",BPJS="",Taspen="",Asabri="",kddokter="",tglkkl="0000-00-00";
+    private String prb="",no_peserta="", requestJson,URL="",jkel="",duplikat="",user="",penjamin="",jasaraharja="",BPJS="",Taspen="",Asabri="",kddokter="",tglkkl="0000-00-00";
     private HttpHeaders headers;
     private HttpEntity requestEntity;
     private ObjectMapper mapper = new ObjectMapper();
@@ -95,6 +95,8 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
     private JsonNode nameNode;
     private JsonNode response;
     private BPJSCekHistoriPelayanan historiPelayanan=new BPJSCekHistoriPelayanan(null,false);
+    private JsonNode res1;
+    private JsonNode respon;
     /** Creates new form DlgRujuk
      * @param parent
      * @param modal */
@@ -860,12 +862,6 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
             user=var.getkode();
         }
         
-        try {
-            prop.loadFromXML(new FileInputStream("setting/config.xml")); 
-            link=prop.getProperty("URLAPIBPJS");
-        } catch (Exception e) {
-            System.out.println("E : "+e);
-        }
     }
 
 
@@ -1316,7 +1312,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         internalFrame5.add(jLabel26);
         jLabel26.setBounds(6, 32, 100, 23);
 
-        TanggalPulang.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "31-07-2021 14:47:22" }));
+        TanggalPulang.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "22-08-2021 15:38:20" }));
         TanggalPulang.setDisplayFormat("dd-MM-yyyy HH:mm:ss");
         TanggalPulang.setName("TanggalPulang"); // NOI18N
         TanggalPulang.setOpaque(false);
@@ -1370,7 +1366,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         jLabel30.setBounds(0, 25, 102, 23);
 
         TanggalRujukKeluar.setForeground(new java.awt.Color(50, 70, 50));
-        TanggalRujukKeluar.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "31-07-2021" }));
+        TanggalRujukKeluar.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "22-08-2021" }));
         TanggalRujukKeluar.setDisplayFormat("dd-MM-yyyy");
         TanggalRujukKeluar.setName("TanggalRujukKeluar"); // NOI18N
         TanggalRujukKeluar.setOpaque(false);
@@ -1830,8 +1826,6 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         internalFrame1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 245, 235)), "::[ Data Bridging SEP BPJS ]::", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(50, 50, 50))); // NOI18N
         internalFrame1.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
         internalFrame1.setName("internalFrame1"); // NOI18N
-        internalFrame1.setWarnaAtas(new java.awt.Color(255, 255, 255));
-        internalFrame1.setWarnaBawah(new java.awt.Color(255, 255, 255));
         internalFrame1.setLayout(new java.awt.BorderLayout(1, 1));
 
         TabRawat.setBackground(new java.awt.Color(255, 255, 255));
@@ -1855,8 +1849,6 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         FormInput.setBorder(null);
         FormInput.setName("FormInput"); // NOI18N
         FormInput.setPreferredSize(new java.awt.Dimension(100, 257));
-        FormInput.setWarnaAtas(new java.awt.Color(255, 255, 255));
-        FormInput.setWarnaBawah(new java.awt.Color(255, 255, 255));
         FormInput.setLayout(null);
 
         jLabel4.setText("No.Rawat :");
@@ -1906,7 +1898,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         jLabel20.setBounds(187, 102, 65, 23);
 
         TanggalSEP.setForeground(new java.awt.Color(50, 70, 50));
-        TanggalSEP.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "31-07-2021" }));
+        TanggalSEP.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "22-08-2021" }));
         TanggalSEP.setDisplayFormat("dd-MM-yyyy");
         TanggalSEP.setName("TanggalSEP"); // NOI18N
         TanggalSEP.setOpaque(false);
@@ -1926,7 +1918,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         jLabel22.setBounds(0, 102, 90, 23);
 
         TanggalRujuk.setForeground(new java.awt.Color(50, 70, 50));
-        TanggalRujuk.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "31-07-2021" }));
+        TanggalRujuk.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "22-08-2021" }));
         TanggalRujuk.setDisplayFormat("dd-MM-yyyy");
         TanggalRujuk.setName("TanggalRujuk"); // NOI18N
         TanggalRujuk.setOpaque(false);
@@ -2335,7 +2327,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         jLabel38.setBounds(571, 132, 58, 23);
 
         TanggalKKL.setForeground(new java.awt.Color(50, 70, 50));
-        TanggalKKL.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "31-07-2021" }));
+        TanggalKKL.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "22-08-2021" }));
         TanggalKKL.setDisplayFormat("dd-MM-yyyy");
         TanggalKKL.setName("TanggalKKL"); // NOI18N
         TanggalKKL.setOpaque(false);
@@ -2593,7 +2585,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
 
         btnRujukan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         btnRujukan.setMnemonic('X');
-        btnRujukan.setToolTipText("Alt+X");
+        btnRujukan.setToolTipText("Cari Rujukan");
         btnRujukan.setName("btnRujukan"); // NOI18N
         btnRujukan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2645,8 +2637,6 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         panelGlass9.setBorder(null);
         panelGlass9.setName("panelGlass9"); // NOI18N
         panelGlass9.setPreferredSize(new java.awt.Dimension(44, 44));
-        panelGlass9.setWarnaAtas(new java.awt.Color(255, 255, 255));
-        panelGlass9.setWarnaBawah(new java.awt.Color(255, 255, 255));
         panelGlass9.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
         jLabel19.setText("Tgl. SEP :");
@@ -2655,7 +2645,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         panelGlass9.add(jLabel19);
 
         DTPCari1.setForeground(new java.awt.Color(50, 70, 50));
-        DTPCari1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "31-07-2021" }));
+        DTPCari1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "22-08-2021" }));
         DTPCari1.setDisplayFormat("dd-MM-yyyy");
         DTPCari1.setName("DTPCari1"); // NOI18N
         DTPCari1.setOpaque(false);
@@ -2669,7 +2659,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         panelGlass9.add(jLabel21);
 
         DTPCari2.setForeground(new java.awt.Color(50, 70, 50));
-        DTPCari2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "31-07-2021" }));
+        DTPCari2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "22-08-2021" }));
         DTPCari2.setDisplayFormat("dd-MM-yyyy");
         DTPCari2.setName("DTPCari2"); // NOI18N
         DTPCari2.setOpaque(false);
@@ -2727,8 +2717,6 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         panelGlass8.setBackground(new java.awt.Color(255, 255, 255));
         panelGlass8.setName("panelGlass8"); // NOI18N
         panelGlass8.setPreferredSize(new java.awt.Dimension(44, 54));
-        panelGlass8.setWarnaAtas(new java.awt.Color(255, 255, 255));
-        panelGlass8.setWarnaBawah(new java.awt.Color(255, 255, 255));
         panelGlass8.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
         BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
@@ -3026,7 +3014,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
                     headers.add("X-Cons-ID",prop.getProperty("CONSIDAPIBPJS"));
                     headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));            
                     headers.add("X-Signature",api.getHmac());
-                    URL = link+"/SEP/1.1/Update";	
+                    URL = config.linkBpjs()+"/SEP/1.1/Update";	
                     requestJson ="{" +
                                   "\"request\":" +
                                      "{" +
@@ -3446,7 +3434,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
                 headers.add("X-Cons-ID",prop.getProperty("CONSIDAPIBPJS"));
                 headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));            
                 headers.add("X-Signature",api.getHmac());
-                URL = link+"/Sep/updtglplg";	
+                URL = config.linkBpjs()+"/Sep/updtglplg";	
                 requestJson ="{" +
                               "\"request\":" +
                                  "{" +
@@ -3528,7 +3516,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
                 headers.add("X-Cons-ID",prop.getProperty("CONSIDAPIBPJS"));
                 headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));            
                 headers.add("X-Signature",api.getHmac());
-                URL = link+"/Sep/pengajuanSEP";	
+                URL = config.linkBpjs()+"/Sep/pengajuanSEP";	
                 requestJson =" {" +
                                     "\"request\": {" +
                                         "\"t_sep\": {" +
@@ -3636,7 +3624,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
                 headers.add("X-Cons-ID",prop.getProperty("CONSIDAPIBPJS"));
                 headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));            
                 headers.add("X-Signature",api.getHmac());
-                URL = link+"/Sep/aprovalSEP";	
+                URL = config.linkBpjs()+"/Sep/aprovalSEP";	
                 requestJson =" {" +
                                     "\"request\": {" +
                                         "\"t_sep\": {" +
@@ -3709,12 +3697,8 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
             Valid.textKosong(KdPoli1, "Poli Tujuan");        
         }else{  
             try {
-                headers = new HttpHeaders();
-                headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-                headers.add("X-Cons-ID",prop.getProperty("CONSIDAPIBPJS"));
-                headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));            
-                headers.add("X-Signature",api.getHmac());
-                URL = link+"/Rujukan/insert";	
+                headers = api.header("form");
+                URL = config.linkBpjs()+"/Rujukan/insert";	
                 requestJson ="{" +
                                 "\"request\": {" +
                                     "\"t_rujukan\": {" +
@@ -4012,7 +3996,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
                     penjamin = penjamin.substring(0,penjamin.length() - 1);
                 }
                 
-                URL = link+"/SEP/1.1/insert";	
+                URL = config.linkBpjs()+"/SEP/1.1/insert";	
 
                 tglkkl="0000-00-00";
                 if(LakaLantas.getSelectedIndex()==1){
@@ -4046,12 +4030,8 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
     private void BtnCari1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCari1ActionPerformed
         if(!NoSEP.getText().equals("")){
             try {
-                headers = new HttpHeaders();
-                headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-                headers.add("X-Cons-ID",prop.getProperty("CONSIDAPIBPJS"));
-                headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));            
-                headers.add("X-Signature",api.getHmac());
-                URL = link+"/SEP/"+NoSEP.getText();	
+                headers = api.header("form");
+                URL = config.linkBpjs()+"/SEP/"+NoSEP.getText();	
                 requestEntity = new HttpEntity(headers);
                 //System.out.println(rest.exchange(URL, HttpMethod.GET, requestEntity, String.class).getBody());
                 root = mapper.readTree(api.getRest().exchange(URL, HttpMethod.GET, requestEntity, String.class).getBody());
@@ -5033,12 +5013,8 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
         restTemplate.setRequestFactory(factory);
         
         try {
-            headers = new HttpHeaders();
-            headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-            headers.add("X-Cons-ID",prop.getProperty("CONSIDAPIBPJS"));
-            headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));            
-            headers.add("X-Signature",api.getHmac());
-            URL = link+"/SEP/Delete";
+            headers = api.header("form");
+            URL = config.linkBpjs()+"/SEP/Delete";
             requestJson ="{\"request\":{\"t_sep\":{\"noSep\":\""+tbObat.getValueAt(tbObat.getSelectedRow(),0).toString()+"\",\"user\":\""+user+"\"}}}";            
             requestEntity = new HttpEntity(requestJson,headers);
             root = mapper.readTree(restTemplate.exchange(URL, HttpMethod.DELETE,requestEntity, String.class).getBody());
@@ -5093,12 +5069,8 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
                 tglkkl=Valid.SetTgl(TanggalKKL.getSelectedItem()+"");
             }
             
-            headers = new HttpHeaders();
-            headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-            headers.add("X-Cons-ID",prop.getProperty("CONSIDAPIBPJS"));
-            headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));            
-            headers.add("X-Signature",api.getHmac());
-            URL = link+"/SEP/1.1/insert";            
+            headers = api.header("form");
+            URL = config.linkBpjs()+"/SEP/1.1/insert";            
             requestJson ="{" +
                           "\"request\":" +
                              "{" +
@@ -5243,22 +5215,20 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
 
     public void tampilFaskes1() {
         try {
-            prop.loadFromXML(new FileInputStream("setting/config.xml"));
-            String URL = prop.getProperty("URLAPIBPJS")+"/Rujukan/Peserta/"+NoKartu.getText();
+            String URL = config.linkBpjs()+"/Rujukan/Peserta/"+NoKartu.getText();
 
-            HttpHeaders headers = new HttpHeaders();
-            headers.setContentType(MediaType.APPLICATION_JSON);
-	    headers.add("X-Cons-ID",prop.getProperty("CONSIDAPIBPJS"));
-	    headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));
-	    headers.add("X-Signature",api.getHmac());
-
+            headers = api.header("json");
 	    HttpEntity requestEntity = new HttpEntity(headers);
 	    ObjectMapper mapper = new ObjectMapper();
             JsonNode root = mapper.readTree(api.getRest().exchange(URL, HttpMethod.GET, requestEntity, String.class).getBody());
             JsonNode nameNode = root.path("metaData");
             if(nameNode.path("code").asText().equals("200")){
                 Valid.tabelKosong(tabMode1);
-                JsonNode response = root.path("response").path("rujukan");
+                res1 = root.path("response");
+                String res = api.decrypt(res1.asText());
+                String lz = api.lzDecrypt(res);
+                respon = mapper.readTree(lz);
+                JsonNode response = respon.path("rujukan");
                 tabMode1.addRow(new Object[]{
                     "1",response.path("noKunjungan").asText(),
                     response.path("tglKunjungan").asText(),
@@ -5285,22 +5255,20 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
 
     public void tampilFaskes2() {
     try {
-            prop.loadFromXML(new FileInputStream("setting/config.xml"));
-            String URL = prop.getProperty("URLAPIBPJS")+"/Rujukan/RS/Peserta/"+NoKartu.getText();
+            String URL = config.linkBpjs()+"/Rujukan/RS/Peserta/"+NoKartu.getText();
 
-            HttpHeaders headers = new HttpHeaders();
-            headers.setContentType(MediaType.APPLICATION_JSON);
-	    headers.add("X-Cons-ID",prop.getProperty("CONSIDAPIBPJS"));
-	    headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));
-	    headers.add("X-Signature",api.getHmac());
-
+            headers = api.header("json");
 	    HttpEntity requestEntity = new HttpEntity(headers);
 	    ObjectMapper mapper = new ObjectMapper();
             JsonNode root = mapper.readTree(api.getRest().exchange(URL, HttpMethod.GET, requestEntity, String.class).getBody());
             JsonNode nameNode = root.path("metaData");
             if(nameNode.path("code").asText().equals("200")){
                 Valid.tabelKosong(tabMode2);
-                JsonNode response = root.path("response").path("rujukan");
+                res1 = root.path("response");
+                String res = api.decrypt(res1.asText());
+                String lz = api.lzDecrypt(res);
+                respon = mapper.readTree(lz);
+                JsonNode response = respon.path("rujukan");
                 tabMode2.addRow(new Object[]{
                     "1",response.path("noKunjungan").asText(),
                     response.path("tglKunjungan").asText(),
