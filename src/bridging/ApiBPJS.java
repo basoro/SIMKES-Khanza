@@ -60,9 +60,15 @@ public class ApiBPJS {
         return res;
     }
 
-    public HttpHeaders header(){
+    public HttpHeaders header(String note){
+        String appxform = "Application/x-www-form-urlencoded";
+        String appjson = "application/json";
         HttpHeaders headers = new HttpHeaders();
-        headers.setContentType(MediaType.APPLICATION_JSON);
+        if(note == "form"){
+            headers.add("Content-Type",appxform);
+        }else if(note == "json"){
+            headers.add("Content-Type",appjson);
+        }
         headers.add("X-Cons-ID",config.ApiConsBPJS());
         headers.add("X-Timestamp",String.valueOf(GetUTCdatetimeAsString()));
         headers.add("X-Signature",getHmac());

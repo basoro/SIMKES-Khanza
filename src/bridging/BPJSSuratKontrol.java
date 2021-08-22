@@ -66,7 +66,7 @@ public class BPJSSuratKontrol extends javax.swing.JDialog {
     private JsonNode root;
     private JsonNode nameNode;
     private JsonNode response;
-    private String link="",requestJson="",URL="",user="";
+    private String requestJson="",URL="",user="";
     private ApiBPJS api=new ApiBPJS();
 
     /** Creates new form DlgPemberianInfus
@@ -204,12 +204,6 @@ public class BPJSSuratKontrol extends javax.swing.JDialog {
             user=var.getkode();
         }
         
-        try {
-            prop.loadFromXML(new FileInputStream("setting/config.xml"));
-            link = prop.getProperty("URLAPIBPJS");
-        } catch (Exception e) {
-            System.out.println("E : "+e);
-        }
     }
  
     /** This method is called from within the constructor to
@@ -866,12 +860,8 @@ public class BPJSSuratKontrol extends javax.swing.JDialog {
             Valid.textKosong(KdPoli,"Poli");
         }else{
             try {
-                headers = new HttpHeaders();
-                headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-                headers.add("X-Cons-ID",prop.getProperty("CONSIDAPIBPJS"));
-                headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));            
-                headers.add("X-Signature",api.getHmac());
-                URL = link+"/RencanaKontrol/insert";            
+                headers = api.header("form");
+                URL = config.linkBpjs()+"/RencanaKontrol/insert";            
                 requestJson ="{" +
                                 "\"request\": {" +
                                     "\"noSEP\":\""+NoSEP.getText()+"\"," +
@@ -1102,12 +1092,8 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
         }else{
             if(tbObat.getSelectedRow()!= -1){
                 try {
-                    headers = new HttpHeaders();
-                    headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-                headers.add("X-Cons-ID",prop.getProperty("CONSIDAPIBPJS"));
-                    headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));            
-                    headers.add("X-Signature",api.getHmac());
-                    URL = link+"/RencanaKontrol/Update";            
+                    headers = api.header("form");
+                    URL = config.linkBpjs()+"/RencanaKontrol/Update";            
                     requestJson ="{" +
                                     "\"request\": {" +
                                         "\"noSuratKontrol\":\""+NoSurat.getText()+"\"," +
@@ -1533,12 +1519,8 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
         restTemplate.setRequestFactory(factory);
         
         try {
-            headers = new HttpHeaders();
-            headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-            headers.add("X-Cons-ID",prop.getProperty("CONSIDAPIBPJS"));
-            headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));            
-            headers.add("X-Signature",api.getHmac());
-            URL = link+"/RencanaKontrol/Delete";
+            headers = api.header("form");
+            URL = config.linkBpjs()+"/RencanaKontrol/Delete";
             requestJson ="{\"request\":{\"t_suratkontrol\":{\"noSuratKontrol\":\""+NoSurat.getText()+"\",\"user\":\""+user+"\"}}}";            
             requestEntity = new HttpEntity(requestJson,headers);
             root = mapper.readTree(restTemplate.exchange(URL, HttpMethod.DELETE,requestEntity, String.class).getBody());

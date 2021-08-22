@@ -40,6 +40,7 @@ public class BPJSCekNIK {
     private JsonNode root;
     private JsonNode nameNode;
     private JsonNode response;
+    private JsonNode res1;
         
     public BPJSCekNIK(){
         super();
@@ -48,7 +49,7 @@ public class BPJSCekNIK {
     
     public void tampil(String nik) {
         try {
-            headers = api.header();
+            headers = api.header("json");
 	    requestEntity = new HttpEntity(headers);
             URL = config.linkBpjs()+"/Peserta/nik/"+nik+"/tglSEP/"+dateFormat.format(date);	
             root = mapper.readTree(api.getRest().exchange(URL, HttpMethod.GET, requestEntity, String.class).getBody());
@@ -57,10 +58,10 @@ public class BPJSCekNIK {
             System.out.println("message : "+nameNode.path("message").asText());
             informasi=nameNode.path("message").asText();
             if(nameNode.path("code").asText().equals("200")){
-                response = root.path("response");
-                String res = api.decrypt(response.asText());
+                res1 = root.path("response");
+                String res = api.decrypt(res1.asText());
                 String lz = api.lzDecrypt(res);
-                System.out.println(lz);
+                response = mapper.readTree(lz);
                 this.nik=response.path("peserta").path("nik").asText();
                 nama=response.path("peserta").path("nama").asText();
                 cobnmAsuransi=response.path("peserta").path("cob").path("nmAsuransi").asText();
