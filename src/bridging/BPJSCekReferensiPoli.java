@@ -55,6 +55,7 @@ public final class BPJSCekReferensiPoli extends javax.swing.JDialog {
     private JsonNode root;
     private JsonNode nameNode;
     private JsonNode response;
+    private JsonNode res1;
 
     /** Creates new form DlgKamar
      * @param parent
@@ -338,11 +339,7 @@ public final class BPJSCekReferensiPoli extends javax.swing.JDialog {
 
     public void tampil(String poli) {
         try {
-            headers = new HttpHeaders();
-            headers.setContentType(MediaType.APPLICATION_JSON);
-	    headers.add("X-Cons-ID",prop.getProperty("CONSIDAPIBPJS"));
-	    headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));            
-	    headers.add("X-Signature",api.getHmac());
+            headers = api.header("json");
             requestEntity = new HttpEntity(headers);
             URL = link+"/referensi/poli/"+poli;	
             //System.out.println(rest.exchange(URL, HttpMethod.GET, requestEntity, String.class).getBody());
@@ -350,7 +347,14 @@ public final class BPJSCekReferensiPoli extends javax.swing.JDialog {
             nameNode = root.path("metaData");
             if(nameNode.path("code").asText().equals("200")){
                 Valid.tabelKosong(tabMode);
-                response = root.path("response");
+                if(config.versionBpjs().equals("2")){
+                    res1 = root.path("response");
+                    String res = api.decrypt(res1.asText());
+                    String lz = api.lzDecrypt(res);
+                    response = mapper.readTree(lz);
+                }else{
+                    response = root.path("response");
+                }
                 if(response.path("poli").isArray()){
                     i=1;
                     for(JsonNode list:response.path("poli")){

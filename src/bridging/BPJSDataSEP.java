@@ -5132,7 +5132,15 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
             nameNode = root.path("metaData");
             System.out.println("code : "+nameNode.path("code").asText());
             System.out.println("message : "+nameNode.path("message").asText());
-            response = root.path("response").path("sep").path("noSep");
+            if(config.versionBpjs().equals("2")){
+                res1 = res1 = root.path("response");
+                String res = api.decrypt(res1.asText());
+                String lz = api.lzDecrypt(res);
+                response = mapper.readTree(lz);
+                response = response.path("sep").path("noSep");
+            }else{
+                response = root.path("response").path("sep").path("noSep");
+            }
             if(nameNode.path("code").asText().equals("200")){
                  System.out.println("SEP : "+response.asText());
                  if(Sequel.menyimpantf("bridging_sep","?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?","SEP",44,new String[]{
@@ -5215,6 +5223,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
 
     public void tampilFaskes1() {
         try {
+            JsonNode response;
             String URL = config.linkBpjs()+"/Rujukan/Peserta/"+NoKartu.getText();
 
             headers = api.header("json");
@@ -5224,11 +5233,15 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
             JsonNode nameNode = root.path("metaData");
             if(nameNode.path("code").asText().equals("200")){
                 Valid.tabelKosong(tabMode1);
-                res1 = root.path("response");
-                String res = api.decrypt(res1.asText());
-                String lz = api.lzDecrypt(res);
-                respon = mapper.readTree(lz);
-                JsonNode response = respon.path("rujukan");
+                if(config.versionBpjs().equals("2")){
+                    res1 = root.path("response");
+                    String res = api.decrypt(res1.asText());
+                    String lz = api.lzDecrypt(res);
+                    respon = mapper.readTree(lz);
+                    response = respon.path("rujukan");
+                }else{
+                    response = root.path("response").path("rujukan");
+                }
                 tabMode1.addRow(new Object[]{
                     "1",response.path("noKunjungan").asText(),
                     response.path("tglKunjungan").asText(),
@@ -5264,11 +5277,15 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
             JsonNode nameNode = root.path("metaData");
             if(nameNode.path("code").asText().equals("200")){
                 Valid.tabelKosong(tabMode2);
-                res1 = root.path("response");
-                String res = api.decrypt(res1.asText());
-                String lz = api.lzDecrypt(res);
-                respon = mapper.readTree(lz);
-                JsonNode response = respon.path("rujukan");
+                if(config.versionBpjs().equals("2")){
+                    res1 = root.path("response");
+                    String res = api.decrypt(res1.asText());
+                    String lz = api.lzDecrypt(res);
+                    respon = mapper.readTree(lz);
+                    response = respon.path("rujukan");
+                }else{
+                    response = root.path("response").path("rujukan");
+                }
                 tabMode2.addRow(new Object[]{
                     "1",response.path("noKunjungan").asText(),
                     response.path("tglKunjungan").asText(),

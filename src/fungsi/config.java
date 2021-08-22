@@ -14,7 +14,7 @@ import java.util.Properties;
  */
 public final class config {
     
-    private static String caricepat = "", var = "", Key ="", Consid="", PEMBULATANHARGAOBAT="", namakamar="", link ="";
+    private static String caricepat = "", var = "", Key ="", Consid="", PEMBULATANHARGAOBAT="", namakamar="", link ="",version="";
     private static final Properties prop = new Properties();
     
     public static String cariCepat() {
@@ -96,6 +96,17 @@ public final class config {
             link = "";
         }
         return link;
+    }
+    
+    public static String versionBpjs(){
+        try {
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            version = prop.getProperty("VERSIONAPIBPJS");   
+        } catch (Exception e) {
+            System.out.println("E : "+e);
+            version = "";
+        }
+        return version;
     }
     
     public static String bulatHarga(){
