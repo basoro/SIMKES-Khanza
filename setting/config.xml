@@ -9,6 +9,7 @@
     <entry key="ANTRIAN">sender</entry>
     <entry key="MENUTRANSPARAN">yes</entry>
     <entry key="URLAPIBPJS">https://dvlp.bpjs-kesehatan.go.id/vclaim-rest-1.1/</entry>
+    <entry key="VERSIONAPIBPJS">2</entry>
     <entry key="SECRETKEYAPIBPJS">B94WVwgabR9tf5/6YVNhWQ==</entry>
     <entry key="CONSIDAPIBPJS">EIKisfjSmUTqkJ8pLMNsGw==</entry>
     <entry key="URLAPIAPLICARE">http://dvlp.bpjs-kesehatan.go.id:8888/aplicaresws</entry>

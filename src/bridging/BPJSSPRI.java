@@ -15,7 +15,6 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
-import java.io.FileInputStream;
 import java.net.URI;
 import java.security.SecureRandom;
 import java.security.cert.CertificateException;
@@ -42,7 +41,6 @@ import org.junit.Test;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
-import org.springframework.http.MediaType;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.web.client.RestTemplate;
 
@@ -70,6 +68,7 @@ public class BPJSSPRI extends javax.swing.JDialog {
     private JsonNode response;
     private String requestJson="",URL="",user="";
     private ApiBPJS api=new ApiBPJS();
+    private JsonNode res1;
 
     /** Creates new form DlgPemberianInfus
      * @param parent
@@ -938,7 +937,15 @@ public class BPJSSPRI extends javax.swing.JDialog {
                 nameNode = root.path("metaData");
                 System.out.println("code : "+nameNode.path("code").asText());
                 System.out.println("message : "+nameNode.path("message").asText());
-                response = root.path("response").path("noSPRI");
+                if(config.versionBpjs().equals("2")){
+                    res1 = root.path("response");
+                    String res = api.decrypt(res1.asText());
+                    String lz = api.lzDecrypt(res);
+                    response = mapper.readTree(lz);
+                    response = response.path("noSPRI");
+                }else{
+                    response = root.path("response").path("noSPRI");
+                }
                 if(nameNode.path("code").asText().equals("200")){
                     if(Sequel.menyimpantf("bridging_surat_pri_bpjs","?,?,?,?,?,?,?,?,?,?","No.Surat",10,new String[]{
                             NoRawat.getText(),NoKartu.getText(),Valid.SetTgl(TanggalSurat.getSelectedItem()+""),response.asText(),Valid.SetTgl(TanggalKontrol.getSelectedItem()+""),KdDokter.getText(),NmDokter.getText(),KdPoli.getText(),NmPoli.getText(),Diagnosa.getText()

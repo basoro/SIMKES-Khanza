@@ -68,6 +68,7 @@ public class BPJSSuratKontrol extends javax.swing.JDialog {
     private JsonNode response;
     private String requestJson="",URL="",user="";
     private ApiBPJS api=new ApiBPJS();
+    private JsonNode res1;
 
     /** Creates new form DlgPemberianInfus
      * @param parent
@@ -877,7 +878,15 @@ public class BPJSSuratKontrol extends javax.swing.JDialog {
                 nameNode = root.path("metaData");
                 System.out.println("code : "+nameNode.path("code").asText());
                 System.out.println("message : "+nameNode.path("message").asText());
-                response = root.path("response").path("noSuratKontrol");
+                if(config.versionBpjs().equals("2")){
+                    res1 = root.path("response");
+                    String res = api.decrypt(res1.asText());
+                    String lz = api.lzDecrypt(res);
+                    response = mapper.readTree(lz);
+                    response = response.path("noSuratKontrol");
+                }else{
+                    response = root.path("response").path("noSuratKontrol");
+                }
                 if(nameNode.path("code").asText().equals("200")){
                     if(Sequel.menyimpantf("bridging_surat_kontrol_bpjs","?,?,?,?,?,?,?,?","No.Surat",8,new String[]{
                             NoSEP.getText(),Valid.SetTgl(TanggalSurat.getSelectedItem()+""),response.asText(),Valid.SetTgl(TanggalKontrol.getSelectedItem()+""),KdDokter.getText(),NmDokter.getText(),KdPoli.getText(),NmPoli.getText()
