@@ -55,10 +55,14 @@ public class BPJSCekNoKartu {
             System.out.println("message : "+nameNode.path("message").asText());
             informasi=nameNode.path("message").asText();
             if(nameNode.path("code").asText().equals("200")){
-                res1 = root.path("response");
-                String res = api.decrypt(res1.asText());
-                String lz = api.lzDecrypt(res);
-                response = mapper.readTree(lz);
+                if(koneksiDB.versionBpjs().equals("2")){
+                    res1 = root.path("response");
+                    String res = api.decrypt(res1.asText());
+                    String lz = api.lzDecrypt(res);
+                    response = mapper.readTree(lz);
+                }else{
+                    response = root.path("response");
+                }
                 nik=response.path("peserta").path("nik").asText();
                 nama=response.path("peserta").path("nama").asText();
                 cobnmAsuransi=response.path("peserta").path("cob").path("nmAsuransi").asText();

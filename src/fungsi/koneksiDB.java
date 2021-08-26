@@ -19,7 +19,7 @@ public final class koneksiDB {
     private static Connection connection=null;
     private static final Properties prop = new Properties();
     private static final MysqlDataSource dataSource=new MysqlDataSource();
-    private static String caricepat="",var="",Key ="", Consid="", link ="";
+    private static String caricepat="",var="",Key ="",Consid="",link ="",version="";
 
     public koneksiDB(){}
     public static Connection condb() {
@@ -149,4 +149,14 @@ public final class koneksiDB {
         return link;
     }
 
+    public static String versionBpjs(){
+        try {
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            version = prop.getProperty("VERSIONAPIBPJS");   
+        } catch (Exception e) {
+            System.out.println("E : "+e);
+            version = "";
+        }
+        return version;
+    }
 }
