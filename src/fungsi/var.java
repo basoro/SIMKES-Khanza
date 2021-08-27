@@ -26,7 +26,7 @@ public final class var {
 
     public static void setData(String user, String pass) {
        try {
-                ps=koneksi.prepareStatement("select * from admin where usere=AES_ENCRYPT(?,'nur') and passworde=AES_ENCRYPT(?,'windi')");
+                ps=koneksi.prepareStatement("select * from user where id_user=AES_ENCRYPT(?,'nur') and password=AES_ENCRYPT(?,'windi') AND admin = 'true'");
                 ps2=koneksi.prepareStatement("select * from user where id_user=AES_ENCRYPT(?,'nur') and password=AES_ENCRYPT(?,'windi')");
                 try {
                     ps.setString(1,user);
