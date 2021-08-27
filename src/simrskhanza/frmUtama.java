@@ -3,9 +3,8 @@ package simrskhanza;
 import bridging.BPJSCekReferensiFaskes;
 import bridging.BPJSCekReferensiPenyakit;
 import bridging.BPJSCekReferensiPoli;
-import bridging.BPJSCekRiwayatRujukanPCare;
-import bridging.BPJSCekNoRujukanPCare;
 import bridging.BPJSDataSEP;
+import bridging.BPJSCekDetailSEP2;
 import bridging.BPJSMonitoringKlaim;
 import informasi.InformasiAnalisaKamin;
 import inventory.DlgSuplier;
@@ -392,19 +391,12 @@ public class frmUtama extends javax.swing.JFrame {
         MnRekapPengadaan = new javax.swing.JMenuItem();
         MnRekapStok = new javax.swing.JMenuItem();
         jMenuBridging = new javax.swing.JMenu();
-        MnCekSKDPBPJS = new javax.swing.JMenuItem();
-        MnRiwPesBpjs = new javax.swing.JMenuItem();
-        MnRiwPesBpjs1 = new javax.swing.JMenuItem();
-        MnCekTglRujukan = new javax.swing.JMenuItem();
-        MnCekNoRujPCare = new javax.swing.JMenuItem();
-        MnCekNoRujRS = new javax.swing.JMenuItem();
-        MnCekRujKartuPCare = new javax.swing.JMenuItem();
-        MnCekRujKartuRS = new javax.swing.JMenuItem();
         MnRefDiagBpjs = new javax.swing.JMenuItem();
         MnRefPlBpjs = new javax.swing.JMenuItem();
         MnRefFaskes = new javax.swing.JMenuItem();
         MnBridging = new javax.swing.JMenuItem();
         MnMonitoringKlaim = new javax.swing.JMenuItem();
+        MnCekDetailSEP = new javax.swing.JMenuItem();
         jMenuLaporan = new javax.swing.JMenu();
         MenuLapObat = new javax.swing.JMenu();
         MnLapObtPoli = new javax.swing.JMenuItem();
@@ -2553,110 +2545,6 @@ public class frmUtama extends javax.swing.JFrame {
         jMenuBridging.setOpaque(false);
         jMenuBridging.setPreferredSize(new java.awt.Dimension(68, 30));
 
-        MnCekSKDPBPJS.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        MnCekSKDPBPJS.setForeground(new java.awt.Color(51, 51, 51));
-        MnCekSKDPBPJS.setText("Cek SKDP BPJS");
-        MnCekSKDPBPJS.setEnabled(false);
-        MnCekSKDPBPJS.setName("MnCekSKDPBPJS"); // NOI18N
-        MnCekSKDPBPJS.setPreferredSize(new java.awt.Dimension(200, 22));
-        MnCekSKDPBPJS.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MnCekSKDPBPJSActionPerformed(evt);
-            }
-        });
-        jMenuBridging.add(MnCekSKDPBPJS);
-
-        MnRiwPesBpjs.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        MnRiwPesBpjs.setForeground(new java.awt.Color(51, 51, 51));
-        MnRiwPesBpjs.setText("Riwayat Rujukan PCare");
-        MnRiwPesBpjs.setEnabled(false);
-        MnRiwPesBpjs.setName("MnRiwPesBpjs"); // NOI18N
-        MnRiwPesBpjs.setPreferredSize(new java.awt.Dimension(200, 22));
-        MnRiwPesBpjs.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MnRiwPesBpjsActionPerformed(evt);
-            }
-        });
-        jMenuBridging.add(MnRiwPesBpjs);
-
-        MnRiwPesBpjs1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        MnRiwPesBpjs1.setForeground(new java.awt.Color(51, 51, 51));
-        MnRiwPesBpjs1.setText("Riwayat Rujukan RS");
-        MnRiwPesBpjs1.setEnabled(false);
-        MnRiwPesBpjs1.setName("MnRiwPesBpjs1"); // NOI18N
-        MnRiwPesBpjs1.setPreferredSize(new java.awt.Dimension(200, 22));
-        MnRiwPesBpjs1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MnRiwPesBpjs1ActionPerformed(evt);
-            }
-        });
-        jMenuBridging.add(MnRiwPesBpjs1);
-
-        MnCekTglRujukan.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        MnCekTglRujukan.setForeground(new java.awt.Color(51, 51, 51));
-        MnCekTglRujukan.setText("Cek Tanggal Rujukan");
-        MnCekTglRujukan.setEnabled(false);
-        MnCekTglRujukan.setName("MnCekTglRujukan"); // NOI18N
-        MnCekTglRujukan.setPreferredSize(new java.awt.Dimension(200, 22));
-        MnCekTglRujukan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MnCekTglRujukanActionPerformed(evt);
-            }
-        });
-        jMenuBridging.add(MnCekTglRujukan);
-
-        MnCekNoRujPCare.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        MnCekNoRujPCare.setForeground(new java.awt.Color(51, 51, 51));
-        MnCekNoRujPCare.setText("Cek No. Rujukan PCare");
-        MnCekNoRujPCare.setEnabled(false);
-        MnCekNoRujPCare.setName("MnCekNoRujPCare"); // NOI18N
-        MnCekNoRujPCare.setPreferredSize(new java.awt.Dimension(200, 22));
-        MnCekNoRujPCare.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MnCekNoRujPCareActionPerformed(evt);
-            }
-        });
-        jMenuBridging.add(MnCekNoRujPCare);
-
-        MnCekNoRujRS.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        MnCekNoRujRS.setForeground(new java.awt.Color(51, 51, 51));
-        MnCekNoRujRS.setText("Cek No. Rujukan RS");
-        MnCekNoRujRS.setEnabled(false);
-        MnCekNoRujRS.setName("MnCekNoRujRS"); // NOI18N
-        MnCekNoRujRS.setPreferredSize(new java.awt.Dimension(200, 22));
-        MnCekNoRujRS.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MnCekNoRujRSActionPerformed(evt);
-            }
-        });
-        jMenuBridging.add(MnCekNoRujRS);
-
-        MnCekRujKartuPCare.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        MnCekRujKartuPCare.setForeground(new java.awt.Color(51, 51, 51));
-        MnCekRujKartuPCare.setText("Cek Rujukan Kartu PCare");
-        MnCekRujKartuPCare.setEnabled(false);
-        MnCekRujKartuPCare.setName("MnCekRujKartuPCare"); // NOI18N
-        MnCekRujKartuPCare.setPreferredSize(new java.awt.Dimension(200, 22));
-        MnCekRujKartuPCare.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MnCekRujKartuPCareActionPerformed(evt);
-            }
-        });
-        jMenuBridging.add(MnCekRujKartuPCare);
-
-        MnCekRujKartuRS.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        MnCekRujKartuRS.setForeground(new java.awt.Color(51, 51, 51));
-        MnCekRujKartuRS.setText("Cek Rujukan Kartu RS");
-        MnCekRujKartuRS.setEnabled(false);
-        MnCekRujKartuRS.setName("MnCekRujKartuRS"); // NOI18N
-        MnCekRujKartuRS.setPreferredSize(new java.awt.Dimension(200, 22));
-        MnCekRujKartuRS.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MnCekRujKartuRSActionPerformed(evt);
-            }
-        });
-        jMenuBridging.add(MnCekRujKartuRS);
-
         MnRefDiagBpjs.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         MnRefDiagBpjs.setForeground(new java.awt.Color(51, 51, 51));
         MnRefDiagBpjs.setText("Referensi Diagnosa BPJS");
@@ -2721,6 +2609,19 @@ public class frmUtama extends javax.swing.JFrame {
             }
         });
         jMenuBridging.add(MnMonitoringKlaim);
+
+        MnCekDetailSEP.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        MnCekDetailSEP.setForeground(new java.awt.Color(51, 51, 51));
+        MnCekDetailSEP.setText("Cek Nomor SEP");
+        MnCekDetailSEP.setEnabled(false);
+        MnCekDetailSEP.setName("MnCekDetailSEP"); // NOI18N
+        MnCekDetailSEP.setPreferredSize(new java.awt.Dimension(200, 22));
+        MnCekDetailSEP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MnCekDetailSEPActionPerformed(evt);
+            }
+        });
+        jMenuBridging.add(MnCekDetailSEP);
 
         MenuBar.add(jMenuBridging);
 
@@ -3838,8 +3739,6 @@ public class frmUtama extends javax.swing.JFrame {
                 MnBiayaPengadaan.setEnabled(false);
                 MnRekapPengadaan.setEnabled(false);
                 MnRekapStok.setEnabled(false);
-                MnRiwPesBpjs.setEnabled(false);
-                MnCekNoRujPCare.setEnabled(false);
                 MnRefDiagBpjs.setEnabled(false);
                 MnRefPlBpjs.setEnabled(false);
                 MnRefFaskes.setEnabled(false);
@@ -3931,6 +3830,7 @@ public class frmUtama extends javax.swing.JFrame {
                 MnSetBilling.setEnabled(false);
                 MnClosingKsr.setEnabled(false);
                 MnSetLambtPres.setEnabled(false);
+                MnCekDetailSEP.setEnabled(false);
                 //Jong Source end
 
                 edAdmin.setText("");
@@ -4037,8 +3937,6 @@ public class frmUtama extends javax.swing.JFrame {
                     MnBiayaPengadaan.setEnabled(true);
                     MnRekapPengadaan.setEnabled(true);
                     MnRekapStok.setEnabled(true);
-                    MnRiwPesBpjs.setEnabled(true);
-                    MnCekNoRujPCare.setEnabled(true);
                     MnRefDiagBpjs.setEnabled(true);
                     MnRefPlBpjs.setEnabled(true);
                     MnRefFaskes.setEnabled(true);
@@ -4130,6 +4028,7 @@ public class frmUtama extends javax.swing.JFrame {
                     MnSetBilling.setEnabled(true);
                     MnClosingKsr.setEnabled(true);
                     MnSetLambtPres.setEnabled(true);
+                    MnCekDetailSEP.setEnabled(true);
                     //Jong Source end
 
                     DlgLogin.dispose();
@@ -4164,13 +4063,12 @@ public class frmUtama extends javax.swing.JFrame {
                         MnRetBrksRm.setEnabled(true);
                         MnRegistrasi.setEnabled(true);
                         MnIgd.setEnabled(true);
-                        MnRiwPesBpjs.setEnabled(true);
-                        MnCekNoRujPCare.setEnabled(true);
                         MnRefDiagBpjs.setEnabled(true);
                         MnRefPlBpjs.setEnabled(true);
                         MnRefFaskes.setEnabled(true);
                         MnBridging.setEnabled(true);
                         MnMonitoringKlaim.setEnabled(true);
+                        MnCekDetailSEP.setEnabled(true);
                         //MnRefKmrAplicare.setEnabled(true); // Belum
                         //MnKmrAplicare.setEnabled(true);
                         //MnRefMblJkn.setEnabled(true);
@@ -6085,26 +5983,6 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
         this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnKeuActionPerformed
 
-    private void MnRiwPesBpjsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnRiwPesBpjsActionPerformed
-        isTutup();
-        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-        BPJSCekRiwayatRujukanPCare form=new BPJSCekRiwayatRujukanPCare(this,false);
-        form.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
-        form.setLocationRelativeTo(PanelUtama);
-        form.setVisible(true);
-        this.setCursor(Cursor.getDefaultCursor());
-    }//GEN-LAST:event_MnRiwPesBpjsActionPerformed
-
-    private void MnCekNoRujPCareActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnCekNoRujPCareActionPerformed
-        isTutup();
-        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-        BPJSCekNoRujukanPCare form=new BPJSCekNoRujukanPCare(this,false);
-        form.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
-        form.setLocationRelativeTo(PanelUtama);
-        form.setVisible(true);
-        this.setCursor(Cursor.getDefaultCursor());
-    }//GEN-LAST:event_MnCekNoRujPCareActionPerformed
-
     private void MnRefDiagBpjsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnRefDiagBpjsActionPerformed
         isTutup();
         this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
@@ -6521,29 +6399,15 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
         this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_btnResepObatDepanActionPerformed
 
-    private void MnCekSKDPBPJSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnCekSKDPBPJSActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MnCekSKDPBPJSActionPerformed
-
-    private void MnRiwPesBpjs1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnRiwPesBpjs1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MnRiwPesBpjs1ActionPerformed
-
-    private void MnCekTglRujukanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnCekTglRujukanActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MnCekTglRujukanActionPerformed
-
-    private void MnCekNoRujRSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnCekNoRujRSActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MnCekNoRujRSActionPerformed
-
-    private void MnCekRujKartuPCareActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnCekRujKartuPCareActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MnCekRujKartuPCareActionPerformed
-
-    private void MnCekRujKartuRSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnCekRujKartuRSActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MnCekRujKartuRSActionPerformed
+    private void MnCekDetailSEPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnCekDetailSEPActionPerformed
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        BPJSCekDetailSEP2 form=new BPJSCekDetailSEP2(this,false);
+        form.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
+        form.setLocationRelativeTo(PanelUtama);
+        form.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
+    }//GEN-LAST:event_MnCekDetailSEPActionPerformed
 
     /**
     * @param args the command line arguments
@@ -6611,12 +6475,7 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
     private javax.swing.JMenuItem MnByrPiutang;
     private javax.swing.JMenuItem MnByrPsnObt;
     private javax.swing.JMenuItem MnCashFlow;
-    private javax.swing.JMenuItem MnCekNoRujPCare;
-    private javax.swing.JMenuItem MnCekNoRujRS;
-    private javax.swing.JMenuItem MnCekRujKartuPCare;
-    private javax.swing.JMenuItem MnCekRujKartuRS;
-    private javax.swing.JMenuItem MnCekSKDPBPJS;
-    private javax.swing.JMenuItem MnCekTglRujukan;
+    private javax.swing.JMenuItem MnCekDetailSEP;
     private javax.swing.JMenuItem MnClosingKsr;
     private javax.swing.JMenuItem MnDaruratStok;
     private javax.swing.JMenuItem MnDataBrgNon;
@@ -6723,8 +6582,6 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
     private javax.swing.JMenuItem MnReturPemb;
     private javax.swing.JMenuItem MnReturPiutangPemb;
     private javax.swing.JMenuItem MnRincPiutangPx;
-    private javax.swing.JMenuItem MnRiwPesBpjs;
-    private javax.swing.JMenuItem MnRiwPesBpjs1;
     private javax.swing.JMenuItem MnRiwayat;
     private javax.swing.JMenuItem MnRiwayatPerawatan;
     private javax.swing.JMenuItem MnRkpPmbRln;
