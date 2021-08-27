@@ -3864,7 +3864,7 @@ public class frmUtama extends javax.swing.JFrame {
                     btnToolIGD.setEnabled(true);
                     btnToolRad.setEnabled(true);
                     BtnToolJualObat.setEnabled(true);
-                    MnGantiPassword.setEnabled(false);
+                    MnGantiPassword.setEnabled(true);
 
                     //Jong Source first
                     MnPasien.setEnabled(true);
