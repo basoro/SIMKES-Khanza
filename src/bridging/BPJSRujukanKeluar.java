@@ -83,6 +83,7 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
     private JsonNode root;
     private JsonNode nameNode;
     private JsonNode response;
+    private JsonNode res1;
     /** Creates new form DlgRujuk
      * @param parent
      * @param modal */
@@ -94,7 +95,7 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
 
 
         Object[] row={
-            "No.SEP","No.Rawat","No.RM","Nama Pasien","Tgl.Rujukan", 
+            "No.SEP","No.Rawat","No.RM","Nama Pasien","Tgl.Rujukan",
             "No.Rujukan","Kode PPK","Nama PPK Rujukan","Jenis Pelayanan","Tipe Rujukan","Catatan",
             "Kode Diagnosa","Nama Diagnosa", "Kode Poli", "Nama Poli"
         };
@@ -166,7 +167,7 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
                 }
             });
         }
-        
+
         faskes.addWindowListener(new WindowListener() {
             @Override
             public void windowOpened(WindowEvent e) {}
@@ -174,11 +175,11 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
             public void windowClosing(WindowEvent e) {}
             @Override
             public void windowClosed(WindowEvent e) {
-                if(faskes.getTable().getSelectedRow()!= -1){  
+                if(faskes.getTable().getSelectedRow()!= -1){
                     KdPpkRujukan1.setText(faskes.getTable().getValueAt(faskes.getTable().getSelectedRow(),1).toString());
                     NmPpkRujukan1.setText(faskes.getTable().getValueAt(faskes.getTable().getSelectedRow(),2).toString());
                     KdPpkRujukan1.requestFocus();
-                }                      
+                }
             }
             @Override
             public void windowIconified(WindowEvent e) {}
@@ -189,7 +190,7 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
             @Override
             public void windowDeactivated(WindowEvent e) {}
         });
-        
+
         faskes.getTable().addKeyListener(new KeyListener() {
             @Override
             public void keyTyped(KeyEvent e) {}
@@ -201,8 +202,8 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
             }
             @Override
             public void keyReleased(KeyEvent e) {}
-        });  
-        
+        });
+
         penyakit.addWindowListener(new WindowListener() {
             @Override
             public void windowOpened(WindowEvent e) {}
@@ -210,11 +211,11 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
             public void windowClosing(WindowEvent e) {}
             @Override
             public void windowClosed(WindowEvent e) {
-                if(penyakit.getTable().getSelectedRow()!= -1){   
+                if(penyakit.getTable().getSelectedRow()!= -1){
                     KdPenyakit1.setText(penyakit.getTable().getValueAt(penyakit.getTable().getSelectedRow(),1).toString());
                     NmPenyakit1.setText(penyakit.getTable().getValueAt(penyakit.getTable().getSelectedRow(),2).toString());
                     KdPenyakit1.requestFocus();
-                }                      
+                }
             }
             @Override
             public void windowIconified(WindowEvent e) {}
@@ -225,7 +226,7 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
             @Override
             public void windowDeactivated(WindowEvent e) {}
         });
-        
+
         penyakit.getTable().addKeyListener(new KeyListener() {
             @Override
             public void keyTyped(KeyEvent e) {}
@@ -237,8 +238,8 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
             }
             @Override
             public void keyReleased(KeyEvent e) {}
-        });  
-        
+        });
+
         poli.addWindowListener(new WindowListener() {
             @Override
             public void windowOpened(WindowEvent e) {}
@@ -246,11 +247,11 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
             public void windowClosing(WindowEvent e) {}
             @Override
             public void windowClosed(WindowEvent e) {
-                if(poli.getTable().getSelectedRow()!= -1){  
+                if(poli.getTable().getSelectedRow()!= -1){
                     KdPoli1.setText(poli.getTable().getValueAt(poli.getTable().getSelectedRow(),1).toString());
                     NmPoli1.setText(poli.getTable().getValueAt(poli.getTable().getSelectedRow(),2).toString());
                     KdPoli1.requestFocus();
-                }  
+                }
             }
             @Override
             public void windowIconified(WindowEvent e) {}
@@ -261,7 +262,7 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
             @Override
             public void windowDeactivated(WindowEvent e) {}
         });
-        
+
         poli.getTable().addKeyListener(new KeyListener() {
             @Override
             public void keyTyped(KeyEvent e) {}
@@ -273,15 +274,15 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
             }
             @Override
             public void keyReleased(KeyEvent e) {}
-        }); 
-        
+        });
+
         try {
-            prop.loadFromXML(new FileInputStream("setting/config.xml")); 
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
             link=prop.getProperty("URLAPIBPJS");
         } catch (Exception e) {
             System.out.println("E : "+e);
         }
-        
+
         try {
             user=var.getkode().replace(" ","").substring(0,9);
         } catch (Exception e) {
@@ -779,7 +780,7 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
             }
         }else{
             JOptionPane.showMessageDialog(null,"Silahkan pilih dulu data yang mau dihapus..!!");
-        }  
+        }
 }//GEN-LAST:event_BtnHapusActionPerformed
 
     private void BtnHapusKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnHapusKeyPressed
@@ -799,14 +800,14 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
             }else if (Catatan1.getText().trim().equals("")) {
                 Valid.textKosong(Catatan1, "Catatan");
             }else if(KdPoli1.getText().trim().equals("")||NmPoli1.getText().trim().equals("")){
-                Valid.textKosong(KdPoli1, "Poli Tujuan");        
-            }else{  
+                Valid.textKosong(KdPoli1, "Poli Tujuan");
+            }else{
                 try {
-                    URL = link+"/Rujukan/update";	
+                    URL = link+"/Rujukan/update";
                     headers = new HttpHeaders();
                     headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-                    headers.add("X-Cons-ID",prop.getProperty("CONSIDAPIBPJS"));
-                    headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));            
+                    headers.add("X-Cons-ID",koneksiDB.ApiConsBPJS());
+                    headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));
                     headers.add("X-Signature",api.getHmac());
                     requestJson ="{" +
                                     "\"request\": {" +
@@ -828,7 +829,14 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
                     nameNode = root.path("metaData");
                     System.out.println("code : "+nameNode.path("code").asText());
                     System.out.println("message : "+nameNode.path("message").asText());
-                    response = root.path("response");
+                    if(koneksiDB.versionBpjs().equals("2")){
+                        res1 = root.path("response");
+                        String res = api.decrypt(res1.asText());
+                        String lz = api.lzDecrypt(res);
+                        response = mapper.readTree(lz);
+                    }else{
+                        response = root.path("response");
+                    }
                     if(nameNode.path("code").asText().equals("200")){
                         Sequel.mengedit3("bridging_rujukan_bpjs","no_rujukan=?","ppkDirujuk=?,tipeRujukan=?,jnsPelayanan=?,catatan=?,diagRujukan=?,poliRujukan=?,nm_ppkDirujuk=?,nama_diagRujukan=?,nama_poliRujukan=?",10,new String[]{
                             KdPpkRujukan1.getText(),TipeRujukan.getSelectedItem().toString(),JenisPelayanan1.getSelectedItem().toString().substring(0,1),
@@ -849,7 +857,7 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
                     }
                 }
             }
-        }     
+        }
 }//GEN-LAST:event_BtnEditActionPerformed
 
     private void BtnEditKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnEditKeyPressed
@@ -876,15 +884,15 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
         if(tabMode.getRowCount()==0){
             JOptionPane.showMessageDialog(null,"Maaf, data sudah habis. Tidak ada data yang bisa anda print...!!!!");
             TCari.requestFocus();
-        }else if(tabMode.getRowCount()!=0){            
-            Map<String, Object> param = new HashMap<>(); 
+        }else if(tabMode.getRowCount()!=0){
+            Map<String, Object> param = new HashMap<>();
                 param.put("namars",var.getnamars());
                 param.put("alamatrs",var.getalamatrs());
                 param.put("kotars",var.getkabupatenrs());
                 param.put("propinsirs",var.getpropinsirs());
                 param.put("kontakrs",var.getkontakrs());
-                param.put("emailrs",var.getemailrs());   
-                param.put("logo",Sequel.cariGambar("select logo from setting")); 
+                param.put("emailrs",var.getemailrs());
+                param.put("logo",Sequel.cariGambar("select logo from setting"));
             Valid.MyReport("rptBridgingDaftarRujukan.jrxml","report","::[ Data Bridging Rujukan VClaim ]::",
                     "select bridging_rujukan_bpjs.no_sep, bridging_sep.no_rawat,"+
                     "bridging_sep.nomr,bridging_sep.nama_pasien,bridging_rujukan_bpjs.tglRujukan,"+
@@ -966,7 +974,7 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
 
     private void MnSuratRujukanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnSuratRujukanActionPerformed
         if(tbObat.getSelectedRow()!= -1){
-            this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR)); 
+            this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
             Map<String, Object> param = new HashMap<>();
             param.put("namars",var.getnamars());
             param.put("alamatrs",var.getalamatrs());
@@ -974,12 +982,12 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
             param.put("propinsirs",var.getpropinsirs());
             param.put("kontakrs",var.getkontakrs());
             param.put("norujuk",tbObat.getValueAt(tbObat.getSelectedRow(),5).toString());
-            param.put("logo",Sequel.cariGambar("select bpjs from gambar")); 
+            param.put("logo",Sequel.cariGambar("select bpjs from gambar"));
             Valid.MyReport("rptBridgingRujukanBPJS.jrxml",param,"::[ Surat Rujukan Keluar VClaim ]::");
             this.setCursor(Cursor.getDefaultCursor());
         }else{
             JOptionPane.showMessageDialog(null,"Maaf, silahkan pilih data SEP yang mau dicetak...!!!!");
-        }   
+        }
     }//GEN-LAST:event_MnSuratRujukanActionPerformed
 
     private void btnPPKRujukan1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPPKRujukan1ActionPerformed
@@ -1209,7 +1217,7 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
         Catatan1.setText("");
     }
 
-    
+
 
     private void getData() {
         if(tbObat.getSelectedRow()!= -1){
@@ -1226,14 +1234,14 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
         }
     }
 
-    
-    
+
+
     public void isCek(){
         //BtnHapus.setEnabled(akses.getbpjs_rujukan_keluar());
         //BtnEdit.setEnabled(akses.getbpjs_rujukan_keluar());
         //BtnPrint.setEnabled(akses.getbpjs_rujukan_keluar());
     }
-    
+
     public static class HttpEntityEnclosingDeleteRequest extends HttpEntityEnclosingRequestBase {
         public HttpEntityEnclosingDeleteRequest(final URI uri) {
             super();
@@ -1260,7 +1268,7 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
         sslContext.init(null,trustManagers , new SecureRandom());
         SSLSocketFactory sslFactory=new SSLSocketFactory(sslContext,SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER);
         Scheme scheme=new Scheme("https",443,sslFactory);
-    
+
         HttpComponentsClientHttpRequestFactory factory=new HttpComponentsClientHttpRequestFactory(){
             @Override
             protected HttpUriRequest createHttpUriRequest(HttpMethod httpMethod, URI uri) {
@@ -1272,14 +1280,14 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
         };
         factory.getHttpClient().getConnectionManager().getSchemeRegistry().register(scheme);
         restTemplate.setRequestFactory(factory);
-        
+
         try {
-            URL = link+"/Rujukan/delete";	
+            URL = link+"/Rujukan/delete";
 
             headers = new HttpHeaders();
             headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-            headers.add("X-Cons-ID",prop.getProperty("CONSIDAPIBPJS"));
-            headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));            
+            headers.add("X-Cons-ID",koneksiDB.ApiConsBPJS());
+            headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));
             headers.add("X-Signature",api.getHmac());
             requestJson ="{" +
                             "\"request\": {" +
@@ -1288,7 +1296,7 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
                                     "\"user\": \""+user+"\"" +
                                 "}" +
                             "}" +
-                         "}";            
+                         "}";
             root = mapper.readTree(restTemplate.exchange(URL, HttpMethod.DELETE,new HttpEntity<String>(requestJson,headers), String.class).getBody());
             nameNode = root.path("metaData");
             System.out.println("code : "+nameNode.path("code").asText());
@@ -1301,8 +1309,8 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
             }else{
                 JOptionPane.showMessageDialog(null,nameNode.path("message").asText());
             }
-        } catch (Exception e) {            
+        } catch (Exception e) {
         }
     }
-   
+
 }

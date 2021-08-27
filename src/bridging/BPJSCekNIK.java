@@ -50,7 +50,7 @@ public class BPJSCekNIK {
     public void tampil(String nik) {
         try {
             headers = api.header("json");
-	    requestEntity = new HttpEntity(headers);
+	          requestEntity = new HttpEntity(headers);
             URL = koneksiDB.linkBpjs()+"/Peserta/nik/"+nik+"/tglSEP/"+dateFormat.format(date);
             root = mapper.readTree(api.getRest().exchange(URL, HttpMethod.GET, requestEntity, String.class).getBody());
             nameNode = root.path("metaData");

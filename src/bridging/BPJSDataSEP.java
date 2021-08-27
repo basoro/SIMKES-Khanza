@@ -2947,7 +2947,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
 
                     headers = new HttpHeaders();
                     headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-                    headers.add("X-Cons-ID",prop.getProperty("CONSIDAPIBPJS"));
+                    headers.add("X-Cons-ID",koneksiDB.ApiConsBPJS());
                     headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));
                     headers.add("X-Signature",api.getHmac());
                     URL = koneksiDB.linkBpjs()+"/SEP/1.1/Update";
@@ -3007,7 +3007,14 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
                     nameNode = root.path("metaData");
                     System.out.println("code : "+nameNode.path("code").asText());
                     System.out.println("message : "+nameNode.path("message").asText());
-                    response = root.path("response");
+                    if(koneksiDB.versionBpjs().equals("2")){
+                        res1 = root.path("response");
+                        String res = api.decrypt(res1.asText());
+                        String lz = api.lzDecrypt(res);
+                        response = mapper.readTree(lz);
+                    }else{
+                        response = root.path("response");
+                    }
                     if(nameNode.path("code").asText().equals("200")){
                         Sequel.mengedit("bridging_sep",
                              "no_sep=?","no_sep=?,no_rawat=?,tglrujukan=?,no_rujukan=?,kdppkrujukan=?,"+
@@ -3367,7 +3374,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
             try {
                 headers = new HttpHeaders();
                 headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-                headers.add("X-Cons-ID",prop.getProperty("CONSIDAPIBPJS"));
+                headers.add("X-Cons-ID",koneksiDB.ApiConsBPJS());
                 headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));
                 headers.add("X-Signature",api.getHmac());
                 URL = koneksiDB.linkBpjs()+"/Sep/updtglplg";
@@ -3387,7 +3394,14 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
                 nameNode = root.path("metaData");
                 System.out.println("code : "+nameNode.path("code").asText());
                 System.out.println("message : "+nameNode.path("message").asText());
-                response = root.path("response");
+                if(koneksiDB.versionBpjs().equals("2")){
+                    res1 = root.path("response");
+                    String res = api.decrypt(res1.asText());
+                    String lz = api.lzDecrypt(res);
+                    response = mapper.readTree(lz);
+                }else{
+                    response = root.path("response");
+                }
                 if(nameNode.path("code").asText().equals("200")){
                     Sequel.mengedit("bridging_sep","no_sep=?","tglpulang=?",2,new String[]{
                          Valid.SetTgl(TanggalPulang.getSelectedItem()+"")+" "+TanggalPulang.getSelectedItem().toString().substring(11,19),
@@ -3449,7 +3463,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
             try {
                 headers = new HttpHeaders();
                 headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-                headers.add("X-Cons-ID",prop.getProperty("CONSIDAPIBPJS"));
+                headers.add("X-Cons-ID",koneksiDB.ApiConsBPJS());
                 headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));
                 headers.add("X-Signature",api.getHmac());
                 URL = koneksiDB.linkBpjs()+"/Sep/pengajuanSEP";
@@ -3469,7 +3483,14 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
                 nameNode = root.path("metaData");
                 System.out.println("code : "+nameNode.path("code").asText());
                 System.out.println("message : "+nameNode.path("message").asText());
-                response = root.path("response");
+                if(koneksiDB.versionBpjs().equals("2")){
+                    res1 = root.path("response");
+                    String res = api.decrypt(res1.asText());
+                    String lz = api.lzDecrypt(res);
+                    response = mapper.readTree(lz);
+                }else{
+                    response = root.path("response");
+                }
                 if(nameNode.path("code").asText().equals("200")){
                     JOptionPane.showMessageDialog(null,"Proses mapping selesai, data nomor rawat berhasil dikirim ke SEP..!!");
                 }else{
@@ -3557,7 +3578,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
             try {
                 headers = new HttpHeaders();
                 headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-                headers.add("X-Cons-ID",prop.getProperty("CONSIDAPIBPJS"));
+                headers.add("X-Cons-ID",koneksiDB.ApiConsBPJS());
                 headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));
                 headers.add("X-Signature",api.getHmac());
                 URL = koneksiDB.linkBpjs()+"/Sep/aprovalSEP";
@@ -3577,7 +3598,14 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
                 nameNode = root.path("metaData");
                 System.out.println("code : "+nameNode.path("code").asText());
                 System.out.println("message : "+nameNode.path("message").asText());
-                response = root.path("response");
+                if(koneksiDB.versionBpjs().equals("2")){
+                    res1 = root.path("response");
+                    String res = api.decrypt(res1.asText());
+                    String lz = api.lzDecrypt(res);
+                    response = mapper.readTree(lz);
+                }else{
+                    response = root.path("response");
+                }
                 if(nameNode.path("code").asText().equals("200")){
                     JOptionPane.showMessageDialog(null,"Proses mapping selesai, data nomor rawat berhasil dikirim ke SEP..!!");
                 }else{
@@ -3655,7 +3683,14 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
                 nameNode = root.path("metaData");
                 System.out.println("code : "+nameNode.path("code").asText());
                 System.out.println("message : "+nameNode.path("message").asText());
-                response = root.path("response");
+                if(koneksiDB.versionBpjs().equals("2")){
+                    res1 = root.path("response");
+                    String res = api.decrypt(res1.asText());
+                    String lz = api.lzDecrypt(res);
+                    response = mapper.readTree(lz);
+                }else{
+                    response = root.path("response");
+                }
                 if(nameNode.path("code").asText().equals("200")){
                     if(Sequel.menyimpantf2("bridging_rujukan_bpjs","?,?,?,?,?,?,?,?,?,?,?,?,?","No.Rujukan",13,new String[]{
                             tbObat.getValueAt(tbObat.getSelectedRow(),0).toString(),Valid.SetTgl(TanggalRujukKeluar.getSelectedItem()+""),
@@ -3975,7 +4010,14 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
                 System.out.println("code : "+nameNode.path("code").asText());
                 System.out.println("message : "+nameNode.path("message").asText());
                 if(nameNode.path("message").asText().equals("Sukses")){
-                    response = root.path("response");
+                    if(koneksiDB.versionBpjs().equals("2")){
+                        res1 = root.path("response");
+                        String res = api.decrypt(res1.asText());
+                        String lz = api.lzDecrypt(res);
+                        response = mapper.readTree(lz);
+                    }else{
+                        response = root.path("response");
+                    }
                     Catatan.setText(response.path("catatan").asText());
                     NmPenyakit.setText(response.path("diagnosa").asText());
                     if(response.path("jnsPelayanan").asText().toLowerCase().contains("inap")){
@@ -5104,7 +5146,14 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
                             nameNode = root.path("metaData");
                             System.out.println("code : "+nameNode.path("code").asText());
                             System.out.println("message : "+nameNode.path("message").asText());
-                            response = root.path("response");
+                            if(koneksiDB.versionBpjs().equals("2")){
+                                res1 = root.path("response");
+                                String res = api.decrypt(res1.asText());
+                                String lz = api.lzDecrypt(res);
+                                response = mapper.readTree(lz);
+                            }else{
+                                response = root.path("response");
+                            }
                             if(nameNode.path("code").asText().equals("200")){*/
                                 Sequel.mengedit("bridging_sep","no_sep=?","tglpulang=?",2,new String[]{
                                      Valid.SetTgl(TanggalSEP.getSelectedItem()+""),
@@ -5228,7 +5277,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
 
             HttpHeaders headers = new HttpHeaders();
             headers.setContentType(MediaType.APPLICATION_JSON);
-            headers.add("X-Cons-ID", prop.getProperty("CONSIDAPIBPJS"));
+            headers.add("X-Cons-ID",koneksiDB.ApiConsBPJS());
             headers.add("X-Timestamp", String.valueOf(api.GetUTCdatetimeAsString()));
             headers.add("X-Signature", api.getHmac());
 
@@ -5238,7 +5287,14 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
             JsonNode nameNode = root.path("metaData");
             if (nameNode.path("code").asText().equals("200")) {
                 Valid.tabelKosong(tabMode3);
-                JsonNode response = root.path("response");
+                if(koneksiDB.versionBpjs().equals("2")){
+                    res1 = root.path("response");
+                    String res = api.decrypt(res1.asText());
+                    String lz = api.lzDecrypt(res);
+                    JsonNode response = mapper.readTree(lz);
+                }else{
+                    JsonNode response = root.path("response");
+                }
                 if (response.path("rujukan").isArray()) {
                     i = 1;
                     for (JsonNode list : response.path("rujukan")) {
@@ -5277,7 +5333,7 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
 
             HttpHeaders headers = new HttpHeaders();
             headers.setContentType(MediaType.APPLICATION_JSON);
-	    headers.add("X-Cons-ID",prop.getProperty("CONSIDAPIBPJS"));
+	    headers.add("X-Cons-ID",koneksiDB.ApiConsBPJS());
 	    headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));
 	    headers.add("X-Signature",api.getHmac());
 
@@ -5287,7 +5343,14 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
             JsonNode nameNode = root.path("metaData");
             if(nameNode.path("code").asText().equals("200")){
                 Valid.tabelKosong(tabMode4);
-                JsonNode response = root.path("response");
+                if(koneksiDB.versionBpjs().equals("2")){
+                    res1 = root.path("response");
+                    String res = api.decrypt(res1.asText());
+                    String lz = api.lzDecrypt(res);
+                    JsonNode response = mapper.readTree(lz);
+                }else{
+                    JsonNode response = root.path("response");
+                }
                 if(response.path("rujukan").isArray()){
                     i=1;
                     for(JsonNode list:response.path("rujukan")){

@@ -1,11 +1,11 @@
 /*
-  Dilarang keras menggandakan/mengcopy/menyebarkan/membajak/mendecompile 
+  Dilarang keras menggandakan/mengcopy/menyebarkan/membajak/mendecompile
   Software ini dalam bentuk apapun tanpa seijin pembuat software
   (Khanza.Soft Media). Bagi yang sengaja membajak softaware ini ta
   npa ijin, kami sumpahi sial 1000 turunan, miskin sampai 500 turu
   nan. Selalu mendapat kecelakaan sampai 400 turunan. Anak pertama
   nya cacat tidak punya kaki sampai 300 turunan. Susah cari jodoh
-  sampai umur 50 tahun sampai 200 turunan. Ya Alloh maafkan kami 
+  sampai umur 50 tahun sampai 200 turunan. Ya Alloh maafkan kami
   karena telah berdoa buruk, semua ini kami lakukan karena kami ti
   dak pernah rela karya kami dibajak tanpa ijin.
  */
@@ -50,7 +50,8 @@ public final class BPJSCekReferensiDokterKontrol extends javax.swing.JDialog {
     private JsonNode root;
     private JsonNode nameNode;
     private JsonNode response;
-        
+    private JsonNode res1;
+
     /** Creates new form DlgKamar
      * @param parent
      * @param modal */
@@ -85,9 +86,9 @@ public final class BPJSCekReferensiDokterKontrol extends javax.swing.JDialog {
             }
         }
         tbKamar.setDefaultRenderer(Object.class, new WarnaTable());
-        
+
         Dokter.setDocument(new batasInput((byte)100).getKata(Dokter));
-        
+
         if(koneksiDB.cariCepat().equals("aktif")){
             Dokter.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
@@ -109,8 +110,8 @@ public final class BPJSCekReferensiDokterKontrol extends javax.swing.JDialog {
                     }
                 }
             });
-        } 
-        
+        }
+
         try {
             prop.loadFromXML(new FileInputStream("setting/config.xml"));
             link = prop.getProperty("URLAPIBPJS");
@@ -118,10 +119,10 @@ public final class BPJSCekReferensiDokterKontrol extends javax.swing.JDialog {
         } catch (Exception e) {
             System.out.println("E : "+e);
         }
-              
+
     }
-    
-    
+
+
 
     /** This method is called from within the constructor to
      * initialize the form.
@@ -312,11 +313,11 @@ public final class BPJSCekReferensiDokterKontrol extends javax.swing.JDialog {
         try {
             headers = new HttpHeaders();
             headers.setContentType(MediaType.APPLICATION_JSON);
-	    headers.add("X-Cons-ID",prop.getProperty("CONSIDAPIBPJS"));
-	    headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));            
+	    headers.add("X-Cons-ID",koneksiDB.ApiConsBPJS());
+	    headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));
 	    headers.add("X-Signature",api.getHmac());
             /*System.out.println("X-Cons-ID:"+koneksiDB.CONSIDAPIBPJS());
-	    System.out.println("X-Timestamp:"+String.valueOf(api.GetUTCdatetimeAsString()));            
+	    System.out.println("X-Timestamp:"+String.valueOf(api.GetUTCdatetimeAsString()));
 	    System.out.println("X-Signature:"+api.getHmac());
             System.out.println("Content-Type: Application/x-www-form-urlencoded");*/
 	    requestEntity = new HttpEntity(headers);
@@ -325,7 +326,14 @@ public final class BPJSCekReferensiDokterKontrol extends javax.swing.JDialog {
             nameNode = root.path("metaData");
             if(nameNode.path("code").asText().equals("200")){
                 Valid.tabelKosong(tabMode);
-                response = root.path("response");
+                if(koneksiDB.versionBpjs().equals("2")){
+                    res1 = root.path("response");
+                    String res = api.decrypt(res1.asText());
+                    String lz = api.lzDecrypt(res);
+                    response = mapper.readTree(lz);
+                }else{
+                    response = root.path("response");
+                }
                 if(response.path("list").isArray()){
                     i=1;
                     for(JsonNode list:response.path("list")){
@@ -339,20 +347,20 @@ public final class BPJSCekReferensiDokterKontrol extends javax.swing.JDialog {
                     }
                 }
             }else {
-                JOptionPane.showMessageDialog(null,nameNode.path("message").asText());                
-            }   
+                JOptionPane.showMessageDialog(null,nameNode.path("message").asText());
+            }
         } catch (Exception ex) {
             System.out.println("Notifikasi : "+ex);
             if(ex.toString().contains("UnknownHostException")){
                 JOptionPane.showMessageDialog(rootPane,"Koneksi ke server BPJS terputus...!");
             }
         }
-    }    
+    }
 
     public JTable getTable(){
         return tbKamar;
     }
-    
+
     public void SetKontrol(String kodepoli,String jeniskontrol,String tanggalkontrol){
         TanggalKontrol.setText(tanggalkontrol);
         JenisKontrol.setText(jeniskontrol);
