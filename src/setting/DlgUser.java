@@ -543,7 +543,7 @@ public class DlgUser extends javax.swing.JDialog {
         }else if(TPass.getText().trim().equals("")){
             JOptionPane.showMessageDialog(null,"Maaf, Gagal menghapus. Pilih dulu data yang mau dihapus.\nKlik data pada table untuk memilih...!!!!");
         }else if(! TPass.getText().trim().equals("")){
-            Sequel.queryu("delete from user where id_user=AES_ENCRYPT('"+TKd.getText()+"','nur') AND admin != 'true'");
+            Sequel.queryu("delete from users where id_user=AES_ENCRYPT('"+TKd.getText()+"','nur') AND admin != 'true'");
             tampil();
             emptTeks();
         }
@@ -796,7 +796,7 @@ private void BtnPrintKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
             Valid.tabelKosong(tabMode);
             ps=koneksi.prepareStatement("select AES_DECRYPT(id_user,'nur'),AES_DECRYPT(password,'windi'),"
                     + " admin, manajemen, medis, paramedis , apoteker , laboratorium , radiologi , rekammedis , kasir , pengguna"
-                    + " from user order by AES_DECRYPT(id_user,'nur')");
+                    + " from users order by AES_DECRYPT(id_user,'nur')");
             try {
                 rs=ps.executeQuery();
                 while(rs.next()){
