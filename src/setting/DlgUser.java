@@ -521,7 +521,7 @@ public class DlgUser extends javax.swing.JDialog {
         }else if(TPass.getText().trim().equals("")){
             Valid.textKosong(TPass,"Password");
         }else{
-            if(Sequel.menyimpantf("user","AES_ENCRYPT('"+TKd.getText()+"','nur'),AES_ENCRYPT('"+TPass.getText()+"','windi'),'false','false','false','false','false','false','false','false','false','false'","User")==true){
+            if(Sequel.menyimpantf("users","AES_ENCRYPT('"+TKd.getText()+"','nur'),AES_ENCRYPT('"+TPass.getText()+"','windi'),'false','false','false','false','false','false','false','false','false','false'","User")==true){
                 tampil();
                 emptTeks();
             }
@@ -565,7 +565,7 @@ public class DlgUser extends javax.swing.JDialog {
         }else{
             i=tbUser.getSelectedRow();
             if(i!= -1){
-                Sequel.mengedit("user","id_user=AES_ENCRYPT('"+tbUser.getValueAt(i,0).toString()+"','nur')",
+                Sequel.mengedit("users","id_user=AES_ENCRYPT('"+tbUser.getValueAt(i,0).toString()+"','nur')",
                     "id_user=AES_ENCRYPT('"+TKd.getText()+"','nur'),"+
                     "password=AES_ENCRYPT('"+TPass.getText()+"','windi'),"+
                     "admin='"+tbUser.getValueAt(i,3).toString()+"', "+

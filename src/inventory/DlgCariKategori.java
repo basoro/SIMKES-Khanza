@@ -391,6 +391,6 @@ public final class DlgCariKategori extends javax.swing.JDialog {
     }
     
     public void isCek(){        
-        //BtnTambah.setEnabled(var.getkategori_barang());
+        BtnTambah.setEnabled(var.getapoteker());
     }
 }

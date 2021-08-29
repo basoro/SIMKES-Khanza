@@ -1237,9 +1237,9 @@ public final class BPJSRujukanKeluar extends javax.swing.JDialog {
 
 
     public void isCek(){
-        //BtnHapus.setEnabled(akses.getbpjs_rujukan_keluar());
-        //BtnEdit.setEnabled(akses.getbpjs_rujukan_keluar());
-        //BtnPrint.setEnabled(akses.getbpjs_rujukan_keluar());
+        BtnHapus.setEnabled(var.getrekammedis());
+        BtnEdit.setEnabled(var.getrekammedis());
+        BtnPrint.setEnabled(var.getrekammedis());
     }
 
     public static class HttpEntityEnclosingDeleteRequest extends HttpEntityEnclosingRequestBase {

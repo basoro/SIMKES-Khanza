@@ -892,7 +892,7 @@ private void KdKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TKdKey
     }
 
     public void isCek(){
-        BtnPrint.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getrekammedis());
     }
 
     private void Monitor(String tanggal,String jenispelayanan,String status){

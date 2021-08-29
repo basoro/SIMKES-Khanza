@@ -26,7 +26,7 @@ public final class koneksiDB {
         if (connection == null) {
             try {
                 prop.loadFromXML(new FileInputStream("setting/database.xml"));
-                dataSource.setURL("jdbc:mysql://" + EnkripsiAES.decrypt(prop.getProperty("HOST")) + ":" + prop.getProperty("PORT") + "/" + EnkripsiAES.decrypt(prop.getProperty("DATABASE")) + "?zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true");
+                dataSource.setURL("jdbc:mysql://" + EnkripsiAES.decrypt(prop.getProperty("HOST")) + ":" + prop.getProperty("PORT") + "/" + EnkripsiAES.decrypt(prop.getProperty("DATABASE")) + "?zeroDateTimeBehavior=convertToNull&autoReconnect=true&useCompression=true");
                 dataSource.setUser(EnkripsiAES.decrypt(prop.getProperty("USER")));
                 dataSource.setPassword(EnkripsiAES.decrypt(prop.getProperty("PAS")));
                 connection = dataSource.getConnection();
@@ -53,7 +53,7 @@ public final class koneksiDB {
                         int dialogResult = JOptionPane.showConfirmDialog(null, "Sambungan ke server terputus. Apakah anda ingin menyambungkan ulang?", "Warning", dialogButton);
                         if (dialogResult == JOptionPane.YES_OPTION) {
                             prop.loadFromXML(new FileInputStream("setting/database.xml"));
-                            dataSource.setURL("jdbc:mysql://" + EnkripsiAES.decrypt(prop.getProperty("HOST")) + ":" + prop.getProperty("PORT") + "/" + EnkripsiAES.decrypt(prop.getProperty("DATABASE")) + "?zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true&amp;cachePrepStmts=true");
+                            dataSource.setURL("jdbc:mysql://" + EnkripsiAES.decrypt(prop.getProperty("HOST")) + ":" + prop.getProperty("PORT") + "/" + EnkripsiAES.decrypt(prop.getProperty("DATABASE")) + "?zeroDateTimeBehavior=convertToNull&autoReconnect=true&cachePrepStmts=true&useCompression=true");
                             dataSource.setUser(EnkripsiAES.decrypt(prop.getProperty("USER")));
                             dataSource.setPassword(EnkripsiAES.decrypt(prop.getProperty("PAS")));
                             connection = dataSource.getConnection();

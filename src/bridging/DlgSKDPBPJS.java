@@ -1610,6 +1610,10 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     }
     
     public void isCek(){
+        BtnSimpan.setEnabled(var.getrekammedis());
+        BtnHapus.setEnabled(var.getrekammedis());
+        BtnPrint.setEnabled(var.getrekammedis());
+        BtnEdit.setEnabled(var.getrekammedis());
     }
 
     public JTable getTable(){

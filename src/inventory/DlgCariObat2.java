@@ -2397,15 +2397,15 @@ private void ChkJlnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:
             nmgudang.setEditable(true);
             BtnGudang.setEnabled(true);
         }else{
-            //if(var.getakses_depo_obat()==true){
+            if(var.getapoteker()==true){
                 kdgudang.setEditable(true);
                 nmgudang.setEditable(true);
                 BtnGudang.setEnabled(true);
-            //}else{
-            //    kdgudang.setEditable(false);
-            //    nmgudang.setEditable(false);
-            //    BtnGudang.setEnabled(false);
-            //}                
+            }else{
+                kdgudang.setEditable(false);
+                nmgudang.setEditable(false);
+                BtnGudang.setEnabled(false);
+            }                
         } 
         
         if(var.getkode().equals("Admin Utama")){

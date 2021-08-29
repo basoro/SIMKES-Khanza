@@ -3045,19 +3045,19 @@ private void JeniskelasKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:even
             nmgudang.setEditable(true);
             BtnGudang.setEnabled(true);
         }else{
-            //if(var.getakses_depo_obat()==true){
+            if(var.getapoteker()==true){
                 kdgudang.setEditable(true);
                 nmgudang.setEditable(true);
                 BtnGudang.setEnabled(true);
-            //}else{
-            //    kdgudang.setEditable(false);
-            //    nmgudang.setEditable(false);
-            //    BtnGudang.setEnabled(false);
-            //}
+            }else{
+                kdgudang.setEditable(false);
+                nmgudang.setEditable(false);
+                BtnGudang.setEnabled(false);
+            }
         }            
         kdgudang.setText(bangsal);
         Sequel.cariIsi("select bangsal.nm_bangsal from bangsal where bangsal.kd_bangsal=?",nmgudang,kdgudang.getText());            
-        BtnTambah.setEnabled(var.getmanajemen());
+        BtnTambah.setEnabled(var.getapoteker());
         TCari.requestFocus();
         if(var.getkode().equals("Admin Utama")){
             kdgudang.setEditable(true);

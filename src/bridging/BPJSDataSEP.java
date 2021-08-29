@@ -4854,18 +4854,18 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
 
 
     public void isCek(){
-        BtnSimpan.setEnabled(var.getmanajemen());
-        BtnHapus.setEnabled(var.getmanajemen());
-        BtnPrint.setEnabled(var.getmanajemen());
-        BtnEdit.setEnabled(var.getmanajemen());
-        ppDetailSEPPeserta.setEnabled(var.getmanajemen());
-        ppPengajuan.setEnabled(var.getmanajemen());
-        ppPengajuan1.setEnabled(var.getmanajemen());
-        ppPulang.setEnabled(var.getmanajemen());
-        ppSEP.setEnabled(var.getmanajemen());
-        ppRiwayatPerawatan.setEnabled(var.getmanajemen());
-        ppSuratKontrol.setEnabled(var.getmanajemen());
-        ppRujukan.setEnabled(var.getmanajemen());
+        BtnSimpan.setEnabled(var.getrekammedis());
+        BtnHapus.setEnabled(var.getrekammedis());
+        BtnPrint.setEnabled(var.getrekammedis());
+        BtnEdit.setEnabled(var.getrekammedis());
+        ppDetailSEPPeserta.setEnabled(var.getrekammedis());
+        ppPengajuan.setEnabled(var.getrekammedis());
+        ppPengajuan1.setEnabled(var.getrekammedis());
+        ppPulang.setEnabled(var.getrekammedis());
+        ppSEP.setEnabled(var.getrekammedis());
+        ppRiwayatPerawatan.setEnabled(var.getrekammedis());
+        ppSuratKontrol.setEnabled(var.getrekammedis());
+        ppRujukan.setEnabled(var.getrekammedis());
     }
 
     public void tutupInput(){
