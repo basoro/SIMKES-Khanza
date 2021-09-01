@@ -5102,7 +5102,16 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
             nameNode = root.path("metaData");
             System.out.println("code : "+nameNode.path("code").asText());
             System.out.println("message : "+nameNode.path("message").asText());
-            response = root.path("response").path("sep").path("noSep");
+            //response = root.path("response").path("sep").path("noSep");
+            if(koneksiDB.versionBpjs().equals("2")){
+                res1 = root.path("response");
+                String res = api.decrypt(res1.asText());
+                String lz = api.lzDecrypt(res);
+                response = mapper.readTree(lz);
+            }else{
+                response = root.path("response");
+            }
+            response=response.path("sep").path("noSep");
             if(nameNode.path("code").asText().equals("200")){
                  System.out.println("SEP : "+response.asText());
                  if(Sequel.menyimpantf("bridging_sep","?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?","SEP",44,new String[]{
@@ -5201,11 +5210,20 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
             JsonNode nameNode = root.path("metaData");
             if(nameNode.path("code").asText().equals("200")){
                 Valid.tabelKosong(tabMode1);
-                res1 = root.path("response");
+                /*res1 = root.path("response");
                 String res = api.decrypt(res1.asText());
                 String lz = api.lzDecrypt(res);
                 respon = mapper.readTree(lz);
-                JsonNode response = respon.path("rujukan");
+                JsonNode response = respon.path("rujukan");*/
+                if(koneksiDB.versionBpjs().equals("2")){
+                    res1 = root.path("response");
+                    String res = api.decrypt(res1.asText());
+                    String lz = api.lzDecrypt(res);
+                    response = mapper.readTree(lz);
+                }else{
+                    response = root.path("response");
+                }
+                response = response.path("rujukan");
                 tabMode1.addRow(new Object[]{
                     "1",response.path("noKunjungan").asText(),
                     response.path("tglKunjungan").asText(),
@@ -5241,11 +5259,20 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
             JsonNode nameNode = root.path("metaData");
             if(nameNode.path("code").asText().equals("200")){
                 Valid.tabelKosong(tabMode2);
-                res1 = root.path("response");
+                /*res1 = root.path("response");
                 String res = api.decrypt(res1.asText());
                 String lz = api.lzDecrypt(res);
-                respon = mapper.readTree(lz);
-                JsonNode response = respon.path("rujukan");
+                respone = mapper.readTree(lz);
+                JsonNode response = respone.path("rujukan");*/
+                if(koneksiDB.versionBpjs().equals("2")){
+                    res1 = root.path("response");
+                    String res = api.decrypt(res1.asText());
+                    String lz = api.lzDecrypt(res);
+                    response = mapper.readTree(lz);
+                }else{
+                    response = root.path("response");
+                }
+                response = response.path("rujukan");
                 tabMode2.addRow(new Object[]{
                     "1",response.path("noKunjungan").asText(),
                     response.path("tglKunjungan").asText(),
@@ -5347,9 +5374,9 @@ public final class BPJSDataSEP extends javax.swing.JDialog {
                     res1 = root.path("response");
                     String res = api.decrypt(res1.asText());
                     String lz = api.lzDecrypt(res);
-                    JsonNode response = mapper.readTree(lz);
+                    response = mapper.readTree(lz);
                 }else{
-                    JsonNode response = root.path("response");
+                    response = root.path("response");
                 }
                 if(response.path("rujukan").isArray()){
                     i=1;

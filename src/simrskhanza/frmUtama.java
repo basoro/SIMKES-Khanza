@@ -4646,7 +4646,7 @@ public class frmUtama extends javax.swing.JFrame {
 //                    }
                     //Jong Source end
 
-                    btnToolIGD.setEnabled(var.getmanajemen());
+                    //btnToolIGD.setEnabled(var.getmanajemen());
                     Sequel.menyimpan("tracker","'"+edAdmin.getText()+"',current_date(),current_time()","Login");
                 }else if((var.getjml1()==0)&&(var.getjml2()==0)){
                     JOptionPane.showMessageDialog(null,"Maaf, Gagal login. ID User atau password ada yang salah ...!");

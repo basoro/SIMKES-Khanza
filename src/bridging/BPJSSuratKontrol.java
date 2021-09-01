@@ -65,6 +65,7 @@ public class BPJSSuratKontrol extends javax.swing.JDialog {
     private JsonNode root;
     private JsonNode nameNode;
     private JsonNode response;
+    private JsonNode res1;
     private String requestJson="",URL="",user="";
     private ApiBPJS api=new ApiBPJS();
 
@@ -217,6 +218,7 @@ public class BPJSSuratKontrol extends javax.swing.JDialog {
         buttonGroup1 = new javax.swing.ButtonGroup();
         jPopupMenu1 = new javax.swing.JPopupMenu();
         MnSurat = new javax.swing.JMenuItem();
+        NoKartu = new widget.TextBox();
         internalFrame1 = new widget.InternalFrame();
         Scroll = new widget.ScrollPane();
         tbObat = new widget.Table();
@@ -293,6 +295,10 @@ public class BPJSSuratKontrol extends javax.swing.JDialog {
             }
         });
         jPopupMenu1.add(MnSurat);
+
+        NoKartu.setEditable(false);
+        NoKartu.setHighlighter(null);
+        NoKartu.setName("NoKartu"); // NOI18N
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setUndecorated(true);
@@ -876,8 +882,18 @@ public class BPJSSuratKontrol extends javax.swing.JDialog {
                 nameNode = root.path("metaData");
                 System.out.println("code : "+nameNode.path("code").asText());
                 System.out.println("message : "+nameNode.path("message").asText());
-                response = root.path("response").path("noSuratKontrol");
                 if(nameNode.path("code").asText().equals("200")){
+                    if(koneksiDB.versionBpjs().equals("2")){
+                        res1 = root.path("response");
+                        String res = api.decrypt(res1.asText());
+                        String lz = api.lzDecrypt(res);
+                        response = mapper.readTree(lz);
+                    }else{
+                        response = root.path("response");
+                    }
+
+                    response=response.path("noSuratKontrol");
+                    
                     if(Sequel.menyimpantf("bridging_surat_kontrol_bpjs","?,?,?,?,?,?,?,?","No.Surat",8,new String[]{
                             NoSEP.getText(),Valid.SetTgl(TanggalSurat.getSelectedItem()+""),response.asText(),Valid.SetTgl(TanggalKontrol.getSelectedItem()+""),KdDokter.getText(),NmDokter.getText(),KdPoli.getText(),NmPoli.getText()
                         })==true){
@@ -1164,7 +1180,7 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     }//GEN-LAST:event_BtnPoliKeyPressed
 
     private void BtnPoliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPoliActionPerformed
-        poli.SetKontrol(NoSEP.getText(),"1: Rencana Kontrol",Valid.SetTgl(TanggalKontrol.getSelectedItem()+""));
+        poli.SetKontrol(NoKartu.getText(),"1: Rencana Kontrol",Valid.SetTgl(TanggalKontrol.getSelectedItem()+""));
         poli.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
         poli.setLocationRelativeTo(internalFrame1);
         poli.setVisible(true);
@@ -1260,6 +1276,7 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     private widget.TextBox NmDokter;
     private widget.TextBox NmPasien;
     private widget.TextBox NmPoli;
+    private widget.TextBox NoKartu;
     private widget.TextBox NoRM;
     private widget.TextBox NoRawat;
     private widget.TextBox NoSEP;
@@ -1397,6 +1414,7 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     public void emptTeks() {
         NoRawat.setText("");
         NoSEP.setText("");
+        NoKartu.setText("");
         NoRM.setText("");
         NmPasien.setText("");
         TglLahir.setText("");
@@ -1435,6 +1453,7 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     public void setNoRm(String norawat,String nosep,String nokartu,String norm,String namapasien,String tanggallahir,String jk,String diagnosa) {
         NoRawat.setText(norawat);
         NoSEP.setText(nosep);
+        NoKartu.setText(nokartu);
         NoRM.setText(norm);
         NmPasien.setText(namapasien);
         TglLahir.setText(tanggallahir);

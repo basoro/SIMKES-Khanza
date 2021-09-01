@@ -67,6 +67,7 @@ public class BPJSSPRI extends javax.swing.JDialog {
     private JsonNode root;
     private JsonNode nameNode;
     private JsonNode response;
+    private JsonNode res1;
     private String requestJson="",URL="",user="";
     private ApiBPJS api=new ApiBPJS();
 
@@ -253,6 +254,7 @@ public class BPJSSPRI extends javax.swing.JDialog {
         buttonGroup1 = new javax.swing.ButtonGroup();
         jPopupMenu1 = new javax.swing.JPopupMenu();
         MnSurat = new javax.swing.JMenuItem();
+        NoSEP = new widget.TextBox();
         internalFrame1 = new widget.InternalFrame();
         Scroll = new widget.ScrollPane();
         tbObat = new widget.Table();
@@ -330,6 +332,10 @@ public class BPJSSPRI extends javax.swing.JDialog {
             }
         });
         jPopupMenu1.add(MnSurat);
+
+        NoSEP.setEditable(false);
+        NoSEP.setHighlighter(null);
+        NoSEP.setName("NoSEP"); // NOI18N
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setUndecorated(true);
@@ -937,7 +943,15 @@ public class BPJSSPRI extends javax.swing.JDialog {
                 nameNode = root.path("metaData");
                 System.out.println("code : "+nameNode.path("code").asText());
                 System.out.println("message : "+nameNode.path("message").asText());
-                response = root.path("response").path("noSPRI");
+                if(koneksiDB.versionBpjs().equals("2")){
+                    res1 = root.path("response");
+                    String res = api.decrypt(res1.asText());
+                    String lz = api.lzDecrypt(res);
+                    response = mapper.readTree(lz);
+                }else{
+                    response = root.path("response");
+                }
+                response=response.path("noSPRI");
                 if(nameNode.path("code").asText().equals("200")){
                     if(Sequel.menyimpantf("bridging_surat_pri_bpjs","?,?,?,?,?,?,?,?,?,?","No.Surat",10,new String[]{
                             NoRawat.getText(),NoKartu.getText(),Valid.SetTgl(TanggalSurat.getSelectedItem()+""),response.asText(),Valid.SetTgl(TanggalKontrol.getSelectedItem()+""),KdDokter.getText(),NmDokter.getText(),KdPoli.getText(),NmPoli.getText(),Diagnosa.getText()
@@ -1226,7 +1240,7 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     }//GEN-LAST:event_BtnPoliKeyPressed
 
     private void BtnPoliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPoliActionPerformed
-        poli.SetKontrol(NoKartu.getText(),"2: SPRI",Valid.SetTgl(TanggalKontrol.getSelectedItem()+""));
+        poli.SetKontrol(NoSEP.getText(),"2: SPRI",Valid.SetTgl(TanggalKontrol.getSelectedItem()+""));
         poli.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
         poli.setLocationRelativeTo(internalFrame1);
         poli.setVisible(true);
@@ -1340,6 +1354,7 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     private widget.TextBox NoKartu;
     private widget.TextBox NoRM;
     private widget.TextBox NoRawat;
+    private widget.TextBox NoSEP;
     private widget.TextBox NoSurat;
     private javax.swing.JPanel PanelInput;
     private widget.RadioButton R1;
@@ -1473,6 +1488,7 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     public void emptTeks() {
         NoRawat.setText("");
         NoKartu.setText("");
+        NoSEP.setText("");
         NoRM.setText("");
         NmPasien.setText("");
         TglLahir.setText("");
@@ -1508,7 +1524,7 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
         }
     }
 
-    public void setNoRm(String norawat,String nokartu,String norm,String namapasien,String tanggallahir,String jk) {
+    public void setNoRm(String norawat,String nokartu,String norm,String namapasien,String tanggallahir,String jk,String nosep) {
         NoRawat.setText(norawat);
         NoKartu.setText(nokartu);
         NoRM.setText(norm);
@@ -1516,12 +1532,13 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
         TglLahir.setText(tanggallahir);
         JK.setText(jk.replaceAll("L","LAKI-LAKI").replaceAll("P","PEREMPUAN"));
         TCari.setText(nokartu);
+        NoSEP.setText(nosep);
         ChkInput.setSelected(true);
         isForm();
         tampil();
     }
 
-    public void setNoRm(String norawat,String nokartu,String norm,String namapasien,String tanggallahir,String jk,String diagnosa) {
+    public void setNoRm(String norawat,String nokartu,String norm,String namapasien,String tanggallahir,String jk,String diagnosa,String nosep) {
         NoRawat.setText(norawat);
         NoKartu.setText(nokartu);
         NoRM.setText(norm);
@@ -1531,6 +1548,7 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
         TCari.setText(nokartu);
         ChkInput.setSelected(true);
         Diagnosa.setText(diagnosa);
+        NoSEP.setText(nosep);
         isForm();
         tampil();
     }
