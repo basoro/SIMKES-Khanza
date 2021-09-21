@@ -8131,8 +8131,8 @@ private void MnDataPemberianObatActionPerformed(java.awt.event.ActionEvent evt) 
         MnNoResep1.setEnabled(var.getmanajemen());
         MnObatLangsung.setEnabled(var.getmanajemen());
         MnObatLangsung1.setEnabled(var.getmanajemen());
-        MnBillingParsial.setEnabled(var.getmanajemen());
-        MnBilling.setEnabled(var.getmanajemen());
+        MnBillingParsial.setEnabled(var.getkasir());
+        MnBilling.setEnabled(var.getkasir());
         MnDataRalan.setEnabled(var.getmanajemen());
         MnDataRalan1.setEnabled(var.getmanajemen());
         MnDataPemberianObat.setEnabled(var.getmanajemen());
@@ -8165,8 +8165,49 @@ private void MnDataPemberianObatActionPerformed(java.awt.event.ActionEvent evt) 
         MnPermintaanRadiologi.setEnabled(var.getmanajemen());
         MnJadwalOperasi1.setEnabled(var.getmanajemen());   
         MnSKDPBPJS1.setEnabled(var.getmanajemen());  
+        MnSEP.setEnabled(var.getmanajemen());  
         MnPermintaanLab1.setEnabled(var.getmanajemen());
         MnPermintaanRadiologi1.setEnabled(var.getmanajemen());
+
+        if(var.getparamedis() == true){ 
+            MnRawatJalan1.setEnabled(true);
+            MnResepDOkter.setEnabled(true);
+            MnResepDOkter1.setEnabled(true);
+            MnPeriksaRadiologi.setEnabled(true);
+            MnPeriksaRadiologi1.setEnabled(true);
+            MnOperasi.setEnabled(true);
+            MnOperasi1.setEnabled(true);
+            MnNoResep.setEnabled(true);
+            MnNoResep1.setEnabled(true);
+            MnObatLangsung.setEnabled(true);
+            MnObatLangsung1.setEnabled(true);
+            MnDataRalan.setEnabled(true);
+            MnDataRalan1.setEnabled(true);
+            MnDataPemberianObat.setEnabled(true);
+            MnDataPemberianObat1.setEnabled(true);
+            MnDokter.setEnabled(true);
+            MnPenjab.setEnabled(true);
+            MnPoli.setEnabled(true);
+            MnDiagnosa.setEnabled(true);   
+            MnDiagnosa1.setEnabled(true);   
+            ppRiwayat.setEnabled(true);     
+            ppRiwayat1.setEnabled(true);   
+            MnRujuk.setEnabled(true);
+            MnPoliInternal.setEnabled(true);
+            MnHapusRujukan.setEnabled(true);        
+            ppBerkasDigital.setEnabled(true);        
+            ppBerkasDigital1.setEnabled(true);      
+            ppIKP.setEnabled(true);
+            ppIKP1.setEnabled(true);    
+            MnJadwalOperasi.setEnabled(true);      
+            MnSKDPBPJS.setEnabled(true); 
+            MnPermintaanLab.setEnabled(true);
+            MnPermintaanRadiologi.setEnabled(true);
+            MnJadwalOperasi1.setEnabled(true);   
+            MnSKDPBPJS1.setEnabled(true);  
+            MnPermintaanLab1.setEnabled(true);
+            MnPermintaanRadiologi1.setEnabled(true);            
+        }
         
         if(var.getkode().equals("Admin Utama")){
             MnHapusData.setEnabled(true);

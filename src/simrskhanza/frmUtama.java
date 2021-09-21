@@ -149,6 +149,9 @@ import laporan.DlgICD9;
 import laporan.DlgKunjunganRalan;
 import laporan.DlgKunjunganRanap;
 import laporan.DlgSensusHarianPoli;
+import laporan.DlgDiagnosaPenyakit;
+import permintaan.DlgBookingOperasi;
+import permintaan.DlgBookingRegistrasi;
 import permintaan.DlgCariPermintaanLab;
 import permintaan.DlgCariPermintaanRadiologi;
 import setting.DlgBiayaHarian;
@@ -356,6 +359,8 @@ public class frmUtama extends javax.swing.JFrame {
         MnKasirRalan = new javax.swing.JMenuItem();
         MnDepositPasien = new javax.swing.JMenuItem();
         MnPiutangPasien = new javax.swing.JMenuItem();
+        MnBookingOperasi = new javax.swing.JMenuItem();
+        MnBookingRegistrasi = new javax.swing.JMenuItem();
         jMenuManajemen = new javax.swing.JMenu();
         MnDataDokter = new javax.swing.JMenuItem();
         MnDataPetugas = new javax.swing.JMenuItem();
@@ -710,7 +715,7 @@ public class frmUtama extends javax.swing.JFrame {
 
         tanggal.setEditable(false);
         tanggal.setForeground(new java.awt.Color(50, 70, 50));
-        tanggal.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "28/08/2021" }));
+        tanggal.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "01/09/2021" }));
         tanggal.setDisplayFormat("dd/MM/yyyy");
         tanggal.setName("tanggal"); // NOI18N
         tanggal.setOpaque(false);
@@ -1909,6 +1914,32 @@ public class frmUtama extends javax.swing.JFrame {
         MenuKasir.add(MnPiutangPasien);
 
         jMenuLayanan.add(MenuKasir);
+
+        MnBookingOperasi.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        MnBookingOperasi.setForeground(new java.awt.Color(51, 51, 51));
+        MnBookingOperasi.setText("Booking Operasi");
+        MnBookingOperasi.setEnabled(false);
+        MnBookingOperasi.setName("MnBookingOperasi"); // NOI18N
+        MnBookingOperasi.setPreferredSize(new java.awt.Dimension(200, 22));
+        MnBookingOperasi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MnBookingOperasiActionPerformed(evt);
+            }
+        });
+        jMenuLayanan.add(MnBookingOperasi);
+
+        MnBookingRegistrasi.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        MnBookingRegistrasi.setForeground(new java.awt.Color(51, 51, 51));
+        MnBookingRegistrasi.setText("Booking Registrasi");
+        MnBookingRegistrasi.setEnabled(false);
+        MnBookingRegistrasi.setName("MnBookingRegistrasi"); // NOI18N
+        MnBookingRegistrasi.setPreferredSize(new java.awt.Dimension(200, 22));
+        MnBookingRegistrasi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MnBookingRegistrasiActionPerformed(evt);
+            }
+        });
+        jMenuLayanan.add(MnBookingRegistrasi);
 
         MenuBar.add(jMenuLayanan);
 
@@ -4179,6 +4210,8 @@ public class frmUtama extends javax.swing.JFrame {
                 MnRefRuangRawat.setEnabled(false);
                 MnRefSpesialistik.setEnabled(false);
                 MnRefSpesialistikKontrol.setEnabled(false);
+                MnBookingOperasi.setEnabled(false);
+                MnBookingRegistrasi.setEnabled(false);
                 //Jong Source end
 
                 edAdmin.setText("");
@@ -4398,6 +4431,8 @@ public class frmUtama extends javax.swing.JFrame {
                     MnRefRuangRawat.setEnabled(true);
                     MnRefSpesialistik.setEnabled(true);
                     MnRefSpesialistikKontrol.setEnabled(true);
+                    MnBookingOperasi.setEnabled(true);
+                    MnBookingRegistrasi.setEnabled(true);
                     //Jong Source end
 
                     DlgLogin.dispose();
@@ -4465,11 +4500,14 @@ public class frmUtama extends javax.swing.JFrame {
                         MnLapKjgRln.setEnabled(true);
                         MnLapKjgRanap.setEnabled(true);
                         MnSensusHrPoli.setEnabled(true);
+                        MnBookingOperasi.setEnabled(true);
+                        MnBookingRegistrasi.setEnabled(true);
+                        BtnToolKasir.setEnabled(true);
                     }
 
                     // Menu Paramedis ================================================
                     if(var.getparamedis() == true){
-                        BtnToolReg.setEnabled(true);
+                        //BtnToolReg.setEnabled(true);
                         btnToolIGD.setEnabled(true);
                         MnTindakanRalan.setEnabled(true);
                         MnKamarInap.setEnabled(true);
@@ -4481,6 +4519,8 @@ public class frmUtama extends javax.swing.JFrame {
                         MnIgd.setEnabled(true);
                         MnOperasi.setEnabled(true);
                         BtnToolKamnap.setEnabled(true);
+                        MnBookingOperasi.setEnabled(true);
+                        BtnToolKasir.setEnabled(true);
                     }
 
                     // MENU PENGGUNA ============================================
@@ -6458,8 +6498,8 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
     private void MnDiagnosaPasienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnDiagnosaPasienActionPerformed
         isTutup();
         this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-        DlgHutangObatBelumLunas form=new DlgHutangObatBelumLunas(this,false);
-        form.tampil();
+        DlgDiagnosaPenyakit form=new DlgDiagnosaPenyakit(this,false);
+        //form.tampil();
         form.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
         form.setLocationRelativeTo(PanelUtama);
         form.setVisible(true);
@@ -7005,6 +7045,27 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
         this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnMappingDokterDPJPActionPerformed
 
+    private void MnBookingOperasiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnBookingOperasiActionPerformed
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgBookingOperasi billing=new DlgBookingOperasi(this,false);
+        billing.tampil();
+        billing.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        billing.setLocationRelativeTo(PanelUtama);
+        billing.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
+    }//GEN-LAST:event_MnBookingOperasiActionPerformed
+
+    private void MnBookingRegistrasiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnBookingRegistrasiActionPerformed
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgBookingRegistrasi form=new DlgBookingRegistrasi(this,false);
+        form.setSize(PanelUtama.getWidth(),PanelUtama.getHeight());
+        form.setLocationRelativeTo(PanelUtama);
+        form.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
+    }//GEN-LAST:event_MnBookingRegistrasiActionPerformed
+
     /**
     * @param args the command line arguments
     */
@@ -7066,6 +7127,8 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
     private javax.swing.JMenuItem MnBlnMnj;
     private javax.swing.JMenuItem MnBlnParamedis;
     private javax.swing.JMenuItem MnBlnSrn;
+    private javax.swing.JMenuItem MnBookingOperasi;
+    private javax.swing.JMenuItem MnBookingRegistrasi;
     private javax.swing.JMenuItem MnBridging;
     private javax.swing.JMenuItem MnBukuBesar;
     private javax.swing.JMenuItem MnBulananDok;

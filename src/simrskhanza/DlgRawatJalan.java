@@ -3050,37 +3050,37 @@ public final class DlgRawatJalan extends javax.swing.JDialog {
     private void TabRawatMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TabRawatMouseClicked
         switch (TabRawat.getSelectedIndex()) {
             case 0:
-                BtnSimpan.setEnabled(var.getmanajemen());
-                BtnHapus.setEnabled(var.getmanajemen());
-                BtnEdit.setEnabled(var.getmanajemen());
-                BtnPrint.setEnabled(var.getmanajemen());
+                BtnSimpan.setEnabled(var.getmanajemen() || var.getparamedis());
+                BtnHapus.setEnabled(var.getmanajemen() || var.getparamedis());
+                BtnEdit.setEnabled(var.getmanajemen() || var.getparamedis());
+                BtnPrint.setEnabled(var.getmanajemen() || var.getparamedis());
                 BtnTambahTindakan.setVisible(true);
                 TCari.setPreferredSize(new Dimension(207,23));            
                 TabRawatTindakanDokterMouseClicked(null);
                 break;
             case 1:
-                BtnSimpan.setEnabled(var.getmanajemen());
-                BtnHapus.setEnabled(var.getmanajemen());
-                BtnEdit.setEnabled(var.getmanajemen());
-                BtnPrint.setEnabled(var.getmanajemen());
+                BtnSimpan.setEnabled(var.getmanajemen() || var.getparamedis());
+                BtnHapus.setEnabled(var.getmanajemen() || var.getparamedis());
+                BtnEdit.setEnabled(var.getmanajemen() || var.getparamedis());
+                BtnPrint.setEnabled(var.getmanajemen() || var.getparamedis());
                 BtnTambahTindakan.setVisible(true); 
                 TCari.setPreferredSize(new Dimension(207,23));
                 TabRawatTindakanPetugasMouseClicked(null);
                 break;
             case 2:
-                BtnSimpan.setEnabled(var.getmanajemen());
-                BtnHapus.setEnabled(var.getmanajemen());
-                BtnEdit.setEnabled(var.getmanajemen());
-                BtnPrint.setEnabled(var.getmanajemen());
+                BtnSimpan.setEnabled(var.getmanajemen() || var.getparamedis());
+                BtnHapus.setEnabled(var.getmanajemen() || var.getparamedis());
+                BtnEdit.setEnabled(var.getmanajemen() || var.getparamedis());
+                BtnPrint.setEnabled(var.getmanajemen() || var.getparamedis());
                 BtnTambahTindakan.setVisible(true); 
                 TCari.setPreferredSize(new Dimension(207,23));
                 TabRawatTindakanDokterPetugasMouseClicked(null);
                 break;
             case 3:
-                BtnSimpan.setEnabled(var.getmanajemen());
-                BtnHapus.setEnabled(var.getmanajemen());
-                BtnEdit.setEnabled(var.getmanajemen());
-                BtnPrint.setEnabled(var.getmanajemen());
+                BtnSimpan.setEnabled(var.getmanajemen() || var.getparamedis());
+                BtnHapus.setEnabled(var.getmanajemen() || var.getparamedis());
+                BtnEdit.setEnabled(var.getmanajemen() || var.getparamedis());
+                BtnPrint.setEnabled(var.getmanajemen() || var.getparamedis());
                 BtnTambahTindakan.setVisible(false); 
                 TCari.setPreferredSize(new Dimension(240,23));
                 TCariPasien.setText(TNoRM.getText());
@@ -3090,35 +3090,35 @@ public final class DlgRawatJalan extends javax.swing.JDialog {
                 BtnTambahTindakan.setVisible(false); 
                 TCari.setPreferredSize(new Dimension(240,23));
                 TCariPasien.setText(TNoRM.getText());
-                if(var.getmanajemen()==true){
+                if(var.getmanajemen()==true || var.getparamedis()==true){
                     panelResume.setRM(TNoRM.getText(),Valid.SetTgl(DTPCari1.getSelectedItem()+""), Valid.SetTgl(DTPCari2.getSelectedItem()+""),false);
                     panelResume.pilihTab();
                 }                    
                 LCount.setText("0");
                 break;
             case 5:
-                BtnSimpan.setEnabled(var.getmanajemen());
-                BtnHapus.setEnabled(var.getmanajemen());
-                BtnEdit.setEnabled(var.getmanajemen());
-                BtnPrint.setEnabled(var.getmanajemen());
+                BtnSimpan.setEnabled(var.getmanajemen() || var.getparamedis());
+                BtnHapus.setEnabled(var.getmanajemen() || var.getparamedis());
+                BtnEdit.setEnabled(var.getmanajemen() || var.getparamedis());
+                BtnPrint.setEnabled(var.getmanajemen() || var.getparamedis());
                 BtnTambahTindakan.setVisible(false);
                 TCari.setPreferredSize(new Dimension(240,23));
                 TCariPasien.setText(TNoRM.getText());
-                if(var.getmanajemen()==true){
+                if(var.getmanajemen()==true|| var.getparamedis()==true){
                     panelDiagnosa1.setRM(TNoRw.getText(),TNoRM.getText(),Valid.SetTgl(DTPCari1.getSelectedItem()+""), Valid.SetTgl(DTPCari2.getSelectedItem()+""),"Ralan",TCari.getText().trim());
                     panelDiagnosa1.pilihTab();
                     LCount.setText(panelDiagnosa1.getRecord()+"");
                 } 
                 break;
             case 6:
-                BtnSimpan.setEnabled(var.getmanajemen());
-                BtnHapus.setEnabled(var.getmanajemen());
-                BtnEdit.setEnabled(var.getmanajemen());
-                BtnPrint.setEnabled(var.getmanajemen());
+                BtnSimpan.setEnabled(var.getmanajemen() || var.getparamedis());
+                BtnHapus.setEnabled(var.getmanajemen() || var.getparamedis());
+                BtnEdit.setEnabled(var.getmanajemen() || var.getparamedis());
+                BtnPrint.setEnabled(var.getmanajemen() || var.getparamedis());
                 BtnTambahTindakan.setVisible(false);
                 TCari.setPreferredSize(new Dimension(240,23));
                 TCariPasien.setText(TNoRM.getText());
-                if(var.getmanajemen()==true){
+                if(var.getmanajemen()==true || var.getparamedis()==true){
                     tampilCatatan();
                 } 
                 break;
@@ -4390,25 +4390,28 @@ private void BtnEditKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_B
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getmanajemen());
-        BtnHapus.setEnabled(var.getmanajemen());
-        BtnEdit.setEnabled(var.getmanajemen());
-        BtnPrint.setEnabled(var.getmanajemen());
-        BtnResepObat.setEnabled(var.getmanajemen());
-        BtnCopyResep.setEnabled(var.getmanajemen());
-        BtnObatBhp.setEnabled(var.getmanajemen());  
-        BtnInputObat.setEnabled(var.getmanajemen());   
-        BtnPermintaanLab.setEnabled(var.getmanajemen());     
-        BtnBerkasDigital.setEnabled(var.getmanajemen());    
-        BtnPermintaanRad.setEnabled(var.getmanajemen());  
-        BtnTambahTindakan.setEnabled(var.getmanajemen());    
-        BtnKamar.setEnabled(var.getmanajemen());   
-        BtnRujukInternal.setEnabled(var.getmanajemen());
-        BtnRujukKeluar.setEnabled(var.getmanajemen());
-        BtnSKDP.setEnabled(var.getmanajemen());     
-        BtnCatatan.setEnabled(var.getmanajemen());
-        TCari.setPreferredSize(new Dimension(207,23));
-        TabRawat.setSelectedIndex(0);    
+        if(var.getparamedis() == true){ 
+            BtnSimpan.setEnabled(true);
+            BtnHapus.setEnabled(true);
+            BtnEdit.setEnabled(true);
+            BtnPrint.setEnabled(true);
+            BtnResepObat.setEnabled(true);
+            BtnCopyResep.setEnabled(true);
+            BtnObatBhp.setEnabled(true);  
+            BtnInputObat.setEnabled(true);   
+            BtnPermintaanLab.setEnabled(true);     
+            BtnBerkasDigital.setEnabled(true);    
+            BtnPermintaanRad.setEnabled(true);  
+            BtnTambahTindakan.setEnabled(true);    
+            BtnKamar.setEnabled(true);   
+            BtnRujukInternal.setEnabled(true);
+            BtnRujukKeluar.setEnabled(true);
+            BtnSKDP.setEnabled(true);     
+            BtnCatatan.setEnabled(true);
+            TCari.setPreferredSize(new Dimension(207,23));
+            TabRawat.setSelectedIndex(0);                
+        }
+
     }
 
     private void tampilPemeriksaan() {
