@@ -16,7 +16,6 @@ import laporan.DlgDataHAIs;
 import bridging.BPJSDataSEP;
 import bridging.BPJSNik;
 import bridging.BPJSPeserta;
-import bridging.DlgSKDPBPJS;
 import bridging.BPJSSPRI;
 import bridging.BPJSSuratKontrol;
 import laporan.DlgDiagnosaPenyakit;
@@ -7764,13 +7763,13 @@ private void MnRujukMasukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-
                       psanak.setString(1,tbKamIn.getValueAt(tbKamIn.getSelectedRow()-1,0).toString());
                       rs2=psanak.executeQuery();
                       if(rs2.next()){
-                            DlgSKDPBPJS form=new DlgSKDPBPJS(null,false);
+/*                            DlgSKDPBPJS form=new DlgSKDPBPJS(null,false);
                             form.isCek();
                             form.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
                             form.setLocationRelativeTo(internalFrame1);
                             form.emptTeks();
                             form.setNoRm(rs2.getString("no_rkm_medis"),rs2.getString("nm_pasien"));
-                            form.setVisible(true);
+                            form.setVisible(true); */
                       }else{
                           JOptionPane.showMessageDialog(null,"Maaf, Silahkan anda pilih dulu pasien...!!!");
                           tbKamIn.requestFocus();
@@ -7789,13 +7788,13 @@ private void MnRujukMasukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-
                 System.out.println(e);
             }                
         }else{
-            DlgSKDPBPJS form=new DlgSKDPBPJS(null,false);
+/*            DlgSKDPBPJS form=new DlgSKDPBPJS(null,false);
             form.isCek();
             form.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
             form.setLocationRelativeTo(internalFrame1);
             form.emptTeks();
             form.setNoRm(TNoRM.getText(),TPasien.getText());
-            form.setVisible(true);
+            form.setVisible(true); */
         }
     }//GEN-LAST:event_MnSKDPBPJSActionPerformed
 
@@ -8848,6 +8847,86 @@ private void MnRujukMasukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-
             }
             CmbTahunItemStateChanged(null);   
         } catch (SQLException e) {
+            System.out.println(e);
+        }       
+    }
+
+    public void setNoRm(String norwt,String norm,String nmpasien) {
+        norawat.setText(norwt);
+        TNoRM.setText(norm);
+        TPasien.setText(nmpasien);
+        R1.setSelected(true);        
+        TCari.setText(norwt);
+        try {    
+            ps=koneksi.prepareStatement("select no_rawat, kd_kamar, diagnosa_awal, diagnosa_akhir, tgl_masuk, jam_masuk, tgl_keluar, jam_keluar, ttl_biaya "+
+                    "from kamar_inap where no_rawat=? order by tgl_masuk,jam_masuk desc limit 1 ");
+            try {
+                ps.setString(1,norawat.getText());
+                rs=ps.executeQuery();
+                if(rs.next()){
+                    norawat.setEditable(false);
+                    norawat.setText(rs.getString(1));
+                    kdkamar.setText(rs.getString(2));
+                    diagnosaawal.setText(rs.getString(3));
+                    diagnosaakhir.setText(rs.getString(4));
+                    TIn.setText(rs.getString(5));
+                    JamMasuk.setText(rs.getString(6));
+                    TOut.setText(rs.getString(7));
+                    ttlbiaya.setText(rs.getString(8));
+
+                    kdkamar.setEditable(false);
+                    diagnosaawal.setEditable(false);                
+                    diagnosaakhir.setVisible(true);
+                    btnDiagnosa.setVisible(true);
+                    jLabel23.setVisible(true);
+                    cmbStatus.setVisible(true);
+                    jLabel26.setVisible(true);
+                    diagnosaakhir.setText("");
+                    LblStts.setText("Pulang/Check Out");  
+                    i=1;
+                    btnReg.setEnabled(false);
+                    btnKamar.setEnabled(false);
+                    CmbTahun.setSelectedItem(now.substring(0,4));
+                    CmbBln.setSelectedItem(now.substring(5,7));
+                    CmbTgl.setSelectedItem(now.substring(8,10));
+                }else{
+                    norawat.setEditable(true);
+                    kdkamar.setEditable(true);
+                    diagnosaawal.setEditable(true);
+                    diagnosaakhir.setVisible(false);
+                    btnDiagnosa.setVisible(false);
+                    TIn.setText("");
+                    JamMasuk.setText("");
+                    TOut.setText("");
+                    ttlbiaya.setText("0");
+                    jLabel23.setVisible(false);                
+                    cmbStatus.setVisible(false);
+                    jLabel26.setVisible(false);
+                    diagnosaakhir.setText("-");
+                    LblStts.setText("Masuk/Check In");
+                    btnReg.setEnabled(true);
+                    btnKamar.setEnabled(true);   
+                    CmbTahun.setSelectedItem(now.substring(0,4));
+                    CmbBln.setSelectedItem(now.substring(5,7));
+                    CmbTgl.setSelectedItem(now.substring(8,10));          
+                }
+            } catch (Exception e) {
+                System.out.println("Notifikasi : "+e);
+            }finally{
+                if(rs != null){
+                    rs.close();
+                }                
+                if(ps != null){
+                    ps.close();
+                }
+            }
+            
+            if(kdkamar.isEditable()==false){
+                isKmr();
+                isjml();
+            }
+            CmbTahunItemStateChanged(null);   
+        } catch (Exception e) {
             System.out.println(e);
         }       
     }

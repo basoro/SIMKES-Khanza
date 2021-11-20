@@ -1,11 +1,11 @@
 /*
-  Dilarang keras menggandakan/mengcopy/menyebarkan/membajak/mendecompile
+  Dilarang keras menggandakan/mengcopy/menyebarkan/membajak/mendecompile 
   Software ini dalam bentuk apapun tanpa seijin pembuat software
   (Khanza.Soft Media). Bagi yang sengaja membajak softaware ini ta
   npa ijin, kami sumpahi sial 1000 turunan, miskin sampai 500 turu
   nan. Selalu mendapat kecelakaan sampai 400 turunan. Anak pertama
   nya cacat tidak punya kaki sampai 300 turunan. Susah cari jodoh
-  sampai umur 50 tahun sampai 200 turunan. Ya Alloh maafkan kami
+  sampai umur 50 tahun sampai 200 turunan. Ya Alloh maafkan kami 
   karena telah berdoa buruk, semua ini kami lakukan karena kami ti
   dak pernah rela karya kami dibajak tanpa ijin.
  */
@@ -24,8 +24,6 @@ import javax.swing.table.TableColumn;
 import fungsi.validasi;
 import java.awt.Cursor;
 import java.awt.event.KeyEvent;
-import java.io.FileInputStream;
-import java.util.Properties;
 import javax.swing.JOptionPane;
 import javax.swing.event.DocumentEvent;
 import org.springframework.http.HttpEntity;
@@ -39,19 +37,17 @@ import org.springframework.http.MediaType;
  */
 public final class BPJSCekReferensiSpesialistikKontrol extends javax.swing.JDialog {
     private final DefaultTableModel tabMode;
-    private final Properties prop = new Properties();
     private validasi Valid=new validasi();
     private int i=0;
     private ApiBPJS api=new ApiBPJS();
-    private String URL="",link="";
+    private String URL="",link="",utc="";
     private HttpHeaders headers ;
     private HttpEntity requestEntity;
     private ObjectMapper mapper = new ObjectMapper();
     private JsonNode root;
     private JsonNode nameNode;
     private JsonNode response;
-    private JsonNode res1;
-
+        
     /** Creates new form DlgKamar
      * @param parent
      * @param modal */
@@ -88,9 +84,9 @@ public final class BPJSCekReferensiSpesialistikKontrol extends javax.swing.JDial
             }
         }
         tbKamar.setDefaultRenderer(Object.class, new WarnaTable());
-
+        
         Poli.setDocument(new batasInput((byte)100).getKata(Poli));
-
+        
         if(koneksiDB.cariCepat().equals("aktif")){
             Poli.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
@@ -112,19 +108,18 @@ public final class BPJSCekReferensiSpesialistikKontrol extends javax.swing.JDial
                     }
                 }
             });
-        }
-
+        } 
+        
         try {
-            prop.loadFromXML(new FileInputStream("setting/config.xml"));
-            link = prop.getProperty("URLAPIBPJS");
+            link=koneksiDB.URLAPIBPJS();
             URL = link+"/RencanaKontrol/ListSpesialistik/JnsKontrol";
         } catch (Exception e) {
             System.out.println("E : "+e);
         }
-
+              
     }
-
-
+    
+    
 
     /** This method is called from within the constructor to
      * initialize the form.
@@ -315,27 +310,19 @@ public final class BPJSCekReferensiSpesialistikKontrol extends javax.swing.JDial
         try {
             headers = new HttpHeaders();
             headers.setContentType(MediaType.APPLICATION_JSON);
-	    headers.add("X-Cons-ID",koneksiDB.ApiConsBPJS());
-	    headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));
-	    headers.add("X-Signature",api.getHmac());
-            /*System.out.println("X-Cons-ID:"+koneksiDB.CONSIDAPIBPJS());
-	    System.out.println("X-Timestamp:"+String.valueOf(api.GetUTCdatetimeAsString()));
-	    System.out.println("X-Signature:"+api.getHmac());
-            System.out.println("Content-Type: Application/x-www-form-urlencoded");*/
-	    requestEntity = new HttpEntity(headers);
-            //System.out.println(URL+"/"+JenisKontrol.getText().substring(0,1)+"/nomor/"+Nomor.getText()+"/TglRencanaKontrol/"+TanggalKontrol.getText());
+	    headers.add("X-Cons-ID",koneksiDB.CONSIDAPIBPJS());
+	    utc=String.valueOf(api.GetUTCdatetimeAsString());
+	    headers.add("X-Timestamp",utc);
+	    headers.add("X-Signature",api.getHmac(utc));
+            headers.add("user_key",koneksiDB.USERKEYAPIBPJS());
+            requestEntity = new HttpEntity(headers);
+            System.out.println(URL+"/"+JenisKontrol.getText().substring(0,1)+"/nomor/"+Nomor.getText()+"/TglRencanaKontrol/"+TanggalKontrol.getText());
             root = mapper.readTree(api.getRest().exchange(URL+"/"+JenisKontrol.getText().substring(0,1)+"/nomor/"+Nomor.getText()+"/TglRencanaKontrol/"+TanggalKontrol.getText(), HttpMethod.GET, requestEntity, String.class).getBody());
             nameNode = root.path("metaData");
             if(nameNode.path("code").asText().equals("200")){
                 Valid.tabelKosong(tabMode);
-                if(koneksiDB.versionBpjs().equals("2")){
-                    res1 = root.path("response");
-                    String res = api.decrypt(res1.asText());
-                    String lz = api.lzDecrypt(res);
-                    response = mapper.readTree(lz);
-                }else{
-                    response = root.path("response");
-                }
+                response = mapper.readTree(api.Decrypt(root.path("response").asText(),utc));
+                //response = root.path("response");
                 if(response.path("list").isArray()){
                     i=1;
                     for(JsonNode list:response.path("list")){
@@ -349,20 +336,20 @@ public final class BPJSCekReferensiSpesialistikKontrol extends javax.swing.JDial
                     }
                 }
             }else {
-                JOptionPane.showMessageDialog(null,nameNode.path("message").asText());
-            }
+                JOptionPane.showMessageDialog(null,nameNode.path("message").asText());                
+            }   
         } catch (Exception ex) {
             System.out.println("Notifikasi : "+ex);
             if(ex.toString().contains("UnknownHostException")){
                 JOptionPane.showMessageDialog(rootPane,"Koneksi ke server BPJS terputus...!");
             }
         }
-    }
+    }    
 
     public JTable getTable(){
         return tbKamar;
     }
-
+    
     public void SetKontrol(String nomor,String jeniskontrol,String tanggalkontrol){
         TanggalKontrol.setText(tanggalkontrol);
         JenisKontrol.setText(jeniskontrol);

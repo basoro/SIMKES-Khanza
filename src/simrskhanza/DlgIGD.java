@@ -19,7 +19,6 @@ import bridging.BPJSNik;
 import bridging.BPJSPeserta;
 import bridging.BPJSSPRI;
 import bridging.BPJSSuratKontrol;
-import bridging.DlgSKDPBPJS;
 import laporan.DlgFrekuensiPenyakitRalan;
 import keuangan.DlgBilingRalan;
 import fungsi.WarnaTable;
@@ -5479,13 +5478,13 @@ private void MnLaporanRekapKunjunganBulananPoliActionPerformed(java.awt.event.Ac
             if(Sequel.cariInteger("select count(no_rawat) from kamar_inap where no_rawat=?",TNoRw.getText())>0){
                 JOptionPane.showMessageDialog(null,"Maaf, Pasien sudah masuk Kamar Inap. Gunakan billing Ranap..!!!");
             }else {
-                DlgSKDPBPJS form=new DlgSKDPBPJS(null,false);
-                form.isCek();
-                form.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
-                form.setLocationRelativeTo(internalFrame1);      
-                form.emptTeks();      
-                form.setNoRm(TNoRM.getText(),TPasien.getText()); 
-                form.setVisible(true);
+//                DlgSKDPBPJS form=new DlgSKDPBPJS(null,false);
+//                form.isCek();
+//                form.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
+//                form.setLocationRelativeTo(internalFrame1);      
+//                form.emptTeks();      
+//                form.setNoRm(TNoRM.getText(),TPasien.getText()); 
+//                form.setVisible(true);
             }                
         }
     }//GEN-LAST:event_MnSKDPBPJSActionPerformed

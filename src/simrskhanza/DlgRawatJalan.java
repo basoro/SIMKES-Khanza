@@ -1,6 +1,5 @@
 package simrskhanza;
 
-import bridging.DlgSKDPBPJS;
 import fungsi.WarnaTable;
 import fungsi.batasInput;
 import fungsi.koneksiDB;
@@ -3661,13 +3660,13 @@ private void BtnEditKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_B
             if(Sequel.cariInteger("select count(no_rawat) from kamar_inap where no_rawat=?",TNoRw.getText())>0){
                 JOptionPane.showMessageDialog(null,"Maaf, Pasien sudah masuk Kamar Inap. Gunakan billing Ranap..!!!");
             }else {
-                DlgSKDPBPJS form=new DlgSKDPBPJS(null,false);
+/*                DlgSKDPBPJS form=new DlgSKDPBPJS(null,false);
                 form.isCek();
                 form.setSize(internalFrame1.getWidth(),internalFrame1.getHeight());
                 form.setLocationRelativeTo(internalFrame1);      
                 form.emptTeks();      
                 form.setNoRm(TNoRM.getText(),TPasien.getText(), kode_poli,Sequel.cariIsi("select nm_poli from poliklinik where kd_poli=?",kode_poli),KdDok.getText(),TDokter.getText());
-                form.setVisible(true);
+                form.setVisible(true);*/
             }                
         }
     }//GEN-LAST:event_BtnSKDPActionPerformed

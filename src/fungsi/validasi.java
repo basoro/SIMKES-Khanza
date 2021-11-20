@@ -573,6 +573,51 @@ public final class validasi {
         }
     }
 
+    public void MyReport(String reportName,String reportDirName,String judul,Map parameters){
+        Properties systemProp = System.getProperties();
+
+        // Ambil current dir
+        String currentDir = systemProp.getProperty("user.dir");
+
+        File dir = new File(currentDir);
+
+        File fileRpt;
+        String fullPath = "";
+        if (dir.isDirectory()) {
+            String[] isiDir = dir.list();
+            for (String iDir : isiDir) {
+                fileRpt = new File(currentDir + File.separatorChar + iDir + File.separatorChar + reportDirName + File.separatorChar + reportName);
+                if (fileRpt.isFile()) { // Cek apakah file RptMaster.jasper ada
+                    fullPath = fileRpt.toString();
+                    System.out.println("Found Report File at : " + fullPath);
+                } // end if
+            } // end for i
+        } // end if
+
+        try {
+            try (Statement stm = connect.createStatement()) {
+                try {
+                    
+                    String namafile="./"+reportDirName+"/"+reportName;
+                    JasperPrint jasperPrint = JasperFillManager.fillReport(namafile, parameters, connect);
+                    
+                    JasperViewer jasperViewer = new JasperViewer(jasperPrint, false);
+                    jasperViewer.setTitle(judul);
+                    Dimension screen=Toolkit.getDefaultToolkit().getScreenSize();
+                    jasperViewer.setSize(screen.width-50,screen.height-50);
+                    jasperViewer.setModalExclusionType(ModalExclusionType.TOOLKIT_EXCLUDE);
+                    jasperViewer.setLocationRelativeTo(null);
+                    jasperViewer.setVisible(true);
+                } catch (Exception rptexcpt) {
+                    System.out.println("Report Can't view because : " + rptexcpt);
+                    JOptionPane.showMessageDialog(null,"Report Can't view because : "+ rptexcpt);
+                }
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+        
     @SuppressWarnings("empty-statement")
     public void MyReport2(String reportName,String reportDirName,String judul,String qry){
         Properties systemProp = System.getProperties();

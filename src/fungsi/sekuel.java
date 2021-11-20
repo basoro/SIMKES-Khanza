@@ -141,58 +141,58 @@ public final class sekuel {
 
     public boolean menyimpantf(String table,String value,int i,String[] a,String acuan_field,String update,int j,String[] b){
         bool=false;
-        try{ 
+        try{
             ps=connect.prepareStatement("insert into "+table+" values("+value+")");
             for(angka=1;angka<=i;angka++){
                 ps.setString(angka,a[angka-1]);
-            }            
+            }
             ps.executeUpdate();
-            
+
             if(ps != null){
                 ps.close();
-            } 
+            }
             bool=true;
         }catch(Exception e){
             try {
                 ps=connect.prepareStatement("update "+table+" set "+update+" where "+acuan_field);
                 for(angka=1;angka<=j;angka++){
                     ps.setString(angka,b[angka-1]);
-                } 
-                ps.executeUpdate();   
-                
+                }
+                ps.executeUpdate();
+
                 if(ps != null){
                     ps.close();
-                } 
+                }
                 bool=true;
             } catch (Exception e2) {
                 bool=false;
                 System.out.println("Notifikasi : "+e2);
-            }                         
+            }
         }
         return bool;
     }
 
-    
+
     public void menyimpan2(String table,String value,int i,String[] a){
         try {
             ps=connect.prepareStatement("insert into "+table+" values("+value+")");
-            try{                 
+            try{
                 for(angka=1;angka<=i;angka++){
                     ps.setString(angka,a[angka-1]);
-                }            
+                }
                 ps.executeUpdate();
             }catch(Exception e){
-                System.out.println("Notifikasi "+table+" : "+e);            
+                System.out.println("Notifikasi "+table+" : "+e);
             }finally{
                 if(ps != null){
                     ps.close();
-                }                
+                }
             }
-        } catch (Exception e) { 
-        }            
+        } catch (Exception e) {
+        }
     }
 
-        
+
     public void menyimpan2(String table,String value,String sama,int i,String[] a){
         try {
             ps=connect.prepareStatement("insert into "+table+" values("+value+")");
@@ -262,35 +262,35 @@ public final class sekuel {
     }
 
     public void menyimpan3(String table,String value,int i,String[] a,String acuan_field,String update,int j,String[] b){
-        try{ 
+        try{
             ps=connect.prepareStatement("insert into "+table+" values("+value+")");
             for(angka=1;angka<=i;angka++){
                 ps.setString(angka,a[angka-1]);
-            }            
+            }
             ps.executeUpdate();
-            
+
             JOptionPane.showMessageDialog(null,"Proses simpan berhasil..!!");
             if(ps != null){
                 ps.close();
-            } 
+            }
         }catch(Exception e){
             try {
                 ps=connect.prepareStatement("update "+table+" set "+update+" where "+acuan_field);
                 for(angka=1;angka<=j;angka++){
                     ps.setString(angka,b[angka-1]);
-                } 
-                ps.executeUpdate();   
-                
+                }
+                ps.executeUpdate();
+
                 JOptionPane.showMessageDialog(null,"Proses simpan berhasil..!!");
                 if(ps != null){
                     ps.close();
-                } 
+                }
             } catch (Exception e2) {
                 System.out.println("Notifikasi : "+e2);
-            }                         
+            }
         }
     }
-        
+
     public void menyimpan(String table,String value,int i,String[] a){
         try {
             ps=connect.prepareStatement("insert into "+table+" values("+value+")");
@@ -478,12 +478,32 @@ public final class sekuel {
         }
     }
 
+    public void meghapus(String table,String field,String field2,String nilai_field,String nilai_field2) {
+        try {
+            ps=connect.prepareStatement("delete from "+table+" where "+field+"=? and "+field2+"=?");
+            try{       
+                ps.setString(1,nilai_field);
+                ps.setString(2,nilai_field2);
+                ps.executeUpdate(); 
+             }catch(Exception e){
+                System.out.println("Notifikasi : "+e);
+                JOptionPane.showMessageDialog(null,"Maaf, data gagal dihapus. Kemungkinan data tersebut masih dipakai di table lain...!!!!");
+             }finally{
+                if(ps != null){
+                    ps.close();
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("Notifikasi : "+e);
+        }
+    }
+    
     public void meghapus2(String table,String field,String nilai_field) {
         try {
             ps=connect.prepareStatement("delete from "+table+" where "+field+"=?");
-            try{       
+            try{
                 ps.setString(1,nilai_field);
-                ps.executeUpdate(); 
+                ps.executeUpdate();
                 JOptionPane.showMessageDialog(null,"Proses hapus berhasil...!!!!");
              }catch(Exception e){
                 System.out.println("Notifikasi : "+e);
@@ -497,13 +517,13 @@ public final class sekuel {
             System.out.println("Notifikasi : "+e);
         }
     }
-        
+
     public void meghapus3(String table,String field,String nilai_field) {
         try {
             ps=connect.prepareStatement("delete from "+table+" where "+field+"=?");
-            try{       
+            try{
                 ps.setString(1,nilai_field);
-                ps.executeUpdate(); 
+                ps.executeUpdate();
              }catch(Exception e){
                 System.out.println("Notifikasi : "+e);
              }finally{
@@ -515,7 +535,7 @@ public final class sekuel {
             System.out.println("Notifikasi : "+e);
         }
     }
-    
+
     public void mengedit(String table,String acuan_field,String update){
         try {
             ps=connect.prepareStatement("update "+table+" set "+update+" where "+acuan_field);
@@ -540,8 +560,8 @@ public final class sekuel {
             try{
                 for(angka=1;angka<=i;angka++){
                     ps.setString(angka,a[angka-1]);
-                } 
-                ps.executeUpdate();   
+                }
+                ps.executeUpdate();
                 JOptionPane.showMessageDialog(null,"Proses edit berhasil...!!!!");
              }catch(Exception e){
                 System.out.println("Notifikasi : "+e);
@@ -553,17 +573,17 @@ public final class sekuel {
             }
         } catch (Exception e) {
             System.out.println("Notifikasi : "+e);
-        }    
+        }
     }
-        
+
     public void mengedit3(String table,String acuan_field,String update,int i,String[] a){
         try {
             ps=connect.prepareStatement("update "+table+" set "+update+" where "+acuan_field);
             try{
                 for(angka=1;angka<=i;angka++){
                     ps.setString(angka,a[angka-1]);
-                } 
-                ps.executeUpdate();       
+                }
+                ps.executeUpdate();
              }catch(Exception e){
                 System.out.println("Notifikasi : "+e);
              }finally{
@@ -573,9 +593,9 @@ public final class sekuel {
             }
         } catch (Exception e) {
             System.out.println("Notifikasi : "+e);
-        }    
+        }
     }
-        
+
     public boolean mengedittf(String table,String acuan_field,String update){
         bool=true;
         try {
@@ -784,12 +804,12 @@ public final class sekuel {
     public boolean queryu2tf(String qry,int i,String[] a){
         bool=false;
         try {
-            try{            
+            try{
                 ps=connect.prepareStatement(qry);
                 for(angka=1;angka<=i;angka++){
                     ps.setString(angka,a[angka-1]);
-                } 
-                ps.executeUpdate(); 
+                }
+                ps.executeUpdate();
                 bool=true;
              }catch(Exception e){
                 bool=false;
@@ -804,7 +824,7 @@ public final class sekuel {
         }
         return bool;
     }
-        
+
     public void queryu3(String qry,int i,String[] a){
         try {
             try{
@@ -827,12 +847,12 @@ public final class sekuel {
 
     public void queryu4(String qry,int i,String[] a){
         try {
-            try{            
+            try{
                 ps=connect.prepareStatement(qry);
                 for(angka=1;angka<=i;angka++){
                     ps.setString(angka,a[angka-1]);
-                } 
-                ps.executeUpdate(); 
+                }
+                ps.executeUpdate();
              }catch(Exception e){
              }finally{
                 if(ps != null){
@@ -842,7 +862,7 @@ public final class sekuel {
         } catch (Exception e) {
         }
     }
-        
+
     public void AutoComitFalse(){
         try {
             connect.setAutoCommit(false);
@@ -1005,14 +1025,14 @@ public final class sekuel {
                     txt.setText(rs.getString(1));
                 }else{
                     txt.setText("");
-                }   
+                }
             }catch(SQLException e){
                 System.out.println("Notifikasi : "+e);
             }finally{
                 if(rs != null){
                     rs.close();
                 }
-                
+
                 if(ps != null){
                     ps.close();
                 }
@@ -1230,12 +1250,12 @@ public final class sekuel {
             try{
                 ps.setString(1,data);
                 ps.setString(2,data2);
-                rs=ps.executeQuery();            
+                rs=ps.executeQuery();
                 if(rs.next()){
                     angka=rs.getInt(1);
                 }else{
                     angka=0;
-                }  
+                }
             }catch(Exception e){
                 angka=0;
                 System.out.println("Notifikasi : "+e);
@@ -1243,7 +1263,7 @@ public final class sekuel {
                 if(rs != null){
                     rs.close();
                 }
-                
+
                 if(ps != null){
                     ps.close();
                 }
@@ -1251,10 +1271,10 @@ public final class sekuel {
         } catch (Exception e) {
             System.out.println("Notifikasi : "+e);
         }
-            
+
         return angka;
     }
-        
+
     public Integer cariInteger(String sql,String data,String data2,String data3){
         angka=0;
         try {
@@ -1263,12 +1283,12 @@ public final class sekuel {
                 ps.setString(1,data);
                 ps.setString(2,data2);
                 ps.setString(3,data3);
-                rs=ps.executeQuery();            
+                rs=ps.executeQuery();
                 if(rs.next()){
                     angka=rs.getInt(1);
                 }else{
                     angka=0;
-                }  
+                }
             }catch(Exception e){
                 angka=0;
                 System.out.println("Notifikasi : "+e);
@@ -1276,7 +1296,7 @@ public final class sekuel {
                 if(rs != null){
                     rs.close();
                 }
-                
+
                 if(ps != null){
                     ps.close();
                 }
@@ -1284,10 +1304,10 @@ public final class sekuel {
         } catch (Exception e) {
             System.out.println("Notifikasi : "+e);
         }
-            
+
         return angka;
     }
-        
+
     public Integer cariInteger2(String sql){
         angka=0;
         try {

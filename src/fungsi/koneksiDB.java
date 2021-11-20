@@ -1,4 +1,4 @@
-/*
+    /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -149,14 +149,104 @@ public final class koneksiDB {
         return link;
     }
 
-    public static String versionBpjs(){
-        try {
+    public static String URLAPIBPJS(){
+        try{
             prop.loadFromXML(new FileInputStream("setting/config.xml"));
-            version = prop.getProperty("VERSIONAPIBPJS");   
-        } catch (Exception e) {
-            System.out.println("E : "+e);
-            version = "";
+            var=prop.getProperty("URLAPIBPJS");
+        }catch(Exception e){
+            var="";
         }
-        return version;
+        return var;
     }
+
+    public static String SECRETKEYAPIBPJS(){
+        try{
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            var=EnkripsiAES.decrypt(prop.getProperty("SECRETKEYAPIBPJS"));
+        }catch(Exception e){
+            var="";
+        }
+        return var;
+    }
+
+    public static String CONSIDAPIBPJS(){
+        try{
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            var=EnkripsiAES.decrypt(prop.getProperty("CONSIDAPIBPJS"));
+        }catch(Exception e){
+            var="";
+        }
+        return var;
+    }
+
+    public static String USERKEYAPIBPJS(){
+        try{
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            var=EnkripsiAES.decrypt(prop.getProperty("USERKEYAPIBPJS"));
+        }catch(Exception e){
+            var="";
+        }
+        return var;
+    }
+
+    public static String URLAPIMOBILEJKN(){
+        try{
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            var=prop.getProperty("URLAPIMOBILEJKN");
+        }catch(Exception e){
+            var="";
+        }
+        return var;
+    }
+
+    public static String SECRETKEYAPIMOBILEJKN(){
+        try{
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            var=EnkripsiAES.decrypt(prop.getProperty("SECRETKEYAPIMOBILEJKN"));
+        }catch(Exception e){
+            var="";
+        }
+        return var;
+    }
+
+    public static String CONSIDAPIMOBILEJKN(){
+        try{
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            var=EnkripsiAES.decrypt(prop.getProperty("CONSIDAPIMOBILEJKN"));
+        }catch(Exception e){
+            var="";
+        }
+        return var;
+    }
+
+    public static String USERKEYAPIMOBILEJKN(){
+        try{
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            var=EnkripsiAES.decrypt(prop.getProperty("USERKEYAPIMOBILEJKN"));
+        }catch(Exception e){
+            var="";
+        }
+        return var;
+    }
+
+    public static String BASENOREG(){
+        try{
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            var=prop.getProperty("BASENOREG");
+        }catch(Exception e){
+            var="";
+        }
+        return var;
+    }
+
+    public static String URUTNOREG(){
+        try{
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            var=prop.getProperty("URUTNOREG");
+        }catch(Exception e){
+            var="";
+        }
+        return var;
+    }
+
 }

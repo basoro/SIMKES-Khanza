@@ -1,7 +1,6 @@
 
 package simrskhanza;
 
-import bridging.DlgSKDPBPJS;
 import fungsi.WarnaTable;
 import fungsi.batasInput;
 import fungsi.koneksiDB;
@@ -3963,14 +3962,14 @@ private void BtnEditKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_B
             JOptionPane.showMessageDialog(null,"Maaf, Silahkan anda pilih dulu dengan menklik data pada table...!!!");
             TCari.requestFocus();
         }else{            
-            DlgSKDPBPJS form=new DlgSKDPBPJS(null,false);
+/*            DlgSKDPBPJS form=new DlgSKDPBPJS(null,false);
             form.isCek();
             form.setSize(internalFrame1.getWidth(),internalFrame1.getHeight());
             form.setLocationRelativeTo(internalFrame1);
             form.emptTeks();
             kode_poli=Sequel.cariIsi("select kd_poli from reg_periksa where no_rawat=?",TNoRw.getText());
             form.setNoRm(TNoRM.getText(),TPasien.getText(), kode_poli,Sequel.cariIsi("select nm_poli from poliklinik where kd_poli=?",kode_poli),KdDok.getText(),TDokter.getText());
-            form.setVisible(true);
+            form.setVisible(true); */
         }
     }//GEN-LAST:event_BtnSKDPActionPerformed
 

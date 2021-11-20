@@ -2,7 +2,6 @@ package simrskhanza;
 
 import bridging.BPJSDataSEP;
 import permintaan.DlgBookingOperasi;
-import bridging.DlgSKDPBPJS;
 import laporan.DlgDiagnosaPenyakit;
 import keuangan.DlgBilingRalan;
 import fungsi.WarnaTable;
@@ -6883,13 +6882,13 @@ private void MnDataPemberianObatActionPerformed(java.awt.event.ActionEvent evt) 
             if(Sequel.cariInteger("select count(no_rawat) from kamar_inap where no_rawat=?",TNoRw.getText())>0){
                 JOptionPane.showMessageDialog(null,"Maaf, Pasien sudah masuk Kamar Inap. Gunakan billing Ranap..!!!");
             }else {
-                DlgSKDPBPJS form=new DlgSKDPBPJS(null,false);
+/*                DlgSKDPBPJS form=new DlgSKDPBPJS(null,false);
                 form.isCek();
                 form.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
                 form.setLocationRelativeTo(internalFrame1);      
                 form.emptTeks();      
                 form.setNoRm(TNoRM.getText(),TPasien.getText()); 
-                form.setVisible(true);
+                form.setVisible(true); */
             }                
         }
     }//GEN-LAST:event_MnSKDPBPJSActionPerformed
@@ -7002,7 +7001,7 @@ private void MnDataPemberianObatActionPerformed(java.awt.event.ActionEvent evt) 
                     JOptionPane.showMessageDialog(null,"Maaf, Pasien sudah masuk Kamar Inap. Gunakan billing Ranap..!!!");
                 }else {
                     this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                    DlgSKDPBPJS form=new DlgSKDPBPJS(null,false);
+/*                    DlgSKDPBPJS form=new DlgSKDPBPJS(null,false);
                     form.isCek();
                     form.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
                     form.setLocationRelativeTo(internalFrame1);
@@ -7014,7 +7013,7 @@ private void MnDataPemberianObatActionPerformed(java.awt.event.ActionEvent evt) 
                             tbKasirRalan2.getValueAt(tbKasirRalan2.getSelectedRow(),0).toString(),
                             tbKasirRalan2.getValueAt(tbKasirRalan2.getSelectedRow(),1).toString());
                     form.setVisible(true);
-                    this.setCursor(Cursor.getDefaultCursor());
+                    this.setCursor(Cursor.getDefaultCursor()); */
                 }
             }else{
                 JOptionPane.showMessageDialog(null,"Maaf, Pilih pasien terlebih dahulu..!!!");

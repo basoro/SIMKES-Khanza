@@ -8,16 +8,14 @@
     <entry key="PORTWEB">80</entry>
     <entry key="ANTRIAN">sender</entry>
     <entry key="MENUTRANSPARAN">yes</entry>
-    <!--<entry key="URLAPIBPJS">https://new-api.bpjs-kesehatan.go.id:8080/new-vclaim-rest/</entry>
-    <entry key="SECRETKEYAPIBPJS">+YfOVRwuSjfHCSmDzrAFqQ==</entry>
-    <entry key="CONSIDAPIBPJS">cqvx9b6toQcpZCbJzZIYpw==</entry>-->
-    <entry key="URLAPIBPJS">https://dvlp.bpjs-kesehatan.go.id/vclaim-rest-1.1/</entry>
+    <entry key="URLAPIBPJS">https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev</entry>
     <entry key="SECRETKEYAPIBPJS">Su3uqQpXAUQulDsCiIKRqw==</entry>
     <entry key="CONSIDAPIBPJS">SOGdEieDUIlG60cmuMO6jw==</entry>
-    <entry key="VERSIONAPIBPJS">2</entry>
-    <entry key="URLAPIAPLICARE">http://dvlp.bpjs-kesehatan.go.id:8888/aplicaresws</entry>
-    <entry key="SECRETKEYAPIAPLICARE">1112</entry>
-    <entry key="CONSIDAPIAPLICARE">1000</entry>
+    <entry key="USERKEYAPIBPJS">HhqbC0G+c/Nf2NjYLzz/0NL4mfjhHBepvBUNfIhrqxVLCSkye2PXtV1D2RJavgwh</entry>
+    <entry key="URLAPIMOBILEJKN">https://apijkn-dev.bpjs-kesehatan.go.id/antreanrs_dev</entry>
+    <entry key="SECRETKEYAPIMOBILEJKN">l4nh5eVYrLAER/I2A4b3Tw==</entry>
+    <entry key="CONSIDAPIMOBILEJKN">l4nh5eVYrLAER/I2A4b3Tw==</entry>
+    <entry key="USERKEYAPIMOBILEJKN">l4nh5eVYrLAER/I2A4b3Tw==</entry>
     <entry key="KAMARAKTIFRANAP"></entry>
     <entry key="DOKTERAKTIFKASIRRALAN"></entry>
     <entry key="POLIAKTIFKASIRRALAN"></entry>

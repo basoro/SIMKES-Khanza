@@ -8,64 +8,65 @@ package bridging;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import fungsi.koneksiDB;
-import java.io.FileInputStream;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Properties;
 import javax.swing.JOptionPane;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
+import org.springframework.http.MediaType;
 
 /**
  *
  * @author khanzasoft
  */
 public class BPJSCekNIK {
-    private final Properties prop = new Properties();
     public String cobnmAsuransi="",cobnoAsuransi="",cobtglTAT="",cobtglTMT="",
             hakKelasketerangan="",hakKelaskode="",informasidinsos="",informasinoSKTM="",
             informasiprolanisPRB="",jenisPesertaketerangan="",jenisPesertakode="",
             mrnoMR="",mrnoTelepon="",nama="",nik="",noKartu="",pisa="",
             provUmumkdProvider="",provUmumnmProvider="",sex="",statusPesertaketerangan="",
             statusPesertakode="",tglCetakKartu="",tglLahir="",tglTAT="",
-            tglTMT="",umurumurSaatPelayanan="",umurumurSekarang="",informasi="",URL="";
+            tglTMT="",umurumurSaatPelayanan="",umurumurSekarang="",informasi="",URL="",link="",utc="";
     DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     Date date = new Date();
     private ApiBPJS api=new ApiBPJS();
     private HttpHeaders headers;
     private HttpEntity requestEntity;
-    private ObjectMapper mapper = new ObjectMapper();
+    private ObjectMapper mapper = new ObjectMapper();   
     private JsonNode root;
     private JsonNode nameNode;
     private JsonNode response;
-    private JsonNode res1;
-
+        
     public BPJSCekNIK(){
         super();
-
+        try {
+            link=koneksiDB.URLAPIBPJS();  
+        } catch (Exception e) {
+            System.out.println("E : "+e);
+        }
     }
-
+    
     public void tampil(String nik) {
         try {
-            headers = api.header("json");
-	          requestEntity = new HttpEntity(headers);
-            URL = koneksiDB.linkBpjs()+"/Peserta/nik/"+nik+"/tglSEP/"+dateFormat.format(date);
+            headers = new HttpHeaders();
+            headers.setContentType(MediaType.APPLICATION_JSON);
+	    headers.add("X-Cons-ID",koneksiDB.CONSIDAPIBPJS());
+	    utc=String.valueOf(api.GetUTCdatetimeAsString());
+	    headers.add("X-Timestamp",utc);
+	    headers.add("X-Signature",api.getHmac(utc));
+            headers.add("user_key",koneksiDB.USERKEYAPIBPJS());
+	    requestEntity = new HttpEntity(headers);
+            URL = link+"/Peserta/nik/"+nik+"/tglSEP/"+dateFormat.format(date);	
             root = mapper.readTree(api.getRest().exchange(URL, HttpMethod.GET, requestEntity, String.class).getBody());
             nameNode = root.path("metaData");
             System.out.println("code : "+nameNode.path("code").asText());
             System.out.println("message : "+nameNode.path("message").asText());
-            informasi=nameNode.path("message").asText();
+            informasi="";
             if(nameNode.path("code").asText().equals("200")){
-                if(koneksiDB.versionBpjs().equals("2")){
-                    res1 = root.path("response");
-                    String res = api.decrypt(res1.asText());
-                    String lz = api.lzDecrypt(res);
-                    response = mapper.readTree(lz);
-                }else{
-                    response = root.path("response");
-                }
+                response = mapper.readTree(api.Decrypt(root.path("response").asText(),utc));
+                //response = root.path("response");
                 this.nik=response.path("peserta").path("nik").asText();
                 nama=response.path("peserta").path("nama").asText();
                 cobnmAsuransi=response.path("peserta").path("cob").path("nmAsuransi").asText();
@@ -95,9 +96,10 @@ public class BPJSCekNIK {
                 tglTMT=response.path("peserta").path("tglTMT").asText();
                 umurumurSaatPelayanan=response.path("peserta").path("umur").path("umurSaatPelayanan").asText();
                 umurumurSekarang=response.path("peserta").path("umur").path("umurSekarang").asText();
+                informasi="OK";
             }else {
-                JOptionPane.showMessageDialog(null,nameNode.path("message").asText());
-            }
+                JOptionPane.showMessageDialog(null,nameNode.path("message").asText());                
+            }   
         } catch (Exception ex) {
             System.out.println("Notifikasi Peserta : "+ex);
             if(ex.toString().contains("UnknownHostException")){
@@ -105,5 +107,5 @@ public class BPJSCekNIK {
             }
         }
     }
-
+    
 }

@@ -606,10 +606,8 @@ public final class BPJSMapingPoli extends javax.swing.JDialog {
                 param.put("kontakrs",var.getkontakrs());
                 param.put("emailrs",var.getemailrs());   
                 param.put("logo",Sequel.cariGambar("select logo from setting")); 
-                Valid.MyReport("rptMapingPoliBPJS.jrxml","report","::[ Mapping Unit RS & BPJS ]::",
-                   "select maping_poli_bpjs.kd_poli_rs,poliklinik.nm_poli,maping_poli_bpjs.kd_poli_bpjs,maping_poli_bpjs.nm_poli_bpjs "+
-                   "from maping_poli_bpjs inner join poliklinik on maping_poli_bpjs.kd_poli_rs=poliklinik.kd_poli where "+
-                   "maping_poli_bpjs.kd_poli_rs like '%"+TCari.getText().trim()+"%' or poliklinik.nm_poli like '%"+TCari.getText().trim()+"%' or maping_poli_bpjs.kd_poli_bpjs like '%"+TCari.getText().trim()+"%' or maping_poli_bpjs.nm_poli_bpjs like '%"+TCari.getText().trim()+"%' order by poliklinik.nm_poli",param);            
+                param.put("parameter","%"+TCari.getText().trim()+"%");
+//                Valid.MyReport("rptMapingPoliBPJS.jasper","report","::[ Mapping Unit RS & BPJS ]::",param);            
         }
         this.setCursor(Cursor.getDefaultCursor());
 }//GEN-LAST:event_BtnPrintActionPerformed
@@ -791,10 +789,10 @@ private void btnPoliBPJSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
     
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getrekammedis());
-        BtnHapus.setEnabled(var.getrekammedis());
-        BtnEdit.setEnabled(var.getrekammedis());
-        BtnPrint.setEnabled(var.getrekammedis());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
     }
     
     public JTable getTable(){

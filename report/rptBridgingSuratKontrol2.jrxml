@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+    <property name="ireport.zoom" value="2.0"/>
+    <property name="ireport.x" value="0"/>
+    <property name="ireport.y" value="0"/>
+    <property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="0"/>
+    <property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="1000"/>
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="lokal"/>
+    <property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+    <property name="com.jaspersoft.studio.unit." value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.pageHeight" value="cm"/>
+    <property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+    <parameter name="parameter" class="java.lang.String">
+            <defaultValueExpression><![CDATA[]]></defaultValueExpression>
+    </parameter>
+    <parameter name="namars" class="java.lang.String"/>
+    <parameter name="alamatrs" class="java.lang.String"/>
+    <parameter name="kotars" class="java.lang.String"/>
+    <parameter name="propinsirs" class="java.lang.String"/>
+    <parameter name="kontakrs" class="java.lang.String"/>
+    <parameter name="emailrs" class="java.lang.String"/>
+    <parameter name="logo" class="java.io.InputStream"/>
+    <parameter name="prb" class="java.lang.String"/>
+    <queryString>
+            <![CDATA[select bridging_sep.no_rawat,bridging_sep.no_sep,bridging_sep.no_kartu,bridging_sep.nomr,bridging_sep.nama_pasien,bridging_sep.tanggal_lahir,
+bridging_sep.jkel,bridging_sep.diagawal,bridging_sep.nmdiagnosaawal,bridging_surat_kontrol_bpjs.tgl_surat,bridging_surat_kontrol_bpjs.no_surat,
+bridging_surat_kontrol_bpjs.tgl_rencana,bridging_surat_kontrol_bpjs.kd_dokter_bpjs,bridging_surat_kontrol_bpjs.nm_dokter_bpjs,
+bridging_surat_kontrol_bpjs.kd_poli_bpjs,bridging_surat_kontrol_bpjs.nm_poli_bpjs from bridging_sep inner join bridging_surat_kontrol_bpjs
+on bridging_surat_kontrol_bpjs.no_sep=bridging_sep.no_sep]]>
+    </queryString>
+    <field name="no_rawat" class="java.lang.String">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="no_sep" class="java.lang.String">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="no_kartu" class="java.lang.String">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="nomr" class="java.lang.String">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="nama_pasien" class="java.lang.String">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="tanggal_lahir" class="java.sql.Date">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="jkel" class="java.lang.String">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="diagawal" class="java.lang.String">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="nmdiagnosaawal" class="java.lang.String">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="tgl_surat" class="java.sql.Date">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="no_surat" class="java.lang.String">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="tgl_rencana" class="java.sql.Date">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="kd_dokter_bpjs" class="java.lang.String">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="nm_dokter_bpjs" class="java.lang.String">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="kd_poli_bpjs" class="java.lang.String">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="nm_poli_bpjs" class="java.lang.String">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <background>
+            <band splitType="Stretch"/>
+    </background>
+    <detail>
+        <band height="350">
+            <textField isStretchWithOverflow="true">
+                <reportElement mode="Transparent" x="75" y="90" width="250" height="13">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement>
+                    <font fontName="Tahoma" size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{nm_dokter_bpjs}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="90" width="75" height="13">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="Tahoma" size="10" isBold="false"/>
+                </textElement>
+                <text><![CDATA[Kepada Yth]]></text>
+            </staticText>
+        </band>
+    </detail>
+    <summary>
+            <band height="42" splitType="Stretch"/>
+    </summary>
+</jasperReport>

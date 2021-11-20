@@ -25,7 +25,9 @@ import bridging.BPJSMonitoringKlaim;
 import bridging.BPJSRujukanKeluar;
 import bridging.BPJSSPRI;
 import bridging.BPJSSuratKontrol;
-import bridging.DlgSKDPBPJS;
+import bridging.BPJSCekNoRujukanPCare;
+import bridging.BPJSHistoriPelayanan;
+import bridging.BPJSCekKartu;
 import informasi.InformasiAnalisaKamin;
 import inventory.DlgSuplier;
 import presensi.DlgBarcode;
@@ -418,7 +420,10 @@ public class frmUtama extends javax.swing.JFrame {
         jMenuBridging = new javax.swing.JMenu();
         MnBridging = new javax.swing.JMenuItem();
         MnMonitoringKlaim = new javax.swing.JMenuItem();
+        MnHistoriPelayanan = new javax.swing.JMenuItem();
         MnCekDetailSEP = new javax.swing.JMenuItem();
+        MnCekKartu = new javax.swing.JMenuItem();
+        MnCekNoRujukanPcare = new javax.swing.JMenuItem();
         MnMappingPoli = new javax.swing.JMenuItem();
         MnMappingDokterDPJP = new javax.swing.JMenuItem();
         MnRujukanKeluar = new javax.swing.JMenuItem();
@@ -715,7 +720,7 @@ public class frmUtama extends javax.swing.JFrame {
 
         tanggal.setEditable(false);
         tanggal.setForeground(new java.awt.Color(50, 70, 50));
-        tanggal.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "01/09/2021" }));
+        tanggal.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "19/11/2021" }));
         tanggal.setDisplayFormat("dd/MM/yyyy");
         tanggal.setName("tanggal"); // NOI18N
         tanggal.setOpaque(false);
@@ -2644,6 +2649,19 @@ public class frmUtama extends javax.swing.JFrame {
         });
         jMenuBridging.add(MnMonitoringKlaim);
 
+        MnHistoriPelayanan.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        MnHistoriPelayanan.setForeground(new java.awt.Color(51, 51, 51));
+        MnHistoriPelayanan.setText("Histori Pelayanan");
+        MnHistoriPelayanan.setEnabled(false);
+        MnHistoriPelayanan.setName("MnHistoriPelayanan"); // NOI18N
+        MnHistoriPelayanan.setPreferredSize(new java.awt.Dimension(200, 22));
+        MnHistoriPelayanan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MnHistoriPelayananActionPerformed(evt);
+            }
+        });
+        jMenuBridging.add(MnHistoriPelayanan);
+
         MnCekDetailSEP.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         MnCekDetailSEP.setForeground(new java.awt.Color(51, 51, 51));
         MnCekDetailSEP.setText("Cek Nomor SEP");
@@ -2656,6 +2674,32 @@ public class frmUtama extends javax.swing.JFrame {
             }
         });
         jMenuBridging.add(MnCekDetailSEP);
+
+        MnCekKartu.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        MnCekKartu.setForeground(new java.awt.Color(51, 51, 51));
+        MnCekKartu.setText("Cek No Kartu");
+        MnCekKartu.setEnabled(false);
+        MnCekKartu.setName("MnCekKartu"); // NOI18N
+        MnCekKartu.setPreferredSize(new java.awt.Dimension(200, 22));
+        MnCekKartu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MnCekKartuActionPerformed(evt);
+            }
+        });
+        jMenuBridging.add(MnCekKartu);
+
+        MnCekNoRujukanPcare.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        MnCekNoRujukanPcare.setForeground(new java.awt.Color(51, 51, 51));
+        MnCekNoRujukanPcare.setText("Cek No Rujukan PCARE");
+        MnCekNoRujukanPcare.setEnabled(false);
+        MnCekNoRujukanPcare.setName("MnCekNoRujukanPcare"); // NOI18N
+        MnCekNoRujukanPcare.setPreferredSize(new java.awt.Dimension(200, 22));
+        MnCekNoRujukanPcare.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MnCekNoRujukanPcareActionPerformed(evt);
+            }
+        });
+        jMenuBridging.add(MnCekNoRujukanPcare);
 
         MnMappingPoli.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         MnMappingPoli.setForeground(new java.awt.Color(51, 51, 51));
@@ -4102,6 +4146,9 @@ public class frmUtama extends javax.swing.JFrame {
                 MnRefFaskes.setEnabled(false);
                 MnBridging.setEnabled(false);
                 MnMonitoringKlaim.setEnabled(false);
+                MnHistoriPelayanan.setEnabled(false);
+                MnCekNoRujukanPcare.setEnabled(false);
+                MnCekKartu.setEnabled(false);
                 MnLapObtPoli.setEnabled(false);
                 MnObtKmr.setEnabled(false);
                 MnObtDokRln.setEnabled(false);
@@ -4323,6 +4370,9 @@ public class frmUtama extends javax.swing.JFrame {
                     MnRefFaskes.setEnabled(true);
                     MnBridging.setEnabled(true);
                     MnMonitoringKlaim.setEnabled(true);
+                    MnHistoriPelayanan.setEnabled(true);
+                    MnCekNoRujukanPcare.setEnabled(true);
+                    MnCekKartu.setEnabled(true);
                     MnLapObtPoli.setEnabled(true);
                     MnObtKmr.setEnabled(true);
                     MnObtDokRln.setEnabled(true);
@@ -4472,6 +4522,9 @@ public class frmUtama extends javax.swing.JFrame {
                         MnRefFaskes.setEnabled(true);
                         MnBridging.setEnabled(true);
                         MnMonitoringKlaim.setEnabled(true);
+                        MnHistoriPelayanan.setEnabled(true);
+                        MnCekNoRujukanPcare.setEnabled(true);
+                        MnCekKartu.setEnabled(true);
                         MnCekDetailSEP.setEnabled(true);
                         MnMappingPoli.setEnabled(true);
                         MnMappingDokterDPJP.setEnabled(true);
@@ -7028,11 +7081,11 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
     private void MnSKDPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnSKDPActionPerformed
         isTutup();
         this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-        DlgSKDPBPJS form=new DlgSKDPBPJS(this,false);
-        form.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
-        form.setLocationRelativeTo(PanelUtama);
-        form.setVisible(true);
-        this.setCursor(Cursor.getDefaultCursor());
+//        DlgSKDPBPJS form=new DlgSKDPBPJS(this,false);
+//        form.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
+//        form.setLocationRelativeTo(PanelUtama);
+//        form.setVisible(true);
+//        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnSKDPActionPerformed
 
     private void MnMappingDokterDPJPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnMappingDokterDPJPActionPerformed
@@ -7065,6 +7118,36 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
         form.setVisible(true);
         this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnBookingRegistrasiActionPerformed
+
+    private void MnCekNoRujukanPcareActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnCekNoRujukanPcareActionPerformed
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        BPJSCekNoRujukanPCare form=new BPJSCekNoRujukanPCare(this,false);
+        form.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
+        form.setLocationRelativeTo(PanelUtama);
+        form.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
+    }//GEN-LAST:event_MnCekNoRujukanPcareActionPerformed
+
+    private void MnHistoriPelayananActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnHistoriPelayananActionPerformed
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        BPJSHistoriPelayanan form=new BPJSHistoriPelayanan(this,false);
+        form.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
+        form.setLocationRelativeTo(PanelUtama);
+        form.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
+    }//GEN-LAST:event_MnHistoriPelayananActionPerformed
+
+    private void MnCekKartuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnCekKartuActionPerformed
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        BPJSCekKartu form=new BPJSCekKartu(this,false);
+        form.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
+        form.setLocationRelativeTo(PanelUtama);
+        form.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
+    }//GEN-LAST:event_MnCekKartuActionPerformed
 
     /**
     * @param args the command line arguments
@@ -7136,6 +7219,8 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
     private javax.swing.JMenuItem MnByrPsnObt;
     private javax.swing.JMenuItem MnCashFlow;
     private javax.swing.JMenuItem MnCekDetailSEP;
+    private javax.swing.JMenuItem MnCekKartu;
+    private javax.swing.JMenuItem MnCekNoRujukanPcare;
     private javax.swing.JMenuItem MnClosingKsr;
     private javax.swing.JMenuItem MnDaruratStok;
     private javax.swing.JMenuItem MnDataBrgNon;
@@ -7156,6 +7241,7 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
     private javax.swing.JMenuItem MnFreeRujRotg;
     private javax.swing.JMenuItem MnFreeVstDok;
     private javax.swing.JMenuItem MnGantiPassword;
+    private javax.swing.JMenuItem MnHistoriPelayanan;
     private javax.swing.JMenuItem MnHrBhp;
     private javax.swing.JMenuItem MnHrDok;
     private javax.swing.JMenuItem MnHrDokAll;
