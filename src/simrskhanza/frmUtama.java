@@ -379,6 +379,7 @@ public class frmUtama extends javax.swing.JFrame {
         MnPiutangPasien = new javax.swing.JMenuItem();
         MnBookingOperasi = new javax.swing.JMenuItem();
         MnBookingRegistrasi = new javax.swing.JMenuItem();
+        MnSuratKontrol = new javax.swing.JMenuItem();
         jMenuManajemen = new javax.swing.JMenu();
         MnDataDokter = new javax.swing.JMenuItem();
         MnDataPetugas = new javax.swing.JMenuItem();
@@ -1976,6 +1977,19 @@ public class frmUtama extends javax.swing.JFrame {
             }
         });
         jMenuLayanan.add(MnBookingRegistrasi);
+
+        MnSuratKontrol.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        MnSuratKontrol.setForeground(new java.awt.Color(51, 51, 51));
+        MnSuratKontrol.setText("Surat Kontrol");
+        MnSuratKontrol.setEnabled(false);
+        MnSuratKontrol.setName("MnSuratKontrol"); // NOI18N
+        MnSuratKontrol.setPreferredSize(new java.awt.Dimension(200, 22));
+        MnSuratKontrol.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MnSuratKontrolActionPerformed(evt);
+            }
+        });
+        jMenuLayanan.add(MnSuratKontrol);
 
         MenuBar.add(jMenuLayanan);
 
@@ -4501,6 +4515,7 @@ public class frmUtama extends javax.swing.JFrame {
                 MnRefSpesialistikKontrol.setEnabled(false);
                 MnBookingOperasi.setEnabled(false);
                 MnBookingRegistrasi.setEnabled(false);
+                MnSuratKontrol.setEnabled(false);
                 //Jong Source end
 
                 edAdmin.setText("");
@@ -4740,6 +4755,7 @@ public class frmUtama extends javax.swing.JFrame {
                     MnRefSpesialistikKontrol.setEnabled(true);
                     MnBookingOperasi.setEnabled(true);
                     MnBookingRegistrasi.setEnabled(true);
+                    MnSuratKontrol.setEnabled(true);
                     //Jong Source end
 
                     DlgLogin.dispose();
@@ -4762,6 +4778,223 @@ public class frmUtama extends javax.swing.JFrame {
                     lblStts.setText("Admin : ");
                     lblUser.setText(var.getkode());
                     MnGantiPassword.setEnabled(true);
+                    if(var.getmanajemen() == true){
+                        BtnToolReg.setEnabled(true);
+                        BtnToolKamnap.setEnabled(true);
+                        BtnToolKasir.setEnabled(true);
+                        btnToolLab.setEnabled(true);
+                        btnToolIGD.setEnabled(true);
+                        btnToolRad.setEnabled(true);
+                        BtnToolJualObat.setEnabled(true);
+                        MnGantiPassword.setEnabled(true);
+
+                        //Jong Source first
+                        MnPasien.setEnabled(true);
+                        MnKelahiranBayi.setEnabled(true);
+                        MnPasienMeninggal.setEnabled(true);
+                        MnDiagnosaPasien.setEnabled(true);
+                        MnRiwayatPerawatan.setEnabled(true);
+                        MnRetBrksRm.setEnabled(true);
+                        MnRegistrasi.setEnabled(true);
+                        MnTindakanRalan.setEnabled(true);
+                        MnKamarInap.setEnabled(true);
+                        MnDpjpRanap.setEnabled(true);
+                        MnTindakanRanap.setEnabled(true);
+                        MnRujukMasuk.setEnabled(true);
+                        MnRujukKeluar.setEnabled(true);
+                        MnInfoKamar.setEnabled(true);
+                        MnIgd.setEnabled(true);
+                        MnJadwalDokter.setEnabled(true);
+                        MnOperasi.setEnabled(true);
+                        MnPemberianObat.setEnabled(true);
+                        MnResepObat.setEnabled(true);
+                        MnResepPulang.setEnabled(true);
+                        MnDietPasien.setEnabled(true);
+                        MnPeriksaLab.setEnabled(true);
+                        MnPeriksaRad.setEnabled(true);
+                        MnKasirRalan.setEnabled(true);
+                        MnDepositPasien.setEnabled(true);
+                        MnPiutangPasien.setEnabled(true);
+                        MnDataDokter.setEnabled(true);
+                        MnDataPetugas.setEnabled(true);
+                        MnDataPegawai.setEnabled(true);
+                        MnBarcodePresensi.setEnabled(true);
+                        MnJamPresensi.setEnabled(true);
+                        MnPresensiHarian.setEnabled(true);
+                        MnPresensiBulanan.setEnabled(true);
+                        MnTempPresensi.setEnabled(true);
+                        MnRekapKehadiran.setEnabled(true);
+                        MnSidikJari.setEnabled(true);
+                        MnJadwalPegawai.setEnabled(true);
+                        MnJdwlTambahan.setEnabled(true);
+                        MnPresensiHarian1.setEnabled(true);
+                        MnIndustriFar.setEnabled(true);
+                        MnSuplier.setEnabled(true);
+                        MnSatuanBrg.setEnabled(true);
+                        MnKonvSat.setEnabled(true);
+                        MnJnsObt.setEnabled(true);
+                        MnDataObat.setEnabled(true);
+                        MnStokOpname.setEnabled(true);
+                        MnMutasiObat.setEnabled(true);
+                        MnStokObtPx.setEnabled(true);
+                        MnPengadaan.setEnabled(true);
+                        MnPemesanan.setEnabled(true);
+                        MnPenjualanObt.setEnabled(true);
+                        MnStokOpname1.setEnabled(true);
+                        MnReturKeSup.setEnabled(true);
+                        MnReturPemb.setEnabled(true);
+                        MnReturObtRanap.setEnabled(true);
+                        MnReturPiutangPemb.setEnabled(true);
+                        MnKeuntunganPenj.setEnabled(true);
+                        MnKeuntBeriObt.setEnabled(true);
+                        MnSirkulasiObt.setEnabled(true);
+                        MnRiwayat.setEnabled(true);
+                        MnDaruratStok.setEnabled(true);
+                        MnSatuanBrgNon.setEnabled(true);
+                        MnJnsBrgNon.setEnabled(true);
+                        MnDataBrgNon.setEnabled(true);
+                        MnSupNon.setEnabled(true);
+                        MnPengadaanbrg.setEnabled(true);
+                        MnStokKeluar.setEnabled(true);
+                        MnBiayaPengadaan.setEnabled(true);
+                        MnRekapPengadaan.setEnabled(true);
+                        MnRekapStok.setEnabled(true);
+                        MnRefDiagBpjs.setEnabled(true);
+                        MnRefPlBpjs.setEnabled(true);
+                        MnRefFaskes.setEnabled(true);
+                        MnBridging.setEnabled(true);
+                        MnMonitoringKlaim.setEnabled(true);
+                        MnHistoriPelayanan.setEnabled(true);
+                        MnCekNoRujukanPcare.setEnabled(true);
+                        MnCekKartu.setEnabled(true);
+                        MnCekNik.setEnabled(true);
+                        MnCekNoRujukanRS.setEnabled(true);
+                        MnRefDokterHFIS.setEnabled(true);
+                        MnRefDokterKontrol.setEnabled(true);
+                        MnRefJadwalHFIS.setEnabled(true);
+                        MnRefPlHfis.setEnabled(true);
+                        MnRiwayatRujukanPcare.setEnabled(true);
+                        MnRiwayatRujukanRS.setEnabled(true);
+                        MnCekRujukanKartuPcare.setEnabled(true);
+                        MnCekRujukanKartuRS.setEnabled(true);
+                        MnCekSKDP.setEnabled(true);
+                        MnCekSuplesiJasaRaharja.setEnabled(true);
+                        MnCekTanggalRujukan.setEnabled(true);
+                        MnProgramPRB.setEnabled(true);
+                        MnMJKNBatalDaftar.setEnabled(true);
+                        MnMJKNReferensi.setEnabled(true);
+                        MnLapObtPoli.setEnabled(true);
+                        MnObtKmr.setEnabled(true);
+                        MnObtDokRln.setEnabled(true);
+                        MnObtDokRnp.setEnabled(true);
+                        MnObtDokRsp.setEnabled(true);
+                        MnObtCrByr.setEnabled(true);
+                        MnDetJMDok.setEnabled(true);
+                        MnHrDokAll.setEnabled(true);
+                        MnHrDokRalan.setEnabled(true);
+                        MnHrDok.setEnabled(true);
+                        MnHrKamar.setEnabled(true);
+                        MnHrBhp.setEnabled(true);
+                        MnHrParamedis.setEnabled(true);
+                        MnHrMnj.setEnabled(true);
+                        MnHrKso.setEnabled(true);
+                        MnHrSrn.setEnabled(true);
+                        MnBulananDok.setEnabled(true);
+                        MnBlnParamedis.setEnabled(true);
+                        MnBlnSrn.setEnabled(true);
+                        MnBlnKso.setEnabled(true);
+                        MnBlnMnj.setEnabled(true);
+                        MnBlnBhp.setEnabled(true);
+                        MnFreeVstDok.setEnabled(true);
+                        MnFreeBcEkg.setEnabled(true);
+                        MnFreeRujRotg.setEnabled(true);
+                        MnFreeRujRnp.setEnabled(true);
+                        MnFreePrkRln.setEnabled(true);
+                        MnLapPembRalan.setEnabled(true);
+                        MnLapPembRnp.setEnabled(true);
+                        MnRkpPmbRln.setEnabled(true);
+                        MnRkpPmbRnp.setEnabled(true);
+                        MnLapTagMsk.setEnabled(true);
+                        MnLapTmbBiayaPx.setEnabled(true);
+                        MnLapPotBiayaPx.setEnabled(true);
+                        MnLapDepositPx.setEnabled(true);
+                        MnLapUangShift.setEnabled(true);
+                        MnLapPaymentPoint.setEnabled(true);
+                        MnLapIcd9.setEnabled(true);
+                        MnLapIcd10.setEnabled(true);
+                        MnLapObtPenyakit.setEnabled(true);
+                        MnLapKjgRln.setEnabled(true);
+                        MnLapKjgRanap.setEnabled(true);
+                        MnSensusHrPoli.setEnabled(true);
+                        MnTarifKamar.setEnabled(true);
+                        MnTarifRalan.setEnabled(true);
+                        MnTarifRanap.setEnabled(true);
+                        MnTarifLab.setEnabled(true);
+                        MnTarifRadiologi.setEnabled(true);
+                        MnTarifOperasi.setEnabled(true);
+                        MnAkunRek.setEnabled(true);
+                        MnRekThn.setEnabled(true);
+                        MnPengaturanRek.setEnabled(true);
+                        MnAkunPiutang.setEnabled(true);
+                        MnAkunBayar.setEnabled(true);
+                        MnPengeluaranHr.setEnabled(true);
+                        MnPemasukanlain.setEnabled(true);
+                        MnPiutangPx.setEnabled(true);
+                        MnRincPiutangPx.setEnabled(true);
+                        MnPiutangBlmLns.setEnabled(true);
+                        MnByrPiutang.setEnabled(true);
+                        MnHtgObt.setEnabled(true);
+                        MnByrPsnObt.setEnabled(true);
+                        MnPostingJurnal.setEnabled(true);
+                        MnJurnalHr.setEnabled(true);
+                        MnBukuBesar.setEnabled(true);
+                        MnCashFlow.setEnabled(true);
+                        MnKeu.setEnabled(true);
+                        MnSetAplikasi.setEnabled(true);
+                        MnPenujang.setEnabled(true);
+                        MnSetOtoLok.setEnabled(true);
+                        MnSetKmrInp.setEnabled(true);
+                        MnSetHargaKamar.setEnabled(true);
+                        MnSetEmbTus.setEnabled(true);
+                        MnSetUser.setEnabled(true);
+                        MnSetTrackerLog.setEnabled(true);
+                        MnDisplayAntrian.setEnabled(true);
+                        MnSetHargaObt.setEnabled(true);
+                        MnSetObtRnp.setEnabled(true);
+                        MnSetPenggTrf.setEnabled(true);
+                        MnSetOtoRalan.setEnabled(true);
+                        MnBiayaHarian.setEnabled(true);
+                        MnBiayaMskSkl.setEnabled(true);
+                        MnSetRM.setEnabled(true);
+                        MnSetBilling.setEnabled(true);
+                        MnClosingKsr.setEnabled(true);
+                        MnSetLambtPres.setEnabled(true);
+                        MnCekDetailSEP.setEnabled(true);
+                        MnMappingPoli.setEnabled(true);
+                        MnMappingDokterDPJP.setEnabled(true);
+                        MnRujukanKeluar.setEnabled(true);
+                        MnSPRI.setEnabled(true);
+                        MnKontrolVClaim.setEnabled(true);
+                        MnRefCaraKeluar.setEnabled(true);
+                        MnRefDiagnosa.setEnabled(true);
+                        MnRefDokter.setEnabled(true);
+                        MnRefDokterPJP.setEnabled(true);
+                        MnRefKec.setEnabled(true);
+                        MnRefKab.setEnabled(true);
+                        MnRefProp.setEnabled(true);
+                        MnRefKelasRawat.setEnabled(true);
+                        MnRefObatPRB.setEnabled(true);
+                        MnRefPascaPulang.setEnabled(true);
+                        MnRefPenyakit.setEnabled(true);
+                        MnRefProsedur.setEnabled(true);
+                        MnRefRuangRawat.setEnabled(true);
+                        MnRefSpesialistik.setEnabled(true);
+                        MnRefSpesialistikKontrol.setEnabled(true);
+                        MnBookingOperasi.setEnabled(true);
+                        MnBookingRegistrasi.setEnabled(true);
+                        //Jong Source end
+                        MnSuratKontrol.setEnabled(true);
+                    }
                     if(var.getrekammedis() == true){
                         BtnToolReg.setEnabled(true);
                         btnToolIGD.setEnabled(true);
@@ -7571,6 +7804,16 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
         this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnMJKNReferensiActionPerformed
 
+    private void MnSuratKontrolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnSuratKontrolActionPerformed
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        SuratKontrol form=new SuratKontrol(this,false);
+        form.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
+        form.setLocationRelativeTo(PanelUtama);
+        form.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
+    }//GEN-LAST:event_MnSuratKontrolActionPerformed
+
     /**
     * @param args the command line arguments
     */
@@ -7817,6 +8060,7 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
     private javax.swing.JMenuItem MnStokOpname1;
     private javax.swing.JMenuItem MnSupNon;
     private javax.swing.JMenuItem MnSuplier;
+    private javax.swing.JMenuItem MnSuratKontrol;
     private javax.swing.JMenuItem MnTarifKamar;
     private javax.swing.JMenuItem MnTarifLab;
     private javax.swing.JMenuItem MnTarifOperasi;

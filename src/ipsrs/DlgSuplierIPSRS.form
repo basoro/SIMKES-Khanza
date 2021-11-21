@@ -175,8 +175,8 @@
               <SubComponents>
                 <Component class="widget.Button" name="BtnSimpan">
                   <Properties>
-                    <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/icons/save-16x16i.png"/>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/icons/save-16x16.png"/>
                     </Property>
                     <Property name="mnemonic" type="int" value="83"/>
                     <Property name="text" type="java.lang.String" value="Simpan"/>
@@ -305,9 +305,6 @@
         </Container>
         <Container class="widget.ScrollPane" name="scrollPane1">
           <Properties>
-            <Property name="componentPopupMenu" type="javax.swing.JPopupMenu" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="name" type="java.lang.String" value="scrollPane1" noResource="true"/>
             <Property name="opaque" type="boolean" value="true"/>
           </Properties>
@@ -326,9 +323,6 @@
                   <Table columnCount="0" rowCount="4"/>
                 </Property>
                 <Property name="toolTipText" type="java.lang.String" value="Silahkan klik untuk memilih data yang mau diedit ataupun dihapus"/>
-                <Property name="componentPopupMenu" type="javax.swing.JPopupMenu" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                  <ComponentRef name="default"/>
-                </Property>
                 <Property name="name" type="java.lang.String" value="tbDokter" noResource="true"/>
                 <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
