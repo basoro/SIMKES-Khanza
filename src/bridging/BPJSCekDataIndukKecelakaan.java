@@ -299,42 +299,6 @@ public final class BPJSCekDataIndukKecelakaan extends javax.swing.JDialog {
         }else{Valid.pindah(evt,BtnPrint,BtnKeluar);}
     }//GEN-LAST:event_BtnKeluarKeyPressed
 
-    private void BtnPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPrintActionPerformed
-        if(tabMode.getRowCount()==0){
-            JOptionPane.showMessageDialog(null,"Maaf, data sudah habis. Tidak ada data yang bisa anda print...!!!!");
-            //TCari.requestFocus();
-        }else if(tabMode.getRowCount()!=0){
-            this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-            
-            Sequel.queryu("truncate table temporary");
-            int row=tabMode.getRowCount();
-            for(int r=0;r<row;r++){  
-                Sequel.menyimpan("temporary","'0','"+
-                                tabMode.getValueAt(r,0).toString()+"','"+
-                                tabMode.getValueAt(r,1).toString()+"','"+
-                                tabMode.getValueAt(r,2).toString()+"','"+
-                                tabMode.getValueAt(r,3).toString()+"','"+
-                                tabMode.getValueAt(r,4).toString()+"','"+
-                                tabMode.getValueAt(r,5).toString()+"','"+
-                                tabMode.getValueAt(r,6).toString()+"','"+
-                                tabMode.getValueAt(r,7).toString()+"','"+
-                                tabMode.getValueAt(r,8).toString()+"','','','','','','','','','','','','','','','','','','','','','','','','','','','',''","Rekap Harian Pengadaan Ipsrs"); 
-            }
-            
-            Map<String, Object> param = new HashMap<>();                 
-            param.put("namars",var.getnamars());
-            param.put("alamatrs",var.getalamatrs());
-            param.put("kotars",var.getkabupatenrs());
-            param.put("propinsirs",var.getpropinsirs());
-            param.put("peserta","No.Peserta : "+NoKartu.getText()+" Nama Peserta : "+NamaPasien.getText());
-            param.put("kontakrs",var.getkontakrs());
-            param.put("emailrs",var.getemailrs());   
-            param.put("logo",Sequel.cariGambar("select logo from setting")); 
-//            Valid.MyReport("rptCariBPJSIndukKecelakaan.jasper","report","[ Data Induk Kecelakaan ]",param);
-            this.setCursor(Cursor.getDefaultCursor());
-        }        
-    }//GEN-LAST:event_BtnPrintActionPerformed
-
     private void btnPasienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPasienActionPerformed
         var.setform("DlgBPJSCekDataIndukKecelakaan");
         pasien.emptTeks();
@@ -365,6 +329,42 @@ public final class BPJSCekDataIndukKecelakaan extends javax.swing.JDialog {
             Valid.pindah(evt,NoKartu,BtnPrint);
         }
     }//GEN-LAST:event_BtnCariKeyPressed
+
+    private void BtnPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPrintActionPerformed
+        if(tabMode.getRowCount()==0){
+            JOptionPane.showMessageDialog(null,"Maaf, data sudah habis. Tidak ada data yang bisa anda print...!!!!");
+            //TCari.requestFocus();
+        }else if(tabMode.getRowCount()!=0){
+            this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+
+            Sequel.queryu("truncate table temporary");
+            int row=tabMode.getRowCount();
+            for(int r=0;r<row;r++){
+                Sequel.menyimpan("temporary","'0','"+
+                    tabMode.getValueAt(r,0).toString()+"','"+
+                    tabMode.getValueAt(r,1).toString()+"','"+
+                    tabMode.getValueAt(r,2).toString()+"','"+
+                    tabMode.getValueAt(r,3).toString()+"','"+
+                    tabMode.getValueAt(r,4).toString()+"','"+
+                    tabMode.getValueAt(r,5).toString()+"','"+
+                    tabMode.getValueAt(r,6).toString()+"','"+
+                    tabMode.getValueAt(r,7).toString()+"','"+
+                    tabMode.getValueAt(r,8).toString()+"','','','','','','','','','','','','','','','','','','','','','','','','','','','',''","Rekap Harian Pengadaan Ipsrs");
+            }
+
+            Map<String, Object> param = new HashMap<>();
+            param.put("namars",var.getnamars());
+            param.put("alamatrs",var.getalamatrs());
+            param.put("kotars",var.getkabupatenrs());
+            param.put("propinsirs",var.getpropinsirs());
+            param.put("peserta","No.Peserta : "+NoKartu.getText()+" Nama Peserta : "+NamaPasien.getText());
+            param.put("kontakrs",var.getkontakrs());
+            param.put("emailrs",var.getemailrs());
+            param.put("logo",Sequel.cariGambar("select logo from setting"));
+            //            Valid.MyReport("rptCariBPJSIndukKecelakaan.jasper","report","[ Data Induk Kecelakaan ]",param);
+            this.setCursor(Cursor.getDefaultCursor());
+        }
+    }//GEN-LAST:event_BtnPrintActionPerformed
 
     /**
     * @param args the command line arguments
