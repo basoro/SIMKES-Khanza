@@ -1464,7 +1464,7 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
                     tabMode.getValueAt(tbObat.getSelectedRow(),16).toString()+"','"+
                     tabMode.getValueAt(tbObat.getSelectedRow(),17).toString()+"','','','','','','','','','','','','','','','','','','',''","Rekap Nota Pembayaran");
 
-                Valid.MyReport("rptSKDPBPJS.jrxml","report","::[ Surat SKDP BPJS ]::",
+                Valid.MyReport("rptSuratSKDPBPJS.jrxml","report","::[ Surat SKDP BPJS ]::",
                     "select * from temporary_booking_registrasi order by no asc",param); 
                 this.setCursor(Cursor.getDefaultCursor());
             }else{
