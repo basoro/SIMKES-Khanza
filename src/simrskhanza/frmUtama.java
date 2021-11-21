@@ -3254,7 +3254,7 @@ public class frmUtama extends javax.swing.JFrame {
 
         MnMJKNReferensi.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         MnMJKNReferensi.setForeground(new java.awt.Color(51, 51, 51));
-        MnMJKNReferensi.setText("Data Bridging BPJS");
+        MnMJKNReferensi.setText("MJKN Referensi Daftar");
         MnMJKNReferensi.setEnabled(false);
         MnMJKNReferensi.setName("MnMJKNReferensi"); // NOI18N
         MnMJKNReferensi.setPreferredSize(new java.awt.Dimension(200, 22));
