@@ -6398,7 +6398,11 @@ private void KabupatenMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:eve
     
     public void isCek(){
         BtnSimpan.setEnabled(var.getrekammedis());
-        BtnHapus.setEnabled(var.getrekammedis());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
         BtnEdit.setEnabled(var.getrekammedis());
         BtnPrint.setEnabled(var.getrekammedis());
         ppGabungRM.setEnabled(var.getrekammedis());

@@ -534,7 +534,11 @@ public class DlgSuku extends javax.swing.JDialog {
     }
     
     public void isCek(){
-        //BtnSimpan.setEnabled(var.getsuku_bangsa());
-        //BtnHapus.setEnabled(var.getsuku_bangsa());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
     }
 }

@@ -8956,7 +8956,11 @@ private void MnRujukMasukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-
         
         BtnSimpan.setEnabled(var.getmanajemen());
         BtnSimpanpindah.setEnabled(var.getmanajemen());
-        BtnHapus.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
         BtnPrint.setEnabled(var.getmanajemen());
         MnRawatInap.setEnabled(var.getmanajemen());
         MnRawatJalan.setEnabled(var.getmanajemen());

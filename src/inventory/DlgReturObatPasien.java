@@ -584,7 +584,11 @@ public final class DlgReturObatPasien extends javax.swing.JDialog {
     public void isCek(){
         BtnHapus.setEnabled(var.getmanajemen());
         BtnPrint.setEnabled(var.getmanajemen());
-        ppHapus.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
         ppCetak.setEnabled(var.getmanajemen());
     }
 }

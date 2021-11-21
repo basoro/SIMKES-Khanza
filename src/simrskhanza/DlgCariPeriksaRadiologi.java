@@ -1797,7 +1797,11 @@ private void tbDokterKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
     
     public void isCek(){
         MnCetakNota.setEnabled(var.getmanajemen());
-        BtnHapus.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
         MnUbahDokterPetugas.setEnabled(var.getmanajemen());
         MnLihatGambar.setEnabled(var.getmanajemen());
         MnLihatHasil.setEnabled(var.getmanajemen());

@@ -812,7 +812,11 @@ private void NmKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_NmKeyP
     
     public void isCek(){
         BtnSimpan.setEnabled(var.getadmin());
-        BtnHapus.setEnabled(var.getadmin());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
         BtnEdit.setEnabled(var.getadmin());
         BtnPrint.setEnabled(var.getadmin());
     }

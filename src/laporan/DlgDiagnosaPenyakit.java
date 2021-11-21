@@ -769,7 +769,11 @@ public class DlgDiagnosaPenyakit extends javax.swing.JDialog {
     
     public void isCek(){
         BtnSimpan.setEnabled(var.getmanajemen());
-        BtnHapus.setEnabled(var.getmanajemen());        
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
         BtnPrint.setEnabled(var.getmanajemen());
         panelDiagnosa1.btnTambahPenyakit.setEnabled(var.getmanajemen());
         panelDiagnosa1.btnTambahProsedur.setEnabled(var.getmanajemen());

@@ -734,7 +734,11 @@ public final class DlgTemporaryPresensi extends javax.swing.JDialog {
 
     public void isCek(){
         BtnTambah.setEnabled(var.getmanajemen());
-        BtnHapus.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
         BtnPrint.setEnabled(var.getmanajemen());
         
         if(var.getkode().equals("Admin Utama")){

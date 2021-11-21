@@ -1695,10 +1695,14 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     }
     
     public void isCek(){
-        //BtnSimpan.setEnabled(var.getbooking_registrasi());
-        //BtnHapus.setEnabled(var.getbooking_registrasi());
-        //BtnPrint.setEnabled(var.getbooking_registrasi());
-        //BtnEdit.setEnabled(var.getbooking_registrasi());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
+        BtnPrint.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
     }
 
     private String jam(){

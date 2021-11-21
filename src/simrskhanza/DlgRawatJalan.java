@@ -3050,7 +3050,11 @@ public final class DlgRawatJalan extends javax.swing.JDialog {
         switch (TabRawat.getSelectedIndex()) {
             case 0:
                 BtnSimpan.setEnabled(var.getmanajemen() || var.getparamedis());
-                BtnHapus.setEnabled(var.getmanajemen() || var.getparamedis());
+                if(var.getkode().equals("Admin Utama")){
+                    BtnHapus.setEnabled(true);
+                }else{
+                    BtnHapus.setEnabled(false);
+                } 
                 BtnEdit.setEnabled(var.getmanajemen() || var.getparamedis());
                 BtnPrint.setEnabled(var.getmanajemen() || var.getparamedis());
                 BtnTambahTindakan.setVisible(true);
@@ -3059,7 +3063,11 @@ public final class DlgRawatJalan extends javax.swing.JDialog {
                 break;
             case 1:
                 BtnSimpan.setEnabled(var.getmanajemen() || var.getparamedis());
-                BtnHapus.setEnabled(var.getmanajemen() || var.getparamedis());
+                if(var.getkode().equals("Admin Utama")){
+                    BtnHapus.setEnabled(true);
+                }else{
+                    BtnHapus.setEnabled(false);
+                } 
                 BtnEdit.setEnabled(var.getmanajemen() || var.getparamedis());
                 BtnPrint.setEnabled(var.getmanajemen() || var.getparamedis());
                 BtnTambahTindakan.setVisible(true); 
@@ -3068,7 +3076,11 @@ public final class DlgRawatJalan extends javax.swing.JDialog {
                 break;
             case 2:
                 BtnSimpan.setEnabled(var.getmanajemen() || var.getparamedis());
-                BtnHapus.setEnabled(var.getmanajemen() || var.getparamedis());
+                if(var.getkode().equals("Admin Utama")){
+                    BtnHapus.setEnabled(true);
+                }else{
+                    BtnHapus.setEnabled(false);
+                } 
                 BtnEdit.setEnabled(var.getmanajemen() || var.getparamedis());
                 BtnPrint.setEnabled(var.getmanajemen() || var.getparamedis());
                 BtnTambahTindakan.setVisible(true); 
@@ -3077,7 +3089,11 @@ public final class DlgRawatJalan extends javax.swing.JDialog {
                 break;
             case 3:
                 BtnSimpan.setEnabled(var.getmanajemen() || var.getparamedis());
-                BtnHapus.setEnabled(var.getmanajemen() || var.getparamedis());
+                if(var.getkode().equals("Admin Utama")){
+                    BtnHapus.setEnabled(true);
+                }else{
+                    BtnHapus.setEnabled(false);
+                } 
                 BtnEdit.setEnabled(var.getmanajemen() || var.getparamedis());
                 BtnPrint.setEnabled(var.getmanajemen() || var.getparamedis());
                 BtnTambahTindakan.setVisible(false); 
@@ -3097,7 +3113,11 @@ public final class DlgRawatJalan extends javax.swing.JDialog {
                 break;
             case 5:
                 BtnSimpan.setEnabled(var.getmanajemen() || var.getparamedis());
-                BtnHapus.setEnabled(var.getmanajemen() || var.getparamedis());
+                if(var.getkode().equals("Admin Utama")){
+                    BtnHapus.setEnabled(true);
+                }else{
+                    BtnHapus.setEnabled(false);
+                } 
                 BtnEdit.setEnabled(var.getmanajemen() || var.getparamedis());
                 BtnPrint.setEnabled(var.getmanajemen() || var.getparamedis());
                 BtnTambahTindakan.setVisible(false);
@@ -3111,7 +3131,11 @@ public final class DlgRawatJalan extends javax.swing.JDialog {
                 break;
             case 6:
                 BtnSimpan.setEnabled(var.getmanajemen() || var.getparamedis());
-                BtnHapus.setEnabled(var.getmanajemen() || var.getparamedis());
+                if(var.getkode().equals("Admin Utama")){
+                    BtnHapus.setEnabled(true);
+                }else{
+                    BtnHapus.setEnabled(false);
+                } 
                 BtnEdit.setEnabled(var.getmanajemen() || var.getparamedis());
                 BtnPrint.setEnabled(var.getmanajemen() || var.getparamedis());
                 BtnTambahTindakan.setVisible(false);

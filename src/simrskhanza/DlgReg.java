@@ -8711,7 +8711,11 @@ private void MnLaporanRekapKunjunganBulananPoliActionPerformed(java.awt.event.Ac
         DTPCari1.setDate(new Date());
         DTPCari2.setDate(new Date());
         BtnSimpan.setEnabled(var.getrekammedis());
-        BtnHapus.setEnabled(var.getrekammedis());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
         BtnEdit.setEnabled(var.getrekammedis());
         BtnPrint.setEnabled(var.getrekammedis());
         MnOperasi.setEnabled(var.getmanajemen());

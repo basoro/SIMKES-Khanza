@@ -534,7 +534,11 @@ public class DlgCacatFisik extends javax.swing.JDialog {
     }
     
     public void isCek(){
-        //BtnSimpan.setEnabled(var.getcacat_fisik());
-        //BtnHapus.setEnabled(var.getcacat_fisik());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
     }
 }

@@ -806,9 +806,13 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     }
     
     public void isCek(){
-        //BtnSimpan.setEnabled(var.getinsiden_keselamatan());
-        //BtnHapus.setEnabled(var.getinsiden_keselamatan());
-        //BtnEdit.setEnabled(var.getinsiden_keselamatan());
-        //BtnPrint.setEnabled(var.getinsiden_keselamatan());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
     }
 }

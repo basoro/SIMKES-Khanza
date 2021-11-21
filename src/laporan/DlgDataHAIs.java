@@ -1417,9 +1417,13 @@ public final class DlgDataHAIs extends javax.swing.JDialog {
     }
     
     public void isCek(){
-        //BtnSimpan.setEnabled(var.getdata_HAIs());
-        //BtnHapus.setEnabled(var.getdata_HAIs());
-        //BtnPrint.setEnabled(var.getdata_HAIs());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
+        BtnPrint.setEnabled(var.getmanajemen());
     }
 
    

@@ -1422,7 +1422,11 @@ private void BtnGudangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
             BtnPtg.setEnabled(false);
             BtnSimpan.setEnabled(var.getmanajemen());
             BtnTambah.setEnabled(var.getmanajemen());
-            BtnHapus.setEnabled(var.getmanajemen());
+            if(var.getkode().equals("Admin Utama")){
+                BtnHapus.setEnabled(true);
+            }else{
+                BtnHapus.setEnabled(false);
+            } 
             BtnBatal.setEnabled(var.getmanajemen());
             Kdptg.setText(var.getkode());
             Sequel.cariIsi("select nama from petugas where nip=?", Nmptg,Kdptg.getText());

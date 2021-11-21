@@ -5070,9 +5070,13 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
     }
     
     public void isCek(){
-        //BtnSimpan.setEnabled(var.getbilling_parsial());
-        //BtnHapus.setEnabled(var.gethapus_nota_salah());
-        //BtnNota.setEnabled(var.getbilling_parsial());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
+        BtnNota.setEnabled(var.getmanajemen());
         if(Sequel.cariIsi("select tampilkan_tombol_nota_ralan from set_nota").equals("Yes")){
             BtnNota.setVisible(true);
         }else{

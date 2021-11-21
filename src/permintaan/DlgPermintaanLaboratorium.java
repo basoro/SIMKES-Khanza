@@ -1330,9 +1330,13 @@ private void BtnHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     }
     
     public void isCek(){
-        //BtnSimpan.setEnabled(var.getpermintaan_lab());
-        //BtnPrint.setEnabled(var.getpermintaan_lab());
-        //BtnHapus.setEnabled(var.getpermintaan_lab());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
     }
     
     private void isForm(){

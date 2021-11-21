@@ -2122,7 +2122,11 @@ private void BtnHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
         }
         BtnSimpan.setEnabled(var.getmanajemen());
         BtnPrint.setEnabled(var.getmanajemen());
-        BtnHapus.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
         btnTarif.setEnabled(var.getmanajemen());
     }
     

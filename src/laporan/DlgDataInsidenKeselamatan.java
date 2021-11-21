@@ -1505,9 +1505,13 @@ public final class DlgDataInsidenKeselamatan extends javax.swing.JDialog {
     }
     
     public void isCek(){
-        //BtnSimpan.setEnabled(var.getinsiden_keselamatan_pasien());
-        //BtnHapus.setEnabled(var.getinsiden_keselamatan_pasien());
-        //BtnPrint.setEnabled(var.getinsiden_keselamatan_pasien()); 
+        BtnSimpan.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
+        BtnPrint.setEnabled(var.getmanajemen()); 
         if(var.getjml2()>=1){
             nip.setText(var.getkode());
             Sequel.cariIsi("select nama from petugas where nip=?",namapetugas,nip.getText());

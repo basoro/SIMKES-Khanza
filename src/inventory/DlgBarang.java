@@ -3044,7 +3044,11 @@ private void KapasitasKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
     public void isCek() {
         TCari.requestFocus();
         BtnSimpan.setEnabled(var.getapoteker());
-        BtnHapus.setEnabled(var.getapoteker());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
         BtnEdit.setEnabled(var.getapoteker());
         BtnPrint.setEnabled(var.getapoteker());
         if(var.getkode().equals("Admin Utama")){

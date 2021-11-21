@@ -534,7 +534,7 @@ public class DlgBahasa extends javax.swing.JDialog {
     }
     
     public void isCek(){
-        //BtnSimpan.setEnabled(var.getbahasa_pasien());
-        //BtnHapus.setEnabled(var.getbahasa_pasien());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnHapus.setEnabled(var.getmanajemen());
     }
 }

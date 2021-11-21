@@ -682,10 +682,14 @@ private void NmKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_NmKeyP
     }
     
     public void isCek(){
-        //BtnSimpan.setEnabled(var.getgolongan_barang());
-        //BtnHapus.setEnabled(var.getgolongan_barang());
-        //BtnEdit.setEnabled(var.getgolongan_barang());
-        //BtnPrint.setEnabled(var.getgolongan_barang());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
     }
     
 }

@@ -1760,10 +1760,14 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     }
     
     public void isCek(){
-        //BtnSimpan.setEnabled(var.getskdp_bpjs());
-        //BtnHapus.setEnabled(var.getskdp_bpjs());
-        //BtnPrint.setEnabled(var.getskdp_bpjs());
-        //BtnEdit.setEnabled(var.getskdp_bpjs());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
+        BtnPrint.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
     }
 
     public JTable getTable(){

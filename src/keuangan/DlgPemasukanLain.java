@@ -1043,7 +1043,11 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
             btnPetugas.setEnabled(false);
             KdPtg.setText(var.getkode());
             BtnSimpan.setEnabled(var.getmanajemen());
-            BtnHapus.setEnabled(var.getmanajemen());
+            if(var.getkode().equals("Admin Utama")){
+                BtnHapus.setEnabled(true);
+            }else{
+                BtnHapus.setEnabled(false);
+            } 
             BtnPrint.setEnabled(var.getmanajemen());
             Sequel.cariIsi("select nama from petugas where nip=?", NmPtg,KdPtg.getText());
         }      
