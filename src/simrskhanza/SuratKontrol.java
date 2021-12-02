@@ -2,7 +2,6 @@ package simrskhanza;
 
 import fungsi.WarnaTable;
 import fungsi.batasInput;
-import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -129,7 +128,7 @@ public class SuratKontrol extends javax.swing.JDialog {
         Rtl2.setDocument(new batasInput((int)50).getKata(Rtl2));
         NoReg.setDocument(new batasInput((byte)6).getKata(NoReg));
         KdDokter.setDocument(new batasInput((byte)20).getKata(KdDokter));
-        if(config.cariCepat().equals("aktif")){
+        if(koneksiDB.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {
@@ -1465,7 +1464,7 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
                     tabMode.getValueAt(tbObat.getSelectedRow(),16).toString()+"','"+
                     tabMode.getValueAt(tbObat.getSelectedRow(),17).toString()+"','','','','','','','','','','','','','','','','','','',''","Rekap Nota Pembayaran");
 
-                Valid.MyReport("rptSKDPBPJS.jrxml","report","::[ Surat SKDP BPJS ]::",
+                Valid.MyReport("rptSuratSKDPBPJS.jrxml","report","::[ Surat SKDP BPJS ]::",
                     "select * from temporary_booking_registrasi order by no asc",param); 
                 this.setCursor(Cursor.getDefaultCursor());
             }else{
@@ -1761,10 +1760,14 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     }
     
     public void isCek(){
-        //BtnSimpan.setEnabled(var.getskdp_bpjs());
-        //BtnHapus.setEnabled(var.getskdp_bpjs());
-        //BtnPrint.setEnabled(var.getskdp_bpjs());
-        //BtnEdit.setEnabled(var.getskdp_bpjs());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
+        BtnPrint.setEnabled(var.getmanajemen());
+        BtnEdit.setEnabled(var.getmanajemen());
     }
 
     public JTable getTable(){

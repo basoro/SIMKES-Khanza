@@ -12,7 +12,6 @@
 package simrskhanza;
 import fungsi.WarnaTable;
 import fungsi.batasInput;
-import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -114,7 +113,7 @@ public class DlgPasienMati extends javax.swing.JDialog {
         TNoRM.setDocument(new batasInput((byte)15).getKata(TNoRM));
         TCari.setDocument(new batasInput((byte)100).getKata(TCari));
         TKtg.setDocument(new batasInput((byte)100).getKata(TKtg));
-        if(config.cariCepat().equals("aktif")){
+        if(koneksiDB.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {
@@ -1071,7 +1070,11 @@ private void MnCetakSuratMatiActionPerformed(java.awt.event.ActionEvent evt) {//
     
     public void isCek(){
         BtnSimpan.setEnabled(var.getmanajemen());
-        BtnHapus.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
         BtnPrint.setEnabled(var.getmanajemen());
     }
     

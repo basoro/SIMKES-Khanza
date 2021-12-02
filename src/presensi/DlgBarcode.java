@@ -12,7 +12,6 @@
 package presensi;
 import fungsi.WarnaTable;
 import fungsi.batasInput;
-import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -78,7 +77,7 @@ public final class DlgBarcode extends javax.swing.JDialog {
         Bcd.setDocument(new batasInput((int)25).getKata(Bcd));
         
         TCari.setDocument(new batasInput((int)100).getKata(TCari));
-        if(config.cariCepat().equals("aktif")){
+        if(koneksiDB.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {tampil();}
@@ -742,7 +741,11 @@ public final class DlgBarcode extends javax.swing.JDialog {
        
      public void isCek(){
         BtnSimpan.setEnabled(var.getmanajemen());
-        BtnHapus.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
         BtnEdit.setEnabled(var.getmanajemen());
         BtnPrint.setEnabled(var.getmanajemen());
      }

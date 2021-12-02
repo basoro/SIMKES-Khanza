@@ -1,8 +1,9 @@
 package simrskhanza;
+import simrskhanza.DlgCariDokter;
+import simrskhanza.DlgCariPetugas;
 import keuangan.DlgJnsPerawatanOperasi;
 import fungsi.WarnaTable;
 import fungsi.batasInput;
-import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -183,7 +184,7 @@ public class DlgTagihanOperasi extends javax.swing.JDialog {
         
         TCariPaket.setDocument(new batasInput((byte)100).getKata(TCari)); 
         TCari.setDocument(new batasInput((byte)100).getKata(TCari)); 
-        if(config.cariCepat().equals("aktif")){
+        if(koneksiDB.cariCepat().equals("aktif")){
             TCariPaket.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {

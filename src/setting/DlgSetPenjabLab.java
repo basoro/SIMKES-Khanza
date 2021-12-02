@@ -75,6 +75,8 @@ public class DlgSetPenjabLab extends javax.swing.JDialog {
         tbAdmin.setDefaultRenderer(Object.class, new WarnaTable());
         kddokter.setDocument(new batasInput((byte)20).getKata(kddokter));
         kddokter2.setDocument(new batasInput((byte)20).getKata(kddokter2));
+        kddokter3.setDocument(new batasInput((byte)20).getKata(kddokter3));
+        kddokter4.setDocument(new batasInput((byte)20).getKata(kddokter4));
 
         dokter.addWindowListener(new WindowListener() {
             @Override
@@ -83,7 +85,7 @@ public class DlgSetPenjabLab extends javax.swing.JDialog {
             public void windowClosing(WindowEvent e) {}
             @Override
             public void windowClosed(WindowEvent e) {
-                if(dokter.getTable().getSelectedRow()!= -1){                    
+                if(dokter.getTable().getSelectedRow()!= -1){
                     if(pilihan==1){
                         kddokter.setText(dokter.getTable().getValueAt(dokter.getTable().getSelectedRow(),0).toString());
                         TDokter.setText(dokter.getTable().getValueAt(dokter.getTable().getSelectedRow(),1).toString());
@@ -101,7 +103,7 @@ public class DlgSetPenjabLab extends javax.swing.JDialog {
                         TDokter4.setText(dokter.getTable().getValueAt(dokter.getTable().getSelectedRow(),1).toString());
                         kddokter4.requestFocus();
                     }
-                }               
+                }
             }
             @Override
             public void windowIconified(WindowEvent e) {}
@@ -160,7 +162,7 @@ public class DlgSetPenjabLab extends javax.swing.JDialog {
             }
         });
 
-        internalFrame1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 245, 235)), "::[ Setup Penanggung Jawab Unit Penunjang ]::", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(70, 70, 70))); // NOI18N
+        internalFrame1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 245, 235)), "::[ Setup Penanggung Jawab Unit Penunjang ]::", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(50, 50, 50))); // NOI18N
         internalFrame1.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
         internalFrame1.setName("internalFrame1"); // NOI18N
         internalFrame1.setLayout(new java.awt.BorderLayout(1, 1));
@@ -209,6 +211,7 @@ public class DlgSetPenjabLab extends javax.swing.JDialog {
         panelGlass7.add(TDokter);
         TDokter.setBounds(213, 12, 269, 23);
 
+        BtnDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnDokter.setMnemonic('3');
         BtnDokter.setToolTipText("ALt+3");
         BtnDokter.setName("BtnDokter"); // NOI18N
@@ -240,6 +243,7 @@ public class DlgSetPenjabLab extends javax.swing.JDialog {
         panelGlass7.add(TDokter2);
         TDokter2.setBounds(213, 42, 269, 23);
 
+        BtnDokter2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnDokter2.setMnemonic('3');
         BtnDokter2.setToolTipText("ALt+3");
         BtnDokter2.setName("BtnDokter2"); // NOI18N
@@ -271,6 +275,7 @@ public class DlgSetPenjabLab extends javax.swing.JDialog {
         panelGlass7.add(TDokter3);
         TDokter3.setBounds(213, 72, 269, 23);
 
+        BtnDokter3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnDokter3.setMnemonic('3');
         BtnDokter3.setToolTipText("ALt+3");
         BtnDokter3.setName("BtnDokter3"); // NOI18N
@@ -302,6 +307,7 @@ public class DlgSetPenjabLab extends javax.swing.JDialog {
         panelGlass7.add(TDokter4);
         TDokter4.setBounds(213, 102, 269, 23);
 
+        BtnDokter4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnDokter4.setMnemonic('3');
         BtnDokter4.setToolTipText("ALt+3");
         BtnDokter4.setName("BtnDokter4"); // NOI18N
@@ -319,6 +325,7 @@ public class DlgSetPenjabLab extends javax.swing.JDialog {
         panelGlass5.setPreferredSize(new java.awt.Dimension(55, 55));
         panelGlass5.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
+        BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
         BtnSimpan.setMnemonic('S');
         BtnSimpan.setText("Simpan");
         BtnSimpan.setToolTipText("Alt+S");
@@ -336,6 +343,7 @@ public class DlgSetPenjabLab extends javax.swing.JDialog {
         });
         panelGlass5.add(BtnSimpan);
 
+        BtnBatal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Cancel-2-16x16.png"))); // NOI18N
         BtnBatal.setMnemonic('B');
         BtnBatal.setText("Baru");
         BtnBatal.setToolTipText("Alt+B");
@@ -354,6 +362,7 @@ public class DlgSetPenjabLab extends javax.swing.JDialog {
         });
         panelGlass5.add(BtnBatal);
 
+        BtnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/stop_f2.png"))); // NOI18N
         BtnHapus.setMnemonic('H');
         BtnHapus.setText("Hapus");
         BtnHapus.setToolTipText("Alt+H");
@@ -372,6 +381,7 @@ public class DlgSetPenjabLab extends javax.swing.JDialog {
         });
         panelGlass5.add(BtnHapus);
 
+        BtnEdit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/inventaris.png"))); // NOI18N
         BtnEdit.setMnemonic('G');
         BtnEdit.setText("Ganti");
         BtnEdit.setToolTipText("Alt+G");
@@ -390,6 +400,7 @@ public class DlgSetPenjabLab extends javax.swing.JDialog {
         });
         panelGlass5.add(BtnEdit);
 
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/exit.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Keluar");
         BtnKeluar.setToolTipText("Alt+K");
@@ -415,9 +426,105 @@ public class DlgSetPenjabLab extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-        tampil();
-    }//GEN-LAST:event_formWindowOpened
+    private void BtnSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSimpanActionPerformed
+        if(TDokter.getText().trim().equals("")||kddokter.getText().trim().equals("")){
+            Valid.textKosong(kddokter,"Penanggung Jawab Laborat");
+        }else if(TDokter2.getText().trim().equals("")||kddokter2.getText().trim().equals("")){
+            Valid.textKosong(kddokter2,"Penanggung Jawab Radiologi");
+        }else if(TDokter3.getText().trim().equals("")||kddokter3.getText().trim().equals("")){
+            Valid.textKosong(kddokter3,"Penanggung Jawab Hemodialisa");
+        }else if(TDokter4.getText().trim().equals("")||kddokter4.getText().trim().equals("")){
+            Valid.textKosong(kddokter4,"Penanggung Jawab Unit Tranfusi Darah");
+        }else if(tabMode.getRowCount()==0){
+            Sequel.menyimpan("set_pjlab","?,?,?,?","Penanggung Jawab",4,new String[]{
+                kddokter.getText(),kddokter2.getText(),kddokter3.getText(),kddokter4.getText()
+            });
+            tampil();
+            emptTeks();
+        }else if(tabMode.getRowCount()>0){
+            JOptionPane.showMessageDialog(null,"Maaf, Hanya diijinkan satu Admin Utama ...!!!!");
+            kddokter.requestFocus();
+        }
+}//GEN-LAST:event_BtnSimpanActionPerformed
+
+    private void BtnSimpanKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnSimpanKeyPressed
+        if(evt.getKeyCode()==KeyEvent.VK_SPACE){
+            BtnSimpanActionPerformed(null);
+        }else{
+            Valid.pindah(evt,kddokter4,BtnBatal);
+        }
+}//GEN-LAST:event_BtnSimpanKeyPressed
+
+    private void BtnBatalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBatalActionPerformed
+        emptTeks();
+}//GEN-LAST:event_BtnBatalActionPerformed
+
+    private void BtnBatalKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnBatalKeyPressed
+        if(evt.getKeyCode()==KeyEvent.VK_SPACE){
+            emptTeks();
+        }else{Valid.pindah(evt, BtnSimpan, BtnHapus);}
+}//GEN-LAST:event_BtnBatalKeyPressed
+
+    private void BtnHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnHapusActionPerformed
+        if(tabMode.getRowCount()==0){
+            JOptionPane.showMessageDialog(null,"Maaf, data sudah habis...!!!!");
+            kddokter.requestFocus();
+        }else{
+            Sequel.queryu("delete from set_pjlab");
+            tampil();
+            emptTeks();
+        }
+}//GEN-LAST:event_BtnHapusActionPerformed
+
+    private void BtnHapusKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnHapusKeyPressed
+        if(evt.getKeyCode()==KeyEvent.VK_SPACE){
+            BtnHapusActionPerformed(null);
+        }else{
+            Valid.pindah(evt, BtnBatal, BtnEdit);
+        }
+}//GEN-LAST:event_BtnHapusKeyPressed
+
+    private void BtnEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEditActionPerformed
+        if(TDokter.getText().trim().equals("")||kddokter.getText().trim().equals("")){
+            Valid.textKosong(kddokter,"Penanggung Jawab Laborat");
+        }else if(TDokter2.getText().trim().equals("")||kddokter2.getText().trim().equals("")){
+            Valid.textKosong(kddokter2,"Penanggung Jawab Radiologi");
+        }else if(TDokter3.getText().trim().equals("")||kddokter3.getText().trim().equals("")){
+            Valid.textKosong(kddokter3,"Penanggung Jawab Hemodialisa");
+        }else if(TDokter4.getText().trim().equals("")||kddokter4.getText().trim().equals("")){
+            Valid.textKosong(kddokter4,"Penanggung Jawab Unit Tranfusi Darah");
+        }else{
+            Sequel.queryu("delete from set_pjlab");
+            Sequel.menyimpan("set_pjlab","?,?,?,?","Penanggung Jawab",4,new String[]{
+                kddokter.getText(),kddokter2.getText(),kddokter3.getText(),kddokter4.getText()
+            });
+            tampil();
+            emptTeks();
+        }
+}//GEN-LAST:event_BtnEditActionPerformed
+
+    private void BtnEditKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnEditKeyPressed
+        if(evt.getKeyCode()==KeyEvent.VK_SPACE){
+            BtnEditActionPerformed(null);
+        }else{
+            Valid.pindah(evt, BtnHapus, BtnKeluar);
+        }
+}//GEN-LAST:event_BtnEditKeyPressed
+
+    private void BtnKeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnKeluarActionPerformed
+        if(tabMode.getRowCount()==0){
+            JOptionPane.showMessageDialog(null,"Maaf, data penanggung jawab lab & radiologi tidak boleh kosong ...!!!!");
+            kddokter.requestFocus();
+        }else if(! (tabMode.getRowCount()==0)) {
+            dispose();
+        }
+}//GEN-LAST:event_BtnKeluarActionPerformed
+
+    private void BtnKeluarKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnKeluarKeyPressed
+        if(evt.getKeyCode()==KeyEvent.VK_SPACE){
+            dispose();
+        }else{Valid.pindah(evt,BtnEdit,BtnKeluar);}
+}//GEN-LAST:event_BtnKeluarKeyPressed
 
     private void tbAdminMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbAdminMouseClicked
         if(tabMode.getRowCount()!=0){
@@ -426,7 +533,7 @@ public class DlgSetPenjabLab extends javax.swing.JDialog {
             } catch (java.lang.NullPointerException e) {
             }
         }
-    }//GEN-LAST:event_tbAdminMouseClicked
+}//GEN-LAST:event_tbAdminMouseClicked
 
     private void tbAdminKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tbAdminKeyPressed
         if(tabMode.getRowCount()!=0){
@@ -437,7 +544,11 @@ public class DlgSetPenjabLab extends javax.swing.JDialog {
                 }
             }
         }
-    }//GEN-LAST:event_tbAdminKeyPressed
+}//GEN-LAST:event_tbAdminKeyPressed
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        tampil();
+    }//GEN-LAST:event_formWindowOpened
 
     private void kddokterKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_kddokterKeyPressed
         if(evt.getKeyCode()==KeyEvent.VK_PAGE_DOWN){
@@ -514,106 +625,6 @@ public class DlgSetPenjabLab extends javax.swing.JDialog {
         dokter.setLocationRelativeTo(internalFrame1);
         dokter.setVisible(true);
     }//GEN-LAST:event_BtnDokter4ActionPerformed
-
-    private void BtnSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSimpanActionPerformed
-        if(TDokter.getText().trim().equals("")||kddokter.getText().trim().equals("")){
-            Valid.textKosong(kddokter,"Penanggung Jawab Laborat");
-        }else if(TDokter2.getText().trim().equals("")||kddokter2.getText().trim().equals("")){
-            Valid.textKosong(kddokter2,"Penanggung Jawab Radiologi");
-        }else if(TDokter3.getText().trim().equals("")||kddokter3.getText().trim().equals("")){
-            Valid.textKosong(kddokter3,"Penanggung Jawab Hemodialisa");
-        }else if(TDokter4.getText().trim().equals("")||kddokter4.getText().trim().equals("")){
-            Valid.textKosong(kddokter4,"Penanggung Jawab Unit Tranfusi Darah");
-        }else if(tabMode.getRowCount()==0){
-            Sequel.menyimpan("set_pjlab","?,?,?,?","Penanggung Jawab",4,new String[]{
-                kddokter.getText(),kddokter2.getText(),kddokter3.getText(),kddokter4.getText()
-            });
-            tampil();
-            emptTeks();
-        }else if(tabMode.getRowCount()>0){
-            JOptionPane.showMessageDialog(null,"Maaf, Hanya diijinkan satu Admin Utama ...!!!!");
-            kddokter.requestFocus();
-        }
-    }//GEN-LAST:event_BtnSimpanActionPerformed
-
-    private void BtnSimpanKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnSimpanKeyPressed
-        if(evt.getKeyCode()==KeyEvent.VK_SPACE){
-            BtnSimpanActionPerformed(null);
-        }else{
-            Valid.pindah(evt,kddokter4,BtnBatal);
-        }
-    }//GEN-LAST:event_BtnSimpanKeyPressed
-
-    private void BtnBatalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBatalActionPerformed
-        emptTeks();
-    }//GEN-LAST:event_BtnBatalActionPerformed
-
-    private void BtnBatalKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnBatalKeyPressed
-        if(evt.getKeyCode()==KeyEvent.VK_SPACE){
-            emptTeks();
-        }else{Valid.pindah(evt, BtnSimpan, BtnHapus);}
-    }//GEN-LAST:event_BtnBatalKeyPressed
-
-    private void BtnHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnHapusActionPerformed
-        if(tabMode.getRowCount()==0){
-            JOptionPane.showMessageDialog(null,"Maaf, data sudah habis...!!!!");
-            kddokter.requestFocus();
-        }else{
-            Sequel.queryu("delete from set_pjlab");
-            tampil();
-            emptTeks();
-        }
-    }//GEN-LAST:event_BtnHapusActionPerformed
-
-    private void BtnHapusKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnHapusKeyPressed
-        if(evt.getKeyCode()==KeyEvent.VK_SPACE){
-            BtnHapusActionPerformed(null);
-        }else{
-            Valid.pindah(evt, BtnBatal, BtnEdit);
-        }
-    }//GEN-LAST:event_BtnHapusKeyPressed
-
-    private void BtnEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEditActionPerformed
-        if(TDokter.getText().trim().equals("")||kddokter.getText().trim().equals("")){
-            Valid.textKosong(kddokter,"Penanggung Jawab Laborat");
-        }else if(TDokter2.getText().trim().equals("")||kddokter2.getText().trim().equals("")){
-            Valid.textKosong(kddokter2,"Penanggung Jawab Radiologi");
-        }else if(TDokter3.getText().trim().equals("")||kddokter3.getText().trim().equals("")){
-            Valid.textKosong(kddokter3,"Penanggung Jawab Hemodialisa");
-        }else if(TDokter4.getText().trim().equals("")||kddokter4.getText().trim().equals("")){
-            Valid.textKosong(kddokter4,"Penanggung Jawab Unit Tranfusi Darah");
-        }else{
-            Sequel.queryu("delete from set_pjlab");
-            Sequel.menyimpan("set_pjlab","?,?,?,?","Penanggung Jawab",4,new String[]{
-                kddokter.getText(),kddokter2.getText(),kddokter3.getText(),kddokter4.getText()
-            });
-            tampil();
-            emptTeks();
-        }
-    }//GEN-LAST:event_BtnEditActionPerformed
-
-    private void BtnEditKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnEditKeyPressed
-        if(evt.getKeyCode()==KeyEvent.VK_SPACE){
-            BtnEditActionPerformed(null);
-        }else{
-            Valid.pindah(evt, BtnHapus, BtnKeluar);
-        }
-    }//GEN-LAST:event_BtnEditKeyPressed
-
-    private void BtnKeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnKeluarActionPerformed
-        if(tabMode.getRowCount()==0){
-            JOptionPane.showMessageDialog(null,"Maaf, data penanggung jawab lab & radiologi tidak boleh kosong ...!!!!");
-            kddokter.requestFocus();
-        }else if(! (tabMode.getRowCount()==0)) {
-            dispose();
-        }
-    }//GEN-LAST:event_BtnKeluarActionPerformed
-
-    private void BtnKeluarKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnKeluarKeyPressed
-        if(evt.getKeyCode()==KeyEvent.VK_SPACE){
-            dispose();
-        }else{Valid.pindah(evt,BtnEdit,BtnKeluar);}
-    }//GEN-LAST:event_BtnKeluarKeyPressed
 
     /**
     * @param args the command line arguments

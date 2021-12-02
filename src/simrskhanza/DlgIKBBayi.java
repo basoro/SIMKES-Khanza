@@ -1,7 +1,7 @@
 package simrskhanza;
+import simrskhanza.DlgCariPegawai;
 import fungsi.WarnaTable;
 import fungsi.batasInput;
-import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -150,7 +150,7 @@ public class DlgIKBBayi extends javax.swing.JDialog {
         Anakke.setDocument(new batasInput((byte)2).getOnlyAngka(Anakke));
         
         TCari.setDocument(new batasInput((byte)100).getKata(TCari));
-        if(config.cariCepat().equals("aktif")){
+        if(koneksiDB.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {
@@ -2192,7 +2192,11 @@ private void MnKartuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST
     
     public void isCek(){
         BtnSimpan.setEnabled(var.getmanajemen());
-        BtnHapus.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
         BtnEdit.setEnabled(var.getmanajemen());
         BtnPrint.setEnabled(var.getmanajemen());
     }

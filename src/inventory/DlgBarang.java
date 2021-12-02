@@ -14,7 +14,6 @@ package inventory;
 
 import fungsi.WarnaTable;
 import fungsi.batasInput;
-import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -439,7 +438,7 @@ public class DlgBarang extends javax.swing.JDialog {
             public void keyReleased(KeyEvent e) {}
         });    
         
-        if(config.cariCepat().equals("aktif")){
+        if(koneksiDB.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {
@@ -647,8 +646,6 @@ public class DlgBarang extends javax.swing.JDialog {
 
         internalFrame1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 245, 235)), "::[ Data Obat, Alkes & BHP Medis ]::", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(70, 70, 70))); // NOI18N
         internalFrame1.setName("internalFrame1"); // NOI18N
-        internalFrame1.setWarnaAtas(new java.awt.Color(255, 255, 255));
-        internalFrame1.setWarnaBawah(new java.awt.Color(255, 255, 255));
         internalFrame1.setLayout(new java.awt.BorderLayout(1, 1));
 
         jPanel2.setName("jPanel2"); // NOI18N
@@ -659,8 +656,6 @@ public class DlgBarang extends javax.swing.JDialog {
         panelisi2.setBackground(new java.awt.Color(255, 150, 255));
         panelisi2.setName("panelisi2"); // NOI18N
         panelisi2.setPreferredSize(new java.awt.Dimension(100, 44));
-        panelisi2.setWarnaAtas(new java.awt.Color(255, 255, 255));
-        panelisi2.setWarnaBawah(new java.awt.Color(255, 255, 255));
         panelisi2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 4, 9));
 
         label9.setText("Key Word :");
@@ -709,8 +704,6 @@ public class DlgBarang extends javax.swing.JDialog {
 
         panelisi1.setName("panelisi1"); // NOI18N
         panelisi1.setPreferredSize(new java.awt.Dimension(100, 44));
-        panelisi1.setWarnaAtas(new java.awt.Color(255, 255, 255));
-        panelisi1.setWarnaBawah(new java.awt.Color(255, 255, 255));
         panelisi1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
         BtnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save-16x16.png"))); // NOI18N
@@ -886,8 +879,6 @@ public class DlgBarang extends javax.swing.JDialog {
 
         FormInput.setName("FormInput"); // NOI18N
         FormInput.setPreferredSize(new java.awt.Dimension(660, 227));
-        FormInput.setWarnaAtas(new java.awt.Color(255, 255, 255));
-        FormInput.setWarnaBawah(new java.awt.Color(255, 255, 255));
         FormInput.setLayout(null);
 
         label12.setText("Kode Barang :");
@@ -1337,7 +1328,7 @@ public class DlgBarang extends javax.swing.JDialog {
         karyawan.setBounds(660, 192, 110, 23);
 
         DTPExpired.setForeground(new java.awt.Color(50, 70, 50));
-        DTPExpired.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "31-07-2021" }));
+        DTPExpired.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "27-02-2019" }));
         DTPExpired.setDisplayFormat("dd-MM-yyyy");
         DTPExpired.setName("DTPExpired"); // NOI18N
         DTPExpired.setOpaque(false);
@@ -1466,8 +1457,6 @@ public class DlgBarang extends javax.swing.JDialog {
 
         PanelInput.add(FormInput, java.awt.BorderLayout.CENTER);
 
-        ChkInput.setBackground(new java.awt.Color(255, 255, 255));
-        ChkInput.setForeground(new java.awt.Color(51, 51, 51));
         ChkInput.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/143.png"))); // NOI18N
         ChkInput.setMnemonic('I');
         ChkInput.setText(".: Input Data");
@@ -3054,10 +3043,14 @@ private void KapasitasKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event
             
     public void isCek() {
         TCari.requestFocus();
-        BtnSimpan.setEnabled(var.getmanajemen());
-        BtnHapus.setEnabled(var.getmanajemen());
-        BtnEdit.setEnabled(var.getmanajemen());
-        BtnPrint.setEnabled(var.getmanajemen());
+        BtnSimpan.setEnabled(var.getapoteker());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
+        BtnEdit.setEnabled(var.getapoteker());
+        BtnPrint.setEnabled(var.getapoteker());
         if(var.getkode().equals("Admin Utama")){
             MnRestore.setEnabled(true);
         }else{

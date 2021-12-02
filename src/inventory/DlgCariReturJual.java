@@ -1,7 +1,6 @@
 package inventory;
 import fungsi.WarnaTable;
 import fungsi.batasInput;
-import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -98,7 +97,7 @@ public class DlgCariReturJual extends javax.swing.JDialog {
         NoNota.setDocument(new batasInput((byte)8).getKata(NoNota));
         Kdptg.setDocument(new batasInput((byte)25).getKata(Kdptg));
         TCari.setDocument(new batasInput((byte)100).getKata(TCari));
-        if(config.cariCepat().equals("aktif")){
+        if(koneksiDB.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {tampil();}

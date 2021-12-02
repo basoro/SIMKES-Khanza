@@ -12,7 +12,6 @@
 package presensi;
 import fungsi.WarnaTable;
 import fungsi.batasInput;
-import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -101,7 +100,7 @@ public final class DlgTemporaryPresensi extends javax.swing.JDialog {
         tbTemporary.setDefaultRenderer(Object.class, new WarnaTable());
         
         TCari.setDocument(new batasInput((int)100).getKata(TCari));
-        if(config.cariCepat().equals("aktif")){
+        if(koneksiDB.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {tampil();}
@@ -149,8 +148,6 @@ public final class DlgTemporaryPresensi extends javax.swing.JDialog {
         BtnPrint = new widget.Button();
         BtnAll = new widget.Button();
         BtnKeluar = new widget.Button();
-        LblAkun1 = new widget.Label();
-        LblAkun = new widget.Label();
 
         Popup2.setName("Popup2"); // NOI18N
 
@@ -267,16 +264,18 @@ public final class DlgTemporaryPresensi extends javax.swing.JDialog {
             }
         });
 
-        internalFrame1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 245, 235)), "::[ Temporary Presensi ]::", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(70, 70, 70))); // NOI18N
+        internalFrame1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 245, 235)), "::[ Temporary Presensi ]::", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(50, 70, 40))); // NOI18N
         internalFrame1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         internalFrame1.setName("internalFrame1"); // NOI18N
         internalFrame1.setLayout(new java.awt.BorderLayout(1, 1));
 
+        Scroll.setComponentPopupMenu(Popup2);
         Scroll.setName("Scroll"); // NOI18N
         Scroll.setOpaque(true);
 
         tbTemporary.setAutoCreateRowSorter(true);
         tbTemporary.setToolTipText("Silahkan klik untuk memilih data yang mau diedit ataupun dihapus");
+        tbTemporary.setComponentPopupMenu(Popup2);
         tbTemporary.setName("tbTemporary"); // NOI18N
         Scroll.setViewportView(tbTemporary);
 
@@ -429,18 +428,6 @@ public final class DlgTemporaryPresensi extends javax.swing.JDialog {
         });
         panelGlass5.add(BtnKeluar);
 
-        LblAkun1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        LblAkun1.setText("Bidang : ");
-        LblAkun1.setName("LblAkun1"); // NOI18N
-        LblAkun1.setPreferredSize(new java.awt.Dimension(50, 30));
-        panelGlass5.add(LblAkun1);
-
-        LblAkun.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        LblAkun.setText("bidang");
-        LblAkun.setName("LblAkun"); // NOI18N
-        LblAkun.setPreferredSize(new java.awt.Dimension(200, 30));
-        panelGlass5.add(LblAkun);
-
         jPanel1.add(panelGlass5, java.awt.BorderLayout.CENTER);
 
         internalFrame1.add(jPanel1, java.awt.BorderLayout.PAGE_END);
@@ -449,6 +436,140 @@ public final class DlgTemporaryPresensi extends javax.swing.JDialog {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void TCariKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TCariKeyPressed
+        if(evt.getKeyCode()==KeyEvent.VK_ENTER){
+            BtnCariActionPerformed(null);
+        }else if(evt.getKeyCode()==KeyEvent.VK_PAGE_DOWN){
+            BtnCari.requestFocus();
+        }else if(evt.getKeyCode()==KeyEvent.VK_PAGE_UP){
+            BtnKeluar.requestFocus();
+        }
+}//GEN-LAST:event_TCariKeyPressed
+
+    private void BtnCariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCariActionPerformed
+        tampil();
+}//GEN-LAST:event_BtnCariActionPerformed
+
+    private void BtnCariKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnCariKeyPressed
+        if(evt.getKeyCode()==KeyEvent.VK_SPACE){
+            BtnCariActionPerformed(null);
+        }else{
+            Valid.pindah(evt, TCari, BtnAll);
+        }
+}//GEN-LAST:event_BtnCariKeyPressed
+
+    private void BtnTambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnTambahActionPerformed
+        Sequel.AutoComitFalse();
+        for(i=0;i<tbTemporary.getRowCount();i++){ 
+            if(tbTemporary.getValueAt(i,0).toString().equals("true")){
+                Sequel.queryu2("insert into rekap_presensi values(?,?,?,?,?,?,?,?,?)", 9,new String[]{
+                    tbTemporary.getValueAt(i,1).toString(),tbTemporary.getValueAt(i,4).toString(),
+                    tbTemporary.getValueAt(i,5).toString(),tbTemporary.getValueAt(i,6).toString(),
+                    tbTemporary.getValueAt(i,7).toString(),tbTemporary.getValueAt(i,8).toString(),
+                    tbTemporary.getValueAt(i,9).toString(),"-",tbTemporary.getValueAt(i,10).toString(),
+                });
+                Sequel.queryu2("delete from temporary_presensi where id=? and jam_datang=?",2,new String[]{
+                    tbTemporary.getValueAt(i,1).toString(),tbTemporary.getValueAt(i,5).toString()
+                });
+            }
+        }
+        Sequel.AutoComitTrue();
+        tampil();
+    }//GEN-LAST:event_BtnTambahActionPerformed
+
+    private void BtnTambahKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnTambahKeyPressed
+        if(evt.getKeyCode()==KeyEvent.VK_ENTER){
+            BtnTambahActionPerformed(null);
+        }else{
+            Valid.pindah(evt, TCari, BtnHapus);
+        }
+    }//GEN-LAST:event_BtnTambahKeyPressed
+
+    private void BtnHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnHapusActionPerformed
+        Sequel.AutoComitFalse();
+        for(i=0;i<tbTemporary.getRowCount();i++){ 
+            if(tbTemporary.getValueAt(i,0).toString().equals("true")){
+                Sequel.queryu2("delete from temporary_presensi where id=? and jam_datang=?",2,new String[]{
+                    tbTemporary.getValueAt(i,1).toString(),tbTemporary.getValueAt(i,5).toString()
+                });
+            }
+        }
+        Sequel.AutoComitTrue();
+        tampil();
+    }//GEN-LAST:event_BtnHapusActionPerformed
+
+    private void BtnHapusKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnHapusKeyPressed
+        if(evt.getKeyCode()==KeyEvent.VK_ENTER){
+            BtnHapusActionPerformed(null);
+        }else{
+            Valid.pindah(evt, BtnTambah, BtnPrint);
+        }
+    }//GEN-LAST:event_BtnHapusKeyPressed
+
+    private void BtnPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPrintActionPerformed
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        if(! TCari.getText().trim().equals("")){
+            BtnCariActionPerformed(evt);
+        }
+        if(tabMode.getRowCount()==0){
+            JOptionPane.showMessageDialog(null,"Maaf, data sudah habis. Tidak ada data yang bisa anda print...!!!!");
+            TCari.requestFocus();
+        }else if(tabMode.getRowCount()!=0){
+            Map<String, Object> param = new HashMap<>();   
+                param.put("namars",var.getnamars());
+                param.put("alamatrs",var.getalamatrs());
+                param.put("kotars",var.getkabupatenrs());
+                param.put("propinsirs",var.getpropinsirs());
+                param.put("kontakrs",var.getkontakrs());
+                param.put("emailrs",var.getemailrs());   
+                param.put("logo",Sequel.cariGambar("select logo from setting")); 
+                Valid.MyReport("rptTemporaryPresensi.jrxml","report","::[ Temporary Presensi ]::",
+                    "SELECT pegawai.id, pegawai.nik, pegawai.nama, temporary_presensi.shift, " +
+                    "temporary_presensi.jam_datang, now() as jam_pulang, temporary_presensi.status,  " +
+                    "temporary_presensi.keterlambatan, ((unix_timestamp(now()) - unix_timestamp(jam_datang))/3600) as durasi,photo  from pegawai  " +
+                    "inner join temporary_presensi on pegawai.id=temporary_presensi.id " +
+                    "where  pegawai.nik like '%"+TCari.getText().trim()+"%' or " +
+                    "pegawai.nama like '%"+TCari.getText().trim()+"%' or " +
+                    "temporary_presensi.shift like '%"+TCari.getText().trim()+"%' or " +
+                    "temporary_presensi.jam_datang like '%"+TCari.getText().trim()+"%' or " +
+                    "temporary_presensi.status like '%"+TCari.getText().trim()+"%' or " +
+                    "temporary_presensi.keterlambatan like '%"+TCari.getText().trim()+"%' ",param);            
+        }
+        this.setCursor(Cursor.getDefaultCursor());
+        
+    }//GEN-LAST:event_BtnPrintActionPerformed
+
+    private void BtnPrintKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnPrintKeyPressed
+        if(evt.getKeyCode()==KeyEvent.VK_ENTER){
+            BtnPrintActionPerformed(null);
+        }else{
+            Valid.pindah(evt,BtnHapus,BtnAll);
+        }
+    }//GEN-LAST:event_BtnPrintKeyPressed
+
+    private void BtnAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAllActionPerformed
+        TCari.setText("");
+        tampil();
+    }//GEN-LAST:event_BtnAllActionPerformed
+
+    private void BtnAllKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnAllKeyPressed
+        if(evt.getKeyCode()==KeyEvent.VK_ENTER){
+            BtnAllActionPerformed(null);
+        }else{
+            Valid.pindah(evt, BtnPrint, BtnKeluar);
+        }
+    }//GEN-LAST:event_BtnAllKeyPressed
+
+    private void BtnKeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnKeluarActionPerformed
+        dispose();
+    }//GEN-LAST:event_BtnKeluarActionPerformed
+
+    private void BtnKeluarKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnKeluarKeyPressed
+        if(evt.getKeyCode()==KeyEvent.VK_ENTER){
+            dispose();
+        }else{Valid.pindah(evt,BtnAll,TCari);}
+    }//GEN-LAST:event_BtnKeluarKeyPressed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         tampil();
@@ -523,140 +644,6 @@ public final class DlgTemporaryPresensi extends javax.swing.JDialog {
         }
     }//GEN-LAST:event_ppBersihkanSemuaActionPerformed
 
-    private void TCariKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TCariKeyPressed
-        if(evt.getKeyCode()==KeyEvent.VK_ENTER){
-            BtnCariActionPerformed(null);
-        }else if(evt.getKeyCode()==KeyEvent.VK_PAGE_DOWN){
-            BtnCari.requestFocus();
-        }else if(evt.getKeyCode()==KeyEvent.VK_PAGE_UP){
-            BtnKeluar.requestFocus();
-        }
-    }//GEN-LAST:event_TCariKeyPressed
-
-    private void BtnCariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCariActionPerformed
-        tampil();
-    }//GEN-LAST:event_BtnCariActionPerformed
-
-    private void BtnCariKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnCariKeyPressed
-        if(evt.getKeyCode()==KeyEvent.VK_SPACE){
-            BtnCariActionPerformed(null);
-        }else{
-            Valid.pindah(evt, TCari, BtnAll);
-        }
-    }//GEN-LAST:event_BtnCariKeyPressed
-
-    private void BtnTambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnTambahActionPerformed
-
-        for(i=0;i<tbTemporary.getRowCount();i++){
-            if(tbTemporary.getValueAt(i,0).toString().equals("true")){
-                Sequel.queryu2("insert into rekap_presensi values(?,?,?,?,?,?,?,?,?)", 9,new String[]{
-                    tbTemporary.getValueAt(i,1).toString(),tbTemporary.getValueAt(i,4).toString(),
-                    tbTemporary.getValueAt(i,5).toString(),tbTemporary.getValueAt(i,6).toString(),
-                    tbTemporary.getValueAt(i,7).toString(),tbTemporary.getValueAt(i,8).toString(),
-                    tbTemporary.getValueAt(i,9).toString(),"-",tbTemporary.getValueAt(i,10).toString(),
-                });
-                Sequel.queryu2("delete from temporary_presensi where id=? and jam_datang=?",2,new String[]{
-                    tbTemporary.getValueAt(i,1).toString(),tbTemporary.getValueAt(i,5).toString()
-                });
-            }
-        }
-
-        tampil();
-    }//GEN-LAST:event_BtnTambahActionPerformed
-
-    private void BtnTambahKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnTambahKeyPressed
-        if(evt.getKeyCode()==KeyEvent.VK_ENTER){
-            BtnTambahActionPerformed(null);
-        }else{
-            Valid.pindah(evt, TCari, BtnHapus);
-        }
-    }//GEN-LAST:event_BtnTambahKeyPressed
-
-    private void BtnHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnHapusActionPerformed
-
-        for(i=0;i<tbTemporary.getRowCount();i++){
-            if(tbTemporary.getValueAt(i,0).toString().equals("true")){
-                Sequel.queryu2("delete from temporary_presensi where id=? and jam_datang=?",2,new String[]{
-                    tbTemporary.getValueAt(i,1).toString(),tbTemporary.getValueAt(i,5).toString()
-                });
-            }
-        }
-
-        tampil();
-    }//GEN-LAST:event_BtnHapusActionPerformed
-
-    private void BtnHapusKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnHapusKeyPressed
-        if(evt.getKeyCode()==KeyEvent.VK_ENTER){
-            BtnHapusActionPerformed(null);
-        }else{
-            Valid.pindah(evt, BtnTambah, BtnPrint);
-        }
-    }//GEN-LAST:event_BtnHapusKeyPressed
-
-    private void BtnPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPrintActionPerformed
-        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-        if(! TCari.getText().trim().equals("")){
-            BtnCariActionPerformed(evt);
-        }
-        if(tabMode.getRowCount()==0){
-            JOptionPane.showMessageDialog(null,"Maaf, data sudah habis. Tidak ada data yang bisa anda print...!!!!");
-            TCari.requestFocus();
-        }else if(tabMode.getRowCount()!=0){
-            Map<String, Object> param = new HashMap<>();
-            param.put("namars",var.getnamars());
-            param.put("alamatrs",var.getalamatrs());
-            param.put("kotars",var.getkabupatenrs());
-            param.put("propinsirs",var.getpropinsirs());
-            param.put("kontakrs",var.getkontakrs());
-            param.put("emailrs",var.getemailrs());
-            param.put("logo",Sequel.cariGambar("select logo from setting"));
-            Valid.MyReport("rptTemporaryPresensi.jrxml","report","::[ Temporary Presensi ]::",
-                "SELECT pegawai.id, pegawai.nik, pegawai.nama, temporary_presensi.shift, " +
-                "temporary_presensi.jam_datang, now() as jam_pulang, temporary_presensi.status,  " +
-                "temporary_presensi.keterlambatan, ((unix_timestamp(now()) - unix_timestamp(jam_datang))/3600) as durasi,temporary_presensi.photo  from pegawai  " +
-                "inner join temporary_presensi on pegawai.id=temporary_presensi.id " +
-                "where  pegawai.nik like '%"+TCari.getText().trim()+"%' or " +
-                "pegawai.nama like '%"+TCari.getText().trim()+"%' or " +
-                "temporary_presensi.shift like '%"+TCari.getText().trim()+"%' or " +
-                "temporary_presensi.jam_datang like '%"+TCari.getText().trim()+"%' or " +
-                "temporary_presensi.status like '%"+TCari.getText().trim()+"%' or " +
-                "temporary_presensi.keterlambatan like '%"+TCari.getText().trim()+"%' ",param);
-        }
-        this.setCursor(Cursor.getDefaultCursor());
-
-    }//GEN-LAST:event_BtnPrintActionPerformed
-
-    private void BtnPrintKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnPrintKeyPressed
-        if(evt.getKeyCode()==KeyEvent.VK_ENTER){
-            BtnPrintActionPerformed(null);
-        }else{
-            Valid.pindah(evt,BtnHapus,BtnAll);
-        }
-    }//GEN-LAST:event_BtnPrintKeyPressed
-
-    private void BtnAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAllActionPerformed
-        TCari.setText("");
-        tampil();
-    }//GEN-LAST:event_BtnAllActionPerformed
-
-    private void BtnAllKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnAllKeyPressed
-        if(evt.getKeyCode()==KeyEvent.VK_ENTER){
-            BtnAllActionPerformed(null);
-        }else{
-            Valid.pindah(evt, BtnPrint, BtnKeluar);
-        }
-    }//GEN-LAST:event_BtnAllKeyPressed
-
-    private void BtnKeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnKeluarActionPerformed
-        dispose();
-    }//GEN-LAST:event_BtnKeluarActionPerformed
-
-    private void BtnKeluarKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnKeluarKeyPressed
-        if(evt.getKeyCode()==KeyEvent.VK_ENTER){
-            dispose();
-        }else{Valid.pindah(evt,BtnAll,TCari);}
-    }//GEN-LAST:event_BtnKeluarKeyPressed
-
     /**
     * @param args the command line arguments
     */
@@ -681,8 +668,6 @@ public final class DlgTemporaryPresensi extends javax.swing.JDialog {
     private widget.Button BtnPrint;
     private widget.Button BtnTambah;
     private widget.Label LCount;
-    private widget.Label LblAkun;
-    private widget.Label LblAkun1;
     private javax.swing.JPopupMenu Popup2;
     private widget.ScrollPane Scroll;
     private widget.TextBox TCari;
@@ -702,42 +687,32 @@ public final class DlgTemporaryPresensi extends javax.swing.JDialog {
     // End of variables declaration//GEN-END:variables
 
     public void tampil() {
-        LblAkun.setText(Sequel.cariIsi("select bidang from pegawai where nik=?",var.getkode()));
         Valid.tabelKosong(tabMode);
         try{   
             ps=koneksi.prepareStatement(
                     "SELECT pegawai.id, pegawai.nik, pegawai.nama, temporary_presensi.shift, " +
                     "temporary_presensi.jam_datang, now() as jam_pulang, temporary_presensi.status,  " +
-                    "temporary_presensi.keterlambatan, ((unix_timestamp(now()) - unix_timestamp(jam_datang))/3600) as durasi,temporary_presensi.photo,pegawai.bidang  from pegawai  " +
+                    "temporary_presensi.keterlambatan, ((unix_timestamp(now()) - unix_timestamp(jam_datang))/3600) as durasi,photo  from pegawai  " +
                     "inner join temporary_presensi on pegawai.id=temporary_presensi.id " +
-                    "where  " +
-                    "pegawai.bidang like ?  and pegawai.nik like ? or " +
-                    "pegawai.bidang like ? and pegawai.nama like ?  "
-//                    "temporary_presensi.shift like ? or " +
-//                    "temporary_presensi.jam_datang like ? or " +
-//                    "temporary_presensi.status like ? or " +
-//                    "temporary_presensi.keterlambatan like ? "
-                    
-                            
-            );
+                    "where  pegawai.nik like ? or " +
+                    "pegawai.nama like ? or " +
+                    "temporary_presensi.shift like ? or " +
+                    "temporary_presensi.jam_datang like ? or " +
+                    "temporary_presensi.status like ? or " +
+                    "temporary_presensi.keterlambatan like ?  ");
             try {
-                  ps.setString(1,"%"+LblAkun.getText().trim()+"%");
-                  ps.setString(2,"%"+TCari.getText().trim()+"%");
-                  ps.setString(3,"%"+LblAkun.getText().trim()+"%");
-                  ps.setString(4,"%"+TCari.getText().trim()+"%");
-                  
-//                  ps.setString(3,"%"+TCari.getText().trim()+"%");
-//                  ps.setString(4,"%"+TCari.getText().trim()+"%");
-//                  ps.setString(5,"%"+TCari.getText().trim()+"%");
-//                  ps.setString(6,"%"+TCari.getText().trim()+"%");
-//                  ps.setString(7,"%"+TCari.getText().trim()+"%");
-                
+                ps.setString(1,"%"+TCari.getText().trim()+"%");
+                ps.setString(2,"%"+TCari.getText().trim()+"%");
+                ps.setString(3,"%"+TCari.getText().trim()+"%");
+                ps.setString(4,"%"+TCari.getText().trim()+"%");
+                ps.setString(5,"%"+TCari.getText().trim()+"%");
+                ps.setString(6,"%"+TCari.getText().trim()+"%");
                 rs=ps.executeQuery(); 
                 while(rs.next()){
                     tabMode.addRow(new Object[]{
                         false,rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),
                         rs.getString(5),rs.getString(6),rs.getString(7),rs.getString(8),
-                        rs.getString(9),rs.getString(10),rs.getString(11)
+                        rs.getString(9),rs.getString(10)
                     });
                 }
             } catch (Exception e) {
@@ -754,11 +729,16 @@ public final class DlgTemporaryPresensi extends javax.swing.JDialog {
             System.out.println("Notifikasi : "+e);
         }
         LCount.setText(""+tabMode.getRowCount());
+
     }
 
     public void isCek(){
         BtnTambah.setEnabled(var.getmanajemen());
-        BtnHapus.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
         BtnPrint.setEnabled(var.getmanajemen());
         
         if(var.getkode().equals("Admin Utama")){

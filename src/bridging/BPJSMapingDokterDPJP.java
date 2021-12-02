@@ -12,7 +12,6 @@
 package bridging;
 import fungsi.WarnaTable;
 import fungsi.batasInput;
-import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -86,7 +85,7 @@ public final class BPJSMapingDokterDPJP extends javax.swing.JDialog {
 
         TCari.setDocument(new batasInput((byte)100).getKata(TCari));                  
         
-        if(config.cariCepat().equals("aktif")){
+        if(koneksiDB.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {
@@ -619,7 +618,7 @@ public final class BPJSMapingDokterDPJP extends javax.swing.JDialog {
                 param.put("emailrs",var.getemailrs());   
                 param.put("logo",Sequel.cariGambar("select logo from setting")); 
                 param.put("parameter","%"+TCari.getText().trim()+"%");   
-                //Valid.MyReport("rptMapingDokterDPJPVClaim.jasper","report","::[ Mapping Dokter RS & DPJP VClaim ]::",param);            
+//                Valid.MyReport("rptMapingDokterDPJPVClaim.jasper","report","::[ Mapping Dokter RS & DPJP VClaim ]::",param);            
         }
         this.setCursor(Cursor.getDefaultCursor());
 }//GEN-LAST:event_BtnPrintActionPerformed
@@ -798,10 +797,14 @@ private void btnPoliBPJSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
     
     
     public void isCek(){
-        //BtnSimpan.setEnabled(var.getbpjs_mapping_dokterdpjp());
-        //BtnHapus.setEnabled(var.getbpjs_mapping_dokterdpjp());
-        //BtnEdit.setEnabled(var.getbpjs_mapping_dokterdpjp());
-        //BtnPrint.setEnabled(var.getbpjs_mapping_dokterdpjp());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
+        BtnEdit.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
     }
     
     public JTable getTable(){

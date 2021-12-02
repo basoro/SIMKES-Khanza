@@ -17,7 +17,6 @@ import bridging.BPJSNik;
 import bridging.BPJSPeserta;
 import fungsi.WarnaTable;
 import fungsi.batasInput;
-import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -226,7 +225,7 @@ public class DlgPasien extends javax.swing.JDialog {
         NIP.setDocument(new batasInput((byte)30).getFilter(NIP));
         TNoPeserta.setDocument(new batasInput((byte)25).getKata(TNoPeserta));
         TCari.setDocument(new batasInput((byte)100).getKata(TCari));
-        if(config.cariCepat().equals("aktif")){
+        if(koneksiDB.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {
@@ -2258,7 +2257,7 @@ public class DlgPasien extends javax.swing.JDialog {
         FormInput.add(jLabel13);
         jLabel13.setBounds(4, 102, 95, 23);
 
-        DTPLahir.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "29-07-2021" }));
+        DTPLahir.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "25-03-2021" }));
         DTPLahir.setDisplayFormat("dd-MM-yyyy");
         DTPLahir.setName("DTPLahir"); // NOI18N
         DTPLahir.setOpaque(false);
@@ -2296,7 +2295,7 @@ public class DlgPasien extends javax.swing.JDialog {
         FormInput.add(jLabel19);
         jLabel19.setBounds(629, 12, 100, 23);
 
-        CmbStts.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "BELUM KAWIN", "KAWIN", "CERAI HIDUP", "CERAI MATI" }));
+        CmbStts.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "MENIKAH", "BELUM MENIKAH", "JANDA", "DUDHA" }));
         CmbStts.setLightWeightPopupEnabled(false);
         CmbStts.setName("CmbStts"); // NOI18N
         CmbStts.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -2390,7 +2389,7 @@ public class DlgPasien extends javax.swing.JDialog {
         FormInput.add(TKtp);
         TKtp.setBounds(712, 132, 130, 23);
 
-        DTPDaftar.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "29-07-2021" }));
+        DTPDaftar.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "25-03-2021" }));
         DTPDaftar.setDisplayFormat("dd-MM-yyyy");
         DTPDaftar.setName("DTPDaftar"); // NOI18N
         DTPDaftar.setOpaque(false);
@@ -4862,7 +4861,7 @@ private void KabupatenMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:eve
         TNm.setText(cekViaBPJS.nama);
         CmbJk.setSelectedItem(cekViaBPJS.sex);
         TNoPeserta.setText(cekViaBPJS.noKartu);
-        //Pekerjaan.setText(cekViaBPJS.jenisPesertaketerangan);
+        Pekerjaan.setText(cekViaBPJS.jenisPesertaketerangan);
         TUmurTh.setText(cekViaBPJS.umurumurSekarang);
         Valid.SetTgl(DTPLahir,cekViaBPJS.tglLahir);
         jPopupMenu2.setVisible(false);
@@ -4875,7 +4874,7 @@ private void KabupatenMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:eve
         TNm.setText(cekViaBPJSKartu.nama);
         CmbJk.setSelectedItem(cekViaBPJSKartu.sex);
         TKtp.setText(cekViaBPJSKartu.nik);
-        //Pekerjaan.setText(cekViaBPJSKartu.jenisPesertaketerangan);
+        Pekerjaan.setText(cekViaBPJSKartu.jenisPesertaketerangan);
         TUmurTh.setText(cekViaBPJSKartu.umurumurSekarang);
         Valid.SetTgl(DTPLahir,cekViaBPJSKartu.tglLahir);
         jPopupMenu2.setVisible(false);
@@ -6398,13 +6397,17 @@ private void KabupatenMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:eve
     }
     
     public void isCek(){
-        BtnSimpan.setEnabled(var.getmanajemen());
-        BtnHapus.setEnabled(var.getmanajemen());
-        BtnEdit.setEnabled(var.getmanajemen());
-        BtnPrint.setEnabled(var.getmanajemen());
-        ppGabungRM.setEnabled(var.getmanajemen());
-        ppRiwayat.setEnabled(var.getmanajemen());
-        ppCatatanPasien.setEnabled(var.getmanajemen());
+        BtnSimpan.setEnabled(var.getrekammedis());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
+        BtnEdit.setEnabled(var.getrekammedis());
+        BtnPrint.setEnabled(var.getrekammedis());
+        ppGabungRM.setEnabled(var.getrekammedis());
+        ppRiwayat.setEnabled(var.getrekammedis());
+        ppCatatanPasien.setEnabled(var.getrekammedis());
         asalform=var.getform();
     }
 

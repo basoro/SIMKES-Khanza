@@ -16,7 +16,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import fungsi.WarnaTable;
 import fungsi.batasInput;
-import fungsi.config;
+import fungsi.koneksiDB;
 import java.awt.Dimension;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
@@ -26,10 +26,8 @@ import fungsi.validasi;
 import fungsi.var;
 import java.awt.Cursor;
 import java.awt.event.KeyEvent;
-import java.io.FileInputStream;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Properties;
 import javax.swing.JOptionPane;
 import javax.swing.event.DocumentEvent;
 import org.springframework.http.HttpEntity;
@@ -43,12 +41,11 @@ import org.springframework.http.MediaType;
  */
 public final class BPJSCekReferensiFaskes extends javax.swing.JDialog {
     private final DefaultTableModel tabMode;
-    private final Properties prop = new Properties();
     private validasi Valid=new validasi();
     private sekuel Sequel=new sekuel();
     private int i=0;
     private ApiBPJS api=new ApiBPJS();
-    private String URL="",link="";
+    private String URL="",link="",utc="";
     private HttpHeaders headers ;
     private HttpEntity requestEntity;
     private ObjectMapper mapper = new ObjectMapper();
@@ -88,7 +85,7 @@ public final class BPJSCekReferensiFaskes extends javax.swing.JDialog {
         tbKamar.setDefaultRenderer(Object.class, new WarnaTable());
         diagnosa.setDocument(new batasInput((byte)100).getKata(diagnosa));
         
-        if(config.cariCepat().equals("aktif")){
+        if(koneksiDB.cariCepat().equals("aktif")){
             diagnosa.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {
@@ -111,8 +108,7 @@ public final class BPJSCekReferensiFaskes extends javax.swing.JDialog {
             });
         }   
         try {
-            prop.loadFromXML(new FileInputStream("setting/config.xml")); 
-            link=prop.getProperty("URLAPIBPJS");
+            link=koneksiDB.URLAPIBPJS();
         } catch (Exception e) {
             System.out.println("E : "+e);
         }
@@ -271,8 +267,7 @@ public final class BPJSCekReferensiFaskes extends javax.swing.JDialog {
             param.put("kontakrs",var.getkontakrs());
             param.put("emailrs",var.getemailrs());   
             param.put("logo",Sequel.cariGambar("select logo from setting")); 
-            Valid.MyReport("rptCariBPJSReferensiFaskes.jrxml","report","[ Pencarian Referensi Faskes ]",
-                "select no, temp1, temp2, temp3, temp4, temp5, temp6, temp7, temp8, temp9, temp10, temp11, temp12, temp13, temp14 from temporary order by no asc",param);
+//            Valid.MyReport("rptCariBPJSReferensiFaskes.jasper","report","[ Pencarian Referensi Faskes ]",param);
             this.setCursor(Cursor.getDefaultCursor());
         }        
     }//GEN-LAST:event_BtnPrintActionPerformed
@@ -341,9 +336,11 @@ public final class BPJSCekReferensiFaskes extends javax.swing.JDialog {
             Valid.tabelKosong(tabMode);
             headers = new HttpHeaders();
             headers.setContentType(MediaType.APPLICATION_JSON);
-	    headers.add("X-Cons-ID",prop.getProperty("CONSIDAPIBPJS"));
-	    headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));            
-	    headers.add("X-Signature",api.getHmac());
+	    headers.add("X-Cons-ID",koneksiDB.CONSIDAPIBPJS());
+	    utc=String.valueOf(api.GetUTCdatetimeAsString());
+	    headers.add("X-Timestamp",utc);
+	    headers.add("X-Signature",api.getHmac(utc));
+            headers.add("user_key",koneksiDB.USERKEYAPIBPJS());
 	    requestEntity = new HttpEntity(headers);
             URL = link+"/referensi/faskes/"+faskes+"/1";	
             root = mapper.readTree(api.getRest().exchange(URL, HttpMethod.GET, requestEntity, String.class).getBody());
@@ -352,7 +349,8 @@ public final class BPJSCekReferensiFaskes extends javax.swing.JDialog {
                 tabMode.addRow(new Object[]{
                     "A","Faskes 1",""
                 });
-                response = root.path("response");
+                response = mapper.readTree(api.Decrypt(root.path("response").asText(),utc));
+                //response = root.path("response");
                 if(response.path("faskes").isArray()){
                     i=1;
                     for(JsonNode list:response.path("faskes")){
@@ -364,7 +362,7 @@ public final class BPJSCekReferensiFaskes extends javax.swing.JDialog {
                     }
                 }
             }else {
-                JOptionPane.showMessageDialog(null,nameNode.path("message").asText());                
+                System.out.println("Notif Faskes 1 : "+nameNode.path("message").asText());              
             }   
         } catch (Exception ex) {
             System.out.println("Notifikasi : "+ex);
@@ -378,9 +376,11 @@ public final class BPJSCekReferensiFaskes extends javax.swing.JDialog {
         try {
             headers = new HttpHeaders();
             headers.setContentType(MediaType.APPLICATION_JSON);
-	    headers.add("X-Cons-ID",prop.getProperty("CONSIDAPIBPJS"));
-	    headers.add("X-Timestamp",String.valueOf(api.GetUTCdatetimeAsString()));            
-	    headers.add("X-Signature",api.getHmac());
+	    headers.add("X-Cons-ID",koneksiDB.CONSIDAPIBPJS());
+	    utc=String.valueOf(api.GetUTCdatetimeAsString());
+	    headers.add("X-Timestamp",utc);
+	    headers.add("X-Signature",api.getHmac(utc));
+            headers.add("user_key",koneksiDB.USERKEYAPIBPJS());
 	    requestEntity = new HttpEntity(headers);
             URL = link+"/referensi/faskes/"+faskes+"/2";	
             root = mapper.readTree(api.getRest().exchange(URL, HttpMethod.GET, requestEntity, String.class).getBody());
@@ -392,7 +392,8 @@ public final class BPJSCekReferensiFaskes extends javax.swing.JDialog {
                 tabMode.addRow(new Object[]{
                     "B","Faskes 2/RS",""
                 });
-                response = root.path("response");
+                response = mapper.readTree(api.Decrypt(root.path("response").asText(),utc));
+                //response = root.path("response");
                 if(response.path("faskes").isArray()){
                     i=1;
                     for(JsonNode list:response.path("faskes")){
@@ -404,7 +405,7 @@ public final class BPJSCekReferensiFaskes extends javax.swing.JDialog {
                     }
                 }
             }else {
-                JOptionPane.showMessageDialog(null,nameNode.path("message").asText());                
+                System.out.println("Notif Faskes 2 : "+nameNode.path("message").asText());              
             }   
         } catch (Exception ex) {
             System.out.println("Notifikasi : "+ex);

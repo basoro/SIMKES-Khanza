@@ -15,7 +15,6 @@ import laporan.DlgKtgPenyakit;
 import inventory.DlgBarang;
 import fungsi.WarnaTable;
 import fungsi.batasInput;
-import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -127,7 +126,7 @@ public final class DlgObatPenyakit extends javax.swing.JDialog {
         kdpenyakit.setDocument(new batasInput((byte)10).getKata(kdpenyakit));
         TRef.setDocument(new batasInput((byte)60).getKata(TRef));
         TCari.setDocument(new batasInput((byte)100).getKata(TCari));
-        if(config.cariCepat().equals("aktif")){
+        if(koneksiDB.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {tampil("");}
@@ -1136,7 +1135,11 @@ private void btnPenyakitCariKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST
     
     public void isCek(){
         BtnSimpan.setEnabled(var.getmanajemen());
-        BtnHapus.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
         BtnPrint.setEnabled(var.getmanajemen());
     }
 }

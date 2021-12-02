@@ -7,12 +7,10 @@ package bridging;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import fungsi.config;
-import java.io.FileInputStream;
+import fungsi.koneksiDB;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Properties;
 import javax.swing.JOptionPane;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -30,8 +28,7 @@ public class BPJSCekNoKartu {
             mrnoMR="",mrnoTelepon="",nama="",nik="",noKartu="",pisa="",
             provUmumkdProvider="",provUmumnmProvider="",sex="",statusPesertaketerangan="",
             statusPesertakode="",tglCetakKartu="",tglLahir="",tglTAT="",
-            tglTMT="",umurumurSaatPelayanan="",umurumurSekarang="",informasi="";
-    private final Properties prop = new Properties();
+            tglTMT="",umurumurSaatPelayanan="",umurumurSekarang="",informasi="",utc="";
     DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     Date date = new Date();
     private ApiBPJS api=new ApiBPJS();
@@ -42,27 +39,33 @@ public class BPJSCekNoKartu {
     private JsonNode nameNode;
     private JsonNode response;
     private HttpHeaders headers;
-    private JsonNode res1;
         
+    public BPJSCekNoKartu(){
+        super();
+        try {
+            URL =koneksiDB.URLAPIBPJS()+"/Peserta/nokartu/";	
+        } catch (Exception e) {
+            System.out.println("E : "+e);
+        }
+    }
+    
     public void tampil(String nokartu) {
         try {
-            headers = api.header("json");
+            headers = new HttpHeaders();
+            headers.setContentType(MediaType.APPLICATION_JSON);
+	    headers.add("X-Cons-ID",koneksiDB.CONSIDAPIBPJS());
+            utc=String.valueOf(api.GetUTCdatetimeAsString());
+	    headers.add("X-Timestamp",utc);
+	    headers.add("X-Signature",api.getHmac(utc));
+            headers.add("user_key",koneksiDB.USERKEYAPIBPJS());
 	    requestEntity = new HttpEntity(headers);
-            URL = config.linkBpjs()+"/Peserta/nokartu/"+nokartu+"/tglSEP/"+dateFormat.format(date);
-            root = mapper.readTree(api.getRest().exchange(URL, HttpMethod.GET, requestEntity, String.class).getBody());
+            root = mapper.readTree(api.getRest().exchange(URL+nokartu+"/tglSEP/"+dateFormat.format(date), HttpMethod.GET, requestEntity, String.class).getBody());
             nameNode = root.path("metaData");
             System.out.println("code : "+nameNode.path("code").asText());
             System.out.println("message : "+nameNode.path("message").asText());
-            informasi=nameNode.path("message").asText();
+            informasi="";
             if(nameNode.path("code").asText().equals("200")){
-                if(config.versionBpjs().equals("2")){
-                    res1 = root.path("response");
-                    String res = api.decrypt(res1.asText());
-                    String lz = api.lzDecrypt(res);
-                    response = mapper.readTree(lz);
-                }else{
-                    response = root.path("response");
-                }
+                response = mapper.readTree(api.Decrypt(root.path("response").asText(),utc));
                 nik=response.path("peserta").path("nik").asText();
                 nama=response.path("peserta").path("nama").asText();
                 cobnmAsuransi=response.path("peserta").path("cob").path("nmAsuransi").asText();
@@ -93,6 +96,7 @@ public class BPJSCekNoKartu {
                 tglTMT=response.path("peserta").path("tglTMT").asText();
                 umurumurSaatPelayanan=response.path("peserta").path("umur").path("umurSaatPelayanan").asText();
                 umurumurSekarang=response.path("peserta").path("umur").path("umurSekarang").asText();
+                informasi="OK";
             }else {
                 JOptionPane.showMessageDialog(null,nameNode.path("message").asText());                
             }   

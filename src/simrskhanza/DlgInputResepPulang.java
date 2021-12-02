@@ -15,7 +15,6 @@ import inventory.DlgBarang;
 import inventory.DlgCariKonversi;
 import fungsi.WarnaTable2;
 import fungsi.batasInput;
-import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -92,7 +91,7 @@ public final class DlgInputResepPulang extends javax.swing.JDialog {
         warna.kolom=0;
         tbKamar.setDefaultRenderer(Object.class,warna);
         TCari.setDocument(new batasInput((byte)100).getKata(TCari));
-        if(config.cariCepat().equals("aktif")){
+        if(koneksiDB.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {

@@ -26,7 +26,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.Properties;
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -51,7 +50,7 @@ public class DlgRujukanPoliInternal extends javax.swing.JDialog {
     public DlgRujukanPoliInternal(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-        setSize(755,285);
+        setSize(755,156);
         
         dokter.addWindowListener(new WindowListener() {
             @Override
@@ -179,40 +178,32 @@ public class DlgRujukanPoliInternal extends javax.swing.JDialog {
         TNoRw = new widget.TextBox();
         TNoRM = new widget.TextBox();
         TPasien = new widget.TextBox();
-        jLabel15 = new widget.Label();
-        scrollPane1 = new widget.ScrollPane();
-        TCatatanKonsul = new widget.TextArea();
-        kddokter1 = new widget.TextBox();
         panelGlass8 = new widget.panelisi();
         BtnSimpan = new widget.Button();
         jLabel14 = new widget.Label();
         BtnKeluar = new widget.Button();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setBackground(new java.awt.Color(255, 255, 255));
         setUndecorated(true);
         setResizable(false);
-        setSize(new java.awt.Dimension(771, 281));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowActivated(java.awt.event.WindowEvent evt) {
                 formWindowActivated(evt);
             }
         });
 
-        internalFrame1.setBackground(new java.awt.Color(255, 255, 255));
         internalFrame1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 245, 235)), "::[ Rujukan Poli Internal ]::", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(70, 70, 70))); // NOI18N
         internalFrame1.setName("internalFrame1"); // NOI18N
         internalFrame1.setLayout(new java.awt.BorderLayout(1, 1));
 
-        FormInput.setBackground(new java.awt.Color(255, 255, 255));
         FormInput.setName("FormInput"); // NOI18N
         FormInput.setPreferredSize(new java.awt.Dimension(865, 137));
         FormInput.setLayout(null);
 
-        jLabel13.setText("Catatan Konsul :");
+        jLabel13.setText("Dr Dituju :");
         jLabel13.setName("jLabel13"); // NOI18N
         FormInput.add(jLabel13);
-        jLabel13.setBounds(0, 70, 90, 23);
+        jLabel13.setBounds(0, 42, 70, 23);
 
         kddokter.setHighlighter(null);
         kddokter.setName("kddokter"); // NOI18N
@@ -222,12 +213,12 @@ public class DlgRujukanPoliInternal extends javax.swing.JDialog {
             }
         });
         FormInput.add(kddokter);
-        kddokter.setBounds(98, 40, 100, 23);
+        kddokter.setBounds(73, 42, 100, 23);
 
         TDokter.setEditable(false);
         TDokter.setName("TDokter"); // NOI18N
         FormInput.add(TDokter);
-        TDokter.setBounds(200, 40, 180, 23);
+        TDokter.setBounds(175, 42, 180, 23);
 
         BtnDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnDokter.setMnemonic('3');
@@ -239,7 +230,7 @@ public class DlgRujukanPoliInternal extends javax.swing.JDialog {
             }
         });
         FormInput.add(BtnDokter);
-        BtnDokter.setBounds(380, 40, 28, 23);
+        BtnDokter.setBounds(358, 42, 28, 23);
 
         BtnUnit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/190.png"))); // NOI18N
         BtnUnit.setMnemonic('4');
@@ -251,12 +242,12 @@ public class DlgRujukanPoliInternal extends javax.swing.JDialog {
             }
         });
         FormInput.add(BtnUnit);
-        BtnUnit.setBounds(701, 40, 28, 23);
+        BtnUnit.setBounds(701, 42, 28, 23);
 
         TPoli.setEditable(false);
         TPoli.setName("TPoli"); // NOI18N
         FormInput.add(TPoli);
-        TPoli.setBounds(518, 40, 180, 23);
+        TPoli.setBounds(518, 42, 180, 23);
 
         kdpoli.setHighlighter(null);
         kdpoli.setName("kdpoli"); // NOI18N
@@ -266,17 +257,17 @@ public class DlgRujukanPoliInternal extends javax.swing.JDialog {
             }
         });
         FormInput.add(kdpoli);
-        kdpoli.setBounds(450, 40, 66, 23);
+        kdpoli.setBounds(450, 42, 66, 23);
 
         jLabel19.setText("Unit :");
         jLabel19.setName("jLabel19"); // NOI18N
         FormInput.add(jLabel19);
-        jLabel19.setBounds(370, 40, 77, 23);
+        jLabel19.setBounds(370, 42, 77, 23);
 
         jLabel3.setText("No.Rawat :");
         jLabel3.setName("jLabel3"); // NOI18N
         FormInput.add(jLabel3);
-        jLabel3.setBounds(20, 10, 70, 23);
+        jLabel3.setBounds(0, 12, 70, 23);
 
         TNoRw.setEditable(false);
         TNoRw.setHighlighter(null);
@@ -287,55 +278,24 @@ public class DlgRujukanPoliInternal extends javax.swing.JDialog {
             }
         });
         FormInput.add(TNoRw);
-        TNoRw.setBounds(97, 10, 153, 23);
+        TNoRw.setBounds(73, 12, 153, 23);
 
         TNoRM.setEditable(false);
         TNoRM.setHighlighter(null);
         TNoRM.setName("TNoRM"); // NOI18N
         FormInput.add(TNoRM);
-        TNoRM.setBounds(253, 10, 110, 23);
+        TNoRM.setBounds(228, 12, 110, 23);
 
         TPasien.setEditable(false);
         TPasien.setHighlighter(null);
         TPasien.setName("TPasien"); // NOI18N
         FormInput.add(TPasien);
-        TPasien.setBounds(369, 10, 360, 23);
-
-        jLabel15.setText("Dr Dituju :");
-        jLabel15.setName("jLabel15"); // NOI18N
-        FormInput.add(jLabel15);
-        jLabel15.setBounds(20, 40, 70, 23);
-
-        scrollPane1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        scrollPane1.setName("scrollPane1"); // NOI18N
-
-        TCatatanKonsul.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        TCatatanKonsul.setColumns(20);
-        TCatatanKonsul.setRows(5);
-        TCatatanKonsul.setName("TCatatanKonsul"); // NOI18N
-        TCatatanKonsul.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                TCatatanKonsulKeyPressed(evt);
-            }
-        });
-        scrollPane1.setViewportView(TCatatanKonsul);
-
-        FormInput.add(scrollPane1);
-        scrollPane1.setBounds(98, 75, 630, 110);
-
-        kddokter1.setHighlighter(null);
-        kddokter1.setName("kddokter1"); // NOI18N
-        kddokter1.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                kddokter1KeyPressed(evt);
-            }
-        });
-        FormInput.add(kddokter1);
-        kddokter1.setBounds(790, 20, 170, 23);
+        TPasien.setBounds(340, 12, 389, 23);
 
         internalFrame1.add(FormInput, java.awt.BorderLayout.CENTER);
+        FormInput.getAccessibleContext().setAccessibleName("");
+        FormInput.getAccessibleContext().setAccessibleDescription("");
 
-        panelGlass8.setBackground(new java.awt.Color(255, 255, 255));
         panelGlass8.setName("panelGlass8"); // NOI18N
         panelGlass8.setPreferredSize(new java.awt.Dimension(100, 56));
         panelGlass8.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
@@ -362,7 +322,7 @@ public class DlgRujukanPoliInternal extends javax.swing.JDialog {
         jLabel14.setPreferredSize(new java.awt.Dimension(520, 23));
         panelGlass8.add(jLabel14);
 
-        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Delete.png"))); // NOI18N
+        BtnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cross.png"))); // NOI18N
         BtnKeluar.setMnemonic('K');
         BtnKeluar.setText("Tutup");
         BtnKeluar.setToolTipText("Alt+K");
@@ -387,6 +347,47 @@ public class DlgRujukanPoliInternal extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
     
+    private void BtnSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSimpanActionPerformed
+        if(TNoRw.getText().trim().equals("")||TNoRM.getText().trim().equals("")||TPasien.getText().trim().equals("")){
+            Valid.textKosong(TNoRM,"Pasien");
+        }else if(TPoli.getText().trim().equals("")||kdpoli.getText().trim().equals("")){
+            Valid.textKosong(kdpoli,"poliklinik");
+        }else if(kddokter.getText().trim().equals("")||TDokter.getText().trim().equals("")){
+            Valid.textKosong(kddokter,"dokter");
+        }else{          
+            if(Sequel.menyimpantf("rujukan_internal_poli","?,?,?","Rujukan Sama",3,new String[]{
+                    TNoRw.getText(),kddokter.getText(),kdpoli.getText()
+                })==true){
+                BtnKeluarActionPerformed(evt);
+            }                      
+        }  
+}//GEN-LAST:event_BtnSimpanActionPerformed
+
+    private void BtnSimpanKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnSimpanKeyPressed
+        if(evt.getKeyCode()==KeyEvent.VK_SPACE){
+            BtnSimpanActionPerformed(null);
+        }else{
+        }
+}//GEN-LAST:event_BtnSimpanKeyPressed
+
+    private void BtnKeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnKeluarActionPerformed
+        kddokter.setText("");
+        TDokter.setText("");
+        kdpoli.setText("");
+        TPoli.setText("");
+        dispose();
+}//GEN-LAST:event_BtnKeluarActionPerformed
+
+    private void BtnKeluarKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnKeluarKeyPressed
+        if(evt.getKeyCode()==KeyEvent.VK_SPACE){
+            kddokter.setText("");
+            TDokter.setText("");
+            kdpoli.setText("");
+            TPoli.setText("");
+            dispose();
+        }
+}//GEN-LAST:event_BtnKeluarKeyPressed
+
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
         
     }//GEN-LAST:event_formWindowActivated
@@ -459,84 +460,8 @@ public class DlgRujukanPoliInternal extends javax.swing.JDialog {
     }//GEN-LAST:event_kdpoliKeyPressed
 
     private void TNoRwKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TNoRwKeyPressed
-
+        
     }//GEN-LAST:event_TNoRwKeyPressed
-
-    private void TCatatanKonsulKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TCatatanKonsulKeyPressed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TCatatanKonsulKeyPressed
-
-    private void kddokter1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_kddokter1KeyPressed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_kddokter1KeyPressed
-
-    private void BtnSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSimpanActionPerformed
-
-        if(TNoRw.getText().trim().equals("")||TNoRM.getText().trim().equals("")||TPasien.getText().trim().equals("")){
-            Valid.textKosong(TNoRM,"Pasien");
-        }else if(TPoli.getText().trim().equals("")||kdpoli.getText().trim().equals("")){
-            Valid.textKosong(kdpoli,"poliklinik");
-        }else if(kddokter.getText().trim().equals("")||TDokter.getText().trim().equals("")){
-            Valid.textKosong(kddokter,"dokter");
-        }else{
-            if (kddokter1.getText().trim().equals("")){
-
-                try {
-                    String detail_internal;
-                    detail_internal = "insert into rujukan_internal_poli_detail values ('"+TNoRw.getText()+"','"+TCatatanKonsul.getText()+"','','','')";
-                    PreparedStatement pst_detail = koneksiDB.condb().prepareStatement(detail_internal);
-                    pst_detail.execute();
-                } catch (Exception e) {
-                    System.out.println(e);
-                }
-
-                if(Sequel.menyimpantf("rujukan_internal_poli","?,?,?","Rujukan Sama",3,new String[]{
-                    TNoRw.getText(),kddokter.getText(),kdpoli.getText()
-                })==true){
-                    JOptionPane.showMessageDialog(null,"Data berhasil disimpan..!!!");
-                    BtnKeluarActionPerformed(evt);
-                }
-            }else{
-                try {
-                    String ubah_detail_internal;
-                    ubah_detail_internal = "update rujukan_internal_poli_detail set konsul = '"+TCatatanKonsul.getText()+"' where no_rawat = '"+TNoRw.getText()+"' ";
-                    PreparedStatement pst_ubah_detail = koneksiDB.condb().prepareStatement(ubah_detail_internal);
-                    pst_ubah_detail.execute();
-                    JOptionPane.showMessageDialog(null,"Data berhasil diubah..!!!");
-                    BtnKeluarActionPerformed(evt);
-                } catch (Exception e) {
-                    System.out.println(e);
-                }
-            }
-        }
-
-    }//GEN-LAST:event_BtnSimpanActionPerformed
-
-    private void BtnSimpanKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnSimpanKeyPressed
-        if(evt.getKeyCode()==KeyEvent.VK_SPACE){
-            BtnSimpanActionPerformed(null);
-        }else{
-        }
-    }//GEN-LAST:event_BtnSimpanKeyPressed
-
-    private void BtnKeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnKeluarActionPerformed
-        kddokter.setText("");
-        TDokter.setText("");
-        kdpoli.setText("");
-        TPoli.setText("");
-        TCatatanKonsul.setText("");
-        dispose();
-    }//GEN-LAST:event_BtnKeluarActionPerformed
-
-    private void BtnKeluarKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnKeluarKeyPressed
-        if(evt.getKeyCode()==KeyEvent.VK_SPACE){
-            kddokter.setText("");
-            TDokter.setText("");
-            kdpoli.setText("");
-            TPoli.setText("");
-            dispose();
-        }
-    }//GEN-LAST:event_BtnKeluarKeyPressed
 
     /**
     * @param args the command line arguments
@@ -560,7 +485,6 @@ public class DlgRujukanPoliInternal extends javax.swing.JDialog {
     private widget.Button BtnSimpan;
     private widget.Button BtnUnit;
     private widget.PanelBiasa FormInput;
-    private widget.TextArea TCatatanKonsul;
     private widget.TextBox TDokter;
     private widget.TextBox TNoRM;
     private widget.TextBox TNoRw;
@@ -569,28 +493,22 @@ public class DlgRujukanPoliInternal extends javax.swing.JDialog {
     private widget.InternalFrame internalFrame1;
     private widget.Label jLabel13;
     private widget.Label jLabel14;
-    private widget.Label jLabel15;
     private widget.Label jLabel19;
     private widget.Label jLabel3;
     private widget.TextBox kddokter;
-    private widget.TextBox kddokter1;
     private widget.TextBox kdpoli;
     private widget.panelisi panelGlass8;
-    private widget.ScrollPane scrollPane1;
     // End of variables declaration//GEN-END:variables
     
+
+ 
+
     public void setNoRm(String norw,String norm,String namapasien,int lebar,int tinggi) {
         TNoRw.setText(norw);
         TNoRM.setText(norm);
         TPasien.setText(namapasien);  
         this.lebar=lebar;
         this.tinggi=tinggi;
-        TCatatanKonsul.setText(Sequel.cariIsi("select konsul from rujukan_internal_poli_detail where no_rawat= ? ",norw));
-        kddokter.setText(Sequel.cariIsi("select kd_dokter from rujukan_internal_poli where no_rawat= ?",norw));
-        TDokter.setText(Sequel.cariIsi("select dokter.nm_dokter from dokter, rujukan_internal_poli where dokter.kd_dokter=rujukan_internal_poli.kd_dokter and rujukan_internal_poli.no_rawat = ?",norw));
-        kdpoli.setText(Sequel.cariIsi("select kd_poli from rujukan_internal_poli where no_rawat= ?",norw));
-        TPoli.setText(Sequel.cariIsi("select poliklinik.nm_poli from poliklinik, rujukan_internal_poli where poliklinik.kd_poli=rujukan_internal_poli.kd_poli and rujukan_internal_poli.no_rawat = ?",norw));
-        kddokter1.setText(Sequel.cariIsi("select no_rawat from rujukan_internal_poli where no_rawat = ?", norw));      
     }
     
     

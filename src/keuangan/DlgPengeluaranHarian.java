@@ -11,9 +11,9 @@
 
 package keuangan;
 import simrskhanza.DlgCariPetugas;
+import simrskhanza.*;
 import fungsi.WarnaTable;
 import fungsi.batasInput;
-import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -107,7 +107,7 @@ public final class DlgPengeluaranHarian extends javax.swing.JDialog {
         KdPtg.setDocument(new batasInput((byte)20).getKata(KdPtg));
         Pengeluaran.setDocument(new batasInput((byte)15).getKata(Pengeluaran));
         TCari.setDocument(new batasInput((byte)100).getKata(TCari));
-        if(config.cariCepat().equals("aktif")){
+        if(koneksiDB.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {tampil();}
@@ -1043,7 +1043,11 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
             btnPetugas.setEnabled(false);
             KdPtg.setText(var.getkode());
             BtnSimpan.setEnabled(var.getmanajemen());
-            BtnHapus.setEnabled(var.getmanajemen());
+            if(var.getkode().equals("Admin Utama")){
+                BtnHapus.setEnabled(true);
+            }else{
+                BtnHapus.setEnabled(false);
+            } 
             BtnPrint.setEnabled(var.getmanajemen());
             Sequel.cariIsi("select nama from petugas where nip=?", NmPtg,KdPtg.getText());
         }      

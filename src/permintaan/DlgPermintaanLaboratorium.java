@@ -14,7 +14,6 @@ package permintaan;
 import simrskhanza.DlgCariDokter;
 import fungsi.WarnaTable;
 import fungsi.batasInput;
-import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -155,7 +154,7 @@ public final class DlgPermintaanLaboratorium extends javax.swing.JDialog {
         Pemeriksaan.setDocument(new batasInput((byte)100).getKata(Pemeriksaan));   
         TCari.setDocument(new batasInput((byte)100).getKata(TCari));        
         TNoPermintaan.setDocument(new batasInput((byte)15).getKata(TNoPermintaan));        
-        if(config.cariCepat().equals("aktif")){
+        if(koneksiDB.cariCepat().equals("aktif")){
             Pemeriksaan.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {
@@ -1331,9 +1330,13 @@ private void BtnHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     }
     
     public void isCek(){
-        //BtnSimpan.setEnabled(var.getpermintaan_lab());
-        //BtnPrint.setEnabled(var.getpermintaan_lab());
-        //BtnHapus.setEnabled(var.getpermintaan_lab());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
     }
     
     private void isForm(){

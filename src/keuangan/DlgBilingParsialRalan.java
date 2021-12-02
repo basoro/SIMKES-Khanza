@@ -8,7 +8,6 @@ package keuangan;
 import fungsi.WarnaTable;
 import fungsi.WarnaTable2;
 import fungsi.batasInput;
-import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -107,7 +106,7 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
         KdDok2.setDocument(new batasInput((byte)20).getKata(KdDok2));
         TCari.setDocument(new batasInput((int)100).getKata(TCari));
         
-        if(config.cariCepat().equals("aktif")){
+        if(koneksiDB.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {
@@ -5071,9 +5070,13 @@ public class DlgBilingParsialRalan extends javax.swing.JDialog {
     }
     
     public void isCek(){
-        //BtnSimpan.setEnabled(var.getbilling_parsial());
-        //BtnHapus.setEnabled(var.gethapus_nota_salah());
-        //BtnNota.setEnabled(var.getbilling_parsial());
+        BtnSimpan.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
+        BtnNota.setEnabled(var.getmanajemen());
         if(Sequel.cariIsi("select tampilkan_tombol_nota_ralan from set_nota").equals("Yes")){
             BtnNota.setVisible(true);
         }else{

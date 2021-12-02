@@ -13,7 +13,6 @@ package setting;
 
 import fungsi.WarnaTable;
 import fungsi.batasInput;
-import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -80,7 +79,7 @@ public final class DlgSetHargaObatRalan extends javax.swing.JDialog {
         harga.setDocument(new batasInput((byte)3).getOnlyAngka(harga));
         kdpj.setDocument(new batasInput((byte)8).getKata(kdpj));
         TCari.setDocument(new batasInput((byte)100).getKata(TCari));
-        if(config.cariCepat().equals("aktif")){
+        if(koneksiDB.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {tampil();}

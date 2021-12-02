@@ -1,7 +1,6 @@
 package inventory;
 import fungsi.WarnaTable;
 import fungsi.batasInput;
-import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -267,7 +266,7 @@ public class DlgCariPembelian extends javax.swing.JDialog {
             public void keyReleased(KeyEvent e) {}
         });
         
-        if(config.cariCepat().equals("aktif")){
+        if(koneksiDB.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {tampil();}
@@ -1347,7 +1346,7 @@ private void ppHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST
     }
     
     public void isCek(){
-        BtnPrint.setEnabled(var.getmanajemen());
+        BtnPrint.setEnabled(var.getapoteker());
         if(var.getkode().equals("Admin Utama")){
             ppHapus.setEnabled(true);
         }else{

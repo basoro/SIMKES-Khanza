@@ -19,6 +19,7 @@ package widget;
 import java.awt.Color;
 import static java.awt.image.ImageObserver.WIDTH;
 import javax.swing.JTextArea;
+import javax.swing.border.EmptyBorder;
 
 /**
  *

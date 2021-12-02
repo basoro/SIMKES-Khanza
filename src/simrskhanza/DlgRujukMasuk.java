@@ -2,7 +2,6 @@ package simrskhanza;
 
 import fungsi.WarnaTable;
 import fungsi.batasInput;
-import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -137,7 +136,7 @@ public final class DlgRujukMasuk extends javax.swing.JDialog {
         JMPerujuk.setDocument(new batasInput((byte)14).getOnlyAngka(JMPerujuk));
         TCari.setDocument(new batasInput((byte)100).getKata(TCari));
         TCariPerujuk.setDocument(new batasInput((byte)100).getKata(TCariPerujuk));
-        if(config.cariCepat().equals("aktif")){
+        if(koneksiDB.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {tampil();}
@@ -1390,7 +1389,11 @@ private void TAlamatKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_T
 
     public void isCek(){
         BtnSimpan.setEnabled(var.getmanajemen());
-        BtnHapus.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
         BtnPrint.setEnabled(var.getmanajemen());
         BtnEdit.setEnabled(var.getmanajemen());
 

@@ -1,4 +1,4 @@
-/*
+    /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -16,19 +16,17 @@ import javax.swing.JOptionPane;
  * @author khanzasoft
  */
 public final class koneksiDB {
-
-    private static Connection connection = null;
+    private static Connection connection=null;
     private static final Properties prop = new Properties();
-    private static final MysqlDataSource dataSource = new MysqlDataSource();
+    private static final MysqlDataSource dataSource=new MysqlDataSource();
+    private static String caricepat="",var="",Key ="",Consid="",link ="",version="";
 
-    public koneksiDB() {
-    }
-
+    public koneksiDB(){}
     public static Connection condb() {
         if (connection == null) {
             try {
                 prop.loadFromXML(new FileInputStream("setting/database.xml"));
-                dataSource.setURL("jdbc:mysql://" + EnkripsiAES.decrypt(prop.getProperty("HOST")) + ":" + prop.getProperty("PORT") + "/" + EnkripsiAES.decrypt(prop.getProperty("DATABASE")) + "?zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true");
+                dataSource.setURL("jdbc:mysql://" + EnkripsiAES.decrypt(prop.getProperty("HOST")) + ":" + prop.getProperty("PORT") + "/" + EnkripsiAES.decrypt(prop.getProperty("DATABASE")) + "?zeroDateTimeBehavior=convertToNull&autoReconnect=true&useCompression=true");
                 dataSource.setUser(EnkripsiAES.decrypt(prop.getProperty("USER")));
                 dataSource.setPassword(EnkripsiAES.decrypt(prop.getProperty("PAS")));
                 connection = dataSource.getConnection();
@@ -55,7 +53,7 @@ public final class koneksiDB {
                         int dialogResult = JOptionPane.showConfirmDialog(null, "Sambungan ke server terputus. Apakah anda ingin menyambungkan ulang?", "Warning", dialogButton);
                         if (dialogResult == JOptionPane.YES_OPTION) {
                             prop.loadFromXML(new FileInputStream("setting/database.xml"));
-                            dataSource.setURL("jdbc:mysql://" + EnkripsiAES.decrypt(prop.getProperty("HOST")) + ":" + prop.getProperty("PORT") + "/" + EnkripsiAES.decrypt(prop.getProperty("DATABASE")) + "?zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true&amp;cachePrepStmts=true");
+                            dataSource.setURL("jdbc:mysql://" + EnkripsiAES.decrypt(prop.getProperty("HOST")) + ":" + prop.getProperty("PORT") + "/" + EnkripsiAES.decrypt(prop.getProperty("DATABASE")) + "?zeroDateTimeBehavior=convertToNull&autoReconnect=true&cachePrepStmts=true&useCompression=true");
                             dataSource.setUser(EnkripsiAES.decrypt(prop.getProperty("USER")));
                             dataSource.setPassword(EnkripsiAES.decrypt(prop.getProperty("PAS")));
                             connection = dataSource.getConnection();
@@ -68,6 +66,187 @@ public final class koneksiDB {
             }
         }
         return connection;
+    }
+
+    public static String cariCepat(){
+        try{
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            caricepat=prop.getProperty("CARICEPAT");
+        }catch(Exception e){
+            caricepat="tidak aktif";
+        }
+        return caricepat;
+    }
+
+    public static String HOST(){
+        try{
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            var=prop.getProperty("HOSTHYBRIDWEB");
+        }catch(Exception e){
+            var="localhost";
+        }
+        return var;
+    }
+
+    public static String HOSTHYBRIDWEB(){
+        try{
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            var=prop.getProperty("HOSTHYBRIDWEB");
+        }catch(Exception e){
+            var="";
+        }
+        return var;
+    }
+
+    public static String HYBRIDWEB(){
+        try{
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            var=prop.getProperty("HYBRIDWEB");
+        }catch(Exception e){
+            var="";
+        }
+        return var;
+    }
+
+    public static String PORTWEB(){
+        try{
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            var=prop.getProperty("PORTWEB");
+        }catch(Exception e){
+            var="";
+        }
+        return var;
+    }
+
+    public static String ApiKeyBPJS(){
+        try {
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            Key = EnkripsiAES.decrypt(prop.getProperty("SECRETKEYAPIBPJS"));
+        } catch (Exception ex) {
+            Key = "";
+        }
+        return Key;
+    }
+
+    public static String ApiConsBPJS(){
+        try {
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            Consid = EnkripsiAES.decrypt(prop.getProperty("CONSIDAPIBPJS"));
+        } catch (Exception ex) {
+            Consid = "";
+        }
+        return Consid;
+    }
+
+    public static String linkBpjs(){
+        try {
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            link = prop.getProperty("URLAPIBPJS");
+        } catch (Exception e) {
+            System.out.println("E : "+e);
+            link = "";
+        }
+        return link;
+    }
+
+    public static String URLAPIBPJS(){
+        try{
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            var=prop.getProperty("URLAPIBPJS");
+        }catch(Exception e){
+            var="";
+        }
+        return var;
+    }
+
+    public static String SECRETKEYAPIBPJS(){
+        try{
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            var=EnkripsiAES.decrypt(prop.getProperty("SECRETKEYAPIBPJS"));
+        }catch(Exception e){
+            var="";
+        }
+        return var;
+    }
+
+    public static String CONSIDAPIBPJS(){
+        try{
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            var=EnkripsiAES.decrypt(prop.getProperty("CONSIDAPIBPJS"));
+        }catch(Exception e){
+            var="";
+        }
+        return var;
+    }
+
+    public static String USERKEYAPIBPJS(){
+        try{
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            var=EnkripsiAES.decrypt(prop.getProperty("USERKEYAPIBPJS"));
+        }catch(Exception e){
+            var="";
+        }
+        return var;
+    }
+
+    public static String URLAPIMOBILEJKN(){
+        try{
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            var=prop.getProperty("URLAPIMOBILEJKN");
+        }catch(Exception e){
+            var="";
+        }
+        return var;
+    }
+
+    public static String SECRETKEYAPIMOBILEJKN(){
+        try{
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            var=EnkripsiAES.decrypt(prop.getProperty("SECRETKEYAPIMOBILEJKN"));
+        }catch(Exception e){
+            var="";
+        }
+        return var;
+    }
+
+    public static String CONSIDAPIMOBILEJKN(){
+        try{
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            var=EnkripsiAES.decrypt(prop.getProperty("CONSIDAPIMOBILEJKN"));
+        }catch(Exception e){
+            var="";
+        }
+        return var;
+    }
+
+    public static String USERKEYAPIMOBILEJKN(){
+        try{
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            var=EnkripsiAES.decrypt(prop.getProperty("USERKEYAPIMOBILEJKN"));
+        }catch(Exception e){
+            var="";
+        }
+        return var;
+    }
+
+    public static String BASENOREG(){
+        try{
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            var=prop.getProperty("BASENOREG");
+        }catch(Exception e){
+            var="";
+        }
+        return var;
+    }
+
+    public static String URUTNOREG(){
+        try{
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            var=prop.getProperty("URUTNOREG");
+        }catch(Exception e){
+            var="";
+        }
+        return var;
     }
 
 }

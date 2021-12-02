@@ -13,7 +13,6 @@ package laporan;
 
 import fungsi.WarnaTable;
 import fungsi.batasInput;
-import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -139,7 +138,7 @@ public final class DlgDataInsidenKeselamatan extends javax.swing.JDialog {
         TindakLanjut.setDocument(new batasInput((int)100).getKata(TindakLanjut));
         TCari.setDocument(new batasInput((int)100).getKata(TCari));
         
-        if(config.cariCepat().equals("aktif")){
+        if(koneksiDB.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {
@@ -1506,9 +1505,13 @@ public final class DlgDataInsidenKeselamatan extends javax.swing.JDialog {
     }
     
     public void isCek(){
-        //BtnSimpan.setEnabled(var.getinsiden_keselamatan_pasien());
-        //BtnHapus.setEnabled(var.getinsiden_keselamatan_pasien());
-        //BtnPrint.setEnabled(var.getinsiden_keselamatan_pasien()); 
+        BtnSimpan.setEnabled(var.getmanajemen());
+        if(var.getkode().equals("Admin Utama")){
+            BtnHapus.setEnabled(true);
+        }else{
+            BtnHapus.setEnabled(false);
+        } 
+        BtnPrint.setEnabled(var.getmanajemen()); 
         if(var.getjml2()>=1){
             nip.setText(var.getkode());
             Sequel.cariIsi("select nama from petugas where nip=?",namapetugas,nip.getText());

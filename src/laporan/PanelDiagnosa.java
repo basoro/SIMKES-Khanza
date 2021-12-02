@@ -7,7 +7,6 @@ package laporan;
 
 import fungsi.WarnaTable;
 import fungsi.batasInput;
-import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -219,7 +218,7 @@ public class PanelDiagnosa extends widget.panelisi {
         Diagnosa.setDocument(new batasInput((byte)100).getKata(Diagnosa));
         Prosedur.setDocument(new batasInput((byte)100).getKata(Prosedur));
         
-        if(config.cariCepat().equals("aktif")){
+        if(koneksiDB.cariCepat().equals("aktif")){
             Diagnosa.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {
@@ -242,7 +241,7 @@ public class PanelDiagnosa extends widget.panelisi {
             });
         } 
         
-        if(config.cariCepat().equals("aktif")){
+        if(koneksiDB.cariCepat().equals("aktif")){
             Prosedur.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {

@@ -14,12 +14,12 @@ package bridging;
 
 import fungsi.WarnaTable;
 import fungsi.batasInput;
-import fungsi.config;
 import java.awt.Dimension;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
 import fungsi.validasi;
+import fungsi.var;
 import fungsi.koneksiDB;
 import java.awt.Cursor;
 import java.awt.event.KeyEvent;
@@ -76,7 +76,7 @@ public final class BPJSCekMappingPoli extends javax.swing.JDialog {
         
         Poli.setDocument(new batasInput((byte)100).getKata(Poli));
         
-        if(config.cariCepat().equals("aktif")){
+        if(koneksiDB.cariCepat().equals("aktif")){
             Poli.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {
@@ -343,6 +343,6 @@ public final class BPJSCekMappingPoli extends javax.swing.JDialog {
     }
     
     public void isCek(){
-        //BtnTambah.setEnabled(var.getmapping_poli_bpjs());
+        BtnTambah.setEnabled(var.getmanajemen());
     }
 }

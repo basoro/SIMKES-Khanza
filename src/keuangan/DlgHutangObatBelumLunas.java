@@ -2,9 +2,9 @@
 
 package keuangan;
 
+import fungsi.WarnaTable;
 import fungsi.WarnaTable2;
 import fungsi.batasInput;
-import fungsi.config;
 import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
@@ -115,7 +115,7 @@ public final class DlgHutangObatBelumLunas extends javax.swing.JDialog {
         nip.setDocument(new batasInput((byte)20).getKata(nip));
         keterangan.setDocument(new batasInput((byte)100).getKata(keterangan));        
         
-        if(config.cariCepat().equals("aktif")){
+        if(koneksiDB.cariCepat().equals("aktif")){
             TCari.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
                 @Override
                 public void insertUpdate(DocumentEvent e) {tampil();}

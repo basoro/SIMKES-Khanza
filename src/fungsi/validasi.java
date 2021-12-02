@@ -40,6 +40,7 @@ import jxl.write.WritableSheet;
 import jxl.write.WritableWorkbook;
 import jxl.write.WriteException;
 import net.sf.jasperreports.engine.JRResultSetDataSource;
+import net.sf.jasperreports.engine.JasperExportManager;
 import net.sf.jasperreports.engine.JasperCompileManager;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
@@ -65,7 +66,7 @@ import java.math.RoundingMode;
  */
 public final class validasi {
     private int a,j,i,result=0;
-    private String s,s1,auto;
+    private String s,s1,auto,PEMBULATANHARGAOBAT="";
     private final Connection connect=koneksiDB.condb();
     private final sekuel sek=new sekuel();
     private final java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
@@ -78,7 +79,15 @@ public final class validasi {
     private final int year=(now.get(Calendar.YEAR));
     private static final Properties prop = new Properties();
 
-    
+    public validasi(){
+        super();
+        try{
+            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+            PEMBULATANHARGAOBAT=prop.getProperty("PEMBULATANHARGAOBAT");
+        }catch(Exception e){
+            PEMBULATANHARGAOBAT="no";
+        }
+    };
 
     public void generateQRCodeImage(String text, int width, int height, String filePath)
         throws WriterException, IOException {
@@ -564,6 +573,51 @@ public final class validasi {
         }
     }
 
+    public void MyReport(String reportName,String reportDirName,String judul,Map parameters){
+        Properties systemProp = System.getProperties();
+
+        // Ambil current dir
+        String currentDir = systemProp.getProperty("user.dir");
+
+        File dir = new File(currentDir);
+
+        File fileRpt;
+        String fullPath = "";
+        if (dir.isDirectory()) {
+            String[] isiDir = dir.list();
+            for (String iDir : isiDir) {
+                fileRpt = new File(currentDir + File.separatorChar + iDir + File.separatorChar + reportDirName + File.separatorChar + reportName);
+                if (fileRpt.isFile()) { // Cek apakah file RptMaster.jasper ada
+                    fullPath = fileRpt.toString();
+                    System.out.println("Found Report File at : " + fullPath);
+                } // end if
+            } // end for i
+        } // end if
+
+        try {
+            try (Statement stm = connect.createStatement()) {
+                try {
+                    
+                    String namafile="./"+reportDirName+"/"+reportName;
+                    JasperPrint jasperPrint = JasperFillManager.fillReport(namafile, parameters, connect);
+                    
+                    JasperViewer jasperViewer = new JasperViewer(jasperPrint, false);
+                    jasperViewer.setTitle(judul);
+                    Dimension screen=Toolkit.getDefaultToolkit().getScreenSize();
+                    jasperViewer.setSize(screen.width-50,screen.height-50);
+                    jasperViewer.setModalExclusionType(ModalExclusionType.TOOLKIT_EXCLUDE);
+                    jasperViewer.setLocationRelativeTo(null);
+                    jasperViewer.setVisible(true);
+                } catch (Exception rptexcpt) {
+                    System.out.println("Report Can't view because : " + rptexcpt);
+                    JOptionPane.showMessageDialog(null,"Report Can't view because : "+ rptexcpt);
+                }
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+        
     @SuppressWarnings("empty-statement")
     public void MyReport2(String reportName,String reportDirName,String judul,String qry){
         Properties systemProp = System.getProperties();
@@ -1191,7 +1245,7 @@ public final class validasi {
     }
 
     public double roundUp(double number, int multiple) {
-        if(config.bulatHarga().equals("yes")){
+        if(PEMBULATANHARGAOBAT.equals("yes")){
             result = multiple;
             if (number % multiple == 0) {
                 return (int) number;

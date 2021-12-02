@@ -16,6 +16,7 @@ import fungsi.koneksiDB;
 import fungsi.sekuel;
 import fungsi.validasi;
 import fungsi.WarnaTable;
+import fungsi.*;
 import java.awt.Canvas;
 import java.awt.Dimension;
 import java.awt.Graphics;

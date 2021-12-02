@@ -1380,7 +1380,11 @@ private void BtnGudangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
             Kdptg.setText(var.getkode());
             BtnSimpan.setEnabled(var.getmanajemen());
             BtnTambah.setEnabled(var.getmanajemen());
-            BtnHapus.setEnabled(var.getmanajemen());
+            if(var.getkode().equals("Admin Utama")){
+                BtnHapus.setEnabled(true);
+            }else{
+                BtnHapus.setEnabled(false);
+            } 
             BtnBatal.setEnabled(var.getmanajemen());
             Sequel.cariIsi("select nama from petugas where nip='"+Kdptg.getText()+"'", Nmptg);
         }        

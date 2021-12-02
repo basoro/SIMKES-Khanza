@@ -167,8 +167,6 @@ public class InformasiAnalisaKamin extends javax.swing.JDialog {
 
         panelisi1.setName("panelisi1"); // NOI18N
         panelisi1.setPreferredSize(new java.awt.Dimension(100, 56));
-        panelisi1.setWarnaAtas(new java.awt.Color(255, 255, 255));
-        panelisi1.setWarnaBawah(new java.awt.Color(255, 255, 255));
         panelisi1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
         label17.setText("Kamar :");
