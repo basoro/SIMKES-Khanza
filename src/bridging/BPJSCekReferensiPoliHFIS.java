@@ -276,7 +276,7 @@ public final class BPJSCekReferensiPoliHFIS extends javax.swing.JDialog {
             param.put("kontakrs",var.getkontakrs());
             param.put("emailrs",var.getemailrs());   
             param.put("logo",Sequel.cariGambar("select logo from setting")); 
-//            Valid.MyReport("rptCariBPJSReferensiPoliHFIS.jasper","report","[ Pencarian Referensi Poli HFIS ]",param);
+            Valid.MyReport("rptCariBPJSReferensiPoliHFIS.jasper","report","[ Pencarian Referensi Poli HFIS ]",param);
             this.setCursor(Cursor.getDefaultCursor());
         }        
     }//GEN-LAST:event_BtnPrintActionPerformed

@@ -316,7 +316,7 @@ public final class BPJSCekRiwayatRujukanPCare extends javax.swing.JDialog {
             param.put("kontakrs",var.getkontakrs());
             param.put("emailrs",var.getemailrs());   
             param.put("logo",Sequel.cariGambar("select logo from setting")); 
-//            Valid.MyReport("rptCariBPJS10RiwayatPeserta.jasper","report","[ Pencarian Riwayat Rujukan Peserta ]",param);
+            Valid.MyReport("rptCariBPJS10RiwayatPeserta.jasper","report","[ Pencarian Riwayat Rujukan Peserta ]",param);
             this.setCursor(Cursor.getDefaultCursor());
         }        
     }//GEN-LAST:event_BtnPrintActionPerformed

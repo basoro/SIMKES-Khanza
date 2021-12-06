@@ -246,7 +246,7 @@ public final class BPJSCekDetailSEP2 extends javax.swing.JDialog {
             param.put("kontakrs",var.getkontakrs());
             param.put("emailrs",var.getemailrs());   
             param.put("logo",Sequel.cariGambar("select logo from setting")); 
-//            Valid.MyReport("rptCariBPJSDetailSEP.jasper","report","[ Detail SEP Peserta ]",param);
+            Valid.MyReport("rptCariBPJSDetailSEP.jasper","report","[ Detail SEP Peserta ]",param);
             this.setCursor(Cursor.getDefaultCursor());
         }        
     }//GEN-LAST:event_BtnPrintActionPerformed

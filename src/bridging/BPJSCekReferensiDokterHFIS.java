@@ -270,7 +270,7 @@ public final class BPJSCekReferensiDokterHFIS extends javax.swing.JDialog {
             param.put("kontakrs",var.getkontakrs());
             param.put("emailrs",var.getemailrs());   
             param.put("logo",Sequel.cariGambar("select logo from setting")); 
-//            Valid.MyReport("rptCariBPJSReferensiDokterHFIS.jasper","report","[ Pencarian Referensi Dokter HFIS ]",param);
+            Valid.MyReport("rptCariBPJSReferensiDokterHFIS.jasper","report","[ Pencarian Referensi Dokter HFIS ]",param);
             this.setCursor(Cursor.getDefaultCursor());
         }        
     }//GEN-LAST:event_BtnPrintActionPerformed

@@ -268,7 +268,7 @@ public final class BPJSCekReferensiPenyakit extends javax.swing.JDialog {
             param.put("kontakrs",var.getkontakrs());
             param.put("emailrs",var.getemailrs());   
             param.put("logo",Sequel.cariGambar("select logo from setting")); 
-//            Valid.MyReport("rptCariBPJSReferensiDiagnosa.jasper","report","[ Pencarian Referensi Diagnosa ]",param);
+            Valid.MyReport("rptCariBPJSReferensiDiagnosa.jasper","report","[ Pencarian Referensi Diagnosa ]",param);
             this.setCursor(Cursor.getDefaultCursor());
         }        
     }//GEN-LAST:event_BtnPrintActionPerformed

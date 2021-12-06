@@ -270,7 +270,7 @@ public final class BPJSCekReferensiObatPRB extends javax.swing.JDialog {
             param.put("kontakrs",var.getkontakrs());
             param.put("emailrs",var.getemailrs());   
             param.put("logo",Sequel.cariGambar("select logo from setting")); 
-//            Valid.MyReport("rptCariBPJSReferensiObatPRB.jasper","report","[ Pencarian Referensi Obat PRB ]",param);
+            Valid.MyReport("rptCariBPJSReferensiObatPRB.jasper","report","[ Pencarian Referensi Obat PRB ]",param);
             this.setCursor(Cursor.getDefaultCursor());
         }        
     }//GEN-LAST:event_BtnPrintActionPerformed

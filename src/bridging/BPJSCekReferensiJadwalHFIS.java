@@ -629,7 +629,7 @@ public final class BPJSCekReferensiJadwalHFIS extends javax.swing.JDialog {
             param.put("kontakrs",var.getkontakrs());
             param.put("emailrs",var.getemailrs());   
             param.put("logo",Sequel.cariGambar("select logo from setting")); 
-//            Valid.MyReport("rptCariBPJSReferensiJadwalHFIS.jasper","report","[ Pencarian Referensi Jadwal HFIS ]",param);
+            Valid.MyReport("rptCariBPJSReferensiJadwalHFIS.jasper","report","[ Pencarian Referensi Jadwal HFIS ]",param);
             this.setCursor(Cursor.getDefaultCursor());
         }        
     }//GEN-LAST:event_BtnPrintActionPerformed

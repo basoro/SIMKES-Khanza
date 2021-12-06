@@ -749,7 +749,7 @@ private void KdKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TKdKey
                 param.put("kontakrs",var.getkontakrs());
                 param.put("emailrs",var.getemailrs());   
                 param.put("logo",Sequel.cariGambar("select logo from setting")); 
-//            Valid.MyReport("rptBridgingMonitoringSEP.jasper","report","::[ Monitoring Klaim SEP ]::",param);
+            Valid.MyReport("rptBridgingMonitoringSEP.jasper","report","::[ Monitoring Klaim SEP ]::",param);
             
         }
         this.setCursor(Cursor.getDefaultCursor());

@@ -270,7 +270,7 @@ public final class BPJSCekReferensiProsedur extends javax.swing.JDialog {
             param.put("kontakrs",var.getkontakrs());
             param.put("emailrs",var.getemailrs());   
             param.put("logo",Sequel.cariGambar("select logo from setting")); 
-//            Valid.MyReport("rptCariBPJSReferensiProsedur.jasper","report","[ Pencarian Referensi Prosedur/Tindakan ]",param);
+            Valid.MyReport("rptCariBPJSReferensiProsedur.jasper","report","[ Pencarian Referensi Prosedur/Tindakan ]",param);
             this.setCursor(Cursor.getDefaultCursor());
         }        
     }//GEN-LAST:event_BtnPrintActionPerformed

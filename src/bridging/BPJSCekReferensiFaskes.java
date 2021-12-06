@@ -267,7 +267,7 @@ public final class BPJSCekReferensiFaskes extends javax.swing.JDialog {
             param.put("kontakrs",var.getkontakrs());
             param.put("emailrs",var.getemailrs());   
             param.put("logo",Sequel.cariGambar("select logo from setting")); 
-//            Valid.MyReport("rptCariBPJSReferensiFaskes.jasper","report","[ Pencarian Referensi Faskes ]",param);
+            Valid.MyReport("rptCariBPJSReferensiFaskes.jasper","report","[ Pencarian Referensi Faskes ]",param);
             this.setCursor(Cursor.getDefaultCursor());
         }        
     }//GEN-LAST:event_BtnPrintActionPerformed

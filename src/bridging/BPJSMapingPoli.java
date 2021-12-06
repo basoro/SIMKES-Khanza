@@ -607,7 +607,7 @@ public final class BPJSMapingPoli extends javax.swing.JDialog {
                 param.put("emailrs",var.getemailrs());   
                 param.put("logo",Sequel.cariGambar("select logo from setting")); 
                 param.put("parameter","%"+TCari.getText().trim()+"%");
-//                Valid.MyReport("rptMapingPoliBPJS.jasper","report","::[ Mapping Unit RS & BPJS ]::",param);            
+                Valid.MyReport("rptMapingPoliBPJS.jasper","report","::[ Mapping Unit RS & BPJS ]::",param);            
         }
         this.setCursor(Cursor.getDefaultCursor());
 }//GEN-LAST:event_BtnPrintActionPerformed
@@ -790,11 +790,7 @@ private void btnPoliBPJSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
     
     public void isCek(){
         BtnSimpan.setEnabled(var.getmanajemen());
-        if(var.getkode().equals("Admin Utama")){
-            BtnHapus.setEnabled(true);
-        }else{
-            BtnHapus.setEnabled(false);
-        } 
+        BtnHapus.setEnabled(var.getmanajemen());
         BtnEdit.setEnabled(var.getmanajemen());
         BtnPrint.setEnabled(var.getmanajemen());
     }

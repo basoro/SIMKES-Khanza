@@ -12,24 +12,22 @@
 
 package bridging;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import fungsi.WarnaTable;
-import fungsi.batasInput;
-import fungsi.koneksiDB;
 import java.awt.Dimension;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import fungsi.sekuel;
 import fungsi.validasi;
 import fungsi.var;
+import fungsi.koneksiDB;
 import java.awt.Cursor;
 import java.awt.event.KeyEvent;
 import java.util.HashMap;
 import java.util.Map;
 import javax.swing.JOptionPane;
-import javax.swing.event.DocumentEvent;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -39,31 +37,35 @@ import org.springframework.http.MediaType;
  *
  * @author dosen
  */
-public final class BPJSCekReferensiDiagnosaPRB extends javax.swing.JDialog {
+public final class BPJSCekKlaimJasaRaharja extends javax.swing.JDialog {
     private final DefaultTableModel tabMode;
     private validasi Valid=new validasi();
     private sekuel Sequel=new sekuel();
     private int i=0;
     private ApiBPJS api=new ApiBPJS();
     private String URL="",link="",utc="";
-    private HttpHeaders headers;
+    private HttpHeaders headers ;
     private HttpEntity requestEntity;
     private ObjectMapper mapper = new ObjectMapper();
     private JsonNode root;
     private JsonNode nameNode;
     private JsonNode response;
-
+        
     /** Creates new form DlgKamar
      * @param parent
      * @param modal */
-    public BPJSCekReferensiDiagnosaPRB(java.awt.Frame parent, boolean modal) {
+    public BPJSCekKlaimJasaRaharja(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
 
         this.setLocation(10,2);
         setSize(628,674);
 
-        tabMode=new DefaultTableModel(null,new String[]{"No.","Kode","Nama"}){
+        Object[] row={
+            "No","No.SEP","Tgl.SEP","Tgl.Pulang","No.R.M.","Jenis Pelayanan","Diagnosa","No.Kartu","Nama Pasien","Tgl.Kejadian",
+            "No.Register","Status Dijamin","Status Dikirim","Biaya Dijamin","Plafon","Jumlah Dibayar","Result","Status"
+        };
+        tabMode=new DefaultTableModel(null,row){
               @Override public boolean isCellEditable(int rowIndex, int colIndex){return false;}
         };
         tbKamar.setModel(tabMode);
@@ -72,50 +74,54 @@ public final class BPJSCekReferensiDiagnosaPRB extends javax.swing.JDialog {
         tbKamar.setPreferredScrollableViewportSize(new Dimension(500,500));
         tbKamar.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
 
-        for (int i = 0; i < 3; i++) {
+        for (i = 0; i < 18; i++) {
             TableColumn column = tbKamar.getColumnModel().getColumn(i);
             if(i==0){
-                column.setPreferredWidth(40);
+                column.setPreferredWidth(30);
             }else if(i==1){
-                column.setPreferredWidth(140);
+                column.setPreferredWidth(125);
             }else if(i==2){
-                column.setPreferredWidth(470);
+                column.setPreferredWidth(65);
+            }else if(i==3){
+                column.setPreferredWidth(65);
+            }else if(i==4){
+                column.setPreferredWidth(70);
+            }else if(i==5){
+                column.setPreferredWidth(85);
+            }else if(i==6){
+                column.setPreferredWidth(170);
+            }else if(i==7){
+                column.setPreferredWidth(100);
+            }else if(i==8){
+                column.setPreferredWidth(160);
+            }else if(i==9){
+                column.setPreferredWidth(70);
+            }else if(i==10){
+                column.setPreferredWidth(125);
+            }else if(i==11){
+                column.setPreferredWidth(90);
+            }else if(i==12){
+                column.setPreferredWidth(90);
+            }else if(i==13){
+                column.setPreferredWidth(90);
+            }else if(i==14){
+                column.setPreferredWidth(90);
+            }else if(i==15){
+                column.setPreferredWidth(90);
+            }else if(i==16){
+                column.setPreferredWidth(70);
+            }else if(i==17){
+                column.setPreferredWidth(60);
             }
         }
+        
         tbKamar.setDefaultRenderer(Object.class, new WarnaTable());
-        
-        Poli.setDocument(new batasInput((byte)100).getKata(Poli));
-        
-        if(koneksiDB.cariCepat().equals("aktif")){
-            Poli.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){
-                @Override
-                public void insertUpdate(DocumentEvent e) {
-                    if(Poli.getText().length()>2){
-                        tampil(Poli.getText());
-                    }
-                }
-                @Override
-                public void removeUpdate(DocumentEvent e) {
-                    if(Poli.getText().length()>2){
-                        tampil(Poli.getText());
-                    }
-                }
-                @Override
-                public void changedUpdate(DocumentEvent e) {
-                    if(Poli.getText().length()>2){
-                        tampil(Poli.getText());
-                    }
-                }
-            });
-        } 
         
         try {
             link=koneksiDB.URLAPIBPJS();
-            URL =link+"/referensi/diagnosaprb";	    
         } catch (Exception e) {
             System.out.println("E : "+e);
         }
-              
     }
     
     
@@ -133,8 +139,10 @@ public final class BPJSCekReferensiDiagnosaPRB extends javax.swing.JDialog {
         Scroll = new widget.ScrollPane();
         tbKamar = new widget.Table();
         panelGlass6 = new widget.panelisi();
-        jLabel16 = new widget.Label();
-        Poli = new widget.TextBox();
+        jLabel18 = new widget.Label();
+        Tanggal1 = new widget.Tanggal();
+        jLabel19 = new widget.Label();
+        Tanggal2 = new widget.Tanggal();
         BtnCari = new widget.Button();
         jLabel17 = new widget.Label();
         BtnPrint = new widget.Button();
@@ -146,7 +154,7 @@ public final class BPJSCekReferensiDiagnosaPRB extends javax.swing.JDialog {
         setUndecorated(true);
         setResizable(false);
 
-        internalFrame1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 245, 235)), "::[ Pencarian Data Referensi Diagnosa PRB VClaim ]::", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(50, 50, 50))); // NOI18N
+        internalFrame1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 245, 235)), "::[ Data Klaim Jasa Raharja VClaim ]::", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(50, 50, 50))); // NOI18N
         internalFrame1.setName("internalFrame1"); // NOI18N
         internalFrame1.setLayout(new java.awt.BorderLayout(1, 1));
 
@@ -154,6 +162,7 @@ public final class BPJSCekReferensiDiagnosaPRB extends javax.swing.JDialog {
         Scroll.setOpaque(true);
 
         tbKamar.setAutoCreateRowSorter(true);
+        tbKamar.setToolTipText("Silahkan klik untuk memilih data yang mau diedit ataupun dihapus");
         tbKamar.setName("tbKamar"); // NOI18N
         Scroll.setViewportView(tbKamar);
 
@@ -163,19 +172,30 @@ public final class BPJSCekReferensiDiagnosaPRB extends javax.swing.JDialog {
         panelGlass6.setPreferredSize(new java.awt.Dimension(44, 54));
         panelGlass6.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 9));
 
-        jLabel16.setText("Kode/Nama :");
-        jLabel16.setName("jLabel16"); // NOI18N
-        jLabel16.setPreferredSize(new java.awt.Dimension(80, 23));
-        panelGlass6.add(jLabel16);
+        jLabel18.setText("Tanggal :");
+        jLabel18.setName("jLabel18"); // NOI18N
+        jLabel18.setPreferredSize(new java.awt.Dimension(60, 23));
+        panelGlass6.add(jLabel18);
 
-        Poli.setName("Poli"); // NOI18N
-        Poli.setPreferredSize(new java.awt.Dimension(290, 23));
-        Poli.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                PoliKeyPressed(evt);
-            }
-        });
-        panelGlass6.add(Poli);
+        Tanggal1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "18-11-2021" }));
+        Tanggal1.setDisplayFormat("dd-MM-yyyy");
+        Tanggal1.setName("Tanggal1"); // NOI18N
+        Tanggal1.setOpaque(false);
+        Tanggal1.setPreferredSize(new java.awt.Dimension(90, 23));
+        panelGlass6.add(Tanggal1);
+
+        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel19.setText("s.d.");
+        jLabel19.setName("jLabel19"); // NOI18N
+        jLabel19.setPreferredSize(new java.awt.Dimension(30, 23));
+        panelGlass6.add(jLabel19);
+
+        Tanggal2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "18-11-2021" }));
+        Tanggal2.setDisplayFormat("dd-MM-yyyy");
+        Tanggal2.setName("Tanggal2"); // NOI18N
+        Tanggal2.setOpaque(false);
+        Tanggal2.setPreferredSize(new java.awt.Dimension(90, 23));
+        panelGlass6.add(Tanggal2);
 
         BtnCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/accept.png"))); // NOI18N
         BtnCari.setMnemonic('6');
@@ -194,8 +214,9 @@ public final class BPJSCekReferensiDiagnosaPRB extends javax.swing.JDialog {
         });
         panelGlass6.add(BtnCari);
 
+        jLabel17.setAutoscrolls(true);
         jLabel17.setName("jLabel17"); // NOI18N
-        jLabel17.setPreferredSize(new java.awt.Dimension(30, 23));
+        jLabel17.setPreferredSize(new java.awt.Dimension(120, 23));
         panelGlass6.add(jLabel17);
 
         BtnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/b_print.png"))); // NOI18N
@@ -259,7 +280,21 @@ public final class BPJSCekReferensiDiagnosaPRB extends javax.swing.JDialog {
                 Sequel.menyimpan("temporary","'0','"+
                                 tabMode.getValueAt(r,0).toString()+"','"+
                                 tabMode.getValueAt(r,1).toString()+"','"+
-                                tabMode.getValueAt(r,2).toString()+"','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''","Rekap Harian Pengadaan Ipsrs"); 
+                                tabMode.getValueAt(r,2).toString()+"','"+
+                                tabMode.getValueAt(r,3).toString()+"','"+
+                                tabMode.getValueAt(r,4).toString()+"','"+
+                                tabMode.getValueAt(r,5).toString()+"','"+
+                                tabMode.getValueAt(r,6).toString()+"','"+
+                                tabMode.getValueAt(r,7).toString()+"','"+
+                                tabMode.getValueAt(r,8).toString()+"','"+
+                                tabMode.getValueAt(r,9).toString()+"','"+
+                                tabMode.getValueAt(r,10).toString()+"','"+
+                                tabMode.getValueAt(r,11).toString()+"','"+
+                                tabMode.getValueAt(r,12).toString()+"','"+
+                                tabMode.getValueAt(r,13).toString()+"','"+
+                                tabMode.getValueAt(r,14).toString()+"','"+
+                                tabMode.getValueAt(r,15).toString()+"','"+
+                                tabMode.getValueAt(r,16).toString()+"','','','','','','','','','','','','','','','','','','','',''","Rekap Harian Pengadaan Ipsrs"); 
             }
             
             Map<String, Object> param = new HashMap<>();                 
@@ -267,31 +302,17 @@ public final class BPJSCekReferensiDiagnosaPRB extends javax.swing.JDialog {
             param.put("alamatrs",var.getalamatrs());
             param.put("kotars",var.getkabupatenrs());
             param.put("propinsirs",var.getpropinsirs());
-            //param.put("peserta","No.Peserta : "+NoKartu.getText()+" Nama Peserta : "+NamaPasien.getText());
             param.put("kontakrs",var.getkontakrs());
             param.put("emailrs",var.getemailrs());   
             param.put("logo",Sequel.cariGambar("select logo from setting")); 
-            Valid.MyReport("rptCariBPJSReferensiDiagnosaPRB.jasper","report","[ Pencarian Referensi Diagnosa PRB ]",param);
+            Valid.MyReport("rptCariBPJSKlaimJasaRaharja.jasper","report","[ Data Klaim Jasa Raharja ]",param);
             this.setCursor(Cursor.getDefaultCursor());
         }        
     }//GEN-LAST:event_BtnPrintActionPerformed
 
-    private void PoliKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_PoliKeyPressed
-        if(evt.getKeyCode()==KeyEvent.VK_ENTER){
-            tampil(Poli.getText());
-            BtnPrint.requestFocus();
-        }else if(evt.getKeyCode()==KeyEvent.VK_PAGE_DOWN){
-            tampil(Poli.getText());
-        }else if(evt.getKeyCode()==KeyEvent.VK_PAGE_UP){
-            BtnKeluar.requestFocus();
-        }else if(evt.getKeyCode()==KeyEvent.VK_UP){
-            BtnCariActionPerformed(null);
-        }
-    }//GEN-LAST:event_PoliKeyPressed
-
     private void BtnCariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCariActionPerformed
         this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-        tampil(Poli.getText());
+        tampil();
         this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_BtnCariActionPerformed
 
@@ -299,7 +320,7 @@ public final class BPJSCekReferensiDiagnosaPRB extends javax.swing.JDialog {
         if(evt.getKeyCode()==KeyEvent.VK_SPACE){
             BtnCariActionPerformed(null);
         }else{
-            Valid.pindah(evt,Poli,BtnPrint);
+            Valid.pindah(evt,Tanggal2,BtnPrint);
         }
     }//GEN-LAST:event_BtnCariKeyPressed
 
@@ -308,7 +329,7 @@ public final class BPJSCekReferensiDiagnosaPRB extends javax.swing.JDialog {
     */
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(() -> {
-            BPJSCekReferensiDiagnosaPRB dialog = new BPJSCekReferensiDiagnosaPRB(new javax.swing.JFrame(), true);
+            BPJSCekKlaimJasaRaharja dialog = new BPJSCekKlaimJasaRaharja(new javax.swing.JFrame(), true);
             dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                 @Override
                 public void windowClosing(java.awt.event.WindowEvent e) {
@@ -323,16 +344,18 @@ public final class BPJSCekReferensiDiagnosaPRB extends javax.swing.JDialog {
     private widget.Button BtnCari;
     private widget.Button BtnKeluar;
     private widget.Button BtnPrint;
-    private widget.TextBox Poli;
     private widget.ScrollPane Scroll;
+    private widget.Tanggal Tanggal1;
+    private widget.Tanggal Tanggal2;
     private widget.InternalFrame internalFrame1;
-    private widget.Label jLabel16;
     private widget.Label jLabel17;
+    private widget.Label jLabel18;
+    private widget.Label jLabel19;
     private widget.panelisi panelGlass6;
     private widget.Table tbKamar;
     // End of variables declaration//GEN-END:variables
 
-    public void tampil(String poli) {
+    public void tampil() {
         try {
             headers = new HttpHeaders();
             headers.setContentType(MediaType.APPLICATION_JSON);
@@ -342,36 +365,65 @@ public final class BPJSCekReferensiDiagnosaPRB extends javax.swing.JDialog {
 	    headers.add("X-Signature",api.getHmac(utc));
             headers.add("user_key",koneksiDB.USERKEYAPIBPJS());
 	    requestEntity = new HttpEntity(headers);
-	    root = mapper.readTree(api.getRest().exchange(URL, HttpMethod.GET, requestEntity, String.class).getBody());
+            URL = link+"/monitoring/JasaRaharja/JnsPelayanan/2/tglMulai/"+Valid.SetTgl(Tanggal1.getSelectedItem()+"")+"/tglAkhir/"+Valid.SetTgl(Tanggal2.getSelectedItem()+"");	
+            System.out.println("URL : "+URL);
+            root = mapper.readTree(api.getRest().exchange(URL, HttpMethod.GET, requestEntity, String.class).getBody());
             nameNode = root.path("metaData");
             if(nameNode.path("code").asText().equals("200")){
                 Valid.tabelKosong(tabMode);
-                response = mapper.readTree(api.Decrypt(root.path("response").asText(),utc));
-                //response = root.path("response");
-                if(response.path("list").isArray()){
+                response = mapper.readTree(api.Decrypt(root.path("response").asText(),utc)).path("jaminan");
+                //response = root.path("response").path("rujukan");
+                if(response.isArray()){
                     i=1;
-                    for(JsonNode list:response.path("list")){
-                        if(list.path("kode").asText().toLowerCase().contains(poli.toLowerCase())||
-                                list.path("nama").asText().toLowerCase().contains(poli.toLowerCase())){
-                            tabMode.addRow(new Object[]{
-                                i+".",list.path("kode").asText(),list.path("nama").asText()
-                            });
-                        }
+                    for(JsonNode list:response){
+                        tabMode.addRow(new Object[]{
+                            i+"",list.path("sep").path("noSEP").asText(),list.path("sep").path("tglSEP").asText(),list.path("sep").path("tglPlgSEP").asText(),list.path("sep").path("noMr").asText(),
+                            list.path("sep").path("jnsPelayanan").asText().replaceAll("1","Ranap").replaceAll("2","Ralan"),list.path("sep").path("poli").asText(),list.path("sep").path("diagnosa").asText(),list.path("sep").path("peserta").path("noKartu").asText(),
+                            list.path("sep").path("peserta").path("nama").asText(),list.path("jasaRaharja").path("tglKejadian").asText(),list.path("jasaRaharja").path("noRegister").asText(),
+                            list.path("jasaRaharja").path("ketStatusDijamin").asText(),list.path("jasaRaharja").path("ketStatusDikirim").asText(),Valid.SetAngka(list.path("jasaRaharja").path("biayaDijamin").asDouble()),
+                            Valid.SetAngka(list.path("jasaRaharja").path("plafon").asDouble()),Valid.SetAngka(list.path("jasaRaharja").path("jmlDibayar").asDouble()),list.path("jasaRaharja").path("resultsJasaRaharja").asText(),"Ralan"
+                        });    
                         i++;
                     }
-                }
-            }else {
-                JOptionPane.showMessageDialog(null,nameNode.path("message").asText());                
-            }   
+                }                      
+            }  
+            
+            headers = new HttpHeaders();
+            headers.setContentType(MediaType.APPLICATION_JSON);
+	    headers.add("X-Cons-ID",koneksiDB.CONSIDAPIBPJS());
+	    utc=String.valueOf(api.GetUTCdatetimeAsString());
+	    headers.add("X-Timestamp",utc);
+	    headers.add("X-Signature",api.getHmac(utc));
+            headers.add("user_key",koneksiDB.USERKEYAPIBPJS());
+	    requestEntity = new HttpEntity(headers);
+            URL = link+"/monitoring/JasaRaharja/JnsPelayanan/1/tglMulai/"+Valid.SetTgl(Tanggal1.getSelectedItem()+"")+"/tglAkhir/"+Valid.SetTgl(Tanggal2.getSelectedItem()+"");	
+            System.out.println("URL : "+URL);
+            root = mapper.readTree(api.getRest().exchange(URL, HttpMethod.GET, requestEntity, String.class).getBody());
+            nameNode = root.path("metaData");
+            if(nameNode.path("code").asText().equals("200")){
+                Valid.tabelKosong(tabMode);
+                response = mapper.readTree(api.Decrypt(root.path("response").asText(),utc)).path("jaminan");
+                //response = root.path("response").path("rujukan");
+                if(response.isArray()){
+                    i=1;
+                    for(JsonNode list:response){
+                        tabMode.addRow(new Object[]{
+                            i+"",list.path("sep").path("noSEP").asText(),list.path("sep").path("tglSEP").asText(),list.path("sep").path("tglPlgSEP").asText(),list.path("sep").path("noMr").asText(),
+                            list.path("sep").path("jnsPelayanan").asText().replaceAll("1","Ranap").replaceAll("2","Ralan"),list.path("sep").path("poli").asText(),list.path("sep").path("diagnosa").asText(),list.path("sep").path("peserta").path("noKartu").asText(),
+                            list.path("sep").path("peserta").path("nama").asText(),list.path("jasaRaharja").path("tglKejadian").asText(),list.path("jasaRaharja").path("noRegister").asText(),
+                            list.path("jasaRaharja").path("ketStatusDijamin").asText(),list.path("jasaRaharja").path("ketStatusDikirim").asText(),Valid.SetAngka(list.path("jasaRaharja").path("biayaDijamin").asDouble()),
+                            Valid.SetAngka(list.path("jasaRaharja").path("plafon").asDouble()),Valid.SetAngka(list.path("jasaRaharja").path("jmlDibayar").asDouble()),list.path("jasaRaharja").path("resultsJasaRaharja").asText(),"Ranap"
+                        });    
+                        i++;
+                    }
+                }                      
+            } 
         } catch (Exception ex) {
-            System.out.println("Notifikasi : "+ex);
+            System.out.println("Notifikasi Peserta : "+ex);
             if(ex.toString().contains("UnknownHostException")){
                 JOptionPane.showMessageDialog(rootPane,"Koneksi ke server BPJS terputus...!");
             }
         }
-    }    
-
-    public JTable getTable(){
-        return tbKamar;
-    }
+    }   
+ 
 }

@@ -618,7 +618,7 @@ public final class BPJSMapingDokterDPJP extends javax.swing.JDialog {
                 param.put("emailrs",var.getemailrs());   
                 param.put("logo",Sequel.cariGambar("select logo from setting")); 
                 param.put("parameter","%"+TCari.getText().trim()+"%");   
-//                Valid.MyReport("rptMapingDokterDPJPVClaim.jasper","report","::[ Mapping Dokter RS & DPJP VClaim ]::",param);            
+                Valid.MyReport("rptMapingDokterDPJPVClaim.jasper","report","::[ Mapping Dokter RS & DPJP VClaim ]::",param);            
         }
         this.setCursor(Cursor.getDefaultCursor());
 }//GEN-LAST:event_BtnPrintActionPerformed
@@ -798,11 +798,7 @@ private void btnPoliBPJSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
     
     public void isCek(){
         BtnSimpan.setEnabled(var.getmanajemen());
-        if(var.getkode().equals("Admin Utama")){
-            BtnHapus.setEnabled(true);
-        }else{
-            BtnHapus.setEnabled(false);
-        } 
+        BtnHapus.setEnabled(var.getmanajemen());
         BtnEdit.setEnabled(var.getmanajemen());
         BtnPrint.setEnabled(var.getmanajemen());
     }

@@ -33,12 +33,5 @@
     <entry key="FORMALARMRADIOLOGI">ralan + ranap</entry>
     <entry key="ALARMAPOTEK">yes</entry>
     <entry key="FORMALARMAPOTEK">ralan + ranap</entry>
-    <entry key="ALARMRSISRUTE">yes</entry>
-    <entry key="URLAPISISRUTE">https://api.sisrute.kemkes.go.id</entry>
-    <entry key="IDSISRUTE">7303010</entry>
-    <entry key="PASSSISRUTE">12345</entry>
-    <entry key="URLAPISIRSC19">http://sirs.kemkes.go.id/fo/index.php/Fasyankes</entry>
-    <entry key="IDSIRSC19">6307012</entry>
-    <entry key="PASSSIRSC19">S!rs2020!!</entry>
     <entry key="AUTOUPDATESISTEM">no</entry> <!--no:aktif-->
 </properties>

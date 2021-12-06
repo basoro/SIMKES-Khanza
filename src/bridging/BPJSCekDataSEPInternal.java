@@ -34,6 +34,7 @@ import java.util.Map;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.X509TrustManager;
 import javax.swing.JOptionPane;
+import org.apache.http.client.methods.HttpEntityEnclosingRequestBase;
 import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.conn.scheme.Scheme;
 import org.apache.http.conn.ssl.SSLSocketFactory;
@@ -348,7 +349,7 @@ public final class BPJSCekDataSEPInternal extends javax.swing.JDialog {
             param.put("kontakrs",var.getkontakrs());
             param.put("emailrs",var.getemailrs());   
             param.put("logo",Sequel.cariGambar("select logo from setting")); 
-//            Valid.MyReport("rptCariBPJSSEPInternal.jasper","report","[ Data SEP Internal ]",param);
+            Valid.MyReport("rptCariBPJSSEPInternal.jasper","report","[ Data SEP Internal ]",param);
             this.setCursor(Cursor.getDefaultCursor());
         }        
     }//GEN-LAST:event_BtnPrintActionPerformed
@@ -424,7 +425,7 @@ public final class BPJSCekDataSEPInternal extends javax.swing.JDialog {
     public void tampil(String nomorkartu) {
         try {
             headers = new HttpHeaders();
-            headers.setContentType(MediaType.APPLICATION_JSON);
+            headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 	    headers.add("X-Cons-ID",koneksiDB.CONSIDAPIBPJS());
 	    utc=String.valueOf(api.GetUTCdatetimeAsString());
 	    headers.add("X-Timestamp",utc);
@@ -463,6 +464,18 @@ public final class BPJSCekDataSEPInternal extends javax.swing.JDialog {
         NoSEP.setText(nosep);
     }
     
+    public static class HttpEntityEnclosingDeleteRequest extends HttpEntityEnclosingRequestBase {
+        public HttpEntityEnclosingDeleteRequest(final URI uri) {
+            super();
+            setURI(uri);
+        }
+
+        @Override
+        public String getMethod() {
+            return "DELETE";
+        }
+    }
+    
     @Test
     public void bodyWithDeleteRequest() throws Exception {
         RestTemplate restTemplate = new RestTemplate();
@@ -482,7 +495,7 @@ public final class BPJSCekDataSEPInternal extends javax.swing.JDialog {
             @Override
             protected HttpUriRequest createHttpUriRequest(HttpMethod httpMethod, URI uri) {
                 if (HttpMethod.DELETE == httpMethod) {
-                    return new BPJSSPRI.HttpEntityEnclosingDeleteRequest(uri);
+                    return new HttpEntityEnclosingDeleteRequest(uri);
                 }
                 return super.createHttpUriRequest(httpMethod, uri);
             }
