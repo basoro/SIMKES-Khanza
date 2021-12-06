@@ -20,6 +20,7 @@ public final class koneksiDB {
     private static final Properties prop = new Properties();
     private static final MysqlDataSource dataSource=new MysqlDataSource();
     private static String caricepat="",var="",Key ="",Consid="",link ="",version="";
+    private static sekuel Sequel=new sekuel();
 
     public koneksiDB(){}
     public static Connection condb() {
@@ -151,8 +152,9 @@ public final class koneksiDB {
 
     public static String URLAPIBPJS(){
         try{
-            prop.loadFromXML(new FileInputStream("setting/config.xml"));
-            var=prop.getProperty("URLAPIBPJS");
+//            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+//            var=prop.getProperty("URLAPIBPJS");
+            var=Sequel.cariIsi("select urlapibpjs from setting"); 
         }catch(Exception e){
             var="";
         }
@@ -161,8 +163,10 @@ public final class koneksiDB {
 
     public static String SECRETKEYAPIBPJS(){
         try{
-            prop.loadFromXML(new FileInputStream("setting/config.xml"));
-            var=EnkripsiAES.decrypt(prop.getProperty("SECRETKEYAPIBPJS"));
+//            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+//            var=EnkripsiAES.decrypt(prop.getProperty("SECRETKEYAPIBPJS"));
+            var=Sequel.cariIsi("select secretkeybpjs from setting"); 
+        
         }catch(Exception e){
             var="";
         }
@@ -171,8 +175,9 @@ public final class koneksiDB {
 
     public static String CONSIDAPIBPJS(){
         try{
-            prop.loadFromXML(new FileInputStream("setting/config.xml"));
-            var=EnkripsiAES.decrypt(prop.getProperty("CONSIDAPIBPJS"));
+//            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+//            var=EnkripsiAES.decrypt(prop.getProperty("CONSIDAPIBPJS"));
+            var=Sequel.cariIsi("select considbpjs from setting"); 
         }catch(Exception e){
             var="";
         }
@@ -181,8 +186,9 @@ public final class koneksiDB {
 
     public static String USERKEYAPIBPJS(){
         try{
-            prop.loadFromXML(new FileInputStream("setting/config.xml"));
-            var=EnkripsiAES.decrypt(prop.getProperty("USERKEYAPIBPJS"));
+//            prop.loadFromXML(new FileInputStream("setting/config.xml"));
+//            var=EnkripsiAES.decrypt(prop.getProperty("USERKEYAPIBPJS"));
+            var=Sequel.cariIsi("select userkeybpjs from setting"); 
         }catch(Exception e){
             var="";
         }

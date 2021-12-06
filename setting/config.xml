@@ -6,12 +6,7 @@
     <entry key="HOSTHYBRIDWEB">localhost</entry>
     <entry key="HYBRIDWEB">webapps</entry>
     <entry key="PORTWEB">80</entry>
-    <entry key="ANTRIAN">sender</entry>
     <entry key="MENUTRANSPARAN">yes</entry>
-    <entry key="URLAPIBPJS">https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev</entry>
-    <entry key="SECRETKEYAPIBPJS">Su3uqQpXAUQulDsCiIKRqw==</entry>
-    <entry key="CONSIDAPIBPJS">SOGdEieDUIlG60cmuMO6jw==</entry>
-    <entry key="USERKEYAPIBPJS">HhqbC0G+c/Nf2NjYLzz/0NL4mfjhHBepvBUNfIhrqxVLCSkye2PXtV1D2RJavgwh</entry>
     <entry key="URLAPIMOBILEJKN">https://apijkn-dev.bpjs-kesehatan.go.id/antreanrs_dev</entry>
     <entry key="SECRETKEYAPIMOBILEJKN">l4nh5eVYrLAER/I2A4b3Tw==</entry>
     <entry key="CONSIDAPIMOBILEJKN">l4nh5eVYrLAER/I2A4b3Tw==</entry>

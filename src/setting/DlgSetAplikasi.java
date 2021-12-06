@@ -54,7 +54,7 @@ public class DlgSetAplikasi extends javax.swing.JDialog {
         this.setLocation(10,10);
         setSize(457,249);
 
-        Object[] row={"Nama Toko","Alamat Toko","Kota","Propinsi","Aktifkan?","Wallpaper","KontaK","Email","Logo","Kode PPK BPJS"};
+        Object[] row={"Nama Toko","Alamat Toko","Kota","Propinsi","Aktifkan?","Wallpaper","KontaK","Email","Logo","Kode PPK BPJS","ConsID","SecretKey","UserKey","URL API"};
         tabMode=new DefaultTableModel(null,row){
               @Override public boolean isCellEditable(int rowIndex, int colIndex){return false;}
         };
@@ -65,7 +65,7 @@ public class DlgSetAplikasi extends javax.swing.JDialog {
         tbAdmin.setPreferredScrollableViewportSize(new Dimension(500,500));
         tbAdmin.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 14; i++) {
             TableColumn column = tbAdmin.getColumnModel().getColumn(i);
             if(i==0){
                 column.setPreferredWidth(150);
@@ -83,6 +83,10 @@ public class DlgSetAplikasi extends javax.swing.JDialog {
         Kontak.setDocument(new batasInput((byte)50).getKata(Kontak));
         Email.setDocument(new batasInput((byte)50).getKata(Email));
         kdPPK.setDocument(new batasInput((byte)15).getKata(kdPPK));
+        ConsID.setDocument(new batasInput((byte)100).getKata(ConsID));
+        SecretKey.setDocument(new batasInput((byte)100).getKata(SecretKey));
+        UserKey.setDocument(new batasInput((byte)100).getKata(UserKey));
+        URLAPI.setDocument(new batasInput((byte)100).getKata(URLAPI));
     }
     Dimension screen=Toolkit.getDefaultToolkit().getScreenSize();
     private javax.swing.JFileChooser jfc = new JFileChooser();    
@@ -137,6 +141,14 @@ public class DlgSetAplikasi extends javax.swing.JDialog {
         BtnCariLogo = new widget.Button();
         label42 = new widget.Label();
         kdPPK = new widget.TextBox();
+        label43 = new widget.Label();
+        label44 = new widget.Label();
+        SecretKey = new widget.TextBox();
+        ConsID = new widget.TextBox();
+        label45 = new widget.Label();
+        label46 = new widget.Label();
+        URLAPI = new widget.TextBox();
+        UserKey = new widget.TextBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setUndecorated(true);
@@ -268,7 +280,7 @@ public class DlgSetAplikasi extends javax.swing.JDialog {
         internalFrame1.add(panelisi1, java.awt.BorderLayout.PAGE_END);
 
         panelGlass1.setName("panelGlass1"); // NOI18N
-        panelGlass1.setPreferredSize(new java.awt.Dimension(200, 282));
+        panelGlass1.setPreferredSize(new java.awt.Dimension(200, 360));
         panelGlass1.setLayout(null);
 
         label35.setText("Nama RS :");
@@ -482,6 +494,76 @@ public class DlgSetAplikasi extends javax.swing.JDialog {
         panelGlass1.add(kdPPK);
         kdPPK.setBounds(105, 250, 110, 23);
 
+        label43.setText("Cons ID BPJS :");
+        label43.setName("label43"); // NOI18N
+        label43.setPreferredSize(new java.awt.Dimension(35, 23));
+        panelGlass1.add(label43);
+        label43.setBounds(0, 280, 100, 23);
+
+        label44.setText("Secret Key BPJS :");
+        label44.setName("label44"); // NOI18N
+        label44.setPreferredSize(new java.awt.Dimension(35, 23));
+        panelGlass1.add(label44);
+        label44.setBounds(0, 310, 100, 23);
+
+        SecretKey.setName("SecretKey"); // NOI18N
+        SecretKey.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SecretKeyActionPerformed(evt);
+            }
+        });
+        SecretKey.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                SecretKeyKeyPressed(evt);
+            }
+        });
+        panelGlass1.add(SecretKey);
+        SecretKey.setBounds(105, 310, 200, 23);
+
+        ConsID.setName("ConsID"); // NOI18N
+        ConsID.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ConsIDActionPerformed(evt);
+            }
+        });
+        ConsID.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                ConsIDKeyPressed(evt);
+            }
+        });
+        panelGlass1.add(ConsID);
+        ConsID.setBounds(105, 280, 200, 23);
+
+        label45.setText("User Key BPJS :");
+        label45.setName("label45"); // NOI18N
+        label45.setPreferredSize(new java.awt.Dimension(35, 23));
+        panelGlass1.add(label45);
+        label45.setBounds(310, 280, 80, 23);
+
+        label46.setText("URL API BPJS :");
+        label46.setName("label46"); // NOI18N
+        label46.setPreferredSize(new java.awt.Dimension(35, 23));
+        panelGlass1.add(label46);
+        label46.setBounds(310, 310, 80, 23);
+
+        URLAPI.setName("URLAPI"); // NOI18N
+        URLAPI.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                URLAPIKeyPressed(evt);
+            }
+        });
+        panelGlass1.add(URLAPI);
+        URLAPI.setBounds(400, 310, 440, 23);
+
+        UserKey.setName("UserKey"); // NOI18N
+        UserKey.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                UserKeyKeyPressed(evt);
+            }
+        });
+        panelGlass1.add(UserKey);
+        UserKey.setBounds(400, 280, 440, 23);
+
         internalFrame1.add(panelGlass1, java.awt.BorderLayout.PAGE_START);
 
         getContentPane().add(internalFrame1, java.awt.BorderLayout.CENTER);
@@ -556,7 +638,7 @@ public class DlgSetAplikasi extends javax.swing.JDialog {
         }else if(tabMode.getRowCount()==0){
             Sequel.menyimpan("setting","'"+Nm.getText()+"','"+Almt.getText()+"','"+Kota.getText()+
                              "','"+Propinsi.getText()+"','"+Kontak.getText()+"','"+Email.getText()+
-                             "','"+YesNo.getSelectedItem()+"','"+kdPPK.getText()+"'","Setting",EGb,ELogo);
+                             "','"+YesNo.getSelectedItem()+"','"+kdPPK.getText()+"','"+URLAPI.getText()+"','"+SecretKey.getText()+"','"+ConsID.getText()+"','"+UserKey.getText()+"'","Setting",EGb,ELogo);
             tampil();
         }else if(tabMode.getRowCount()>0){
             JOptionPane.showMessageDialog(null,"Maaf, Hanya diijinkan satu Set Aplikasi...!!!!");
@@ -665,7 +747,7 @@ public class DlgSetAplikasi extends javax.swing.JDialog {
             Sequel.queryu("delete from setting ");
             Sequel.menyimpan("setting","'"+Nm.getText()+"','"+Almt.getText()+"','"+Kota.getText()+
                              "','"+Propinsi.getText()+"','"+Kontak.getText()+"','"+Email.getText()+
-                             "','"+YesNo.getSelectedItem()+"','"+kdPPK.getText()+"'","Setting",EGb,ELogo);
+                             "','"+YesNo.getSelectedItem()+"','"+kdPPK.getText()+"','"+URLAPI.getText()+"','"+SecretKey.getText()+"','"+ConsID.getText()+"','"+UserKey.getText()+"'","Setting",EGb,ELogo);
             tampil();
         }
     }//GEN-LAST:event_BtnEditActionPerformed
@@ -681,6 +763,30 @@ public class DlgSetAplikasi extends javax.swing.JDialog {
     private void kdPPKKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_kdPPKKeyPressed
         Valid.pindah(evt,Email,kdPPK);
     }//GEN-LAST:event_kdPPKKeyPressed
+
+    private void SecretKeyKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SecretKeyKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SecretKeyKeyPressed
+
+    private void URLAPIKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_URLAPIKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_URLAPIKeyPressed
+
+    private void UserKeyKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_UserKeyKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_UserKeyKeyPressed
+
+    private void ConsIDKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ConsIDKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ConsIDKeyPressed
+
+    private void SecretKeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SecretKeyActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SecretKeyActionPerformed
+
+    private void ConsIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConsIDActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ConsIDActionPerformed
 
     /**
     * @param args the command line arguments
@@ -707,6 +813,7 @@ public class DlgSetAplikasi extends javax.swing.JDialog {
     private widget.Button BtnHapus;
     private widget.Button BtnKeluar;
     private widget.Button BtnSimpan;
+    private widget.TextBox ConsID;
     private widget.TextBox EGb;
     private widget.TextBox ELogo;
     private widget.TextBox Email;
@@ -717,6 +824,9 @@ public class DlgSetAplikasi extends javax.swing.JDialog {
     private java.awt.Canvas PhotoLogo;
     private widget.TextBox Propinsi;
     private widget.ScrollPane Scroll;
+    private widget.TextBox SecretKey;
+    private widget.TextBox URLAPI;
+    private widget.TextBox UserKey;
     private widget.ComboBox YesNo;
     private widget.InternalFrame internalFrame1;
     private widget.TextBox kdPPK;
@@ -730,6 +840,10 @@ public class DlgSetAplikasi extends javax.swing.JDialog {
     private widget.Label label40;
     private widget.Label label41;
     private widget.Label label42;
+    private widget.Label label43;
+    private widget.Label label44;
+    private widget.Label label45;
+    private widget.Label label46;
     private widget.panelGlass panelGlass1;
     private widget.panelisi panelisi1;
     private widget.ScrollPane scrollPane2;
@@ -738,7 +852,7 @@ public class DlgSetAplikasi extends javax.swing.JDialog {
     // End of variables declaration//GEN-END:variables
 
     private void tampil() {
-        String sql="select nama_instansi, alamat_instansi, kabupaten, propinsi, aktifkan, wallpaper,kontak,email,logo,kode_ppk from setting";
+        String sql="select nama_instansi, alamat_instansi, kabupaten, propinsi, aktifkan, wallpaper, kontak, email, logo, kode_ppk, considbpjs, secretkeybpjs, userkeybpjs, urlapibpjs from setting";
         prosesCari(sql);
     }
 
@@ -750,7 +864,7 @@ public class DlgSetAplikasi extends javax.swing.JDialog {
                 Object[] data={rs.getString(1),rs.getString(2),rs.getString(3),
                                rs.getString(4),rs.getString(5),rs.getBlob(6),
                                rs.getString(7),rs.getString(8),rs.getBlob(9),
-                               rs.getString(10)
+                               rs.getString(10),rs.getString(11),rs.getString(12),rs.getString(13),rs.getString(14)
                 };
                 tabMode.addRow(data);
             }
@@ -770,6 +884,10 @@ public class DlgSetAplikasi extends javax.swing.JDialog {
             Kontak.setText(tabMode.getValueAt(row,6).toString());
             Email.setText(tabMode.getValueAt(row,7).toString());
             kdPPK.setText(tabMode.getValueAt(row,9).toString());
+            ConsID.setText(tabMode.getValueAt(row,10).toString());
+            SecretKey.setText(tabMode.getValueAt(row,11).toString());
+            UserKey.setText(tabMode.getValueAt(row,12).toString());
+            URLAPI.setText(tabMode.getValueAt(row,13).toString());
             try {
                 ResultSet hasil = koneksi.createStatement().executeQuery(
                         "select wallpaper,logo from setting");
@@ -798,6 +916,10 @@ public class DlgSetAplikasi extends javax.swing.JDialog {
         Kota.setText("");
         Propinsi.setText("");
         kdPPK.setText("");        
+        ConsID.setText("");        
+        SecretKey.setText("");        
+        UserKey.setText("");        
+        URLAPI.setText("");        
         ((Painter) PhotoGambar).setImage("");
         EGb.setText("");
         ((Painter) PhotoLogo).setImage("");
