@@ -153,6 +153,12 @@ public final class BPJSCekNoRujukanPCare extends javax.swing.JDialog {
         }
         tbKamar.setDefaultRenderer(Object.class, new WarnaTable());
     
+        try {
+            link=koneksiDB.URLAPIBPJS();  
+        } catch (Exception e) {
+            System.out.println("E : "+e);
+        }
+        
     }
     
     
@@ -177,8 +183,6 @@ public final class BPJSCekNoRujukanPCare extends javax.swing.JDialog {
         jLabel17 = new widget.Label();
         BtnPrint = new widget.Button();
         BtnKeluar = new widget.Button();
-        panelCari = new widget.panelisi();
-        scrollPane2 = new widget.ScrollPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setIconImage(null);
@@ -197,6 +201,7 @@ public final class BPJSCekNoRujukanPCare extends javax.swing.JDialog {
 
         Scroll.setName("Scroll"); // NOI18N
         Scroll.setOpaque(true);
+        Scroll.setPreferredSize(new java.awt.Dimension(452, 100));
 
         tbKamar.setAutoCreateRowSorter(true);
         tbKamar.setToolTipText("Silahkan klik untuk memilih data yang mau diedit ataupun dihapus");
@@ -207,7 +212,7 @@ public final class BPJSCekNoRujukanPCare extends javax.swing.JDialog {
 
         PanelInput.setName("PanelInput"); // NOI18N
         PanelInput.setOpaque(false);
-        PanelInput.setPreferredSize(new java.awt.Dimension(200, 877));
+        PanelInput.setPreferredSize(new java.awt.Dimension(200, 55));
         PanelInput.setLayout(new java.awt.BorderLayout(1, 1));
 
         panelGlass6.setName("panelGlass6"); // NOI18N
@@ -282,19 +287,6 @@ public final class BPJSCekNoRujukanPCare extends javax.swing.JDialog {
 
         PanelInput.add(panelGlass6, java.awt.BorderLayout.PAGE_END);
 
-        panelCari.setName("panelCari"); // NOI18N
-        panelCari.setPreferredSize(new java.awt.Dimension(44, 44));
-        panelCari.setLayout(new java.awt.BorderLayout());
-
-        scrollPane2.setBorder(null);
-        scrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        scrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-        scrollPane2.setName("scrollPane2"); // NOI18N
-        scrollPane2.setPreferredSize(new java.awt.Dimension(1093, 138));
-        panelCari.add(scrollPane2, java.awt.BorderLayout.CENTER);
-
-        PanelInput.add(panelCari, java.awt.BorderLayout.CENTER);
-
         internalFrame1.add(PanelInput, java.awt.BorderLayout.PAGE_END);
 
         getContentPane().add(internalFrame1, java.awt.BorderLayout.CENTER);
@@ -312,6 +304,13 @@ public final class BPJSCekNoRujukanPCare extends javax.swing.JDialog {
     }//GEN-LAST:event_NoRujukanKeyPressed
 
     private void BtnCariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCariActionPerformed
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        if(NoRujukan.getText().trim().equals("")){
+            JOptionPane.showMessageDialog(null,"No.Rujukan masih kosong...!!");
+        }else{
+            tampil(NoRujukan.getText());
+        }
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_BtnCariActionPerformed
 
     private void BtnCariKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnCariKeyPressed
@@ -401,9 +400,7 @@ public final class BPJSCekNoRujukanPCare extends javax.swing.JDialog {
     private widget.InternalFrame internalFrame1;
     private widget.Label jLabel16;
     private widget.Label jLabel17;
-    private widget.panelisi panelCari;
     private widget.panelisi panelGlass6;
-    private widget.ScrollPane scrollPane2;
     private widget.Table tbKamar;
     // End of variables declaration//GEN-END:variables
 

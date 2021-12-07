@@ -182,8 +182,6 @@ public final class BPJSCekNIK2 extends javax.swing.JDialog {
         Scroll = new widget.ScrollPane();
         tbKamar = new widget.Table();
         PanelInput = new javax.swing.JPanel();
-        panelCari = new widget.panelisi();
-        scrollPane2 = new widget.ScrollPane();
         panelGlass6 = new widget.panelisi();
         jLabel16 = new widget.Label();
         TNik = new widget.TextBox();
@@ -213,6 +211,7 @@ public final class BPJSCekNIK2 extends javax.swing.JDialog {
 
         Scroll.setName("Scroll"); // NOI18N
         Scroll.setOpaque(true);
+        Scroll.setPreferredSize(new java.awt.Dimension(452, 200));
 
         tbKamar.setAutoCreateRowSorter(true);
         tbKamar.setToolTipText("");
@@ -223,21 +222,8 @@ public final class BPJSCekNIK2 extends javax.swing.JDialog {
 
         PanelInput.setName("PanelInput"); // NOI18N
         PanelInput.setOpaque(false);
-        PanelInput.setPreferredSize(new java.awt.Dimension(200, 907));
+        PanelInput.setPreferredSize(new java.awt.Dimension(200, 55));
         PanelInput.setLayout(new java.awt.BorderLayout(1, 1));
-
-        panelCari.setName("panelCari"); // NOI18N
-        panelCari.setPreferredSize(new java.awt.Dimension(44, 44));
-        panelCari.setLayout(new java.awt.BorderLayout());
-
-        scrollPane2.setBorder(null);
-        scrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        scrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-        scrollPane2.setName("scrollPane2"); // NOI18N
-        scrollPane2.setPreferredSize(new java.awt.Dimension(1093, 138));
-        panelCari.add(scrollPane2, java.awt.BorderLayout.CENTER);
-
-        PanelInput.add(panelCari, java.awt.BorderLayout.CENTER);
 
         panelGlass6.setName("panelGlass6"); // NOI18N
         panelGlass6.setPreferredSize(new java.awt.Dimension(44, 54));
@@ -394,6 +380,14 @@ public final class BPJSCekNIK2 extends javax.swing.JDialog {
     }//GEN-LAST:event_btnPasienKeyPressed
 
     private void BtnCariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCariActionPerformed
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        emptTeks();
+        if(TNik.getText().trim().equals("")){
+            JOptionPane.showMessageDialog(null,"No.KTP masih kosong...!!");
+        }else{
+            tampil(TNik.getText());
+        }
+        this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_BtnCariActionPerformed
 
     private void BtnCariKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BtnCariKeyPressed
@@ -438,9 +432,7 @@ public final class BPJSCekNIK2 extends javax.swing.JDialog {
     private widget.InternalFrame internalFrame1;
     private widget.Label jLabel16;
     private widget.Label jLabel17;
-    private widget.panelisi panelCari;
     private widget.panelisi panelGlass6;
-    private widget.ScrollPane scrollPane2;
     private widget.Table tbKamar;
     // End of variables declaration//GEN-END:variables
 
