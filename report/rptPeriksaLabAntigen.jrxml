@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 3.6.2  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="522" leftMargin="56" rightMargin="17" topMargin="20" bottomMargin="20">
+<!DOCTYPE jasperReport PUBLIC "-//JasperReports//DTD JasperReport//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+
+<jasperReport name="null" pageWidth="595" pageHeight="842" columnWidth="522" leftMargin="56" rightMargin="17" topMargin="20" bottomMargin="20">
 	<property name="ireport.zoom" value="1.5"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
@@ -11,6 +12,7 @@
 	<parameter name="umur" class="java.lang.String"/>
 	<parameter name="pengirim" class="java.lang.String"/>
 	<parameter name="petugas" class="java.lang.String"/>
+	<parameter name="nip" class="java.lang.String"/>
 	<parameter name="tanggal" class="java.lang.String"/>
 	<parameter name="jam" class="java.lang.String"/>
 	<parameter name="penjab" class="java.lang.String"/>
@@ -79,32 +81,32 @@
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<background>
-		<band splitType="Stretch"/>
+		<band/>
 	</background>
 	<title>
-		<band height="319" splitType="Stretch">
-			<textField isBlankWhenNull="true">
+		<band height="319">
+			<textField isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement x="2" y="14" width="520" height="25" forecolor="#000000" backcolor="#00FF00"/>
 				<textElement textAlignment="Center" lineSpacing="Single">
 					<font fontName="Tahoma" size="20" isBold="false" isItalic="false"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$P{namars}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement x="2" y="68" width="520" height="14"/>
 				<textElement textAlignment="Center" lineSpacing="Single">
 					<font fontName="Tahoma" size="9"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA["E-mail : "+$P{emailrs}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement x="2" y="55" width="520" height="14"/>
 				<textElement textAlignment="Center" lineSpacing="Single">
 					<font fontName="Tahoma" size="9"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$P{kontakrs}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement x="2" y="42" width="520" height="14"/>
 				<textElement textAlignment="Center" lineSpacing="Single">
 					<font fontName="Tahoma" size="9"/>
@@ -134,14 +136,14 @@
 				</textElement>
 				<text><![CDATA[:]]></text>
 			</staticText>
-			<textField isBlankWhenNull="true">
+			<textField isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement x="99" y="235" width="175" height="15"/>
 				<textElement verticalAlignment="Middle" lineSpacing="Single">
 					<font fontName="Tahoma" size="10"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$P{alamat}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement x="99" y="140" width="139" height="15"/>
 				<textElement verticalAlignment="Middle" lineSpacing="Single">
 					<font fontName="Tahoma" size="10"/>
@@ -165,7 +167,7 @@
 				<text><![CDATA[No.RM
 ( Medical Record Number ) ]]></text>
 			</staticText>
-			<textField isBlankWhenNull="true">
+			<textField isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement x="99" y="170" width="139" height="15"/>
 				<textElement verticalAlignment="Middle" lineSpacing="Single">
 					<font fontName="Tahoma" size="10"/>
@@ -205,14 +207,14 @@
 ( Gender / Age )
 ]]></text>
 			</staticText>
-			<textField isBlankWhenNull="true">
+			<textField isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement x="99" y="204" width="35" height="15"/>
 				<textElement verticalAlignment="Middle" lineSpacing="Single">
 					<font fontName="Tahoma" size="10"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$P{jkel}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement x="385" y="170" width="135" height="15"/>
 				<textElement verticalAlignment="Middle" lineSpacing="Single">
 					<font fontName="Tahoma" size="10"/>
@@ -249,7 +251,7 @@
 				<text><![CDATA[Tgl.Pemeriksaan
 ( Date specimen collection )]]></text>
 			</staticText>
-			<textField isBlankWhenNull="true">
+			<textField isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement x="385" y="204" width="135" height="15"/>
 				<textElement verticalAlignment="Middle" lineSpacing="Single">
 					<font fontName="Tahoma" size="10"/>
@@ -263,7 +265,7 @@
 				</textElement>
 				<text><![CDATA[/]]></text>
 			</staticText>
-			<textField isBlankWhenNull="true">
+			<textField isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement x="144" y="204" width="83" height="15"/>
 				<textElement verticalAlignment="Middle" lineSpacing="Single">
 					<font fontName="Tahoma" size="10"/>
@@ -277,7 +279,7 @@
 				</textElement>
 				<text><![CDATA[:]]></text>
 			</staticText>
-			<textField isBlankWhenNull="true">
+			<textField isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement x="385" y="235" width="135" height="15"/>
 				<textElement verticalAlignment="Middle" lineSpacing="Single">
 					<font fontName="Tahoma" size="10"/>
@@ -292,7 +294,7 @@
 				<text><![CDATA[Jam Pemeriksaan
 ( Time specimen collection )]]></text>
 			</staticText>
-			<textField isBlankWhenNull="true">
+			<textField isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement x="385" y="140" width="135" height="15"/>
 				<textElement verticalAlignment="Middle" lineSpacing="Single">
 					<font fontName="Tahoma" size="10"/>
@@ -321,7 +323,7 @@
 				</textElement>
 				<text><![CDATA[:]]></text>
 			</staticText>
-			<textField isBlankWhenNull="true">
+			<textField isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement x="99" y="262" width="175" height="15"/>
 				<textElement verticalAlignment="Middle" lineSpacing="Single">
 					<font fontName="Tahoma" size="10"/>
@@ -342,21 +344,21 @@
 				</textElement>
 				<text><![CDATA[:]]></text>
 			</staticText>
-			<textField isBlankWhenNull="true">
+			<textField isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement x="385" y="262" width="135" height="15"/>
 				<textElement verticalAlignment="Middle" lineSpacing="Single">
 					<font fontName="Tahoma" size="10"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$P{namakamar}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement x="286" y="262" width="89" height="15"/>
 				<textElement verticalAlignment="Middle" lineSpacing="Single">
 					<font fontName="Tahoma" size="10"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$P{kamar}]]></textFieldExpression>
 			</textField>
-			<image scaleImage="FillFrame" onErrorType="Blank">
+			<image scaleImage="FillFrame" onErrorType="Blank" hyperlinkType="None">
 				<reportElement x="0" y="15" width="67" height="67"/>
 				<imageExpression class="java.io.InputStream"><![CDATA[$P{logo}]]></imageExpression>
 			</image>
@@ -462,15 +464,15 @@
 		</band>
 	</title>
 	<detail>
-		<band height="14" splitType="Stretch">
-			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+		<band height="14">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="3" y="0" width="131" height="13"/>
 				<textElement verticalAlignment="Middle" lineSpacing="Single">
 					<font fontName="Tahoma" size="10"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{temp1}]]></textFieldExpression>
 			</textField>
-			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="135" y="1" width="81" height="13">
 					<printWhenExpression><![CDATA[($F{temp5}!="" ? Boolean.TRUE:Boolean.FALSE)]]></printWhenExpression>
 				</reportElement>
@@ -479,26 +481,25 @@
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{temp2}]]></textFieldExpression>
 			</textField>
-			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="217" y="0" width="75" height="13"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
 					<font fontName="Tahoma" size="10"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{temp3}]]></textFieldExpression>
 			</textField>
-			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="293" y="0" width="153" height="13"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
 					<font fontName="Tahoma" size="10"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{temp4}]]></textFieldExpression>
 			</textField>
-			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="449" y="0" width="71" height="13"/>
 				<textElement verticalAlignment="Middle" lineSpacing="Single">
 					<font fontName="Tahoma" size="10"/>
 				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$F{temp5}]]></textFieldExpression>
 			</textField>
 			<line>
 				<reportElement stretchType="RelativeToBandHeight" x="0" y="-4" width="1" height="16">
@@ -548,7 +549,7 @@
 					<pen lineWidth="0.5"/>
 				</graphicElement>
 			</line>
-			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="135" y="0" width="81" height="13" forecolor="#0000FF">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<printWhenExpression><![CDATA[($F{temp5}.toLowerCase().equals("l") ? 
@@ -559,7 +560,7 @@
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{temp2}]]></textFieldExpression>
 			</textField>
-			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="135" y="0" width="81" height="13" forecolor="#FF0000">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<printWhenExpression><![CDATA[($F{temp5}.toLowerCase().equals("h") ? 
@@ -570,7 +571,7 @@
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{temp2}]]></textFieldExpression>
 			</textField>
-			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="135" y="0" width="81" height="13" forecolor="#000000">
 					<printWhenExpression><![CDATA[($F{temp5}.toLowerCase().equals("t") ? 
   Boolean.TRUE:Boolean.FALSE)]]></printWhenExpression>
@@ -583,7 +584,7 @@
 		</band>
 	</detail>
 	<columnFooter>
-		<band splitType="Stretch"/>
+		<band/>
 	</columnFooter>
 	<summary>
 		<band height="195">
@@ -595,14 +596,14 @@
 				<text><![CDATA[Petugas Laboratorium
 ( Laboratory Staff )]]></text>
 			</staticText>
-			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement stretchType="RelativeToBandHeight" x="354" y="145" width="134" height="15"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
 					<font fontName="Tahoma" size="10"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$P{petugas}]]></textFieldExpression>
 			</textField>
-			<textField pattern="dd/MM/yyyy HH.mm.ss" isBlankWhenNull="false">
+			<textField pattern="dd/MM/yyyy HH.mm.ss" isBlankWhenNull="false" hyperlinkType="None">
 				<reportElement key="textField" x="405" y="25" width="109" height="15" forecolor="#000000" backcolor="#FFFFFF"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -636,7 +637,7 @@
 				<textElement textAlignment="Left" verticalAlignment="Middle" lineSpacing="Single">
 					<font fontName="Tahoma" size="8" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Catatan :]]></text>
+				<text><![CDATA[Catatan/Note :]]></text>
 			</staticText>
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Transparent" x="0" y="146" width="186" height="10" forecolor="#000000" backcolor="#F0F0DC"/>
@@ -652,7 +653,7 @@
 				</textElement>
 				<text><![CDATA[Jika ada keragu-raguan pemeriksaan,]]></text>
 			</staticText>
-			<image>
+			<image hyperlinkType="None">
 				<reportElement stretchType="RelativeToBandHeight" isPrintRepeatedValues="false" x="394" y="88" width="54" height="55" isPrintWhenDetailOverflows="true"/>
 				<imageExpression class="java.awt.Image"><![CDATA[com.google.zxing.client.j2se.MatrixToImageWriter.toBufferedImage(
 				    new com.google.zxing.qrcode.QRCodeWriter().encode(
@@ -661,36 +662,35 @@
 				    )
 				)]]></imageExpression>
 			</image>
-			<textField isBlankWhenNull="true">
+			<textField isBlankWhenNull="true" hyperlinkType="None">
 				<reportElement x="0" y="25" width="319" height="85"/>
 				<textElement verticalAlignment="Middle" lineSpacing="Single" markup="styled">
 					<font fontName="Tahoma" size="8"/>
 				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$F{temp1}.trim().toLowerCase().startsWith("covid") ? "<style isBold='true'>RESULT INTERPRETATION :</style> \n"+
+				<textFieldExpression class="java.lang.String"><![CDATA["<style isBold='true'>RESULT INTERPRETATION :</style> \n"+
 "* <style isBold='true'>Negative or undetectable result</style> indicate that the SARS Cov – 2 genetic material in question was not detected in the specimen or the specimen levels could not be detected. \n"+
-"* <style isBold='true'>Positive or detected result</style> indicate that the SARS Cov – 2 genetic material was detected in the specimens from nasopharing and oropharing swab." : $F{temp1}.trim().toLowerCase().startsWith("antigen") ? "<style isBold='true'>RESULT INTERPRETATION :</style> \n"+
-"* <style isBold='true'>Negative or undetectable result</style> indicate that the SARS Cov – 2 genetic material in question was not detected in the specimen or the specimen levels could not be detected. \n"+
-"* <style isBold='true'>Positive or detected result</style> indicate that the SARS Cov – 2 genetic material was detected in the specimens from nasopharing and oropharing swab." : $F{temp1}.trim().toLowerCase().startsWith("anti") ? "<style isBold='true'>RESULT INTERPRETATION :</style> \n"+
-"* <style isBold='true'>Negative or undetectable result</style> indicate that the SARS Cov – 2 genetic material in question was not detected in the specimen or the specimen levels could not be detected. \n"+
-"* <style isBold='true'>Positive or detected result</style> indicate that the SARS Cov – 2 genetic material was detected in the specimens from nasopharing and oropharing swab." : ""]]></textFieldExpression>
+"* <style isBold='true'>Positive or detected result</style> indicate that the SARS Cov – 2 genetic material was detected in the specimens."]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement isPrintRepeatedValues="false" x="0" y="25" width="319" height="85"/>
-				<textElement verticalAlignment="Middle" lineSpacing="Single" markup="styled">
-					<font fontName="Tahoma" size="8"/>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Transparent" x="1" y="157" width="186" height="10" forecolor="#000000" backcolor="#F0F0DC"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Tahoma" size="8" isBold="false" isItalic="true"/>
 				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$F{temp1}.trim().toLowerCase().startsWith("rapid") ? "<style isBold='true'>RESULT INTERPRETATION :</style> \n"+
-"* <style isBold='true'>Negative or undetectable result</style> indicate that the SARS Cov – 2 genetic material in question was not detected in the specimen or the specimen levels could not be detected. \n"+
-"* <style isBold='true'>Positive or detected result</style> indicate that the SARS Cov – 2 genetic material was detected in the specimens from nasopharing and oropharing swab." : $F{temp1}.trim().toLowerCase().startsWith("rt") ? "<style isBold='true'>RESULT INTERPRETATION :</style> \n"+
-"* <style isBold='true'>Negative or undetectable result</style> indicate that the SARS Cov – 2 genetic material in question was not detected in the specimen or the specimen levels could not be detected. \n"+
-"* <style isBold='true'>Positive or detected result</style> indicate that the SARS Cov – 2 genetic material was detected in the specimens from nasopharing and oropharing swab." : ""]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="95" y="110" width="224" height="16"/>
-				<textElement verticalAlignment="Middle" lineSpacing="Single" markup="styled">
-					<font fontName="Tahoma" size="8"/>
+				<text><![CDATA[If there is any doubt about the inspection,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Transparent" x="1" y="167" width="186" height="10" forecolor="#000000" backcolor="#F0F0DC"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Tahoma" size="8" isBold="false" isItalic="true"/>
 				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$F{temp2}.length() > 0 ? $F{temp2} : "Pakyu"]]></textFieldExpression>
+				<text><![CDATA[please contact the laboratory immediately.]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true" hyperlinkType="None">
+				<reportElement stretchType="RelativeToBandHeight" x="354" y="158" width="134" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{nip}]]></textFieldExpression>
 			</textField>
 		</band>
 	</summary>

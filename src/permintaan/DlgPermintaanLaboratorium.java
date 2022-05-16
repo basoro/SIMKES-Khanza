@@ -1480,10 +1480,10 @@ private void BtnHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
             try {                    
                 koneksi.setAutoCommit(false);
                 //autoNomor();
-                if(Sequel.menyimpantf2("permintaan_lab","?,?,?,?,?,?,?,?,?,?","No.Permintaan",10,new String[]{
+                if(Sequel.menyimpantf2("permintaan_lab","?,?,?,?,?,?,?,?,?,?,?,?","No.Permintaan",12,new String[]{
                         TNoPermintaan.getText(),TNoRw.getText(),Valid.SetTgl(Tanggal.getSelectedItem()+""),
                         CmbJam.getSelectedItem()+":"+CmbMenit.getSelectedItem()+":"+CmbDetik.getSelectedItem(), 
-                        "0000-00-00","00:00:00","0000-00-00","00:00:00",KodePerujuk.getText(),status.replaceAll("R","r")
+                        "0000-00-00","00:00:00","0000-00-00","00:00:00",KodePerujuk.getText(),status.replaceAll("R","r"), "-", "-"
                     })==true){
                     for(i=0;i<tbTarif.getRowCount();i++){ 
                         if(tbTarif.getValueAt(i,0).toString().equals("true")){
@@ -1504,10 +1504,10 @@ private void BtnHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
                     emptTeks();
                 }else{
                     autoNomor();
-                    if(Sequel.menyimpantf2("permintaan_lab","?,?,?,?,?,?,?,?,?,?","No.Permintaan",10,new String[]{
+                    if(Sequel.menyimpantf2("permintaan_lab","?,?,?,?,?,?,?,?,?,?,?,?","No.Permintaan",12,new String[]{
                             TNoPermintaan.getText(),TNoRw.getText(),Valid.SetTgl(Tanggal.getSelectedItem()+""),
                             CmbJam.getSelectedItem()+":"+CmbMenit.getSelectedItem()+":"+CmbDetik.getSelectedItem(), 
-                            "0000-00-00","00:00:00","0000-00-00","00:00:00",KodePerujuk.getText(),status.replaceAll("R","r")
+                            "0000-00-00","00:00:00","0000-00-00","00:00:00",KodePerujuk.getText(),status.replaceAll("R","r"), "-", "-"
                         })==true){
                         for(i=0;i<tbTarif.getRowCount();i++){ 
                             if(tbTarif.getValueAt(i,0).toString().equals("true")){
@@ -1528,10 +1528,10 @@ private void BtnHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
                         emptTeks();
                     }else{
                         autoNomor();
-                        if(Sequel.menyimpantf2("permintaan_lab","?,?,?,?,?,?,?,?,?,?","No.Permintaan",10,new String[]{
+                        if(Sequel.menyimpantf2("permintaan_lab","?,?,?,?,?,?,?,?,?,?,?,?","No.Permintaan",12,new String[]{
                                 TNoPermintaan.getText(),TNoRw.getText(),Valid.SetTgl(Tanggal.getSelectedItem()+""),
                                 CmbJam.getSelectedItem()+":"+CmbMenit.getSelectedItem()+":"+CmbDetik.getSelectedItem(), 
-                                "0000-00-00","00:00:00","0000-00-00","00:00:00",KodePerujuk.getText(),status.replaceAll("R","r")
+                                "0000-00-00","00:00:00","0000-00-00","00:00:00",KodePerujuk.getText(),status.replaceAll("R","r"), "-", "-"
                             })==true){
                             for(i=0;i<tbTarif.getRowCount();i++){ 
                                 if(tbTarif.getValueAt(i,0).toString().equals("true")){
@@ -1552,10 +1552,10 @@ private void BtnHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
                             emptTeks();
                         }else{
                             autoNomor();
-                            if(Sequel.menyimpantf("permintaan_lab","?,?,?,?,?,?,?,?,?,?","No.Permintaan",10,new String[]{
+                            if(Sequel.menyimpantf("permintaan_lab","?,?,?,?,?,?,?,?,?,?,?,?","No.Permintaan",12,new String[]{
                                     TNoPermintaan.getText(),TNoRw.getText(),Valid.SetTgl(Tanggal.getSelectedItem()+""),
                                     CmbJam.getSelectedItem()+":"+CmbMenit.getSelectedItem()+":"+CmbDetik.getSelectedItem(), 
-                                    "0000-00-00","00:00:00","0000-00-00","00:00:00",KodePerujuk.getText(),status.replaceAll("R","r")
+                                    "0000-00-00","00:00:00","0000-00-00","00:00:00",KodePerujuk.getText(),status.replaceAll("R","r"), "-", "-"
                                 })==true){
                                 for(i=0;i<tbTarif.getRowCount();i++){ 
                                     if(tbTarif.getValueAt(i,0).toString().equals("true")){

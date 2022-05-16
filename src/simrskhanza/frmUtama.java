@@ -71,6 +71,7 @@ import inventory.DlgReturPiutang;
 import inventory.DlgSirkulasiBarang;
 import inventory.DlgStokPasien;
 import inventory.DlgDaftarPermintaanResep;
+import inventory.DlgPenggunaObat;
 import ipsrs.DlgBarangIPSRS;
 import ipsrs.DlgJenisIPSRS;
 import ipsrs.DlgPembelianIPSRS;
@@ -407,6 +408,7 @@ public class frmUtama extends javax.swing.JFrame {
         MnDataObat = new javax.swing.JMenuItem();
         MnStokOpname = new javax.swing.JMenuItem();
         MnMutasiObat = new javax.swing.JMenuItem();
+        MnDataPenggunaObat = new javax.swing.JMenuItem();
         MnStokObtPx = new javax.swing.JMenuItem();
         MnPengadaan = new javax.swing.JMenuItem();
         MnPemesanan = new javax.swing.JMenuItem();
@@ -2319,6 +2321,18 @@ public class frmUtama extends javax.swing.JFrame {
             }
         });
         MenuInvObat.add(MnMutasiObat);
+
+        MnDataPenggunaObat.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        MnDataPenggunaObat.setForeground(new java.awt.Color(51, 51, 51));
+        MnDataPenggunaObat.setText("Data Pengguna Obat/Alkes/BHP");
+        MnDataPenggunaObat.setEnabled(false);
+        MnDataPenggunaObat.setName("MnDataPenggunaObat"); // NOI18N
+        MnDataPenggunaObat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MnDataPenggunaObatActionPerformed(evt);
+            }
+        });
+        MenuInvObat.add(MnDataPenggunaObat);
 
         MnStokObtPx.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         MnStokObtPx.setForeground(new java.awt.Color(51, 51, 51));
@@ -4517,6 +4531,7 @@ public class frmUtama extends javax.swing.JFrame {
                 MnBookingRegistrasi.setEnabled(false);
                 MnSuratKontrol.setEnabled(false);
                 //Jong Source end
+                MnDataPenggunaObat.setEnabled(false);
 
                 edAdmin.setText("");
                 edPwd.setText("");
@@ -4757,6 +4772,7 @@ public class frmUtama extends javax.swing.JFrame {
                     MnBookingRegistrasi.setEnabled(true);
                     MnSuratKontrol.setEnabled(true);
                     //Jong Source end
+                    MnDataPenggunaObat.setEnabled(true);
 
                     DlgLogin.dispose();
                     BtnLog.setText("Log Out");
@@ -4994,6 +5010,7 @@ public class frmUtama extends javax.swing.JFrame {
                         MnBookingRegistrasi.setEnabled(true);
                         //Jong Source end
                         MnSuratKontrol.setEnabled(true);
+                        MnDataPenggunaObat.setEnabled(true);
                     }
                     if(var.getrekammedis() == true){
                         BtnToolReg.setEnabled(true);
@@ -5135,6 +5152,7 @@ public class frmUtama extends javax.swing.JFrame {
                         MnRiwayat.setEnabled(true);
                         MnDaruratStok.setEnabled(true);
                         BtnToolJualObat.setEnabled(true);
+                        MnDataPenggunaObat.setEnabled(true);
                     }
 
                     // Menu Laboratorium ============================================
@@ -5216,6 +5234,7 @@ public class frmUtama extends javax.swing.JFrame {
                         MnCashFlow.setEnabled(true);
                         MnKeu.setEnabled(true);
                         BtnToolKasir.setEnabled(true);
+                        MnDataPenggunaObat.setEnabled(true);
                     }
 
                     // INI MENU ADMIN ONLY =============================================================
@@ -7815,6 +7834,17 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
         this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnSuratKontrolActionPerformed
 
+    private void MnDataPenggunaObatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnDataPenggunaObatActionPerformed
+        isTutup();
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        DlgPenggunaObat form=new DlgPenggunaObat(this,false);
+        form.isCek();
+        form.setSize(PanelUtama.getWidth(), PanelUtama.getHeight());
+        form.setLocationRelativeTo(PanelUtama);
+        form.setVisible(true);
+        this.setCursor(Cursor.getDefaultCursor());
+    }//GEN-LAST:event_MnDataPenggunaObatActionPerformed
+
     /**
     * @param args the command line arguments
     */
@@ -7900,6 +7930,7 @@ private void BtnSimpanPassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:e
     private javax.swing.JMenuItem MnDataDokter;
     private javax.swing.JMenuItem MnDataObat;
     private javax.swing.JMenuItem MnDataPegawai;
+    private javax.swing.JMenuItem MnDataPenggunaObat;
     private javax.swing.JMenuItem MnDataPetugas;
     private javax.swing.JMenuItem MnDepositPasien;
     private javax.swing.JMenuItem MnDetJMDok;
